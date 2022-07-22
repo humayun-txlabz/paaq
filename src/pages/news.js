@@ -106,7 +106,7 @@ PAAQ is the right platform to direct a message or question to anyone based on th
                             </Container>
                         </Container>
                     </Container>
-                    {/* <AppAndPlayStoreFooter /> */}
+                    <AppAndPlayStoreFooter />
                 </Layout>
             </StickyProvider>
         </ThemeProvider>
@@ -138,6 +138,7 @@ const styles = {
             fontSize: '50px',
         },
         color: '#252F44',
+        fontFamily: 'Sofia-Pro',
         textTransform: 'capitalize',
         lineHeight: '70px',
     },
@@ -148,6 +149,7 @@ const styles = {
             marginTop: '0px'
         },
         fontWeight: '400',
+        fontFamily: 'Sofia-Pro',
         color: '#6D6D6D',
         lineHeight: '28px',
         whiteSpace: 'pre-wrap',
@@ -216,6 +218,7 @@ const styles = {
     },
     image: {
         height: '438px',
+        objectFit:'cover',
         '@media screen and (max-width: 720px)': {
             height: '347px',
             marginTop:'30px'
@@ -281,7 +284,8 @@ const styles = {
         fontSize: '18px',
         fontWeight: '600',
         color: '#000000',
-        lineHeight: '12px'
+        lineHeight: '12px',
+        fontFamily: 'Sofia-Pro',
     },
     upArrow: {
 
@@ -321,6 +325,7 @@ const styles = {
     collageSectionHeading: {
         fontWeight: '600',
         fontSize: '70px',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
            fontSize:'30px',
            lineHeight: '35px',

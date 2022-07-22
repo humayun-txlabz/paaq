@@ -34,13 +34,14 @@ const styles = {
             fontSize: '24px',
         },
         fontWeight: '700',
+        fontFamily: 'Sofia-Pro',
         color: '#252F44',
         textTransform: 'capitalize',
         lineHeight: '36px',
     },
     detail: {
         fontSize: '18px',
-        
+        fontFamily: 'Sofia-Pro',
         fontWeight: '400',
         color: '#6D6D6D',
         lineHeight: '34px'
@@ -102,7 +103,9 @@ const styles = {
         '@media screen and (max-width: 720px)': {
             height: '280px',
         },
-        width: '100%'
+        objectFit:'cover',
+        width: '100%',
+        borderRadius:'15px'
     },
     sectionReverse: {
         width: '100%',
@@ -141,14 +144,17 @@ const styles = {
     publisher:{
         fontSize:'16px',
         fontWeight:'100',
-        lineHeight:'24.1px'
+        lineHeight:'24.1px',
+        fontFamily: 'Sofia-Pro'
     },
     publisher2:{
+        fontFamily: 'Sofia-Pro',
         fontSize:'18px',
         fontWeight:'900',
         lineHeight:'24.1px'
     },
     date:{
+        fontFamily: 'Sofia-Pro',
        fontSize:'12px',
        fontWeight:'400',
        lineHeight:'16.1px',

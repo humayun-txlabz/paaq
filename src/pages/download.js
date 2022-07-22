@@ -51,7 +51,7 @@ export default function Download() {
                             </Container>
                         </Container>
                     </Container>
-                    {/* <AppAndPlayStoreFooter /> */}
+                    <AppAndPlayStoreFooter />
                 </Layout>
             </StickyProvider>
         </ThemeProvider>
@@ -109,17 +109,19 @@ const styles = {
         justifyContent: 'center'
     },
     bannerImage: {
-        width: '356px',
-        height: '547px',
+        width: '386px',
+        height: '549px',
+        objectFit:'cover',
         '@media screen and (max-width: 720px)': {
-            width: '250px',
-            height: '407px',
+            width: '300px',
+            height: '430px',
         },
         marginTop: '20px'
     },
     heading: {
         fontWeight: '700',
         fontSize: '60px',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '34px',
         },
@@ -129,6 +131,7 @@ const styles = {
     detail: {
         fontWeight: '600',
         fontSize: '22px',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '14px',
         },
@@ -198,7 +201,8 @@ const styles = {
     },
     barCode: {
         height: '171px',
-        width: '171px'
+        width: '171px',
+        objectFit:'cover'
     },
     codeSelector:{
         width:'65%',

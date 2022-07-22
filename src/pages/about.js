@@ -171,7 +171,11 @@ const styles = {
     imageMain: {
         height: '475px',
         width: '100%',
-        borderRadius: '10px'
+        borderRadius: '10px',
+        objectFit:'cover',
+        '@media screen and (max-width: 720px)': {
+            height:'380px', 
+        },
     },
     text2MainSection: {
         width: '42%',
@@ -205,8 +209,9 @@ const styles = {
     rightImage:{
         height:'286px',
         marginLeft:'20px',
+        objectFit:'cover',
         '@media screen and (max-width: 880px)': {
-            height:'300px',
+            height:'280px',
             width:'100%',
             marginLeft:'0px'
         },

@@ -21,6 +21,7 @@ export default function Layout({ children }) {
         sx={{
           variant: 'layout.main',
         }}
+        style={{paddingTop:120}}
       >
         {children}
       </main>

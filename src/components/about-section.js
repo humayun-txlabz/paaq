@@ -20,12 +20,14 @@ const styles = {
        fontSize:'40px',
        fontWeight:'600',
        color:'#252F44',
+       fontFamily: 'Sofia-Pro',
        textTransform:'capitalize',
        lineHeight:'54px'
     },
     detail:{
        fontSize:'18px',
        fontWeight:'600',
+       fontFamily: 'Sofia-Pro',
        color:'#4B5157',
        lineHeight:'30px'
     },
@@ -46,10 +48,12 @@ const styles = {
     },
     image:{
         height:'472px',
+        objectFit:'cover',
         '@media screen and (max-width: 720px)': {
             height:'372px',
         },
-        width:'100%'
+        width:'100%',
+        borderRadius:'20px'
     }
 };
 

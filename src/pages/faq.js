@@ -44,7 +44,7 @@ export default function Faq() {
                              <FaqAccordion list={faqVerification} />
                         </Container>
                     </Container>
-                    {/* <AppAndPlayStoreFooter /> */}
+                    <AppAndPlayStoreFooter />
                 </Layout>
             </StickyProvider>
         </ThemeProvider>
@@ -78,6 +78,7 @@ const styles = {
     heading: {
         display: 'flex',
         fontSize: '70px',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '35px',
             lineHeight: '46px',
@@ -89,6 +90,7 @@ const styles = {
     headingInner: {
         display: 'flex',
         fontSize: '60px',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '35px',
             lineHeight: '46px',

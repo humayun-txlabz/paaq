@@ -36,7 +36,7 @@ export default function Settings() {
                             </Container>
                         </Container>
                     </Container>
-                    {/* <AppAndPlayStoreFooter /> */}
+                    <AppAndPlayStoreFooter />
                 </Layout>
             </StickyProvider>
         </ThemeProvider>

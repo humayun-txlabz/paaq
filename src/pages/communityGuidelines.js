@@ -40,7 +40,7 @@ We want our users to find PAAQ safe and reliable enough to meet their needs. If 
                             }
                         </Container>
                     </Container>
-                    {/* <AppAndPlayStoreFooter /> */}
+                    <AppAndPlayStoreFooter />
                 </Layout>
             </StickyProvider>
         </ThemeProvider>
@@ -75,6 +75,7 @@ const styles = {
         fontSize: '24px',
         fontWeight: '400',
         lineHeight: '34px',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '14px',
             lineHeight: '24px',
@@ -87,6 +88,7 @@ const styles = {
     mainText: {
         fontSize: '24px',
         fontWeight: '400',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '14px',
             lineHeight: '24px',
@@ -100,6 +102,7 @@ const styles = {
     heading: {
         fontSize: '40px',
         fontWeight: '500',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '18px',
             lineHeight: '21px',
@@ -111,6 +114,7 @@ const styles = {
         fontSize: '70px',
         fontWeight: '600',
         lineHeight: '66px',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '36px',
             lineHeight: '40px',

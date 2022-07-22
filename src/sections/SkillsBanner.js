@@ -1,9 +1,10 @@
+import { useRef } from 'react'
 import CustomSlider from 'components/CustomSlider';
 import Image from 'next/image';
 import VectorImage from '../assets/Images/VectorOval.png';
 
 const SkillsBanner = () => {
-
+     const ref1= useRef()
     // const { blog } = props;
 
     const sliderData = [
@@ -46,7 +47,7 @@ const SkillsBanner = () => {
             {/* <Slider defaultValue={25} /> */}
             {
                 sliderData.map((item, index)=> (
-                    <CustomSlider item={item} index={index} />
+                    <CustomSlider ref={ref1} item={item} index={index} />
                 ))
             }
             {/* <CustomSlider color={'#8436F4'} />

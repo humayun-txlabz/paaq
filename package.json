@@ -43,7 +43,8 @@
     "redux-thunk": "^2.4.1",
     "reselect": "^4.1.6",
     "theme-ui": "^0.3.1",
-    "typeface-dm-sans": "^1.1.3"
+    "typeface-dm-sans": "^1.1.3",
+    "use-is-in-viewport": "^1.0.9"
   },
   "devDependencies": {
     "imagemin-mozjpeg": "^9.0.0",

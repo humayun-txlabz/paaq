@@ -243,11 +243,14 @@ button {
     background-color: #E8E8DA;
   }
   .skills-banner-slider > div .ant-slider-track{
+    transition: 1.5s ease;
+    transition-delay: 0.5s;
     background-color: var(--sliderColor) !important ;
     height: 8px;
     border-radius: 8px;
   }
   .skills-banner-slider:hover > div .ant-slider-track{
+    
     background-color: var(--sliderColor) !important ;
     height: 8px;
     border-radius: 8px;

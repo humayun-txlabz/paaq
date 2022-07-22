@@ -71,7 +71,6 @@ const styles = {
     heading: {
         fontSize: '60px',
         fontFamily: 'Sofia-Pro',
-
         '@media screen and (max-width: 720px)': {
             fontSize: '30px',
         },

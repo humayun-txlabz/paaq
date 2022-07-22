@@ -73,7 +73,7 @@ export default function ImagesContacts() {
                             </Container>
                         </Container>
                     </Container>
-                    {/* <AppAndPlayStoreFooter /> */}
+                    <AppAndPlayStoreFooter />
                 </Layout>
             </StickyProvider>
         </ThemeProvider>
@@ -134,6 +134,7 @@ const styles = {
     heading: {
         display: 'flex',
         fontSize: '70px',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '40px',
             lineHeight: '42px'
@@ -145,6 +146,7 @@ const styles = {
     detail: {
         display: 'flex',
         fontSize: '18px',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '14px',
             lineHeight: '24px',

@@ -40,6 +40,7 @@ const styles = {
         '@media screen and (max-width: 720px)': {
             fontSize: '18px',
         },
+        fontFamily: 'Sofia-Pro',
         fontWeight: '800',
         paddingBottom: '40px',
 
@@ -63,6 +64,7 @@ const styles = {
     },
     option: {
         fontSize: '20px',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '12px',
             lineHeight:'16.26px',

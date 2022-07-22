@@ -52,7 +52,7 @@ export default function Careers() {
                             <Image sx={styles.imageSection4} src={image4} />
                         </Container>
                     </Container>
-                    {/* <AppAndPlayStoreFooter /> */}
+                    <AppAndPlayStoreFooter />
                 </Layout>
             </StickyProvider>
         </ThemeProvider>
@@ -94,7 +94,7 @@ const styles = {
         '@media screen and (max-width: 940px)': {
             fontSize: '40px',
         },
-
+        fontFamily: 'Sofia-Pro',
         display: 'flex',
         fontWeight: '600',
         color: '#0D1015',
@@ -115,6 +115,7 @@ const styles = {
         '@media screen and (max-width: 940px)': {
             fontSize: '40px'
         },
+        fontFamily: 'Sofia-Pro',
         fontWeight: '600',
         color: '#252F44',
         textAlign: 'center'
@@ -125,6 +126,7 @@ const styles = {
             fontSize: '14px',
             lineHeight: '24px'
         },
+        fontFamily: 'Sofia-Pro',
         fontWeight: '400',
         color: '#4B5157',
         marginTop: '30px',
@@ -153,7 +155,6 @@ const styles = {
         '@media screen and (max-width: 940px)': {
             height:'331px',
             marginTop:'0px',
-            objectFit:'cover',
             width:'100%',
         },
         borderRadius: '20px',
@@ -166,7 +167,6 @@ const styles = {
         '@media screen and (max-width: 940px)': {
             height:'241px',
             marginBottom:'0px',
-            objectFit:'cover',
             width:'100%'
         },
         borderRadius: '20px',
@@ -183,6 +183,7 @@ const styles = {
         gap: '20px'
     },
     section2Heading: {
+        fontFamily: 'Sofia-Pro',
         fontWeight: '700',
         fontSize: '50px',
         '@media screen and (max-width: 940px)': {
@@ -197,6 +198,7 @@ const styles = {
             fontSize: '14px',
             lineHeight: '24px'
         },
+        fontFamily: 'Sofia-Pro',
         color: '#4B5157',
         lineHeight: '30px'
     },
@@ -211,6 +213,7 @@ const styles = {
     headingSection3: {
         fontWeight: '600',
         fontSize: '70px',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 940px)': {
             fontSize: '40px'
         },
@@ -219,6 +222,7 @@ const styles = {
     detailSection3: {
         fontWeight: '400',
         fontSize: '18px',
+        fontFamily: 'Sofia-Pro',
         color: '#4B5157',
         '@media screen and (max-width: 940px)': {
             fontSize: '13px',
@@ -233,7 +237,6 @@ const styles = {
         objectFit:'cover',
         '@media screen and (max-width: 940px)': {
             height:'221px',
-            objectFit:'cover',
         },
         borderRadius: '20px',
         marginTop: '50px',
@@ -262,7 +265,6 @@ const styles = {
         objectFit:'cover',
         '@media screen and (max-width: 940px)': {
             height:'221px',
-            objectFit:'cover',
         },
         borderRadius: '20px',
         width:'90%'
@@ -291,6 +293,7 @@ const styles = {
             fontSize: '14px',
             lineHeight:'24px'
         },
+        fontFamily: 'Sofia-Pro',
         fontWeight:'400',
         color:'#4B5157',
         lineHeight:'30px'

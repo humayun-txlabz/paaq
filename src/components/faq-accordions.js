@@ -80,6 +80,7 @@ const styles = {
     accordionItemHint: {
         fontWeight: '500',
         fontSize: '2.2em',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             width: '80%',
             fontSize: '0.79em',
@@ -103,6 +104,7 @@ const styles = {
         },
         fontWeight: '500',
         fontSize: '2.2em',
+        fontFamily: 'Sofia-Pro',
         color: '#252F44',
         lineHeight: '50px',
         textTransform: 'capitalize'
@@ -122,6 +124,7 @@ const styles = {
     accordionPanelText: {
         fontWeight: '400',
         fontSize: '1.2em',
+        fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '0.76em',
             lineHeight: '20px',

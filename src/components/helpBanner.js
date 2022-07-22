@@ -32,6 +32,7 @@ const styles={
     bannerStyle: {
         width: '100%',
         height: '690px',
+        
         '@media screen and (max-width: 720px)': {
             height: '390px',
         },

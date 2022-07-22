@@ -44,6 +44,7 @@ const styles={
         color: '#252F44',
         lineHeight: '76px',
         marginTop: 16,
+        fontFamily: 'Sofia-Pro',
         textAlign: 'center'
     },
     button: {

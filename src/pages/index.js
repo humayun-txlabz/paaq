@@ -18,9 +18,9 @@ export default function IndexPage() {
           <SEO title="Startup Landing 005" />
           <Banner />
           <Connections />
-          {/* <AskQuestionBanner />
+          {/* <AskQuestionBanner /> */}
           <SkillsBanner />
-          {/* <EarnMoneyBanner /> */}
+           {/* <EarnMoneyBanner /> */}
         </Layout>
       </StickyProvider>
     </ThemeProvider>

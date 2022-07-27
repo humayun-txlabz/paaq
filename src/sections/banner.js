@@ -297,7 +297,7 @@ export default function Banner() {
 
 const styles = {
   banner: {
-    pt: ['90px', '90px', '95px', '100px', null, null, '110px', '110px'],
+    // pt: ['90px', '90px', '95px', '100px', null, null, '110px', '110px'],
     pb: [2, null, 0, null, 2, 0, null, 5],
     position: 'relative',
     zIndex: 2,
@@ -308,7 +308,7 @@ const styles = {
       justifyContent: 'center',
     },
     contentBox: {
-      marginTop: 80,
+      marginTop: 50,
       width: ['100%', '90%', '100%', null, '57%', '60%', '68%', '60%'],
       mx: 'auto',
       textAlign: 'center',

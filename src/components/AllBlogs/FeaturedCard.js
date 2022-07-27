@@ -9,8 +9,6 @@ const FeaturedCard = (props) => {
 
     const { alignImageRight } = props;
 
-    console.log('FeaturedCard==>', alignImageRight)
-
     return (
         <div className="featured-card">
             <div className='featured-card-inner' style={{flexDirection: alignImageRight ? 'row-reverse' : 'row'}}>

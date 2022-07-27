@@ -1,10 +1,20 @@
 @font-face {
     font-family: 'Sofia-Pro';
     src: url('../assets/fonts/SofiaProRegularAz.otf');
+
 }
+@font-face {
+  font-family: 'SofiaPro-Soft';
+  src: url('../assets/fonts/SofiaProSoft.otf');
+}
+@font-face {
+  font-family: 'SofiaPro-Light';
+  src: url('../assets/fonts/SofiaPro-Light.otf');
+}
+  
 
 body {
-    font-family: 'Sofia-Pro'
+    font-family: 'Sofia-Pro';
 }
 
 button {
@@ -17,16 +27,32 @@ button {
 
 .banner-info-box {
     padding: 5%;
-    padding-bottom: 0;
+    padding-top: 4%;
+    padding-bottom: 14px;
     width: 80%;
     margin: 0 auto;
     margin-top: 100px;
     height: 550px;
     background: linear-gradient(270deg, #7AE2D6 0%, #4293C5 100%);
+    background-size: 400% 400%;
     border-radius: 40px;
     display: flex;
-}
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+  }
 
+/* Gradient animation */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 .title-card{
     display: flex;
@@ -446,17 +472,17 @@ button {
 }
 .main-section-image1{
   position: absolute;
-  top: 3%;
+  top: 0;
   left: 24%;
 }
 .main-section-image2{
   position: absolute;
-  top: 27%;
+  top: 24%;
   left: 18%;
 }
 .main-section-image3{
   position: absolute;
-  top: 48%;
+  top: 45%;
   left: 34%;
 }
 .main-section-image4{
@@ -466,32 +492,32 @@ button {
 }
 .main-section-image5{
   position: absolute;
-  bottom: 2%;
-  left: 46%;
+  bottom: 7%;
+  left: 40%;
 }
 .main-section-image6{
   position: absolute;
-  bottom: 35%;
+  bottom: 30%;
   left: 50%;
 }
 .main-section-image7{
   position: absolute;
-  bottom: 6%;
-  right: 32%;
+  bottom: 9%;
+  right: 34%;
 }
 .main-section-image8{
   position: absolute;
-  bottom: 19%;
+  bottom: 22%;
   right: 17%;
 }
 .main-section-image9{
   position: absolute;
-  bottom: 44%;
+  bottom: 45%;
   right: 27%;
 }
 .main-section-image10{
   position: absolute;
-  top: 35%;
+  top: 32%;
   right: 16%;
 }
 .main-section-image11{
@@ -544,12 +570,141 @@ button {
   animation: animated-text 2s steps(30,end) 1s 1 normal both;
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
-  /* animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal ;
-             border-right: .15em solid transparent; */
 }
 
 @keyframes animated-text{
   from{width: 0;}
   to{width: 11em;}
+}
+
+.main-section-image2-nametag{
+  background: #FFFFFF;
+  box-shadow: 4px 4px 14px rgb(0 0 0 / 25%);
+  border-radius: 0px 15px 15px 30px;
+  min-width: 150px;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-section-image2-nametag-container{
+  position: absolute;
+    left: 88%;
+    top: 60%;
+}
+.nametag-title{
+  font-family: 'Sofia-Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 20px;
+}
+.nametag-designation{
+  font-family: 'SofiaPro-Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 20px;
+}
+.main-section-image2-nametag-containerleft{
+  z-index: 99;
+  position: absolute;
+  min-width: 180px;
+  top: 55%;
+  right: 85%;
+}
+.main-section-image2-nametagleft{
+  background: #FFFFFF;
+  box-shadow: 4px 4px 14px rgb(0 0 0 / 25%);
+  border-radius: 15px 0px 15px 30px;
+  min-width: 150px;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.getstarted-button{
+  flex-shrink: 0;
+      background-color : #00B5B4 !important;
+      box-shadow: 5px 10px 44px 0px #00b5b459;
+      border-color: 'none' !important;
+      border-radius: 40px !important;
+      height: 60px;
+      width: 186px;
+      font-family: 'Sofia-Pro';
+      margin-top: 10px !important;
+      color: #ffffff !important;
+      padding: 20px !important;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+}
+.getstarted-button:hover{
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform:     translateY(-10px);
+		transform:         translateY(-10px)
+	}
+	60% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform:     translateY(-5px);
+		transform:         translateY(-5px)
+	}
+}
+
+.download_button{
+  border-radius: 40px !important;
+  width: 136px;
+  height: 47px;
+  font-size: 16;
+  font-family: 'Sofia-Pro';
+  flex-shrink: 0;
+  background-color: #252F44 !important;
+  box-shadow: 4px 7px 24px 0px rgb(0 0 0 / 28%);
+  border-color: 'none' !important;
+  color: #ffffff !important;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+.download_button:hover{
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.header-menu a  {
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out 0.2s;
+}
+.header-menu a:hover{
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: all 0.3s ease-in-out 0.1s;
 }

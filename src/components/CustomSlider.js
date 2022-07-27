@@ -13,7 +13,6 @@ const CustomSlider = (props) => {
                     <span className='skills-banner-rank'>Skills: {item.defaultValue/10}/10</span>
                 </div>
                 <div className='skills-banner-slider' style={{ ['--sliderColor']: item.color }}>
-                    {/* {console.log('this isss itt', item.defaultValue)} */}
                     <Slider defaultValue={item.defaultValue} tooltipVisible={false} />
                 </div>
         </div>

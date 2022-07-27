@@ -2,8 +2,8 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Button, Image } from 'theme-ui';
-// import Image from 'next/Image'
-import BannerImg from 'assets/banner-phone.png';
+import BannerImg from 'assets/connection-image1.png';
+import BannerImg2 from 'assets/globe.png';
 import { useRouter } from 'next/router';
 
 export default function Connections() {
@@ -12,7 +12,7 @@ export default function Connections() {
     <section sx={styles.banner} id="community">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
-          <div onClick={() => router.push('/blogs')} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <span className='banner-title'>
               Our Connections
             </span>
@@ -31,37 +31,39 @@ export default function Connections() {
                 }}
               />
             </div>
-            <div style={{ color: 'white', textAlign: 'left', marginTop: 50 }}>
-              <div style={{ fontSize: '2.4em', fontWeight: 'bold', color: '#252F44' }}>01. Professionally</div>
+            <div style={{ color: 'white', textAlign: 'left', marginTop: '20%' }}>
+              <div style={{ fontSize: 38, fontWeight: 'bold', color: '#252F44', fontFamily: 'Sofia-Pro' }}>01. Professionally</div>
 
-              <div style={{ fontSize: '1.2em', marginTop: 20, color: '#5B5B5B', lineHeight: 1.5, fontWeight: 'lighter', fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <div style={{ fontSize: 18, marginTop: 20, color: '#5B5B5B', lineHeight: 2, fontWeight: 'lighter', fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
                 A professional is someone who possesses a specific set of skills related to their profession; as such, it is only reasonable to share your knowledge with others. In the example of a cameraman, the effective use of a camera is one of his skills.
               </div>
               <br />
             </div>
           </div>
-          <div className='connections-info-box' style={{ paddingTop: '5%', paddingBottom: 0}}>
+          <div className='connections-info-box' style={{ paddingTop: '5%', paddingBottom: 0, paddingRight: 0 }}>
 
-          <div style={{ color: 'white', textAlign: 'left' }}>
-              <div style={{ fontSize: '2.4em', fontWeight: 'bold', color: '#252F44' }}>02. Socially</div>
+            <div style={{ color: 'white', textAlign: 'left', paddingRight: '11%' }}>
+              <div style={{ fontSize: 38, fontWeight: 'bold', color: '#252F44', fontFamily: 'Sofia-Pro' }}>02. Socially</div>
 
-              <div style={{ fontSize: '1.2em', marginTop: 20, color: '#5B5B5B', lineHeight: 1.5, fontWeight: 'lighter', fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <div style={{ fontSize: 18, marginTop: 20, color: '#5B5B5B', lineHeight: 2, fontWeight: 'lighter', fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
-              It is nice to enjoy a delicious meal and a chilled
-cocktail on a sunny day or to travel the world with
-family and friends to your favourite locations, but
-being rewarded for sharing your social life on PAAQ
-is even better.  </div>
-              <br />
+                It is nice to enjoy a delicious meal and a chilled
+                cocktail on a sunny day or to travel the world with
+                family and friends to your favourite locations, but
+                being rewarded for sharing your social life on PAAQ
+                is even better.
+              </div>
             </div>
-            <div style={{ color: 'white', fontSize: 18, marginTop: 50, fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
               <Image
-                src={BannerImg}
+                src={BannerImg2}
                 alt="Picture of the phone"
                 style={{
-                  width: 300,
-                  height: '100%'
+                  width: 400,
+                  height: '100%',
+                  objectFit: 'cover',
+                  borderRadius: 40
                 }}
               />
             </div>

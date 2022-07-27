@@ -23,9 +23,8 @@ const CustomSlider = React.forwardRef(function CustomSlider(props, parentRef){
                     <span className='skills-banner-subheading'>{item.title}</span>
                     <span className='skills-banner-rank'>Skills: {item.defaultValue/10}/10</span>
                 </div>
-                <div className='skills-banner-slider' style={{ ['--sliderColor']: item.color, }}>
-                    {/* {console.log('this isss itt', item.defaultValue)} */}
-                    <Slider handleStyle={{transition:'1.5s ease',transitionDelay:'0.5s'}} value={value}  tooltipVisible={false}   />
+                <div className='skills-banner-slider' style={{ ['--sliderColor']: item.color }}>
+                    <Slider defaultValue={item.defaultValue} tooltipVisible={false} />
                 </div>
         </div>
     )

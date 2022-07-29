@@ -224,10 +224,18 @@ export default function Banner() {
 
           <div
             // onClick={()=> router.push('/blogs')} 
-            style={{ display: 'flex', justifyContent: 'center', position: 'absolute', top: 0, right: '15%', width: '100%' }}>
-            <span className='banner-title'>
-              <FadeAnimation />
-            </span>
+            // className='banner-title-container'
+            style={{ display: 'flex', justifyContent: 'center', position: 'absolute', top: 0, width: '100%' }}
+            >
+            {/* <div className='banner-title'> */}
+              {/* <FadeAnimation /> */}
+              <div className='box title1'>
+                  Please Ask <br />Any Question
+              </div>
+              <div className='box title2'>
+                  PAAQ
+              </div>
+            {/* </div> */}
           </div>
           <div style={{
             margin: '30px 0px',
@@ -247,9 +255,9 @@ export default function Banner() {
             <div style={{ display: 'flex' }}>
 
               <div style={{ fontSize: 60, fontWeight: 'bold', fontFamily: 'Sofia-Pro', marginRight: 15 }}>
-                What Is PAAQ
+                What is PAAQ
               </div>
-              <Image src={SpeakerIcon} width={49} height={39} onClick={() => handleSpeakerClick()} />
+              <Image style={{ cursor: 'pointer'}} src={SpeakerIcon} width={49} height={39} onClick={() => handleSpeakerClick()} />
               <audio ref={svgRef} id="audio" src='/paaq-audio.mp3' ></audio>
 
             </div>
@@ -269,7 +277,7 @@ export default function Banner() {
             </div>
             <br />
 
-            <div style={{ fontSize: '1.2em', textDecoration: 'underline' }}>Read more</div>
+            <div style={{ fontSize: '1.2em', textDecoration: 'underline', fontFamily: 'SofiaPro-Soft' }}>Read more</div>
             <animated.div style={{ fontFamily: 'Sofia-Pro', marginTop: 10, ...textMovingAnimation(0) }}>
               Hi Thomas, how can I grow my business in ...
             </animated.div>
@@ -317,13 +325,13 @@ const styles = {
       paddingBottom: '18%',
       paddingTop: '10%',
     },
-    '.banner-title': {
-      textAlign: 'center',
-      fontSize: '6em',
-      color: 'black',
-      fontFamily: 'SofiaPro-Soft',
-      fontWeight: '500',
-      lineHeight: '86px',
-    }
+    // '.banner-title': {
+    //   textAlign: 'center',
+    //   fontSize: '6em',
+    //   color: 'black',
+    //   fontFamily: 'SofiaPro-Soft',
+    //   fontWeight: '500',
+    //   lineHeight: '86px',
+    // }
   },
 };

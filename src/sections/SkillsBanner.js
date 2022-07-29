@@ -9,11 +9,6 @@ const SkillsBanner = () => {
 
     const sliderData = [
         {
-            title: 'Overall Skill',
-            color: '#FF703E',
-            defaultValue: 60
-        },
-        {
             title: 'Communication',
             color: '#8436F4',
             defaultValue: 70
@@ -22,13 +17,18 @@ const SkillsBanner = () => {
             title: 'Ideas And Solutions',
             color: '#19CDA6',
             defaultValue: 80
-        }
+        },
+        {
+            title: 'Overall Skill',
+            color: '#FF703E',
+            defaultValue: 60
+        },
     ]
 
     return (
         <div className='skills-banner-container'>
             <div style={{ color: 'white', width: '60%', textAlign: 'left', }}>
-            <div style={{ fontSize: '60px', fontWeight: 'bold', lineHeight: '84px' }}>Show Your skills</div>
+            <div style={{ fontSize: '60px', fontWeight: 'bold', lineHeight: '84px', fontFamily: 'Sofia-Pro' }}>Show Your skills</div>
 
             <div style={{ fontSize: '18px', marginTop: 20, lineHeight: 1.5, fontWeight: 'lighter', fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 

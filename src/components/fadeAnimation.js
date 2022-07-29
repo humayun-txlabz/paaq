@@ -7,9 +7,9 @@ export default function FadeAnimation() {
     const transitions = useTransition(toggle, {
       from: { position: 'absolute', opacity: 0 },
       enter: { opacity: 1 },
-      leave: { opacity: 0 },
+      leave: { opacity: 1 },
       reverse: toggle,
-      delay: 3000,
+      delay: 1000,
       config: { mass: 1, tension: 280, friction: 120, duration: 2000 },
       duration: 1000,
       onRest: () => set(!toggle),

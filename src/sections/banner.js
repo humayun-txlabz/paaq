@@ -1,11 +1,10 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { jsx } from 'theme-ui';
 import Image from 'next/image';
 import { Container, Box, Button } from 'theme-ui';
-import { animated, useSprings, useSpring, to } from "react-spring";
-
+import { animated, useSprings, useSpring, to, update } from "react-spring";
 import BannerImg from 'assets/banner-phone.png';
 import MainImage1 from 'assets/Images/main1.png';
 import MainImage2 from 'assets/Images/earn3.png';
@@ -21,19 +20,53 @@ import MainImage11 from 'assets/Images/main2.png';
 import SpeakerIcon from 'assets/Icons/speaker.svg';
 import FadeAnimation from 'components/fadeAnimation';
 
-export default function Banner() {
 
+export default function Banner() {
   const svgRef = React.createRef();
 
-  const styles2 = useSpring({
-    // loop: { reverse: true },
-    loop: true,
-    from: { x: 0, y: 0, opacity: 1 },
-    to: { x: 0, y: -100, opacity: 0 },
-    // delay: 1000,
-    // config: { mass: 1, tension: 500 * velocity, friction: 50, duration: 2000 },
-    config: { mass: 10, tension: 280, friction: 120, duration: 1000 },
-  });
+  const [style, setStyle] = useSpring(() => ({
+    from: { x: 720 },
+    to: { x: -350 },
+    delay: 0,
+    config: { duration: 8000 },
+    onRest: () => update(16000)
+  }));
+  const [style2, setStyle2] = useSpring(() => ({
+    from: { x: 420 },
+    to: { x: -600 },
+    delay: 8000,
+    config: { duration: 8000 },
+    onRest: () => update2(16000)
+
+  }));
+
+  const update = (delay) => {
+    setStyle({
+      from: { x: 720 },
+      to: { x: -350 },
+      delay: delay,
+      config: { duration: 8000 },
+      loop: true,
+    })
+  }
+  const update2 = (delay) => {
+
+    setStyle2({
+      from: { x: 420 },
+      to: { x: -600 },
+      delay: delay,
+      config: { duration: 8000 },
+    })
+  }
+
+  const style3 = useSpring({
+    from: { x: 320 },
+    to: { x: -900 },
+    delay: 15400,
+    config: { duration: 8000 },
+    loop: true
+
+  })
 
   const poppingOutAnimation = (delay) => useSpring({
     from: { x: 0, y: 0, zoom: 0, scale: 0 },
@@ -41,13 +74,152 @@ export default function Banner() {
     delay: delay
   });
 
-  const textMovingAnimation = (delay) => useSpring({
-    loop: true,
-    from: { transform: 'translateX(100%)' },
-    to: { transform: 'translateX(-100%)' },
-    config: { mass: 1, tension: 280, friction: 120, duration: 10000 },
-    delay: delay
-  });
+  const [anim1, setAnim1] = useSpring(() => ({
+    from: { x: 0, y: 0, opacity: 0, scale: 0 },
+    to: [
+      { x: 0, y: 0, opacity: 1, scale: 1 },
+      { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+    ],
+
+    delay: 2000,
+    config: { duration: 500 },
+
+    onRest: () => update3(1)
+  }));
+  const [anim2, setAnim2] = useSpring(() => ({
+    from: { x: 0, y: 0, opacity: 0, scale: 0 },
+    to: [
+      { x: 0, y: 0, opacity: 1, scale: 1 },
+      { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+    ],
+    delay: 5500,
+    config: { duration: 500 },
+
+    onRest: () => update3(2)
+  }));
+  const [anim3, setAnim3] = useSpring(() => ({
+    from: { x: 0, y: 0, opacity: 0, scale: 0 },
+    to: [
+      { x: 0, y: 0, opacity: 1, scale: 1 },
+      { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+    ],
+    delay: 9000,
+    config: { duration: 500 },
+
+    onRest: () => update3(3)
+  }));
+  const [anim4, setAnim4] = useSpring(() => ({
+    from: { x: 0, y: 0, opacity: 0, scale: 0 },
+    to: [
+      { x: 0, y: 0, opacity: 1, scale: 1 },
+      { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+    ],
+    delay: 13000,
+    config: { duration: 500 },
+
+    onRest: () => update3(4)
+  }));
+  const [anim5, setAnim5] = useSpring(() => ({
+    from: { x: 0, y: 0, opacity: 0, scale: 0 },
+    to: [
+      { x: 0, y: 0, opacity: 1, scale: 1 },
+      { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+    ],
+    delay: 16500,
+    config: { duration: 500 },
+
+    onRest: () => update3(5)
+  }));
+  const [anim6, setAnim6] = useSpring(() => ({
+    from: { x: 0, y: 0, opacity: 0, scale: 0 },
+    to: [
+      { x: 0, y: 0, opacity: 1, scale: 1 },
+      { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+    ],
+    delay: 20000,
+    config: { duration: 500 },
+
+    onRest: () => update3(6)
+  }));
+  const [anim7, setAnim7] = useSpring(() => ({
+    from: { x: 0, y: 0, opacity: 0, scale: 0 },
+    to: [
+      { x: 0, y: 0, opacity: 1, scale: 1 },
+      { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+    ],
+    delay: 24000,
+    config: { duration: 500 },
+
+    onRest: () => update3(7)
+  }));
+  const [anim8, setAnim8] = useSpring(() => ({
+    from: { x: 0, y: 0, opacity: 0, scale: 0 },
+    to: [
+      { x: 0, y: 0, opacity: 1, scale: 1 },
+      { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+    ],
+    delay: 28000,
+    config: { duration: 500 },
+
+    onRest: () => update3(8)
+  }));
+
+  const [anim9, setAnim9] = useSpring(() => ({
+    from: { x: 0, y: 0, opacity: 0, scale: 0 },
+    to: [
+      { x: 0, y: 0, opacity: 1, scale: 1 },
+      { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+    ],
+    delay: 31500,
+    config: { duration: 500 },
+
+    onRest: () => update3(9)
+  }));
+
+
+  const update3 = (value) => {
+    let obj = {
+      from: { x: 0, y: 0, opacity: 0, scale: 0 },
+      to: [
+        { x: 0, y: 0, opacity: 1, scale: 1 },
+        { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+      ],
+      delay: 31700,
+      config: { duration: 500 },
+      loop: true,
+    }
+    switch (value) {
+      case 1:
+        setAnim1(obj)
+        break;
+      case 2:
+        setAnim2(obj)
+        break;
+      case 3:
+        setAnim3(obj)
+        break;
+      case 4:
+        setAnim4(obj)
+        break;
+      case 5:
+        setAnim5(obj)
+        break;
+      case 6:
+        setAnim6(obj)
+        break;
+      case 7:
+        setAnim7(obj)
+        break;
+      case 8:
+        setAnim8(obj)
+        break;
+      default:
+        setAnim9(obj)
+
+    }
+  }
+
+
 
   const handleSpeakerClick = () => {
     svgRef.current?.play();
@@ -68,7 +240,7 @@ export default function Banner() {
             <div style={{ position: 'relative' }} >
               <animated.div style={poppingOutAnimation(1100)} >
                 <Image className='main-section-inner' src={MainImage2} width={112} height={112} />
-                <animated.div className='main-section-image2-nametag-container' style={poppingOutAnimation(2100)} >
+                <animated.div className='main-section-image2-nametag-container' style={{ ...anim1 }} >
                   <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Micheal Keen</span>
                     <span className='nametag-designation'>Pilot</span>
@@ -83,7 +255,7 @@ export default function Banner() {
               <div style={{ position: 'relative' }}>
 
                 <Image className='main-section-inner' src={MainImage3} width={64} height={64} />
-                <animated.div className='main-section-image2-nametag-containerleft' style={poppingOutAnimation(1700)} >
+                <animated.div className='main-section-image2-nametag-containerleft' style={{ ...anim8 }} >
                   {/* <div className='main-section-image2-nametag-containerleft'> */}
                   <div className='main-section-image2-nametagleft'>
                     <span className='nametag-title'>Sandra Lue</span>
@@ -107,7 +279,7 @@ export default function Banner() {
             <animated.div style={poppingOutAnimation(800)} >
               <div style={{ position: 'relative' }} >
                 <Image className='main-section-inner' src={MainImage4} width={112} height={112} />
-                <animated.div className='main-section-image2-nametag-container' style={poppingOutAnimation(1800)} >
+                <animated.div className='main-section-image2-nametag-container' style={{ ...anim6 }} >
                   <div className='main-section-image2-nametag' style={{ minWidth: 193 }}>
                     <span className='nametag-title'>John Hassel</span>
                     <span className='nametag-designation'>Software Engineer</span>
@@ -121,7 +293,7 @@ export default function Banner() {
             <animated.div style={poppingOutAnimation(1200)} >
               <div style={{ position: 'relative' }} >
                 <Image className='main-section-inner' src={MainImage5} width={88} height={88} />
-                <animated.div className='main-section-image2-nametag-container' style={poppingOutAnimation(2200)} >
+                <animated.div className='main-section-image2-nametag-container' style={{ ...anim3 }} >
                   <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Daniella Fox</span>
                     <span className='nametag-designation'>Accountant</span>
@@ -135,7 +307,7 @@ export default function Banner() {
             <animated.div style={poppingOutAnimation(900)} >
               <div style={{ position: 'relative' }} >
                 <Image className='main-section-inner' src={MainImage6} width={48} height={48} />
-                <animated.div className='main-section-image2-nametag-container' style={poppingOutAnimation(1900)} >
+                <animated.div className='main-section-image2-nametag-container' style={{ ...anim2 }} >
                   <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Brian Walker</span>
                     <span className='nametag-designation'>Athelete</span>
@@ -149,7 +321,7 @@ export default function Banner() {
             <animated.div style={poppingOutAnimation(600)} >
               <div style={{ position: 'relative' }} >
                 <Image className='main-section-inner' src={MainImage7} width={64} height={64} />
-                <animated.div className='main-section-image2-nametag-container' style={poppingOutAnimation(1600)} >
+                <animated.div className='main-section-image2-nametag-container' style={{ ...anim9 }} >
                   <div className='main-section-image2-nametag' style={{ minWidth: 202 }}>
                     <span className='nametag-title'>Sue Chan</span>
                     <span className='nametag-designation'>Marteking Manager</span>
@@ -178,7 +350,7 @@ export default function Banner() {
                     }}
                   /> */}
                 <Image className='main-section-inner' src={MainImage8} width={110} height={110} />
-                <animated.div className='main-section-image2-nametag-containerleft' style={poppingOutAnimation(2300)} >
+                <animated.div className='main-section-image2-nametag-containerleft' style={{ ...anim4 }} >
                   <div className='main-section-image2-nametagleft'>
                     <span className='nametag-title'>Aisha Ali</span>
                     <span className='nametag-designation'>Philosophy Student</span>
@@ -192,7 +364,7 @@ export default function Banner() {
             <animated.div style={poppingOutAnimation(300)} >
               <div style={{ position: 'relative' }} >
                 <Image className='main-section-inner' src={MainImage9} width={110} height={110} />
-                <animated.div className='main-section-image2-nametag-container' style={poppingOutAnimation(1500)} >
+                <animated.div className='main-section-image2-nametag-container' style={{ ...anim5 }} >
                   <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Daniel Trump</span>
                     <span className='nametag-designation'>Professor</span>
@@ -212,7 +384,7 @@ export default function Banner() {
             <animated.div style={poppingOutAnimation(1000)} >
               <div style={{ position: 'relative' }} >
                 <Image className='main-section-inner' src={MainImage11} width={118} height={118} />
-                <animated.div className='main-section-image2-nametag-container' style={poppingOutAnimation(1900)} >
+                <animated.div className='main-section-image2-nametag-container' style={{ ...anim7 }} >
                   <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Thabo Khoza</span>
                     <span className='nametag-designation'>Artist</span>
@@ -243,7 +415,7 @@ export default function Banner() {
 
         </Box>
         <div className='banner-info-box'>
-          <div style={{ color: 'white', width: '60%', textAlign: 'left', }}>
+          <div style={{ color: 'white', width: '60%', textAlign: 'left', overflow: 'hidden' }}>
             <div style={{ display: 'flex' }}>
 
               <div style={{ fontSize: 60, fontWeight: 'bold', fontFamily: 'Sofia-Pro', marginRight: 15 }}>
@@ -270,14 +442,13 @@ export default function Banner() {
             <br />
 
             <div style={{ fontSize: '1.2em', textDecoration: 'underline' }}>Read more</div>
-            <animated.div style={{ fontFamily: 'Sofia-Pro', marginTop: 10, ...textMovingAnimation(0) }}>
-              Hi Thomas, how can I grow my business in ...
-            </animated.div>
-            <animated.div style={{ fontFamily: 'Sofia-Pro', marginTop: 10, ...textMovingAnimation(1500) }}>
-              Hi Peter, I'm new here please guide me
-            </animated.div>
-            <animated.div style={{ fontFamily: 'Sofia-Pro', marginTop: 10, ...textMovingAnimation(600) }}>
-              Morning Michel, My pet is feeling dizziness
+            <animated.div style={{ animationIterationCount: 'infinite', display: 'flex', flexDirection: 'row', position: 'absolute', marginTop: '50px', overflow: "hidden", left: 145 }}>
+              <animated.div style={{ fontFamily: 'Sofia-Pro', opacity: '0.6', fontSize: '15px', ...style }}>{`Hi Thomas, how can I grow my business in ...`}</animated.div>
+
+              <animated.div style={{ fontFamily: 'Sofia-Pro', opacity: '0.6', fontSize: '15px', ...style2 }}>Hi Peter, I'm new here please guide me</animated.div>
+
+
+              <animated.div style={{ fontFamily: 'Sofia-Pro', opacity: '0.6', fontSize: '15px', ...style3 }}>Morning Michel, My pet is feeling dizziness</animated.div>
             </animated.div>
 
           </div>

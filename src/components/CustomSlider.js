@@ -3,6 +3,7 @@ import { Slider } from 'antd';
 import useIsInViewport from 'use-is-in-viewport'
 
 const CustomSlider = React.forwardRef(function CustomSlider(props, parentRef) {
+   
     const [isDivInViewport, progressBarReference] = useIsInViewport({
         target: parentRef
     })
@@ -13,7 +14,6 @@ const CustomSlider = React.forwardRef(function CustomSlider(props, parentRef) {
         isDivInViewport ? setValue(item.defaultValue) : null
     }, [isDivInViewport])
 
-
     return (
 
         <div ref={progressBarReference} className='skills-banner-slider-container' style={{ alignSelf: index % 2 === 0 ? 'flex-start' : 'flex-end' }}>
@@ -21,8 +21,8 @@ const CustomSlider = React.forwardRef(function CustomSlider(props, parentRef) {
                 <span className='skills-banner-subheading'>{item.title}</span>
                 <span className='skills-banner-rank'>Skills: {item.defaultValue / 10}/10</span>
             </div>
-            <div className='skills-banner-slider' style={{ ['--sliderColor']: item.color, }}>
-                <Slider handleStyle={{ transition: '1.5s ease', transitionDelay: '0.5s' }} value={value} tooltipVisible={false} />
+            <div className='skills-banner-slider' style={{ ['--sliderColor']: item.color,['--delayTime']:index == 0? '0.5s':index == 1?'1.2s':'2.0s' }}>
+                <Slider handleStyle={{ transition: '1.5s ease', transitionDelay: index == 0? '0.5s':index == 1?'1.2s':'2.0s' }} value={value} tooltipVisible={false}  />
             </div>
         </div>
     )

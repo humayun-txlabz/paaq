@@ -28,7 +28,6 @@ button {
 }
 
 .banner-info-box {
-<<<<<<< HEAD
     padding: 5%;
     padding-top: 4%;
     padding-bottom: 14px;
@@ -43,7 +42,6 @@ button {
     -webkit-animation: gradient 30s ease infinite;
     animation: gradient 30s ease infinite;
   }
-=======
   padding: 5%;
   padding-top: 4%;
   padding-bottom: 14px;
@@ -58,7 +56,6 @@ button {
   -webkit-animation: gradient 15s ease infinite;
   animation: gradient 15s ease infinite;
 }
->>>>>>> Feat_Home_Banner_Animation
 
 /* Gradient animation */
 @keyframes gradient {

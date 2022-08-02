@@ -858,11 +858,13 @@ button {
 
 }
 
-.title1{
-  animation: ani1 10s  infinite;
+.box2{
+  font-size: 6em;
+  font-weight: 500;
+  font-family: 'SofiaPro-Soft';
 }
-.title2{
-  animation: ani2 10s  infinite;
+.title1{
+  animation: ani1 10s;
 }
 @keyframes ani1{
   0%{
@@ -884,5 +886,57 @@ button {
   }
   100%{
     opacity: 0;
+  }
+}
+
+
+.box3{
+  animation: ani11 2s;
+  animation-iteration-count: 1;
+  border-right: .10em solid transparent;
+  margin: 0px 10px;
+  line-height: 88px;
+  animation-delay: 3s;
+}
+.box4{
+  animation: ani11 2s;
+  animation-iteration-count: 1;
+  border-right: .10em solid transparent;
+  margin: 0px 10px;
+  line-height: 88px;
+  animation-delay: 3.5s;
+
+}
+.box5{
+  animation: ani11 2s;
+  animation-iteration-count: 1;
+  border-right: .10em solid transparent;
+  margin: 0px 10px;
+  line-height: 88px;
+  animation-delay: 4s;
+}
+.box6{
+  animation: ani11 2s;
+  animation-iteration-count: 1;
+  border-right: .10em solid transparent;
+  margin: 0px 10px;
+  line-height: 88px;
+  animation-delay: 4.5s;
+
+}
+
+@keyframes ani11{
+  0%{
+    border-right: .10em solid transparent;
+    opacity: 1;
+  }
+  50%{
+    border-right: .10em solid black;
+    opacity: 1;
+  }
+  100%{
+    /* border-right:  none; */
+    border-right:  .10em solid transparent;
+    opacity: 1;
   }
 }

@@ -225,6 +225,14 @@ export default function Banner() {
     svgRef.current?.play();
   };
 
+  const textAnimation = (delay) => useSpring({
+    from: { x: 0, y: 0, opacity: 0 },
+    to: { x: 0, y: 0, opacity: 1},
+    delay: delay,
+    config: { mass: 1, tension: 180, friction: 12 },
+    velocity: 10,
+  });
+
   return (
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
@@ -398,16 +406,34 @@ export default function Banner() {
             // onClick={()=> router.push('/blogs')} 
             // className='banner-title-container'
             style={{ display: 'flex', justifyContent: 'center', position: 'absolute', top: 0, width: '100%' }}
-            >
-            {/* <div className='banner-title'> */}
-              {/* <FadeAnimation /> */}
-              <div className='box title1'>
-                  Please Ask <br />Any Question
+          >
+
+            <div className='box title1'>
+              PAAQ
+            </div>
+            <div className='box2'>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <animated.div style={textAnimation(4000)} >
+
+                  <p className='box3'>Please</p>
+                </animated.div>
+                <animated.div style={textAnimation(4500)} >
+
+                  <p className='box4'>Ask</p>
+                </animated.div>
+
               </div>
-              <div className='box title2'>
-                  PAAQ
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <animated.div style={textAnimation(5000)} >
+                  <p className='box5'>Any</p>
+                </animated.div>
+                <animated.div style={textAnimation(5500)} >
+
+                  <p className='box6'>Question</p>
+                </animated.div>
+
               </div>
-            {/* </div> */}
+            </div>
           </div>
           <div style={{
             margin: '30px 0px',

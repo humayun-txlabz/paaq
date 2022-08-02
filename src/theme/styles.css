@@ -42,20 +42,6 @@ button {
     -webkit-animation: gradient 30s ease infinite;
     animation: gradient 30s ease infinite;
   }
-  padding: 5%;
-  padding-top: 4%;
-  padding-bottom: 14px;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 100px;
-  height: 550px;
-  background: linear-gradient(270deg, #7AE2D6 0%, #4293C5 100%);
-  background-size: 400% 400%;
-  border-radius: 40px;
-  display: flex;
-  -webkit-animation: gradient 15s ease infinite;
-  animation: gradient 15s ease infinite;
-}
 
 /* Gradient animation */
 @keyframes gradient {

@@ -20,7 +20,7 @@ export default function IndexPage() {
           <Connections />
           <AskQuestionBanner />
           <SkillsBanner />
-           {/* <EarnMoneyBanner /> */}
+          <EarnMoneyBanner />
         </Layout>
       </StickyProvider>
     </ThemeProvider>

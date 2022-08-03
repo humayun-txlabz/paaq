@@ -112,7 +112,7 @@ const styles = {
         borderRadius: '20px',
         marginTop: '80px',
         display: 'flex',
-        flexDirection: 'row-reverse',
+        flexDirection: 'row',
         '@media screen and (max-width: 720px)': {
             flexDirection: 'column',
             marginTop: '10px',

@@ -42,6 +42,23 @@ button {
     -webkit-animation: gradient 30s ease infinite;
     animation: gradient 30s ease infinite;
   }
+  .skills-banner-container {
+    padding: 5%;
+    padding-bottom: 0;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 480px;
+    background: linear-gradient(270deg, #119888 0%, #4293C5 100%);
+    background-size: 400% 400%;
+    border-radius: 40px;
+    display: flex;
+    padding-top: 0;
+    align-items: center;
+    -webkit-animation: gradient 30s ease infinite;
+    animation: gradient 30s ease infinite;
+  
+  }
   
 
 /* Gradient animation */
@@ -244,23 +261,10 @@ button {
   padding-top: 170px;
 }
 
-.skills-banner-container {
-  padding: 5%;
-  padding-bottom: 0;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 100px;
-  height: 480px;
-  background: linear-gradient(270deg, #7AE2D6 0%, #4293C5 100%);
-  border-radius: 40px;
-  display: flex;
-  padding-top: 0;
-  align-items: center;
 
-}
 
 .skills-banner-imagevector {
-  background: url(/VectorOval.png);
+
   background-position: center;
   background-repeat: no-repeat;
   height: 500px;
@@ -471,7 +475,6 @@ button {
 .earn-money-question p {
   font-size: 13px;
   font-weight: 600;
-  font-style: italic;
   font-family: 'Sofia-Pro';
   opacity: 0;
   color: #fff;
@@ -744,13 +747,7 @@ button {
   white-space: nowrap;
 }
 
-.solution-icon {
-  width: 24px;
-  height: 24px;
-  background: url(/bulb2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 
 /* Animation */
 .anim-typewriter{
@@ -921,6 +918,8 @@ button {
   font-family: "Sofia-Pro";
   font-weight: 500;
   color: #B9B9B9;
+  display: flex;
+  flex-direction: row;
   margin-top: 10px;
 }
 .banner-title-container{

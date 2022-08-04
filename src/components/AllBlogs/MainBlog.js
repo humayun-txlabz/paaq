@@ -115,6 +115,39 @@ const richTextOptions = {
 
 }
 
+const Boldd = ({ children }) => (
+  <div>
+
+<p className="bold">{children}</p>
+  </div>
+);
+
+const Textt = ({ children }) => (
+  <div>
+
+<p className="align-center">{children}</p>
+  </div>
+);
+
+const options3 = {
+  renderMark: {
+    [MARKS.BOLD]: text => (
+      <div>
+
+        <Boldd>{text}</Boldd>
+      </div>
+    ),
+  },
+  renderNode: {
+    [BLOCKS.PARAGRAPH]: (node, children) => (
+    <div>
+      <Textt>{children}</Textt>
+    </div>
+    ),
+  },
+  // renderText: text => text.replace('!', '?'),
+};
+
 const MainBlog = (props) => {
 
   const { posts } = props;
@@ -197,8 +230,8 @@ const MainBlog = (props) => {
             ))
             }
           </div>
-          <div>
-            {documentToReactComponents(posts.items[0].fields.detail, richTextOptions)}
+          <div className='blog-items' style={{ flexDirection: 'column', flexWrap: 'nowrap'}}>
+            {documentToReactComponents(posts.items[0].fields.detail, options3)}
           </div>
         </div>
     )

@@ -13,12 +13,12 @@ export default function Connections() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <span className='banner-title'>
+            <span className='banner-title banner-title-mobile'>
               Our Connections
             </span>
           </div>
         </Box>
-        <div style={{ display: 'flex', justifyContent: 'space-evenly', marginTop: 50, width: '80%', margin: '0 auto' }}>
+        <div className='box-container-connection' style={{ display: 'flex', justifyContent: 'space-evenly', marginTop: 50, width: '80%', margin: '0 auto' }}>
           <div className='connections-info-box'>
 
             <div style={{ color: 'white', fontSize: 18, fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -32,21 +32,21 @@ export default function Connections() {
               />
             </div>
             <div style={{ color: 'white', textAlign: 'left', marginTop: '20%' }}>
-              <div style={{ fontSize: 38, fontWeight: 'bold', color: '#252F44', fontFamily: 'Sofia-Pro' }}>01. Professionally</div>
+              <div className='connection-heading' style={{ fontSize: 38, fontWeight: 'bold', color: '#252F44', fontFamily: 'Sofia-Pro' }}>01. Professionally</div>
 
-              <div style={{ fontSize: 18, marginTop: 20, color: '#5B5B5B', lineHeight: 2, fontWeight: 'lighter', fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <div className='connection-detail' style={{ fontSize: 18, marginTop: 20, color: '#5B5B5B', lineHeight: 2, fontWeight: 'lighter', fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
                 A professional is someone who possesses a specific set of skills related to their profession; as such, it is only reasonable to share your knowledge with others. In the example of a cameraman, the effective use of a camera is one of his skills.
               </div>
               <br />
             </div>
           </div>
-          <div className='connections-info-box' style={{ paddingTop: '5%', paddingBottom: 0, paddingRight: 0 }}>
+          <div className='connections-info-box connections-info-box-mobile' style={{ paddingTop: '5%', paddingBottom: 0, paddingRight: 0 }}>
 
             <div style={{ color: 'white', textAlign: 'left', paddingRight: '11%' }}>
-              <div style={{ fontSize: 38, fontWeight: 'bold', color: '#252F44', fontFamily: 'Sofia-Pro' }}>02. Socially</div>
+              <div className='connection-heading' style={{ fontSize: 38, fontWeight: 'bold', color: '#252F44', fontFamily: 'Sofia-Pro' }}>02. Socially</div>
 
-              <div style={{ fontSize: 18, marginTop: 20, color: '#5B5B5B', lineHeight: 2, fontWeight: 'lighter', fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <div className='connection-detail' style={{ fontSize: 18, marginTop: 20, color: '#5B5B5B', lineHeight: 2, fontWeight: 'lighter', fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
                 It is nice to enjoy a delicious meal and a chilled
                 cocktail on a sunny day or to travel the world with
@@ -55,7 +55,7 @@ export default function Connections() {
                 is even better.
               </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <div className='banner-image-connection-mobile' style={{ display: 'flex', justifyContent: 'flex-end' }}>
               <Image
                 src={BannerImg2}
                 alt="Picture of the phone"
@@ -63,7 +63,7 @@ export default function Connections() {
                   width: 400,
                   height: '100%',
                   objectFit: 'cover',
-                  borderRadius: 40
+                  borderRadius: 40,
                 }}
               />
             </div>

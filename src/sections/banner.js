@@ -1,8 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import React, { useState, useEffect } from 'react';
-import { jsx } from 'theme-ui';
-import Image from 'next/image';
+import { jsx, Image } from 'theme-ui';
+
 import { Container, Box, Button } from 'theme-ui';
 import { animated, useSprings, useSpring, to, update } from "react-spring";
 import BannerImg from 'assets/banner-phone.png';
@@ -227,7 +227,7 @@ export default function Banner() {
 
   const textAnimation = (delay) => useSpring({
     from: { x: 0, y: 0, opacity: 0 },
-    to: { x: 0, y: 0, opacity: 1},
+    to: { x: 0, y: 0, opacity: 1 },
     delay: delay,
     config: { mass: 1, tension: 180, friction: 12 },
     velocity: 10,
@@ -240,19 +240,19 @@ export default function Banner() {
 
           <div className='main-section-image1' style={{ minWidth: 60, minHeight: 60 }}>
             <animated.div style={poppingOutAnimation(0)} >
-              <Image className='main-section-inner' src={MainImage1} width={60} height={60} />
+              <Image className='main-section-inner main-section-inner-image1' src={MainImage1} />
             </animated.div>
           </div>
 
           <div className='main-section-image2'>
             <div style={{ position: 'relative' }} >
               <animated.div style={poppingOutAnimation(1100)} >
-                <Image className='main-section-inner' src={MainImage2} width={112} height={112} />
+                <Image className='main-section-inner main-section-inner-image2' src={MainImage2} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim1 }} >
-                  <div className='main-section-image2-nametag'>
+                  {/* <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Micheal Keen</span>
                     <span className='nametag-designation'>Pilot</span>
-                  </div>
+                  </div> */}
                 </animated.div>
               </animated.div>
             </div>
@@ -262,13 +262,13 @@ export default function Banner() {
             <animated.div style={poppingOutAnimation(500)} >
               <div style={{ position: 'relative' }}>
 
-                <Image className='main-section-inner' src={MainImage3} width={64} height={64} />
+                <Image className='main-section-inner main-section-inner-image3' src={MainImage3} />
                 <animated.div className='main-section-image2-nametag-containerleft' style={{ ...anim8 }} >
                   {/* <div className='main-section-image2-nametag-containerleft'> */}
-                  <div className='main-section-image2-nametagleft'>
+                  {/* <div className='main-section-image2-nametagleft'>
                     <span className='nametag-title'>Sandra Lue</span>
                     <span className='nametag-designation'>Beautician</span>
-                  </div>
+                  </div> */}
                   {/* </div> */}
                 </animated.div>
               </div>
@@ -286,12 +286,12 @@ export default function Banner() {
           <div className='main-section-image4'>
             <animated.div style={poppingOutAnimation(800)} >
               <div style={{ position: 'relative' }} >
-                <Image className='main-section-inner' src={MainImage4} width={112} height={112} />
+                <Image className='main-section-inner main-section-inner-image4' src={MainImage4} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim6 }} >
-                  <div className='main-section-image2-nametag' style={{ minWidth: 193 }}>
+                  {/* <div className='main-section-image2-nametag' style={{ minWidth: 193 }}>
                     <span className='nametag-title'>John Hassel</span>
                     <span className='nametag-designation'>Software Engineer</span>
-                  </div>
+                  </div> */}
                 </animated.div>
               </div>
             </animated.div>
@@ -300,12 +300,12 @@ export default function Banner() {
           <div className='main-section-image5'>
             <animated.div style={poppingOutAnimation(1200)} >
               <div style={{ position: 'relative' }} >
-                <Image className='main-section-inner' src={MainImage5} width={88} height={88} />
+                <Image className='main-section-inner main-section-inner-image5' src={MainImage5} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim3 }} >
-                  <div className='main-section-image2-nametag'>
+                  {/* <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Daniella Fox</span>
                     <span className='nametag-designation'>Accountant</span>
-                  </div>
+                  </div> */}
                 </animated.div>
               </div>
             </animated.div>
@@ -314,12 +314,12 @@ export default function Banner() {
           <div className='main-section-image6'>
             <animated.div style={poppingOutAnimation(900)} >
               <div style={{ position: 'relative' }} >
-                <Image className='main-section-inner' src={MainImage6} width={48} height={48} />
+                <Image className='main-section-inner main-section-inner-image6' src={MainImage6} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim2 }} >
-                  <div className='main-section-image2-nametag'>
+                  {/* <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Brian Walker</span>
                     <span className='nametag-designation'>Athelete</span>
-                  </div>
+                  </div> */}
                 </animated.div>
               </div>
             </animated.div>
@@ -328,12 +328,12 @@ export default function Banner() {
           <div className='main-section-image7'>
             <animated.div style={poppingOutAnimation(600)} >
               <div style={{ position: 'relative' }} >
-                <Image className='main-section-inner' src={MainImage7} width={64} height={64} />
+                <Image className='main-section-inner main-section-inner-image7' src={MainImage7} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim9 }} >
-                  <div className='main-section-image2-nametag' style={{ minWidth: 202 }}>
+                  {/* <div className='main-section-image2-nametag' style={{ minWidth: 202 }}>
                     <span className='nametag-title'>Sue Chan</span>
                     <span className='nametag-designation'>Marteking Manager</span>
-                  </div>
+                  </div> */}
                 </animated.div>
               </div>
             </animated.div>
@@ -357,12 +357,12 @@ export default function Banner() {
                       ...styles2,
                     }}
                   /> */}
-                <Image className='main-section-inner' src={MainImage8} width={110} height={110} />
+                <Image className='main-section-inner main-section-inner-image8' src={MainImage8} />
                 <animated.div className='main-section-image2-nametag-containerleft' style={{ ...anim4 }} >
-                  <div className='main-section-image2-nametagleft'>
+                  {/* <div className='main-section-image2-nametagleft'>
                     <span className='nametag-title'>Aisha Ali</span>
                     <span className='nametag-designation'>Philosophy Student</span>
-                  </div>
+                  </div> */}
                 </animated.div>
               </div>
             </animated.div>
@@ -371,12 +371,12 @@ export default function Banner() {
           <div className='main-section-image9'>
             <animated.div style={poppingOutAnimation(300)} >
               <div style={{ position: 'relative' }} >
-                <Image className='main-section-inner' src={MainImage9} width={110} height={110} />
+                <Image className='main-section-inner main-section-inner-image9' src={MainImage9} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim5 }} >
-                  <div className='main-section-image2-nametag'>
+                  {/* <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Daniel Trump</span>
                     <span className='nametag-designation'>Professor</span>
-                  </div>
+                  </div> */}
                 </animated.div>
               </div>
             </animated.div>
@@ -384,19 +384,19 @@ export default function Banner() {
 
           <div className='main-section-image10'>
             <animated.div style={poppingOutAnimation(700)} >
-              <Image className='main-section-inner' src={MainImage10} width={64} height={64} />
+              <Image className='main-section-inner main-section-inner-image10' src={MainImage10} />
             </animated.div>
           </div>
 
           <div className='main-section-image11'>
             <animated.div style={poppingOutAnimation(1000)} >
               <div style={{ position: 'relative' }} >
-                <Image className='main-section-inner' src={MainImage11} width={118} height={118} />
+                <Image className='main-section-inner main-section-inner-image11' src={MainImage11} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim7 }} >
-                  <div className='main-section-image2-nametag'>
+                  {/* <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Thabo Khoza</span>
                     <span className='nametag-designation'>Artist</span>
-                  </div>
+                  </div> */}
                 </animated.div>
               </div>
             </animated.div>
@@ -404,11 +404,11 @@ export default function Banner() {
 
           <div
             // onClick={()=> router.push('/blogs')} 
-            // className='banner-title-container'
-            style={{ display: 'flex', justifyContent: 'center', position: 'absolute', top: 0, width: '100%' }}
+            className='banner-titel-mobile'
+            style={styles.bannerTitle}
           >
 
-            <div className='box title1'>
+            <div className='box  title1'>
               PAAQ
             </div>
             <div className='box2'>
@@ -435,13 +435,8 @@ export default function Banner() {
               </div>
             </div>
           </div>
-          <div style={{
-            margin: '30px 0px',
-            fontFamily: 'Sofia-Pro',
-            color: 'black',
-            lineHeight: 1.2,
-            fontSize: 20
-          }}>
+          <div style={styles.bannerTitleMobile}
+            className="banner-titel-mobile">
             Earn money by answering questions based on <br />
             your skills and knowledge.
           </div>
@@ -449,18 +444,18 @@ export default function Banner() {
 
         </Box>
         <div className='banner-info-box'>
-          <div style={{ color: 'white', width: '60%', textAlign: 'left', overflow: 'hidden' }}>
+          <div className='banner-info-text-container' style={{ color: 'white', width: '60%', textAlign: 'left', overflow: 'hidden' }}>
             <div style={{ display: 'flex' }}>
 
-              <div style={{ fontSize: 60, fontWeight: 'bold', fontFamily: 'Sofia-Pro', marginRight: 15 }}>
+              <div className='mobile-what-text' style={{ fontSize: 60, fontWeight: 'bold', fontFamily: 'Sofia-Pro', marginRight: 15 }}>
                 What is PAAQ
               </div>
-              <Image style={{ cursor: 'pointer'}} src={SpeakerIcon} width={49} height={39} onClick={() => handleSpeakerClick()} />
+              <Image className='mobile-speaker-icon' style={{ cursor: 'pointer' }} src={SpeakerIcon} width={49} height={39} onClick={() => handleSpeakerClick()} />
               <audio ref={svgRef} id="audio" src='/paaq-audio.mp3' ></audio>
 
             </div>
 
-            <div style={{
+            <div className='web-show-paaq-text' style={{
               fontSize: 18, marginTop: 20, lineHeight: 1.5, fontWeight: 'lighter',
               fontFamily: 'SofiaPro-Soft', display: 'flex', justifyContent: 'center', alignItems: 'center'
             }}>
@@ -473,10 +468,20 @@ export default function Banner() {
               facilitate people's exchange of valuable insights and knowledge
               as well as earn money from answering questions.
             </div>
+            <div className='mobile-show-paaq-text' style={{
+              fontSize: 18, marginTop: 20, lineHeight: 1.5, fontWeight: 'lighter',
+              fontFamily: 'SofiaPro-Soft', display: 'flex', justifyContent: 'center', alignItems: 'center'
+            }}>
+
+              “PAAQ is a question-and-answer social media application that
+              connects experts in their field with people interested in their craft
+              socially and professionally.”
+    
+            </div>
             <br />
 
-            <div style={{ fontSize: '1.2em', textDecoration: 'underline' }}>Read more</div>
-            <animated.div style={{ animationIterationCount: 'infinite', display: 'flex', flexDirection: 'row', position: 'absolute', marginTop: '50px', overflow: "hidden", left: 145 }}>
+            <div className='read-more-mobile' style={{ fontSize: '1.2em', textDecoration: 'underline' }}>Read more</div>
+            <animated.div className='animation-text-mobile' style={{ animationIterationCount: 'infinite', display: 'flex', flexDirection: 'row', position: 'absolute', marginTop: '50px', overflow: "hidden", left: 145 }}>
               <animated.div style={{ fontFamily: 'Sofia-Pro', opacity: '0.6', fontSize: '15px', ...style }}>{`Hi Thomas, how can I grow my business in ...`}</animated.div>
 
               <animated.div style={{ fontFamily: 'Sofia-Pro', opacity: '0.6', fontSize: '15px', ...style2 }}>Hi Peter, I'm new here please guide me</animated.div>
@@ -486,12 +491,11 @@ export default function Banner() {
             </animated.div>
 
           </div>
-          <div style={{ color: 'white', fontSize: 18, fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '40%' }}>
-            <Image
+          <div className='banner-info-text-container2' style={{ color: 'white', fontSize: 18, fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '40%' }}>
+            <img
               src={BannerImg}
-              alt="Picture of the phone"
-              width={340}
-              height={500}
+              className="banner-image-mobile"
+            
             />
           </div>
         </div>
@@ -506,6 +510,7 @@ const styles = {
     pb: [2, null, 0, null, 2, 0, null, 5],
     position: 'relative',
     zIndex: 2,
+
     container: {
       minHeight: 'inherit',
       display: 'flex',
@@ -531,4 +536,31 @@ const styles = {
     //   lineHeight: '86px',
     // }
   },
+  bannerTitle: {
+    display: 'flex',
+    justifyContent: 'center',
+    position: 'absolute',
+    width: '100%',
+    top: 0,
+  },
+  bannerTitleMobile: {
+    margin: '30px 0px',
+    fontFamily: 'Sofia-Pro',
+    color: 'black',
+    lineHeight: 1.2,
+    fontSize: 20,
+    '@media screen and (max-width: 720px)': {
+      marginTop: '0px !important',
+      marginBottom: '10px !important',
+      fontSize: '10px !important',
+    },
+  },
+  bannerWhatText: {
+    fontSize: 60,
+    fontWeight: 'bold',
+    fontFamily: 'Sofia-Pro',
+    marginRight: 15,
+    
+  },
+ 
 };

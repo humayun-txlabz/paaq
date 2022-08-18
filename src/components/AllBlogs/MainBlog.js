@@ -28,6 +28,7 @@ import Image9 from '../../assets/Images/blog9.png';
 import Image10 from '../../assets/Images/blog10.png';
 import Image11 from '../../assets/Images/blog13.png';
 import Image12 from '../../assets/Images/blog12.png';
+import Link from 'next/link';
 
 
 // function renderMedia(file) {
@@ -242,27 +243,33 @@ const MainBlog = (props) => {
         }
       ]
 
+      console.log('this is main blog', posts)
+
     return (
         <div className='blog-main'>
-          <TitleCard  title={'Our Blogs Simple Money Moves That Will Impact Your Finances in a Big Way'} />
-          <FeaturedCard />
+          <TitleCard  title={'Our Blogs'} />
+          {/* <FeaturedCard /> */}
           <div className='blog-items'>
-            {data.map((item, index) => (
+            {posts?.items.map((item, index) => (
+            //   <Link href={{
+            //     pathname: "blogDetails",
+            //     query: {
+            //         blog: item.details
+            //     }
+            // }}>
               <ItemCard blog={item} key={index} />
+              // </Link>
             ))
             }
           </div>
-          <FeaturedCard alignImageRight={true} />
+          {/* <FeaturedCard alignImageRight={true} />
           <div className='blog-items'>
 
             {data2.map((item, index) => (
               <ItemCard blog={item} key={index} />
             ))
             }
-          </div>
-          <div className='blog-items' style={{ flexDirection: 'column', flexWrap: 'nowrap'}}>
-            {documentToReactComponents(posts.items[0].fields.detail, richTextOptions)}
-          </div>
+          </div> */}
         </div>
     )
 }

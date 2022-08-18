@@ -17,27 +17,13 @@ const client = contentful.createClient({
 
 export async function getStaticProps (){
 
-  const posts = await client.getEntries();
-
-  console.log('this is itttt>>>', posts);
-
-  // client.getEntry('<entry_id>').then(function (entry) {
-  //   // logs the entry metadata
-  //   console.log(entry.sys);
-  
-  //   // logs the field with ID title
-  //   console.log(entry.fields.productName);
-  // });
-
-  // client.getEntries().then(function (entries) {
-  //   console.log('im inn get entriesss', entries)
-  //   // log the title for all the entries that have it
-  //   entries.items.forEach(function (entry) {
-  //     console.log( 'this isss ittt', entry);
-  //     // if (entry.fields.productName) {
-  //     // }
-  //   });
-  // });
+const posts = await client.getEntries({
+  content_type: 'mainBlogs'
+})
+.then((response) => {
+  return response;
+})
+.catch(console.error)
 
   return {
     props: {
@@ -60,12 +46,4 @@ export default function BlogsPage(props) {
       </StickyProvider>
     </ThemeProvider>
   );
-}
-
-const styles = {
-  blogItems: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    margin: '90px 90px'
-  }
 }

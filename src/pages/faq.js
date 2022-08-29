@@ -7,12 +7,46 @@ import Layout from 'components/layout';
 import { Container, Text, Image } from 'theme-ui';
 import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter';
 import FaqAccordion from 'components/faq-accordions';
-import { faqList } from 'constants/faqList1';
-import { faqSecurityList } from 'constants/faqSecurityList';
-import { faqProfile } from 'constants/faqProfile';
-import { faqVerification } from 'constants/faqVerification';
 
-export default function Faq() {
+import * as contentful from 'contentful';
+
+const client = contentful.createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    
+});
+export async function getStaticProps() {
+
+    const faqs = await client.getEntries({
+        content_type: 'faqs',
+    })
+        .then((response) => {
+
+            return response;
+        })
+        .catch((err) => {
+            console.log("Errriirrrrrr arha haiii", err)
+        })
+
+
+
+    return {
+        props: {
+            ...faqs
+        }
+    }
+};
+
+export default function Faq(props) {
+    const { items } = props;
+
+    function checkCategory(type) {
+        const result = items.filter(function checkMain(data) {
+            return data.fields.category === type;
+        });
+        return result;
+    }
+
     return (
         <ThemeProvider theme={theme}>
             <StickyProvider>
@@ -23,25 +57,25 @@ export default function Faq() {
                             <Text sx={styles.heading}>Frequently Asked Question</Text>
                         </Container>
                         <Container sx={styles.accordionContainer}>
-                             <FaqAccordion list={faqList} />
+                            <FaqAccordion list={checkCategory('main')} />
                         </Container>
                         <Container sx={styles.headingContainer}>
                             <Text sx={styles.headingInner}>Security & Privacy</Text>
                         </Container>
                         <Container sx={styles.accordionContaine2}>
-                             <FaqAccordion list={faqSecurityList} />
+                            <FaqAccordion list={checkCategory('security')} />
                         </Container>
                         <Container sx={styles.headingContainer}>
                             <Text sx={styles.headingInner}>Profile Settings</Text>
                         </Container>
                         <Container sx={styles.accordionContaine2}>
-                             <FaqAccordion list={faqProfile} />
+                            <FaqAccordion list={checkCategory('profile')} />
                         </Container>
                         <Container sx={styles.headingContainer}>
                             <Text sx={styles.headingInner}>Verification Badge</Text>
                         </Container>
                         <Container sx={styles.accordionContaine2}>
-                             <FaqAccordion list={faqVerification} />
+                            <FaqAccordion list={checkCategory('verification')} />
                         </Container>
                     </Container>
                     <AppAndPlayStoreFooter />
@@ -98,7 +132,7 @@ const styles = {
         fontWeight: '600',
         lineHeight: '66px',
         color: ' #252F44',
-        marginTop:"90px"
+        marginTop: "90px"
     },
     accordionContainer: {
         display: 'flex',

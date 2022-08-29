@@ -1,14 +1,11 @@
 // import Image from 'next/image';
 // import { Container, Box, Heading, Button, Image } from 'theme-ui'; 
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { renderToStaticMarkup } from 'react-dom/server';
 
 import { useState , useEffect } from 'react';
 
 import { BLOCKS, MARKS, INLINES } from '@contentful/rich-text-types';
-import DummyImage from "../../assets/Images/FeatureImage.png";
-import DummyImage2 from "../../assets/Images/FeatureImage2.png";
-import FeaturedTag from "../../assets/Icons/featuredTag.svg";
+
 import TitleCard from './TitleCard';
 import FeaturedCard from './FeaturedCard';
 import ItemCard from './ItemCard';

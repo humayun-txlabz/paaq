@@ -7,16 +7,18 @@ import Layout from 'components/layout';
 import MainBlog from 'components/AllBlogs/MainBlog';
 
 
+
 import * as contentful from 'contentful';
 const client = contentful.createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  
   // host: "preview.contentful.com"
 });
 
 
-export async function getStaticProps (){
 
+export async function getStaticProps (){
   const posts = await client.getEntries();
 
   console.log('this is itttt>>>', posts);
@@ -48,8 +50,7 @@ export async function getStaticProps (){
 
 
 export default function BlogsPage(props) {
-
-  console.log('BlogsPageBlogsPage>>', props);
+  console.log("checckkkk newssss", props)
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>

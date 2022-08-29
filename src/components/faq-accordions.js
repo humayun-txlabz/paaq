@@ -1,4 +1,6 @@
 import React from 'react'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { BLOCKS, MARKS, INLINES } from '@contentful/rich-text-types';
 import arrow from 'assets/accordion-close.png';
 import arrow2 from 'assets/accordion-open.png'
 import {
@@ -12,6 +14,48 @@ import {
 import { Text, Image, Container } from 'theme-ui';
 
 const FaqAccordion = ({ list }) => {
+    const RichBold = ({ children }) => <p className="bold"  style={{ fontFamily: 'Sofia-Pro'}}>{children}</p>;
+  
+    const RichParagraph = ({ children }) => <p className="align-center" style={{ fontFamily: 'Sofia-Pro',fontSize:17,marginTop:30}}>{children}</p>;
+    const Heading1 = ({ children }) => <h1 className="align-center" style={{ fontFamily: 'Sofia-Pro'}}>{children}</h1>;
+
+    const richTextOptions = {
+        renderMark: {
+          [MARKS.BOLD]: text => (
+              <RichBold>{text}</RichBold>
+          ),
+        },
+        renderNode: {
+          [BLOCKS.EMBEDDED_ASSET]: (node) => {
+            const { title, description, file } = node.data.target.fields;
+            const mimeType = file.contentType
+            const mimeGroup = mimeType.split('/')[0]
+      
+            switch (mimeGroup) {
+              case 'image':
+                return <img
+                  title={ title ? title : null}
+                  alt={description ?  description : null}
+                  src={file.url}
+                />
+              case 'application':
+                return <a
+                  alt={description ?  description : null}
+                  href={file.url}
+                  >{ title ? title : file.details.fileName }
+                </a>
+              default:
+                return <span style={{backgroundColor: 'red', color: 'white'}}> {mimeType} embedded asset </span>
+            }
+            
+          },
+          [BLOCKS.PARAGRAPH]: (node, children) => (
+            <RichParagraph>{children}</RichParagraph>
+          ),
+          [BLOCKS.HEADING_1]: (node, children) => <Heading1>{children}</Heading1>,
+        },
+        renderText: text => text.replace('!', '?'),
+      };
     return (
         <Accordion allowZeroExpanded={true} allowMultipleExpanded={true}>
             {
@@ -20,7 +64,7 @@ const FaqAccordion = ({ list }) => {
                         <AccordionItem style={styles.item}>
                             <AccordionItemHeading>
                                 <AccordionItemButton style={styles.accordionItemButton}>
-                                    <Text sx={styles.accordionItemButtonText}> {item.heading}</Text>
+                                    <Text sx={styles.accordionItemButtonText}> {item.fields.question}</Text>
                                     <AccordionItemState >
                                         {({ expanded }) => (expanded ?
                                             <Container sx={styles.stateAccordion}>
@@ -36,7 +80,9 @@ const FaqAccordion = ({ list }) => {
                                 </AccordionItemButton>
                             </AccordionItemHeading>
                             <AccordionItemPanel>
-                                <Text sx={styles.accordionPanelText}>{item.panel}</Text>
+                                {console.log('check answers here', item.fields.answers)}
+                                {documentToReactComponents(item.fields.answer, richTextOptions)}
+                                {/* <Text sx={styles.accordionPanelText}>{item.fields.answers}</Text> */}
                                 {item.hints ?
                                     <Container>
                                         <Text sx={styles.accordionItemHint}>Hints:</Text>

@@ -1,27 +1,30 @@
 import React from 'react'
 import { Container, Text, Image, Button } from 'theme-ui';
+import moment from 'moment'
 
 const NewsSection = ({ list }) => {
     return (
-        list.map((item) => {
+        list.map((item,index) => {
             return (
-                <Container sx={item.id%2===1?styles.section:styles.sectionReverse} >
+                
+                <Container sx={index%2===1?styles.section:styles.sectionReverse} >
                     <Container sx={styles.textContainer}>
-                        <Text sx={styles.title}>{item.heading}</Text>
-                        <Text sx={styles.detail}>{item.detail}</Text>
-                        <Button className={item.id===1?"contact_button_green":"contact_button"} aria-label="Read More">
+                        <Text sx={styles.title}>{item.fields.title}</Text>
+                        <Text sx={styles.detail}>{item.fields.description}</Text>
+                        <Button className={index===1?"contact_button_green":"contact_button"} aria-label="Read More">
                             Read More
                         </Button>
                         <Container sx={styles.publishContainer}>
                             <Text sx={styles.publisher}>BY</Text>
-                            <Text sx={styles.publisher2}>{item.publisher}</Text>
-                            <Text sx={styles.date}>PUBLISHED: {item.date}</Text>
+                            <Text sx={styles.publisher2}>{item.fields.author}</Text>
+                            <Text sx={styles.date}>PUBLISHED: {moment(item.fields.publishedDate).format('DD MMM YYYY')}</Text>
                         </Container>
                     </Container>
                     <Container sx={styles.imageContainer}>
-                        <Image sx={styles.image} src={item.image} />
+                        <Image sx={styles.image} src={item.fields.thumbnail.fields.file.url} />
                     </Container>
                 </Container>
+                
             )
         })
     )

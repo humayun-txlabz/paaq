@@ -1,5 +1,5 @@
-import React from 'react';
-import { ThemeProvider } from 'theme-ui';
+import React, {useState, useEffect} from 'react';
+import { ThemeProvider, Link } from 'theme-ui';
 import { StickyProvider } from '../contexts/app/app.provider';
 import theme from 'theme';
 import SEO from 'components/seo';
@@ -17,25 +17,65 @@ import collage2 from 'assets/news/8.png'
 import collage3 from 'assets/news/9.png'
 import collage4 from 'assets/news/10.png'
 
+import * as contentful from 'contentful';
 
-export default function News() {
-    const pages = [
-        {
-            id: 1,
-        },
-        {
-            id: 2,
-        },
-        {
-            id: 3,
-        },
-        {
-            id: 4,
-        },
-        {
-            id: 5,
-        },
-    ]
+const client = contentful.createClient({
+  space: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  // host: "preview.contentful.com"
+});
+
+export async function getStaticProps (){
+
+    const news = await client.getEntries({
+        content_type: 'news',
+        skip: 0,
+        
+      })
+      .then((response) => {
+        return response;
+      })
+      .catch(console.error)
+
+    return {
+      props: {
+        ...news
+      }
+    }
+  };
+
+export default function News(props) {
+    const {items} = props;
+    const [active, setActive] = useState(1)
+    const pages = []
+    let count = (props.items.length / 5)+1;
+    for( let i=1 ; i <= count ; i++){
+         pages.push({
+             id:i
+         })
+    }
+    const [min, setMin] = useState(0)
+    const [max, setMax] = useState(5)
+     
+    const increase = () =>{
+        setActive(active+1)
+        setMin(min+5)
+        setMax(max+5)
+        window.scrollTo(0, 0)
+    }
+    const decrease = () =>{
+        setActive(active-1)
+        setMin(min-5)
+        setMax(max-5)
+        window.scrollTo(0, 0)
+    }
+
+    const setDirectWithPage = (id) =>{
+         setActive(id)
+         setMin((id-1)*5)
+         setMax(((id-1)*5)+5)
+         window.scrollTo(0, 0)
+    }
 
     return (
         <ThemeProvider theme={theme}>
@@ -44,24 +84,36 @@ export default function News() {
                     <SEO title="Startup Landing 007" />
                     <Container sx={styles.mainContainer}>
                         <Container sx={styles.headingContainer}>
-                            <NewsSection list={newsSectionObjects} />
+                            <NewsSection list={items.slice(min,max)} />
                         </Container>
                         <Container className='parent' sx={styles.paginations}>
-                            <Container sx={styles.circle}>
-                                <Image sx={styles.arrow} src={arrow} />
-                            </Container>
+                            <div onClick={()=> {
+                            active > 1 ? decrease():null
+                            }
+                        } 
+                        style={styles.circle}>
+                                <img   style={styles.arrow} src={arrow} />
+                            </div>
                             {
                                 pages.map((item) => {
                                     return (
-                                        <Container sx={item.id == 2 ? styles.circle3 : styles.circle2}>
+                                        <div onClick={()=>setDirectWithPage(item.id)} style={item.id == active ? styles.circle3 : styles.circle2}>
                                             <Text>{item.id}</Text>
-                                        </Container>
+                                        </div>
+                                      
                                     )
                                 })
                             }
-                            <Container sx={styles.circle}>
-                                <Image sx={styles.arrow} src={arrow2} />
-                            </Container>
+                            <div onClick={()=> {
+                                (active < pages.length )?
+                                    increase()
+                                :null
+
+                            }
+                            }
+                                 style={styles.circle}>
+                                <img  style={styles.arrow} src={arrow2} />
+                            </div>
                         </Container>
                         <Container sx={styles.section} >
                             <Container sx={styles.imageContainer}>
@@ -171,11 +223,12 @@ const styles = {
             width: '90%',
             gap: '0px',
         },
+        justifyContent:'center',
         height: '50px',
         marginTop: '90px',
         display: 'flex',
         flexDirection: 'row',
-        gap: '10px',
+        gap: '30px',
     },
     circle: {
         width: '60px',

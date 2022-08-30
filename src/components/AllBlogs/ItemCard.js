@@ -1,31 +1,19 @@
 import Image from 'next/image';
 import { Badge } from 'theme-ui'
 import Link from 'next/link';
-// import { Container, Box, Heading, Text, Button, Image } from 'theme-ui';
-
-// import { Tag } from 'antd';
-// import dummyImage2 from "../assets/Images/dummyImage2.jpeg";
-// import FeaturedTag from "../assets/Icons/featuredTag.svg";
 
 const ItemCard = (props) => {
 
     const { blog } = props;
-
-    console.log('ItemCardItemCard', blog)
 
     return (
         <>
         {
             blog?.fields ?
             <>
-            {console.log('blog name: ', blog.fields?.authour, 'blog detailsssssss', blog.fields?.details)}
-             <Link href={{
-                pathname: "blogDetails",
-                query: {
-                     data: JSON.stringify(blog.fields?.details) 
-                }
-            }}
-            // as = {`/blogDetails/${}`}
+             <Link 
+             href= "/blog/[id]"
+            as = {`/blog/${blog?.sys?.id}`}
             >
         <div className='item-card-container'>
             <div className='item-card-container-inner'>

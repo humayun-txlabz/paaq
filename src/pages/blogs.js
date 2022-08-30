@@ -12,9 +12,7 @@ import * as contentful from 'contentful';
 const client = contentful.createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-  
-  // host: "preview.contentful.com"
-});
+  });
 
 export async function getStaticProps (){
   const posts = await client.getEntries({
@@ -24,6 +22,7 @@ export async function getStaticProps (){
     return response;
   })
   .catch(console.error)
+
 
   return {
     props: {

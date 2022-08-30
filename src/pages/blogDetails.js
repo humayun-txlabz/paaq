@@ -9,46 +9,12 @@ import { useRouter } from "next/router";
 import SingleBlogItem from 'components/AllBlogs/SingleBlogItem';
 
 
-// const router = useRouter();
-// const query = router.query;
-// const blog = JSON.parse(query.data);
-
-// console.log('im outside of component', blog);
-
-export async function getStaticProps (context){
-  
-  // const posts = await client.getEntries({
-  //   content_type: 'mainBlogs'
-  // })
-  // .then((response) => {
-  //   console.log('this is thenn newwww', response.items)
-  //   return response;
-  // })
-  // .catch(console.error)
-
-//   const router = useRouter();
-// const query = router.query;
-// const blog = JSON.parse(query.data);
-const blog = 3
-
-  console.log('GETSTATIC PROPSSS', context);
-  return {
-    props: {
-      ...blog
-    }
-  }
-
-
-}
-
 export default function BlogDetails() {
-// const  = () => {
 
-    // const { blog } = props;
 
-    // const router = useRouter();
-    // const query = router.query;
-    // const blog = JSON.parse(query.data);
+    const router = useRouter();
+    const query = router.query;
+    const blog = JSON.parse(query.data);
 
     console.log('BlogDetails>>>>>', JSON.parse(query.data) );
 
@@ -64,5 +30,3 @@ export default function BlogDetails() {
     </ThemeProvider>
     )
 }
-
-// export default BlogDetails;

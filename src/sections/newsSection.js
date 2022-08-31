@@ -1,30 +1,34 @@
 import React from 'react'
 import { Container, Text, Image, Button } from 'theme-ui';
 import moment from 'moment'
-
+import Link from 'next/link';
 const NewsSection = ({ list }) => {
     return (
-        list.map((item,index) => {
+        list.map((item, index) => {
             return (
-                
-                <Container sx={index%2===1?styles.section:styles.sectionReverse} >
-                    <Container sx={styles.textContainer}>
-                        <Text sx={styles.title}>{item.fields.title}</Text>
-                        <Text sx={styles.detail}>{item.fields.description}</Text>
-                        <Button className={index===1?"contact_button_green":"contact_button"} aria-label="Read More">
-                            Read More
-                        </Button>
-                        <Container sx={styles.publishContainer}>
-                            <Text sx={styles.publisher}>BY</Text>
-                            <Text sx={styles.publisher2}>{item.fields.author}</Text>
-                            <Text sx={styles.date}>PUBLISHED: {moment(item.fields.publishedDate).format('DD MMM YYYY')}</Text>
+                <Link
+                    href="/new/[id]"
+                    as={`/new/${item?.sys?.id}`}
+                >
+                    <Container sx={index % 2 === 1 ? styles.section : styles.sectionReverse} >
+                        <Container sx={styles.textContainer}>
+                            <Text sx={styles.title}>{item.fields.title}</Text>
+                            <Text sx={styles.detail}>{item.fields.description}</Text>
+                            <Button className={index === 1 ? "contact_button_green" : "contact_button"} aria-label="Read More">
+                                Read More
+                            </Button>
+                            <Container sx={styles.publishContainer}>
+                                <Text sx={styles.publisher}>BY</Text>
+                                <Text sx={styles.publisher2}>{item.fields.author}</Text>
+                                <Text sx={styles.date}>PUBLISHED: {moment(item.fields.publishedDate).format('DD MMM YYYY')}</Text>
+                            </Container>
+                        </Container>
+                        <Container sx={styles.imageContainer}>
+                            <Image sx={styles.image} src={item.fields.thumbnail.fields.file.url} />
                         </Container>
                     </Container>
-                    <Container sx={styles.imageContainer}>
-                        <Image sx={styles.image} src={item.fields.thumbnail.fields.file.url} />
-                    </Container>
-                </Container>
-                
+                </Link>
+
             )
         })
     )
@@ -86,12 +90,12 @@ const styles = {
             width: 181,
             height: 60,
             fontSize: "16px",
-            color:'#00B5B4',
+            color: '#00B5B4',
             fontFamily: 'Sofia-Pro',
             flexShrink: 0,
             backgroundColor: 'white',
-            border:'solid',
-            borderWidth:'1px',
+            border: 'solid',
+            borderWidth: '1px',
             borderColor: '#00B5B4',
             marginTop: '10px',
             ':hover': {
@@ -106,9 +110,9 @@ const styles = {
         '@media screen and (max-width: 720px)': {
             height: '280px',
         },
-        objectFit:'cover',
+        objectFit: 'cover',
         width: '100%',
-        borderRadius:'15px'
+        borderRadius: '15px'
     },
     sectionReverse: {
         width: '100%',
@@ -131,42 +135,42 @@ const styles = {
         '@media screen and (max-width: 720px)': {
             flexDirection: 'column',
             marginTop: '10px',
-           
+
         },
         marginTop: '80px',
         alignItems: 'center',
         gap: '20px',
     },
-    publishContainer:{
-        display:'flex',
-        flexDirection:'row',
-        gap:'10px',
-        alignItems:'center',
-        marginTop:'40px'
+    publishContainer: {
+        display: 'flex',
+        flexDirection: 'row',
+        gap: '10px',
+        alignItems: 'center',
+        marginTop: '40px'
     },
-    publisher:{
-        fontSize:'16px',
-        fontWeight:'100',
-        lineHeight:'24.1px',
+    publisher: {
+        fontSize: '16px',
+        fontWeight: '100',
+        lineHeight: '24.1px',
         fontFamily: 'Sofia-Pro'
     },
-    publisher2:{
+    publisher2: {
         fontFamily: 'Sofia-Pro',
-        fontSize:'18px',
-        fontWeight:'900',
-        lineHeight:'24.1px'
+        fontSize: '18px',
+        fontWeight: '900',
+        lineHeight: '24.1px'
     },
-    date:{
+    date: {
         fontFamily: 'Sofia-Pro',
-       fontSize:'12px',
-       fontWeight:'400',
-       lineHeight:'16.1px',
-       color:'#6D6D6D',
-       marginLeft:'30px',
-       '@media screen and (max-width: 720px)': {
-        marginLeft:'0px',
-       
-    },
+        fontSize: '12px',
+        fontWeight: '400',
+        lineHeight: '16.1px',
+        color: '#6D6D6D',
+        marginLeft: '30px',
+        '@media screen and (max-width: 720px)': {
+            marginLeft: '0px',
+
+        },
     }
 };
 

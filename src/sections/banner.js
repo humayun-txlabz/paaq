@@ -17,6 +17,7 @@ import MainImage8 from 'assets/Images/main22.png';
 import MainImage9 from 'assets/Images/main44.png';
 import MainImage10 from 'assets/Images/main5.png';
 import MainImage11 from 'assets/Images/main2.png';
+import bann from 'assets/bannerMobileView.png'
 import SpeakerIcon from 'assets/Icons/speaker.svg';
 import FadeAnimation from 'components/fadeAnimation';
 
@@ -495,8 +496,8 @@ export default function Banner() {
             <img
               src={BannerImg}
               className="banner-image-mobile"
-            
             />
+            <img src={bann} className="banner-image-mobile-view" />
           </div>
         </div>
       </Container>

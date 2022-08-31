@@ -6,8 +6,8 @@ import data from './footer.data';
 import FooterLogo from 'assets/logo.svg';
 export default function Footer() {
   return (
-    <footer sx={styles.footer}>
-      <Container style={{ width: '80%' }}>
+    <footer className='footer-mobile-view' sx={styles.footer}>
+      <Container style={{ width: '100%' }}>
         {/* <Grid sx={styles.widgets}>
           {data.widgets.map((item) => (
             <Box
@@ -23,11 +23,11 @@ export default function Footer() {
           ))}
         </Grid> */}
         {/* End of footer widgets area */}
-        <Box sx={styles.footer.footerBottomArea}>
+        <Box className='mobile-footer-menu-list' sx={styles.footer.footerBottomArea}>
               {data.menuItem.map((item, index) =>
-               <Box sx={styles.footer.menus}>
+               <Box className="mobile-footer-menu" sx={styles.footer.menus}>
                 <span style={{ color: '#fff', fontSize: 28, fontWeight: 'bold', textAlign: 'left'}}>{data.menuItemHeading[index]}</span>
-                <nav style={{marginTop: 20, textAlign: 'left'}}>
+                <nav className='mobile-footer-nav' style={{marginTop: 20, textAlign: 'left'}}>
             
                 {item.map(({ path, label }, i) => (
                   <Link
@@ -64,7 +64,7 @@ const styles = {
       pb: ['20px', null, '50px'],
       textAlign: 'center',
       alignItems: 'flex-start',
-      justifyContent: 'space-between'
+      justifyContent: 'space-between', 
     },
     menus: {
       mt: [3, 4],
@@ -73,7 +73,7 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'flex-start',
         justifyContent: 'center',
-        flexWrap: 'wrap',
+       
     },
 
     link: {

@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 export default function Connections() {
   const router = useRouter();
   return (
-    <section sx={styles.banner} id="community">
+    <section className='mobile-view-connection-banner' sx={styles.banner} id="community">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -76,7 +76,7 @@ export default function Connections() {
 
 const styles = {
   banner: {
-    pt: ['140px', '145px', '155px', '170px', null, null, '180px', '215px'],
+    pt: '120px',
     pb: [2, null, 0, null, 2, 0, null, 5],
     position: 'relative',
     zIndex: 2,

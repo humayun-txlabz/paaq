@@ -49,7 +49,7 @@ const AskQuestionBanner = React.forwardRef(function AskQuestionBanner(parentRef)
     });
 
     return (
-        <div className='earn-money-main' ref={askQuestionReference}>
+        <div className='earn-money-main2' ref={askQuestionReference}>
             <div className='ask-question-left-container'>
                 <div className='ask-firstavatar'>
                     <animated.div style={defaultAnimation(1000)} >
@@ -67,7 +67,7 @@ const AskQuestionBanner = React.forwardRef(function AskQuestionBanner(parentRef)
                 </div>
                 <div className='ask-secondavatar'>
                     <animated.div style={poppingOutAnimation(1300)} >
-                        <Image className='earn-money-image' src={Image1} width={82} height={82} />
+                        <img className='earn-money-image ask-question-avatar2' src={Image1}  />
                     </animated.div>
                     <animated.div style={defaultAnimation(2000)} >
 

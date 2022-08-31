@@ -37,13 +37,13 @@ const EarnMoneyBanner = React.forwardRef(function EarnMoneyBanner(parentRef) {
             <div ref={earnMoneyReference}  className='earn-money-image-container'>
                 <div className='earn-money-image-upper'>
                     <animated.div style={poppingOutAnimation(500)} className='earn-money-image-upper-left'>
-                        <Image className='earn-money-image' src={EarnImage2} width={60} height={60}  />
+                        <img className='earn-money-image earn-money-upper-left-image' src={EarnImage2}   />
                     </animated.div>
                     <animated.div style={poppingOutAnimation(1000)} className='earn-money-image-upper-right'>
-                        <Image className='earn-money-image' src={EarnImage4} width={64} height={64}  />
+                        <img className='earn-money-image earn-money-upper-right-image' src={EarnImage4}   />
                     </animated.div>
                     <div className='earn-money-image-lower-left'>
-                        <Image className='earn-money-image' src={EarnImage5} width={73} height={73}  />
+                        <img className='earn-money-image earn-money-image-author-name' src={EarnImage5}   />
                         
                         <div className='earn-money-tag'>
                             <span className='earn-money-name'>
@@ -74,7 +74,7 @@ const EarnMoneyBanner = React.forwardRef(function EarnMoneyBanner(parentRef) {
                         </div>
                     </animated.div>
                     <animated.div style={poppingOutAnimation(1500)} className='earn-money-image-lower-right'>
-                        <Image className='earn-money-image' src={EarnImage3} width={82} height={82}  />
+                        <img className='earn-money-image earn-money-main-image' src={EarnImage3} />
                     </animated.div>  
                 </div>
                 

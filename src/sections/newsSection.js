@@ -6,28 +6,30 @@ const NewsSection = ({ list }) => {
     return (
         list.map((item, index) => {
             return (
-                <Link
-                    href="/new/[id]"
-                    as={`/new/${item?.sys?.id}`}
-                >
-                    <Container sx={index % 2 === 1 ? styles.section : styles.sectionReverse} >
-                        <Container sx={styles.textContainer}>
-                            <Text sx={styles.title}>{item.fields.title}</Text>
-                            <Text sx={styles.detail}>{item.fields.description}</Text>
+
+                <Container sx={index % 2 === 1 ? styles.section : styles.sectionReverse} >
+                    <Container sx={styles.textContainer}>
+                        <Text sx={styles.title}>{item.fields.title}</Text>
+                        <Text sx={styles.detail}>{item.fields.description}</Text>
+                        <Link
+                            href="/new/[id]"
+                            as={`/new/${item?.sys?.id}`}
+                        >
                             <Button className={index === 1 ? "contact_button_green" : "contact_button"} aria-label="Read More">
                                 Read More
                             </Button>
-                            <Container sx={styles.publishContainer}>
-                                <Text sx={styles.publisher}>BY</Text>
-                                <Text sx={styles.publisher2}>{item.fields.author}</Text>
-                                <Text sx={styles.date}>PUBLISHED: {moment(item.fields.publishedDate).format('DD MMM YYYY')}</Text>
-                            </Container>
-                        </Container>
-                        <Container sx={styles.imageContainer}>
-                            <Image sx={styles.image} src={item.fields.thumbnail.fields.file.url} />
+                        </Link>
+                        <Container sx={styles.publishContainer}>
+                            <Text sx={styles.publisher}>BY</Text>
+                            <Text sx={styles.publisher2}>{item.fields.author}</Text>
+                            <Text sx={styles.date}>PUBLISHED: {moment(item.fields.publishedDate).format('DD MMM YYYY')}</Text>
                         </Container>
                     </Container>
-                </Link>
+                    <Container sx={styles.imageContainer}>
+                        <Image sx={styles.image} src={item.fields.thumbnail.fields.file.url} />
+                    </Container>
+                </Container>
+
 
             )
         })

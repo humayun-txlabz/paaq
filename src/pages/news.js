@@ -170,9 +170,9 @@ const styles = {
         display: 'flex',
         width: '100%',
         alignItems: 'center',
-        paddingTop: '100px',
+        paddingTop: '10px',
         '@media screen and (max-width: 720px)': {
-            paddingTop: '50px',
+            paddingTop: '10px',
             '.parent':{
                 'div:nth-child(6)':{
                     display:'none'

@@ -250,10 +250,10 @@ export default function Banner() {
               <animated.div style={poppingOutAnimation(1100)} >
                 <Image className='main-section-inner main-section-inner-image2' src={MainImage2} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim1 }} >
-                  {/* <div className='main-section-image2-nametag'>
+                  <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Micheal Keen</span>
                     <span className='nametag-designation'>Pilot</span>
-                  </div> */}
+                  </div>
                 </animated.div>
               </animated.div>
             </div>
@@ -266,10 +266,10 @@ export default function Banner() {
                 <Image className='main-section-inner main-section-inner-image3' src={MainImage3} />
                 <animated.div className='main-section-image2-nametag-containerleft' style={{ ...anim8 }} >
                   {/* <div className='main-section-image2-nametag-containerleft'> */}
-                  {/* <div className='main-section-image2-nametagleft'>
+                  <div className='main-section-image2-nametagleft'>
                     <span className='nametag-title'>Sandra Lue</span>
                     <span className='nametag-designation'>Beautician</span>
-                  </div> */}
+                  </div>
                   {/* </div> */}
                 </animated.div>
               </div>
@@ -289,10 +289,10 @@ export default function Banner() {
               <div style={{ position: 'relative' }} >
                 <Image className='main-section-inner main-section-inner-image4' src={MainImage4} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim6 }} >
-                  {/* <div className='main-section-image2-nametag' style={{ minWidth: 193 }}>
+                  <div className='main-section-image2-nametag' style={{ minWidth: 193 }}>
                     <span className='nametag-title'>John Hassel</span>
                     <span className='nametag-designation'>Software Engineer</span>
-                  </div> */}
+                  </div>
                 </animated.div>
               </div>
             </animated.div>
@@ -303,10 +303,10 @@ export default function Banner() {
               <div style={{ position: 'relative' }} >
                 <Image className='main-section-inner main-section-inner-image5' src={MainImage5} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim3 }} >
-                  {/* <div className='main-section-image2-nametag'>
+                  <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Daniella Fox</span>
                     <span className='nametag-designation'>Accountant</span>
-                  </div> */}
+                  </div>
                 </animated.div>
               </div>
             </animated.div>
@@ -317,10 +317,10 @@ export default function Banner() {
               <div style={{ position: 'relative' }} >
                 <Image className='main-section-inner main-section-inner-image6' src={MainImage6} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim2 }} >
-                  {/* <div className='main-section-image2-nametag'>
+                  <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Brian Walker</span>
                     <span className='nametag-designation'>Athelete</span>
-                  </div> */}
+                  </div>
                 </animated.div>
               </div>
             </animated.div>
@@ -331,10 +331,10 @@ export default function Banner() {
               <div style={{ position: 'relative' }} >
                 <Image className='main-section-inner main-section-inner-image7' src={MainImage7} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim9 }} >
-                  {/* <div className='main-section-image2-nametag' style={{ minWidth: 202 }}>
+                  <div className='main-section-image2-nametag' style={{ minWidth: 202 }}>
                     <span className='nametag-title'>Sue Chan</span>
                     <span className='nametag-designation'>Marteking Manager</span>
-                  </div> */}
+                  </div>
                 </animated.div>
               </div>
             </animated.div>
@@ -360,10 +360,10 @@ export default function Banner() {
                   /> */}
                 <Image className='main-section-inner main-section-inner-image8' src={MainImage8} />
                 <animated.div className='main-section-image2-nametag-containerleft' style={{ ...anim4 }} >
-                  {/* <div className='main-section-image2-nametagleft'>
+                  <div className='main-section-image2-nametagleft'>
                     <span className='nametag-title'>Aisha Ali</span>
                     <span className='nametag-designation'>Philosophy Student</span>
-                  </div> */}
+                  </div>
                 </animated.div>
               </div>
             </animated.div>
@@ -374,10 +374,10 @@ export default function Banner() {
               <div style={{ position: 'relative' }} >
                 <Image className='main-section-inner main-section-inner-image9' src={MainImage9} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim5 }} >
-                  {/* <div className='main-section-image2-nametag'>
+                  <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Daniel Trump</span>
                     <span className='nametag-designation'>Professor</span>
-                  </div> */}
+                  </div>
                 </animated.div>
               </div>
             </animated.div>
@@ -394,10 +394,10 @@ export default function Banner() {
               <div style={{ position: 'relative' }} >
                 <Image className='main-section-inner main-section-inner-image11' src={MainImage11} />
                 <animated.div className='main-section-image2-nametag-container' style={{ ...anim7 }} >
-                  {/* <div className='main-section-image2-nametag'>
+                  <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Thabo Khoza</span>
                     <span className='nametag-designation'>Artist</span>
-                  </div> */}
+                  </div>
                 </animated.div>
               </div>
             </animated.div>

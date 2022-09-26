@@ -2216,3 +2216,77 @@ button {
   bottom: 3%;
   right: 18%;
 }
+
+
+/* Job Insights */
+.job-insights-main {
+  display: grid;
+}
+
+@media (min-width: 600px) {
+  .job-insights-main { grid-template-columns: repeat(2, 1fr); }
+}
+
+.job-in-bg-main-left {
+  width: 100%;
+  height: 80%;
+  padding-left: 10rem;
+  padding-top: 2rem;
+  display: flex;
+   color: rgba(255, 255, 255, 0.7);
+   flex-direction: column;
+   justify-content: space-between
+
+}
+
+.job-in-bg-main-left > .cac {
+   font-family: 'Sofia-Pro';
+   font-weight: 400;
+   color: rgba(255, 255, 255, 0.7);
+     
+}
+
+.job-in-bg-main-left > .left-bottom-div > .bold-text {
+  font-family: 'Sofia-Pro';
+  font-weight: 800;
+  font-size: 4rem;
+  color: #fff;
+  line-height: 4.5rem;
+}
+
+.job-in-bg-main-left > .left-bottom-div > .h-line {
+  width: 80%;
+  background: #fff;
+  height: 0.7px;
+  margin-top: 2rem;
+}
+
+.job-in-bg-main-left > .left-bottom  {
+  display: flex;
+  flex-direction: row;
+  color: rgba(255, 255, 255, 0.7);
+ width: 60%;
+}
+
+.job-in-bg-main-left > .left-bottom > h3  {
+  display: flex;
+  flex-direction: row;
+  color: rgba(255, 255, 255, 0.7);
+  flex: 1;
+font-family: 'Sofia-Pro';
+}
+
+
+
+
+ .cjobs {
+   font-family: 'Sofia-Pro';
+   font-weight: 500;
+   color: #fff;
+     
+}
+
+.job-in-bg-main-right {
+  width: 100%;
+                    height: 90%;
+}

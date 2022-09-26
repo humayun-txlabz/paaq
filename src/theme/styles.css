@@ -1686,3 +1686,288 @@ button {
   font-weight: bold;
   font-family: 'Sofia-Pro';
 }
+
+.background-image-main{
+  background: url(/bg-aboutus.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 650px;
+  position: relative;
+}
+.aboutus-left-section{
+  position: absolute;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  padding-left: 9%;
+  padding-right: 54%;
+}
+.aboutus-left-section-heading{
+  font-size: 94px;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-family: 'Sofia-Pro';
+  margin: 0;
+}
+.aboutus-left-section-detail{
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-family: 'Sofia-Pro';
+}
+
+.about-section-image1{
+  position: absolute;
+  width: 139px;
+  height: 139px;
+  top: 13%;
+  right: 36%;
+}
+.about-section-image2{
+  position: absolute;
+  top: 50%;
+  right: 39%;
+}
+.about-section-image3{
+  position: absolute;
+  width: 139px;
+  height: 139px;
+  bottom: 0px;
+  left: 40%;
+}
+.about-section-image4{
+  position: absolute;
+  top: 14%;
+  right: 18%;
+}
+.about-section-image5{
+  position: absolute;
+  top: 44%;
+  right: 11%;
+}
+.about-section-image6{
+  position: absolute;
+  width: 238px;
+  height: 238px;
+  bottom: 3%;
+  right: 18%;
+  z-index: 10;
+}
+.about-section-image7{
+  position: absolute;
+  bottom: 0;
+  right: 11%;
+}
+.about-section-emoji{
+  position: absolute;
+  top: 10%;
+  left: -13%;
+}
+
+.dm-card-main{
+  margin: 0 auto;
+  padding-top: 170px;
+  width: 80%;
+  position: relative;
+}
+.dm-card-upper{
+  display: flex;
+  justify-content: space-between;
+}
+.dm-card-upper-left{
+  width: 30%;
+    background: #75CCE1;
+    border-radius: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.dm-card-upper-left-text{
+  margin: 0;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: 'Sofia-Pro';
+  padding-right: 6%;
+}
+.dm-card-upper-right{
+  background: #F7F7F7;
+  border-radius: 30px;
+  padding-left: 2%;
+}
+.dm-card-upper-right-text{
+  font-size: 46px;
+  font-weight: 700;
+  font-family: 'Sofia-Pro';
+  padding: 3% 0%;
+  padding-left: 6%;
+  padding-right: 45%;
+  margin: 0;
+}
+.dm-card-lower{
+  background: #F7F7F7;
+  border-radius: 30px;
+  padding: 6% 3%;
+  padding-left: 42%;
+  margin-top: 1%;
+}
+.dm-card-lower-text{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Sofia-Pro';
+}
+.dm-card-image{
+  position: absolute;
+  bottom: 0;
+  padding-left: 2%;
+}
+
+.interaction-card-main{
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 80%;
+  /* position: relative; */
+  display: flex;
+  border-radius: 30px;
+}
+.interaction-card-left{
+  width: 50%;
+  padding-top: 7%;
+  padding-left: 7%;
+}
+.interaction-card-left-heading{
+  font-size: 50px;
+    font-weight: 700;
+    font-family: 'Sofia-Pro';
+    line-height: 57px;
+}
+.interaction-card-left-text{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Sofia-Pro';
+}
+.interaction-card-shape{
+  background: #FFDB9F;
+    border-radius: 230px;
+    transform: rotate(-35.82deg);
+    width: 70%;
+    height: 100%;
+    margin-left: 29%;
+    overflow-y: hidden;
+}
+.interaction-card-count{
+  margin: 0;
+  font-size: 90px;
+  font-weight: 600;
+  font-family: 'Sofia-Pro';
+  position: absolute;
+  top: 20%;
+  left: 18%;
+}
+.interaction-card-right{
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.interaction-card-image{
+  transform: rotate(35.82deg);
+}
+.interaction-card-shapee{
+  /* background: #FFDB9F;
+  width: 70%;
+  height: 70%;
+  border-radius: 230px;
+  transform: rotate(-35.82deg);
+  margin-left: 20%;
+  display: flex; */
+  margin: auto;
+  padding: 0 35px 32px 0; /* to rectify the image position */
+  max-width: 200px;
+  /* the orange circle with gradient */
+  background: radial-gradient(circle closest-side, orange 85%, transparent 86%);
+  -webkit-mask: 
+    /* show only the orange circle (same as background  */
+    radial-gradient(circle closest-side, orange 85%, transparent 86%),
+    /* and also show 70% from the top */ 
+    linear-gradient(#fff, #fff) top/100% 70% no-repeat; 
+}
+
+.about-section-audio{
+  width: 299px;
+    background: #ffffff;
+    height: 75px;
+    position: absolute;
+    bottom: 16%;
+    right: 34%;
+    border-radius: 50px;
+}
+
+
+.spinner-wrap {
+  /* position: relative; */
+  /* margin-top: 200px; */
+  position: absolute;
+  width: 238px;
+  height: 238px;
+  bottom: 3%;
+  right: 18%;
+}
+.spinner-item {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-animation: zoom 2s linear 0.75s infinite;
+          animation: zoom 2s linear 0.75s infinite;
+}
+.spinner-item--2 {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+.spinner-item--3 {
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
+.calling-animation{
+  position: absolute;
+  width: 238px;
+  height: 238px;
+  bottom: 3%;
+  right: 18%;
+}

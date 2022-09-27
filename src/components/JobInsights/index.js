@@ -5,6 +5,9 @@ import { FiTwitter } from "react-icons/fi";
 import { RiLinkedinFill } from "react-icons/ri";
 import { BiTag } from "react-icons/bi";
 import JobInsightsForm from "./form";
+const jobInsightsImg1 = require('../../assets/Images/job-insights-1.png');
+const locImgIcon = require('../../assets/loc-svg.png');
+const rotatedTag = require('../../assets/rotated-tag.png');
 
 const JobInsightsMain = () => {
   return (
@@ -28,16 +31,17 @@ const JobInsightsMain = () => {
           <div className="left-bottom">
             <h3>
               {" "}
-              <GrLocation color="#000" fontSize="1.2rem" />
+              <img style={{width: 14, height: 18, marginRight: '10px'}} src={locImgIcon} />
               Remote
             </h3>
             <h3>
-              <GrLocation color="#fff" fontSize="1.2rem" /> Engineering
+            <img style={{width: 19, height: 18, marginRight: '10px'}} src={rotatedTag} /> Engineering
             </h3>
           </div>
         </div>
         <div className="job-in-bg-main-right">
-          <div className="picOuterDiv"></div>
+          <img className="picOuterDiv" src={jobInsightsImg1} />
+          {/* <div className="picOuterDiv"></div> */}
         </div>
       </div>
       <div className="job-insights-main-content">

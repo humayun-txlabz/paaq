@@ -236,6 +236,7 @@ export default function JobInsightsForm() {
               </div>
             </div>
 
+            <br style={{ marginTop: "2rem" }} />
             <p>
               Would you describe yourself as transgender? (Select One)
               <span style={{ color: "#DB2A3A" }}>*</span>
@@ -259,6 +260,7 @@ export default function JobInsightsForm() {
               </div>
             </div>
 
+            <br style={{ marginTop: "2rem" }} />
             <p>
               Do you identify as a part of the LGBTQ+ community? (Select One)
               <span style={{ color: "#DB2A3A" }}>*</span>
@@ -282,6 +284,7 @@ export default function JobInsightsForm() {
               </div>
             </div>
 
+            <br style={{ marginTop: "2rem" }} />
             <p>
               I Identify my race as (Select One)
               <span style={{ color: "#DB2A3A" }}>*</span>
@@ -341,6 +344,7 @@ export default function JobInsightsForm() {
               </div>
             </div>
 
+            <br style={{ marginTop: "2rem" }} />
             <p>
               Veteran Status (Select One)
               <span style={{ color: "#DB2A3A" }}>*</span>
@@ -364,7 +368,7 @@ export default function JobInsightsForm() {
               </div>
             </div>
             
-
+            <br style={{ marginTop: "2rem" }} />
             <p>
               I have a physical disability (Select One)
               <span style={{ color: "#DB2A3A" }}>*</span>
@@ -386,6 +390,12 @@ export default function JobInsightsForm() {
                 <Checkbox/>
                 <p className="checkbox-label">I don't wish to answer</p>
               </div>
+              <br style={{ marginTop: "2rem" }} />
+            <div className="line-saperator" />
+            </div>
+
+            <div className="submit-btn">
+                Submit Application
             </div>
           </div>
         </form>

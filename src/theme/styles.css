@@ -3,6 +3,7 @@
   --soft: 'SofiaPro-Soft';
   --pro: 'Sofia-Pro';
   --light: 'SofiaPro-Light';
+  --bold: 'Sofia-Pro-Bold';
 }
 
 @font-face {
@@ -10,6 +11,13 @@
   src: url('../assets/fonts/SofiaProRegularAz.otf');
 
 }
+
+@font-face {
+  font-family: 'Sofia-Pro-Bold';
+  src: url('../assets/fonts/SofiaProBold.ttf');
+
+}
+
 
 
 @font-face {
@@ -2409,6 +2417,7 @@ background: rgba(255, 255, 255, 0.2);
    font-size: 0.85rem;
    line-height: 2.5rem;
    text-align: center;
+   margin-top: 0.5rem;
 }
 
 .job-insights-main-content-right-socials > .social-icon {
@@ -2420,3 +2429,348 @@ background: rgba(255, 255, 255, 0.2);
   align-items: center;
   justify-content: center;
 }
+
+.job-insights-related-job-single > h3 {
+  font-family: var(--soft);
+   font-weight: 700;
+   font-size: 0.9rem;
+}
+
+.job-insights-related-job-single {
+  border: 1px solid #F4F4F4;
+  max-width: 360px;
+  padding: 1rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.job-insights-related-job-single > .job-insights-related-job-single-left > .job-insights-related-job-single-loc-type {
+  display: flex;
+  flex-direction: row;
+}
+
+.job-insights-related-job-single > .job-insights-related-job-single-left > .job-insights-related-job-single-loc-type > p {
+  flex: 1;
+  font-size: 0.65rem;
+  display: flex;
+  align-items: center;
+  
+}
+
+.job-insights-related-job-single > .job-insights-related-job-single-left > .job-insights-related-job-single-loc-type > p .tagIcon {
+  transform: rotate(-210deg);
+  margin-left: 2rem;
+  margin-right: 0.3rem;
+}
+
+.job-insights-related-job-single > .job-insights-related-job-single-left > .job-insights-related-job-single-loc-type > p .locIcon {
+  margin-right: 0.3rem;
+}
+
+.job-insights-related-job-single-right {
+  background: #F8F8F8;
+border-radius: 40px;
+padding-left: 1.2rem;
+padding-right: 1.2rem;
+padding-top: 0.8rem;
+padding-bottom: 0.8rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.job-insights-apply-form {
+
+}
+
+.job-insights-apply-form > .applyTitle {
+  font-family: var(--bold);
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.job-insights-form-main {
+  background: #FAFAFA;
+  padding: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.job-insights-form-main > .apply-for-this-job {
+  font-family: var(--bold);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #656A72;
+}
+
+.linkedin-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.linkedin-main > p {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.linkedin-main > p span {
+  font-family: var(--pro);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.linkedin-main > .linkedin-btn {
+  background: #0173B1;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+}
+
+.linkedin-main > .linkedin-btn > h3 {
+  color: #fff;
+  font-family: var(--pro);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.job-insights-form-required-tag-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 90%;
+}
+
+.job-insights-form-required-tag-div > .job-insights-form-required-tag > p span {
+  color: red;
+}
+
+.job-insights-form-required-tag-div > .job-insights-form-required-tag > p {
+  font-family: var(--soft);
+  font-weight: 700;
+  font-size: 1rem;
+  position: absolute;
+}
+
+.job-insights-form-main > .line-saperator {
+  width: 100%;
+  height: 1px;
+  background: #656A72;
+  opacity: 0.2;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.job-insights-form-main > form {
+  padding-left: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.job-insights-form-main > form > .job-insight-form-label-with-input > label {
+  font-family: var(--soft);
+  font-weight: 700;
+  font-size: 1rem;
+  color: #6C7077;
+  
+}
+
+.job-insights-form-main > form > .job-insight-form-label-with-input > label {
+  display:flex;
+  width: 7rem
+  
+}
+
+.job-insight-form-label-with-input {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.job-insight-form-label-with-input input{
+  width: 65%;
+  padding: 7px 1px;
+  margin: 0px 0;
+  display: inline-block;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.job-insight-form-label-with-input input:focus{
+  outline: none;
+  /* border-color: red;
+  box-shadow: 0 0 3px red;
+  -moz-box-shadow: 0 0 3px red;
+  -webkit-box-shadow: 0 0 3px red; */
+  padding-left: 0.5rem;
+  font-family: var(--soft);
+}
+
+
+
+
+
+
+.job-insights-form-main > form > .job-insight-form-label-with-input > label span {
+  font-family: var(--soft);
+  font-weight: 700;
+  font-size: 1rem;
+  color: #DB2A3A;
+  
+}
+
+.job-insight-form-label-with-input .file-add {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.job-insight-form-label-with-input .file-add .file-add-three-options > span {
+  font-family: var(--soft);
+  font-weight: 700;
+  font-size: 1rem;
+  color: #2975CA;
+}
+
+.job-insight-form-label-with-input .file-add .file-add-three-options > span:first-child {
+  font-family: var(--soft);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #2975CA;
+}
+
+.job-insight-form-label-with-input .file-add .file-add-three-options > span:nth-child(2) {
+  font-family: var(--pro);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #2975CA;
+}
+
+.job-insight-form-label-with-input .file-add .file-add-three-options > span:nth-child(3) {
+  font-family: var(--soft);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #2975CA;
+}
+
+.job-insight-form-label-with-input .file-add > .bottom-text > p {
+  font-family: var(--soft);
+  font-weight: 700;
+  font-size: 1rem;
+  color: #6C7077;
+}
+
+.job-insights-form-main > form > .line-saperator {
+  width: 100%;
+  height: 1px;
+  background: #656A72;
+  opacity: 0.2;
+  margin-bottom: 2rem;
+}
+
+.job-insights-form-main > form > input{
+  width: 80%;
+  padding: 7px 1px;
+  margin: 0px 0;
+  display: inline-block;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.job-insights-form-main > form > input:focus{
+  outline: none;
+  /* border-color: red;
+  box-shadow: 0 0 3px red;
+  -moz-box-shadow: 0 0 3px red;
+  -webkit-box-shadow: 0 0 3px red; */
+  padding-left: 0.5rem;
+  font-family: var(--soft);
+}
+
+
+.job-insights-form-main > form > .bottom-form-label {
+  font-family: var(--soft);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #6C7077;
+  margin-bottom: 0.5rem;
+}
+
+.job-insights-form-main > form > .form-select-options {
+  display: flex;
+  flex: 1;
+  width: auto;
+  background: red;
+}
+
+
+
+.job-insights-form-main > form > div > .form-select-options {
+  display: flex;
+  flex: 1;
+  width: auto;
+  font-family: var(--soft);
+  font-weight: 700;
+  font-size: 1rem;
+  padding-right: 1.5rem;
+}
+
+.job-insights-form-main > form > .form-bottom-demographical-q-main > h1 {
+  font-family: var(--bold);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #6C7077;
+}
+
+.job-insights-form-main > form > .form-bottom-demographical-q-main > p {
+  font-family: var(--soft);
+  font-weight: 200;
+  font-size: 1rem;
+  color: #6C7077;
+}
+
+.job-insights-form-main > form > .form-bottom-demographical-q-main > p span {
+  font-family: var(--soft);
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.job-insights-form-main > form > .form-bottom-demographical-q-main > .checkbox-and-label >  .checkbox-div {
+  display: flex;
+}
+
+
+.job-insights-form-main > form > .form-bottom-demographical-q-main > .checkbox-and-label > .checkbox-div > .checkbox-label {
+  font-family: var(--soft);
+  font-weight: 200;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+
+
+
+
+

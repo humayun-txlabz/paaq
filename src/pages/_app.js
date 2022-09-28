@@ -6,6 +6,7 @@ import 'react-modal-video/css/modal-video.min.css';
 import 'rc-drawer/assets/index.css';
 import 'typeface-dm-sans';
 import '../theme/styles.css';
+import '../theme/styles.scss';
 import 'antd/dist/antd.css';
 import { wrapper } from "../config-store";
 import { useDispatch } from 'react-redux';

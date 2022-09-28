@@ -1,0 +1,156 @@
+:root {
+    --soft: 'SofiaPro-Soft';
+    --pro: 'Sofia-Pro';
+    --light: 'SofiaPro-Light';
+    --bold: 'Sofia-Pro-Bold';
+}
+
+@font-face {
+    font-family: 'Sofia-Pro';
+    src: url('../assets/fonts/SofiaProRegularAz.otf');
+
+}
+
+@font-face {
+    font-family: 'Sofia-Pro-Bold';
+    src: url('../assets/fonts/SofiaProBold.ttf');
+
+}
+
+
+
+@font-face {
+    font-family: 'SofiaPro-Soft';
+    src: url('../assets/fonts/SofiaProSoft.otf');
+}
+
+@font-face {
+    font-family: 'SofiaPro-Light';
+    src: url('../assets/fonts/SofiaPro-Light.otf');
+}
+
+
+.features-page-container {
+
+    .section-1 {
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1f);
+        padding-right: 9rem;
+        padding-left: 9rem;
+        max-width: 1600px;
+
+        @media (max-width: 946px) {
+            padding-right: 3rem;
+            padding-left: 3rem;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            .heading {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .icon {
+                    width: 2rem;
+                    height: 1.6rem;
+                    margin-bottom: 1rem;
+                    margin-right: 1rem;
+                }
+
+                .text {
+                    font-family: var(--pro);
+                    font-size: 3rem;
+                    font-weight: 500;
+                }
+                @media (max-width: 946px) {
+                    .text {
+                        font-size: 2rem;
+                    }
+                }
+                
+            }
+
+            @media (max-width: 870px) {
+                .heading {
+                    margin-top: 2rem;
+                }
+            }
+
+            &>p {
+                font-family: var(--light);
+                font-weight: 400;
+                font-size: 0.8rem;
+                padding-right: 4rem;
+            }
+            @media (max-width: 946px) {
+                &>p {
+                    font-family: var(--light);
+                    font-weight: 400;
+                    font-size: 0.8rem;
+                    padding-right: 1rem;
+                }
+            }
+        }
+
+        .right {
+
+            .image {
+                height: 600px;
+                object-fit: cover;
+                position: relative;
+                background-position: center;
+                background-size: cover;
+                transform: scale(1.4);
+            }
+            @media (max-width: 1140px) {
+                .image {
+                    transform: scale(1.1);
+                }
+            }
+            @media (max-width: 550px) {
+                .image {
+                    height: 500px;
+                }
+                .heading {
+                    transform: scale(0.8);
+                }
+            }
+
+            @media (max-width: 450px) {
+                .image {
+                    height: 420px;
+                }
+                .heading {
+                    transform: scale(0.5);
+                }
+            }
+    
+        }
+
+        @media (max-width: 1140px) {
+            padding-right: 6rem;
+            padding-left: 6rem
+        }
+
+        @media (max-width: 746px) {
+            padding-right: 3rem;
+            padding-left: 3rem;
+
+            .left {
+                margin-right: 0rem;
+            }
+        }
+    }
+
+    @media (min-width: 870px) {
+        .section-1 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

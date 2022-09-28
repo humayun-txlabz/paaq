@@ -8,11 +8,11 @@ import JobInsightsForm from "./form";
 const jobInsightsImg1 = require('../../assets/Images/job-insights-1.png');
 const locImgIcon = require('../../assets/loc-svg.png');
 const rotatedTag = require('../../assets/rotated-tag.png');
-
+const heartIcon = require('../../assets/heart-icon.png');
 const JobInsightsMain = () => {
   return (
     <>
-      <div className="background-image-main job-insights-main">
+      <div className="job-insights-main">
         <div className="job-in-bg-main-left">
           <h3 className="cac">
             Career and Culture &gt; <span className="cjobs">jobs</span>
@@ -22,10 +22,6 @@ const JobInsightsMain = () => {
               Principle Full <br />
               Stack Engineer
             </span>
-            <br />
-            <br />
-            <br />
-            <br />
             <div className="h-line" />
           </div>
           <div className="left-bottom">
@@ -38,6 +34,14 @@ const JobInsightsMain = () => {
             <img style={{width: 19, height: 18, marginRight: '10px'}} src={rotatedTag} /> Engineering
             </h3>
           </div>
+          <div className="mobile-btns-apply-and-heart">
+            <div className="apply-btn">
+              Apply Now
+            </div>
+            <div className="heart-btn">
+              <img src={heartIcon} style={{width: 13, height: 13}} />
+            </div>
+          </div>
         </div>
         <div className="job-in-bg-main-right">
           <img className="picOuterDiv" src={jobInsightsImg1} />
@@ -46,6 +50,19 @@ const JobInsightsMain = () => {
       </div>
       <div className="job-insights-main-content">
         <div className="job-insights-main-content-left">
+          {/* Socials */}
+          <div className="job-insights-main-content-left-socials">
+            <p>Share this job post</p>
+            <div className="social-icon">
+              <FaFacebookF />
+            </div>
+            <div className="social-icon">
+              <FiTwitter />
+            </div>
+            <div className="social-icon">
+              <RiLinkedinFill />
+            </div>
+          </div>
           <h1>What is Paaq?</h1>
           <p>
             Paaq takes the work out of scheduling so our customers have more

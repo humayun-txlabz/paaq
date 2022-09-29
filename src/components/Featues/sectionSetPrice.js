@@ -1,6 +1,6 @@
 import React from "react";
-const startIcon  = require('../../assets/Icons/feature-sec-2-dollar.png');
-const sec11 = require('../../assets/Images/feature-sec-2-1.png');
+import startIcon  from '../../assets/Icons/feature-sec-2-dollar.png';
+import sec11 from '../../assets/Images/feature-sec-2-1.png';
 
 const SectionSetPrice =() => {
   return (

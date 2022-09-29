@@ -1,5 +1,4 @@
 import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter'
-import ShareKnowledgeSection from 'components/ShareKnowledgeSection'
 import React from 'react'
 import SectionPaidMessage from './sectionPaidMessage'
 import SectionMyProfession from './sectionMyProfession'

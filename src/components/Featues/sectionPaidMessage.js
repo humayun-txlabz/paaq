@@ -1,8 +1,6 @@
 import React from "react";
-const startIcon  = require('../../assets/Icons/feature-sec-3-video.png');
-const askIcon  = require('../../assets/Icons/feature-sec-ask-icon.png');
-
-const sec11 = require('../../assets/Images/feature-sec-5-1.png');
+import askIcon from '../../assets/Icons/feature-sec-ask-icon.png';
+import sec11 from '../../assets/Images/feature-sec-5-1.png';
 
 const SectionPaidMessage =() => {
   return (

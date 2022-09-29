@@ -6,10 +6,10 @@ import { RiLinkedinFill } from "react-icons/ri";
 import { BiTag } from "react-icons/bi";
 import JobInsightsForm from "./form";
 import AppAndPlayStoreFooter from "components/appAndPlayStoreFooter";
-const jobInsightsImg1 = require('../../assets/Images/job-insights-1.png');
-const locImgIcon = require('../../assets/loc-svg.png');
-const rotatedTag = require('../../assets/rotated-tag.png');
-const heartIcon = require('../../assets/heart-icon.png');
+import jobInsightsImg1 from '../../assets/Images/job-insights-1.png';
+import locImgIcon from '../../assets/loc-svg.png';
+import rotatedTag from '../../assets/rotated-tag.png';
+import heartIcon from '../../assets/heart-icon.png';
 const JobInsightsMain = () => {
   return (
     <>

@@ -1,6 +1,6 @@
 import React from "react";
-const startIcon  = require('../../assets/Icons/features-sec-1-start.png');
-const sec11 = require('../../assets/Images/feature-sec-1-1.png');
+import startIcon  from '../../assets/Icons/features-sec-1-start.png';
+import sec11 from '../../assets/Images/feature-sec-1-1.png';
 
 const SectionMySkills =() => {
   return (

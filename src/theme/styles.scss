@@ -1320,3 +1320,134 @@
 
 
 }
+
+// Investors Page
+.investors-page-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 30vw;
+        & > h1 {
+            font-family: var(--bold);
+            font-weight: 700;
+            font-size: 3.5rem;
+            color: #fff;
+            text-align: center;
+        }
+        & > p {
+            font-family: var(--soft);
+            font-weight: 600;
+            font-size: 1.05rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        @media (max-width: 786px) {
+            & > h1 {
+                font-family: var(--bold);
+                font-weight: 700;
+                font-size: 2.5rem;
+                color: #fff;
+                
+            }
+            & > p {
+                font-family: var(--soft);
+                font-weight: 600;
+                font-size: 0.6rem;
+                text-align: center;
+                color: #fff;
+            }
+        }
+
+        @media (max-width: 600px) {
+            & > h1 {
+                font-size: 1.5rem;
+            }
+            & > p {
+                font-size: 0.5rem;
+            }
+        }
+    }
+    .image1 {
+        width: 13vw;
+        position: absolute;
+        top: 8%;
+    }
+    .image2 {
+        width: 14vw;
+        top: 14%;
+        right: 20%;
+        position: absolute;
+    }
+    .image3 {
+        width: 13vw;
+        top: 65%;
+        right: 22%;
+        position: absolute;
+    }
+    .image4 {
+        width: 7vw;
+        top: 75%;
+        right: 50%;
+        position: absolute;
+    }
+    .image5 {
+        width: 11vw;
+        top: 65%;
+        left: 20%;
+        position: absolute;
+    }
+    .image6 {
+        width: 13vw;
+        top: 40%;
+        left: 17%;
+        position: absolute;
+    }
+    .image7 {
+        width: 14vw;
+        top: 16%;
+        left: 25%;
+        position: absolute;
+    }
+    @media (max-width: 600px) {
+        .image1 {
+            width: 20vw;
+            top: 16%;
+        }
+        .image2 {
+            width: 20vw;
+            top: 25%;
+            right: 17%;
+        }
+        .image3 {
+            width: 20vw;
+            top: 60%;
+            right: 16%;
+        }
+        .image4 {
+            width: 10vw;
+            top: 45%;
+            right: 15%;
+        }
+        .image5 {
+            width: 22vw;
+            top: 64%;
+            left: 20%;
+        }
+        .image6 {
+            width: 22vw;
+            top: 40%;
+            left: 12%;
+        }
+        .image7 {
+            width: 20vw;
+            top: 25%;
+            left: 20%;
+        }
+    }
+}

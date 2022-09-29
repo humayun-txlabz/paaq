@@ -1,27 +1,28 @@
 import { useEffect, useRef, useState } from "react";
-// import { Image } from "theme-ui";
-import Image from 'next/image';
+import { animated, useSpring } from "react-spring";
+
+import Image from "next/image";
 import PauseIcon from "../../assets/pauseIcon.svg";
 
 const formWaveSurferOptions = (ref) => ({
   container: ref,
   waveColor: "#eee",
-  progressColor: "#0178FF",
+  progressColor: "#000000",
   cursorColor: "transparent",
   barWidth: 3,
   barRadius: 3,
   responsive: true,
   height: 65,
   normalize: true,
-  partialRender: true
+  partialRender: true,
 });
 
-export default function Waveform() {
+const Waveform = (props) => {
   const waveformRef = useRef(null);
   const wavesurfer = useRef(null);
   const [playing, setPlaying] = useState(false);
 
-  const url = 
+  const url =
     "https://www.mfiles.co.uk/mp3-downloads/brahms-st-anthony-chorale-theme-two-pianos.mp3";
 
   useEffect(() => {
@@ -35,7 +36,6 @@ export default function Waveform() {
   }, []);
 
   const create = async () => {
-    console.log('im in createeee')
     const WaveSurfer = (await import("wavesurfer.js")).default;
 
     const options = formWaveSurferOptions(waveformRef.current);
@@ -47,17 +47,32 @@ export default function Waveform() {
   const handlePlayPause = () => {
     setPlaying(!playing);
     wavesurfer.current.playPause();
+    props.handleClickPlay();
   };
 
+  const poppingOutAnimation = (delay) =>
+    useSpring({
+      from: { x: 0, y: 0, zoom: 0, scale: 0 },
+      to: { x: 0, y: 0, zoom: 1, scale: 1 },
+      delay: delay,
+    });
+
   return (
-    <div>
-        {/* <Image className="pauseicon" width={19} height={19} src={PauseIcon} /> */}
-      <div id="waveform" ref={waveformRef} />
-      {/* <div className="controlsssss">
-        <div onClick={handlePlayPause}>{!playing ? "play" : "pause"}</div>
-      </div> */}
-      {/* <Link href={{ pathname: "/about" }}>xxx</Link>
-       */}
-    </div>
+    <animated.div style={poppingOutAnimation(1000)}>
+      <div className="about-section-icon-play">
+        <Image
+          onClick={() => handlePlayPause()}
+          className="pauseicon"
+          width={19}
+          height={19}
+          src={PauseIcon}
+        />
+      </div>
+      <div className="about-section-audio">
+        <div className="about-waveform" id="waveform" ref={waveformRef} />
+      </div>
+    </animated.div>
   );
-}
+};
+
+export default Waveform;

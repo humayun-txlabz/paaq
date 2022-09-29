@@ -1,3 +1,4 @@
+import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter'
 import ShareKnowledgeSection from 'components/ShareKnowledgeSection'
 import React from 'react'
 import SectionFive from './sectionFive'
@@ -14,7 +15,7 @@ function MainFeatures() {
         <SectionTwo />
         <SectionThree />
         <SectionFour />
-        <ShareKnowledgeSection />
+        <AppAndPlayStoreFooter />
     </div>
   )
 }

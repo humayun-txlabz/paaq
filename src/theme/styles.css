@@ -1899,9 +1899,11 @@ button {
     background: #ffffff;
     height: 75px;
     position: absolute;
-    bottom: 16%;
-    right: 34%;
-    border-radius: 50px;
+    bottom: 20%;
+    right: 30%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index: 99;
 }
 
 
@@ -1970,4 +1972,24 @@ button {
   height: 238px;
   bottom: 3%;
   right: 18%;
+}
+
+.about-section-icon-play{
+  width: 70px;
+  background: #ffffff;
+  height: 75px;
+  position: absolute;
+  bottom: 20%;
+  right: 47%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-waveform{
+  margin-top: 5px;
+}
+.spinner-off{
+  display: none;
 }

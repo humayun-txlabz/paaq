@@ -4,7 +4,7 @@ const askIcon  = require('../../assets/Icons/feature-sec-ask-icon.png');
 
 const sec11 = require('../../assets/Images/feature-sec-5-1.png');
 
-function SectionFive() {
+const SectionPaidMessage =() => {
   return (
     <div className="section-5">
 
@@ -25,4 +25,4 @@ function SectionFive() {
   );
 }
 
-export default SectionFive;
+export default SectionPaidMessage;

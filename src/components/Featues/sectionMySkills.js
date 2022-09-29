@@ -2,7 +2,7 @@ import React from "react";
 const startIcon  = require('../../assets/Icons/features-sec-1-start.png');
 const sec11 = require('../../assets/Images/feature-sec-1-1.png');
 
-function SectionOne() {
+const SectionMySkills =() => {
   return (
     <div className="section-1">
       <div className="left">
@@ -19,4 +19,4 @@ function SectionOne() {
   );
 }
 
-export default SectionOne;
+export default SectionMySkills;

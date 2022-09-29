@@ -2,7 +2,7 @@ import React from "react";
 const startIcon  = require('../../assets/Icons/feature-sec-3-video.png');
 const sec11 = require('../../assets/Images/feature-sec-3-1.png');
 
-function SectionThree() {
+function SectionInApp() {
   return (
     <div className="section-3">
 
@@ -23,4 +23,4 @@ function SectionThree() {
   );
 }
 
-export default SectionThree;
+export default SectionInApp;

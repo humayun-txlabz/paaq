@@ -1,20 +1,20 @@
 import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter'
 import ShareKnowledgeSection from 'components/ShareKnowledgeSection'
 import React from 'react'
-import SectionFive from './sectionFive'
-import SectionFour from './sectionFour'
-import SectionOne from './sectionOne'
-import SectionThree from './sectionThree'
-import SectionTwo from './sectionTwo'
+import SectionPaidMessage from './sectionPaidMessage'
+import SectionMyProfession from './sectionMyProfession'
+import SectionMySkills from './sectionMySkills'
+import SectionInApp from './sectionInApp'
+import SectionSetPrice from './sectionSetPrice'
 
-function MainFeatures() {
+const MainFeatures = () => {
   return (
     <div className='features-page-container'>
-        <SectionOne />
-        <SectionFive />
-        <SectionTwo />
-        <SectionThree />
-        <SectionFour />
+        <SectionMySkills />
+        <SectionPaidMessage />
+        <SectionSetPrice />
+        <SectionInApp />
+        <SectionMyProfession />
         <AppAndPlayStoreFooter />
     </div>
   )

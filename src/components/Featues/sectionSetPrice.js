@@ -2,7 +2,7 @@ import React from "react";
 const startIcon  = require('../../assets/Icons/feature-sec-2-dollar.png');
 const sec11 = require('../../assets/Images/feature-sec-2-1.png');
 
-function SectionTwo() {
+const SectionSetPrice =() => {
   return (
     <div className="section-2">
       
@@ -26,4 +26,4 @@ function SectionTwo() {
   );
 }
 
-export default SectionTwo;
+export default SectionSetPrice;

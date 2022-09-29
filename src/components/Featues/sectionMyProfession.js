@@ -1,17 +1,17 @@
 import React from "react";
-const startIcon = require("../../assets/Icons/feature-sec-4-breif.png");
+import startIcon from "../../assets/Icons/feature-sec-4-breif.png";
 
-const u1 = require("../../assets/Icons/featureSecLast/0.png");
-const u2 = require("../../assets/Icons/featureSecLast/1.png");
-const u3 = require("../../assets/Icons/featureSecLast/2.png");
-const u4 = require("../../assets/Icons/featureSecLast/3.png");
-const u5 = require("../../assets/Icons/featureSecLast/4.png");
-const u6 = require("../../assets/Icons/featureSecLast/5.png");
-const u7 = require("../../assets/Icons/featureSecLast/6.png");
-const u8 = require("../../assets/Icons/featureSecLast/7.png");
-const logo = require("../../assets/Icons/featureSecLast/logo.png");
+import u1 from "../../assets/Icons/featureSecLast/0.png";
+import u2 from "../../assets/Icons/featureSecLast/1.png";
+import u3 from "../../assets/Icons/featureSecLast/2.png";
+import u4 from "../../assets/Icons/featureSecLast/3.png";
+import u5 from "../../assets/Icons/featureSecLast/4.png";
+import u6 from "../../assets/Icons/featureSecLast/5.png";
+import u7 from "../../assets/Icons/featureSecLast/6.png";
+import u8 from "../../assets/Icons/featureSecLast/7.png";
+import logo from "../../assets/Icons/featureSecLast/logo.png";
 
-function SectionFour() {
+const SectionMyProfession =() => {
   return (
     <div className="section-4">
       <div className="left">
@@ -70,4 +70,4 @@ function SectionFour() {
   );
 }
 
-export default SectionFour;
+export default SectionMyProfession;

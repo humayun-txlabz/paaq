@@ -2083,3 +2083,25 @@
         }
     }
 }
+
+.investors-section-market-size {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .section-market-size-main {
+        width: 50vw;
+        height: 80vh;
+        border: 1px solid #000000;
+        border-top-left-radius: 40vw;
+        border-top-right-radius: 40vw;
+        display: flex;
+        justify-content: center;
+        & > h1 {
+            font-family: var(--bold);
+            font-size: 3rem;
+            font-weight: 700;
+            margin-top: 4rem;
+        }
+    }
+}

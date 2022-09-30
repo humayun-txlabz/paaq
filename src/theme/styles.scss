@@ -1890,3 +1890,52 @@
         }
     }
 }
+
+// Section why paaq
+.investors-page-why-paaq {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    .main-content {
+        display: grid;
+        .left {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h1 {
+                padding-left: 16%;
+                padding-right: 16%;
+                font-family: var(--bold);
+                font-size: 3rem;
+                font-weight: 700;
+            }
+            p {
+                padding-left: 16%;
+                padding-right: 16%;
+            }
+        }
+
+        .right {
+            & > img {
+                height: 24rem;
+                padding-left: 16%;
+                padding-right: 0%;
+            }
+        }
+
+        @media (min-width: 786px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .h-line {
+        width: 84%;
+        height: 0.07rem;
+        background: #000;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+}

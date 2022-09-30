@@ -1,3 +1,4 @@
+import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter'
 import React from 'react'
 import SectionMarketTrends from './sectionMarketTrends'
 import SectionProblem from './sectionProblem'
@@ -13,6 +14,7 @@ const InvestorsMain = () => {
         <SectionSolution />
         <SectionMarketTrends />
         <SectionWhyPaaq />
+        <AppAndPlayStoreFooter />
     </div>
   )
 }

@@ -145,6 +145,12 @@ border-radius: 0.7rem;
      background: #FFFFFF;
      border-radius: 1.5rem;
      position: absolute;
+     display: inline-block;
+
+     clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 @media (max-width: 700px){
@@ -1782,7 +1788,7 @@ border-radius: 0.7rem;
           & > h1 {
                font-family: var(--bold);
                font-weight: 700;
-               font-size: 3.5rem;
+               font-size: 3.2rem;
                color: #fff;
                text-align: center;
           }
@@ -1799,7 +1805,7 @@ border-radius: 0.7rem;
                & > h1 {
                     font-family: var(--bold);
                     font-weight: 700;
-                    font-size: 2.5rem;
+                    font-size: 2.3rem;
                     color: #fff;
                }
 
@@ -1814,7 +1820,7 @@ border-radius: 0.7rem;
 
           @media (max-width: 600px) {
                & > h1 {
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                }
 
                & > p {

@@ -26,6 +26,24 @@
      src: url("../assets/fonts/SofiaPro-Light.otf");
 }
 
+// ask button component
+.inner-ask-button-fl {
+    background: linear-gradient(180deg, #FFFEFE, #E3E3E3 100%);
+border-radius: 6px;
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+& > h1 {
+      font-family: var(--pro);
+          font-size: 0.7rem;
+          font-weight: 600;
+          text-align: center;
+          color: #00B5B4;
+}
+}
+
 // mini card with identity
 .mini-card-with-identity {
      display: flex;
@@ -198,7 +216,7 @@ border-radius: 0.7rem;
           padding-right: 9rem;
           padding-left: 9rem;
           max-width: 1600px;
-
+          margin-top: 5rem;
           @media (max-width: 946px) {
                padding-right: 3rem;
                padding-left: 3rem;
@@ -328,6 +346,7 @@ border-radius: 0.7rem;
           padding-right: 9rem;
           padding-left: 9rem;
           max-width: 1600px;
+          margin-top: 5rem;
 
           @media (max-width: 946px) {
                padding-right: 3rem;
@@ -470,7 +489,7 @@ border-radius: 0.7rem;
           padding-right: 9rem;
           padding-left: 9rem;
           max-width: 1600px;
-
+          margin-top: 5rem;
           @media (max-width: 946px) {
                padding-right: 3rem;
                padding-left: 3rem;
@@ -642,7 +661,7 @@ border-radius: 0.7rem;
           padding-right: 9rem;
           padding-left: 9rem;
           max-width: 1600px;
-
+          margin-top: 5rem;
           @media (max-width: 946px) {
                padding-right: 3rem;
                padding-left: 3rem;
@@ -737,7 +756,12 @@ border-radius: 0.7rem;
                     display: flex;
                     border-radius: 2rem;
                     align-items: center;
-                    padding: 0.3rem;
+                    justify-content: flex-start;
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                    padding-left: 0.3rem;
+                    padding-right: 1rem;
+
 
                     @media (max-width: 530px) {
                          top: 12%;
@@ -808,8 +832,11 @@ border-radius: 0.7rem;
                     display: flex;
                     border-radius: 2rem;
                     align-items: center;
-                    padding: 0.3rem;
-
+                    justify-content: flex-start;
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                    padding-left: 0.3rem;
+                    padding-right: 1rem;
                     @media (max-width: 530px) {
                          top: 23%;
                          left: 20%;
@@ -879,8 +906,11 @@ border-radius: 0.7rem;
                     display: flex;
                     border-radius: 2rem;
                     align-items: center;
-                    padding: 0.3rem;
-
+                    justify-content: flex-start;
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                    padding-left: 0.3rem;
+                    padding-right: 1rem;
                     @media (max-width: 530px) {
                          top: 40%;
                          left: 3%;
@@ -950,8 +980,11 @@ border-radius: 0.7rem;
                     display: flex;
                     border-radius: 2rem;
                     align-items: center;
-                    padding: 0.3rem;
-
+                    justify-content: flex-start;
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                    padding-left: 0.3rem;
+                    padding-right: 1rem;
                     @media (max-width: 530px) {
                          top: 55%;
                          left: 6%;
@@ -1021,8 +1054,11 @@ border-radius: 0.7rem;
                     display: flex;
                     border-radius: 2rem;
                     align-items: center;
-                    padding: 0.3rem;
-
+                    justify-content: flex-start;
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                    padding-left: 0.3rem;
+                    padding-right: 1rem;
                     @media (max-width: 530px) {
                          top: 65%;
                          left: 35%;
@@ -1092,8 +1128,11 @@ border-radius: 0.7rem;
                     display: flex;
                     border-radius: 2rem;
                     align-items: center;
-                    padding: 0.3rem;
-
+                    justify-content: flex-start;
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                    padding-left: 0.3rem;
+                    padding-right: 1rem;
                     @media (max-width: 530px) {
                          top: 54%;
                          right: 10%;
@@ -1162,9 +1201,12 @@ border-radius: 0.7rem;
                     right: 10%;
                     display: flex;
                     border-radius: 2rem;
-                    align-items: center;
-                    padding: 0.3rem;
-
+                   align-items: center;
+                    justify-content: flex-start;
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                    padding-left: 0.3rem;
+                    padding-right: 1rem;
                     @media (max-width: 530px) {
                          top: 36%;
                          right: 7%;
@@ -1234,8 +1276,11 @@ border-radius: 0.7rem;
                     display: flex;
                     border-radius: 2rem;
                     align-items: center;
-                    padding: 0.3rem;
-
+                    justify-content: flex-start;
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                    padding-left: 0.3rem;
+                    padding-right: 1rem;
                     @media (max-width: 530px) {
                          top: 23%;
                          right: 15%;
@@ -1367,7 +1412,7 @@ border-radius: 0.7rem;
           padding-right: 9rem;
           padding-left: 9rem;
           max-width: 1600px;
-
+          margin-top: 5rem;
           @media (max-width: 946px) {
                padding-right: 3rem;
                padding-left: 3rem;
@@ -1384,11 +1429,40 @@ border-radius: 0.7rem;
                     align-items: center;
                     justify-content: center;
 
-                    .text .icon {
-                         width: 3.3rem;
-                         height: 1.8rem;
-                         margin-right: 1rem;
-                    }
+                    
+
+                    .big-ask-button {
+                         height: 3rem;
+                         display: inline-block;
+                         text-align: center;
+                         display:inline-flex;
+                         align-items: center;
+                         justify-content: center;
+                         
+                              .inner {
+                                   margin-top: -0.5rem;
+                                   margin-right: 1rem;
+                                   position:relative;
+                                   padding-top: 3px;
+                                   padding-left: 1rem;
+                                   padding-right: 1rem;
+                              background: linear-gradient(180deg, #FFFEFE -4.17%, #E3E3E3 44.66%);
+                              border-radius: 6px;
+                              
+                              text-align: center;
+                                   // background: green;
+                                   display: flex;
+                                   align-items: center;
+                                   justify-content: center;
+                                   height: 2rem;
+                                   & > h3 {
+                                   font-family: var(--pro);
+                              font-size: 0.9rem;
+                              font-weight: 500;
+                              color: #00B5B4;
+                              }
+                              }
+                         }
 
                     .text {
                          font-family: var(--pro);
@@ -1453,6 +1527,156 @@ border-radius: 0.7rem;
                display: flex;
                align-items: center;
                justify-content: center;
+
+               .left-paid-messages-component {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #FFFFFF;
+                    flex-direction: column;
+                    box-shadow: 0px 2.03738px 112.056px rgba(0, 0, 0, 0.16);
+                    padding-left:0.6rem;
+                    padding-right: 0.6rem;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    border-radius: 0.7rem;
+                    & > h1 {
+                          font-family: var(--pro);
+                         font-weight: 700;
+                         font-size: 0.7rem;
+                    }
+                    .profile-pic {
+                         width: 5rem;
+                         height: 5rem;
+                    }
+                    & > h3 {
+                           font-family: var(--pro);
+                         font-weight: 700;
+                         font-size: 0.7rem;
+                         color: #9DACAC;
+                         margin-top: 0.3rem;
+                    }
+                    & > p {
+                         font-family: var(--soft);
+                         font-weight: 700;
+                         font-size: 0.6rem;
+                         background: #E8EDED;
+                         border-radius: 0.3rem;
+                         padding-left: 0.3rem;
+                         padding-right: 0.3rem;
+                         padding-top: 0.2rem;
+                         padding-bottom: 0.2rem;
+                    }
+                    .followers-info {
+                         display: flex;
+                         align-items: center;
+                         justify-content:space-between;
+                         padding-left: 1rem;
+                         padding-right: 1rem;
+                         width: 17rem;
+                         padding-top: 1rem;
+                         .inner {
+                              display: flex;
+                              align-items: center;
+                              flex-direction: column;
+                              & > h1 {
+                                    font-family: var(--soft);
+                                   font-weight: 700;
+                                   font-size: 1rem;
+                                   line-height: 0.7rem;;
+                              }
+                              & > p {
+                                    font-family: var(--soft);
+                                   font-weight: 700;
+                                   font-size: 0.6rem;
+                                   line-height: 0.7rem;
+                                   color: #9E9E9E;
+                              }
+                         }
+                    }
+                    .bottom-img {
+                         width: 17rem;
+                    }
+               }
+
+               .left-card-mini-image-feature-paid-messages {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #FFFFFF;
+                    flex-direction: column;
+                    box-shadow: 0px 2.03738px 112.056px rgba(0, 0, 0, 0.16);
+                    padding-left:0.9rem;
+                    padding-right: 0.9rem;
+                    padding-top: 0.5rem;
+                    border-radius: 0.7rem;
+                    top: 6rem;
+                    left: -4rem;
+                    .img-bg {
+                         background: #E5F3F7;
+                         border-radius: 50%;
+                         padding: 0.4rem;
+                         width: 3rem;
+                         height: 3rem;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         & > img {
+                              width: 1.5rem;
+                              height: 1.5rem;
+                         }
+                    }
+
+                    & > p {
+                         font-family: var(--light);
+                         font-weight: 400;
+                         font-size: 0.7rem;
+                         line-height: 0.7rem;
+                         margin-top: 0.5rem;
+                    }
+
+               }
+
+               
+               .right-card-mini-image-feature-paid-messages {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #FFFFFF;
+                    flex-direction: column;
+                    box-shadow: 0px 2.03738px 112.056px rgba(0, 0, 0, 0.16);
+                    padding-left:0.9rem;
+                    padding-right: 0.9rem;
+                    padding-top: 0.5rem;
+                    border-radius: 0.7rem;
+                    top: 3rem;
+                    right: -4rem;
+                    .img-bg {
+                         background: #E5F3F7;
+                         border-radius: 50%;
+                         padding: 0.4rem;
+                         width: 3rem;
+                         height: 3rem;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         & > img {
+                              width: 1.5rem;
+                              height: 1.5rem;
+                         }
+                    }
+
+                    & > p {
+                         font-family: var(--light);
+                         font-weight: 400;
+                         font-size: 0.7rem;
+                         line-height: 0.7rem;
+                         margin-top: 0.5rem;
+                    }
+
+               }
 
                .image {
                     height: 500px;

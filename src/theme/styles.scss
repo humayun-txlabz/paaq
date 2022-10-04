@@ -26,6 +26,26 @@
 }
 
 
+.text-pill-component {
+     font-family: var(--pro);
+     font-weight: 600;
+     font-size: 1vw;
+     text-align: center;
+     padding-left: 1.2vw;
+     padding-right: 1.2vw;
+     padding-top: 0.8vh;
+     padding-bottom: 0.8vh;
+     background: #FFFFFF;
+     border-radius: 1.5rem;
+     position: absolute;
+}
+
+@media (max-width: 700px){
+     .text-pill-component {
+          font-size: 1.6vw;
+     }
+}
+
 .features-page-container {
      .my-skill-img-component {
           .inner-component {
@@ -1473,91 +1493,211 @@
      }
 
      .image1 {
-          width: 13vw;
+          width: 7vw;
           position: absolute;
           top: 8%;
+        
      }
 
+       .pill1 {
+          .p1 {
+                    z-index: 999;
+                    padding-left: 5vw;
+                    padding-top: 1vh;
+                    width: 10rem;
+                    position: relative;
+                    display: block;
+               }
+               @media (max-width: 700px){
+                    .p1 {
+                         padding-left: 7vw;
+                    padding-top: 0.7vh;
+                    }
+               }
+       }
+     
+
      .image2 {
-          width: 14vw;
+          width: 8vw;
           top: 14%;
           right: 20%;
           position: absolute;
      }
+.pill2 {
+          .p2 {
+                    z-index: 999;
+                    margin-left: -5vw;
+                    padding-top: 2.5vh;
+                    width: 10rem;
+                    position: absolute;
+                    display: block;
+               }
+               @media (max-width: 700px){
+                    .p2 {
+                         margin-left: -7vw;
+                     padding-top: 1.5vh;
+                    }
+               }
+       }
 
      .image3 {
-          width: 13vw;
+          width: 9vw;
           top: 65%;
           right: 22%;
           position: absolute;
      }
 
+     .pill3 {
+          .p3 {
+                    z-index: 999;
+                    margin-left: -5vw;
+                    padding-top: 2.5vh;
+                    width: 10rem;
+                    position: relative;
+                    display: block;
+               }
+               @media (max-width: 700px){
+                    .p3 {
+                         margin-left: -6.5vw;
+                    padding-top: 2.5vh;
+                    }
+               }
+       }
+
      .image4 {
-          width: 7vw;
-          top: 75%;
-          right: 50%;
+          width: 4vw;
+          top: 73%;
+          right: 47%;
           position: absolute;
      }
 
+     .pill4 {
+          .p4 {
+                    z-index: 999;
+                     margin-left: -6vw;
+                    padding-top: 2.5vh;
+                    width: 10rem;
+                    position: relative;
+                    display: block;
+               }
+               @media (max-width: 700px){
+                    .p4 {
+                         margin-left: -4vw;
+                    padding-top: 1.5vh;
+                    }
+               }
+       }
+
      .image5 {
-          width: 11vw;
+          width: 8vw;
           top: 65%;
           left: 20%;
           position: absolute;
      }
 
+     .pill5 {
+          .p5 {
+                    z-index: 999;
+                    padding-left: 7vw;
+                    padding-top: 1vh;
+                    width: 10rem;
+                    position: relative;
+                    display: block;
+               }
+               @media (max-width: 700px){
+                    .p5 {
+                         padding-left: 14vw;
+                    padding-top: 0.7vh;
+                    }
+               }
+       }
+
      .image6 {
-          width: 13vw;
+          width: 6vw;
           top: 40%;
           left: 17%;
           position: absolute;
      }
 
+     .pill6 {
+          .p6 {
+                    z-index: 999;
+                    padding-left: 5vw;
+                    padding-top: 1vh;
+                    width: 10rem;
+                    position: relative;
+                    display: block;
+               }
+               @media (max-width: 700px){
+                    .p6 {
+                         padding-left: 7vw;
+                    padding-top: 0.7vh;
+                    }
+               }
+       }
+
      .image7 {
-          width: 14vw;
+          width: 7vw;
           top: 16%;
           left: 25%;
           position: absolute;
      }
 
+     .pill7 {
+          .p7 {
+                    z-index: 999;
+                    padding-left: 5vw;
+                    padding-top: 1vh;
+                    width: 10rem;
+                    position: relative;
+                    display: block;
+               }
+               @media (max-width: 700px){
+                    .p7 {
+                         padding-left: 7vw;
+                    padding-top: 0.7vh;
+                    }
+               }
+       }
+
      @media (max-width: 600px) {
           .image1 {
-               width: 20vw;
+               width: 10vw;
                top: 16%;
           }
 
           .image2 {
-               width: 20vw;
+               width: 11vw;
                top: 25%;
                right: 17%;
           }
 
           .image3 {
-               width: 20vw;
+               width: 14vw;
                top: 60%;
                right: 16%;
           }
 
           .image4 {
-               width: 10vw;
+               width: 8vw;
                top: 45%;
                right: 15%;
           }
 
           .image5 {
-               width: 22vw;
+               width: 14vw;
                top: 64%;
                left: 20%;
           }
 
           .image6 {
-               width: 22vw;
+               width: 8vw;
                top: 40%;
                left: 12%;
           }
 
           .image7 {
-               width: 20vw;
+               width: 10vw;
                top: 25%;
                left: 20%;
           }
@@ -2091,6 +2231,9 @@
           flex-direction: column;
           position: relative;
 
+          @media (max-width: 550px){
+               height: 140vh;
+          }
           & > h1 {
                font-family: var(--bold);
                font-size: 3rem;
@@ -2170,6 +2313,25 @@
                          font-family: var(--pro);
                          font-weight: 400;
                          font-size: 0.95rem;
+                    }
+               }
+               @media (max-width: 550px) {
+                    .circle {
+                         width: 13rem;
+                         height: 13rem;
+                    }
+                    .one {
+                    margin-bottom: 18rem;
+                    }
+                    .two {
+                    margin-left: -13rem;
+                         padding-top: 4rem;
+                    padding-right: 1rem;
+                    }
+                    .three {
+                    margin-right: -13rem;
+                         padding-top: 4rem;
+                    padding-left: 1rem
                     }
                }
           }

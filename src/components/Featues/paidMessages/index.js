@@ -3,7 +3,8 @@ import paidMiniProfile from '../../../assets/Icons/featuresPage/paid-mini-left.p
 import AskButtonComponent from './askBtn';
 import bottomImage from '../../../assets/Icons/featuresPage/bottom-image.png';
 import MiniCardWithIdentity from 'components/miniCardWithIdentity';
-import miniVideoIcon from '../../../assets/Icons/featuresPage/mini-video-icon.png';
+import miniVideoIcon from "../../../assets/Icons/featuresPage/mini-video-icon.png";
+import miniMessageIcon from "../../../assets/Icons/featuresPage/mini-message-icon.png";
 const PaidMessagesComponent = () => {
   
   const miniVideoComp = () => {
@@ -14,7 +15,7 @@ const PaidMessagesComponent = () => {
           );
   }
   return (
-       <div style={{position: 'relative', marginTop: '3rem'}}>
+       <div style={{ position: "relative", marginTop: "3rem" }}>
             <div className="left-paid-messages-component">
                  <h1>Dalsy Huang</h1>
                  <img className="profile-pic" src={paidMiniProfile} />
@@ -43,9 +44,9 @@ const PaidMessagesComponent = () => {
             </div>
             <div className="right-card-mini-image-feature-paid-messages">
                  <div className="img-bg">
-                      <img src={miniVideoIcon} />
+                      <img src={miniMessageIcon} />
                  </div>
-                 <p>Video</p>
+                 <p>Text</p>
             </div>
        </div>
   );

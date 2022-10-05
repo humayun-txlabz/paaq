@@ -26,6 +26,23 @@
      src: url("../assets/fonts/SofiaPro-Light.otf");
 }
 
+@keyframes bounceIn {
+   0% { 
+      opacity: 0; 
+      transform: scale(.3);
+   }
+   50% { 
+      opacity: 1;
+      transform: scale(1.2);
+   }
+   70% {
+      transform: scale(.9);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
 // ask button component
 .inner-ask-button-fl {
      background: linear-gradient(180deg, #fffefe, #e3e3e3 100%);
@@ -129,11 +146,15 @@
                     border-radius: 7px;
                     height: 0.6rem;
                     animation-name: progressAnimation;
-                    animation-duration:1500ms;
+                    animation-duration: 1500ms;
                }
                @keyframes progressAnimation {
-                    from {width: 0%;}
-                    to {width: 100%;}
+                    from {
+                         width: 0%;
+                    }
+                    to {
+                         width: 100%;
+                    }
                }
                & > img {
                     width: 0.8rem;
@@ -213,13 +234,13 @@
      .mini-left-badge-myskill-features-page {
           position: absolute;
           left: -11vw;
-               top: -3rem;
+          top: -3rem;
      }
 
      .mini-left-badge-myskill-features-page-anim {
           position: absolute;
           left: -11vw;
-               top: -3rem;
+          top: -3rem;
           animation-name: myskillleftcard;
           animation-duration: 1500ms;
      }
@@ -227,20 +248,20 @@
      .mini-right-badge-myskill-features-page {
           position: absolute;
           right: -4rem;
-               top: 15rem;
+          top: 15rem;
      }
 
-      .mini-right-badge-myskill-features-page-anim {
+     .mini-right-badge-myskill-features-page-anim {
           position: absolute;
           right: -4rem;
-               top: 15rem;
+          top: 15rem;
           animation-name: myskillrightcard;
           animation-duration: 1s;
      }
 
      @keyframes myskillleftcard {
           from {
-              left: 37%;
+               left: 37%;
                top: 50%;
                scale: 0;
           }
@@ -253,7 +274,7 @@
 
      @keyframes myskillrightcard {
           from {
-              right: 37%;
+               right: 37%;
                top: 15rem;
                scale: 0;
           }
@@ -1693,6 +1714,24 @@
                     }
                }
 
+               .left-card-mini-image-feature-paid-messages-anim {
+                    animation-name: paidmessagesminileftanim;
+                    animation-duration: 1500ms;
+               }
+
+               @keyframes paidmessagesminileftanim {
+                    from {
+                         top: 12rem;
+                         left: 40%;
+                         scale: 0;
+                    }
+                    to {
+                         top: 6rem;
+                         left: -4rem;
+                         scale: 1
+                    }
+               }
+
                .right-card-mini-image-feature-paid-messages {
                     position: absolute;
                     display: flex;
@@ -1705,7 +1744,7 @@
                     padding-right: 0.9rem;
                     padding-top: 0.5rem;
                     border-radius: 0.7rem;
-                    top: 3rem;
+                     top: 3rem;
                     right: -4rem;
                     .img-bg {
                          background: #e5f3f7;
@@ -1728,6 +1767,24 @@
                          font-size: 0.7rem;
                          line-height: 0.7rem;
                          margin-top: 0.5rem;
+                    }
+               }
+
+               .right-card-mini-image-feature-paid-messages-anim {
+                    animation-name: paidmessagesminirightanim;
+                    animation-duration: 1500ms;
+               }
+
+               @keyframes paidmessagesminirightanim {
+                    from {
+                         top: 12rem;
+                    right: 40%;
+                         scale: 0;
+                    }
+                    to {
+                        top: 3rem;
+                    right: -4rem;
+                         scale: 1
                     }
                }
 

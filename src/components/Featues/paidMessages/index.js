@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import paidMiniProfile from '../../../assets/Icons/featuresPage/paid-mini-left.png';
 import AskButtonComponent from './askBtn';
 import bottomImage from '../../../assets/Icons/featuresPage/bottom-image.png';
@@ -8,6 +8,12 @@ import miniMessageIcon from "../../../assets/Icons/featuresPage/mini-message-ico
 import useIsInViewport from "use-is-in-viewport";
 const PaidMessagesComponent = () => {
      const [isInViewport, targetRef] = useIsInViewport();
+     const [isFirstTimeAnim, setIsFirstTimeAnim] = useState(false);
+     useEffect(() => {
+          if(isInViewport == true) {
+               setIsFirstTimeAnim(true);
+          }
+     }, [isInViewport])
   const miniVideoComp = () => {
           return (
                <div style={{ padding: "1rem", background: "##E5F3F7" , borderRadius: '50%', width: '3rem', height: '3rem'}}>
@@ -31,19 +37,28 @@ const PaidMessagesComponent = () => {
                            <h1>102</h1>
                            <p>Following</p>
                       </div>
-                      <div className="inner">
+                      <div className="inner" style={isInViewport ? {animationName: 'bounceIn', animationDuration: '1500ms'} : {}}>
                            <AskButtonComponent />
                       </div>
                  </div>
                  <img ref={targetRef} className="bottom-img" src={bottomImage} />
             </div>
-            <div className="left-card-mini-image-feature-paid-messages">
+            <div
+                 className={`left-card-mini-image-feature-paid-messages 
+            ${isInViewport ? "left-card-mini-image-feature-paid-messages-anim" : ""} `}
+            >
                  <div className="img-bg">
                       <img src={miniVideoIcon} />
                  </div>
                  <p>Video</p>
             </div>
-            <div className="right-card-mini-image-feature-paid-messages">
+            <div
+                 className={`right-card-mini-image-feature-paid-messages ${
+                      isInViewport
+                           ? "right-card-mini-image-feature-paid-messages-anim"
+                           : ""
+                 }`}
+            >
                  <div className="img-bg">
                       <img src={miniMessageIcon} />
                  </div>

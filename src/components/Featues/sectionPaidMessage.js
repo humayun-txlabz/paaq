@@ -13,7 +13,13 @@ const SectionPaidMessage =() => {
             <div className="left">
                  <div className="heading">
                       <div className="text">
-                           <div className="big-ask-button">
+                           <div
+                                className="big-ask-button"
+                                style={{
+                                     animationName: "bounceIn",
+                                     animationDuration: "1500ms",
+                                }}
+                           >
                                 <div className="inner">
                                      <h3>Ask</h3>
                                 </div>

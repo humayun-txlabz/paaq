@@ -124,6 +124,17 @@
                     height: 0.6rem;
                     width: 50%;
                }
+               .animate-progress {
+                    width: 100%;
+                    border-radius: 7px;
+                    height: 0.6rem;
+                    animation-name: progressAnimation;
+                    animation-duration:1s;
+               }
+               @keyframes progressAnimation {
+                    from {width: 0%;}
+                    to {width: 100%;}
+               }
                & > img {
                     width: 0.8rem;
                     height: 0.8rem;
@@ -202,13 +213,43 @@
      .mini-left-badge-myskill-features-page {
           position: absolute;
           left: -11vw;
-          top: -3rem;
+               top: -3rem;
+          animation-name: myskillleftcard;
+          animation-duration: 1s;
      }
 
      .mini-right-badge-myskill-features-page {
           position: absolute;
           right: -4rem;
-          top: 15rem;
+               top: 15rem;
+          animation-name: myskillrightcard;
+          animation-duration: 1s;
+     }
+
+     @keyframes myskillleftcard {
+          from {
+              left: 37%;
+               top: 50%;
+               scale: 0;
+          }
+          to {
+               left: -11vw;
+               top: -3rem;
+               scale: 1;
+          }
+     }
+
+     @keyframes myskillrightcard {
+          from {
+              right: 37%;
+               top: 15rem;
+               scale: 0;
+          }
+          to {
+               right: -4rem;
+               top: 15rem;
+               scale: 1;
+          }
      }
 
      .section-1 {
@@ -2837,7 +2878,6 @@
           padding-left: 1rem;
           padding-right: 1rem;
           .left {
-               
                & > h1 {
                     font-family: var(--bold);
                     font-size: 1.2rem;

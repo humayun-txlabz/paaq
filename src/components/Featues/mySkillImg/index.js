@@ -6,7 +6,7 @@ import miniImageRight from "../../../assets/Icons/featureSecLast/right-mini.png"
 
 const MySkillImageComponent = () => {
   return (
-       <div style={{ position: "relative", marginTop: '3rem' }}>
+       <div style={{ position: "relative", marginTop: "3rem" }}>
             <div className="my-skill-img-component">
                  <div className="inner-component">
                       <h1>My Skills</h1>
@@ -41,6 +41,7 @@ const MySkillImageComponent = () => {
                            marginBottom={1}
                            progressColor={"#9DACAC"}
                            isMenu
+                           isAnimate
                       />
                       <ProgressComponent
                            title="Overall Skills"
@@ -48,6 +49,7 @@ const MySkillImageComponent = () => {
                            marginBottom={1}
                            progressColor={"#9DACAC"}
                            isMenu
+                           isAnimate
                       />
                       <ProgressComponent
                            title="Overall Skills"

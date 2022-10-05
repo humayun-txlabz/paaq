@@ -3,10 +3,13 @@ import React from 'react'
 import ProgressComponent from '../../../components/progressComponent';
 import miniImage from "../../../assets/Icons/featureSecLast/left-mini.png";
 import miniImageRight from "../../../assets/Icons/featureSecLast/right-mini.png";
+import useIsInViewport from "use-is-in-viewport";
 
 const MySkillImageComponent = () => {
+          const [isInViewport, targetRef] = useIsInViewport();
+
   return (
-       <div style={{ position: "relative", marginTop: "3rem" }}>
+       <div ref={targetRef} style={{ position: "relative", marginTop: "3rem" }}>
             <div className="my-skill-img-component">
                  <div className="inner-component">
                       <h1>My Skills</h1>
@@ -72,7 +75,11 @@ const MySkillImageComponent = () => {
                       />
                  </div>
             </div>
-            <div className="mini-left-badge-myskill-features-page">
+            <div
+                 className={`mini-left-badge-myskill-features-page ${
+                      true ? "mini-left-badge-myskill-features-page-anim" : ""
+                 }`}
+            >
                  <MiniCardWithIdentity
                       image={miniImage}
                       name={"Lerato"}
@@ -80,7 +87,11 @@ const MySkillImageComponent = () => {
                       position="Financial Analyst"
                  />
             </div>
-            <div className="mini-right-badge-myskill-features-page">
+            <div
+                 className={`mini-right-badge-myskill-features-page ${
+                      true ? "mini-right-badge-myskill-features-page-anim" : ""
+                 }`}
+            >
                  <MiniCardWithIdentity
                       image={miniImageRight}
                       name={"Zoe Van..."}

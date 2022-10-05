@@ -129,7 +129,7 @@
                     border-radius: 7px;
                     height: 0.6rem;
                     animation-name: progressAnimation;
-                    animation-duration:1s;
+                    animation-duration:1500ms;
                }
                @keyframes progressAnimation {
                     from {width: 0%;}
@@ -214,11 +214,23 @@
           position: absolute;
           left: -11vw;
                top: -3rem;
+     }
+
+     .mini-left-badge-myskill-features-page-anim {
+          position: absolute;
+          left: -11vw;
+               top: -3rem;
           animation-name: myskillleftcard;
-          animation-duration: 1s;
+          animation-duration: 1500ms;
      }
 
      .mini-right-badge-myskill-features-page {
+          position: absolute;
+          right: -4rem;
+               top: 15rem;
+     }
+
+      .mini-right-badge-myskill-features-page-anim {
           position: absolute;
           right: -4rem;
                top: 15rem;

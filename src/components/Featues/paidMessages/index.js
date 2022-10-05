@@ -5,8 +5,9 @@ import bottomImage from '../../../assets/Icons/featuresPage/bottom-image.png';
 import MiniCardWithIdentity from 'components/miniCardWithIdentity';
 import miniVideoIcon from "../../../assets/Icons/featuresPage/mini-video-icon.png";
 import miniMessageIcon from "../../../assets/Icons/featuresPage/mini-message-icon.png";
+import useIsInViewport from "use-is-in-viewport";
 const PaidMessagesComponent = () => {
-  
+     const [isInViewport, targetRef] = useIsInViewport();
   const miniVideoComp = () => {
           return (
                <div style={{ padding: "1rem", background: "##E5F3F7" , borderRadius: '50%', width: '3rem', height: '3rem'}}>
@@ -20,7 +21,7 @@ const PaidMessagesComponent = () => {
                  <h1>Dalsy Huang</h1>
                  <img className="profile-pic" src={paidMiniProfile} />
                  <h3>@daisyh</h3>
-                 <p>Founder & CEO of Tesla </p>
+                 <p>Founder & CEO of Tesla {isInViewport ? "visible" : "notvisible"} </p>
                  <div className="followers-info">
                       <div className="inner">
                            <h1>102</h1>
@@ -34,7 +35,7 @@ const PaidMessagesComponent = () => {
                            <AskButtonComponent />
                       </div>
                  </div>
-                 <img className="bottom-img" src={bottomImage} />
+                 <img ref={targetRef} className="bottom-img" src={bottomImage} />
             </div>
             <div className="left-card-mini-image-feature-paid-messages">
                  <div className="img-bg">

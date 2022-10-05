@@ -20,6 +20,7 @@ const MySkillImageComponent = () => {
                            progressColor={"#67AC5B"}
                            title="Overall Skills"
                            progress={40}
+                           isAnimate
                       />
                       <div className="h-line" />
                       <ProgressComponent
@@ -27,6 +28,7 @@ const MySkillImageComponent = () => {
                            progress={70}
                            marginBottom={1}
                            progressColor={"#9DACAC"}
+                           isAnimate
                       />
                       <ProgressComponent
                            title="Overall Skills"
@@ -34,6 +36,7 @@ const MySkillImageComponent = () => {
                            marginBottom={1}
                            progressColor={"#9DACAC"}
                            isMenu
+                           isAnimate
                       />
                       <ProgressComponent
                            title="Overall Skills"
@@ -57,6 +60,7 @@ const MySkillImageComponent = () => {
                            marginBottom={1}
                            progressColor={"#9DACAC"}
                            isMenu
+                           isAnimate
                       />
                       <ProgressComponent
                            title="Overall Skills"
@@ -64,6 +68,7 @@ const MySkillImageComponent = () => {
                            marginBottom={2}
                            progressColor={"#9DACAC"}
                            isMenu
+                           isAnimate
                       />
                  </div>
             </div>

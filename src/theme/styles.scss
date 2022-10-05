@@ -2689,8 +2689,8 @@
 // Jobs page
 .jobs-page-container-main {
      margin-top: 3rem;
-padding-left: 10%;
-          padding-right: 10%;
+     padding-left: 10%;
+     padding-right: 10%;
      .link-text {
           font-family: var(--pro);
           font-size: 0.9rem;
@@ -2715,7 +2715,7 @@ padding-left: 10%;
                     font-weight: 500;
                }
                .form-container {
-                    background: linear-gradient(270deg, #7AE2D6 0%, #4293C5 100%);
+                    background: linear-gradient(270deg, #7ae2d6 0%, #4293c5 100%);
                     border-radius: 24px;
                     width: 100%;
                     padding: 1rem;
@@ -2748,8 +2748,7 @@ padding-left: 10%;
                               width: 100%;
                               outline: none;
                               border: 0px;
-                         padding: 0.4rem;
-
+                              padding: 0.4rem;
                          }
                          & > img {
                               width: 1.2rem;
@@ -2757,18 +2756,18 @@ padding-left: 10%;
                               margin-right: 0.6rem;
                          }
                     }
-                    
+
                     .text-width-icon {
                          display: flex;
                          align-items: center;
                          justify-content: space-between;
                          & > p {
-                         font-family: var(--soft);
-                         font-size: 0.8rem;
-                         color: #fff;
-                         line-height: 0.8rem;
-                    }
-                    & > img {
+                              font-family: var(--soft);
+                              font-size: 0.8rem;
+                              color: #fff;
+                              line-height: 0.8rem;
+                         }
+                         & > img {
                               height: 0.4rem;
                               margin-right: 0.6rem;
                               margin-top: 0.2rem;
@@ -2776,7 +2775,7 @@ padding-left: 10%;
                     }
 
                     .button {
-                         background: #252F44;
+                         background: #252f44;
                          color: #fff;
                          padding: 0.8rem;
                          width: 100%;
@@ -2791,11 +2790,354 @@ padding-left: 10%;
           }
 
           .right {
-               background: lightcoral
+               // background: lightcoral
+               margin-left: 10%;
+               @media (max-width: 1050px) {
+                    margin-left: 5%;
+               }
+
+               @media (max-width: 786px) {
+                    margin-left: 0%;
+                    margin-top: 2rem;
+               }
           }
 
           @media (min-width: 786px) {
                grid-template-columns: 1fr 2fr;
+          }
+     }
+}
+
+.jobs-page-featured-jobs {
+     background: #ffffff;
+     border: 1px solid #f0f0f0;
+     box-shadow: 10px 14px 130px rgba(0, 0, 0, 0.02);
+     border-radius: 20px;
+     padding: 1.5rem;
+     & > h1 {
+          font-family: var(--bold);
+          font-size: 1.5rem;
+          font-weight: 700;
+     }
+}
+
+.single-job-item {
+     background: #ffffff;
+     border: 1px solid #f4f4f4;
+     border-radius: 16px;
+     margin-bottom: 1.5rem;
+     .inner-container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          // padding: 1rem;
+          padding-top: 0.7rem;
+          padding-bottom: 0.5rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          .left {
+               
+               & > h1 {
+                    font-family: var(--bold);
+                    font-size: 1.2rem;
+                    font-weight: 700;
+               }
+               .bottom-flex-row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    text-align: center;
+                    width: 15rem;
+                    clear: both;
+                    align-items: center;
+                    .left {
+                         display: flex;
+                         align-items: center;
+                         justify-content: space-between;
+                         & > p {
+                              font-family: var(--soft);
+                              font-size: 1rem;
+                              font-weight: 500;
+                              text-align: center;
+                         }
+
+                         & > p img {
+                              height: 1rem;
+                              width: 1rem;
+                              margin-right: 0.3rem;
+                         }
+                    }
+                    .right {
+                         display: flex;
+                         align-items: center;
+                         text-align: center;
+                         & > p {
+                              font-family: var(--soft);
+                              font-size: 1rem;
+                              font-weight: 500;
+                              text-align: center;
+                         }
+
+                         & > p img {
+                              height: 1rem;
+                              width: 1rem;
+                              margin-right: 0.3rem;
+                         }
+                    }
+               }
+               @media (max-width: 950px) {
+                    & > h1 {
+                         font-size: 0.9rem;
+                    }
+                    .bottom-flex-row {
+                         display: flex;
+                         .left {
+                              & > p {
+                                   font-size: 0.8rem;
+                              }
+                         }
+                         .right {
+                              & > p {
+                                   font-size: 0.8rem;
+                              }
+                         }
+                    }
+               }
+
+               @media (max-width: 786px) {
+                    & > h1 {
+                         font-size: 0.7rem;
+                    }
+                    .bottom-flex-row {
+                         display: flex;
+                         align-items: center;
+                         .left {
+                              & > p {
+                                   font-size: 0.6rem;
+                              }
+                              & > p img {
+                                   height: 0.7rem;
+                                   width: 0.7rem;
+                                   margin-right: 0.5rem;
+                              }
+                         }
+                         .right {
+                              & > p {
+                                   font-size: 0.6rem;
+                              }
+                              & > p img {
+                                   height: 0.7rem;
+                                   width: 0.7rem;
+                                   margin-right: 0.1rem;
+                              }
+                         }
+                    }
+               }
+
+               @media (max-width: 500px) {
+                    & > h1 {
+                         font-size: 0.7rem;
+                    }
+                    .bottom-flex-row {
+                         display: flex;
+                         width: 100%;
+                         .left {
+                              & > p {
+                                   font-size: 0.6rem;
+                              }
+                              & > p img {
+                                   height: 0.7rem;
+                                   width: 0.7rem;
+                                   margin-right: 0.1rem;
+                              }
+                         }
+                         .right {
+                              & > p {
+                                   font-size: 0.6rem;
+                              }
+                              & > p img {
+                                   height: 0.7rem;
+                                   width: 0.7rem;
+                                   margin-right: 0.1rem;
+                              }
+                         }
+                    }
+               }
+               @media (max-width: 420px) {
+                    & > h1 {
+                         font-size: 0.7rem;
+                    }
+                    .bottom-flex-row {
+                         display: flex;
+                         width: 100%;
+                         .left {
+                              & > p {
+                                   font-size: 0.6rem;
+                              }
+                              & > p img {
+                              }
+                         }
+                         .right {
+                              & > p {
+                                   font-size: 0.6rem;
+                              }
+                         }
+                    }
+               }
+          }
+
+          .right {
+               .save-button-gradient {
+                    background: linear-gradient(270deg, #7ae2d6 0%, #4293c5 100%);
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    border-radius: 2rem;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    // display: flex;
+                    align-items: center;
+                    min-height: 0;
+                    .text {
+                         font-family: var(--soft);
+                         font-size: 0.9rem;
+                         font-weight: 500;
+                         color: #fff;
+                    }
+                    .text img {
+                         width: 0.9rem;
+                         height: 0.9rem;
+                         margin-right: 0.3rem;
+                    }
+
+                    @media (max-width: 950px) {
+                         .text {
+                              font-size: 0.7rem;
+                         }
+                         .text img {
+                              width: 0.7rem;
+                              height: 0.7rem;
+                         }
+                    }
+
+                    @media (max-width: 500px) {
+                         .text {
+                              font-size: 0.5rem;
+                         }
+                         .text img {
+                              width: 0.5rem;
+                              height: 0.5rem;
+                         }
+                    }
+               }
+               .save-button {
+                    background: #f8f8f8;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    border-radius: 2rem;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    // display: flex;
+                    align-items: center;
+                    min-height: 0;
+                    .text {
+                         font-family: var(--soft);
+                         font-size: 0.9rem;
+                         font-weight: 500;
+                    }
+                    .text img {
+                         width: 0.9rem;
+                         height: 0.9rem;
+                         margin-right: 0.3rem;
+                    }
+                    @media (max-width: 950px) {
+                         .text {
+                              font-size: 0.7rem;
+                         }
+                         .text img {
+                              width: 0.7rem;
+                              height: 0.7rem;
+                         }
+                    }
+                    @media (max-width: 500px) {
+                         .text {
+                              font-size: 0.5rem;
+                         }
+                         .text img {
+                              width: 0.5rem;
+                              height: 0.5rem;
+                         }
+                    }
+               }
+          }
+     }
+}
+
+// all jobs list
+
+.all-jobs-list-with-pagination {
+     margin-top: 2rem;
+     .light-text {
+          font-family: var(--soft);
+          font-size: 1rem;
+          font-weight: 400;
+          span {
+               font-family: var(--bold);
+          }
+     }
+     .pagination-container {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          margin-top: 1rem;
+     }
+}
+
+// pagination
+.pagination-wih-left-right {
+     display: flex;
+     align-items: center;
+     .pagination-left {
+          background: #f8f8f8;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 0.6rem;
+          & > img {
+               height: 0.4rem;
+          }
+     }
+     .digit {
+          background: #f8f8f8;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 0.6rem;
+          font-family: var(--soft);
+          font-weight: 400;
+          font-size: 0.8rem;
+     }
+     .active {
+          background: #00b5b4;
+          color: #fff;
+     }
+     .pagination-right {
+          width: 2rem;
+          height: 2rem;
+          border-radius: 1rem;
+          background: #252f44;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          & > img {
+               height: 0.4rem;
           }
      }
 }

@@ -1,4 +1,7 @@
+import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter';
 import React from 'react'
+import AllJobsList from './allJobsList';
+import FeaturedJobs from './featuredJobs';
 import LeftForm from "./leftForm";
 const JobsMain = () => {
   return (
@@ -11,9 +14,11 @@ const JobsMain = () => {
                       <LeftForm />
                  </div>
                  <div className="right">
-                    
+                    <FeaturedJobs />
+                    <AllJobsList />
                  </div>
             </div>
+            <AppAndPlayStoreFooter />
        </div>
   );
 }

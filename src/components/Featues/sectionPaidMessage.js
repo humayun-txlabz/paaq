@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import useIsInViewport from "use-is-in-viewport";
-import askIcon from '../../assets/Icons/feature-sec-ask-icon.png';
-import sec11 from '../../assets/Images/feature-sec-5-1.png';
 import PaidMessagesComponent from "./paidMessages";
  
 const SectionPaidMessage =() => {

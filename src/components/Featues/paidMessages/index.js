@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import paidMiniProfile from '../../../assets/Icons/featuresPage/paid-mini-left.png';
+import PaidMiniProfile from '../../../assets/Icons/featuresPage/paid-mini-left.png';
 import AskButtonComponent from './askBtn';
-import bottomImage from '../../../assets/Icons/featuresPage/bottom-image.png';
-import MiniCardWithIdentity from 'components/miniCardWithIdentity';
-import miniVideoIcon from "../../../assets/Icons/featuresPage/mini-video-icon.png";
-import miniMessageIcon from "../../../assets/Icons/featuresPage/mini-message-icon.png";
+import BottomImage from '../../../assets/Icons/featuresPage/bottom-image.png';
+import MiniVideoIcon from "../../../assets/Icons/featuresPage/mini-video-icon.png";
+import MiniMessageIcon from "../../../assets/Icons/featuresPage/mini-message-icon.png";
 import useIsInViewport from "use-is-in-viewport";
 const PaidMessagesComponent = () => {
      const [isInViewport, targetRef] = useIsInViewport();
@@ -18,7 +17,7 @@ const PaidMessagesComponent = () => {
   const miniVideoComp = () => {
           return (
                <div style={{ padding: "1rem", background: "##E5F3F7" , borderRadius: '50%', width: '3rem', height: '3rem'}}>
-                    <img src={miniVideoIcon} />
+                    <img src={MiniVideoIcon} />
                </div>
           );
   }
@@ -26,7 +25,7 @@ const PaidMessagesComponent = () => {
        <div style={{ position: "relative", marginTop: "3rem" }}>
             <div className="left-paid-messages-component">
                  <h1>Dalsy Huang</h1>
-                 <img className="profile-pic" src={paidMiniProfile} />
+                 <img className="profile-pic" src={PaidMiniProfile} />
                  <h3>@daisyh</h3>
                  <p>Founder & CEO of Tesla</p>
                  <div className="followers-info">
@@ -54,7 +53,7 @@ const PaidMessagesComponent = () => {
                            <AskButtonComponent />
                       </div>
                  </div>
-                 <img ref={targetRef} className="bottom-img" src={bottomImage} />
+                 <img ref={targetRef} className="bottom-img" src={BottomImage} />
             </div>
             <div
                  className={`left-card-mini-image-feature-paid-messages 
@@ -65,7 +64,7 @@ const PaidMessagesComponent = () => {
             } `}
             >
                  <div className="img-bg">
-                      <img src={miniVideoIcon} />
+                      <img src={MiniVideoIcon} />
                  </div>
                  <p>Video</p>
             </div>
@@ -77,7 +76,7 @@ const PaidMessagesComponent = () => {
                  }`}
             >
                  <div className="img-bg">
-                      <img src={miniMessageIcon} />
+                      <img src={MiniMessageIcon} />
                  </div>
                  <p>Text</p>
             </div>

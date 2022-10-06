@@ -1,8 +1,8 @@
 import MiniCardWithIdentity from 'components/miniCardWithIdentity';
 import React from 'react'
 import ProgressComponent from '../../../components/progressComponent';
-import miniImage from "../../../assets/Icons/featureSecLast/left-mini.png";
-import miniImageRight from "../../../assets/Icons/featureSecLast/right-mini.png";
+import MiniImage from "../../../assets/Icons/featureSecLast/left-mini.png";
+import MiniImageRight from "../../../assets/Icons/featureSecLast/right-mini.png";
 import useIsInViewport from "use-is-in-viewport";
 
 const MySkillImageComponent = () => {
@@ -81,7 +81,7 @@ const MySkillImageComponent = () => {
                  }`}
             >
                  <MiniCardWithIdentity
-                      image={miniImage}
+                      image={MiniImage}
                       name={"Lerato"}
                       id="@LeratoK"
                       position="Financial Analyst"
@@ -93,7 +93,7 @@ const MySkillImageComponent = () => {
                  }`}
             >
                  <MiniCardWithIdentity
-                      image={miniImageRight}
+                      image={MiniImageRight}
                       name={"Zoe Van..."}
                       id="@TheRealWil..."
                       position="CEO"

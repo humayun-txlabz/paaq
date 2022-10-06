@@ -29,49 +29,6 @@ const AboutUsMain = () => {
       delay: delay,
     });
 
-  const TEST_PEAKS = [
-    0.04, 0.99, 0.54, 0.74, 0.76, 0.52, 0.79, 0.72, 0.83, 0.67, 0.88, 0.99,
-    0.95, 0.9399999999999999, 0.91, 0.82, 0.96, 0.91, 0.93, 0.93, 0.98, 0.99,
-    0.98, 0.99, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.85, 0.82,
-  ];
-
-  const draw = (context) => {
-    // Insert your canvas API code to draw an image
-    var width = 10; //bar width
-    var X = 50; // first bar position
-    var base = 200;
-
-    var values = [100, 200, 250, 300];
-
-    let canvasHeight = 300;
-
-    let canvasWidth = 300;
-
-    var transX = canvasWidth * 0.5,
-      transY = canvasHeight * 0.5;
-
-    context.translate(transX, transY);
-
-    for (var i = 0; i < values.length; i++) {
-      // context.setTransform(1, 0, 0, 1, canvasWidth / 2, canvasHeight / 2);
-      context.fillStyle = "#008080";
-      var h = values[i];
-      console.log("X-AXIS--->>", X);
-      context.fillRect(X, canvasHeight - h, width, h);
-
-      // X += width+15 ;
-      X += i % 2 == 0 ? width + 15 : -200;
-      /* text to display Bar number */
-      // context.fillStyle = '#4da6ff';
-      // context.fillText('Bar '+i,X-50,canvasHeight - h -10);
-    }
-    /* Text to display scale */
-    // context.fillStyle = '#000000';
-    // context.fillText('Scale X : '+canvasWidth+' Y : '+canvasHeight,800,10);
-  };
-
-  // console.log('this is serverrrr', server);
-
   const handleClickPlay = () => {
     setIsPlay(!isPlay);
   };
@@ -79,8 +36,6 @@ const AboutUsMain = () => {
   return (
     <>
       <div className="background-image-main">
-        {/* <BackgroundImage /> */}
-        {/* <h1> THIS IS HEADING</h1> */}
         <div className="aboutus-left-section">
           <p className="aboutus-left-section-heading">About Us</p>
           <p className="aboutus-left-section-detail">

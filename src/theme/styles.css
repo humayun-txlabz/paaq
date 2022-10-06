@@ -3160,3 +3160,73 @@ justify-content: center;
   display: none;
 }
  
+
+/* Careers Page */
+.careers-left-section{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: inherit;
+  padding: 9% 12%;
+}
+.careers-title{
+  font-size: 70px;
+  font-weight: 600;
+  font-family: 'Sofia-Pro';
+  color: #ffffff;
+}
+.careers-description{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Sofia-Pro';
+  color: #ffffff;
+  line-height: 32px;
+  margin-bottom: 2%;
+}
+.careers-description-new{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Sofia-Pro';
+  color: #ffffff;
+  line-height: 32px;
+}
+.careers-right-section{
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  position: relative;
+}
+.careers-right-bg{
+  object-fit: contain;
+}
+.careers-image2{
+  position: absolute;
+  bottom: 40%;
+}
+.careers-image3{
+  position: absolute;
+  top: 19%;
+  right: 32%;
+}
+.careers-image4{
+  position: absolute;
+  bottom: 31%;
+  right: 21%;
+}
+.careers-image5{
+  position: absolute;
+  top: 20%;
+  right: 39%;
+}
+.careers-image6{
+  position: absolute;
+  bottom: 43%;
+  left: 9%;
+}
+.careers-image7{
+  position: absolute;
+  bottom: 33%;
+  right: 31%;
+}

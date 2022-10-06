@@ -8,12 +8,13 @@ import miniMessageIcon from "../../../assets/Icons/featuresPage/mini-message-ico
 import useIsInViewport from "use-is-in-viewport";
 const PaidMessagesComponent = () => {
      const [isInViewport, targetRef] = useIsInViewport();
-     const [isFirstTimeAnim, setIsFirstTimeAnim] = useState(false);
+     const [isShow, setIsShow] = useState(1);
+
      useEffect(() => {
-          if(isInViewport == true) {
-               setIsFirstTimeAnim(true);
+          if (isInViewport == true) {
+               setIsShow(isShow + 1);
           }
-     }, [isInViewport])
+     }, [isInViewport]);
   const miniVideoComp = () => {
           return (
                <div style={{ padding: "1rem", background: "##E5F3F7" , borderRadius: '50%', width: '3rem', height: '3rem'}}>
@@ -27,7 +28,10 @@ const PaidMessagesComponent = () => {
                  <h1>Dalsy Huang</h1>
                  <img className="profile-pic" src={paidMiniProfile} />
                  <h3>@daisyh</h3>
-                 <p>Founder & CEO of Tesla {isInViewport ? "visible" : "notvisible"} </p>
+                 <p>
+                      Founder & CEO of Tesla{" "}
+                      {isInViewport && isShow <= 2 ? "visible" : "notvisible"}{" "}
+                 </p>
                  <div className="followers-info">
                       <div className="inner">
                            <h1>102</h1>
@@ -37,7 +41,17 @@ const PaidMessagesComponent = () => {
                            <h1>102</h1>
                            <p>Following</p>
                       </div>
-                      <div className="inner" style={isInViewport ? {animationName: 'bounceIn', animationDuration: '1500ms'} : {}}>
+                      <div
+                           className="inner"
+                           style={
+                                isInViewport && isShow <= 2
+                                     ? {
+                                            animationName: "bounceIn",
+                                            animationDuration: "1500ms",
+                                       }
+                                     : {}
+                           }
+                      >
                            <AskButtonComponent />
                       </div>
                  </div>
@@ -45,7 +59,11 @@ const PaidMessagesComponent = () => {
             </div>
             <div
                  className={`left-card-mini-image-feature-paid-messages 
-            ${isInViewport ? "left-card-mini-image-feature-paid-messages-anim" : ""} `}
+            ${
+                 isInViewport && isShow <= 2
+                      ? "left-card-mini-image-feature-paid-messages-anim"
+                      : ""
+            } `}
             >
                  <div className="img-bg">
                       <img src={miniVideoIcon} />
@@ -54,7 +72,7 @@ const PaidMessagesComponent = () => {
             </div>
             <div
                  className={`right-card-mini-image-feature-paid-messages ${
-                      isInViewport
+                      isInViewport && isShow <= 2
                            ? "right-card-mini-image-feature-paid-messages-anim"
                            : ""
                  }`}

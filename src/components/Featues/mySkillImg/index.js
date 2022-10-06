@@ -85,6 +85,7 @@ const MySkillImageComponent = () => {
                       name={"Lerato"}
                       id="@LeratoK"
                       position="Financial Analyst"
+                      buttonText={"Follow"}
                  />
             </div>
             <div
@@ -97,6 +98,8 @@ const MySkillImageComponent = () => {
                       name={"Zoe Van..."}
                       id="@TheRealWil..."
                       position="CEO"
+                      buttonTextColor={"black"}
+                      buttonText={"Following"}
                  />
             </div>
        </div>

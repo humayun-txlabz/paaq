@@ -28,9 +28,9 @@ const SectionPaidMessage =() => {
                                 className="big-ask-button"
                                 style={{
                                      animationName: `${
-                                          isInViewport && isShow <= 2 ? "bounceIn" : ""
+                                          isInViewport && isShow <= 2 ? "bounce" : ""
                                      }`,
-                                     animationDuration: "1500ms",
+                                     animationDuration: "1200ms",
                                 }}
                            >
                                 <div className="inner">

@@ -28,10 +28,7 @@ const PaidMessagesComponent = () => {
                  <h1>Dalsy Huang</h1>
                  <img className="profile-pic" src={paidMiniProfile} />
                  <h3>@daisyh</h3>
-                 <p>
-                      Founder & CEO of Tesla{" "}
-                      {isInViewport && isShow <= 2 ? "visible" : "notvisible"}{" "}
-                 </p>
+                 <p>Founder & CEO of Tesla</p>
                  <div className="followers-info">
                       <div className="inner">
                            <h1>102</h1>
@@ -46,8 +43,10 @@ const PaidMessagesComponent = () => {
                            style={
                                 isInViewport && isShow <= 2
                                      ? {
-                                            animationName: "bounceIn",
+                                            transform: 'scale(1.1)',
+                                            animationName: "zoomIn",
                                             animationDuration: "1500ms",
+                                            transition: 'all 1500 ease'
                                        }
                                      : {}
                            }

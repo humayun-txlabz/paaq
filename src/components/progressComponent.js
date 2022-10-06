@@ -1,7 +1,7 @@
 import React from 'react'
 import useIsInViewport from 'use-is-in-viewport';
 import menuImg from '../assets/Icons/menu-black.png';
-
+ 
 const ProgressComponent = ({isMenu, progress, title, marginBottom, progressColor, isAnimate}) => {
             const [isInViewport, targetRef] = useIsInViewport();
 
@@ -15,7 +15,7 @@ const ProgressComponent = ({isMenu, progress, title, marginBottom, progressColor
             <div className="inner-progress">
                  <div className="progress-bg">
                       <div
-                           style={{ ...prog, ...progColor}}
+                           style={{ ...prog, ...progColor, maxWidth: `${progress}%`}}
                            className={`progress ${isAnim }`}
                       />
                  </div>

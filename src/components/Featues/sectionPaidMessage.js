@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import useIsInViewport from "use-is-in-viewport";
 import askIcon from '../../assets/Icons/feature-sec-ask-icon.png';
 import sec11 from '../../assets/Images/feature-sec-5-1.png';
 import PaidMessagesComponent from "./paidMessages";
  
 const SectionPaidMessage =() => {
+
+     const [isInViewport, targetRef] = useIsInViewport();
+     const [isShow, setIsShow] = useState(1);
+
+     useEffect(() => {
+          if (isInViewport == true) {
+               setIsShow(isShow + 1);
+          }
+     }, [isInViewport]);
   return (
        <div className="section-5">
             <div className="right in-web-left">
@@ -14,9 +24,12 @@ const SectionPaidMessage =() => {
                  <div className="heading">
                       <div className="text">
                            <div
+                                ref={targetRef}
                                 className="big-ask-button"
                                 style={{
-                                     animationName: "bounceIn",
+                                     animationName: `${
+                                          isInViewport && isShow <= 2 ? "bounceIn" : ""
+                                     }`,
                                      animationDuration: "1500ms",
                                 }}
                            >

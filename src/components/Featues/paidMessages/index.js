@@ -40,12 +40,13 @@ const PaidMessagesComponent = () => {
                       <div
                            className="inner"
                            style={
-                                isInViewport && isShow <= 2
+                                isShow >= 2
                                      ? {
-                                            transform: 'scale(1.1)',
-                                            animationName: "zoomIn",
+                                            transform: "scale(1.6)",
+                                            animationName: "zoomInCurrent",
                                             animationDuration: "1500ms",
-                                            transition: 'all 1500 ease'
+                                            transition: "all 1500 ease",
+                                            marginBottom: '1rem'
                                        }
                                      : {}
                            }
@@ -58,7 +59,7 @@ const PaidMessagesComponent = () => {
             <div
                  className={`left-card-mini-image-feature-paid-messages 
             ${
-                 isInViewport && isShow <= 2
+                  isShow >= 2
                       ? "left-card-mini-image-feature-paid-messages-anim"
                       : ""
             } `}
@@ -70,7 +71,7 @@ const PaidMessagesComponent = () => {
             </div>
             <div
                  className={`right-card-mini-image-feature-paid-messages ${
-                      isInViewport && isShow <= 2
+                      isShow >= 2
                            ? "right-card-mini-image-feature-paid-messages-anim"
                            : ""
                  }`}

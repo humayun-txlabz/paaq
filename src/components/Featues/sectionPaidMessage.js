@@ -24,12 +24,7 @@ const SectionPaidMessage =() => {
                            <div
                                 ref={targetRef}
                                 className="big-ask-button"
-                                style={{
-                                     animationName: `${
-                                          isInViewport && isShow <= 2 ? "bounce" : ""
-                                     }`,
-                                     animationDuration: "1200ms",
-                                }}
+                                
                            >
                                 <div className="inner">
                                      <h3>Ask</h3>

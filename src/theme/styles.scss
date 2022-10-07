@@ -2604,15 +2604,21 @@
           & > h1 {
                font-family: var(--pro);
                font-weight: 700;
-               font-size: 2.7rem;
+               font-size: 70px;
                display: flex;
                align-items: center;
 
                & > img {
-                    width: 4rem;
-                    height: 2rem;
-                    margin-bottom: 0.2rem;
+                    height: 3rem;
                     margin-left: 0.2rem;
+               }
+          }
+          @media (max-width: 786px) {
+               & > h1 {
+                    font-size: 48px;
+               }
+                & > img {
+                    height: 2.5rem;
                }
           }
      }
@@ -2636,14 +2642,17 @@
 
                & > p {
                     color: #4b5157;
-                    font-weight: 100;
-                    font-size: 1rem;
+                    font-weight: 400;
+                    font-size: 18px;
                     font-family: var(--light);
                }
 
                @media (max-width: 786px) {
                     padding-left: 8%;
                     padding-right: 8%;
+                    & > p {
+                    font-size: 14px;
+               }
                }
           }
 
@@ -2654,7 +2663,7 @@
                & > p {
                     color: #4b5157;
                     font-weight: 100;
-                    font-size: 1rem;
+                    font-size:18px;
                     font-family: var(--light);
                }
 
@@ -2732,20 +2741,34 @@
                     & > h1 {
                          font-family: var(--pro);
                          font-weight: 700;
-                         font-size: 2.7rem;
+                         font-size: 70px;
                          display: flex;
                          align-items: center;
 
                          & > img {
-                              width: 4rem;
-                              height: 2rem;
-                              margin-bottom: 0.2rem;
+                              height: 3rem;
                               margin-left: 0.2rem;
                          }
                     }
                }
 
+               & > p {
+                     font-family: var(--light);
+                         font-weight: 400;
+                         font-size: 18px;
+               }
+
                @media (max-width: 786px) {
+                    & > h1 {
+                         font-size: 43px;
+
+                         & > img {
+                              height: 2.5rem;
+                         }
+                    }
+                    & > p {
+                         font-size: 14px;
+                    }
                     padding-left: 8%;
                     padding-right: 8%;
                }
@@ -2791,7 +2814,7 @@
      & > h1 {
           font-family: var(--bold);
           font-weight: 700;
-          font-size: 3rem;
+          font-size: 70px;
           align-items: center;
           display: block;
           text-align: center;
@@ -2803,7 +2826,7 @@
           & > h1 {
                font-family: var(--pro);
                font-weight: 700;
-               font-size: 2.7rem;
+               font-size: 40px;
                align-items: center;
                display: block;
                text-align: center;
@@ -2853,16 +2876,20 @@
                     padding-right: 16%;
 
                     & > img {
-                         width: 1rem;
-                         height: 1rem;
-                         margin-top: 0.2rem;
-                         margin-right: 0.2rem;
+                         height: 15px;
+                         margin-top: 0.7rem;
+                         margin-right: 0.5rem;
                     }
 
                     & > p {
                          font-family: var(--pro);
                          font-weight: 600;
-                         font-size: 1.1rem;
+                         font-size: 24px;
+                    }
+                    @media (max-width: 786px) {
+                         & > p {
+                         font-size: 18px;
+                    }
                     }
                }
 
@@ -2897,9 +2924,12 @@
                .bottom-content {
                     font-family: var(--soft);
                     font-weight: 400;
-                    font-size: 1rem;
+                    font-size: 18px;
                     padding-left: 16%;
                     padding-right: 16%;
+                    span {
+                         color: #4293C5;
+                    }
                }
 
                @media (max-width: 786px) {
@@ -2944,22 +2974,27 @@
                     padding-left: 16%;
                     padding-right: 16%;
                     font-family: var(--bold);
-                    font-size: 3rem;
+                    font-size: 80px;
                     font-weight: 700;
                }
                p {
                     padding-left: 16%;
                     padding-right: 16%;
+                    font-size: 18px;
+                    font-family: var(--light);
+                    font-weight: 400;
                }
 
                @media (max-width: 786px) {
                     h1 {
                          padding-left: 8%;
                          padding-right: 8%;
+                         font-size: 40px;
                     }
                     p {
                          padding-left: 8%;
                          padding-right: 8%;
+                         font-size:14px;
                     }
                }
           }
@@ -3030,7 +3065,10 @@
                & > p {
                     font-family: var(--pro);
                     font-weight: 600;
-                    font-size: 1.5rem;
+                    font-size: 30px;
+               }
+               @media (max-width: 786px) {
+                    font-size: 24px;
                }
           }
           .right {
@@ -3038,7 +3076,7 @@
                & > p {
                     font-family: var(--pro);
                     font-weight: 400;
-                    font-size: 0.9rem;
+                    font-size: 18px;
                }
           }
 
@@ -3051,6 +3089,9 @@
                .right {
                     padding-left: 10%;
                     padding-right: 10%;
+                    & > p {
+                    font-size: 14px;
+               }
                }
           }
           @media (min-width: 786px) {
@@ -3110,7 +3151,7 @@
      justify-content: center;
      .section-market-size-main {
           width: 70vw;
-          height: 130vh;
+          height: 110vh;
           border: 1px solid #000000;
           border-top-left-radius: 40vw;
           border-top-right-radius: 40vw;
@@ -3120,11 +3161,11 @@
           position: relative;
 
           @media (max-width: 550px) {
-               height: 140vh;
+               height: 120vh;
           }
           & > h1 {
                font-family: var(--bold);
-               font-size: 3rem;
+               font-size: 70px;
                font-weight: 700;
                margin-top: 4rem;
           }
@@ -3231,7 +3272,7 @@
                text-align: center;
                font-family: var(--pro);
                font-weight: 600;
-               font-size: 1.5rem;
+               font-size: 24px;
           }
           @media (max-width: 786px) {
                width: 100%;

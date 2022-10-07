@@ -1,4 +1,5 @@
 import React from "react";
+import { useSpring, animated } from "react-spring";
 import Image1 from '../../assets/Icons/investors/1.png';
 import Image2 from '../../assets/Icons/investors/2.png';
 import Image3 from '../../assets/Icons/investors/3.png';
@@ -9,6 +10,146 @@ import Image7 from '../../assets/Icons/investors/7.png';
 import TextPillComponent from './../textPillComp';
 
 const InvestorsTop = () => {
+
+       const update3 = (value) => {
+            let obj = {
+                 from: { x: 0, y: 0, opacity: 0, scale: 0 },
+                 to: [
+                      { x: 0, y: 0, opacity: 1, scale: 1 },
+                      { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+                 ],
+                 delay: 31700,
+                 config: { duration: 500 },
+                 loop: true,
+            };
+            switch (value) {
+                 case 1:
+                      setAnim1(obj);
+                      break;
+                 case 2:
+                      setAnim2(obj);
+                      break;
+                 case 3:
+                      setAnim3(obj);
+                      break;
+                 case 4:
+                      setAnim4(obj);
+                      break;
+                 case 5:
+                      setAnim5(obj);
+                      break;
+                 case 6:
+                      setAnim6(obj);
+                      break;
+                 case 7:
+                      setAnim7(obj);
+                      break;
+                 case 8:
+                      setAnim8(obj);
+                      break;
+                 default:
+                      setAnim9(obj);
+            }
+       };
+
+     const poppingOutAnimation = (delay) =>
+          useSpring({
+               from: { x: 0, y: 0, zoom: 0, scale: 0 },
+               to: { x: 0, y: 0, zoom: 1, scale: 1 },
+               delay: delay,
+          });
+
+          const [anim1, setAnim1] = useSpring(() => ({
+               from: { x: 0, y: 0, opacity: 0, scale: 0 },
+               to: [
+                    { x: 0, y: 0, opacity: 1, scale: 1 },
+                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+               ],
+
+               delay: 2000,
+               config: { duration: 500 },
+
+               onRest: () => update3(1),
+          }));
+          const [anim2, setAnim2] = useSpring(() => ({
+               from: { x: 0, y: 0, opacity: 0, scale: 0 },
+               to: [
+                    { x: 0, y: 0, opacity: 1, scale: 1 },
+                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+               ],
+               delay: 5500,
+               config: { duration: 500 },
+
+               onRest: () => update3(2),
+          }));
+          const [anim3, setAnim3] = useSpring(() => ({
+               from: { x: 0, y: 0, opacity: 0, scale: 0 },
+               to: [
+                    { x: 0, y: 0, opacity: 1, scale: 1 },
+                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+               ],
+               delay: 9000,
+               config: { duration: 500 },
+
+               onRest: () => update3(3),
+          }));
+          const [anim4, setAnim4] = useSpring(() => ({
+               from: { x: 0, y: 0, opacity: 0, scale: 0 },
+               to: [
+                    { x: 0, y: 0, opacity: 1, scale: 1 },
+                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+               ],
+               delay: 13000,
+               config: { duration: 500 },
+
+               onRest: () => update3(4),
+          }));
+          const [anim5, setAnim5] = useSpring(() => ({
+               from: { x: 0, y: 0, opacity: 0, scale: 0 },
+               to: [
+                    { x: 0, y: 0, opacity: 1, scale: 1 },
+                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+               ],
+               delay: 16500,
+               config: { duration: 500 },
+
+               onRest: () => update3(5),
+          }));
+          const [anim6, setAnim6] = useSpring(() => ({
+               from: { x: 0, y: 0, opacity: 0, scale: 0 },
+               to: [
+                    { x: 0, y: 0, opacity: 1, scale: 1 },
+                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+               ],
+               delay: 20000,
+               config: { duration: 500 },
+
+               onRest: () => update3(6),
+          }));
+          const [anim7, setAnim7] = useSpring(() => ({
+               from: { x: 0, y: 0, opacity: 0, scale: 0 },
+               to: [
+                    { x: 0, y: 0, opacity: 1, scale: 1 },
+                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+               ],
+               delay: 24000,
+               config: { duration: 500 },
+
+               onRest: () => update3(7),
+          }));
+          const [anim8, setAnim8] = useSpring(() => ({
+               from: { x: 0, y: 0, opacity: 0, scale: 0 },
+               to: [
+                    { x: 0, y: 0, opacity: 1, scale: 1 },
+                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+               ],
+               delay: 28000,
+               config: { duration: 500 },
+
+               onRest: () => update3(8),
+          }));
+
+
   return (
        <div className="job-insights-main investors-page-top">
             <div className="center-content">
@@ -19,34 +160,50 @@ const InvestorsTop = () => {
                       …? Where …? How ….? Could …?{" "}
                  </p>
             </div>
-            <div className="image1 pill1">
-                <div className="p1"><TextPillComponent text="Could ?" /></div>
+            <animated.div className="image1 pill1" style={poppingOutAnimation(400)}>
+                 <animated.div className="p1" style={{ ...anim1 }}>
+                      <TextPillComponent text="Could ?" />
+                 </animated.div>
+
                  <img src={Image1} className="image1" />
-            </div>
-            <div className="image2 pill2">
-                 <div className="p2"><TextPillComponent text="Why ?" /></div>
+            </animated.div>
+            <animated.div className="image2 pill2" style={poppingOutAnimation(1600)}>
+                 <animated.div className="p2" style={{ ...anim2 }}>
+                      <TextPillComponent text="Why ?" />
+                 </animated.div>
                  <img src={Image2} className="image2" />
-            </div>
-            <div className="image3 pill3">
-             <div className="p3"><TextPillComponent text="What ?" /></div>
+            </animated.div>
+            <animated.div className="image3 pill3" style={poppingOutAnimation(1200)}>
+                 <animated.div className="p3" style={{ ...anim3 }}>
+                      <TextPillComponent text="What ?" />
+                 </animated.div>
                  <img src={Image3} className="image3" />
-            </div>
-            <div className="image4 pill4">
-             <div className="p4"><TextPillComponent textSize={'0.9vw'} text="Who ?" /></div>
+            </animated.div>
+
+            <animated.div className="image4 pill4" style={poppingOutAnimation(2000)}>
+                 <animated.div className="p4" style={{ ...anim4 }}>
+                      <TextPillComponent textSize={"0.9vw"} text="Who ?" />
+                 </animated.div>
                  <img src={Image4} className="image4" />
-            </div>
-            <div className="image5 pill5">
-             <div className="p5"><TextPillComponent text="When ?" /></div>
+            </animated.div>
+            <animated.div className="image5 pill5" style={poppingOutAnimation(800)}>
+                 <animated.div className="p5" style={{ ...anim5 }}>
+                      <TextPillComponent text="When ?" />
+                 </animated.div>
                  <img src={Image5} className="image5" />
-            </div>
-            <div className="image6 pill6">
-             <div className="p6"><TextPillComponent text="How ?" /></div>
+            </animated.div>
+            <animated.div className="image6 pill6" style={poppingOutAnimation(400)}>
+                 <animated.div className="p6" style={{ ...anim6 }}>
+                      <TextPillComponent text="How ?" />
+                 </animated.div>
                  <img src={Image6} className="image6" />
-            </div>
-            <div className="image7 pill7">
-             <div className="p7"><TextPillComponent text="Where ?" /></div>
+            </animated.div>
+            <animated.div className="image7 pill7" style={poppingOutAnimation(2300)}>
+                 <animated.div className="p7" style={{ ...anim7 }}>
+                      <TextPillComponent text="Where ?" />
+                 </animated.div>
                  <img src={Image7} className="image7" />
-            </div>
+            </animated.div>
        </div>
   );
 };

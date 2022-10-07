@@ -43,7 +43,7 @@ const SectionMyProfession =() => {
             <div className="right">
                  <div
                       className={`uDiv1 ${
-                           isInViewport && isShow <= 2 ? "uDiv1Anim" : ""
+                           isShow >= 2 ? "uDiv1Anim" : ""
                       }`}
                  >
                       <img src={Image1} className="icon" />
@@ -51,7 +51,7 @@ const SectionMyProfession =() => {
                  </div>
                  <div
                       className={`uDiv2 ${
-                           isInViewport && isShow <= 2 ? "uDiv2Anim" : ""
+                           isShow >= 2 ? "uDiv2Anim" : ""
                       }`}
                  >
                       <img src={Image2} className="icon" />
@@ -59,7 +59,7 @@ const SectionMyProfession =() => {
                  </div>
                  <div
                       className={`uDiv3 ${
-                           isInViewport && isShow <= 2 ? "uDiv3Anim" : ""
+                           isShow >= 2 ? "uDiv3Anim" : ""
                       }`}
                  >
                       <img src={Image3} className="icon" />
@@ -67,7 +67,7 @@ const SectionMyProfession =() => {
                  </div>
                  <div
                       className={`uDiv4 ${
-                           isInViewport && isShow <= 2 ? "uDiv4Anim" : ""
+                            isShow >= 2 ? "uDiv4Anim" : ""
                       }`}
                  >
                       <img src={Image4} className="icon" />
@@ -75,7 +75,7 @@ const SectionMyProfession =() => {
                  </div>
                  <div
                       className={`uDiv5 ${
-                           isInViewport && isShow <= 2 ? "uDiv5Anim" : ""
+                            isShow >= 2 ? "uDiv5Anim" : ""
                       }`}
                  >
                       <img src={Image5} className="icon" />
@@ -83,7 +83,7 @@ const SectionMyProfession =() => {
                  </div>
                  <div
                       className={`uDiv6 ${
-                           isInViewport && isShow <= 2 ? "uDiv6Anim" : ""
+                           isShow >= 2 ? "uDiv6Anim" : ""
                       }`}
                  >
                       <img src={Image6} className="icon" />
@@ -91,7 +91,7 @@ const SectionMyProfession =() => {
                  </div>
                  <div
                       className={`uDiv7 ${
-                           isInViewport && isShow <= 2 ? "uDiv7Anim" : ""
+                          isShow >= 2 ? "uDiv7Anim" : ""
                       }`}
                  >
                       <img src={Image7} className="icon" />
@@ -99,7 +99,7 @@ const SectionMyProfession =() => {
                  </div>
                  <div
                       className={`uDiv8 ${
-                           isInViewport && isShow <= 2 ? "uDiv8Anim" : ""
+                            isShow >= 2 ? "uDiv8Anim" : ""
                       }`}
                  >
                       <img src={Image8} className="icon" />

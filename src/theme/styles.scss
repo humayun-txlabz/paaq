@@ -513,13 +513,13 @@
 
                     .text {
                          font-family: var(--pro);
-                         font-size: 3rem;
+                         font-size: 70px;
                          font-weight: 500;
                     }
 
                     @media (max-width: 946px) {
                          .text {
-                              font-size: 2rem;
+                              font-size: 30px;
                          }
                     }
                }
@@ -527,7 +527,7 @@
                .heading-2 {
                     font-family: var(--pro);
                     font-weight: 800;
-                    font-size: 1rem;
+                    font-size: 22px;
                }
 
                @media (max-width: 870px) {
@@ -536,10 +536,16 @@
                     }
                }
 
+               @media (max-width: 786px) {
+                    .heading-2 {
+                    font-size: 14px;
+                     }
+               }
+
                & > p {
                     font-family: var(--light);
                     font-weight: 400;
-                    font-size: 0.8rem;
+                    font-size: 18px;
                     padding-right: 4rem;
                }
 
@@ -547,7 +553,7 @@
                     & > p {
                          font-family: var(--light);
                          font-weight: 400;
-                         font-size: 0.8rem;
+                         font-size: 18px;
                          padding-right: 1rem;
                     }
                }
@@ -556,7 +562,7 @@
                     & > p {
                          font-family: var(--light);
                          font-weight: 400;
-                         font-size: 0.7rem;
+                         font-size: 14px;
                     }
                }
           }
@@ -567,11 +573,15 @@
                justify-content: center;
 
                .image {
-                    height: 500px;
+                    height: 700px;
                     object-fit: cover;
                     position: relative;
                     background-position: center;
                     background-size: cover;
+               }
+
+               @media (max-width: 1020px) {
+                    transform: scale(0.8)
                }
 
                @media (max-width: 550px) {

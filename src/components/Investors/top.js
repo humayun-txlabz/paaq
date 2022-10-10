@@ -63,95 +63,95 @@ const InvestorsTop = () => {
                from: { x: 0, y: 0, opacity: 0, scale: 0 },
                to: [
                     { x: 0, y: 0, opacity: 1, scale: 1 },
-                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+                    // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
 
                delay: 2000,
                config: { duration: 500 },
 
-               onRest: () => update3(1),
+               // onRest: () => update3(1),
           }));
           const [anim2, setAnim2] = useSpring(() => ({
                from: { x: 0, y: 0, opacity: 0, scale: 0 },
                to: [
                     { x: 0, y: 0, opacity: 1, scale: 1 },
-                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+                    // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
                delay: 5500,
                config: { duration: 500 },
 
-               onRest: () => update3(2),
+               // onRest: () => update3(2),
           }));
           const [anim3, setAnim3] = useSpring(() => ({
                from: { x: 0, y: 0, opacity: 0, scale: 0 },
                to: [
                     { x: 0, y: 0, opacity: 1, scale: 1 },
-                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+                    // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
                delay: 9000,
                config: { duration: 500 },
 
-               onRest: () => update3(3),
+               // onRest: () => update3(3),
           }));
           const [anim4, setAnim4] = useSpring(() => ({
                from: { x: 0, y: 0, opacity: 0, scale: 0 },
                to: [
                     { x: 0, y: 0, opacity: 1, scale: 1 },
-                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+                    // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
                delay: 13000,
                config: { duration: 500 },
 
-               onRest: () => update3(4),
+               // onRest: () => update3(4),
           }));
           const [anim5, setAnim5] = useSpring(() => ({
                from: { x: 0, y: 0, opacity: 0, scale: 0 },
                to: [
                     { x: 0, y: 0, opacity: 1, scale: 1 },
-                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+                    // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
                delay: 16500,
                config: { duration: 500 },
 
-               onRest: () => update3(5),
+               // onRest: () => update3(5),
           }));
           const [anim6, setAnim6] = useSpring(() => ({
                from: { x: 0, y: 0, opacity: 0, scale: 0 },
                to: [
                     { x: 0, y: 0, opacity: 1, scale: 1 },
-                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+                    // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
                delay: 20000,
                config: { duration: 500 },
 
-               onRest: () => update3(6),
+               // onRest: () => update3(6),
           }));
           const [anim7, setAnim7] = useSpring(() => ({
                from: { x: 0, y: 0, opacity: 0, scale: 0 },
                to: [
                     { x: 0, y: 0, opacity: 1, scale: 1 },
-                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+                    // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
                delay: 24000,
                config: { duration: 500 },
 
-               onRest: () => update3(7),
+               // onRest: () => update3(7),
           }));
           const [anim8, setAnim8] = useSpring(() => ({
                from: { x: 0, y: 0, opacity: 0, scale: 0 },
                to: [
                     { x: 0, y: 0, opacity: 1, scale: 1 },
-                    { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+                    // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
                delay: 28000,
                config: { duration: 500 },
 
-               onRest: () => update3(8),
+               // onRest: () => update3(8),
           }));
 
 
   return (
-       <div className="job-insights-main investors-page-top">
+       <div className="investors-page-top">
             <div className="center-content">
                  <h1>Did you know?</h1>
                  <p>

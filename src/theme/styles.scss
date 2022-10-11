@@ -4211,7 +4211,7 @@
           justify-content: center;
           align-items: center;
           flex-direction: column;
-
+          margin-top: 5rem;
           h1 {
                text-align: center;
                font-family: var(--bold);
@@ -4230,6 +4230,7 @@
                font-weight: 400;
                font-size: 18px;
                line-height: 32px;
+               margin-bottom: 3rem;
           }
 
           .leader-animation-component {
@@ -4237,21 +4238,20 @@
                align-items: center;
                justify-content: center;
                position: relative;
-               background: lightblue;
                width: 100%;
                padding-top: 10%;
                padding-bottom: 10%;
                .left1 {
                     position: absolute;
-                    width: 5%;
+                    width: 6%;
                     top: 0%;
                     left: 10%;
                }
 
                .left2 {
                     position: absolute;
-                    width: 5%;
-                    top: 25%;
+                    width: 6%;
+                    top: 28%;
                     left: 10%;
 
                }
@@ -4259,8 +4259,8 @@
                .left3 {
                     position: absolute;
                     position: absolute;
-                    width: 5%;
-                    top: 50%;
+                    width: 6%;
+                    top: 53%;
                     left: 10%;
 
                }
@@ -4268,14 +4268,14 @@
                .left4 {
                     position: absolute;
                     position: absolute;
-                    width: 5%;
-                    top: 75%;
+                    width: 6%;
+                    top: 78%;
                     left: 10%;
                }
 
                .right1 {
                     position: absolute;
-                    width: 5%;
+                    width: 6%;
                     top: 0%;
                     right: 10%;
 
@@ -4283,22 +4283,22 @@
 
                .right2 {
                     position: absolute;
-                    width: 5%;
-                    top:25%;
+                    width: 6%;
+                    top:28%;
                     right: 10%;
                }
 
                .right3 {
                     position: absolute;
-                    width: 5%;
-                    top: 50%;
+                    width: 6%;
+                    top: 53%;
                     right: 10%;
                }
 
                .right4 {
                     position: absolute;
-                    width: 5%;
-                    top: 75%;
+                    width: 6%;
+                    top: 78%;
                     right: 10%;
 
                }

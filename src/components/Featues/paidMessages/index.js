@@ -42,11 +42,8 @@ const PaidMessagesComponent = () => {
                            style={
                                 isShow >= 2
                                      ? {
-                                            transform: "scale(1.6)",
-                                            animationName: "zoomInCurrent",
-                                            animationDuration: "1500ms",
-                                            transition: "all 1500 ease",
-                                            marginBottom: '1rem'
+                                            animation: "zoomInOutCurrent 2s ease",
+                                        //     marginBottom: '1rem'
                                        }
                                      : {}
                            }

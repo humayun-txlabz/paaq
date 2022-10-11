@@ -29,9 +29,10 @@ const SectionPaidMessage =() => {
                                 <div className="inner">
                                      <h3>Ask</h3>
                                 </div>
+                                Ask Button
                            </div>
                            {/* <img src={askIcon} className="icon" /> */}
-                           Ask Button
+                           
                            <br />
                            (Paid Message)
                       </div>

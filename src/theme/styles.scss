@@ -168,7 +168,7 @@
           height: 3rem;
           border: 1px solid #e88491;
           border-radius: 50%;
-          margin-bottom: 0.2rem;
+          margin-bottom: 0.4rem;
      }
 
      &>p {
@@ -221,7 +221,7 @@
      &>h1 {
           font-weight: 400;
           font-family: var(--bold);
-          font-size: 0.8rem;
+          font-size: 16px;
           color: #181f1f;
      }
 
@@ -234,21 +234,21 @@
           .progress-bg {
                background: #e8eded;
                border-radius: 7px;
-               height: 0.6rem;
+               height: 0.9rem;
                width: 100%;
                margin-right: 1.5rem;
 
                .progress {
                     background: #67ac5b;
                     border-radius: 7px;
-                    height: 0.6rem;
+                    height: 0.9rem;
                     width: 50%;
                }
 
                .animate-progress {
                     width: 100%;
                     border-radius: 7px;
-                    height: 0.6rem;
+                    height: 0.9rem;
                     animation-name: progressAnimation;
                     animation-duration: 3500ms;
                }
@@ -267,6 +267,12 @@
                     width: 0.8rem;
                     height: 0.8rem;
                }
+          }
+     }
+
+     @media (max-width: 786px){
+          & > h1 {
+               font-size: 10px;
           }
      }
 }
@@ -300,13 +306,14 @@
 .features-page-container {
      .my-skill-img-component {
           box-shadow: 0 2rem 3rem var(--color-light);
+          border-radius: 20px;
 
           .inner-component {
                background: #ffffff;
                border: 1px solid #f3f3f3;
                //    border: 1px solid #f3f3f3;
                border-radius: 20px;
-               max-width: 20rem;
+               max-width: 23rem;
                display: flex;
                align-items: center;
                flex-direction: column;
@@ -315,7 +322,7 @@
                &>h1 {
                     font-family: var(--bold);
                     font-weight: 700;
-                    font-size: 1.2rem;
+                    font-size: 20px;
                     padding-left: 1rem;
                     padding-right: 1rem;
                }
@@ -323,11 +330,17 @@
                &>p {
                     font-family: var(--soft);
                     font-weight: 400;
-                    font-size: 0.6rem;
+                    font-size: 12px;
                     color: rgba(24, 31, 31, 0.5);
                     text-align: center;
                     padding-left: 1rem;
                     padding-right: 1rem;
+               }
+
+               @media (max-width: 786px) {
+                    & > p {
+                         font-size: 7px;
+                    }
                }
 
                &>.h-line {
@@ -344,15 +357,15 @@
      .mini-left-badge-myskill-features-page {
           position: absolute;
           left: -11vw;
-          top: -3rem;
+          top: -1rem;
      }
 
      .mini-left-badge-myskill-features-page-anim {
           position: absolute;
           left: -11vw;
-          top: -3rem;
+          top: -1rem;
           animation-name: myskillleftcard;
-          animation-duration: 1500ms;
+          animation-duration: 2000ms;
      }
 
      .mini-right-badge-myskill-features-page {
@@ -366,7 +379,7 @@
           right: -4rem;
           top: 15rem;
           animation-name: myskillrightcard;
-          animation-duration: 1s;
+          animation-duration: 2s;
      }
 
      @keyframes myskillleftcard {
@@ -378,7 +391,7 @@
 
           to {
                left: -11vw;
-               top: -3rem;
+               top: -1rem;
                scale: 1;
           }
      }
@@ -1037,6 +1050,7 @@
                     animation-delay: 700ms;
                     animation-fill-mode: forwards;
                     transition: all 1500ms ease;
+                    transition-timing-function: ease;
                     z-index: 1000;
 
                }
@@ -1045,12 +1059,14 @@
                     from {
                          top: 40%;
                          left: 40%;
+                         scale: 0;
                          opacity: 1;
                     }
 
                     to {
                          top: 5%;
                          left: 40%;
+                         scale: 1;
                          opacity: 1;
                     }
                }
@@ -1060,12 +1076,14 @@
                          from {
                               top: 40%;
                               left: 40%;
+                              scale: 0;
                               opacity: 1;
                          }
 
                          to {
                               top: 12%;
                               left: 40%;
+                              scale: 1;
                               opacity: 1;
                          }
                     }
@@ -1153,6 +1171,7 @@
                     animation-delay: 700ms;
                     animation-fill-mode: forwards;
                     transition: all 1500ms ease;
+                    transition-timing-function: ease;
                     z-index: 1000;
 
                }
@@ -1273,6 +1292,7 @@
                     animation-delay: 700ms;
                     animation-fill-mode: forwards;
                     transition: all 1500ms ease;
+                    transition-timing-function: ease;
                     z-index: 1000;
 
                }
@@ -1394,6 +1414,7 @@
                     animation-delay: 700ms;
                     animation-fill-mode: forwards;
                     transition: all 1500ms ease;
+                    transition-timing-function: ease;
                     z-index: 1000;
 
                }
@@ -1514,6 +1535,7 @@
                     animation-delay: 700ms;
                     animation-fill-mode: forwards;
                     transition: all 1500ms ease;
+                    transition-timing-function: ease;
                     z-index: 1000;
 
                }
@@ -1634,6 +1656,7 @@
                     animation-delay: 700ms;
                     animation-fill-mode: forwards;
                     transition: all 1500ms ease;
+                    transition-timing-function: ease;
                     z-index: 1000;
 
                }
@@ -1754,6 +1777,7 @@
                     animation-delay: 700ms;
                     animation-fill-mode: forwards;
                     transition: all 1500ms ease;
+                    transition-timing-function: ease;
                     z-index: 1000;
 
                }
@@ -1874,6 +1898,7 @@
                     animation-delay: 700ms;
                     animation-fill-mode: forwards;
                     transition: all 1500ms ease;
+                    transition-timing-function: ease;
                     z-index: 1000;
                }
 
@@ -2037,13 +2062,14 @@
                                    margin-top: 18%;
                               }
 
+                              &:hover {
+                                   animation: bounce 1s infinite;
+                                   cursor: pointer;
+                              }
 
                          }
 
-                         &:hover {
-                              animation: bounce 1s infinite;
-                              cursor: pointer;
-                         }
+                         
 
                     }
 
@@ -2130,21 +2156,25 @@
                     background: #ffffff;
                     flex-direction: column;
                     box-shadow: 0px 2.03738px 112.056px rgba(0, 0, 0, 0.16);
-                    padding-left: 0.6rem;
-                    padding-right: 0.6rem;
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.5rem;
+                    padding-left: 0.4rem;
+                    padding-right: 0.4rem;
+                    width: 20rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
                     border-radius: 0.7rem;
 
                     &>h1 {
                          font-family: var(--pro);
                          font-weight: 700;
-                         font-size: 0.7rem;
+                         font-size: 20px;
                     }
 
                     .profile-pic {
                          width: 5rem;
                          height: 5rem;
+                         border: 2px solid #E88491;
+                         padding: 1px;
+                         border-radius: 50%;
                     }
 
                     &>h3 {
@@ -2158,7 +2188,7 @@
                     &>p {
                          font-family: var(--soft);
                          font-weight: 700;
-                         font-size: 0.6rem;
+                         font-size: 14px;
                          background: #e8eded;
                          border-radius: 0.3rem;
                          padding-left: 0.3rem;
@@ -2199,7 +2229,21 @@
                     }
 
                     .bottom-img {
-                         width: 17rem;
+                         width: 20rem;
+                    }
+
+                    @media (max-width: 786px) {
+                         &>h1 {
+                              font-size: 13px;
+                         }
+     
+                         .profile-pic {
+                              width: 5rem;
+                              height: 5rem;
+                         } 
+                         & > p {
+                              font-size: 10px;
+                         }
                     }
                }
 
@@ -2212,9 +2256,9 @@
                     background: #ffffff;
                     flex-direction: column;
                     box-shadow: 0px 2.03738px 112.056px rgba(0, 0, 0, 0.16);
-                    padding-left: 0.9rem;
-                    padding-right: 0.9rem;
-                    padding-top: 0.5rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-top: 1rem;
                     border-radius: 0.7rem;
                     top: 6rem;
                     left: -4rem;
@@ -2249,7 +2293,7 @@
                     animation-duration: 1500ms;
                     animation-delay: 700ms;
                     animation-fill-mode: forwards;
-                    transition: all 1500ms ease;
+                    transition: all 2000ms ease;
                }
 
                @keyframes paidmessagesminileftanim {
@@ -2277,9 +2321,9 @@
                     background: #ffffff;
                     flex-direction: column;
                     box-shadow: 0px 2.03738px 112.056px rgba(0, 0, 0, 0.16);
-                    padding-left: 0.9rem;
-                    padding-right: 0.9rem;
-                    padding-top: 0.5rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-top: 1rem;
                     border-radius: 0.7rem;
                     top: 3rem;
                     right: -4rem;
@@ -2314,7 +2358,7 @@
                     animation-duration: 1500ms;
                     animation-delay: 700ms;
                     animation-fill-mode: forwards;
-                    transition: all 1500ms ease;
+                    transition: all 2000ms ease;
                }
 
                @keyframes paidmessagesminirightanim {

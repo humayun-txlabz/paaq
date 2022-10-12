@@ -4212,6 +4212,7 @@
           align-items: center;
           flex-direction: column;
           margin-top: 5rem;
+
           h1 {
                text-align: center;
                font-family: var(--bold);
@@ -4233,6 +4234,19 @@
                margin-bottom: 3rem;
           }
 
+          @media (max-width: 786px) {
+               margin-left: 2%;
+          margin-right: 2%;
+               & > h1 {
+                    font-size: 40px;
+               }
+
+               & > p {
+                    font-size: 14px;
+                    width: 90%;
+               }
+          }
+
           .leader-animation-component {
                display: flex;
                align-items: center;
@@ -4241,65 +4255,78 @@
                width: 100%;
                padding-top: 10%;
                padding-bottom: 10%;
+
                .left1 {
                     position: absolute;
-                    width: 6%;
+                    width: 7%;
                     top: 0%;
                     left: 10%;
+                    padding-right: 1%;
                }
 
                .left2 {
                     position: absolute;
-                    width: 6%;
+                    width: 7%;
                     top: 28%;
                     left: 10%;
+                    padding-right: 1%;
 
                }
 
                .left3 {
                     position: absolute;
                     position: absolute;
-                    width: 6%;
+                    width: 7%;
                     top: 53%;
                     left: 10%;
+                    padding-right: 1%;
 
                }
 
                .left4 {
                     position: absolute;
                     position: absolute;
-                    width: 6%;
+                    width: 7%;
                     top: 78%;
                     left: 10%;
+                    padding-right: 1%;
+
                }
 
                .right1 {
                     position: absolute;
-                    width: 6%;
+                    width: 7%;
                     top: 0%;
                     right: 10%;
+                    padding-left: 1%;
 
                }
 
                .right2 {
                     position: absolute;
-                    width: 6%;
-                    top:28%;
+                    width: 7%;
+                    top: 28%;
                     right: 10%;
+                    padding-left: 1%;
+
                }
 
                .right3 {
                     position: absolute;
-                    width: 6%;
+                    width: 7%;
                     top: 53%;
                     right: 10%;
+                    padding-left: 1%;
+
                }
 
                .right4 {
                     position: absolute;
-                    width: 6%;
+                    width: 7%;
                     top: 78%;
                     right: 10%;
+                    padding-left: 1%;
+
 
                }
 
@@ -4308,53 +4335,102 @@
                     margin-top: -3%;
                }
 
-               @media (max-width: 786px) {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+               
 
-                    .left1 {
-                         position: absolute;
+                         }
+          .mobile-leader-animation-component {
+               display: none;
+          }
+          @media (max-width: 786px) {
+               .web-leader-animation-component {
+                    display: none !important;
+               }
+
+               .mobile-leader-animation-component {
+                    @media (max-width: 786px) {
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+     
+                         
+     
+                         .left1 {
+                              position: absolute;
+                              width: 18%;
+                    top: 2%;
+                    left: 11%;
+                    padding-left: 1%;
+                         }
+     
+                         .left2 {
+                              position: absolute;
+                              width: 14%;
+                    top: 35%;
+                    left: 1%;
+                    padding-left: 1%;
+     
+                         }
+     
+                         .left3 {
+                              position: absolute;
+                              width: 13%;
+                    top: 65%;
+                    left: 0%;
+                    padding-left: 1%;
+     
+                         }
+     
+                         .left4 {
+                              position: absolute;
+                              width: 17%;
+                    top: 94%;
+                    left: 21%;
+                    padding-left: 1%;
+     
+                         }
+     
+                         .right1 {
+                              position: absolute;
+                              position: absolute;
+                              width: 18%;
+                    top: 1%;
+                    right: 11%;
+                    padding-left: 1%;
+     
+                         }
+     
+                         .right2 {
+                              position: absolute;
+                              width: 14%;
+                    top: 35%;
+                    right: 1%;
+                    padding-left: 1%;
+     
+                         }
+     
+                         .right3 {
+                              position: absolute;
+                              width: 13%;
+                    top: 65%;
+                    right: 0%;
+                    padding-left: 1%;
+     
+                         }
+     
+                         .right4 {
+                              position: absolute;
+                              width: 17%;
+                    top: 91%;
+                    right: 18%;
+                    padding-left: 1%;
+     
+                         }
+     
+                         .main {
+                              width: 60%;
+                         }
                     }
-
-                    .left2 {
-                         position: absolute;
-
-                    }
-
-                    .left3 {
-                         position: absolute;
-
-                    }
-
-                    .left4 {
-                         position: absolute;
-
-                    }
-
-                    .right1 {
-                         position: absolute;
-
-                    }
-
-                    .right2 {
-                         position: absolute;
-
-                    }
-
-                    .right3 {
-                         position: absolute;
-
-                    }
-
-                    .right4 {
-                         position: absolute;
-
-                    }
-
-                    .main {
-                         width: 30%;
-                    }
+     
                }
           }
      }

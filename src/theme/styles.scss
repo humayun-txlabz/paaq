@@ -126,6 +126,16 @@
      }
 }
 
+@keyframes opacity {
+     from {
+          opacity: 0;
+     }
+
+     to {
+          opacity: 1;
+     }
+}
+
 // ask button component
 .inner-ask-button-fl {
      width: 43px;
@@ -4262,6 +4272,7 @@
                     top: 0%;
                     left: 10%;
                     padding-right: 1%;
+                    animation: opacity 1000ms ease;
                }
 
                .left2 {
@@ -4270,6 +4281,8 @@
                     top: 28%;
                     left: 10%;
                     padding-right: 1%;
+                    animation: opacity 5000ms ease;
+
 
                }
 
@@ -4280,6 +4293,8 @@
                     top: 53%;
                     left: 10%;
                     padding-right: 1%;
+                    animation: opacity 1500ms ease;
+
 
                }
 
@@ -4290,6 +4305,8 @@
                     top: 78%;
                     left: 10%;
                     padding-right: 1%;
+                    animation: opacity 4000ms ease;
+
 
                }
 
@@ -4299,6 +4316,8 @@
                     top: 0%;
                     right: 10%;
                     padding-left: 1%;
+                    animation: opacity 1500ms ease;
+
 
                }
 
@@ -4308,6 +4327,8 @@
                     top: 28%;
                     right: 10%;
                     padding-left: 1%;
+                    animation: opacity 2500ms ease;
+
 
                }
 
@@ -4317,6 +4338,8 @@
                     top: 53%;
                     right: 10%;
                     padding-left: 1%;
+                    animation: opacity 4500ms ease;
+
 
                }
 
@@ -4326,6 +4349,8 @@
                     top: 78%;
                     right: 10%;
                     padding-left: 1%;
+                    animation: opacity 2000ms ease;
+
 
 
                }

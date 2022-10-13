@@ -1,5 +1,6 @@
 import TickWithTextComp from 'components/tickWithText'
 import React from 'react'
+import ContactUsForm from './form'
 
 const ContactUsMain = () => {
   return (
@@ -14,7 +15,9 @@ const ContactUsMain = () => {
                 <TickWithTextComp text={'Expert knowledge tailored to your needs.'} marginTop={'2rem'} />
                 <TickWithTextComp text={'Global interaction.'} marginTop={'2rem'} />
             </div>
-            <div className='right'>sdfsd</div>
+            <div className='right'>
+                <ContactUsForm />
+            </div>
         </div>
     </div>
   )

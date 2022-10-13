@@ -1,6 +1,6 @@
 import React from "react";
-import startIcon  from '../../assets/Icons/feature-sec-2-dollar.png';
-import sec11 from '../../assets/Images/feature-sec-2-1.png';
+import StartIcon  from '../../assets/Icons/feature-sec-2-dollar.png';
+import Sec11 from '../../assets/Images/feature-sec-2-1.png';
 
 const SectionSetPrice =() => {
   return (
@@ -8,7 +8,7 @@ const SectionSetPrice =() => {
       
       <div className="left">
           <div className="heading">
-            <img src={startIcon} className="icon" />
+            <img src={StartIcon} className="icon" />
             <div className="text">Set Price</div>
           </div>
           <p>Setting prices for Text and Video responses determines the amount you will receive.</p>
@@ -20,7 +20,7 @@ const SectionSetPrice =() => {
           <p>03. You may choose to reject their message/question if it goes against PAAQ's community guidelines or without any reason.</p>
       </div>
       <div className="right">
-      <img src={sec11} className="image" />
+      <img src={Sec11} className="image" />
       </div>
     </div>
   );

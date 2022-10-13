@@ -20,7 +20,7 @@ import MainImage11 from 'assets/Images/main2.png';
 import bann from 'assets/bannerMobileView.png'
 import SpeakerIcon from 'assets/Icons/speaker.svg';
 import FadeAnimation from 'components/fadeAnimation';
-
+ 
 
 export default function Banner() {
   const svgRef = React.createRef();

@@ -1,25 +1,25 @@
 import React from "react";
-import image1 from "../../assets/Images/investors-section-solution-1-1.png";
-import bigImg from "../../assets/Images/investors-section-solution-1.png";
-import miniRectangle from "../../assets/Icons/investors-section-2-1.png";
+import Image1 from "../../assets/Images/investors-section-solution-1-1.png";
+import BigImg from "../../assets/Images/investors-section-solution-1.png";
+import MiniRectangle from "../../assets/Icons/investors-section-2-1.png";
 
 const SectionSolution = () => {
   return (
     <div className="investors-page-section-solution-container">
       <div className="img-mobile">
-        <img className="img" src={image1} />
+        <img className="img" src={Image1} />
         <div className="main-img">
-          <img className="bigImg" src={bigImg} />
+          <img className="bigImg" src={BigImg} />
         </div>
       </div>
-      <img className="web-arrow-img" src={image1} />
+      <img className="web-arrow-img" src={Image1} />
 
       <div className="solution-section-content">
         <div className="left">
           <div className="header">
             <h1>
             Solution
-              <img src={miniRectangle} />
+              <img src={MiniRectangle} />
             </h1>
           </div>
           <p>
@@ -37,7 +37,7 @@ const SectionSolution = () => {
         <div className="right">
           <div className="img-web">
             <div className="main-img">
-              <img className="bigImg" src={bigImg} />
+              <img className="bigImg" src={BigImg} />
             </div>
           </div>
         </div>

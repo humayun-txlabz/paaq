@@ -1,5 +1,5 @@
 import React from "react";
-import hIcon from "../../assets/Icons/investors-section-1-1.png";
+import HIcon from "../../assets/Icons/investors-section-1-1.png";
 
 const SectionProblem = () => {
   return (
@@ -8,7 +8,7 @@ const SectionProblem = () => {
         <div className="header">
           <h1>
             Problem
-            <img src={hIcon} />
+            <img src={HIcon} />
           </h1>
         </div>
         <div className="h-line" />

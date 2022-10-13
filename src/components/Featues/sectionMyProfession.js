@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import useIsInViewport from "use-is-in-viewport";
-import startIcon from "../../assets/Icons/feature-sec-4-breif.png";
+import StartIcon from "../../assets/Icons/feature-sec-4-breif.png";
 
-import image1 from "../../assets/Icons/featureSecLast/0.png";
-import image2 from "../../assets/Icons/featureSecLast/1.png";
-import image3 from "../../assets/Icons/featureSecLast/2.png";
-import image4 from "../../assets/Icons/featureSecLast/3.png";
-import image5 from "../../assets/Icons/featureSecLast/4.png";
-import image6 from "../../assets/Icons/featureSecLast/5.png";
-import image7 from "../../assets/Icons/featureSecLast/6.png";
-import image8 from "../../assets/Icons/featureSecLast/7.png";
-import logo from "../../assets/Icons/featureSecLast/logo.png";
+import Image1 from "../../assets/Icons/featureSecLast/0.png";
+import Image2 from "../../assets/Icons/featureSecLast/1.png";
+import Image3 from "../../assets/Icons/featureSecLast/2.png";
+import Image4 from "../../assets/Icons/featureSecLast/3.png";
+import Image5 from "../../assets/Icons/featureSecLast/4.png";
+import Image6 from "../../assets/Icons/featureSecLast/5.png";
+import Image7 from "../../assets/Icons/featureSecLast/6.png";
+import Image8 from "../../assets/Icons/featureSecLast/7.png";
+import Logo from "../../assets/Icons/featureSecLast/logo.png";
 
 const SectionMyProfession =() => {
   const [isInViewport, targetRef] = useIsInViewport();
@@ -27,7 +27,7 @@ const SectionMyProfession =() => {
        <div ref={targetRef} className="section-4">
             <div className="left">
                  <div className="heading">
-                      <img src={startIcon} className="icon" />
+                      <img src={StartIcon} className="icon" />
                       <div className="text">My Profession</div>
                  </div>
                  <p>
@@ -43,70 +43,70 @@ const SectionMyProfession =() => {
             <div className="right">
                  <div
                       className={`uDiv1 ${
-                           isInViewport && isShow <= 2 ? "uDiv1Anim" : ""
+                           isShow >= 2 ? "uDiv1Anim" : ""
                       }`}
                  >
-                      <img src={image1} className="icon" />
+                      <img src={Image1} className="icon" />
                       <div>Dancer</div>
                  </div>
                  <div
                       className={`uDiv2 ${
-                           isInViewport && isShow <= 2 ? "uDiv2Anim" : ""
+                           isShow >= 2 ? "uDiv2Anim" : ""
                       }`}
                  >
-                      <img src={image2} className="icon" />
+                      <img src={Image2} className="icon" />
                       <div>Student</div>
                  </div>
                  <div
                       className={`uDiv3 ${
-                           isInViewport && isShow <= 2 ? "uDiv3Anim" : ""
+                           isShow >= 2 ? "uDiv3Anim" : ""
                       }`}
                  >
-                      <img src={image3} className="icon" />
+                      <img src={Image3} className="icon" />
                       <div>HR Manager</div>
                  </div>
                  <div
                       className={`uDiv4 ${
-                           isInViewport && isShow <= 2 ? "uDiv4Anim" : ""
+                            isShow >= 2 ? "uDiv4Anim" : ""
                       }`}
                  >
-                      <img src={image4} className="icon" />
+                      <img src={Image4} className="icon" />
                       <div>Yoga Instructor</div>
                  </div>
                  <div
                       className={`uDiv5 ${
-                           isInViewport && isShow <= 2 ? "uDiv5Anim" : ""
+                            isShow >= 2 ? "uDiv5Anim" : ""
                       }`}
                  >
-                      <img src={image5} className="icon" />
+                      <img src={Image5} className="icon" />
                       <div>Artist</div>
                  </div>
                  <div
                       className={`uDiv6 ${
-                           isInViewport && isShow <= 2 ? "uDiv6Anim" : ""
+                           isShow >= 2 ? "uDiv6Anim" : ""
                       }`}
                  >
-                      <img src={image6} className="icon" />
+                      <img src={Image6} className="icon" />
                       <div>Venture Capitalist</div>
                  </div>
                  <div
                       className={`uDiv7 ${
-                           isInViewport && isShow <= 2 ? "uDiv7Anim" : ""
+                          isShow >= 2 ? "uDiv7Anim" : ""
                       }`}
                  >
-                      <img src={image7} className="icon" />
+                      <img src={Image7} className="icon" />
                       <div>3D Designer</div>
                  </div>
                  <div
                       className={`uDiv8 ${
-                           isInViewport && isShow <= 2 ? "uDiv8Anim" : ""
+                            isShow >= 2 ? "uDiv8Anim" : ""
                       }`}
                  >
-                      <img src={image8} className="icon" />
+                      <img src={Image8} className="icon" />
                       <div>Accountant</div>
                  </div>
                  <div className="logo">
-                      <img src={logo} className="icon" />
+                      <img src={Logo} className="icon" />
                  </div>
             </div>
        </div>

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import useIsInViewport from "use-is-in-viewport";
-import askIcon from '../../assets/Icons/feature-sec-ask-icon.png';
-import sec11 from '../../assets/Images/feature-sec-5-1.png';
 import PaidMessagesComponent from "./paidMessages";
  
 const SectionPaidMessage =() => {
@@ -26,19 +24,15 @@ const SectionPaidMessage =() => {
                            <div
                                 ref={targetRef}
                                 className="big-ask-button"
-                                style={{
-                                     animationName: `${
-                                          isInViewport && isShow <= 2 ? "bounce" : ""
-                                     }`,
-                                     animationDuration: "1200ms",
-                                }}
+                                
                            >
                                 <div className="inner">
                                      <h3>Ask</h3>
                                 </div>
+                                Ask Button
                            </div>
                            {/* <img src={askIcon} className="icon" /> */}
-                           Ask Button
+                           
                            <br />
                            (Paid Message)
                       </div>

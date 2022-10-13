@@ -1,5 +1,5 @@
 import React from 'react';
-import image1 from '../../assets/Images/investors-why-paaq-section.png';
+import Image1 from '../../assets/Images/investors-why-paaq-section.png';
 
 const SectionWhyPaaq = () => {
   return (
@@ -10,7 +10,7 @@ const SectionWhyPaaq = () => {
                 <p>PAAQ allows you to receive exclusive engagement from your desired expert. Users have a wide range of content experts, from politics, technology, history, academia, music, to sports. In addition, users will receive a tailor-made response instead of community requests like a man seeking attention in a jamboree.</p>
             </div>
             <div className='right'>
-                <img src={image1} />
+                <img src={Image1} />
             </div>
         </div>
         <div className='h-line' />

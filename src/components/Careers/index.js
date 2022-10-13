@@ -6,10 +6,12 @@ import CareersImage3 from "assets/careers/careers-main2.png";
 import CareersImage4 from "assets/careers/careers-main3.png";
 import CareersImage5 from "assets/careers/careers-left.png";
 import CareersImage6 from "assets/careers/careers-right.png";
+import CareerMain from "components/Career";
 
 const CareersMain = () => {
 
     return (
+        <>
         <div className="background-image-main" style={{ display: 'flex' }}>
             <div className="careers-left-section">
                 <span className="careers-title">
@@ -48,6 +50,8 @@ const CareersMain = () => {
                 </div>
             </div>
         </div>
+        <CareerMain />
+        </>
     );
 }
 

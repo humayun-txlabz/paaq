@@ -4306,7 +4306,13 @@
                     top: 0%;
                     left: 10%;
                     padding-right: 1%;
-                    animation: opacity 1000ms ease;
+                    
+                    opacity: 0;
+               }
+
+               .left1Anim {
+                    animation: opacity 500ms forwards;
+                    animation-delay: 400ms;
                }
 
                .left2 {
@@ -4315,9 +4321,14 @@
                     top: 28%;
                     left: 10%;
                     padding-right: 1%;
-                    animation: opacity 5000ms ease;
+                    opacity: 0;
 
 
+
+               }
+               .left2Anim {
+                    animation: opacity 500ms forwards;
+                    animation-delay: 1300ms;
                }
 
                .left3 {
@@ -4327,9 +4338,13 @@
                     top: 53%;
                     left: 10%;
                     padding-right: 1%;
-                    animation: opacity 1500ms ease;
+                    opacity: 0;
 
 
+               }
+               .left3Anim {
+                    animation: opacity 500ms forwards;
+                    animation-delay: 1800ms;
                }
 
                .left4 {
@@ -4339,9 +4354,13 @@
                     top: 78%;
                     left: 10%;
                     padding-right: 1%;
-                    animation: opacity 4000ms ease;
+                    opacity: 0;
 
 
+               }
+               .left4Anim {
+                    animation: opacity 500ms forwards;
+                    animation-delay: 1500ms;
                }
 
                .right1 {
@@ -4350,9 +4369,13 @@
                     top: 0%;
                     right: 10%;
                     padding-left: 1%;
-                    animation: opacity 1500ms ease;
+                    opacity: 0;
 
 
+               }
+               .left5Anim {
+                    animation: opacity 500ms forwards;
+                    animation-delay: 1600ms;
                }
 
                .right2 {
@@ -4361,9 +4384,13 @@
                     top: 28%;
                     right: 10%;
                     padding-left: 1%;
-                    animation: opacity 2500ms ease;
+                    opacity: 0;
 
 
+               }
+               .left6Anim {
+                    animation: opacity 500ms forwards;
+                    animation-delay: 2200ms;
                }
 
                .right3 {
@@ -4372,9 +4399,13 @@
                     top: 53%;
                     right: 10%;
                     padding-left: 1%;
-                    animation: opacity 4500ms ease;
+                    opacity: 0;
+                    
 
-
+               }
+               .left7Anim {
+                    animation: opacity 500ms forwards;
+                    animation-delay: 700ms;
                }
 
                .right4 {
@@ -4383,10 +4414,14 @@
                     top: 78%;
                     right: 10%;
                     padding-left: 1%;
-                    animation: opacity 2000ms ease;
+                    opacity: 0;
 
 
 
+               }
+               .left8anim {
+                    animation: opacity 500ms forwards;
+                    animation-delay: 2000ms;
                }
 
                .main {

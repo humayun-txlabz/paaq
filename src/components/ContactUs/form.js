@@ -26,6 +26,7 @@ const ContactUsForm = () => {
             placeholder={<div className="placeholderText">Choose the reason</div>}
             className="select"
             onChange={handleChangeSelect}
+            dropdownStyle={{padding: '1rem', borderRadius: '1rem' }}
           >
             <Option value="jack">Jack</Option>
             <Option value="lucy">Lucy</Option>

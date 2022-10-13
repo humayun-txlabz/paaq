@@ -1,6 +1,7 @@
 import React from "react";
 import { Select } from "antd";
 const { Option } = Select;
+import DownArrow from '../../assets/accordion-close.png';
 
 const handleChangeSelect = (value) => {
   console.log(`selected ${value}`);
@@ -21,7 +22,7 @@ const ContactUsForm = () => {
           <label>Subject</label>
           <Select
             bordered={false}
-            suffixIcon={<div></div>}
+            suffixIcon={<div className="arrowDown"><img src={DownArrow} /></div>}
             placeholder={<div className="placeholderText">Choose the reason</div>}
             className="select"
             onChange={handleChangeSelect}
@@ -33,8 +34,9 @@ const ContactUsForm = () => {
         </div>
         <div className="input-with-label">
           <label>Message</label>
-          <input placeholder="Enter your name" />
+          <textarea placeholder="Enter your name" />
         </div>
+        <div className="submit-btn">Send message</div>
       </form>
     </div>
   );

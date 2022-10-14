@@ -21,9 +21,6 @@ const LeaderAnimationComponent = () => {
   const [isInViewport, targetRef] = useIsInViewport();
      const [isShow, setIsShow] = useState(1);
 
-     
-
-
   const left1 = useRef(null);
   const left2 = useRef(null);
   const left3 = useRef(null);

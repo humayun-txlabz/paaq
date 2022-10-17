@@ -172,7 +172,7 @@ const styles = {
   },
   text: {
     fontSize: "24px",
-    fontFamily: "Sofia-Pro",
+    fontFamily: "SofiaPro-Light",
 
     "@media screen and (max-width: 720px)": {
       fontSize: "14px",

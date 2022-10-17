@@ -264,10 +264,18 @@
      flex-direction: column;
 
      &>h1 {
-          font-weight: 400;
+          font-weight: 300;
           font-family: var(--bold);
           font-size: 16px;
           color: #181f1f;
+          line-height: 19px;
+
+          img {
+               width: 0.8rem;
+                    height: 0.8rem;
+                    margin-left: 0.2rem;
+                    margin-bottom: 0.2rem;
+          }
      }
 
      .inner-progress {
@@ -415,13 +423,13 @@
 
      .mini-right-badge-myskill-features-page {
           position: absolute;
-          right: -4rem;
+          right: -5rem;
           top: 15rem;
      }
 
      .mini-right-badge-myskill-features-page-anim {
           position: absolute;
-          right: -4rem;
+          right: -5rem;
           top: 15rem;
           animation-name: myskillrightcard;
           animation-duration: 2s;
@@ -449,7 +457,7 @@
           }
 
           to {
-               right: -4rem;
+               right: -5rem;
                top: 15rem;
                scale: 1;
           }

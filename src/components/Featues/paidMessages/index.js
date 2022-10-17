@@ -34,23 +34,23 @@ const PaidMessagesComponent = () => {
                            <p>Following</p>
                       </div>
                       <div className="inner">
-                           <h1>102</h1>
-                           <p>Following</p>
+                           <h1>595k</h1>
+                           <p>Followers</p>
                       </div>
                       <div
                            className="inner"
-                           style={
+                           
+                      >
+                           <AskButtonComponent style={
                                 isShow >= 2
                                      ? {
-                                            animation: "zoomInOutCurrent 2s ease",
+                                            animation: "zoomInOutCurrent 2.5s ease",
                                             animationDelay: '2s'
 
                                         //     marginBottom: '1rem'
                                        }
                                      : {}
-                           }
-                      >
-                           <AskButtonComponent />
+                           } />
                       </div>
                  </div>
                  <img ref={targetRef} className="bottom-img" src={BottomImage} />

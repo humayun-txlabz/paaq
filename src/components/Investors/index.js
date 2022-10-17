@@ -12,7 +12,6 @@ const InvestorsMain = () => {
   return (
     <div className='investors-page-container'>
         <InvestorsTop />
-        {/* <TopMain /> */}
         <SectionProblem />
         <SectionSolution />
         <SectionMarketTrends />

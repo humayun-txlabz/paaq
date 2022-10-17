@@ -11,13 +11,14 @@ const SectionProblem = () => {
             <img src={HIcon} />
           </h1>
         </div>
-        <div className="h-line" />
+        <div className="h-line web-h-line" />
         <div className="section-problem-grid-container">
           <div className="left">
             <p>
               In the age of normalisation of global social and professional
               interactions between individuals through various platforms.
             </p>
+            
           </div>
           <div className="right">
             <p>

@@ -6,11 +6,13 @@ import SectionProblem from './sectionProblem'
 import SectionSolution from './sectionSolution'
 import SectionWhyPaaq from './sectionWhyPaaq'
 import InvestorsTop from './top'
+import TopMain from './topMain'
 
 const InvestorsMain = () => {
   return (
     <div className='investors-page-container'>
         <InvestorsTop />
+        {/* <TopMain /> */}
         <SectionProblem />
         <SectionSolution />
         <SectionMarketTrends />

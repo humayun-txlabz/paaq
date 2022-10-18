@@ -4980,14 +4980,14 @@ line-height: 38px;
      @media (max-width: 913px) {
           &>p {
                font-size: 14px;
-               line-height: 32px;
-               padding-left: 15%;
-               padding-right: 15%;
+               line-height: 25px;
+               padding-left: 4%;
+               padding-right: 4%;
           }
 
           &>h1 {
                font-size: 30px;
-               line-height: 42px;
+               line-height: 30px;
           }
 
           .white-btn {
@@ -5001,10 +5001,10 @@ line-height: 38px;
                padding-right: 2.5rem;
                border-radius: 2rem;
                font-family: var(--soft);
-               font-weight: 700;
-               font-size: 16px;
-               margin-top: 0.7rem;
-               margin-bottom: 0.7rem;
+               font-weight: 400;
+               font-size: 14px;
+               margin-top: 0.3rem;
+               margin-bottom: 0.3rem;
           }
      }
 }
@@ -5312,16 +5312,15 @@ line-height: 38px;
 
           .left {
                margin-left: 16%;
-               margin-right: 16%;
                display: flex;
                justify-content: center;
+               align-items: flex;
                flex-direction: column;
-
                h1 {
                     font-family: var(--pro);
                     font-style: normal;
                     font-weight: 600;
-                    font-size: 70px;
+                    font-size: 64px;
                     line-height: 66px;
                     /* identical to box height, or 94% */
 
@@ -5337,16 +5336,17 @@ line-height: 38px;
                     font-size: 18px;
                     line-height: 32px;
                     color: #4B5157;
-                    padding-right: 20%;
+                    padding-right: 35%;
                }
           }
 
           .right {
                margin-right: 16%;
                margin-left: 4%;
-
+               display: flex;
+               justify-content: flex-end;
                img {
-                    width: 100%;
+                    width: 90%;
                }
           }
 
@@ -5370,11 +5370,12 @@ line-height: 38px;
 
                          display: flex;
                          align-items: center;
+                         padding-right: 0%;
                     }
                }
 
                .right {
-                    margin-right: 7%;
+                    margin-right: 0%;
                     margin-left: 7%;
                }
           }
@@ -5458,6 +5459,7 @@ line-height: 38px;
 
                          display: flex;
                          align-items: center;
+                         padding-right: 0%;
                     }
                }
 

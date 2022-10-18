@@ -3192,7 +3192,7 @@
                align-items: center;
 
                &>img {
-                    height: 1.5rem;
+                    height: 2.7rem;
                     margin-left: 0.2rem;
                }
           }
@@ -3213,10 +3213,13 @@
                     font-size: 43px;
                     line-height: 60px;
                     margin-bottom: -2rem;
+                    &>img {
+                         height: 2rem;
+                    }
                }
 
                &>img {
-                    height: 2.5rem;
+                    height: 1.5rem;
                }
           }
      }
@@ -3277,8 +3280,8 @@
           }
 
           .right {
-               padding-left: 10%;
-               padding-right: 16%;
+               padding-left: 20%;
+               padding-right: 30%;
 
                &>p {
                     color: #4b5157;
@@ -3369,7 +3372,7 @@
 
           .left {
                padding-left: 16%;
-               padding-right: 16%;
+               padding-right: 25%;
                display: flex;
                justify-content: center;
                flex-direction: column;
@@ -3409,7 +3412,7 @@
                               line-height: 43px;
 
                               &>img {
-                                   height: 1.5rem;
+                                   height: 2rem;
                               }
                          }
                     }

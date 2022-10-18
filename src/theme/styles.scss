@@ -3505,12 +3505,12 @@
                justify-content: center;
 
                img {
-                    height: 34rem;
+                    width: 34rem;
                }
 
                @media (max-width: 1250px) {
                     img {
-                         height: 25rem;
+                         width: 90%;
                     }
                }
 
@@ -3522,8 +3522,8 @@
 
                @media (max-width: 786px) {
                     img {
-                         margin-top: -3rem;
-                         width: 90%;
+                         margin-top: -1.5rem;
+                         width: 80%;
                          height: 100%;
                     }
                }
@@ -3606,7 +3606,10 @@
                @media (max-width: 786px) {
                     .bottom-content {
                          padding-left: 8%;
-                         padding-right: 8%;
+                         padding-right: 10%;
+                         font-weight: 400;
+                         font-size: 14px;
+                         line-height: 26px;
                     }
 
                     .topContent {
@@ -3687,7 +3690,7 @@
                justify-content: flex-start;
 
                &>img {
-                    height: 45vh;
+                    max-width: 620px;
                     padding-right: 16%;
                }
 
@@ -3863,11 +3866,12 @@
           }
 
           @media (max-width: 786px) {
+               
                &>p {
                     font-size: 14px;
                     line-height: 32px;
-                    padding-left: 15%;
-                    padding-right: 15%;
+                    padding-left: 7%;
+                    padding-right: 7%;
                }
 
                &>h1 {
@@ -4089,21 +4093,55 @@
 
           @media (max-width: 786px) {
                width: 100%;
-               height: 85vh;
                border: 0;
+               margin-top: -10rem;
+               margin-bottom: -10rem;
+
+
+               .all-circles {
                margin-top: -7rem;
 
-               .all-circles {}
+               }
 
                &>h4 {
-                    bottom: 0.8rem;
                     font-size: 15px;
+                    margin-top: -5rem;
+                    margin-bottom: 5rem;
+
+
                }
 
                &>h1 {
                     font-size: 40px;
                }
           }
+
+          @media (max-width: 376px) {
+               width: 100%;
+               border: 0;
+               margin-top: -10rem;
+               margin-bottom: -3rem;
+
+
+               .all-circles {
+               margin-top: -3rem;
+
+               }
+
+               &>h4 {
+                    font-size: 15px;
+                    margin-top: -1rem;
+                    margin-bottom: 1rem;
+
+
+               }
+
+               &>h1 {
+                    font-size: 40px;
+               }
+          }
+
+          
 
           @media (max-width: 786px) {
                height: 100vh;

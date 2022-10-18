@@ -1,5 +1,6 @@
 import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter'
 import React from 'react'
+import SectionMarketSize2 from './marketSize'
 import SectionMarketSize from './sectionMarketSize'
 import SectionMarketTrends from './sectionMarketTrends'
 import SectionProblem from './sectionProblem'
@@ -15,6 +16,7 @@ const InvestorsMain = () => {
         <SectionProblem />
         <SectionSolution />
         <SectionMarketTrends />
+        {/* <SectionMarketSize2 /> */}
         <SectionMarketSize />
         <SectionWhyPaaq />
         <AppAndPlayStoreFooter />

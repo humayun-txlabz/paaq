@@ -14,7 +14,8 @@ const MainFeatures = () => {
         <SectionSetPrice />
         <SectionInApp />
         <SectionMyProfession />
-        <AppAndPlayStoreFooter />
+      <AppAndPlayStoreFooter />
+        
     </div>
   )
 }

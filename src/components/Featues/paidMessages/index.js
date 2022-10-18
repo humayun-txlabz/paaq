@@ -45,7 +45,7 @@ const PaidMessagesComponent = () => {
                                 isShow >= 2
                                      ? {
                                             animation: "zoomInOutCurrent 2.5s ease",
-                                            animationDelay: '2s'
+                                            animationDelay: '1s'
 
                                         //     marginBottom: '1rem'
                                        }

@@ -9,12 +9,14 @@ import CareersImage6 from "assets/careers/careers-right.png";
 import CareerMain from "components/Career";
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css'
+import CareersTopMain from "./top";
 
 const CareersMain = () => {
 
     return (
         <>
-        <div className="background-image-main" style={{ display: 'flex' }}>
+        <CareersTopMain />
+        {/* <div className="background-image-main" style={{ display: 'flex' }}>
             <div className="careers-left-section">
                 <span className="careers-title">
                     Who We Are
@@ -60,7 +62,7 @@ const CareersMain = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
         <CareerMain />
         </>
     );

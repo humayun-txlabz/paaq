@@ -17,10 +17,12 @@ const MiniCardWithIdentity = ({
                  color: "#181F1F",
                  backgroundColor: "white",
                  border: "1px solid #9DACAC",
-                 paddingLeft: "1rem",
-                 paddingRight: "1rem",
+                 paddingLeft: "0.5rem",
+                 paddingRight: "0.5rem",
+                 
             }
-          : {};
+          : {paddingLeft: "1rem",
+          paddingRight: "1rem"};
      return (
           <div className="mini-card-with-identity">
                <img src={image} />

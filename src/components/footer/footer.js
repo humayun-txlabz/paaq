@@ -54,13 +54,13 @@ export default function Footer() {
 
 const styles = {
   footer: {
-    marginTop: 400,
+    marginTop: 100,
     backgroundColor: '#252F44',
     footerBottomArea: {
       borderTop: '1px solid',
       borderTopColor: 'border_color',
       display: 'flex',
-      paddingTop: 100,
+      // paddingTop: 100,
       pb: ['20px', null, '50px'],
       textAlign: 'center',
       alignItems: 'flex-start',

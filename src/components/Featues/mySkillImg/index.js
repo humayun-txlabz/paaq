@@ -24,51 +24,52 @@ const MySkillImageComponent = () => {
                            title="Overall Skills"
                            progress={40}
                            isAnimate
+                           isAboutIcon
                       />
                       <div className="h-line" />
                       <ProgressComponent
-                           title="Overall Skills"
+                           title="Communication"
                            progress={70}
-                           marginBottom={1}
+                           marginBottom={1.5}
                            progressColor={"#9DACAC"}
                            isAnimate
                       />
                       <ProgressComponent
-                           title="Overall Skills"
+                           title="Property investments"
                            progress={35}
-                           marginBottom={1}
+                           marginBottom={1.5}
                            progressColor={"#9DACAC"}
                            isMenu
                            isAnimate
                       />
                       <ProgressComponent
-                           title="Overall Skills"
+                           title="Financial literacy"
                            progress={45}
-                           marginBottom={1}
+                           marginBottom={1.5}
                            progressColor={"#9DACAC"}
                            isMenu
                            isAnimate
                       />
                       <ProgressComponent
-                           title="Overall Skills"
+                           title="Wealth creation"
                            progress={20}
-                           marginBottom={1}
+                           marginBottom={1.5}
                            progressColor={"#9DACAC"}
                            isMenu
                            isAnimate
                       />
                       <ProgressComponent
-                           title="Overall Skills"
+                           title="International markets"
                            progress={40}
-                           marginBottom={1}
+                           marginBottom={1.5}
                            progressColor={"#9DACAC"}
                            isMenu
                            isAnimate
                       />
                       <ProgressComponent
-                           title="Overall Skills"
+                           title="Financial forecast"
                            progress={65}
-                           marginBottom={2}
+                           marginBottom={1.5}
                            progressColor={"#9DACAC"}
                            isMenu
                            isAnimate

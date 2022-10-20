@@ -10,10 +10,12 @@ const WeAreSmartSection = () => {
             <p>We are continually striving to improve our work. Our problem-solving approach is characterized by courage.</p>
         </div>
         <div className='right'>
+            <div>
             <img src={BigImage} />
+            </div>
         </div>
     </div>
   )
 }
-
+ 
 export default WeAreSmartSection

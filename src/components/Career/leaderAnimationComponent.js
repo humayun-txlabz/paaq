@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Left1 from "../../assets/Images/careers/left1.png";
 import Left2 from "../../assets/Images/careers/left2.png";
 import Left3 from "../../assets/Images/careers/left3.png";
@@ -9,6 +9,7 @@ import Right3 from "../../assets/Images/careers/right3.png";
 import Right4 from "../../assets/Images/careers/right4.png";
 import Main from "../../assets/Images/careers/main.png";
 import Xarrow from "react-xarrows";
+import useIsInViewport from "use-is-in-viewport";
 let LeaderLine;
 setTimeout(() => {
 
@@ -16,6 +17,10 @@ setTimeout(() => {
 }, 1000)
 
 const LeaderAnimationComponent = () => {
+
+  const [isInViewport, targetRef] = useIsInViewport();
+     const [isShow, setIsShow] = useState(1);
+
   const left1 = useRef(null);
   const left2 = useRef(null);
   const left3 = useRef(null);
@@ -102,6 +107,7 @@ let line8 = new LeaderLine(
   });
 };
   
+if(isShow >=2){
   setTimeout(() => {
     drawLine1();
     drawLine2();
@@ -111,21 +117,29 @@ let line8 = new LeaderLine(
     drawLine6();
     drawLine7();
     drawLine8();
-  }, 1200)
-  }, []);
+  }, 2200)
+}
+  
+  }, [isShow]);
+
+  useEffect(() => {
+    if (isInViewport == true) {
+         setIsShow(isShow + 1);
+    }
+}, [isInViewport]);
 
   return (
     <>
-    <div className="leader-animation-component web-leader-animation-component">
-      <img ref={left1} className="left1 left1la" src={Left1} />
-      <img ref={left2} className="left2 left2la" src={Left2} />
+    <div ref={targetRef} className="leader-animation-component web-leader-animation-component">
+      <img ref={left1} className={`left1 left1la ${isShow >= 2 ? 'left1Anim' : ''}`} src={Left1} />
+      <img ref={left2} className={`left2 left2la ${isShow >= 2 ? 'left2Anim' : ''}`} src={Left2} />
 
-      <img ref={left3} className="left3" src={Left3} />
-      <img ref={left4} className="left4" src={Left4} />
-      <img ref={right1} className="right1" src={Right1} />
-      <img ref={right2} className="right2" src={Right2} />
-      <img ref={right3} className="right3" src={Right3} />
-      <img ref={right4} className="right4" src={Right4} />
+      <img ref={left3} className={`left3 ${isShow >= 2 ? 'left3Anim' : ''}`} src={Left3} />
+      <img ref={left4} className={`left4 ${isShow >= 2 ? 'left4Anim' : ''}`} src={Left4} />
+      <img ref={right1} className={`right1 ${isShow >= 2 ? 'left5Anim' : ''}`} src={Right1} />
+      <img ref={right2} className={`right2 ${isShow >= 2 ? 'left6Anim' : ''}`} src={Right2} />
+      <img ref={right3} className={`right3 ${isShow >= 2 ? 'left7Anim' : ''}`} src={Right3} />
+      <img ref={right4} className={`right4 ${isShow >= 2 ? 'left8Anim' : ''}`} src={Right4} />
       <img ref={main} className="main" src={Main} />
       
     </div>

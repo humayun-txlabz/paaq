@@ -66,7 +66,7 @@ const InvestorsTop = () => {
                     // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
 
-               delay: 12000,
+               delay: 2400,
                config: { duration: 500 },
 
                // onRest: () => update3(1),
@@ -77,7 +77,7 @@ const InvestorsTop = () => {
                     { x: 0, y: 0, opacity: 1, scale: 1 },
                     // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
-               delay: 3500,
+               delay: 3600,
                config: { duration: 500 },
 
                // onRest: () => update3(2),
@@ -88,7 +88,7 @@ const InvestorsTop = () => {
                     { x: 0, y: 0, opacity: 1, scale: 1 },
                     // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
-               delay: 8500,
+               delay: 3000,
                config: { duration: 500 },
 
                // onRest: () => update3(3),
@@ -99,7 +99,7 @@ const InvestorsTop = () => {
                     { x: 0, y: 0, opacity: 1, scale: 1 },
                     // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
-               delay: 16000,
+               delay: 4000,
                config: { duration: 500 },
 
                // onRest: () => update3(4),
@@ -110,7 +110,7 @@ const InvestorsTop = () => {
                     { x: 0, y: 0, opacity: 1, scale: 1 },
                     // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
-               delay: 6000,
+               delay: 2800,
                config: { duration: 500 },
 
                // onRest: () => update3(5),
@@ -121,7 +121,7 @@ const InvestorsTop = () => {
                     { x: 0, y: 0, opacity: 1, scale: 1 },
                     // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
-               delay: 1000,
+               delay: 3800,
                config: { duration: 500 },
 
                // onRest: () => update3(6),
@@ -132,7 +132,7 @@ const InvestorsTop = () => {
                     { x: 0, y: 0, opacity: 1, scale: 1 },
                     // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
                ],
-               delay: 13000,
+               delay: 5700,
                config: { duration: 500 },
 
                // onRest: () => update3(7),

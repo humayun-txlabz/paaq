@@ -1,8 +1,9 @@
 import React from 'react'
 import useIsInViewport from 'use-is-in-viewport';
 import menuImg from '../assets/Icons/menu-black.png';
+import AboutThick from '../assets/Icons/about_thick.png';
  
-const ProgressComponent = ({isMenu, progress, title, marginBottom, progressColor, isAnimate}) => {
+const ProgressComponent = ({isMenu, progress, title, marginBottom, progressColor, isAnimate, isAboutIcon}) => {
             const [isInViewport, targetRef] = useIsInViewport();
 
      const prog = progress && !isAnimate ? { width: `${progress}%` } : {};
@@ -11,7 +12,7 @@ const ProgressComponent = ({isMenu, progress, title, marginBottom, progressColor
   const isAnim = isAnimate ? "animate-progress" : "";
   return (
        <div ref={targetRef} style={marginB} className="in-progress-component">
-            <h1>{title}</h1>
+            <h1>{title}{isAboutIcon ? <img src={AboutThick} /> : <></>}</h1>
             <div className="inner-progress">
                  <div className="progress-bg">
                       <div

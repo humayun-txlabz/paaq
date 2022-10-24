@@ -12,7 +12,7 @@ import banner from '../assets/bannerBlogDetail.png'
 import chatBlog from '../assets/chatBlog.svg'
 import clock from '../assets/clock.svg'
 import heart from '../assets/heart.svg'
-import video from '../assets/video.png'
+import video from '../assets/Video.png'
 import ItemCard from 'components/AllBlogs/ItemCard';
 import Image7 from '../assets/Images/blog7.png';
 import Image8 from '../assets/Images/blog8.png';

@@ -14,9 +14,11 @@ export default function BlogDetails() {
 
     const router = useRouter();
     const query = router.query;
-    const blog = JSON.parse(query.data);
+    let blog= null;
+    if(query?.data){
+      blog = JSON?.parse(query?.data);
+    }
 
-    console.log('BlogDetails>>>>>', JSON.parse(query.data) );
 
 
     return (
@@ -24,7 +26,7 @@ export default function BlogDetails() {
       <StickyProvider>
         <Layout>
           <SEO />
-          <SingleBlogItem blogItem={blog} />
+          {blog ? <SingleBlogItem blogItem={blog} /> : null}
         </Layout>
       </StickyProvider>
     </ThemeProvider>

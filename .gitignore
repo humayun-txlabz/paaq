@@ -9,6 +9,7 @@ dist/
 .next/
 .swc/
 .env.local/
+build/
 
 # Compiled Java class files
 *.class

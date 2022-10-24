@@ -8,17 +8,18 @@ import thunkMiddleware from "redux-thunk";
 import reducer from "./reducers";
 import { createWrapper } from "next-redux-wrapper";
 
-const bindMiddleware = (middleware) => {
-  if (process.env.NODE_ENV !== "production") {
-    const { composeWithDevTools } = require("redux-devtools-extension");
-    return composeWithDevTools(applyMiddleware(...middleware));
-  }
-  const enhancer = composeEnhancers(applyMiddleware(...middleware));
-  return enhancer;
-};
+// const bindMiddleware = (middleware) => {
+//   if (process.env.NODE_ENV !== "production") {
+//     const { composeWithDevTools } = require("redux-devtools-extension");
+//     return composeWithDevTools(applyMiddleware(...middleware));
+//   }
+//   const enhancer = composeEnhancers(applyMiddleware(...middleware));
+//   return enhancer;
+// };
 
 const initStore = () => {
-  const store = createStore(reducer, bindMiddleware([thunkMiddleware,sagaMiddleware,loggerMiddleware]));
+  let mware = [thunkMiddleware,sagaMiddleware]
+  const store = createStore(reducer, applyMiddleware(...mware));
   sagaMiddleware.run(rootSaga);
   return store;
 };

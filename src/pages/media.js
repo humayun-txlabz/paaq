@@ -6,7 +6,6 @@ import { ThemeProvider } from "theme-ui";
 import { StickyProvider } from "../contexts/app/app.provider";
 
 export default function MediaPage() {
-     console.log("isServerisServer");
      return (
           <ThemeProvider theme={theme}>
                <StickyProvider>

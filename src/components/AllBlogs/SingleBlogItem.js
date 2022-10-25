@@ -13,8 +13,6 @@ const SingleBlogItem = (props) => {
 
   const { blogItem } = props;
 
-  console.log('SingleBlogItem is here', blogItem);
-
   // const RichBold = ({ children }) => <p className="bold"  style={{ fontFamily: 'Sofia-Pro'}}>{children}</p>;
 
   const RichParagraph = ({ children }) => <p className="align-center" style={{ fontFamily: 'Sofia-Pro', fontSize: 18 }}>{children}</p>;

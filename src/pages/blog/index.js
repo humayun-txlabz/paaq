@@ -30,7 +30,6 @@ export const getStaticProps = async (context) => {
 };
 
 export default function BlogsPage2(props) {
-  console.log("BlogsPageBlogsPage>>", props);
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>

@@ -80,7 +80,6 @@ const FaqAccordion = ({ list }) => {
                                 </AccordionItemButton>
                             </AccordionItemHeading>
                             <AccordionItemPanel>
-                                {console.log('check answers here', item.fields.answers)}
                                 {documentToReactComponents(item.fields.answer, richTextOptions)}
                                 {/* <Text sx={styles.accordionPanelText}>{item.fields.answers}</Text> */}
                                 {item.hints ?

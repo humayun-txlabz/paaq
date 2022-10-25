@@ -19,8 +19,6 @@ export const getStaticProps = async (context) => {
       return entry;
     })
     .catch(console.error);
-
-  console.log("GETSTATIC PROPSSS", context, "postsss", posts);
   return {
     props: {
       ...posts,
@@ -71,7 +69,6 @@ export const getStaticPaths = async () =>{
 export default function BlogDetails2(props) {
   const { fields } = props;
 
-  console.log('fieldsfields', fields)
 
   return (
     <ThemeProvider theme={theme}>

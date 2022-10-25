@@ -7,7 +7,6 @@ import { StickyProvider } from '../contexts/app/app.provider';
 import JobInsightsMain from '../components/JobInsights/index';
 
 export default function AboutUs() {
-console.log('isServerisServer');
     return (
          <ThemeProvider theme={theme}>
               <StickyProvider>

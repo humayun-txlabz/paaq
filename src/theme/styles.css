@@ -1245,7 +1245,7 @@ button {
 
 .main-section-image1 {
   position: absolute;
-  top: 0;
+  top: 7%;
   left: 24%;
 }
 @media (max-width: 720px) {
@@ -1263,8 +1263,8 @@ button {
 
 .main-section-image2 {
   position: absolute;
-  top: 24%;
-  left: 18%;
+  top: 33%;
+  left: 12%;
 }
 @media (max-width: 720px) {
   .main-section-image2 {
@@ -1281,7 +1281,7 @@ button {
 
 .main-section-image3 {
   position: absolute;
-  top: 45%;
+  top: 59%;
   left: 34%;
 }
 @media (max-width: 720px) {
@@ -1306,8 +1306,8 @@ button {
 
 .main-section-image4 {
   position: absolute;
-  bottom: 18%;
-  left: 22%;
+  top: 80%;
+  left: 16%;
 }
 @media (max-width: 720px) {
   .main-section-image4 {
@@ -1326,8 +1326,8 @@ button {
 
 .main-section-image5 {
   position: absolute;
-  bottom: 7%;
-  left: 40%;
+  top: 90%;
+  left: 43%;
 }
 
 @media (max-width: 1024px) and (min-width: 720px) {
@@ -1339,8 +1339,8 @@ button {
 
 .main-section-image6 {
   position: absolute;
-  bottom: 30%;
-  left: 50%;
+  top: 65%;
+  left: 45%;
 }
 @media (max-width: 720px) {
   .main-section-image6 {
@@ -1365,7 +1365,7 @@ button {
 
 .main-section-image7 {
   position: absolute;
-  bottom: 9%;
+  top: 94%;
   right: 34%;
 }
 
@@ -1378,8 +1378,8 @@ button {
 
 .main-section-image8 {
   position: absolute;
-  bottom: 22%;
-  right: 17%;
+  top: 63%;
+  right: 20%;
 }
 @media (max-width: 720px) {
   .main-section-image8 {
@@ -1397,7 +1397,7 @@ button {
 
 .main-section-image9 {
   position: absolute;
-  bottom: 45%;
+  top: 35%;
   right: 27%;
 }
 @media (max-width: 720px) {
@@ -1422,7 +1422,7 @@ button {
 
 .main-section-image10 {
   position: absolute;
-  top: 32%;
+  top: 30%;
   right: 16%;
 }
 
@@ -1437,7 +1437,7 @@ button {
 .main-section-image11 {
   position: absolute;
   top: 0%;
-  right: 21%;
+  right: 20%;
 }
 @media (max-width: 720px) {
   .main-section-image11 {
@@ -1526,7 +1526,7 @@ button {
 
 .main-section-image2-nametag-container {
   position: absolute;
-  left: 88%;
+  left: 89%;
   top: 60%;
 }
 
@@ -1568,7 +1568,7 @@ button {
 .main-section-image2-nametag-containerleft {
   z-index: 99;
   position: absolute;
-  min-width: 180px;
+  min-width: 171px;
   top: 55%;
   right: 85%;
 }
@@ -1603,7 +1603,7 @@ button {
   font-family: 'Sofia-Pro';
   margin-top: 10px !important;
   color: #ffffff !important;
-  padding: 20px !important;
+  padding: 19px 50px;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;

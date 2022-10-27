@@ -47,7 +47,7 @@ const MobileDrawer = () => {
       width="320px"
       drawerHandler={
         <Box sx={styles.handler}>
-          <IoMdMenu size="26px" />
+          <IoMdMenu color={'#fff'} size="26px" />
         </Box>
       }
       open={state.isOpen}
@@ -95,9 +95,10 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: '0',
-    width: '26px',
-
-    '@media screen and (min-width: 1024px)': {
+    background: '#252F44',
+    padding: '0.5rem',
+    borderRadius: '50%',
+    '@media screen and (min-width: 767px)': {
       display: 'none',
     },
   },

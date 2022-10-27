@@ -1,23 +1,43 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Container, Flex, Button } from 'theme-ui';
-import { keyframes } from '@emotion/core';
+import { jsx, Container, Flex, Button } from "theme-ui";
+import { keyframes } from "@emotion/core";
 // import { Link } from "react-router-dom";
-import Link from 'next/link'
-import Logo from 'components/logo';
-import LogoDark from 'assets/logo.svg';
-import LogoMain from 'assets/logoMain.svg';
+import Link from "next/link";
+import Logo from "components/logo";
+import LogoDark from "assets/logo.svg";
+import LogoMain from "assets/logoMain.svg";
 
-import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
-import MobileDrawer from './mobile-drawer';
-import menuItems from './header.data';
+import { DrawerProvider } from "../../contexts/drawer/drawer.provider";
+import MobileDrawer from "./mobile-drawer";
+import menuItems from "./header.data";
+import HomeUnderLine from 'assets/Icons/header/home-underline.png';
 
 export default function Header({ className }) {
-  
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
-        <Container sx={styles.container}>
+        <img className="logoImg" src={LogoMain} />
+        <div className="right-container">
+          <div className="nav-menu-desktop">
+            {menuItems.map(({ path, label }, i) => (
+              <div className="nav-menu-items"><Link style={{color: '#252F44'}}  href={path} key={i}>
+                {label}
+              </Link>
+              {i == 0 ? <img className="underline-style" src={HomeUnderLine} /> : null}
+              </div>
+            ))}
+          </div>
+          <Button className="download_button" aria-label="Download">
+            Download
+          </Button>
+          
+
+        </div>
+        <div className="mobile-menu-open-drawer">
+        <MobileDrawer />
+        </div>
+        {/* <Container sx={styles.container}>
           <Logo src={LogoMain} />
           <Flex as="nav" sx={styles.nav} className='header-menu'>
             {menuItems.map(({ path, label }, i) => (
@@ -39,7 +59,7 @@ export default function Header({ className }) {
           </Button>
 
           <MobileDrawer />
-        </Container>
+        </Container> */}
       </header>
     </DrawerProvider>
   );
@@ -60,58 +80,34 @@ const positionAnim = keyframes`
 
 const styles = {
   header: {
-    color: 'text',
-    fontWeight: 'body',
+    color: "text",
+    fontWeight: "body",
     py: 4,
-    width: '100%',
-    position: 'absolute',
+    width: "100%",
+    position: "absolute",
     top: 0,
     left: 0,
     right: 0,
-    backgroundColor: 'transparent',
-    transition: 'all 0.4s ease',
+    backgroundColor: "transparent",
+    transition: "all 0.4s ease",
     animation: `${positionAnim} 0.4s ease`,
-    '&.sticky': {
-      position: 'fixed',
-      backgroundColor: 'background',
-      color: '#000000',
-      boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
+    "&.sticky": {
+      position: "fixed",
+      backgroundColor: "background",
+      color: "#000000",
+      boxShadow: "0 1px 2px rgba(0, 0, 0, 0.06)",
       py: 3,
-      'nev > a': {
-        color: 'text',
+      "nev > a": {
+        color: "text",
       },
     },
   },
   container: {
-    width: '80%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  nav: {
-    mx: 'auto',
-    display: 'none',
-    '@media screen and (min-width: 1024px)': {
-      display: 'block',
-    },
-    a: {
-      fontSize: 20,
-      fontFamily: 'Sofia-Pro',
-      fontWeight: 'body',
-      px: 5,
-      cursor: 'pointer',
-      lineHeight: '1.2',
-      color: '#252F44',
-      overflow: 'hidden',
-      display: 'inline-block',
-      '&:hover': {
-        color: '#252F44',
-        fontWeight: 'bold',
-      },
-      '&.active': {
-        fontWeight: '600',
-        fontSize: 20
-      },
-    },
+    width: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingLeft: "10%",
+    paddingRight: "10%",
   },
 };

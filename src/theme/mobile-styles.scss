@@ -1,0 +1,22 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+        background: lightcoral;
+        .logoImg {
+            width: 43px;
+            height: 100%;
+        }
+        .right-container {
+             display: flex;
+             align-items: center;
+             display: none !important;
+        }
+        .mobile-menu-open-drawer {
+            display: block !important;
+       }
+    }
+}

@@ -8,15 +8,11 @@ export default [
     label: 'About Us',
   },
   {
-    path: '/blogs',
-    label: 'Blog',
-  },
-  {
-    path: '/careers',
-    label: 'Career',
-  },
-  {
     path: 'news',
     label: 'News',
+  },
+  {
+    path: '/investors',
+    label: 'For Investors',
   },
 ];

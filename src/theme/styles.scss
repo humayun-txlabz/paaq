@@ -159,6 +159,49 @@
      }
 }
 
+// header top
+#header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-left: 10%;
+     padding-right: 10%;
+     .right-container {
+          display: flex;
+          align-items: center;
+          .nav-menu-desktop {
+               display: flex;
+               align-items: center;
+               width: 100%;
+               .nav-menu-items {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    font-family: var(--pro);
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 22px;
+                    text-transform: capitalize;
+                    margin-right: 3rem;
+                    &>a {
+                         color: #252F44;
+
+                    }
+                    & > .underline-style {
+                         width: 2rem;
+                    }
+               }
+               &>.nav-menu-items:last-child {
+                         margin-right: 6rem;
+               }
+          }
+     }
+     .mobile-menu-open-drawer {
+          display: none !important;
+     }
+}
 // tick component with text
 .tick-with-text-component {
      .text-and-img {

@@ -805,6 +805,23 @@ button {
   }
 }
 
+.mobile-footer-menu-list {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 0%;
+}
+
+.h-line {
+  width: 80%;
+  background: #5D6C8B;
+  height: 0.85px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 32px;
+}
+
+
 @media (max-width: 720px) {
   .mobile-footer-menu-list {
       flex-direction: column !important;
@@ -2434,7 +2451,7 @@ button {
   flex-direction: row;
   color: rgba(255, 255, 255, 0.7);
   flex: 1;
-font-family: 'Sofia-Pro';
+font-family: 'h-line-Pro';
 font-size: 1.3rem;
 text-align: center;
 align-items: center;

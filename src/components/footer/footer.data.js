@@ -34,27 +34,30 @@ export default {
     'Features',
     'Trust',
     'Connect',
-    'Follow Us'
   ],
   menuItem: [
     [
       {
         path: '/',
-        label: 'About Us',
+        label: 'Careers and Culture',
       },
       {
         path: '/',
-        label: 'Careers & culture',
+        label: 'Press & Media',
       },
       {
         path: '/',
-        label: 'Blog',
+        label: 'Brand Guidelines',
       }
     ],
     [
       {
         path: '/',
-        label: 'Skills',
+        label: 'My Skills',
+      },
+      {
+        path: '/',
+        label: 'Skill Rating',
       },
       {
         path: '/',
@@ -62,43 +65,25 @@ export default {
       },
       {
         path: '/',
-        label: 'Set price',
-      },
-      {
-        path: '/',
-        label: 'And more...',
+        label: 'And More...',
       }
     ],
     [
       {
         path: '/',
-        label: 'Community guidelines',
+        label: 'Community Guidelines',
       },
       {
         path: '/',
-        label: 'Privacy policy',
+        label: 'Privacy Policy',
       },
       {
         path: '/',
-        label: 'Eula policy',
+        label: 'EULA Policy',
       },
       {
         path: '/',
         label: 'Terms of use',
-      }
-    ],
-    [
-      {
-        path: '/',
-        label: 'Help center',
-      },
-      {
-        path: '/',
-        label: 'F&Qs',
-      },
-      {
-        path: '/',
-        label: 'Blogs',
       },
       {
         path: '/',
@@ -108,24 +93,20 @@ export default {
     [
       {
         path: '/',
-        label: 'Instagram',
+        label: 'Contact Us',
       },
       {
         path: '/',
-        label: 'Twitter',
+        label: 'Help Center',
       },
       {
         path: '/',
-        label: 'Linkedin',
+        label: 'Blogs',
       },
       {
         path: '/',
-        label: 'Medium',
-      },
-      {
-        path: '/',
-        label: 'Contact',
-      },
-    ],
+        label: 'FAQ\'s',
+      }
+    ]
   ],
 };

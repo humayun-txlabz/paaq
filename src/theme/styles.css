@@ -1705,6 +1705,14 @@ button {
   transform: translate(-50%, -50%);
 }
 
+.banner-title {
+  font-family: var(--pro);
+  font-style: normal;
+font-weight: 500;
+font-size: 80px;
+line-height: 86px;
+}
+
 
 @media (max-width: 720px) {
   .banner-title-mobile{

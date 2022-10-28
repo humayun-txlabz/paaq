@@ -14,7 +14,7 @@ const TitleCard = (props) => {
                 {title}
             </span>
             <div className='title-icons-container'>
-            <span>
+            <span className="share-text-blogs-page">
                 SHARE
             </span>
             {/* <FbIcon /> */}

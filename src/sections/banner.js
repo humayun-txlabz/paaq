@@ -18,7 +18,7 @@ import MainImage9 from 'assets/Images/main44.png';
 import MainImage10 from 'assets/Images/main5.png';
 import MainImage11 from 'assets/Images/main2.png';
 import bann from 'assets/bannerMobileView.png'
-import SpeakerIcon from 'assets/Icons/speaker.svg';
+import SpeakerIcon from 'assets/Icons/whitespeaker.png';
 import FadeAnimation from 'components/fadeAnimation';
  
 
@@ -444,20 +444,17 @@ export default function Banner() {
         </Box>
         <div className='banner-info-box'>
           <div className='banner-info-text-container' style={{ color: 'white', width: '60%', textAlign: 'left', overflow: 'hidden' }}>
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'flex', alignItems: 'center', }}>
 
               <div className='mobile-what-text' style={{ fontSize: 60, fontWeight: 'bold', fontFamily: 'Sofia-Pro', marginRight: 15 }}>
                 What is PAAQ
               </div>
-              <Image className='mobile-speaker-icon' style={{ cursor: 'pointer' }} src={SpeakerIcon} width={49} height={39} onClick={() => handleSpeakerClick()} />
+              <Image className='mobile-speaker-icon' style={{ cursor: 'pointer', width: '39px', height: '31px', marginLeft: '11px'}} src={SpeakerIcon}  onClick={() => handleSpeakerClick()} />
               <audio ref={svgRef} id="audio" src='/paaq-audio.mp3' ></audio>
 
             </div>
 
-            <div className='web-show-paaq-text' style={{
-              fontSize: 18, marginTop: 20, lineHeight: 1.5, fontWeight: 'lighter',
-              fontFamily: 'SofiaPro-Soft', display: 'flex', justifyContent: 'center', alignItems: 'center'
-            }}>
+            <div className='web-show-paaq-text' style={{}}>
 
               “PAAQ is a question-and-answer social media application that
               connects experts in their field with people interested in their craft
@@ -479,7 +476,7 @@ export default function Banner() {
             </div>
             <br />
 
-            <div className='read-more-mobile' style={{ fontSize: '1.2em', textDecoration: 'underline' }}>Read more</div>
+            <div className='read-more-mobile' style={{ fontSize: '1.2em', textDecoration: 'underline', fontFamily: 'Sofia-Pro'}}>Read More</div>
             <animated.div className='animation-text-mobile' style={{ animationIterationCount: 'infinite', display: 'flex', flexDirection: 'row', position: 'absolute', marginTop: '50px', overflow: "hidden", left: 145 }}>
               <animated.div style={{ fontFamily: 'Sofia-Pro', opacity: '0.6', fontSize: '15px', ...style }}>{`Hi Thomas, how can I grow my business in ...`}</animated.div>
 

@@ -103,8 +103,8 @@ button {
   width: 80%;
   margin: 0 auto;
   margin-top: 100px;
-  background: linear-gradient(270deg, #119888 0%, #4293C5 100%);
-  background-size: 400% 400%;
+  background: linear-gradient(270deg, #7AE2D6 0%, #4293C5 100%);
+  /* background-size: 400% 400%; */
   border-radius: 40px;
   display: flex;
   padding-top: 0;
@@ -129,6 +129,14 @@ button {
      font-size: 40px !important;
      line-height: 40px !important;
   }
+}
+
+.skill-detail-mobile-text {
+  padding-right: 30%;
+  font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 38px;
 }
 
 @media (max-width: 720px) {
@@ -414,8 +422,9 @@ button {
 
 .skills-banner-subheading {
   color: #000000;
-  font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
+font-size: 16px;
+line-height: 23px;
 }
 
 .skills-banner-rank {

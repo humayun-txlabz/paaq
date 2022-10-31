@@ -250,10 +250,12 @@
 
      &>h1 {
           font-family: var(--pro);
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 15px;
           margin-top: 25%;
+
+          font-style: normal;
+font-weight: 500;
+font-size: 23.86px;
+line-height: 28px;
           /* identical to box height */
           text-align: center;
           color: #00b5b4;
@@ -368,11 +370,12 @@ margin-bottom: 0.7rem;
      flex-direction: column;
 
      &>h1 {
-          font-weight: 300;
           font-family: var(--bold);
           font-size: 16px;
           color: #181f1f;
           line-height: 19px;
+
+          font-weight: 700;
 
           img {
                width: 0.8rem;
@@ -480,6 +483,7 @@ margin-bottom: 0.7rem;
                     font-family: var(--bold);
                     font-weight: 700;
                     font-size: 20px;
+                    line-height: 23px;
                     padding-left: 1rem;
                     padding-right: 1rem;
                     color: #252F44;
@@ -488,12 +492,14 @@ margin-bottom: 0.7rem;
                &>p {
                     font-family: var(--soft);
                     font-weight: 400;
+                    font-weight: 400;
                     font-size: 12px;
+                    line-height: 14px;
                     color: rgba(24, 31, 31, 0.5);
                     text-align: center;
                     padding-left: 1rem;
                     padding-right: 1rem;
-                    color: #4B5157;
+                    color: rgba(24, 31, 31, 0.5);
                }
 
                @media (max-width: 913px) {

@@ -5,7 +5,7 @@ import SEO from 'components/seo';
 import theme from 'theme';
 import { ThemeProvider } from 'theme-ui';
 import { StickyProvider } from '../contexts/app/app.provider';
-
+ 
 export default function AboutUs() {
     return (
          <ThemeProvider theme={theme}>

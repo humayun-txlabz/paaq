@@ -37,7 +37,7 @@ const SectionPaidMessage =() => {
                            (Paid Message)
                       </div>
                  </div>
-                 <p>
+                 <p> 
                       This feature allows users to make an introduction video so that
                       other PAAQ users can get to know them. In addition, the video
                       introduction feature also serves as a verification tool because it

@@ -5854,6 +5854,8 @@ line-height: 38px;
                     padding-left: 10%;
                     padding-right: 20%;
 
+                    
+
                     h1 {
                          font-family: var(--bold);
                          font-style: normal;
@@ -6030,7 +6032,20 @@ line-height: 38px;
                     justify-content: center;
                     flex-direction: column;
                     padding-left: 10%;
-
+                    & > .aSBreadCrump {
+                         position: absolute;
+                         top: 5%;
+                         left: 12%;
+                         font-style: normal;
+                         font-weight: 600;
+                         font-size: 20px;
+                         line-height: 28px;
+                         font-family: var(--pro);
+                         color: rgba(255, 255, 255, 0.7);
+                         span {
+                              color: white;
+                         }
+                    }
                     h2 {
                          font-family: var(--pro);
                          font-style: normal;
@@ -6065,9 +6080,15 @@ line-height: 38px;
                          margin-right: 5rem;
 
                          input {
+                              font-family: var(--pro);
                               width: 100%;
                               outline: none;
                               border: 0px;
+                              font-style: normal;
+                              font-weight: 400;
+                              font-size: 18px;
+                              line-height: 30px;
+                              color: #4B5157;
                          }
 
                          .searchIcon {

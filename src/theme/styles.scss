@@ -279,39 +279,42 @@
           height: 3rem;
           border: 1px solid #e88491;
           border-radius: 50%;
-          margin-bottom: 0.4rem;
      }
 
      &>p {
           font-family: var(--pro);
-          font-size: 0.6rem;
+          font-style: normal;
           font-weight: 600;
-          color: #9dacac;
-          line-height: 0.6rem;
+          font-size: 12.2243px;
+          line-height: 8px;
+          color: #9DACAC;
      }
 
      &>h2 {
           font-family: var(--pro);
-          font-size: 0.9rem;
-          font-weight: 600;
-          line-height: 0.7rem;
+          font-style: normal;
+font-weight: 500;
+font-size: 16.2991px;
+line-height: 19px;
 
      }
 
      &>h3 {
           font-family: var(--pro);
-          font-size: 0.7rem;
-          font-weight: 600;
-          line-height: 0.3rem;
-          margin-bottom: 0.7rem;
+          font-style: normal;
+font-weight: 500;
+font-size: 12.2243px;
+line-height: 8px;
+margin-bottom: 0.7rem;
      }
 
      .button-bottom {
           background: #00b5b4;
           border-radius: 6px;
           font-family: var(--pro);
-          font-size: 0.7rem;
-          font-weight: 600;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
           color: #fff;
           padding: 1.5rem;
           padding-top: 0.3rem;

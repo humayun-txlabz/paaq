@@ -20,7 +20,7 @@ const SectionMarketTrends = () => {
   people and politicians.`;
   return (
     <div className="investors-page-section-market-trends">
-      <h1>Market Trends</h1>
+      <h1>Market Trend</h1>
       <div className="main-content">
         <div className="left">
           <img src={BigImg} />
@@ -46,7 +46,7 @@ const SectionMarketTrends = () => {
             they already know. However, social media provided a platform for
             people across the world to interact anywhere and anytime.{" "}
             {isReadMore ? readMoreContent : ``}
-           <br/> <span onClick={() => setIsReadMore(!isReadMore)}>{isReadMore ? 'Read Less' : 'Read More'}</span>
+            <span onClick={() => setIsReadMore(!isReadMore)}>{isReadMore ? 'Read Less' : 'Read More'}</span>
           </p>
         </div>
       </div>

@@ -3916,10 +3916,11 @@ line-height: 38px;
                     font-weight: 400;
                     font-size: 18px;
                     padding-left: 0%;
-                    padding-right: 35%;
+                    padding-right: 30%;
 
                     span {
                          color: #4293C5;
+                         font-weight: 600;
                     }
                }
 
@@ -4154,7 +4155,7 @@ line-height: 38px;
 
           &>p {
                font-family: var(--soft);
-               font-weight: 700;
+               font-weight: 400;
                font-size: 18px;
                color: white;
                text-align: center;
@@ -4175,7 +4176,8 @@ line-height: 38px;
                border-radius: 2rem;
                font-family: var(--soft);
                font-weight: 700;
-               font-size: 18px;
+               font-size: 16px;
+               line-height: 22px;
                margin-top: 1rem;
                margin-bottom: 3rem;
                cursor: pointer;

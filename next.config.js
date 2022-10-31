@@ -3,7 +3,7 @@ const optimizedImages = require('next-optimized-images');
 
 const nextConfiguration = {
   // distDir: "_next",
-  // assetPrefix: './',
+  assetPrefix: './',
   // publicRuntimeConfig: {
   //   basePath: "/src",
   // },

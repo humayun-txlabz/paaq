@@ -128,7 +128,7 @@ const styles = {
     },
   },
   heading: {
-    fontSize: "66px",
+    fontSize: "60px",
     fontFamily: "Sofia-Pro",
     "@media screen and (max-width: 720px)": {
       fontSize: "30px",
@@ -172,7 +172,7 @@ const styles = {
   },
   text: {
     fontSize: "24px",
-    fontFamily: "SofiaPro-Light",
+    fontFamily: "var(--light)",
 
     "@media screen and (max-width: 720px)": {
       fontSize: "14px",

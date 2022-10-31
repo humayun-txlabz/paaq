@@ -10,7 +10,7 @@ const HelpCenterTop = ({isAccountSettings}) => {
             <h2>How Can We Help You?</h2>
             <div className='input-with-search-icon'>
               <input placeholder='Search Here...' />
-              <div className='searchIcon'>
+              <div style={{cursor: 'pointer'}} className='searchIcon'>
                 <img className='iconImg' src={SearchIcon} />
               </div>
             </div>

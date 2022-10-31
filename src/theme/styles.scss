@@ -4075,7 +4075,7 @@ line-height: 38px;
 
      .bottom-content {
           display: grid;
-
+          
           .left {
                padding-left: 16%;
                padding-right: 16%;
@@ -4147,7 +4147,7 @@ line-height: 38px;
           padding: 2rem;
           border-radius: 1.5rem;
           margin-top: 3rem;
-
+          
           &>h1 {
                font-family: var(--bold);
                font-weight: 700;
@@ -4183,6 +4183,7 @@ line-height: 38px;
                font-size: 18px;
                margin-top: 1rem;
                margin-bottom: 3rem;
+               cursor: pointer;
           }
 
           @media (max-width: 913px) {

@@ -6,8 +6,8 @@ const WalletFaqs = ({marginTop}) => {
   return (
     <div style={mTop} className='help-center-faq-single-card'>
         <h1>PAAQ Wallet</h1>
-        <SinlgeFaqItem text={'Load funds'} />
-        <SinlgeFaqItem text={'Withdraw funds'} />
+        <SinlgeFaqItem text={'Load Funds'} />
+        <SinlgeFaqItem text={'Withdraw Funds'} />
         <SinlgeFaqItem text={'Set Price'} />
         {/* <div className='h-line' /> */}
     </div>

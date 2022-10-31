@@ -1,4 +1,5 @@
 import React from 'react'
+import { titleCase } from '../../utils/titleCase';
 import SinlgeFaqItem from './singleItem'
 
 const NotificationsFaqs = ({marginTop}) => {
@@ -6,9 +7,9 @@ const NotificationsFaqs = ({marginTop}) => {
   return (
     <div style={mTop} className='help-center-faq-single-card'>
         <h1>Notifications</h1>
-        <SinlgeFaqItem text={'How to enable notifications'} />
-        <SinlgeFaqItem text={'How to receive recommendations'} />
-        <SinlgeFaqItem text={'How to update notification preferences'} />
+        <SinlgeFaqItem text={titleCase('How to enable notifications')} />
+        <SinlgeFaqItem text={titleCase('How to receive recommendations')} />
+        <SinlgeFaqItem text={titleCase('How to update notification preferences')} />
         {/* <div className='h-line' /> */}
     </div>
   )

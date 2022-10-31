@@ -6307,7 +6307,9 @@ line-height: 38px;
           align-items: center;
           justify-content: space-between;
           padding: 1rem;
-          padding-top: 1.8rem;
+          border-top: 1px solid #E4E4E4;
+
+          // padding-top: 1.8rem;
 
           // border-top: 1px solid #E4E4E4;
           span {

@@ -4010,7 +4010,8 @@ line-height: 38px;
                justify-content: flex-start;
 
                &>img {
-                    max-width: 620px;
+                    width: 100%;
+                    height: auto;
                     padding-right: 16%;
                }
 

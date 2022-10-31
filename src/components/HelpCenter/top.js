@@ -6,7 +6,7 @@ const HelpCenterTop = ({isAccountSettings}) => {
   return (
     <div className='grid-container-media-page-top'>
         <div className='left'>
-          <div className='aSBreadCrump'>{`Help Centre >`}  <span>Account Settings</span></div>
+          {isAccountSettings ? <div className='aSBreadCrump'>{`Help Centre >`}  <span>Account Settings</span></div> : null}
             <h2>How Can We Help You?</h2>
             <div className='input-with-search-icon'>
               <input placeholder='Search Here...' />

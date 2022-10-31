@@ -22,7 +22,7 @@ export default function AccountSetting() {
             <div className="bg-container-for-all">
               <img className="web-img" src={BgImage} />
               <img className="mobile-img" src={BgMobileImage} />
-              <TopBanner />
+              <TopBanner isAccountSettings />
             </div>
           </div>
           <Container sx={styles.headingContainer}>

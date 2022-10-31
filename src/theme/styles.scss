@@ -6021,21 +6021,21 @@ line-height: 38px;
           .grid-container-media-page-top {
 
                display: grid;
-               grid-template-columns: repeat(2, 1fr);
+               grid-template-columns: 6fr 4fr;
                z-index: 10000;
-               padding-left: 7%;
-               padding-right: 7%;
+               padding-left: 10%;
+               padding-right: 10%;
                height: 650px;
 
                .left {
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
-                    padding-left: 10%;
+                    // padding-left: 10%;
                     & > .aSBreadCrump {
                          position: absolute;
                          top: 5%;
-                         left: 12%;
+                         left: 10%;
                          font-style: normal;
                          font-weight: 600;
                          font-size: 20px;
@@ -6077,7 +6077,7 @@ line-height: 38px;
                          padding-left: 1rem;
                          padding-right: 0.5rem;
                          padding-bottom: 0.5rem;
-                         margin-right: 5rem;
+                         margin-right: 8rem;
 
                          input {
                               font-family: var(--pro);
@@ -6092,7 +6092,7 @@ line-height: 38px;
                          }
 
                          .searchIcon {
-                              z-index: 9999;
+                              z-index: 5;
                               background: #00B5B4;
                               border-radius: 50%;
                               padding: 1.5rem;
@@ -6114,12 +6114,12 @@ line-height: 38px;
                .right {
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: flex-end;
                     align-items: center;
 
                     img {
-                         height: 80%;
-                         width: 80%;
+                         height: 90%;
+                         width: 90%;
                          object-fit: contain;
                          position: relative;
                     }

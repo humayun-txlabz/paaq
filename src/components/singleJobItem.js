@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import tagBlack from "../assets/Icons/jobs/tag-black.png";
 import heartBlack from "../assets/Icons/jobs/heart-black.png";
 import locationBlack from "../assets/Icons/jobs/location-black.png";
 import heartWhite from '../assets/Icons/jobs/heart-white.png';
-const SingleJobItem = ({isGradBtn, title}) => {
+import { savedJobsInLocal } from "services/savedJobsLocalStorage";
+const SingleJobItem = ({title, id}) => {
+     const [isGrad, setIsGrad] = useState(false);
+     useEffect(() => {
+          const value = savedJobsInLocal.getSelected(id);
+          console.log(id, value);
+          setIsGrad(value);
+     }, []);
+     const changeIsSaved = () => {
+          savedJobsInLocal.setSelectJob(id);
+          const d = savedJobsInLocal.getSelected(id);
+          setIsGrad(!isGrad);
+     }
      return (
           <div className="single-job-item">
                <div className="inner-container">
@@ -25,11 +37,13 @@ const SingleJobItem = ({isGradBtn, title}) => {
                     <div className="right">
                          <div
                               className={
-                                   isGradBtn ? `save-button-gradient` : `save-button`
+                                   isGrad ? `save-button-gradient` : `save-button`
                               }
                          >
-                              <div className="text">
-                                   <img src={isGradBtn ? heartWhite : heartBlack} />
+                              <div onClick={() => {
+                                   changeIsSaved(id)
+                              }} style={{cursor: 'pointer'}} className="text">
+                                   <img src={isGrad ? heartWhite : heartBlack} />
                                    Save
                               </div>
                          </div>

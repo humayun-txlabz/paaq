@@ -10,9 +10,9 @@ const JobsMain = () => {
                  Careers & Culture &gt; <span>Jobs</span>
             </p>
             <div className="inner-main-container">
-                 <div className="left">
+                 {/* <div className="left">
                       <LeftForm />
-                 </div>
+                 </div> */}
                  <div className="right">
                     <FeaturedJobs />
                     <AllJobsList />

@@ -4605,7 +4605,7 @@ line-height: 38px;
 
           .right {
                // background: lightcoral
-               margin-left: 10%;
+               // margin-left: 10%;
 
                @media (max-width: 1050px) {
                     margin-left: 5%;
@@ -4618,7 +4618,7 @@ line-height: 38px;
           }
 
           @media (min-width: 913px) {
-               grid-template-columns: 1fr 2fr;
+               grid-template-columns: 1fr;
           }
      }
 }

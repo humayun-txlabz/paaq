@@ -3807,12 +3807,12 @@ line-height: 38px;
      &>h1 {
           font-family: var(--bold);
           font-weight: 700;
-          font-size: 70px;
-          line-height: 70px;
+          font-size: 80px;
+          line-height: 112px;
+          color: #252F44;
           align-items: center;
           display: block;
           text-align: center;
-          margin-bottom: 2rem;
      }
 
      @media (max-width: 913px) {

@@ -4,7 +4,7 @@ import heartBlack from "../assets/Icons/jobs/heart-black.png";
 import locationBlack from "../assets/Icons/jobs/location-black.png";
 import heartWhite from '../assets/Icons/jobs/heart-white.png';
 import { savedJobsInLocal } from "services/savedJobsLocalStorage";
-const SingleJobItem = ({title, id}) => {
+const SingleJobItem = ({title, id, key}) => {
      const [isGrad, setIsGrad] = useState(false);
      useEffect(() => {
           const value = savedJobsInLocal.getSelected(id);
@@ -17,7 +17,7 @@ const SingleJobItem = ({title, id}) => {
           setIsGrad(!isGrad);
      }
      return (
-          <div className="single-job-item">
+          <div key={key} className="single-job-item">
                <div className="inner-container">
                     <div className="left">
                          <h1>{title}</h1>

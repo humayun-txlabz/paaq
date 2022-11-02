@@ -6788,6 +6788,48 @@ line-height: 38px;
 /* mobile home banner pills */
 
 @media (max-width: 767px) {
+     .main-section-image4 {
+          top:107% !important;
+          left: 5%;
+          width: 66px;
+          height: 66px;
+     }
+     #main-section-image2-nametag-container4 {
+          position: absolute;
+       left: 200%;
+       top: 60%;
+       width: auto;
+       height: auto;
+       min-width: auto ;
+       min-height: auto;
+     }
+     #main-section-image2-nametag4 {
+          border-radius: 10px 0px 10px 12px;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          width: auto;
+          height: auto;
+          min-width: auto !important;
+          min-height: auto !important;
+          .nametag-title {
+             font-size: 7px;
+             margin-left: 7px;
+   
+          }
+          .nametag-designation {
+             font-family: var(--light);
+             margin-left: 7px;
+          }
+     }
+
+     .main-section-image5 {
+
+     }
+     #main-section-image2-nametag-container5 {
+          display: none !important;
+     }
      .main-section-image6 {
        top:90% !important;
        left: 90%;
@@ -6866,8 +6908,8 @@ line-height: 38px;
 
      .main-section-image8 {
           position: absolute;
-          top: 112%;
-          right: 10%;
+          top: 120%;
+          right: 4%;
           width: 58px;
           height: 58px; 
      }
@@ -6899,5 +6941,27 @@ line-height: 38px;
              font-family: var(--light);
              margin-left: 10px;
           }
+        }
+
+        .main-section-image9 {
+          position: absolute;
+          top: 75%;
+          right: 8%;
+          width: 40px;
+          height: 40px;
+        }
+        #main-section-image2-nametag-container9 {
+          display: none !important;
+        }
+
+        .main-section-image11 {
+          position: absolute;
+          top: 55%;
+          right: 4%;
+          width: 34px;
+          height: 34px;
+        }
+        #main-section-image2-nametag-container11{
+          display: none !important;
         }
    }

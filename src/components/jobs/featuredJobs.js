@@ -5,8 +5,9 @@ const FeaturedJobs = ({ jobs, saveThisJob }) => {
   return (
     <div className="jobs-page-featured-jobs">
       <h1>Featured Jobs</h1>
-      {jobs?.map((item) => (
+      {jobs?.map((item, index) => (
         <SingleJobItem
+        key={index}
           id={item.id}
           title={item.title}
         />

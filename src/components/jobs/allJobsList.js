@@ -9,8 +9,9 @@ const AllJobsList = ({ jobs, totalPages, goToPage, currentPage }) => {
       <div className="light-text">
         Showing <span>1</span> to <span>20</span> of <span>36</span> jobs
       </div>
-      {jobs?.map((item) => (
+      {jobs?.map((item, index) => (
         <SingleJobItem
+          key={index}
           title={item.title}
           id={item?.id}
         />

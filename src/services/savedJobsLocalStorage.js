@@ -4,7 +4,7 @@ import {reactLocalStorage} from 'reactjs-localstorage';
 function setSelectJob(id){
     const d = reactLocalStorage.get(id);
     if(d == undefined || d==null){
-        eactLocalStorage.set(`${id}`, true);
+        reactLocalStorage.set(`${id}`, true);
     }else{
         const str = JSON.parse(d);
         reactLocalStorage.set(`${id}`, !str);

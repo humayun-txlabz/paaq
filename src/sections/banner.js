@@ -113,12 +113,13 @@ export default function Banner() {
     from: { x: 0, y: 0, opacity: 0, scale: 0 },
     to: [
       { x: 0, y: 0, opacity: 1, scale: 1 },
-      { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+      // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 13000,
+    // delay: 13000,
+    delay: 0,
     config: { duration: 500 },
 
-    onRest: () => update3(4)
+    // onRest: () => update3(4)
   }));
   const [anim5, setAnim5] = useSpring(() => ({
     from: { x: 0, y: 0, opacity: 0, scale: 0 },
@@ -172,6 +173,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
     delay: 31500,
+    // delay: 0,
     config: { duration: 500 },
 
     onRest: () => update3(9)
@@ -328,8 +330,8 @@ export default function Banner() {
             <animated.div style={poppingOutAnimation(600)} >
               <div style={{ position: 'absolute' }} style={{ maxWidth: 64, maxHeight: 64 }} >
                 <Image className='main-section-inner main-section-inner-image7' src={MainImage7} />
-                <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-container' style={{ ...anim9 }} >
-                  <div className='main-section-image2-nametag' style={{ minWidth: 202 }}>
+                <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-container' id="main-section-image2-nametag-container7" style={{ ...anim9 }} >
+                  <div className='main-section-image2-nametag' id='main-section-image2-nametag7' style={{ minWidth: 202 }}>
                     <span className='nametag-title'>Sue Chan</span>
                     <span className='nametag-designation'>Marteking Manager</span>
                   </div>
@@ -341,24 +343,9 @@ export default function Banner() {
           <div className='main-section-image8'>
             <animated.div style={poppingOutAnimation(1300)} >
               <div style={{ position: 'absolute' }} style={{ maxWidth: 110, maxHeight: 110 }} >
-                {/* <div className='ask-eightavatar-question'>
-                  <p className='ask-eightavatar-question-detail anim-typewriter'>
-                    I can help with that!😄👍
-                  </p>
-                </div> */}
-                {/* <div style={{ display: 'flex', justifyContent: 'center' }}> */}
-
-                {/* <animated.div
-                    className={'solution-icon'}
-                    style={{
-                      position: 'absolute',
-                      // right: 25,
-                      ...styles2,
-                    }}
-                  /> */}
-                <Image className='main-section-inner main-section-inner-image8' src={MainImage8} />
-                <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-containerleft' style={{ ...anim4 }} >
-                  <div className='main-section-image2-nametagleft'>
+                <Image className='main-section-inner main-section-inner-image8' id="main-section-inner-image8" src={MainImage8} />
+                <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-containerleft' id="main-section-image2-nametag-containerleft8" style={{ ...anim4 }} >
+                  <div className='main-section-image2-nametagleft' id="main-section-image2-nametag8" id="main-section-image2-nametag8">
                     <span className='nametag-title'>Aisha Ali</span>
                     <span className='nametag-designation'>Philosophy Student</span>
                   </div>

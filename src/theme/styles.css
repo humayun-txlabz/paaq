@@ -1206,11 +1206,7 @@ line-height: 23px;
   width: 64px;
 }
 
-@media (max-width: 720px) {
-  .main-section-inner-image7 {
-   display:none;
-  }
-}
+
 .main-section-inner-image8{
   height: 110px;
   width: 110px;
@@ -1260,13 +1256,15 @@ line-height: 23px;
   top: 7%;
   left: 24%;
 }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .main-section-image1 {
     top:67% !important;
     left: 5%;
+    width: 22px;
+    height: 22px;
   }
 }
-@media (max-width: 1024px) and (min-width: 720px) {
+@media (max-width: 1024px) and (min-width: 767px) {
   .main-section-image1 {
     top:17% !important;
     left: 5%;
@@ -1278,13 +1276,15 @@ line-height: 23px;
   top: 33%;
   left: 12%;
 }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .main-section-image2 {
     top:88% !important;
     left: 9%;
+    width: 48px;
+    height: 48px;
   }
 }
-@media (max-width: 1024px) and (min-width: 720px) {
+@media (max-width: 1024px) and (min-width: 767px) {
   .main-section-image2 {
     top:47% !important;
     left: 5%;
@@ -1296,14 +1296,16 @@ line-height: 23px;
   top: 59%;
   left: 34%;
 }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .main-section-image3 {
     top:95% !important;
     left: 45%;
+    width: 46px;
+    height: 46px;
   }
 }
 
-@media (max-width: 1024px) and (min-width: 720px) {
+@media (max-width: 1024px) and (min-width: 767px) {
   .main-section-image3 {
     top:67% !important;
     left: 25%;
@@ -1321,13 +1323,15 @@ line-height: 23px;
   top: 80%;
   left: 16%;
 }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .main-section-image4 {
-    top:110% !important;
+    top:105% !important;
     left: 5%;
+    width: 66px;
+    height: 66px;
   }
 }
-@media (max-width: 1024px) and (min-width: 720px) {
+@media (max-width: 1024px) and (min-width: 767px) {
   .main-section-image4 {
     top:87% !important;
     left:15%;
@@ -1337,12 +1341,15 @@ line-height: 23px;
 
 
 .main-section-image5 {
+  
   position: absolute;
   top: 90%;
   left: 43%;
 }
 
-@media (max-width: 1024px) and (min-width: 720px) {
+
+
+@media (max-width: 1024px) and (min-width: 767px) {
   .main-section-image5 {
     top:97% !important;
     left:45%;
@@ -1354,10 +1361,17 @@ line-height: 23px;
   top: 65%;
   left: 45%;
 }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .main-section-image6 {
-    top:105% !important;
+    top:90% !important;
     left: 90%;
+    width: 32px;
+    height: 32px;
+  }
+  .main-section-image2-nametag-container {
+    position: absolute;
+    left: -110%;
+    top: 10%;
   }
 }
 @media (max-width: 1284px) and (min-width: 1025px) {
@@ -3279,3 +3293,4 @@ justify-content: center;
   bottom: 33%;
   right: 31%;
 }
+

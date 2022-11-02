@@ -3,7 +3,7 @@ import SingleJobItem from "components/singleJobItem";
 import React from "react";
 import { savedJobsInLocal } from "services/savedJobsLocalStorage";
 
-const AllJobsList = ({ jobs, savedJobs, saveThisJob }) => {
+const AllJobsList = ({ jobs, totalPages, goToPage, currentPage }) => {
   return (
     <div className="all-jobs-list-with-pagination">
       <div className="light-text">
@@ -16,7 +16,7 @@ const AllJobsList = ({ jobs, savedJobs, saveThisJob }) => {
         />
       ))}
       <div className="pagination-container">
-        <PaginationComponent />
+        <PaginationComponent currentPage={currentPage} totalPages={totalPages} goToPage={goToPage} />
       </div>
     </div>
   );

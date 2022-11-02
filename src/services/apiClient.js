@@ -4,14 +4,17 @@ const client = contentful.createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
   });
 
-export const apiClientContentFul =  (title) =>{
+export const apiClientContentFul =  (title, skipElem = 0, limit = 10) =>{
 
 
     return new Promise((resolve, reject) => {
         client.getEntries({
-            content_type: `${title}`
+            content_type: `${title}`,
+            skip: skipElem,
+            limit
           })
           .then((response) => {
+            console.log(response)
             resolve(response)
           })
           .catch((err) => {

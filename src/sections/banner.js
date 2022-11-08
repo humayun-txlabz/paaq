@@ -113,7 +113,7 @@ export default function Banner() {
     from: { x: 0, y: 0, opacity: 0, scale: 0 },
     to: [
       { x: 0, y: 0, opacity: 1, scale: 1 },
-      // { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
+      { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
     // delay: 13000,
     delay: 0,

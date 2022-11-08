@@ -10,7 +10,7 @@ export default function MediaPage() {
           <ThemeProvider theme={theme}>
                <StickyProvider>
                     <Layout>
-                         <SEO title="Startup Landing 007" />
+                         <SEO title="Help Center" />
                          <HelpCenterMain />
                     </Layout>
                </StickyProvider>

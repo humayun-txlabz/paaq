@@ -10,7 +10,7 @@ export default function AboutUs() {
         <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
-                    <SEO title="Startup Landing 007" />
+                    <SEO title="About Us" />
                     <AboutUsMain />
                 </Layout>
             </StickyProvider>

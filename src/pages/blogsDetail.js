@@ -73,7 +73,7 @@ export default function BlogsDetail() {
           <ThemeProvider theme={theme}>
                <StickyProvider>
                     <Layout>
-                         <SEO title="Startup Landinggg 006" />
+                         <SEO title="Blog Detail" />
                          <Container style={styles.main}>
                               <Container style={styles.textContainer1}>
                                    <Text style={styles.heading}>

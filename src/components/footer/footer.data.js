@@ -38,11 +38,11 @@ export default {
   menuItem: [
     [
       {
-        path: '/',
+        path: '/careers',
         label: 'Careers and Culture',
       },
       {
-        path: '/',
+        path: '/media',
         label: 'Press & Media',
       },
       {
@@ -52,59 +52,59 @@ export default {
     ],
     [
       {
-        path: '/',
+        path: '/features',
         label: 'My Skills',
       },
       {
-        path: '/',
+        path: '/features',
         label: 'Skill Rating',
       },
       {
-        path: '/',
+        path: '/features',
         label: 'Ask Button',
       },
       {
-        path: '/',
+        path: '/features',
         label: 'And More...',
       }
     ],
     [
       {
-        path: '/',
+        path: '/communityGuidelines',
         label: 'Community Guidelines',
       },
       {
-        path: '/',
+        path: '/helpCenter',
         label: 'Privacy Policy',
       },
       {
-        path: '/',
+        path: '/helpCenter',
         label: 'EULA Policy',
       },
       {
-        path: '/',
+        path: '/helpCenter',
         label: 'Terms of use',
       },
       {
-        path: '/',
+        path: '/helpCenter',
         label: 'Cookies Policy',
       }
     ],
     [
       {
-        path: '/',
+        path: '/contactUs',
         label: 'Contact Us',
       },
       {
-        path: '/',
+        path: '/helpCenter',
         label: 'Help Center',
       },
       {
-        path: '/',
+        path: '/blogs',
         label: 'Blogs',
       },
       {
-        path: '/',
+        path: '/faq',
         label: 'FAQ\'s',
       }
     ]

@@ -16,7 +16,7 @@ export default function AccountSetting() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 007" />
+          <SEO title="FAQ's" />
           {/* <HelpBanner /> */}
           <div className="help-center-page-main-container">
             <div className="bg-container-for-all">

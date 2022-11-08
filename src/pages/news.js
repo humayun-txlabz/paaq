@@ -81,7 +81,7 @@ export default function News(props) {
         <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
-                    <SEO title="Startup Landing 007" />
+                    <SEO title="News" />
                     <Container sx={styles.mainContainer}>
                         <Container sx={styles.headingContainer}>
                             <NewsSection list={items.slice(min,max)} />

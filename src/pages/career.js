@@ -10,7 +10,7 @@ export default function CareerPage() {
          <ThemeProvider theme={theme}>
               <StickyProvider>
                    <Layout>
-                        <SEO title="Startup Landing 007" />
+                        <SEO title="Careers" />
                          <CareerMain />
                    </Layout>
               </StickyProvider>

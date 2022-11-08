@@ -37,7 +37,7 @@ export default function BlogsPage(props) {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landinggg 006" />
+          <SEO title="Blog - Paaq" />
           <MainBlog posts={props} />
         </Layout>
       </StickyProvider>

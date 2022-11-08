@@ -51,7 +51,7 @@ export default function Faq(props) {
         <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
-                    <SEO title="Startup Landing 007" />
+                    <SEO title="FAQ's" />
                     <Container sx={styles.mainContainer}>
                         <Container sx={styles.headingContainer}>
                             <Text sx={styles.heading}>Frequently Asked Question</Text>

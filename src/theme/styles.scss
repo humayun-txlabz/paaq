@@ -5140,12 +5140,12 @@ line-height: 38px;
 
      &>p {
           font-family: var(--soft);
-          font-weight: 700;
+          font-weight: 400;
           font-size: 18px;
           color: white;
           text-align: center;
-          padding-left: 35%;
-          padding-right: 35%;
+          padding-left: 22%;
+          padding-right: 22%;
 
      }
 
@@ -5160,9 +5160,9 @@ line-height: 38px;
           padding-right: 2.5rem;
           border-radius: 2rem;
           font-family: var(--soft);
-          font-weight: 700;
-          font-size: 18px;
           margin-top: 1rem;
+          font-weight: 700;
+          font-size: 16px;
           margin-bottom: 3rem;
      }
 
@@ -5509,7 +5509,7 @@ line-height: 38px;
                     font-family: var(--pro);
                     font-style: normal;
                     font-weight: 600;
-                    font-size: 64px;
+                    font-size: 70px;
                     line-height: 66px;
                     /* identical to box height, or 94% */
 
@@ -5600,7 +5600,7 @@ line-height: 38px;
                p {
                     font-family: var(--light);
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 400;
                     font-size: 18px;
                     line-height: 32px;
                     color: #4B5157;

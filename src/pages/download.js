@@ -27,7 +27,7 @@ export default function Download() {
         <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
-                    <SEO title="Startup Landing 007" />
+                    <SEO title="Download" />
                     <Container sx={styles.mainContainer}>
                         <Container sx={styles.downloadContainer}>
                             <Container sx={styles.textContainer}>

@@ -20,7 +20,7 @@ export default function Settings() {
         <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
-                    <SEO title="Startup Landing 007" />
+                    <SEO title="Settings" />
                     <HelpBanner />
                     <Container sx={styles.mainContainer}>
                         <Container sx={styles.mainCardsContainer}>

@@ -10,7 +10,7 @@ export default function JobsPage() {
           <ThemeProvider theme={theme}>
                <StickyProvider>
                     <Layout>
-                         <SEO title="Startup Landing 007" />
+                         <SEO title="Jobs" />
                          <JobsMain />
                     </Layout>
                </StickyProvider>

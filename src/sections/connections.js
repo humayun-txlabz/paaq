@@ -53,7 +53,7 @@ export default function Connections() {
                                      src={BannerImg}
                                      alt="Picture of the phone"
                                      style={{
-                                          width: "100%",
+                                          width: "80%",
                                           height: "100%",
                                      }}
                                 />
@@ -103,7 +103,7 @@ export default function Connections() {
                       </div>
                       <div
                            className="connections-info-box connections-info-box-mobile"
-                           style={{ paddingTop: "5%", paddingBottom: 0, paddingRight: 0 }}
+                           style={{ paddingBottom: 0, paddingRight: 0 }}
                       >
                            <div
                                 style={{
@@ -113,7 +113,7 @@ export default function Connections() {
                                 }}
                            >
                                 <div
-                                     className="connection-heading"
+                                     className="connection-heading socially-heading"
                                      style={{
                                           fontSize: 38,
                                           fontWeight: "bold",
@@ -147,17 +147,18 @@ export default function Connections() {
                            </div>
                            <div
                                 className="banner-image-connection-mobile"
-                                style={{ display: "flex", justifyContent: "flex-end" }}
+                              //   style={{ display: "flex", justifyContent: "flex-end" }}
                            >
                                 <Image
                                      src={BannerImg2}
                                      alt="Picture of the phone"
-                                     style={{
-                                          width: 450,
-                                          height: "100%",
-                                          objectFit: "cover",
-                                          borderRadius: 40,
-                                     }}
+                                     className={'banner-image-home-connection-section'}
+                                   //   style={{
+                                   //        width: 450,
+                                   //        height: "100%",
+                                   //        objectFit: "cover",
+                                   //        borderRadius: 40,
+                                   //   }}
                                 />
                            </div>
                       </div>

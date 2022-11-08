@@ -201,6 +201,7 @@ line-height: 38px;
 
 .facebook-icon {
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .title-icons-container {

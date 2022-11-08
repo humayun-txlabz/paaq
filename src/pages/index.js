@@ -9,6 +9,7 @@ import Connections from 'sections/connections';
 import SkillsBanner from 'sections/SkillsBanner';
 import EarnMoneyBanner from 'sections/EarnMoneyBanner';
 import AskQuestionBanner from 'sections/AskQuestionBanner';
+import AppAndPlayStoreFooter from "components/appAndPlayStoreFooter";
 
 export default function IndexPage() {
   return (
@@ -21,6 +22,7 @@ export default function IndexPage() {
           <AskQuestionBanner />
           <SkillsBanner />
           <EarnMoneyBanner />
+          <AppAndPlayStoreFooter />
         </Layout>
       </StickyProvider>
     </ThemeProvider>

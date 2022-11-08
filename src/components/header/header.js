@@ -12,8 +12,10 @@ import { DrawerProvider } from "../../contexts/drawer/drawer.provider";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
 import HomeUnderLine from 'assets/Icons/header/home-underline.png';
+import { useRouter } from 'next/router';
 
 export default function Header({ className }) {
+  const {pathname} = useRouter()
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
@@ -21,10 +23,10 @@ export default function Header({ className }) {
         <div className="right-container">
           <div className="nav-menu-desktop">
             {menuItems.map(({ path, label }, i) => (
-              <div className="nav-menu-items"><Link style={{color: '#252F44'}}  href={path} key={i}>
+              <div key={i} className="nav-menu-items"><Link style={{color: '#252F44'}}  href={path} key={i}>
                 {label}
               </Link>
-              {i == 0 ? <img className="underline-style" src={HomeUnderLine} /> : null}
+              {pathname == path ? <img className="underline-style" src={HomeUnderLine} /> : null}
               </div>
             ))}
           </div>

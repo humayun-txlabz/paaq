@@ -431,12 +431,12 @@ export default function Banner() {
         </Box>
         <div className='banner-info-box'>
           <div className='banner-info-text-container' style={{ color: 'white', width: '60%', textAlign: 'left', overflow: 'hidden' }}>
-            <div style={{ display: 'flex', alignItems: 'center', }}>
+            <div className="main-mobile-what-text" style={{ display: 'flex', alignItems: 'center', }}>
 
-              <div className='mobile-what-text' style={{ fontSize: 60, fontWeight: 'bold', fontFamily: 'Sofia-Pro', marginRight: 15 }}>
+              <div className='mobile-what-text' style={{  fontWeight: 'bold', fontFamily: 'Sofia-Pro', marginRight: 15 }}>
                 What is PAAQ
               </div>
-              <Image className='mobile-speaker-icon' style={{ cursor: 'pointer', width: '39px', height: '31px', marginLeft: '11px'}} src={SpeakerIcon}  onClick={() => handleSpeakerClick()} />
+              <Image className='mobile-speaker-icon' src={SpeakerIcon}  onClick={() => handleSpeakerClick()} />
               <audio ref={svgRef} id="audio" src='/paaq-audio.mp3' ></audio>
 
             </div>
@@ -451,7 +451,7 @@ export default function Banner() {
               facilitate people's exchange of valuable insights and knowledge
               as well as earn money from answering questions.
             </div>
-            <div className='mobile-show-paaq-text' style={{
+            {/* <div className='mobile-show-paaq-text' style={{
               fontSize: 18, marginTop: 20, lineHeight: 1.5, fontWeight: 'lighter',
               fontFamily: 'SofiaPro-Soft', display: 'flex', justifyContent: 'center', alignItems: 'center'
             }}>
@@ -460,10 +460,10 @@ export default function Banner() {
               connects experts in their field with people interested in their craft
               socially and professionally.”
     
-            </div>
+            </div> */}
             <br />
 
-            <div className='read-more-mobile' style={{ fontSize: '1.2em', textDecoration: 'underline', fontFamily: 'Sofia-Pro'}}>Read More</div>
+            <div className='read-more-mobile'>Read More</div>
             {/* <animated.div className='animation-text-mobile' style={{ animationIterationCount: 'infinite', display: 'flex', flexDirection: 'row', position: 'absolute', marginTop: '50px', overflow: "hidden", left: 145 }}>
               <animated.div style={{ fontFamily: 'Sofia-Pro', opacity: '0.6', fontSize: '15px', ...style }}>{`Hi Thomas, how can I grow my business in ...`}</animated.div>
 

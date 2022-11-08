@@ -95,9 +95,9 @@ export default function News(props) {
                                 <img   style={styles.arrow} src={arrow} />
                             </div>
                             {
-                                pages.map((item) => {
+                                pages.map((item, index) => {
                                     return (
-                                        <div onClick={()=>setDirectWithPage(item.id)} style={item.id == active ? styles.circle3 : styles.circle2}>
+                                        <div key={index} onClick={()=>setDirectWithPage(item.id)} style={item.id == active ? styles.circle3 : styles.circle2}>
                                             <Text>{item.id}</Text>
                                         </div>
                                       

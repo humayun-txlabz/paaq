@@ -8,7 +8,7 @@ export default [
     label: 'About Us',
   },
   {
-    path: 'news',
+    path: '/news',
     label: 'News',
   },
   {

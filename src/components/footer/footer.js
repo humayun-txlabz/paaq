@@ -47,6 +47,15 @@ export default function Footer() {
           </Box>
               )}
         </Box>
+        <div className='footer-copyright-container'>
+          <div className='icons-bottom-footer-mobile'>
+                  <div style={{background: '#fff'}} className='icon-bg'><img src={Insta} /></div>
+                  <div className='icon-bg'><img src={Linkedin} /></div>
+                  <div className='icon-bg'><img src={Twitter} /></div>
+                  <div className='icon-bg'><img src={Simple} /></div>
+                  <div className='icon-bg'><img src={Tiktok} /></div>
+          </div>
+       </div>
               <div className='h-line' />
 
        
@@ -55,7 +64,7 @@ export default function Footer() {
        <Text sx={styles.footer.copyright}>
             Copyright© PAAQ 2022. All Rights Reserved.
           </Text>
-          <div className='icons-bottom-footer'>
+          <div className='icons-bottom-footer icons-bottom-footer-web'>
                   <div style={{background: '#fff'}} className='icon-bg'><img src={Insta} /></div>
                   <div className='icon-bg'><img src={Linkedin} /></div>
                   <div className='icon-bg'><img src={Twitter} /></div>

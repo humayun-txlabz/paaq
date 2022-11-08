@@ -1102,11 +1102,21 @@ line-height: 23px;
   white-space: nowrap; */
 }
 
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .ask-firstavatar-question-detail {
-    font-size: 13px !important;
-    font-weight: 400 !important;
+    font-weight: 500;
+font-size: 9.81271px;
+line-height: 16px;
    
+  }
+  .ask-firstavatar-question {
+    width: 270px;
+    background-color: #4293C5;
+    padding: 4% 8%;
+    margin-right: 12px;
+    margin-top: 0;
+    color: #ffffff;
+    border-radius: 25px 0px 25px 25px;
   }
 }
 
@@ -1121,7 +1131,35 @@ line-height: 23px;
 .ask-secondavatar {
   display: flex;
   margin-top: 20px;
+  position: relative;
 }
+
+.ask-secondavatar-img {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: 1000;
+}
+.ask-secondavatar-img1 {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  z-index: 2000;
+}
+
+.earn-money-imageimg1{
+  border: 2px solid #FFFFFF;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  
+}
+
+.ask-firstavatar {
+  position: relative;
+}
+
+
 
 .ask-secondavatar-question {
   background-color: #19CDA6;
@@ -1132,10 +1170,19 @@ line-height: 23px;
   color: #ffffff;
   border-radius: 0px 25px 25px 25px;
 }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .ask-secondavatar-question {
     width: 256px;
   }
+
+  .ask-secondavatar-img1 {
+    position: absolute;
+    top: -10px;
+    right: -4px;
+    z-index: 2000;
+  }
+  
+  
 }
 @media (max-width: 800px) and (min-width: 721px) {
   .ask-secondavatar-question {
@@ -1144,20 +1191,26 @@ line-height: 23px;
   }
 }
 .ask-question-avatar2{
-  width: 82px;
-  height: 82px;
+  border: 2px solid #FFFFFF;
+  width: 42px;
+  height: 42px;
+
 }
 
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .ask-question-avatar2{
-    width: 62px !important;
-    height: 62px !important;
+    border: 2px solid #FFFFFF;
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 50%;
+    
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .ask-secondavatar-question-detail {
-    font-size: 13px !important;
-    font-weight: 400 !important;
+    font-weight: 500 !important;
+font-size: 9.81271px !important;
+line-height: 16px;
   }
 }
 

@@ -52,19 +52,23 @@ const AskQuestionBanner = React.forwardRef(function AskQuestionBanner(parentRef)
          <div className="earn-money-main2" ref={askQuestionReference}>
               <div className="ask-question-left-container">
                    <div className="ask-firstavatar">
+                   
                         <animated.div style={defaultAnimation(1000)}>
                              <div className="ask-firstavatar-question">
                                   <span className="ask-firstavatar-question-detail">
-                                       Mark, my company is based in London, and we are
-                                       planning to open multiple stores in Paris, where
-                                       you are located. What factors should we consider
-                                       since we both work in the same industry?
+                                  Mark, my company is based in London, and we are planning to open multiple stores in Paris, where you are located. What factors should we consider since we both work in the same industry?
                                   </span>
                              </div>
                         </animated.div>
+                        <animated.div className={'ask-secondavatar-img1'} style={poppingOutAnimation(2000)}>
+                             <img
+                                  className="earn-money-imageimg1 ask-question-avatar2"
+                                  src={Image2}
+                             />
+                        </animated.div>
                    </div>
                    <div className="ask-secondavatar">
-                        <animated.div style={poppingOutAnimation(1300)}>
+                        <animated.div className={'ask-secondavatar-img'} style={poppingOutAnimation(1300)}>
                              <img
                                   className="earn-money-image ask-question-avatar2"
                                   src={Image1}

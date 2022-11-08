@@ -10,7 +10,7 @@ const ContactUsMain = () => {
             <div className='left left-web'>
                 <h1>Contact Us</h1>
                 <p>PAAQ is a knowledge based social media application designed to facilitate people's exchange of valuable insights and knowledge as well as earn money from answering questions.</p>
-                <div className='h-line' />
+                {/* <div className='h-line' /> */}
                 <h3>PAAQ gives access to:</h3>
                 <TickWithTextComp text={'Global interaction.'} marginTop={'2rem'} />
                 <TickWithTextComp text={'Expert knowledge tailored to your needs.'} marginTop={'2rem'} />

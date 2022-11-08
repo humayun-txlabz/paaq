@@ -3,6 +3,7 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 import { useState , useEffect } from 'react';
+import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter'
 
 import { BLOCKS, MARKS, INLINES } from '@contentful/rich-text-types';
 
@@ -259,6 +260,7 @@ const MainBlog = (props) => {
             ))
             }
           </div>
+          <AppAndPlayStoreFooter />
           {/* <FeaturedCard alignImageRight={true} />
           <div className='blog-items'>
 

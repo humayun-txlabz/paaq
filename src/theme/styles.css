@@ -193,10 +193,11 @@ line-height: 38px;
 }
 
 .title-card-heading {
-  font-size: 80px;
-  font-weight: 600;
-  font-family: 'Sofia-Pro';
-  margin: 50px 0px;
+  font-family: var(--pro);
+  font-weight: 700;
+font-size: 84px;
+line-height: 66px;
+  margin: 70px 0px;
 }
 
 .facebook-icon {

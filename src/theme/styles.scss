@@ -6793,6 +6793,31 @@ line-height: 38px;
      }
 }
 
+.blogs-main-btn-bottom {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 4rem;
+     margin-bottom: -2rem;
+     cursor: pointer;
+     .blogs-main-bottom-color-btn {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 16px 35px;
+          background: #00B5B4;
+          box-shadow: 4px 7px 24px rgba(0, 181, 180, 0.28);
+          border-radius: 40px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 15px;
+          text-align: center;
+          color: #FFFFFF;
+     }
+}
+
 /* mobile home banner pills */
 
 @media (max-width: 767px) {

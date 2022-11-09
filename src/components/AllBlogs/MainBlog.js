@@ -260,6 +260,11 @@ const MainBlog = (props) => {
             ))
             }
           </div>
+          <div className='blogs-main-btn-bottom'>
+            <div className='blogs-main-bottom-color-btn'>
+              Load More...
+            </div>
+          </div>
           <AppAndPlayStoreFooter />
           {/* <FeaturedCard alignImageRight={true} />
           <div className='blog-items'>

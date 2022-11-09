@@ -5,7 +5,7 @@
   --light: 'SofiaPro-Light';
   --bold: 'Sofia-Pro-Bold';
 }
-
+ 
 @font-face {
   font-family: 'Sofia-Pro';
   src: url('/SofiaProRegularAz.otf');

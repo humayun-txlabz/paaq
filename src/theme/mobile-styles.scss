@@ -95,4 +95,40 @@
   .item-card-ownername {
     font-weight: 500;
   }
+
+//   download page
+
+.bar-code-and-text {
+    display: none;
+}
+.bar-code-and-text-mobile {
+    display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2rem;
+  .image {
+    background: #ffffff;
+    border-radius: 19.6552px;
+    margin-right: 10%;
+  }
+  .text-in-bar-code-with-text {
+    font-family: var(--pro);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+    padding-left: 0%;
+    padding-right: 5%;
+  }
+}
+.send-link-download { 
+    .or-in-send-link { 
+    margin-left: 1rem;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
 }

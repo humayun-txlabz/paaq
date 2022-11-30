@@ -9,18 +9,20 @@ import Connections from 'sections/connections';
 import SkillsBanner from 'sections/SkillsBanner';
 import EarnMoneyBanner from 'sections/EarnMoneyBanner';
 import AskQuestionBanner from 'sections/AskQuestionBanner';
+import AppAndPlayStoreFooter from "components/appAndPlayStoreFooter";
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 005" />
+          <SEO title="Home" />
           <Banner />
           <Connections />
           <AskQuestionBanner />
           <SkillsBanner />
           <EarnMoneyBanner />
+          <AppAndPlayStoreFooter />
         </Layout>
       </StickyProvider>
     </ThemeProvider>

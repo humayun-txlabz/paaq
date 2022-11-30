@@ -16,13 +16,13 @@ export default function AccountSetting() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 007" />
+          <SEO title="FAQ's" />
           {/* <HelpBanner /> */}
           <div className="help-center-page-main-container">
             <div className="bg-container-for-all">
               <img className="web-img" src={BgImage} />
               <img className="mobile-img" src={BgMobileImage} />
-              <TopBanner />
+              <TopBanner isAccountSettings />
             </div>
           </div>
           <Container sx={styles.headingContainer}>
@@ -128,7 +128,7 @@ const styles = {
     },
   },
   heading: {
-    fontSize: "66px",
+    fontSize: "60px",
     fontFamily: "Sofia-Pro",
     "@media screen and (max-width: 720px)": {
       fontSize: "30px",
@@ -172,7 +172,7 @@ const styles = {
   },
   text: {
     fontSize: "24px",
-    fontFamily: "SofiaPro-Light",
+    fontFamily: "var(--light)",
 
     "@media screen and (max-width: 720px)": {
       fontSize: "14px",

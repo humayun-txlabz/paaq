@@ -4,7 +4,7 @@ import RightIcon from "../../assets/page2.png";
 const SinlgeFaqItem = ({text}) => {
   return (
     <div className="single-faq-question-item">
-      <div className="h-line" />
+      {/* <div className="h-line" /> */}
       <div class="inner-container">
         <span>{text}</span>
         <img src={RightIcon} />

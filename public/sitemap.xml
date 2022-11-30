@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://leerob.iosrc//index</loc>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://startup-agency-modern.vercel.app</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.201Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/about</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/aboutUs</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/accountSettings</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/blog</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/blogDetails</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/blogs</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/blogsDetail</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/career</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/careers</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/communityGuidelines</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/contactUs</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/download</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/faq</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/features</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/helpCenter</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/images&amp;Contacts</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/investors</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/jobInsights</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/jobs</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/media</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/new</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/news</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/settings</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/blog/6PkPneZzdwYDP9KsrhmgSf</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/blog/5LWPXOHzobr2t3flh2Ut3d</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/blog/4sd1qGuy77nXeCRZedO6rz</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/new/6qnGXfEwMI5nwx9sf6ZXnU</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/new/7i0IK7C38iGAT8yG9b6bkb</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/new/4TdmausBnTkKVbuakHKlU4</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/new/4c5Y4Y8jSG6A4YHLOsaNk0</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/new/1o69JHLQEGLolwyV0Coc4v</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/new/1buWJOGhFTWvJzC3sq15H9</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/new/1NjxTwPQAMI86FqE4vAbkg</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
+<url><loc>https://startup-agency-modern.vercel.app/new/1Av6K3muNkJ6GGx8Ivbj1r</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-10-24T07:30:51.202Z</lastmod></url>
 </urlset>

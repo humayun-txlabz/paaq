@@ -37,12 +37,8 @@ const SectionPaidMessage =() => {
                            (Paid Message)
                       </div>
                  </div>
-                 <p>
-                      This feature allows users to make an introduction video so that
-                      other PAAQ users can get to know them. In addition, the video
-                      introduction feature also serves as a verification tool because it
-                      can not be uploaded since there is a unique QR code placed on it to
-                      prevent account impersonation.
+                 <p> 
+                 A key feature of PAAQ is Ask. You can use this feature to interact with anyone by paying a fee to receive a reply to your message or question within 24 hours. In case a response is not received within the stipulated time, you will receive a refund.
                  </p>
             </div>
             <div className="right in-mobile-right">

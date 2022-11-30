@@ -11,7 +11,7 @@ const Careers = () => {
         <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
-                    <SEO title="Startup Landing 007" />
+                    <SEO title="Careers" />
                     <CareersMain />
                 </Layout>
             </StickyProvider>

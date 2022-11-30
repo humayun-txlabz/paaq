@@ -1,18 +1,17 @@
-import HelpCenterMain from "components/HelpCenter";
+import JobsMain from "components/jobs";
 import Layout from "components/layout";
 import SEO from "components/seo";
 import theme from "theme";
 import { ThemeProvider } from "theme-ui";
-import { StickyProvider } from "../contexts/app/app.provider";
+import { StickyProvider } from "../../contexts/app/app.provider";
 
-export default function MediaPage() {
-     console.log("isServerisServer");
+export default function JobsPage() {
      return (
           <ThemeProvider theme={theme}>
                <StickyProvider>
                     <Layout>
-                         <SEO title="Startup Landing 007" />
-                         <HelpCenterMain />
+                         <SEO title="Jobs" />
+                         <JobsMain />
                     </Layout>
                </StickyProvider>
           </ThemeProvider>

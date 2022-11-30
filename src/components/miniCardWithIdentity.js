@@ -10,7 +10,7 @@ const MiniCardWithIdentity = ({
      marginNameTop,
      buttonTextColor,
      buttonText,
-}) => {
+}) => { 
      const marginOnNameTop = marginNameTop ? { paddingTop: marginNameTop } : {};
      const btnTextColor = buttonTextColor
           ? {

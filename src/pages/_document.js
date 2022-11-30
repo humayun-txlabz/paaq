@@ -10,6 +10,12 @@ class CustomDocument extends Document {
     return (
       <Html lang="en-US">
         <Head />
+        <link rel="preconnect" href="./SofiaPro-Light.otf" />
+        <link rel="preconnect" href="./SofiaProBold.ttf" />
+        <link rel="preconnect" href="./SofiaProRegular.oet" />
+        <link rel="preconnect" href="./SofiaProRegular.woff2" />
+        <link rel="preconnect" href="./SofiaProRegularAz.otf" />
+        <link rel="preconnect" href="./SofiaProSoft.otf" />
         <body>
           <Main />
           <NextScript />

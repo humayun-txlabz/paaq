@@ -13,7 +13,7 @@ export default function CommunityGuidelines() {
         <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
-                    <SEO title="Startup Landing 007" />
+                    <SEO title="Community" />
                     <Container sx={styles.mainContainer}>
                         <Container sx={styles.headingContainer}>
                             <Text sx={styles.mainHeading}>Community Guidelines</Text>

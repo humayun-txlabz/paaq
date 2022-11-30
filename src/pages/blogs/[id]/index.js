@@ -19,33 +19,12 @@ export const getStaticProps = async (context) => {
       return entry;
     })
     .catch(console.error);
-
-  console.log("GETSTATIC PROPSSS", context, "postsss", posts);
   return {
     props: {
       ...posts,
     },
   };
 };
-
-// export const getStaticPaths = async () => {
-//   const posts = await client
-//     .getEntries({
-//       content_type: "mainBlogs",
-//     })
-//     .then((response) => {
-//       return response;
-//     })
-//     .catch(console.error);
-
-//   const ids = posts.items.map((item) => item?.sys?.id);
-
-//   const paths = ids.map((id) => ({ params: { id: id.toString() } }));
-
-//   console.log('PATHSSS >>>>>', paths)
-
-//   return { paths, fallback: false };
-// };
 
 export const getStaticPaths = async () =>{
   const posts = await client
@@ -70,8 +49,6 @@ export const getStaticPaths = async () =>{
 
 export default function BlogDetails2(props) {
   const { fields } = props;
-
-  console.log('fieldsfields', fields)
 
   return (
     <ThemeProvider theme={theme}>

@@ -6,12 +6,11 @@ import { ThemeProvider } from 'theme-ui';
 import { StickyProvider } from '../contexts/app/app.provider';
 
 export default function InvestorsPage() {
-console.log('isServerisServer');
     return (
          <ThemeProvider theme={theme}>
               <StickyProvider>
                    <Layout>
-                        <SEO title="Startup Landing 007" />
+                        <SEO title="Investors" />
                          <InvestorsMain />
                    </Layout>
               </StickyProvider>

@@ -19,7 +19,7 @@ export default function ImagesContacts() {
         <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
-                    <SEO title="Startup Landing 007" />
+                    <SEO title="Contacts" />
                     <Container sx={styles.mainContainer}>
                         <Container sx={styles.headingContainer}>
                             <Text sx={styles.heading}>Press Images & Contact</Text>

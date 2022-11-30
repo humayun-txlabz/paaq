@@ -3,6 +3,7 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 import { useState , useEffect } from 'react';
+import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter'
 
 import { BLOCKS, MARKS, INLINES } from '@contentful/rich-text-types';
 
@@ -186,59 +187,59 @@ const MainBlog = (props) => {
     renderText: text => text.replace('!', '?'),
   };
 
-    const data = [
-        {
-          blogTitle: '5 Simple Money Moves That Will Impact Your Finances in a Big Way',
-          blogImage: Image1,
-        },
-        {
-          blogTitle: '4 Simple Money Moves That Will Impact Your Finances in a Big Way',
-          blogImage: Image2,
-        },
-        {
-          blogTitle: '3 Simple Money Moves That Will Impact Your Finances in a Big Way',
-          blogImage: Image3,
-        },
-        {
-          blogTitle: '2 Simple Money Moves That Will Impact Your Finances in a Big Way',
-          blogImage: Image4,
-        },
-        {
-          blogTitle: '1 Simple Money Moves That Will Impact Your Finances in a Big Way',
-          blogImage: Image5,
-        },
-        {
-          blogTitle: '0 Simple Money Moves That Will Impact Your Finances in a Big Way',
-          blogImage: Image6,
-        }
-      ]
+    // const data = [
+    //     {
+    //       blogTitle: '5 Simple Money Moves That Will Impact Your Finances in a Big Way',
+    //       blogImage: Image1,
+    //     },
+    //     {
+    //       blogTitle: '4 Simple Money Moves That Will Impact Your Finances in a Big Way',
+    //       blogImage: Image2,
+    //     },
+    //     {
+    //       blogTitle: '3 Simple Money Moves That Will Impact Your Finances in a Big Way',
+    //       blogImage: Image3,
+    //     },
+    //     {
+    //       blogTitle: '2 Simple Money Moves That Will Impact Your Finances in a Big Way',
+    //       blogImage: Image4,
+    //     },
+    //     {
+    //       blogTitle: '1 Simple Money Moves That Will Impact Your Finances in a Big Way',
+    //       blogImage: Image5,
+    //     },
+    //     {
+    //       blogTitle: '0 Simple Money Moves That Will Impact Your Finances in a Big Way',
+    //       blogImage: Image6,
+    //     }
+    //   ]
     
-      const data2 = [
-        {
-          blogTitle: '5 Simple Money Moves That Will Impact Your Finances in a Big Way',
-          blogImage: Image7,
-        },
-        {
-          blogTitle: '4 Simple Money Moves That Will Impact Your Finances in a Big Way',
-          blogImage: Image8,
-        },
-        {
-          blogTitle: '3 Simple Money Moves That Will Impact Your Finances in a Big Way',
-          blogImage: Image9,
-        },
-        {
-          blogTitle: '2 Simple Money Moves That Will Impact Your Finances in a Big Way',
-          blogImage: Image10,
-        },
-        {
-          blogTitle: '1 Simple Money Moves That Will Impact Your Finances in a Big Way',
-          blogImage: Image11,
-        },
-        {
-          blogTitle: '0 Simple Money Moves That Will Impact Your Finances in a Big Way',
-          blogImage: Image12,
-        }
-      ]
+    //   const data2 = [
+    //     {
+    //       blogTitle: '5 Simple Money Moves That Will Impact Your Finances in a Big Way',
+    //       blogImage: Image7,
+    //     },
+    //     {
+    //       blogTitle: '4 Simple Money Moves That Will Impact Your Finances in a Big Way',
+    //       blogImage: Image8,
+    //     },
+    //     {
+    //       blogTitle: '3 Simple Money Moves That Will Impact Your Finances in a Big Way',
+    //       blogImage: Image9,
+    //     },
+    //     {
+    //       blogTitle: '2 Simple Money Moves That Will Impact Your Finances in a Big Way',
+    //       blogImage: Image10,
+    //     },
+    //     {
+    //       blogTitle: '1 Simple Money Moves That Will Impact Your Finances in a Big Way',
+    //       blogImage: Image11,
+    //     },
+    //     {
+    //       blogTitle: '0 Simple Money Moves That Will Impact Your Finances in a Big Way',
+    //       blogImage: Image12,
+    //     }
+    //   ]
 
       console.log('this is main blog', posts)
 
@@ -259,6 +260,12 @@ const MainBlog = (props) => {
             ))
             }
           </div>
+          <div className='blogs-main-btn-bottom'>
+            <div className='blogs-main-bottom-color-btn'>
+              Load More...
+            </div>
+          </div>
+          <AppAndPlayStoreFooter />
           {/* <FeaturedCard alignImageRight={true} />
           <div className='blog-items'>
 

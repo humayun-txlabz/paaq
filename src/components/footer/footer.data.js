@@ -34,98 +34,79 @@ export default {
     'Features',
     'Trust',
     'Connect',
-    'Follow Us'
   ],
   menuItem: [
     [
       {
-        path: '/',
-        label: 'About Us',
+        path: '/careers',
+        label: 'Careers and Culture',
+      },
+      {
+        path: '/media',
+        label: 'Press & Media',
       },
       {
         path: '/',
-        label: 'Careers & culture',
-      },
-      {
-        path: '/',
-        label: 'Blog',
+        label: 'Brand Guidelines',
       }
     ],
     [
       {
-        path: '/',
-        label: 'Skills',
+        path: '/features',
+        label: 'My Skills',
       },
       {
-        path: '/',
+        path: '/features',
+        label: 'Skill Rating',
+      },
+      {
+        path: '/features',
         label: 'Ask Button',
       },
       {
-        path: '/',
-        label: 'Set price',
-      },
-      {
-        path: '/',
-        label: 'And more...',
+        path: '/features',
+        label: 'And More...',
       }
     ],
     [
       {
-        path: '/',
-        label: 'Community guidelines',
+        path: '/communityGuidelines',
+        label: 'Community Guidelines',
       },
       {
-        path: '/',
-        label: 'Privacy policy',
+        path: '/helpCenter',
+        label: 'Privacy Policy',
       },
       {
-        path: '/',
-        label: 'Eula policy',
+        path: '/helpCenter',
+        label: 'EULA Policy',
       },
       {
-        path: '/',
+        path: '/helpCenter',
         label: 'Terms of use',
-      }
-    ],
-    [
-      {
-        path: '/',
-        label: 'Help center',
       },
       {
-        path: '/',
-        label: 'F&Qs',
-      },
-      {
-        path: '/',
-        label: 'Blogs',
-      },
-      {
-        path: '/',
+        path: '/helpCenter',
         label: 'Cookies Policy',
       }
     ],
     [
       {
-        path: '/',
-        label: 'Instagram',
+        path: '/contactUs',
+        label: 'Contact Us',
       },
       {
-        path: '/',
-        label: 'Twitter',
+        path: '/helpCenter',
+        label: 'Help Center',
       },
       {
-        path: '/',
-        label: 'Linkedin',
+        path: '/blogs',
+        label: 'Blogs',
       },
       {
-        path: '/',
-        label: 'Medium',
-      },
-      {
-        path: '/',
-        label: 'Contact',
-      },
-    ],
+        path: '/faq',
+        label: 'FAQ\'s',
+      }
+    ]
   ],
 };

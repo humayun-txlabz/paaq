@@ -1075,11 +1075,6 @@
   "resolved" "https://registry.npmjs.org/@contentful/rich-text-types/-/rich-text-types-15.13.2.tgz"
   "version" "15.13.2"
 
-"@corex/deepmerge@^2.6.148":
-  "integrity" "sha512-6QMz0/2h5C3ua51iAnXMPWFbb1QOU1UvSM4bKBw5mzdT+WtLgjbETBBIQZ+Sh9WvEcGwlAt/DEdRpIC3XlDBMA=="
-  "resolved" "https://registry.npmjs.org/@corex/deepmerge/-/deepmerge-2.6.148.tgz"
-  "version" "2.6.148"
-
 "@ctrl/tinycolor@^3.4.0":
   "integrity" "sha512-ej5oVy6lykXsvieQtqZxCOaLT+xD4+QNarq78cIYISHmZXshCvROLudpQN3lfL8G0NL7plMSSK+zlyvCaIJ4Iw=="
   "resolved" "https://registry.npmjs.org/@ctrl/tinycolor/-/tinycolor-3.4.1.tgz"
@@ -6175,7 +6170,7 @@
   dependencies:
     "brace-expansion" "^1.1.7"
 
-"minimist@^1.2.0", "minimist@^1.2.5", "minimist@^1.2.6":
+"minimist@^1.2.0", "minimist@^1.2.6":
   "integrity" "sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q=="
   "resolved" "https://registry.npmjs.org/minimist/-/minimist-1.2.6.tgz"
   "version" "1.2.6"
@@ -6319,15 +6314,7 @@
   "resolved" "https://registry.npmjs.org/next-redux-wrapper/-/next-redux-wrapper-7.0.5.tgz"
   "version" "7.0.5"
 
-"next-sitemap@^1.2.4":
-  "integrity" "sha512-kHXf4ZNAGLJyK16HbjzE5X9JlKwXtxW+9J4dh3oT7LSbU/+3bN+VqWjNw/776Otbanf7EJsvl51oQ78qQW5XBQ=="
-  "resolved" "https://registry.npmjs.org/next-sitemap/-/next-sitemap-1.9.12.tgz"
-  "version" "1.9.12"
-  dependencies:
-    "@corex/deepmerge" "^2.6.148"
-    "minimist" "^1.2.5"
-
-"next@*", "next@^12.1.6", "next@>=10.0.3":
+"next@^12.1.6", "next@>=10.0.3":
   "integrity" "sha512-l7bvmSeIwX5lp07WtIiP9u2ytZMv7jIeB8iacR28PuUEFG5j0HGAPnMqyG5kbZNBG2H7tRsrQ4HCjuMOPnANZw=="
   "resolved" "https://registry.npmjs.org/next/-/next-12.3.1.tgz"
   "version" "12.3.1"
@@ -7821,6 +7808,11 @@
   "version" "18.2.0"
   dependencies:
     "loose-envify" "^1.1.0"
+
+"reactjs-localstorage@^1.0.1":
+  "integrity" "sha512-eNSwfiVyVDhfjw9h83PBvgqQcFxmyK6KGPrPlutuaaTlALRZVQLZ0MAN72iU9UT+bKtscwtdogHQ2ikZ7rjT+w=="
+  "resolved" "https://registry.npmjs.org/reactjs-localstorage/-/reactjs-localstorage-1.0.1.tgz"
+  "version" "1.0.1"
 
 "read-more-react@^1.0.10":
   "integrity" "sha512-8IRDU/tJX1hLbHjPxJHeUxAhm/wC8RHPSbAA+3mS7Dk13/PJf9ra7Z18apkqqPkENIoEaQI5NqhIMQIa1vOxfw=="

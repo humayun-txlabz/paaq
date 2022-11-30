@@ -6,7 +6,7 @@ const SectionWhyPaaq = () => {
     <div className='investors-page-why-paaq'>
         <div className='main-content'>
             <div className='left'>
-                <h1>Why Paaq?</h1>
+                <h1>Why PAAQ?</h1>
                 <p>PAAQ allows you to receive exclusive engagement from your desired expert. Users have a wide range of content experts, from politics, technology, history, academia, music, to sports. In addition, users will receive a tailor-made response instead of community requests like a man seeking attention in a jamboree.</p>
             </div>
             <div className='right'>

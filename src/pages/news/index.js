@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import { ThemeProvider, Link } from 'theme-ui';
-import { StickyProvider } from '../contexts/app/app.provider';
 import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
@@ -18,6 +17,7 @@ import collage3 from 'assets/news/9.png'
 import collage4 from 'assets/news/10.png'
 
 import * as contentful from 'contentful';
+import { StickyProvider } from '../../contexts/app/app.provider';
 
 const client = contentful.createClient({
   space: process.env.CONTENTFUL_SPACE_ID,

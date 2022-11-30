@@ -1,9 +1,15 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
+import React from 'react'
 import { jsx, Box, Grid, Container, Image, Heading, Text } from 'theme-ui';
-import { Link } from 'components/link';
+import Link from 'next/link';
 import data from './footer.data';
 import FooterLogo from 'assets/logo.svg';
+import Tiktok from 'assets/Icons/footerIcons/tiktok.png';
+import Simple from 'assets/Icons/footerIcons/iconsimple.png';
+import Insta from 'assets/Icons/footerIcons/insta.png';
+import Linkedin from 'assets/Icons/footerIcons/linedin.png';
+import Twitter from 'assets/Icons/footerIcons/Twitter.png';
 export default function Footer() {
   return (
     <footer className='footer-mobile-view' sx={styles.footer}>
@@ -26,28 +32,53 @@ export default function Footer() {
         <Box className='mobile-footer-menu-list' sx={styles.footer.footerBottomArea}>
               {data.menuItem.map((item, index) =>
                <Box className="mobile-footer-menu" sx={styles.footer.menus}>
-                <span style={{ color: '#fff', fontSize: 28, fontWeight: 'bold', textAlign: 'left'}}>{data.menuItemHeading[index]}</span>
+                <span style={{ color: '#fff', fontFamily: 'Sofia-Pro-Bold', fontSize: 26, fontWeight: '700', textAlign: 'left'}}>{data.menuItemHeading[index]}</span>
                 <nav className='mobile-footer-nav' style={{marginTop: 20, textAlign: 'left'}}>
             
-                {item.map(({ path, label }, i) => (
+                {item.map(({ path, label }) => (
+                  <>
                   <Link
-                    path={path}
-                    key={i}
-                    label={label}
-                    sx={styles.footer.link}
-                  />
-                ))}
+                    href={path}
+                    style={styles.footer.link}
+                    
+                  >
+                    <div className="footer-link">
 
+                    {label}
+                    </div>
+                  </Link>
+                  </>
+                ))}
             </nav>
 
           </Box>
               )}
         </Box>
+        <div className='footer-copyright-container'>
+          <div className='icons-bottom-footer-mobile'>
+                  <div style={{background: '#fff'}} className='icon-bg'><img src={Insta} /></div>
+                  <div className='icon-bg'><img src={Linkedin} /></div>
+                  <div className='icon-bg'><img src={Twitter} /></div>
+                  <div className='icon-bg'><img src={Simple} /></div>
+                  <div className='icon-bg'><img src={Tiktok} /></div>
+          </div>
+       </div>
+              <div className='h-line' />
 
-        <Text sx={styles.footer.copyright}>
-            copyright© PAAQ 2022. All Rights Reserved.
-          </Text>
+       
       </Container>
+      <div className='footer-copyright-container'>
+       <Text sx={styles.footer.copyright}>
+            Copyright© PAAQ 2022. All Rights Reserved.
+          </Text>
+          <div className='icons-bottom-footer icons-bottom-footer-web'>
+                  <div style={{background: '#fff'}} className='icon-bg'><img src={Insta} /></div>
+                  <div className='icon-bg'><img src={Linkedin} /></div>
+                  <div className='icon-bg'><img src={Twitter} /></div>
+                  <div className='icon-bg'><img src={Simple} /></div>
+                  <div className='icon-bg'><img src={Tiktok} /></div>
+          </div>
+       </div>
     </footer>
   );
 }
@@ -61,7 +92,7 @@ const styles = {
       borderTopColor: 'border_color',
       display: 'flex',
       // paddingTop: 100,
-      pb: ['20px', null, '50px'],
+      pb: ['20px', null, '12px'],
       textAlign: 'center',
       alignItems: 'flex-start',
       justifyContent: 'space-between', 
@@ -78,8 +109,9 @@ const styles = {
 
     link: {
       // fontSize: [1, '25px'],
-
-      fontSize: 20,
+      fontFamily: 'SofiaPro-Soft',
+      fontSize: 18,
+      fontWeight: 400,
       color: '#fff',
       mb: 2,
       cursor: 'pointer',
@@ -95,10 +127,8 @@ const styles = {
     copyright: {
       fontSize: [1, '15px'],
       color: 'white',
-      width: '100%',
       textAlign: 'center',
-      borderTop: '1px solid #5D6C8B',
-      padding: '50px 0px'
+      // borderTop: '1px solid #5D6C8B',
     },
   },
   widgets: {

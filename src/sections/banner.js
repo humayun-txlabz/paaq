@@ -248,7 +248,7 @@ export default function Banner() {
           </div>
 
           <div className='main-section-image2'>
-            <div style={{ position: 'absolute' }} style={{ maxWidth: 60, maxHeight: 60 }} >
+            <div style={{ position: 'absolute' }} style={{ maxWidth: 120, maxHeight: 120 }} >
               <animated.div style={poppingOutAnimation(1100)} >
                 <Image className='main-section-inner main-section-inner-image2' src={MainImage2} />
                 <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-container' style={{ ...anim1 }} >

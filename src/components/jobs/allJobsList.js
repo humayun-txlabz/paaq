@@ -12,8 +12,7 @@ const AllJobsList = ({ jobs, totalPages, goToPage, currentPage }) => {
       {jobs?.map((item, index) => (
         <SingleJobItem
           key={index}
-          title={item.title}
-          id={item?.id}
+          item={item}
         />
       ))}
       <div className="pagination-container">

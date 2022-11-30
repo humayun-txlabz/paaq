@@ -10,7 +10,7 @@ const ItemCard = (props) => {
          <>
               {blog?.fields ? (
                    <>
-                        <Link href="/blog/[id]" as={`/blog/${blog?.sys?.id}`}>
+                        <Link href="/blogs/[id]" as={`/blogs/${blog?.sys?.id}`}>
                              <div className="item-card-container">
                                   <img
                                        src={`https:${blog?.fields?.thumbnailImage?.fields?.file?.url}`}

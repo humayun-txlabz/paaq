@@ -7,6 +7,7 @@ import Layout from 'components/layout';
 import { Container, Text, Image } from 'theme-ui';
 import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter';
 import FaqAccordion from 'components/faq-accordions';
+import BackgroundImage from '../../public/bg-faq.png';
 
 import * as contentful from 'contentful';
 
@@ -41,6 +42,7 @@ export default function Faq(props) {
     const { items } = props;
 
     function checkCategory(type) {
+
         const result = items.filter(function checkMain(data) {
             return data.fields.category === type;
         });
@@ -52,6 +54,7 @@ export default function Faq(props) {
             <StickyProvider>
                 <Layout>
                     <SEO title="FAQ's" />
+                    <Image src={BackgroundImage} className="background-image-faq" />                        
                     <Container sx={styles.mainContainer}>
                         <Container sx={styles.headingContainer}>
                             <Text sx={styles.heading}>Frequently Asked Question</Text>
@@ -78,6 +81,7 @@ export default function Faq(props) {
                             <FaqAccordion list={checkCategory('verification')} />
                         </Container>
                     </Container>
+                    {/* </div> */}
                     <AppAndPlayStoreFooter />
                 </Layout>
             </StickyProvider>
@@ -137,7 +141,7 @@ const styles = {
     accordionContainer: {
         display: 'flex',
         flexDirection: 'column',
-        width: '75%',
+        width: '65%',
         '@media screen and (max-width: 720px)': {
             width: '86%',
             marginTop: '0px'
@@ -148,7 +152,7 @@ const styles = {
     accordionContaine2: {
         display: 'flex',
         flexDirection: 'column',
-        width: '75%',
+        width: '65%',
         '@media screen and (max-width: 720px)': {
             width: '86%',
         },

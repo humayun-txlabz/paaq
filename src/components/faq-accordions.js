@@ -12,11 +12,13 @@ import {
     AccordionItemState
 } from 'react-accessible-accordion';
 import { Text, Image, Container } from 'theme-ui';
+import DocumentIcon from '../assets/Icons/doc-icon.svg';
+import FeedbackCard from './FeedbackCard';
 
 const FaqAccordion = ({ list }) => {
     const RichBold = ({ children }) => <p className="bold"  style={{ fontFamily: 'Sofia-Pro'}}>{children}</p>;
   
-    const RichParagraph = ({ children }) => <p className="align-center" style={{ fontFamily: 'Sofia-Pro',fontSize:17,marginTop:30}}>{children}</p>;
+    const RichParagraph = ({ children }) => <p className="align-center rich-paragraph">{children}</p>;
     const Heading1 = ({ children }) => <h1 className="align-center" style={{ fontFamily: 'Sofia-Pro'}}>{children}</h1>;
 
     const richTextOptions = {
@@ -64,6 +66,7 @@ const FaqAccordion = ({ list }) => {
                         <AccordionItem style={styles.item}>
                             <AccordionItemHeading>
                                 <AccordionItemButton style={styles.accordionItemButton}>
+                                    <Image style={{marginRight: '5%'}} src={DocumentIcon} />
                                     <Text sx={styles.accordionItemButtonText}> {item.fields.question}</Text>
                                     <AccordionItemState >
                                         {({ expanded }) => (expanded ?
@@ -82,6 +85,7 @@ const FaqAccordion = ({ list }) => {
                             <AccordionItemPanel>
                                 {documentToReactComponents(item.fields.answer, richTextOptions)}
                                 {/* <Text sx={styles.accordionPanelText}>{item.fields.answers}</Text> */}
+                                <FeedbackCard />
                                 {item.hints ?
                                     <Container>
                                         <Text sx={styles.accordionItemHint}>Hints:</Text>
@@ -121,6 +125,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'row',
         width: '100%',
+        alignItems: 'flex-start',
     },
     accordionItemHint: {
         fontWeight: '500',
@@ -148,7 +153,7 @@ const styles = {
             lineHeight: '20px',
         },
         fontWeight: '500',
-        fontSize: '2.2em',
+        fontSize: '40px',
         fontFamily: 'Sofia-Pro',
         color: '#252F44',
         lineHeight: '50px',

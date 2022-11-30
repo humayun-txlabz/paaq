@@ -12,7 +12,7 @@ export default [
     label: 'News',
   },
   {
-    path: '/investors',
-    label: 'For Investors',
+    path: '/features',
+    label: 'Features',
   },
 ];

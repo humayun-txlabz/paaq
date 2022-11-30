@@ -1,4 +1,5 @@
 import React from "react";
+import Shimmer from "react-shimmer-effect";
 import BgImage from "../../assets/webbg.png";
 import BgMobileImage from "../../assets/mobilebg.png";
 import CareersImage1 from "assets/careers/careers-main.png";
@@ -7,28 +8,37 @@ import CareersImage3 from "assets/careers/careers-main2.png";
 import CareersImage4 from "assets/careers/careers-main3.png";
 import CareersImage5 from "assets/careers/careers-left.png";
 import CareersImage6 from "assets/careers/careers-right.png";
-import CareerMain from "components/Career";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 
-function Box({ children } ) {
-    return (
-        <div
-            style={{
-                border: '1px solid #ccc',
-                display: 'block',
-                lineHeight: 2,
-                padding: '1rem',
-                marginBottom: '0.5rem',
-                width: 100,
-            }}
-        >
-            {children}
-        </div>
-    )
-}
 
-const CareersTopMain = () => {
+
+const CareersTopMain = (props) => {
+  const StyleSheet = {
+    container: {
+      boxShadow: "none",
+      borderRadius: "4px",
+      backgroundColor: "transparent",
+      display: "flex",
+      padding: "7px 1px",
+      width: "110px",
+      position: "absolute",
+      flexDirection: "column",
+      justifyContent: "center",
+      marginLeft: "10%",
+      marginTop: "2px",
+    },
+    line1: {
+      width: "100px",
+      height: "8px",
+      borderRadius: "8px"
+    },
+    line2: {
+      width: "80px",
+      height: "8px",
+      borderRadius: "8px",
+      marginTop: "5px",
+    }
+  }
+
   return (
     <div className="careers-top-main-page">
       <div className="help-center-page-main-container">
@@ -57,13 +67,23 @@ const CareersTopMain = () => {
                 <img style={{opacity: 0,animation: 'bounceIn2 2s forwards 1s'}} className="circleImg" src={CareersImage2} />
                 <div className="chatImg">
                   <img className="chatImg" src={CareersImage6} />
-                  {/* <Skeleton className="shimEff" count={1} height={25} borderRadius={'0.1rem'} /> */}
-                  
+                  <div style={StyleSheet.container}>
+                    <Shimmer>
+                      <div style={StyleSheet.line1} />
+                      <div style={StyleSheet.line2} />
+                    </Shimmer>
+                  </div>
                 </div>
               </div>
               <div className="image3">
               <div className="chatImg">
                   <img className="chatImg" src={CareersImage5} />
+                  <div style={StyleSheet.container}>
+                    <Shimmer>
+                      <div style={{ ...StyleSheet.line1, width: 86 }} />
+                      <div style={{ ...StyleSheet.line2, width: 75 }} />
+                    </Shimmer>
+                  </div>
                   {/* <Skeleton className="shimEff" count={1} height={25} borderRadius={'0.1rem'} /> */}
                 </div>
                 <img style={{opacity: 0,animation: 'bounceIn2 2s forwards 1s'}} className="circleImg" src={CareersImage3} />
@@ -71,6 +91,12 @@ const CareersTopMain = () => {
               <div className="image4">
               <div className="chatImg">
                   <img className="chatImg" src={CareersImage5} />
+                  <div style={StyleSheet.container}>
+                    <Shimmer>
+                      <div style={StyleSheet.line1} />
+                      <div style={StyleSheet.line2} />
+                    </Shimmer>
+                  </div>
                   {/* <Skeleton className="shimEff" count={1} height={25} borderRadius={'0.1rem'} /> */}
                 </div>
                 <img style={{opacity: 0,animation: 'bounceIn2 2s forwards 1s'}} className="circleImg" src={CareersImage4} />

@@ -153,12 +153,12 @@ const InvestorsTop = () => {
   return (
        <div className="investors-page-top">
             <div className="center-content">
-                 <h1>Did you know?</h1>
-                 <p>
+                 <h1>Help Centre</h1>
+                 {/* <p>
                       An average person asks between 20 - 30 questions per day. You can
                       never go a day without using words like; Why …? Who …? What …? When
                       …? Where …? How ….? Could …?{" "}
-                 </p>
+                 </p> */}
             </div>
             <animated.div className="image1 pill1" style={poppingOutAnimation(400)}>
                  <animated.div className="p1" style={{ ...anim1 }}>

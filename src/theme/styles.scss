@@ -3303,7 +3303,7 @@
       font-family: var(--bold);
       font-style: normal;
       font-weight: 700;
-      font-size: 70px;
+      font-size: 60px;
       line-height: 66px;
       color: #fff;
       text-align: center;
@@ -3640,7 +3640,7 @@
 
   .h-line {
     position: absolute;
-    width: 84%;
+    // width: 84%;
     height: 0.03rem;
     background: #000;
     margin-left: 8%;
@@ -5582,6 +5582,23 @@
 }
 
 // contact us
+.ant-select-dropdown{
+  font-family: var(--light);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 19px !important;
+
+  .ant-select-item-option{
+    line-height: 32px;
+  }
+  .ant-select-item-option-active{
+    border-radius: 10px;
+  }
+}
+.ant-select-item-option-selected{
+  background-color: #F8F8F8 !important;
+}
 .contact-us-page-main {
   padding-left: 7%;
   padding-right: 7%;
@@ -5636,6 +5653,10 @@
     .right {
       .contact-us-page-form-container {
         & > form {
+          font-family: var(--light);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
           .input-with-label {
             display: flex;
             flex-direction: column;
@@ -5671,6 +5692,15 @@
               margin-top: 0.5rem;
               outline: none;
               height: 7rem;
+            }
+
+            .form-select-dropdown{
+              span{
+                font-family: var(--light);
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px !important;
+              }
             }
 
             .select {
@@ -5741,6 +5771,8 @@
             color: #ffffff;
             padding: 1rem;
             margin-top: 1.5rem;
+            border: transparent;
+            width: 100%;
           }
         }
 
@@ -6310,6 +6342,7 @@
       font-size: 20px;
       line-height: 27px;
       margin-left: -15px;
+      color: #000000;
     }
 
     img {
@@ -6341,6 +6374,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       height: 650px;
+      font-family: var(--pro);
 
       .left {
         display: flex;
@@ -6896,4 +6930,137 @@
 
 .bar-code-and-text-mobile {
      display: none;
+}
+
+.footer-link{
+  font-family: var(--pro);
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff ;
+  cursor: pointer;
+  transition: all 0.35s;
+  display: block;
+  text-decoration: none;
+  line-height: 45px;
+}
+
+.rich-paragraph{
+  font-family: var(--light);
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 30px;
+  color: #4B5157;
+}
+
+.feedback{
+  display: flex;
+  justify-content: center;
+  &-main{
+    background: #E8EDED;
+    border-radius: 18px;
+    padding: 3% 4%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  &-icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.background-image-hc{
+  background: url(/bg-faq.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+  min-height: 147px;
+  display: flex;
+  align-items: center;
+
+  &-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 10%;
+  }
+}
+.single-hc-question{
+  font-family: var(--bold);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 7%;
+}
+.single-hc{
+  margin: 8% 16%;
+}
+
+.rich-text-helpcenter{
+  font-family: var(--light);
+  font-size: 24px;
+  > b{
+    font-family: var(--bold);
+    font-size: 28px;
+  }
+}
+
+.jobdetail-type{
+  font-family: var(--pro);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.richtext-job{
+  &-h1{
+    font-family: var(--bold);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  &-h2{
+    font-family: var(--bold);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+  }
+  &-h3{
+    font-family: var(--bold);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  &-h4{
+    font-family: var(--bold);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  &-h5{
+    font-family: var(--bold);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &-h6{
+    font-family: var(--bold);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+.rich-text-jobs{
+  font-family: var(--light);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  > b{
+    font-family: var(--bold);
+    font-size: 18px;
+  }
 }

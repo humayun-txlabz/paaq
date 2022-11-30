@@ -1,7 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
+import React from 'react'
 import { jsx, Box, Grid, Container, Image, Heading, Text } from 'theme-ui';
-import { Link } from 'components/link';
+import Link from 'next/link';
 import data from './footer.data';
 import FooterLogo from 'assets/logo.svg';
 import Tiktok from 'assets/Icons/footerIcons/tiktok.png';
@@ -34,13 +35,19 @@ export default function Footer() {
                 <span style={{ color: '#fff', fontFamily: 'Sofia-Pro-Bold', fontSize: 26, fontWeight: '700', textAlign: 'left'}}>{data.menuItemHeading[index]}</span>
                 <nav className='mobile-footer-nav' style={{marginTop: 20, textAlign: 'left'}}>
             
-                {item.map(({ path, label }, i) => (
+                {item.map(({ path, label }) => (
+                  <>
                   <Link
-                    path={path}
-                    key={i}
-                    label={label}
-                    sx={styles.footer.link}
-                  />
+                    href={path}
+                    style={styles.footer.link}
+                    
+                  >
+                    <div className="footer-link">
+
+                    {label}
+                    </div>
+                  </Link>
+                  </>
                 ))}
             </nav>
 

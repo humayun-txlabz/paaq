@@ -10,7 +10,71 @@ import jobInsightsImg1 from '../../assets/Images/job-insights-1.png';
 import locImgIcon from '../../assets/loc-svg.png';
 import rotatedTag from '../../assets/rotated-tag.png';
 import heartIcon from '../../assets/heart-icon.png';
-const JobInsightsMain = () => {
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { BLOCKS } from '@contentful/rich-text-types';
+
+const JobInsightsMain = (props) => {
+
+  const { jobItem } = props;
+  const RichParagraph = ({ children }) => <p className="rich-text-jobs" >{children}</p>;
+
+  const Heading1 = ({ children }) => <h1 className="richtext-job-h1" >{children}</h1>;
+  const Heading2 = ({ children }) => <h2 className="richtext-job-h2" >{children}</h2>;
+  const Heading3 = ({ children }) => <h3 className="richtext-job-h3" >{children}</h3>;
+  const Heading4 = ({ children }) => <h4 className="richtext-job-h4" >{children}</h4>;
+  const Heading5 = ({ children }) => <h5 className="richtext-job-h5" >{children}</h5>;
+  const Heading6 = ({ children }) => <h6 className="richtext-job-h6" >{children}</h6>;
+  const Hr = ({ children }) => <hr style={{ width: '100%' }} />;
+
+
+
+  const richTextOptions = {
+    renderMark: {
+      // [MARKS.BOLD]: text => (
+      //     <RichBold>{text}</RichBold>
+      // ),
+    },
+    renderNode: {
+      [BLOCKS.EMBEDDED_ASSET]: (node) => {
+        const { title, description, file } = node.data.target.fields;
+        const mimeType = file.contentType
+        const mimeGroup = mimeType.split('/')[0]
+
+        switch (mimeGroup) {
+          case 'image':
+            return <img
+              title={title ? title : null}
+              alt={description ? description : null}
+              width={"100%"}
+              height={'auto'}
+              src={file.url}
+              style={{ borderRadius: 22, objectFit: 'cover', margin: '40px 0px' }}
+            />
+          case 'application':
+            return <a
+              alt={description ? description : null}
+              href={file.url}
+            >{title ? title : file.details.fileName}
+            </a>
+          default:
+            return <span style={{ backgroundColor: 'red', color: 'white' }}> {mimeType} embedded asset </span>
+        }
+
+      },
+      [BLOCKS.PARAGRAPH]: (node, children) => (
+        <RichParagraph>{children}</RichParagraph>
+      ),
+      [BLOCKS.HEADING_1]: (node, children) => <Heading1>{children}</Heading1>,
+      [BLOCKS.HEADING_2]: (node, children) => <Heading2>{children}</Heading2>,
+      [BLOCKS.HEADING_3]: (node, children) => <Heading3>{children}</Heading3>,
+      [BLOCKS.HEADING_4]: (node, children) => <Heading4>{children}</Heading4>,
+      [BLOCKS.HEADING_5]: (node, children) => <Heading5>{children}</Heading5>,
+      [BLOCKS.HEADING_6]: (node, children) => <Heading6>{children}</Heading6>,
+      [BLOCKS.HR]: (node, children) => <Hr>{children}</Hr>,
+    },
+    renderText: text => text.replace('!', '?'),
+  };
+
   return (
     <>
       <div className="job-insights-main">
@@ -20,8 +84,9 @@ const JobInsightsMain = () => {
           </h3>
           <div className="left-bottom-div">
             <span className="bold-text">
-              Principle Full <br />
-              Stack Engineer
+              {jobItem.title}
+              {/* Principle Full <br />
+              Stack Engineer */}
             </span>
             <div className="h-line" />
           </div>
@@ -29,10 +94,15 @@ const JobInsightsMain = () => {
             <h3>
               {" "}
               <img style={{width: 14, height: 18, marginRight: '10px'}} src={locImgIcon} />
-              Remote
+              <p className="jobdetail-type">
+                {jobItem.jobType ?? 'Remote'}
+              </p>
             </h3>
             <h3>
-            <img style={{width: 19, height: 18, marginRight: '10px'}} src={rotatedTag} /> Engineering
+            <img style={{width: 19, height: 18, marginRight: '10px'}} src={rotatedTag} />
+            <p className="jobdetail-type">
+              {jobItem.category ?? 'Engineering'}
+            </p>
             </h3>
           </div>
           <div className="mobile-btns-apply-and-heart">
@@ -64,193 +134,9 @@ const JobInsightsMain = () => {
               <RiLinkedinFill />
             </div>
           </div>
-          <h1>What is Paaq?</h1>
-          <p>
-            Paaq takes the work out of scheduling so our customers have more
-            time to work on what’s really important. Our software is used by
-            millions of people worldwide—with thousands more signing up every
-            day. To maintain this exciting growth, we’re looking for top talent
-            to join our team and help shape the future of our product.
-          </p>
-          <br style={{ marginTop: "2rem" }} />
-          <h1>Why join Paaq’s Engineering team?</h1>
-          <p>
-            As a Principal Engineer focused on Paaq’s APIs, you have the chance
-            to help lead the design and development of our public API as well as
-            helping define our internal API strategy. In doing this you will
-            help mentor and grow some of the best and brightest engineers in the
-            world. You will be working with the company's senior leadership,
-            architecture, and product teams to conceive, design, and plan the
-            implementation of major API-first efforts while also rolling up your
-            sleeves and working with engineers on the build and launch phases of
-            an effort. As a technical leader you bake quality and reliability
-            into your work at every step, focusing not just on the initial
-            delivery but also evolvable design and scalability.
-          </p>
-          {/* <br /> */}
-          <p>
-            Paaq is built using a service-oriented architecture and an automated
-            continuous delivery system in order to efficiently deliver our
-            product solutions. To be successful, you will need to help conceive,
-            design, and build well-tested software. You will be using
-            technologies such as Elasticsearch, Google Cloud Platform,
-            Kubernetes, Ruby on Rails, Node, TypeScript, React, PostgreSQL,
-            Redis, and more.{" "}
-          </p>
-          <br style={{ marginTop: "2rem" }} />
-          <h1 style={{ lineHeight: "2.5rem" }}>
-            What are some of the high impact opportunities you’ll tackle?{" "}
-          </h1>
-          {/* <br /> */}
-          <p>
-            <span>01.</span> Evolve the software development lifecycle by
-            advancing industry best practices in order to improve the ability of
-            Calendly to ship production ready code
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>02.</span> Partner with architecture in the creation and
-            execution of a multi-year, API-first technology strategy for
-            Calendly while contributing to the engineering roadmap
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>03.</span> Champion the migration to a distributed services
-            architecture and the adoption of API-first development
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>04.</span> Define, implement, and rollout new patterns and
-            practices for a particular technology or product function that are
-            adopted by the broader engineering team
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>05.</span> Work across scrum teams, architects, and with other
-            stakeholders to deliver enterprise-level value to Calendly’s
-            customers{" "}
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>06.</span> Build out greenfield systems using the best
-            technology choice for the job in order to tackle the most difficult
-            technical challenges Calendly will face
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>07.</span> Lead presentations internally and externally on
-            Calendly's technology solutions
-          </p>
-          <br style={{ marginTop: "2rem" }} />
-          <h1 style={{ lineHeight: "2.5rem" }}>
-            This opportunity is for you if you have/are:
-          </h1>
-          {/* <br /> */}
-          <p>
-            <span>01.</span> 12+ years of professional development experience
-            with expert level proficiency across multiple technologies
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>02.</span> Experience working with and/or developing RESTful
-            and event-driven APIs for internal and external use
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>03.</span> Experience in driving microservices architecture
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>04.</span> Experience implementing an API gateway
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>05.</span> Experience creating and mentoring API teams
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>06.</span> A proven track record of planning, guiding, and
-            consistently delivering complex, high volume systems
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>07.</span> Deep experience creating innovative solutions that
-            have a broad impact across an organization or the broader developer
-            community
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>08.</span> Experience designing and implementing testable
-            systems with a focus on reliability, performance, and scalability
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>09.</span> Great communication skills and the ability to
-            succinctly explain complex technical concepts to all roles in the
-            organization
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>10.</span> Extensive experience working within a cross
-            functional team balancing product and engineering needs
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>11.</span> A Bachelor’s degree in Computer Science or related
-            field, or comparable work experience
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>12.</span> Authorized to work lawfully in the United States of
-            America as Calendly does not engage in immigration sponsorship at
-            this time{" "}
-          </p>
-
-          <br style={{ marginTop: "2rem" }} />
-          <h1>Bonus if you have experience with:</h1>
-          {/* <br /> */}
-          <p>
-            <span>01.</span>An advanced degree in Computer Science or related
-            field
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>02.</span> Filing and obtaining patents based on your work
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>03.</span> Significant contributions to open source software
-            that is applicable to your role and the work you do
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>04.</span> Deep experience in a core technology that Calendly
-            uses (e.g. Calendar APIs, Ruby/Rails optimization, Database
-            optimization, Authentication/Authorization)
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>05.</span> Extensive expertise in building high-availability
-            systems that conform to strict SLAs
-          </p>
-          {/* <br /> */}
-          <p>
-            <span>06.</span> Maintaining, contributing, or giving tech talks
-            about an open source technology that we use at Calendly
-          </p>
-
-          {/* <br style={{ marginTop: "2rem" }} /> */}
-          <h3>
-            If you are an individual with a disability and would like to request
-            a reasonable accommodation as part of the application or recruiting
-            process, please contact us at apply@paaq.com.{" "}
-          </h3>
-          {/* <br style={{ marginTop: "0.6rem" }} /> */}
-          <h3>
-            PAAQ is registered as an employer in many, but not all, states. If
-            you are not located in or able to work from a state where Calendly
-            is registered, you will not be eligible for employment.
-          </h3>
+          <div>
+              {documentToReactComponents(jobItem.details, richTextOptions)}
+          </div>
 
           {/* Form Here */}
           <br style={{ marginTop: "2rem" }} />
@@ -283,9 +169,9 @@ const JobInsightsMain = () => {
           </div>
 
           {/* Releated Jobs */}
-          <h1>Related Jobs</h1>
+          {/* <h1>Related Jobs</h1> */}
           {/* Single Card */}
-          <div className="job-insights-related-job-single">
+          {/* <div className="job-insights-related-job-single">
             <div className="job-insights-related-job-single-left">
               <h3>Related Jobs</h3>
               <div className="job-insights-related-job-single-loc-type">
@@ -300,9 +186,9 @@ const JobInsightsMain = () => {
             <div className="job-insights-related-job-single-right">
               <BiHeart />
             </div>
-          </div>
+          </div> */}
           {/* Single Card */}
-          <div className="job-insights-related-job-single">
+          {/* <div className="job-insights-related-job-single">
             <div className="job-insights-related-job-single-left">
               <h3>Related Jobs</h3>
               <div className="job-insights-related-job-single-loc-type">
@@ -317,9 +203,9 @@ const JobInsightsMain = () => {
             <div className="job-insights-related-job-single-right">
               <BiHeart />
             </div>
-          </div>
+          </div> */}
           {/* Single Card */}
-          <div className="job-insights-related-job-single">
+          {/* <div className="job-insights-related-job-single">
             <div className="job-insights-related-job-single-left">
               <h3>Related Jobs</h3>
               <div className="job-insights-related-job-single-loc-type">
@@ -334,7 +220,7 @@ const JobInsightsMain = () => {
             <div className="job-insights-related-job-single-right">
               <BiHeart />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <AppAndPlayStoreFooter />

@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-import MediaPageTop from "./top";
-import BgImage from '../../assets/webbg.png';
-import BgMobileImage from '../../assets/mobilebg.png';
 import AppAndPlayStoreFooter from "components/appAndPlayStoreFooter";
 import AccountSettingsFaqs from "./accountSettings";
 import UsingPaaqFaqs from "./usingPaaq";
@@ -10,7 +7,7 @@ import MessagesFaqs from "./messagesFaqs";
 import NotificationsFaqs from "./notificationsFaqs";
 import WalletFaqs from "./walletFaqs";
 import InvestorsTop from "components/Investors/top";
-import { apiClientContentFul, apiClientContentFulCategory } from "services/apiClient";
+import { apiClientContentFul } from "services/apiClient";
 
 const HelpCenterMain = () => {
 
@@ -18,7 +15,7 @@ const HelpCenterMain = () => {
 
 const checkCategory = (type) => {
   const result = values.filter(function checkMain(data) {
-    return data.category === type;
+    return data.fields.category === type;
   });
     return result;
 }
@@ -29,7 +26,7 @@ const checkCategory = (type) => {
     apiClientContentFul("helpCenter", 0, 100).then((res) => {
       setValues(
               res?.items?.map((item) => {
-                   return item.fields;
+                   return item;
                  })
                  );
       });
@@ -48,14 +45,14 @@ const checkCategory = (type) => {
         values ? 
       <div className="paaq-all-faq-center">
           <div className="left">
-            <AccountSettingsFaqs items={checkCategory('settings')} tag={'settings'} />
-            <UsingPaaqFaqs marginTop={'2rem'} items={checkCategory('usage')} tag={'usage'} />
+            <AccountSettingsFaqs items={checkCategory('settings')} />
+            <UsingPaaqFaqs marginTop={'2rem'} items={checkCategory('usage')} />
           </div>
           <div className="right">
-            <SafetySecurityFaqs items={checkCategory('security')} tag={'security'} />
-            <MessagesFaqs marginTop={'2rem'} items={checkCategory('messages')} tag={'messages'} />
-            <NotificationsFaqs marginTop={'2rem'} items={checkCategory('notifications')} tag={'notifications'} />
-            <WalletFaqs marginTop={'2rem'} items={checkCategory('wallet')} tag={'wallet'} />
+            <SafetySecurityFaqs items={checkCategory('security')} />
+            <MessagesFaqs marginTop={'2rem'} items={checkCategory('messages')} />
+            <NotificationsFaqs marginTop={'2rem'} items={checkCategory('notifications')} />
+            <WalletFaqs marginTop={'2rem'} items={checkCategory('wallet')} />
           </div>
 
         </div> : null

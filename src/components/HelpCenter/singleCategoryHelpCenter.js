@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
 
 const SingleCategoryHelpCenter = (props) => {
-    const { fields } = props;
+    const { fields, id } = props;
 
     const RichParagraph = ({ children }) => <p className="rich-text-helpcenter" >{children}</p>;
 
@@ -63,23 +63,29 @@ const SingleCategoryHelpCenter = (props) => {
       },
       renderText: text => text.replace('!', '?'),
     };
+
+    useEffect(() => {
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+ }, []);
+
   return (
       <div>
       
       <div className='background-image-hc'>
           <span className='background-image-hc-title'>
-            {`Help Center > ${fields[0]?.fields?.title}`}
+            {`Help Center > ${fields['0']?.fields?.title}`}
           </span>
       </div>
       <div className='single-hc'>
           { fields ? Object.keys(fields).map((keys)=>(
               <>
               
-              <p className='single-hc-question'>
-                  {fields[keys]?.fields.question}
+              <p className='single-hc-question' id={fields[keys]?.sys?.id}>
+                {console.log('Object.keysObject.keys', fields[keys])}
+                  {fields[keys]?.fields?.question}
               </p>
               <div>
-                {documentToReactComponents(fields[keys]?.fields.answer, richTextOptions)}
+                {documentToReactComponents(fields[keys]?.fields?.answer, richTextOptions)}
               </div>
               
               </>

@@ -54,18 +54,27 @@ export default {
       {
         path: '/features',
         label: 'My Skills',
+        id: 'SectionMySkills'
       },
       {
         path: '/features',
         label: 'Skill Rating',
+        id: 'SectionSetPrice'
       },
       {
         path: '/features',
         label: 'Ask Button',
+        id:'SectionPaidMessage'
       },
       {
         path: '/features',
-        label: 'And More...',
+        label: 'Introduction Video',
+        id: 'IntroductionVideo'
+      },
+      {
+        path: '/features',
+        label: 'My Profession',
+        id: 'MyProfession'
       }
     ],
     [

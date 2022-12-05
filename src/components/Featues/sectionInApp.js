@@ -4,7 +4,7 @@ import Sec11 from '../../assets/Images/feature-sec-3-1.png';
 
 function SectionInApp() {
   return (
-    <div className="section-3">
+    <div className="section-3" id="IntroductionVideo">
 
       <div className="right in-web-left">
       <img src={Sec11} className="image" />

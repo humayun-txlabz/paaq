@@ -24,7 +24,7 @@ const SectionMyProfession =() => {
   }, [isInViewport])
 
   return (
-       <div ref={targetRef} className="section-4">
+       <div ref={targetRef} className="section-4" id="MyProfession">
             <div className="left">
                  <div className="heading">
                       <img src={StartIcon} className="icon" />

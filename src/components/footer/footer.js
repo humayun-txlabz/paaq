@@ -11,6 +11,7 @@ import Insta from 'assets/Icons/footerIcons/insta.png';
 import Linkedin from 'assets/Icons/footerIcons/linedin.png';
 import Twitter from 'assets/Icons/footerIcons/Twitter.png';
 export default function Footer() {
+
   return (
     <footer className='footer-mobile-view' sx={styles.footer}>
       <Container style={{ width: '100%' }}>
@@ -35,10 +36,10 @@ export default function Footer() {
                 <span style={{ color: '#fff', fontFamily: 'Sofia-Pro-Bold', fontSize: 26, fontWeight: '700', textAlign: 'left'}}>{data.menuItemHeading[index]}</span>
                 <nav className='mobile-footer-nav' style={{marginTop: 20, textAlign: 'left'}}>
             
-                {item.map(({ path, label }) => (
+                {item.map(({ path, label, id }) => (
                   <>
                   <Link
-                    href={path}
+                    href={path + (id ? `?section=${id}` : '')}
                     style={styles.footer.link}
                     
                   >

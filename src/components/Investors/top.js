@@ -182,7 +182,7 @@ const InvestorsTop = () => {
 
             <animated.div className="image4 pill4" style={poppingOutAnimation(2000)}>
                  <animated.div className="p4" style={{ ...anim4 }}>
-                      <TextPillComponent textSize={"0.9vw"} text="Who ?" />
+                      <TextPillComponent text="Who ?" />
                  </animated.div>
                  <img src={Image4} className="image4" />
             </animated.div>

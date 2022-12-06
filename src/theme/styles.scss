@@ -453,7 +453,8 @@
 
 @media (max-width: 700px) {
   .text-pill-component {
-    font-size: 1.6vw;
+    font-size: 9.22px;
+    padding: 5px 10px;
   }
 }
 
@@ -3187,10 +3188,13 @@
           }
 
           @media (max-width: 700px) {
-            .p6 {
-              padding-left: 7vw;
-              padding-top: 0.7vh;
+            div{
+              padding: 0px 0px !important;
             }
+            // .p6 {
+            //   padding-left: 7vw;
+            //   padding-top: 0.7vh;
+            // }
           }
         }
 
@@ -3293,7 +3297,7 @@
     position: relative;
     padding-top: 2rem;
     padding-bottom: 4rem;
-    min-height: 650px;
+    min-height: 384px;
   }
 }
 
@@ -3302,6 +3306,23 @@
   align-items: center;
   justify-content: center;
   max-width: 100vw;
+
+  @media (max-width: 600px) {
+    .pill6{
+      div{
+        font-size: 8px;
+        padding: 1px 6px;
+      }
+    }
+    .pill4{
+      .p4{
+        div{
+          font-size: 8px;
+          padding: 2px 6px;
+        }
+      }
+    }
+  }
 
   .center-content {
     & > h1 {
@@ -3344,7 +3365,7 @@
 
     @media (max-width: 600px) {
       & > h1 {
-        font-size: 1.4rem;
+        font-size: 30px;
       }
 
       & > p {
@@ -3372,8 +3393,8 @@
 
     @media (max-width: 700px) {
       .p1 {
-        padding-left: 7vw;
-        padding-top: 0.7vh;
+        // padding-left: 7vw;
+        // padding-top: 0.7vh;
       }
     }
   }
@@ -3398,8 +3419,8 @@
 
     @media (max-width: 700px) {
       .p2 {
-        margin-left: -7vw;
-        padding-top: 1.5vh;
+        margin-left: -11vw;
+        padding-top: 2.2vh;
       }
     }
   }
@@ -3424,8 +3445,8 @@
 
     @media (max-width: 700px) {
       .p3 {
-        margin-left: -6.5vw;
-        padding-top: 2.5vh;
+        margin-left: -10.5vw;
+        padding-top: 6.5vh;    
       }
     }
   }
@@ -3450,8 +3471,8 @@
 
     @media (max-width: 700px) {
       .p4 {
-        margin-left: -4vw;
-        padding-top: 1.5vh;
+        margin-left: -8vw;
+        padding-top: 2.4vh;
       }
     }
   }
@@ -3476,8 +3497,8 @@
 
     @media (max-width: 700px) {
       .p5 {
-        padding-left: 14vw;
-        padding-top: 0.7vh;
+        padding-left: 13vw;
+        padding-top: 3.7vh;    
       }
     }
   }
@@ -3503,7 +3524,7 @@
     @media (max-width: 700px) {
       .p6 {
         padding-left: 7vw;
-        padding-top: 0.7vh;
+        padding-top: 1.7vh;
       }
     }
   }
@@ -3528,7 +3549,7 @@
 
     @media (max-width: 700px) {
       .p7 {
-        padding-left: 7vw;
+        padding-left: 10vw;
         padding-top: 0.7vh;
       }
     }
@@ -3536,44 +3557,49 @@
 
   @media (max-width: 600px) {
     .image1 {
-      width: 10vw;
-      top: 16%;
+      width: 49px;
+      height: 49px;
     }
 
     .image2 {
-      width: 11vw;
-      top: 25%;
-      right: 17%;
+      width: 50px;
+      height: 50px;
+      top: 17%;
+      right: 8%;
     }
 
     .image3 {
-      width: 14vw;
-      top: 60%;
-      right: 16%;
+      width: 75px;
+      height: 75px;
+      top: 59%;
+      right: 12%;
     }
 
     .image4 {
-      width: 8vw;
-      top: 45%;
-      right: 15%;
+      width: 33px;
+      height: 33px;
+      top: 43%;
+      right: 4%;
     }
 
     .image5 {
-      width: 14vw;
-      top: 64%;
-      left: 20%;
-    }
-
-    .image6 {
-      width: 8vw;
-      top: 40%;
+      width: 56px;
+      height: 56px;
+      top: 59%;
       left: 12%;
     }
 
+    .image6 {
+      top: 42%;
+      left: 4%;
+      width: 27.74px;
+      height: 27.74px;
+    }
+
     .image7 {
-      width: 10vw;
-      top: 25%;
-      left: 20%;
+      left: 10%;
+      width: 47px;
+      height: 47px;
     }
   }
 }
@@ -6304,6 +6330,27 @@
   border: 1px solid #ececec;
   border-radius: 20px;
   padding: 2rem;
+  &-heading{
+    img{
+      display: none;
+    }
+  }
+  @media (max-width: 600px) {
+    h1{
+      margin: 0;
+    }
+    &-heading{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img{
+        display: unset;
+      }
+    }
+    a{
+      display: none;
+    }
+  }
 
   h1 {
     font-family: var(--pro);
@@ -6318,9 +6365,10 @@
   }
 
   @media (max-width: 913px) {
-    padding: 1rem;
+    padding: 1.3rem 1rem;
 
     h1 {
+      font-family: var(--bold);
       font-weight: 700;
       font-size: 18px;
       line-height: 25px;
@@ -6334,7 +6382,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     border-top: 1px solid #e4e4e4;
 
     // padding-top: 1.8rem;

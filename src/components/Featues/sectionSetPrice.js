@@ -4,7 +4,7 @@ import Sec11 from '../../assets/Images/feature-sec-2-1.png';
 
 const SectionSetPrice =() => {
   return (
-    <div className="section-2">
+    <div className="section-2" id="SectionSetPrice">
       
       <div className="left">
           <div className="heading">

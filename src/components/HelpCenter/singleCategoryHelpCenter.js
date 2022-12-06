@@ -3,7 +3,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { BLOCKS } from '@contentful/rich-text-types';
 
 const SingleCategoryHelpCenter = (props) => {
-    const { fields, id } = props;
+  const { fields, id } = props;
 
     const RichParagraph = ({ children }) => <p className="rich-text-helpcenter" >{children}</p>;
 
@@ -81,7 +81,6 @@ const SingleCategoryHelpCenter = (props) => {
               <>
               
               <p className='single-hc-question' id={fields[keys]?.sys?.id}>
-                {console.log('Object.keysObject.keys', fields[keys])}
                   {fields[keys]?.fields?.question}
               </p>
               <div>

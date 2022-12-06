@@ -1,18 +1,29 @@
-import AboutUsMain from 'components/AboutUs';
-import MainFeatures from 'components/Featues';
-import Layout from 'components/layout';
-import SEO from 'components/seo';
 import theme from 'theme';
 import { ThemeProvider } from 'theme-ui';
+
+import SEO from 'components/seo';
+import Layout from 'components/layout';
+import MainFeatures from 'components/Featues';
 import { StickyProvider } from '../contexts/app/app.provider';
  
-export default function AboutUs() {
+
+export const getServerSideProps = async (context) =>{
+
+             return{
+                props:{ section: context.query?.section || null
+                }
+             }
+       }
+
+       
+export default function AboutUs(props) {
+
     return (
          <ThemeProvider theme={theme}>
               <StickyProvider>
                    <Layout>
                         <SEO title="Features" />
-                         <MainFeatures />
+                         <MainFeatures section={props?.section} />
                    </Layout>
               </StickyProvider>
          </ThemeProvider>

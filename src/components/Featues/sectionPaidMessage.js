@@ -13,7 +13,7 @@ const SectionPaidMessage =() => {
           }
      }, [isInViewport]);
   return (
-       <div className="section-5">
+       <div className="section-5" id='SectionPaidMessage'>
             <div className="right in-web-left">
                  <PaidMessagesComponent />
                  {/* <img src={sec11} className="image" /> */}

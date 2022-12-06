@@ -12,7 +12,7 @@ const NotificationsFaqs = ({marginTop, items}) => {
         {
           items ?
           items.map((value) => (
-            <Link href="/helpCenter/[category]" as={`/helpCenter/${value?.sys?.id}`}>
+            <Link href="/helpCenter/[category]" as={`/helpCenter/${value?.fields?.category}?id=${value?.sys?.id}`}>
               <a>
                 <SinlgeFaqItem text={titleCase(value?.fields?.question)} />
               </a>
@@ -20,10 +20,6 @@ const NotificationsFaqs = ({marginTop, items}) => {
 
           )) :  null 
         }
-        {/* <SinlgeFaqItem text={titleCase('How to enable notifications')} />
-        <SinlgeFaqItem text={titleCase('How to receive recommendations')} />
-        <SinlgeFaqItem text={titleCase('How to update notification preferences')} /> */}
-        {/* <div className='h-line' /> */}
     </div>
   )
 }

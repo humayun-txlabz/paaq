@@ -3,7 +3,7 @@ import StartIcon  from '../../assets/Icons/features-sec-1-start.png';
 import MySkillImageComponent from './mySkillImg';
 const SectionMySkills =() => {
   return (
-    <div className="section-1">
+    <div className="section-1" id='SectionMySkills' >
       <div className="left">
           <div className="heading">
             <img src={StartIcon} className="icon" />

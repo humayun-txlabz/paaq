@@ -13,7 +13,7 @@ const SafetySecurityFaqs = ({marginTop, items}) => {
         {
           items ?
           items.map((value) => (
-            <Link href="/helpCenter/[category]" as={`/helpCenter/${value?.sys?.id}`}>
+            <Link href="/helpCenter/[category]" as={`/helpCenter/${value?.fields?.category}?id=${value?.sys?.id}`}>
               <a>
                 <SinlgeFaqItem text={titleCase(value?.fields?.question)} />
               </a>
@@ -21,12 +21,6 @@ const SafetySecurityFaqs = ({marginTop, items}) => {
 
           )) :  null 
         }
-        {/* <SinlgeFaqItem text={titleCase('How to block a user')} />
-        <SinlgeFaqItem text={titleCase('How to report a user')} />
-        <SinlgeFaqItem text={titleCase('How to unfollow a user')} />
-        <SinlgeFaqItem text={'Status (Available/Unavailable)'} />
-        <SinlgeFaqItem text={'Two-Factor Authentication'} /> */}
-        {/* <div className='h-line' /> */}
     </div>
   )
 }

@@ -11,7 +11,7 @@ const AccountSettingsFaqs = ({items}) => {
         {
           items ?
           items.map((value) => (
-            <Link href="/helpCenter/[category]" as={`/helpCenter/${value?.sys?.id}`}>
+            <Link href="/helpCenter/[category]" as={`/helpCenter/${value?.fields?.category}?id=${value?.sys?.id}`}>
               <a>
                 <SinlgeFaqItem text={titleCase(value?.fields?.question)} />
               </a>
@@ -19,16 +19,6 @@ const AccountSettingsFaqs = ({items}) => {
 
           )) :  null 
         }
-        {/* <SinlgeFaqItem text={titleCase('How to reset Password')} />
-        <SinlgeFaqItem text={titleCase('Help with login')} />
-        <SinlgeFaqItem text={titleCase('Help with login Phone number')} />
-        <SinlgeFaqItem text={titleCase('How to change a user name')} />
-        <SinlgeFaqItem text={titleCase('Help with uploading a profile photo')} />
-        <SinlgeFaqItem text={titleCase('Help with adding an in-app video')} />
-        <SinlgeFaqItem text={titleCase('Creating multiple accounts')} />
-        <SinlgeFaqItem text={titleCase('How to deactivate an account')} />
-        <SinlgeFaqItem text={titleCase('How to suspend an account?')} /> */}
-        {/* <div className='h-line' /> */}
     </div>
   )
 }

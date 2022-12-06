@@ -13,7 +13,7 @@ const UsingPaaqFaqs = ({marginTop, items}) => {
         {
           items ?
           items.map((value) => (
-            <Link href="/helpCenter/[category]" as={`/helpCenter/${value?.sys?.id}`}>
+            <Link href="/helpCenter/[category]" as={`/helpCenter/${value?.fields?.category}?id=${value?.sys?.id}`}>
               <a>
                 <SinlgeFaqItem text={titleCase(value?.fields?.question)} />
               </a>
@@ -21,16 +21,6 @@ const UsingPaaqFaqs = ({marginTop, items}) => {
 
           )) :  null 
         }
-        {/* <SinlgeFaqItem text={titleCase('How to hide my followers')} />
-        <SinlgeFaqItem text={titleCase('How to add my profession')} />
-        <SinlgeFaqItem text={titleCase('How to change my online status')} />
-        <SinlgeFaqItem text={titleCase('Help with adding my skills')} />
-        <SinlgeFaqItem text={titleCase('How to rate a user’s skills')} />
-        <SinlgeFaqItem text={titleCase('Help with creating a text post')} />
-        <SinlgeFaqItem text={titleCase('Help with creating a video post')} />
-        <SinlgeFaqItem text={titleCase('How to tag a post')} />
-        <SinlgeFaqItem text={titleCase('How to add and remove interests')} /> */}
-        {/* <div className='h-line' /> */}
     </div>
   )
 }

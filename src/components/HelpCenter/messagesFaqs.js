@@ -14,7 +14,7 @@ const MessagesFaqs = ({marginTop, items}) => {
         {
           items ?
           items.map((value) => (
-            <Link href="/helpCenter/[category]" as={`/helpCenter/${value?.sys?.id}`}>
+            <Link href="/helpCenter/[category]" as={`/helpCenter/${value?.fields?.category}?id=${value?.sys?.id}`}>
               <a>
                 <SinlgeFaqItem text={titleCase(value?.fields?.question)} />
               </a>
@@ -22,12 +22,6 @@ const MessagesFaqs = ({marginTop, items}) => {
 
           )) :  null 
         }
-        {/* <SinlgeFaqItem text={'Creating A Direct Message (Chat)'} />
-        <SinlgeFaqItem text={titleCase('Help with creating a Paid message')} />
-        <SinlgeFaqItem text={titleCase('Help with creating a group message')} />
-        <SinlgeFaqItem text={'Rejecting A Message'} />
-        <SinlgeFaqItem text={'Reporting A Message'} /> */}
-        {/* <div className='h-line' /> */}
     </div>
   )
 }

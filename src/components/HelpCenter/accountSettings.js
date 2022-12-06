@@ -5,9 +5,10 @@ import SinlgeFaqItem from './singleItem'
 import UpAccIcon from '../../assets/Icons/chevronUp.svg';
 import DownAccIcon from '../../assets/Icons/chevronDown.svg';
 import { Image } from 'theme-ui';
+import useWindowSize from 'Hooks/windowSize';
 
 const AccountSettingsFaqs = ({items}) => {
-
+  const [width] = useWindowSize();
   const [isAccordianOpen, setIsAccordianOpen] = useState(false);
 
   return (
@@ -26,7 +27,7 @@ const AccountSettingsFaqs = ({items}) => {
           items ?
           items.map((value) => (
             <Link href="/helpCenter/[category]" as={`/helpCenter/${value?.fields?.category}?id=${value?.sys?.id}`}>
-              <a style={{display: isAccordianOpen ? 'none' : 'unset' }}>
+              <a style={{display: width > 600 ? 'unset' : isAccordianOpen ? 'unset' : 'none'}}>
                 <SinlgeFaqItem text={titleCase(value?.fields?.question)} />
               </a>
             </Link>

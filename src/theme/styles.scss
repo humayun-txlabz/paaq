@@ -3,6 +3,7 @@
   --pro: "Sofia-Pro";
   --light: "SofiaPro-Light";
   --bold: "Sofia-Pro-Bold";
+  --rob: "Roboto-Regular";
   --color-light: rgba(132, 139, 200, 0.18);
 }
 
@@ -24,6 +25,11 @@
 @font-face {
   font-family: "SofiaPro-Light";
   src: url("/SofiaPro-Light.otf");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/Roboto-Regular.ttf");
 }
 
 @keyframes bounceIn {
@@ -364,7 +370,7 @@
   flex-direction: column;
 
   & > h1 {
-    font-family: var(--bold);
+    font-family:var(--rob);
     font-size: 16px;
     color: #181f1f;
     line-height: 19px;
@@ -612,8 +618,8 @@
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1f);
-    padding-right: 9rem;
-    padding-left: 9rem;
+    padding-right: 10%;
+    padding-left: 10%;
     max-width: 1600px;
     margin-top: 5rem;
     scroll-margin-top: 6rem;
@@ -746,8 +752,8 @@
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1f);
-    padding-right: 9rem;
-    padding-left: 9rem;
+    padding-right: 10%;
+    padding-left: 10%;
     max-width: 1600px;
     margin-top: 5rem;
     scroll-margin-top: 6rem;
@@ -1084,8 +1090,8 @@
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1f);
-    padding-right: 9rem;
-    padding-left: 9rem;
+    padding-right: 10%;
+    padding-left: 10%;
     max-width: 1600px;
     margin-top: 5rem;
     scroll-margin-top: 6rem;
@@ -1209,7 +1215,7 @@
         & > div {
           text-align: center;
           font-family: var(--pro);
-          padding-left: 0.3rem;
+          padding: 0px 10px;
           font-size: 22px;
         }
 
@@ -1329,7 +1335,7 @@
         & > div {
           text-align: center;
           font-family: var(--pro);
-          padding-left: 0.3rem;
+          padding: 0px 10px;
           font-size: 22px;
         }
 
@@ -1449,7 +1455,7 @@
         & > div {
           text-align: center;
           font-family: var(--pro);
-          padding-left: 0.3rem;
+          padding: 0px 10px;
           font-size: 22px;
         }
 
@@ -1569,7 +1575,7 @@
         & > div {
           text-align: center;
           font-family: var(--pro);
-          padding-left: 0.3rem;
+          padding: 0px 10px;
           font-size: 22px;
         }
 
@@ -1689,7 +1695,7 @@
         & > div {
           text-align: center;
           font-family: var(--pro);
-          padding-left: 0.3rem;
+          padding: 0px 10px;
           font-size: 22px;
         }
 
@@ -1809,7 +1815,7 @@
         & > div {
           text-align: center;
           font-family: var(--pro);
-          padding-left: 0.3rem;
+          padding: 0px 10px;
           font-size: 22px;
         }
 
@@ -1929,7 +1935,7 @@
         & > div {
           text-align: center;
           font-family: var(--pro);
-          padding-left: 0.3rem;
+          padding: 0px 10px;
           font-size: 22px;
         }
 
@@ -2049,7 +2055,7 @@
         & > div {
           text-align: center;
           font-family: var(--pro);
-          padding-left: 0.3rem;
+          padding: 0px 10px;
           font-size: 22px;
         }
 
@@ -6890,7 +6896,7 @@
     position: absolute;
     left: -210%;
     top: 60%;
-    width: 140px;
+    // width: 140px;
     height: auto;
     min-width: auto;
     min-height: auto;
@@ -7120,5 +7126,83 @@
   > b{
     font-family: var(--bold);
     font-size: 18px;
+  }
+}
+
+.brand-guidelines-main{
+  background: url(/brandguidelinesbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  min-height: 638px;
+  display: flex;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    &-left{
+      width: auto !important;
+      padding-right: 10% !important;
+      padding-left: 10% !important;
+    }
+    &-buttons{
+      flex-direction: column;
+    }
+    &-download{
+      margin: auto;
+      margin-bottom: 5%;
+    }
+    &-downloadlogo{
+      margin: auto !important;
+      margin-bottom: 5%;
+    }
+  }
+  &-left{
+    width: 55%;
+    padding-top: 7%;
+    padding-right: 11%;
+    padding-left: 10%;
+  }
+  &-heading{
+    font-family: var(--pro);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 78px;
+    margin-bottom: 7%;
+  }
+  &-description{
+    font-family: var(--pro);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 7%;
+  }
+  &-buttons{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--pro);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  &-download{
+    background: #FFFFFF;
+    border-radius: 40px;
+    padding: 19px 50px;
+    // font-family: 'Sofia Pro';
+  }
+  &-downloadlogo{
+    // font-family: 'Sofia Pro';
+    // font-style: normal;
+    // font-weight: 700;
+    // font-size: 16px;
+    padding: 19px 50px;
+    background: #252F44;
+    border-radius: 40px;
+    color: #FFFFFF;
+    margin-right: 7%;
   }
 }

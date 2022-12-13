@@ -115,11 +115,11 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    // delay: 13000,
-    delay: 0,
+    delay: 13000,
+    // delay: 0,
     config: { duration: 500 },
 
-    // onRest: () => update3(4)
+    onRest: () => update3(4)
   }));
   const [anim5, setAnim5] = useSpring(() => ({
     from: { x: 0, y: 0, opacity: 0, scale: 0 },
@@ -248,143 +248,116 @@ export default function Banner() {
           </div>
 
           <div className='main-section-image2'>
-            <div style={{ position: 'absolute' }} style={{ maxWidth: 120, maxHeight: 120 }} >
               <animated.div style={poppingOutAnimation(1100)} >
                 <Image className='main-section-inner main-section-inner-image2' src={MainImage2} />
-                <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-container' style={{ ...anim1 }} >
+                <animated.div style={{  ...anim1, position: 'absolute', }} className='main-section-image2-nametag-container'>
                   <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Micheal Keen</span>
                     <span className='nametag-designation'>Pilot</span>
                   </div>
                 </animated.div>
               </animated.div>
-            </div>
           </div>
 
           <div className='main-section-image3'>
             <animated.div style={poppingOutAnimation(500)} >
-              <div style={{ position: 'absolute' }} style={{ maxWidth: 64, maxHeight: 64 }}>
-
                 <Image className='main-section-inner main-section-inner-image3' src={MainImage3} />
-                <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-containerleft' style={{ ...anim8 }} >
+                <animated.div style={{ position: 'absolute', ...anim8 }} className='main-section-image2-nametag-containerleft' >
                   <div className='main-section-image2-nametagleft'>
                     <span className='nametag-title'>Sandra Lue</span>
                     <span className='nametag-designation'>Beautician</span>
                   </div>
                 </animated.div>
-              </div>
-              {/* <animated.div style={styles3} >
-              <div className='main-section-image2-nametag-containerleft'>
-                <div className='main-section-image2-nametagleft'>
-                  <span className='nametag-title'>Sandra Lue</span>
-                  <span className='nametag-designation'>Beautician</span>
-                </div>
-              </div>
-            </animated.div> */}
             </animated.div>
           </div>
 
           <div className='main-section-image4'>
             <animated.div style={poppingOutAnimation(800)} >
-              <div style={{ position: 'absolute' }}  style={{ maxWidth: 112, maxHeight: 112 }}>
                 <Image className='main-section-inner main-section-inner-image4' src={MainImage4} />
-                <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-container' id='main-section-image2-nametag-container4' style={{ ...anim6 }} >
+                <animated.div style={{ position: 'absolute', ...anim6 }} className='main-section-image2-nametag-container' id='main-section-image2-nametag-container4' >
                   <div className='main-section-image2-nametag'  id='main-section-image2-nametag4' style={{ minWidth: 193 }}>
                     <span className='nametag-title'>John Hassel</span>
                     <span className='nametag-designation'>Software Engineer</span>
                   </div>
                 </animated.div>
-              </div>
             </animated.div>
           </div>
 
           <div className='main-section-image5'>
             <animated.div style={poppingOutAnimation(1200)} >
-              <div style={{ position: 'absolute' }} style={{ maxWidth: 88, maxHeight: 88 }} >
                 <Image className='main-section-inner main-section-inner-image5' src={MainImage5} />
-                <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-container'  style={{ ...anim3 }} >
+                <animated.div style={{ position: 'absolute', ...anim3 }} className='main-section-image2-nametag-container' >
                   <div className='main-section-image2-nametag' id='main-section-image2-nametag-container5'>
                     <span className='nametag-title'>Daniella Fox</span>
                     <span className='nametag-designation'>Accountant</span>
                   </div>
                 </animated.div>
-              </div>
             </animated.div>
           </div>
 
           <div className='main-section-image6'>
             <animated.div style={poppingOutAnimation(900)} >
-              <div style={{ position: 'absolute' }} style={{ maxWidth: 48, maxHeight: 48 }}>
                 <Image className='main-section-inner main-section-inner-image6' src={MainImage6} />
-                <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-container' style={{ ...anim2 }} >
+                <animated.div style={{ position: 'absolute', ...anim2 }} className='main-section-image2-nametag-container' >
                   <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Brian Walker</span>
                     <span className='nametag-designation'>Athelete</span>
                   </div>
                 </animated.div>
-              </div>
             </animated.div>
           </div>
 
           <div className='main-section-image7'>
             <animated.div style={poppingOutAnimation(600)} >
-              <div style={{ position: 'absolute' }} style={{ maxWidth: 64, maxHeight: 64 }} >
                 <Image className='main-section-inner main-section-inner-image7' src={MainImage7} />
-                <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-container' id="main-section-image2-nametag-container7" style={{ ...anim9 }} >
+                <animated.div style={{ position: 'absolute', ...anim9 }} className='main-section-image2-nametag-container' id="main-section-image2-nametag-container7" >
                   <div className='main-section-image2-nametag' id='main-section-image2-nametag7' style={{ minWidth: 202 }}>
                     <span className='nametag-title'>Sue Chan</span>
                     <span className='nametag-designation'>Marteking Manager</span>
                   </div>
                 </animated.div>
-              </div>
             </animated.div>
           </div>
 
           <div className='main-section-image8'>
             <animated.div style={poppingOutAnimation(1300)} >
-              <div style={{ position: 'absolute' }} style={{ maxWidth: 110, maxHeight: 110 }} >
                 <Image className='main-section-inner main-section-inner-image8' id="main-section-inner-image8" src={MainImage8} />
-                <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-containerleft' id="main-section-image2-nametag-containerleft8" style={{ ...anim4 }} >
-                  <div className='main-section-image2-nametagleft' id="main-section-image2-nametag8" id="main-section-image2-nametag8">
+                <animated.div style={{  ...anim4, position: 'absolute' }} className='main-section-image2-nametag-containerleft' id="main-section-image2-nametag-containerleft8" >
+                  <div className='main-section-image2-nametagleft' id="main-section-image2-nametag8">
                     <span className='nametag-title'>Aisha Ali</span>
                     <span className='nametag-designation'>Philosophy Student</span>
                   </div>
                 </animated.div>
-              </div>
             </animated.div>
           </div>
 
           <div className='main-section-image9'>
             <animated.div style={poppingOutAnimation(300)} >
-              <div style={{ position: 'absolute' }} style={{ maxWidth: 110, maxHeight: 110 }} >
                 <Image className='main-section-inner main-section-inner-image9' src={MainImage9} />
-                <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-container' id="main-section-image2-nametag-container9" style={{ ...anim5 }} >
+                <animated.div style={{ position: 'absolute', ...anim5 }} className='main-section-image2-nametag-container' id="main-section-image2-nametag-container9" >
                   <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Daniel Trump</span>
                     <span className='nametag-designation'>Professor</span>
                   </div>
                 </animated.div>
-              </div>
             </animated.div>
           </div>
 
           <div className='main-section-image10' style={{ maxWidth: 64, maxHeight: 64 }}>
-            <animated.div style={poppingOutAnimation(700)} style={{ minWidth: 64, minHeight: 64 }}>
+            <animated.div style={poppingOutAnimation(700)}>
               <Image style={{ minWidth: 64, minHeight: 64 }} className='main-section-inner main-section-inner-image10' src={MainImage10} />
             </animated.div>
           </div>
 
           <div className='main-section-image11' >
             <animated.div style={poppingOutAnimation(1000)} >
-              <div style={{ position: 'absolute' }} style={{ maxWidth: 118, maxHeight: 118 }}>
                 <Image className='main-section-inner main-section-inner-image11' src={MainImage11} />
-                <animated.div style={{ position: 'absolute' }} className='main-section-image2-nametag-container' id='main-section-image2-nametag-container11' style={{ ...anim7 }} >
+                <animated.div style={{ position: 'absolute', ...anim7 }} className='main-section-image2-nametag-container' id='main-section-image2-nametag-container11'>
                   <div className='main-section-image2-nametag'>
                     <span className='nametag-title'>Thabo Khoza</span>
                     <span className='nametag-designation'>Artist</span>
                   </div>
                 </animated.div>
-              </div>
             </animated.div>
           </div>
 

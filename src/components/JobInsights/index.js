@@ -35,6 +35,8 @@ const JobInsightsMain = (props) => {
       // ),
     },
     renderNode: {
+        [BLOCKS.PARAGRAPH]: (node, next) => `<p>${next(node.content).replace(/\n/g, `</br>`)}</p>`
+      ,
       [BLOCKS.EMBEDDED_ASSET]: (node) => {
         const { title, description, file } = node.data.target.fields;
         const mimeType = file.contentType

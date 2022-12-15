@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
+import Link from 'next/link';
 
 const SingleCategoryHelpCenter = (props) => {
   const { fields, id } = props;
@@ -73,7 +74,12 @@ const SingleCategoryHelpCenter = (props) => {
       
       <div className='background-image-hc'>
           <span className='background-image-hc-title'>
-            {`Help Center > ${fields['0']?.fields?.title}`}
+            <Link href={'/helpCenter'}>
+              <span className='background-image-hc-nav'>
+                {'Help Center >'}
+              </span>
+            </Link>
+            {fields['0']?.fields?.title}
           </span>
       </div>
       <div className='single-hc'>

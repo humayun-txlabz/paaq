@@ -3477,3 +3477,7 @@ justify-content: center;
 .background-image-faq{
   width: 100%;
 }
+
+.rich-text-jobs {
+  white-space: pre-wrap;
+}

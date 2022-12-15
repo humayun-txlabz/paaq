@@ -1,17 +1,17 @@
-import { GrLocation } from "react-icons/gr";
+import Link from "next/link";
 import { BiHeart } from "react-icons/bi";
-import { FaFacebookF } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
+import { FaFacebookF } from "react-icons/fa";
 import { RiLinkedinFill } from "react-icons/ri";
-import { BiTag } from "react-icons/bi";
+
 import JobInsightsForm from "./form";
+import locImgIcon from '../../assets/loc-svg.png';
+import heartIcon from '../../assets/heart-icon.png';
+import { BLOCKS } from '@contentful/rich-text-types';
+import rotatedTag from '../../assets/rotated-tag.png';
 import AppAndPlayStoreFooter from "components/appAndPlayStoreFooter";
 import jobInsightsImg1 from '../../assets/Images/job-insights-1.png';
-import locImgIcon from '../../assets/loc-svg.png';
-import rotatedTag from '../../assets/rotated-tag.png';
-import heartIcon from '../../assets/heart-icon.png';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { BLOCKS } from '@contentful/rich-text-types';
 
 const JobInsightsMain = (props) => {
 
@@ -35,6 +35,8 @@ const JobInsightsMain = (props) => {
       // ),
     },
     renderNode: {
+        [BLOCKS.PARAGRAPH]: (node, next) => `<p>${next(node.content).replace(/\n/g, `</br>`)}</p>`
+      ,
       [BLOCKS.EMBEDDED_ASSET]: (node) => {
         const { title, description, file } = node.data.target.fields;
         const mimeType = file.contentType
@@ -143,9 +145,11 @@ const JobInsightsMain = (props) => {
           <JobInsightsForm />
         </div>
         <div className="job-insights-main-content-right">
-          <div style={{ background: "#00B5B4" }} className="btn">
-            <h3 style={{ color: "#fff" }}>Apply Now</h3>
-          </div>
+          <Link href={jobItem.jobLink ?? ''}>
+            <div style={{ background: "#00B5B4" }} className="btn">
+              <h3 style={{ color: "#fff" }}>Apply Now</h3>
+            </div>
+          </Link>
           <br style={{ marginTop: "1rem" }} />
           <div style={{ background: "#F8F8F8" }} className="btn">
             <h3 style={{ color: "#000" }}>

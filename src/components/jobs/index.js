@@ -20,6 +20,7 @@ const JobsMain = () => {
   };
   const goToPage = (page) => {
      setCurrentPage(page);
+     window.scrollTo(0, 0);
   };
   useEffect(() => {
        

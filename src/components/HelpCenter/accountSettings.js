@@ -26,10 +26,10 @@ const AccountSettingsFaqs = ({items}) => {
         {
           items ?
           items.map((value) => (
-            <Link href="/helpCenter/[category]" as={`/helpCenter/${value?.fields?.category}?id=${value?.sys?.id}`}>
-              <a style={{display: width > 600 ? 'unset' : isAccordianOpen ? 'unset' : 'none'}}>
+            <Link href={`/helpCenter/${value?.fields?.category}?id=${value?.sys?.id}`}>
+              <div style={{display: width > 600 ? 'unset' : isAccordianOpen ? 'unset' : 'none'}}>
                 <SinlgeFaqItem text={titleCase(value?.fields?.question)} />
-              </a>
+              </div>
             </Link>
 
           )) :  null 

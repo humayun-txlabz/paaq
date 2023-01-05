@@ -18,6 +18,7 @@ class CustomDocument extends Document {
         <link rel="preconnect" href="./SofiaProSoft.otf" />
         <body>
           <Main />
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
           <NextScript />
         </body>
       </Html>

@@ -18,6 +18,10 @@
 
 }
 
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/Roboto-Regular.ttf");
+}
 
 
 @font-face {
@@ -2922,21 +2926,24 @@ height: 551px;
 .job-insights-main-content-right > .btn {
   width: 100%;
   max-width: 360px;
-  height: 3.1rem;
+  /* height: 3.1rem; */
   border-radius: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 0px;
 }
 
 .job-insights-main-content-right > .btn > h3 {
-  font-family: var(--pro);
+  font-family: "Roboto-Regular";
    font-weight: 700;
-   font-size: 0.8rem;
+   font-size: 20px;
    line-height: 1.7rem;
    text-align: center;
    align-items: center;
    display: flex;
+   margin: 0;
+   margin-left: 5px;
 }
 
 .job-insights-main-content-right-socials {

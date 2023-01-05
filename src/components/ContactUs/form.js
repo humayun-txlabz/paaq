@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Select } from "antd";
 const { Option } = Select;
 import DownArrow from '../../assets/accordion-close.png';
 import { apiClientContentFul } from "services/apiClient";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const handleChangeSelect = (value) => {
   console.log(`selected ${value}`);
@@ -11,6 +12,7 @@ const handleChangeSelect = (value) => {
 
 const ContactUsForm = () => {
   const [formValues, setFormValues] = useState(null);
+  const recaptchaRef = useRef(null);
 
   useEffect(() => {
          
@@ -25,6 +27,10 @@ const ContactUsForm = () => {
                  );
             });            
   }, []);
+
+  const onChange = (value) => {
+    console.log("Captcha value:", value);
+  }
 
   return (
     <div className="contact-us-page-form-container">
@@ -58,7 +64,14 @@ const ContactUsForm = () => {
           <label>Message*</label>
           <textarea placeholder="Enter your name" required />
         </div>
-        <input className="submit-btn" type="submit" value="Send message" />
+        <div className="recaptcha-field">
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey="6Ldt4pcjAAAAAJTTQkkYGkBeftpLFaIC1JNrsIcs"
+            onChange={onChange}
+          />
+          <input className="submit-btn" type="submit" value="Send message" />
+        </div>
       </form>
     </div>
   );

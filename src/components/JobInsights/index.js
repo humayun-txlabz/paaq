@@ -9,9 +9,12 @@ import locImgIcon from '../../assets/loc-svg.png';
 import heartIcon from '../../assets/heart-icon.png';
 import { BLOCKS } from '@contentful/rich-text-types';
 import rotatedTag from '../../assets/rotated-tag.png';
+import LinkedInIcon from 'assets/Icons/jobs/linkedin.svg';
 import AppAndPlayStoreFooter from "components/appAndPlayStoreFooter";
 import jobInsightsImg1 from '../../assets/Images/job-insights-1.png';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { Image } from 'theme-ui';
+
 
 const JobInsightsMain = (props) => {
 
@@ -146,8 +149,9 @@ const JobInsightsMain = (props) => {
         </div>
         <div className="job-insights-main-content-right">
           <Link href={jobItem.jobLink ?? ''}>
-            <div style={{ background: "#00B5B4" }} className="btn">
-              <h3 style={{ color: "#fff" }}>Apply Now</h3>
+            <div style={{ background: "#0a66c2" }} className="btn">
+              <Image src={LinkedInIcon} />
+              <h3 style={{ color: "#fff" }}>Apply With LinkedIn</h3>
             </div>
           </Link>
           <br style={{ marginTop: "1rem" }} />

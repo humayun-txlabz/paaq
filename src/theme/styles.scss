@@ -5796,6 +5796,14 @@
             }
           }
 
+          .recaptcha-field{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3%;
+          }
+
           .submit-btn {
             left: calc(50% - 580px / 2 + 250px);
             top: calc(50% - 50px / 2 - 117px);
@@ -7204,6 +7212,7 @@
     background: #FFFFFF;
     border-radius: 40px;
     padding: 19px 50px;
+    color: #000000;
     // font-family: 'Sofia Pro';
   }
   &-downloadlogo{

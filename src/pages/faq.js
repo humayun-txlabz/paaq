@@ -26,7 +26,7 @@ export async function getStaticProps() {
             return response;
         })
         .catch((err) => {
-            console.log("Errriirrrrrr arha haiii", err)
+            console.log("Error", err)
         })
 
 

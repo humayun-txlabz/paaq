@@ -89,7 +89,7 @@ const JobInsightsMain = (props) => {
           </h3>
           <div className="left-bottom-div">
             <span className="bold-text">
-              {jobItem.title}
+              {jobItem?.title}
               {/* Principle Full <br />
               Stack Engineer */}
             </span>
@@ -100,13 +100,13 @@ const JobInsightsMain = (props) => {
               {" "}
               <img style={{width: 14, height: 18, marginRight: '10px'}} src={locImgIcon} />
               <p className="jobdetail-type">
-                {jobItem.jobType ?? 'Remote'}
+                {jobItem?.jobType ?? 'Remote'}
               </p>
             </h3>
             <h3>
             <img style={{width: 19, height: 18, marginRight: '10px'}} src={rotatedTag} />
             <p className="jobdetail-type">
-              {jobItem.category ?? 'Engineering'}
+              {jobItem?.category ?? 'Engineering'}
             </p>
             </h3>
           </div>
@@ -140,7 +140,7 @@ const JobInsightsMain = (props) => {
             </div>
           </div>
           <div>
-              {documentToReactComponents(jobItem.details, richTextOptions)}
+              {documentToReactComponents(jobItem?.details, richTextOptions)}
           </div>
 
           {/* Form Here */}
@@ -148,7 +148,7 @@ const JobInsightsMain = (props) => {
           <JobInsightsForm />
         </div>
         <div className="job-insights-main-content-right">
-          <Link href={jobItem.jobLink ?? ''}>
+          <Link href={jobItem?.jobLink ?? ''}>
             <div style={{ background: "#0a66c2" }} className="btn">
               <Image src={LinkedInIcon} />
               <h3 style={{ color: "#fff" }}>Apply With LinkedIn</h3>

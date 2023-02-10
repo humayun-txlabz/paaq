@@ -30,9 +30,11 @@ export default function Header({ className }) {
               </div>
             ))}
           </div>
-          <Button className="download_button" aria-label="Download">
-            Download
-          </Button>
+          <Link href={'/download'}>
+            <Button className="download_button" aria-label="Download">
+              Download
+            </Button>
+          </Link>
           
 
         </div>

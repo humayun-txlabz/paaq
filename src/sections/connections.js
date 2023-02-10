@@ -1,12 +1,19 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Text, Button, Image } from 'theme-ui';
+import ReactPlayer from 'react-player';
+import { Container, Box, Image } from 'theme-ui';
 import BannerImg from 'assets/connection-image1.png';
-import BannerImg2 from 'assets/globe.png';
 import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
 
 export default function Connections() {
+     const [domLoaded, setDomLoaded] = useState(false);
+
+     useEffect(() => {
+       setDomLoaded(true);
+     }, []);
+
   const router = useRouter();
   return (
        <section
@@ -103,7 +110,7 @@ export default function Connections() {
                       </div>
                       <div
                            className="connections-info-box connections-info-box-mobile"
-                           style={{ paddingBottom: 0, paddingRight: 0 }}
+                           style={{ paddingBottom: 0, paddingRight: 0, overflow: "hidden" }}
                       >
                            <div
                                 style={{
@@ -149,17 +156,20 @@ export default function Connections() {
                                 className="banner-image-connection-mobile"
                               //   style={{ display: "flex", justifyContent: "flex-end" }}
                            >
-                                <Image
-                                     src={BannerImg2}
-                                     alt="Picture of the phone"
-                                     className={'banner-image-home-connection-section'}
-                                   //   style={{
-                                   //        width: 450,
-                                   //        height: "100%",
-                                   //        objectFit: "cover",
-                                   //        borderRadius: 40,
-                                   //   }}
-                                />
+                                {domLoaded && (
+                                   <div className='player-wrapper'>
+                                        <ReactPlayer 
+                                             className='react-player-earth'
+                                             url='gifs/Earth.mov' 
+                                           width='100%'
+                                           height='100%'
+                                           loop={true}
+                                           playing={true}
+                                           // controls = {true}
+                                           muted={true}
+                                       />
+                                   </div>
+                                )}
                            </div>
                       </div>
                  </div>

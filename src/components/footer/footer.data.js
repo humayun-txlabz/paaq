@@ -46,7 +46,7 @@ export default {
         label: 'Press & Media',
       },
       {
-        path: '/',
+        path: '/brandGuidelines',
         label: 'Brand Guidelines',
       }
     ],

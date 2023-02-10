@@ -1,11 +1,5 @@
 import React, {useEffect, useState, useCallback, useRef} from 'react'
-import Image from 'next/image';
-import EarnImage from '../assets/Images/earn.png';
-import EarnImage2 from '../assets/Images/earn2.png';
-import EarnImage3 from '../assets/Images/earn3.png';
-import EarnImage4 from '../assets/Images/earn4.png';
-import EarnImage5 from '../assets/Images/earn5.png';
-import { animated, useSpring } from "react-spring";
+import ReactPlayer from 'react-player';
 import useIsInViewport from 'use-is-in-viewport'
 
 const EarnMoneyBanner = React.forwardRef(function EarnMoneyBanner(parentRef) {
@@ -15,69 +9,32 @@ const EarnMoneyBanner = React.forwardRef(function EarnMoneyBanner(parentRef) {
     const [isDivInViewport, earnMoneyReference] = useIsInViewport({
         target: parentRef
     });
+    const [domLoaded, setDomLoaded] = useState(false);
+
+    useEffect(() => {
+      setDomLoaded(true);
+    }, []);
 
     useEffect(() => {
         isDivInViewport ? setStartAnimation(true) : null
     }, [isDivInViewport])
 
-    const poppingOutAnimation = (delay) => useSpring({
-        from: { x: 0, y: 0, zoom: 0, scale: 0 },
-        to: { x: 0, y: 0, zoom: startAnimtion ? 1 : 0, scale: startAnimtion ? 1 : 0 },
-        delay: startAnimtion ? delay : 0
-    });
-
-    const defaultAnimation = (delay) => useSpring({
-        from: { opacity: 0 },
-        to: { opacity: startAnimtion ? 1 : 0 },
-        delay: startAnimtion ? delay : 0
-    });
-
     return (
         <div  className='earn-money-main'>
             <div ref={earnMoneyReference}  className='earn-money-image-container'>
-                <div className='earn-money-image-upper'>
-                    <animated.div style={poppingOutAnimation(500)} className='earn-money-image-upper-left'>
-                        <img className='earn-money-image earn-money-upper-left-image' src={EarnImage2}   />
-                    </animated.div>
-                    <animated.div style={poppingOutAnimation(1000)} className='earn-money-image-upper-right'>
-                        <img className='earn-money-image earn-money-upper-right-image' src={EarnImage4}   />
-                    </animated.div>
-                    <div className='earn-money-image-lower-left'>
-                        <img className='earn-money-image earn-money-image-author-name' src={EarnImage5}   />
-                        
-                        <div className='earn-money-tag'>
-                            <span className='earn-money-name'>
-                                Jhon Sakulah
-                            </span>
-                            <span className='earn-money-category'>
-                                Entrepreneur
-                            </span>
-                        </div> 
-                    </div>
-                    <animated.div style={defaultAnimation(2000)} className='earn-money-question-container '>
-                        <div  className={`earn-money-question ${startAnimtion ? 'animate' : ''}`}>
-                            <p style={{marginBottom:'0px'}}>
-                            Enterprise Customer means
-                            </p>
-                            <p style={{marginBottom:'0px'}}>
-                            any business, enterprise or
-                            </p>
-                            <p style={{marginBottom:'0px'}}>
-                            public sector customer of
-                            </p>
-                            <p style={{marginBottom:'0px'}}>
-                            the Company or any
-                            </p>
-                            <p style={{marginBottom:'0px'}}>
-                            Company.
-                            </p>     
-                        </div>
-                    </animated.div>
-                    <animated.div style={poppingOutAnimation(1500)} className='earn-money-image-lower-right'>
-                        <img className='earn-money-image earn-money-main-image' src={EarnImage3} />
-                    </animated.div>  
+            {domLoaded && (
+                <div className='player-wrapper'>
+                <ReactPlayer 
+                    className='react-player-person'
+                    url='gifs/persons2.mov' 
+                    width='100%'
+                    height='100%'
+                    loop={true}
+                    playing={true}
+                    muted={true}
+                />
                 </div>
-                
+            )}
             </div>
             <div className='earn-money-detail'>
                 <span className='earn-money-title'>

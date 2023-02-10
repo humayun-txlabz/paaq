@@ -1,3 +1,4 @@
+import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter';
 import BrandGuidelinesMain from 'components/BrandGuidelines';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -12,6 +13,7 @@ const BrandGuidelines = () => {
                 <Layout>
                     <SEO title="About Us" />
                     <BrandGuidelinesMain />
+                    <AppAndPlayStoreFooter />
                 </Layout>
             </StickyProvider>
         </ThemeProvider>

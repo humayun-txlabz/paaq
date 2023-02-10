@@ -1,26 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "theme-ui";
 import { StickyProvider } from "../contexts/app/app.provider";
+import { notification } from 'antd';
+import ReactPlayer from 'react-player';
 import theme from "theme";
 import SEO from "components/seo";
 import Layout from "components/layout";
 import { Container, Text, Image, Input, Button } from "theme-ui";
 import AppAndPlayStoreFooter from "components/appAndPlayStoreFooter";
-import banner from "assets/downloadBanner.png";
-import barCode from "assets/barCode.png";
+// import banner from "assets/downloadBanner.png";
+import barCode from "assets/paaqQR.svg";
 import {
   getCountries,
   getCountryCallingCode,
 } from "react-phone-number-input/input";
 import en from "react-phone-number-input/locale/en.json";
+import { API_ENDPOINT } from "constants";
 
 export default function Download() {
   const [countryCode, setCountryCode] = useState("US");
+  const [phoneNumber, setPhoneNumber] = useState(null);
+  const [pending, setPending] = useState(false);
+  const [domLoaded, setDomLoaded] = useState(false);
+
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
+
   const CountrySelect = ({ value, labels, ...rest }) => (
     <select
       {...rest}
       value={value}
-      onChange={(event) => setCountryCode(event.target.value || undefined)}
+      onChange={(event) => { setCountryCode(event.target.value || undefined) }}
     >
       {getCountries().map((country) => (
         <option key={country} value={country}>
@@ -29,6 +40,55 @@ export default function Download() {
       ))}
     </select>
   );
+
+  const sendDownloadLink = async () => {
+    const numberWithCode = `+${getCountryCallingCode(countryCode)}${phoneNumber}`
+    if(phoneNumber && numberWithCode){
+      setPending(true);
+      try {
+        const res = await fetch(
+          `${API_ENDPOINT}/senddownloadlink`, {
+          method: 'POST',
+          // mode: 'cors', // this cannot be 'no-cors'
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            phoneNo: numberWithCode
+          })
+        }
+        );
+        if (res.status === 200) {
+          notification.success({
+            message: 'Download Link Sent',
+            description:
+              'Download link has been sent successfully to your phone number.',
+          });
+        } else {
+          notification.error({
+            message: 'Error',
+            description: `Couldn't reach to PAAQ at the moment. Please try after few moments`
+          });
+        }
+        setPending(false);
+        
+      } catch (err) {
+        console.log(err);
+        notification.error({
+          message: 'Error',
+          description: `Couldn't reach to PAAQ at the moment. Please try after few moments`
+        });
+        setPending(false);
+      }
+    } else {
+      notification.error({
+        message: 'Error',
+        description: `Please add a valid number`
+      });
+      setPending(false);
+    }
+  }
 
   return (
     <ThemeProvider theme={theme}>
@@ -52,11 +112,12 @@ export default function Download() {
                     />
                   </Container>
                   <Container sx={styles.phoneContainer}>
-                    <Input sx={styles.textField} placeholder="Phone Number" />
+                    <input style={styles.textField} type="number" id="quantity" name="quantity" max="10" min="1" />
+                    {/* <Input sx={styles.textField} onChange={onChangeNumber} placeholder="Phone Number" /> */}
                   </Container>
                 </Container>
                 <div className="send-link-download">
-                  <Button sx={styles.button} aria-label="Send Link">
+                  <Button sx={styles.button} style={{ background: pending ? '#D9D9D9' : '#FFFFFF', color: pending ? '#FFFFFF' : '#000000'}} aria-label="Send Link" onClick={sendDownloadLink}>
                     Send Link
                   </Button>
                   <span className="or-in-send-link">
@@ -65,7 +126,7 @@ export default function Download() {
                   </span>
                 </div>
                 <div className="bar-code-and-text">
-                  <Image src={barCode} className={'image'} />
+                  <Image src={barCode} className={'barcode-container'} />
                   <span className="text-in-bar-code-with-text">
                     Scan to download by opening the camera app on your phone.
                     Place the rear-facing camera on top of the QR code. You will
@@ -82,7 +143,19 @@ export default function Download() {
                 </div>
               </Container>
               <Container sx={styles.imageContainer}>
-                <Image src={banner} sx={styles.bannerImage} />
+              {domLoaded && (
+                  <div className='player-wrapper'>
+                    <ReactPlayer 
+                      className='react-player-download'
+                      url='gifs/PostInformation.mov'
+                      width='100%'
+                      height='100%'
+                      loop={true}
+                      playing={true}
+                      muted={true}
+                      />
+                    </div>
+              )}
               </Container>
             </Container>
           </Container>
@@ -123,6 +196,7 @@ const styles = {
     "@media screen and (max-width: 720px )": {
       width: "100%",
       paddingLeft: "30px !important",
+      marginBottom: '10%'
     },
     "@media screen and (max-width: 970px)": {
       width: "100%",
@@ -200,7 +274,6 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     borderRadius: "40px",
-    background: "rgba(255, 255, 255, 0.2)",
     marginLeft: "0px",
   },
   textField: {
@@ -208,13 +281,18 @@ const styles = {
     borderWidth: "0px",
     border: "none",
     outline: "none",
-    marginLeft: "10px",
+    borderRadius: "40px",
+    background: "rgba(255, 255, 255, 0.2)",
+    paddingLeft: "25px",
+    minHeight: '54px',
+    width: '100%',
     "::placeholder": {
       color: "#FFFFFF",
     },
   },
   button: {
     borderRadius: 40,
+    cursor: "pointer",
     width: "33%",
     "@media screen and (max-width: 720px)": {
       width: "50%",
@@ -228,9 +306,6 @@ const styles = {
     borderColor: null,
     color: "#000000",
 
-    ":hover": {
-      opacity: 0.8,
-    },
   },
   barCode: {
     height: "171px",

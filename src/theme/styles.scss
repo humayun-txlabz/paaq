@@ -7,30 +7,6 @@
   --color-light: rgba(132, 139, 200, 0.18);
 }
 
-@font-face {
-  font-family: "Sofia-Pro";
-  src: url("/SofiaProRegularAz.otf");
-}
-
-@font-face {
-  font-family: "Sofia-Pro-Bold";
-  src: url("/SofiaProBold.ttf");
-}
-
-@font-face {
-  font-family: "SofiaPro-Soft";
-  src: url("/SofiaProSoft.otf");
-}
-
-@font-face {
-  font-family: "SofiaPro-Light";
-  src: url("/SofiaPro-Light.otf");
-}
-
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("/Roboto-Regular.ttf");
-}
 
 @keyframes bounceIn {
   0% {
@@ -917,6 +893,8 @@
     @media (max-width: 946px) {
       padding-right: 3rem;
       padding-left: 3rem;
+      display: flex;
+      flex-direction: column;
     }
 
     .left {
@@ -6984,6 +6962,7 @@
   align-items: center;
   flex-direction: row;
   margin-top: 2rem;
+  margin-bottom: 25px;
   .image {
     background: #ffffff;
     border-radius: 19.6552px;
@@ -7176,6 +7155,7 @@
     &-downloadlogo{
       margin: auto !important;
       margin-bottom: 5%;
+      cursor: pointer;
     }
   }
   &-left{
@@ -7213,17 +7193,52 @@
     border-radius: 40px;
     padding: 19px 50px;
     color: #000000;
-    // font-family: 'Sofia Pro';
   }
   &-downloadlogo{
-    // font-family: 'Sofia Pro';
-    // font-style: normal;
-    // font-weight: 700;
-    // font-size: 16px;
     padding: 19px 50px;
     background: #252F44;
     border-radius: 40px;
     color: #FFFFFF;
     margin-right: 7%;
+    cursor: pointer;
   }
+}
+.barcode-container{
+  min-width: 125px !important;
+  max-width: 170px !important;
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 19.6552px;
+}
+.react-player-earth{
+  max-width: 459px;
+  margin-bottom: -9px;
+}
+.react-player-person{
+  max-width: 552px;
+}
+.react-player-question{
+  max-width: 430px;
+  margin-bottom: -6px;
+  border-radius: 20px;
+}
+.react-player-about{
+  margin-bottom: -10px;
+  max-width: 286px;
+  border-radius: 31px 32px 0px 0px;
+  overflow: hidden;
+}
+.react-player-download{
+  margin-bottom: -10px;
+  max-width: 314px;
+  border-radius: 33px 34px 0px 0px;
+  overflow: hidden;
+  @media (max-width: 767px) {
+    border-radius: 40px 40px 0px 0px;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

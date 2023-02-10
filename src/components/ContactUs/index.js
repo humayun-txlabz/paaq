@@ -14,7 +14,7 @@ const ContactUsMain = () => {
                 <h3>PAAQ gives access to:</h3>
                 <TickWithTextComp text={'Global interaction.'} marginTop={'2rem'} />
                 <TickWithTextComp text={'Expert knowledge tailored to your needs.'} marginTop={'2rem'} />
-                <TickWithTextComp text={'Global interaction.'} marginTop={'2rem'} />
+                <TickWithTextComp text={'Responses from people without feeling isolated or ignored.'} marginTop={'2rem'} />
             </div>
             <div className='right'>
                 <div className='mobile-top-view'>
@@ -27,7 +27,7 @@ const ContactUsMain = () => {
                 <h3>PAAQ gives access to:</h3>
                 <TickWithTextComp text={'Global interaction.'} marginTop={'2rem'} />
                 <TickWithTextComp text={'Expert knowledge tailored to your needs.'} marginTop={'2rem'} />
-                <TickWithTextComp text={'Global interaction.'} marginTop={'2rem'} />
+                <TickWithTextComp text={'Responses from people without feeling isolated or ignored.'} marginTop={'2rem'} />
             </div>
         </div>
         <AppAndPlayStoreFooter />

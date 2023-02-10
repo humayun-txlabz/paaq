@@ -2,6 +2,7 @@
 /** @jsx jsx */
 import React, { useState, useEffect } from 'react';
 import { jsx, Image } from 'theme-ui';
+import ReactPlayer from 'react-player';
 
 import { Container, Box, Button } from 'theme-ui';
 import { animated, useSprings, useSpring, to, update } from "react-spring";
@@ -24,6 +25,11 @@ import FadeAnimation from 'components/fadeAnimation';
 
 export default function Banner() {
   const svgRef = React.createRef();
+  const [domLoaded, setDomLoaded] = useState(false);
+
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
 
   const [style, setStyle] = useSpring(() => ({
     from: { x: 720 },
@@ -420,9 +426,10 @@ export default function Banner() {
               connects experts in their field with people interested in their craft
               socially and professionally.”
               <br /><br />
-              PAAQ is a knowledge based social media application designed to
-              facilitate people's exchange of valuable insights and knowledge
-              as well as earn money from answering questions.
+              With PAAQ, you can directly ask a question to someone who can provide an informed, 
+              detailed answer to your query, based on their experience and expertise. This is 
+              different from the results you get from a search engine, which are more general 
+              and don’t provide tailored solutions to your specific questions.
             </div>
             {/* <div className='mobile-show-paaq-text' style={{
               fontSize: 18, marginTop: 20, lineHeight: 1.5, fontWeight: 'lighter',
@@ -436,7 +443,7 @@ export default function Banner() {
             </div> */}
             <br />
 
-            <div className='read-more-mobile'>Read More</div>
+            {/* <div className='read-more-mobile'>Read More</div> */}
             {/* <animated.div className='animation-text-mobile' style={{ animationIterationCount: 'infinite', display: 'flex', flexDirection: 'row', position: 'absolute', marginTop: '50px', overflow: "hidden", left: 145 }}>
               <animated.div style={{ fontFamily: 'Sofia-Pro', opacity: '0.6', fontSize: '15px', ...style }}>{`Hi Thomas, how can I grow my business in ...`}</animated.div>
 
@@ -447,12 +454,20 @@ export default function Banner() {
             </animated.div> */}
 
           </div>
-          <div className='banner-info-text-container2' style={{ color: 'white', fontSize: 18, fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '40%' }}>
-            <img
-              src={BannerImg}
-              className="banner-image-mobile"
+          <div className='banner-info-text-container2' style={{ color: 'white', fontSize: 18, fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '40%', overflow: 'hidden' }}>
+          {domLoaded && (
+            <div className='player-wrapper'>
+            <ReactPlayer 
+              className='react-player-about'
+              url='gifs/PostInformation.mov'
+              width='100%'
+              height='100%'
+              loop={true}
+              playing={true}
+              muted={true}
             />
-            <img src={bann} className="banner-image-mobile-view" />
+            </div>
+          )}
           </div>
         </div>
       </Container>

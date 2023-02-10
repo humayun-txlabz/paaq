@@ -1,8 +1,14 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import StartIcon  from '../../assets/Icons/feature-sec-2-dollar.png';
-import Sec11 from '../../assets/Images/feature-sec-2-1.png';
+import ReactPlayer from 'react-player';
 
 const SectionSetPrice =() => {
+  const [domLoaded, setDomLoaded] = useState(false);
+
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
+
   return (
     <div className="section-2" id="SectionSetPrice">
       
@@ -19,8 +25,20 @@ const SectionSetPrice =() => {
           <p>02. You must respond to their message/question in the format they choose (Text or Video).</p>
           <p>03. You may choose to reject their message/question if it goes against PAAQ's community guidelines or without any reason.</p>
       </div>
-      <div className="right">
-      <img src={Sec11} className="image" />
+      <div className="right" style={{ overflow: "hidden" }}>
+      {domLoaded && (
+        <div className='player-wrapper'>
+          <ReactPlayer 
+            className='react-player-question'
+            url='gifs/SetQuestions.mov'
+            width='100%'
+            height='100%'
+            loop={true}
+            playing={true}
+            muted={true}
+            />
+          </div>
+      )}
       </div>
     </div>
   );

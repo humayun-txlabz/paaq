@@ -5,6 +5,8 @@
   --light: 'SofiaPro-Light';
   --bold: 'Sofia-Pro-Bold';
 }
+
+
  
 @font-face {
   font-family: 'Sofia-Pro';
@@ -50,7 +52,7 @@ button {
 .banner-info-box {
   padding: 5%;
   padding-top: 4%;
-  padding-bottom: 14px;
+  padding-bottom: 0px;
   width: 80%;
   margin: 0 auto;
   margin-top: 100px;
@@ -632,25 +634,25 @@ line-height: 23px;
   display: flex;
   flex-direction: column;
   position: relative;
-  background: url(/earn.png);
+  /* background: url(/earn.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   min-height: 552px;
 }
 @media (max-width: 720px) {
   .earn-money-image-container {
     width: 100% !important;
-    background: url(/earn2.png) !important;
+    /* background: url(/earn2.png) !important;
     background-repeat: no-repeat !important;
-    background-position: center !important;
+    background-position: center !important; */
     min-height: 382px !important;
   }
 }
 @media (max-width: 800px) and (min-width: 721px) {
   .earn-money-image-container {
-    background: url(/earn2.png) !important;
+    /* background: url(/earn2.png) !important;
     background-repeat: no-repeat !important;
-    background-position: center !important;
+    background-position: center !important; */
     min-height: 382px !important;
   }
 }
@@ -1886,6 +1888,7 @@ line-height: 86px;
   ;
   color: black;
   font-family: 'SofiaPro-Soft';
+  font-display: block;
   opacity: 0;
   line-height: 86px;
   position: absolute;

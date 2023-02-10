@@ -4,19 +4,11 @@ import { StickyProvider } from '../contexts/app/app.provider';
 import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
-import { Container, Text, Image, Input, Button } from 'theme-ui';
+import { Container, Text } from 'theme-ui';
 import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter';
 import NewsSection from 'sections/newsSection';
-import { newsSectionObjects } from 'constants/newsSectionObjects';
 import arrow from 'assets/page1.png'
 import arrow2 from 'assets/page2.png'
-import image1 from 'assets/news/6.png'
-import arrow3 from 'assets/upRightArrow.png'
-import collage1 from 'assets/news/7.png'
-import collage2 from 'assets/news/8.png'
-import collage3 from 'assets/news/9.png'
-import collage4 from 'assets/news/10.png'
-
 import * as contentful from 'contentful';
 
 const client = contentful.createClient({
@@ -115,7 +107,7 @@ export default function News(props) {
                                 <img  style={styles.arrow} src={arrow2} />
                             </div>
                         </Container>
-                        <Container sx={styles.section} >
+                        {/* <Container sx={styles.section} >
                             <Container sx={styles.imageContainer}>
                                 <Image sx={styles.image} src={image1} />
                             </Container>
@@ -156,7 +148,7 @@ PAAQ is the right platform to direct a message or question to anyone based on th
                                     <Image src={collage4} sx={styles.collageImage} />
                                 </Container>
                             </Container>
-                        </Container>
+                        </Container> */}
                     </Container>
                     <AppAndPlayStoreFooter />
                 </Layout>

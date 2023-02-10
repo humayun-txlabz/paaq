@@ -42,7 +42,7 @@ const styles = {
         '@media screen and (max-width: 720px)': {
             fontSize: '24px',
         },
-        fontWeight: '700',
+        fontWeight: '700',  
         fontFamily: 'Sofia-Pro',
         color: '#252F44',
         textTransform: 'capitalize',
@@ -68,7 +68,7 @@ const styles = {
         },
         display: 'flex',
         gap: '10px',
-        marginTop: '15px',
+        paddingRight: '5%',
         flexDirection: 'column',
         '.contact_button_green': {
             borderRadius: 40,

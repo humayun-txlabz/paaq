@@ -153,7 +153,7 @@ export default function Download() {
                       loop={true}
                       playing={true}
                       muted={true}
-                      />
+                      /> 
                     </div>
               )}
               </Container>

@@ -6,7 +6,7 @@ import SEO from "components/seo";
 import Layout from "components/layout";
 import { apiClientContentFulCategory } from "services/apiClient";
 import { StickyProvider } from "../../../contexts/app/app.provider";
-import SingleCategoryHelpCenter from "components/HelpCenter/singleCategoryhelpCenter";
+import SingleCategoryHelpCenter from "../../../components/HelpCenter/singleCategoryHelpCenter";
 
 export const getServerSideProps = async (context) => {
   const { category } = context.params;

@@ -7013,6 +7013,9 @@
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
+    @media (max-width: 767px) {
+      font-size: 22px;
+    }
   }
   &-icon{
     width: 100%;
@@ -7241,4 +7244,13 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+.admin-item-panel{
+  padding-left: 9%;
+  @media (max-width: 767px) {
+    padding-left: 15%;
+    >p{
+      font-size: 18px;
+    }
+  }
 }

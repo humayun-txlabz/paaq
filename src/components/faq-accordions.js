@@ -83,7 +83,9 @@ const FaqAccordion = ({ list }) => {
                                 </AccordionItemButton>
                             </AccordionItemHeading>
                             <AccordionItemPanel>
-                                {documentToReactComponents(item.fields.answer, richTextOptions)}
+                                <div className='admin-item-panel'>
+                                    {documentToReactComponents(item.fields.answer, richTextOptions)}
+                                </div>
                                 {/* <Text sx={styles.accordionPanelText}>{item.fields.answers}</Text> */}
                                 <FeedbackCard />
                                 {item.hints ?
@@ -113,7 +115,7 @@ const FaqAccordion = ({ list }) => {
                             </AccordionItemPanel>
                         </AccordionItem>
                     )
-
+                    
                 })
             }
         </Accordion>
@@ -149,8 +151,8 @@ const styles = {
         width: '70%',
         '@media screen and (max-width: 720px)': {
             width: '80%',
-            fontSize: '1em',
-            lineHeight: '20px',
+            fontSize: '18px',
+            lineHeight: '30px',
         },
         fontWeight: '500',
         fontSize: '40px',

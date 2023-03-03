@@ -115,7 +115,7 @@ export default function News2(props) {
                                 <img  style={styles.arrow} src={arrow2} />
                             </div>
                         </Container>
-                        <Container sx={styles.section} >
+                        {/* <Container sx={styles.section} >
                             <Container sx={styles.imageContainer}>
                                 <Image sx={styles.image} src={image1} />
                             </Container>
@@ -156,7 +156,7 @@ PAAQ is the right platform to direct a message or question to anyone based on th
                                     <Image src={collage4} sx={styles.collageImage} />
                                 </Container>
                             </Container>
-                        </Container>
+                        </Container> */}
                     </Container>
                     <AppAndPlayStoreFooter />
                 </Layout>

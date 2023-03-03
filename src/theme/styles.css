@@ -2186,7 +2186,19 @@ line-height: 42px;
     flex-direction: column;
     gap: 30px;
     width: 90% !important;
-  } 
+  }
+  /* .aboutus-left-section{
+    padding-top: 9%;
+    padding-bottom: 9%;
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+  .aboutus-left-section-heading{
+    font-size: 44px;
+  }
+  .aboutus-left-section-detail{
+    font-size: 14px;
+  } */
 }
 
 .blog-detail-heading1{
@@ -2195,6 +2207,14 @@ line-height: 42px;
   font-family: 'Sofia-Pro';
 }
 
+.background-image-main-mobile{
+  background: url(/bg-aboutus-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 743px;
+  position: relative;
+}
 .background-image-main{
   background: url(/bg-aboutus.png);
   background-repeat: no-repeat;
@@ -2270,6 +2290,62 @@ line-height: 42px;
   position: absolute;
   top: 10%;
   left: -13%;
+}
+@media (max-width: 720px){
+  .aboutus-left-section{
+    padding-right: 9%;
+    padding-top: 21%;
+  }
+  .aboutus-left-section-heading{
+    font-size: 44px;
+  }
+  .aboutus-left-section-detail{
+    font-size: 14px;
+  }
+  .about-section-image1{
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    top: 57%;
+    left: 20%;
+  }
+  .about-section-image2{
+    width: 50px;
+    height: 50px;
+    bottom: 16%;
+    left: 12%;
+    top: 76%;
+    right: 0;
+  }
+  .about-section-image3{
+    width: 73px;
+    height: 73px;
+    left: 17%;
+    bottom: -24px;
+  }
+  .about-section-image4{
+    width: 51px;
+    height: 51px;
+    top: 49%;
+    right: 34%;
+  }
+  .about-section-image5{
+    top: 59%;
+    right: 8%;
+    width: 50px;
+    height: 50px;
+  }
+  .about-section-image6{
+    width: 108px;
+    height: 108px;
+    bottom: 8%;
+    right: 19%;
+  }
+  .about-section-image7{
+    bottom: -3%;
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .dm-card-main{
@@ -3410,6 +3486,58 @@ justify-content: center;
 }
 .spinner-off{
   display: none;
+}
+
+@media (max-width: 746px) {
+  .about-section-icon-play{
+    width: 35px;
+    height: 40px;
+    bottom: 11%;
+    right: 71%;
+  }
+  .about-section-audio{
+      width: 130px;
+      height: 40px;
+      bottom: 11%;
+      right: 40%;
+  }
+  .spinner-item {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 75%;
+    top: 62%;
+  }
+  .interaction-card-main{
+    flex-direction: column;
+    width: 90%;
+    margin-top: 70px;
+  }
+  .interaction-card-left{
+    width: 100%;
+    padding: 0;
+  }
+  .interaction-card-left-heading{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .interaction-card-left-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .interaction-card-right{
+    width: 100%;
+    margin-top: 7%;
+  }
+  .interaction-card-count{
+    font-size: 60px;
+  }
+
 }
  
 

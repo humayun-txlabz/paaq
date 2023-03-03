@@ -5,6 +5,7 @@ import { animated, useSpring } from "react-spring";
 import Waveform from "./waveform";
 import InteractionCard from "./interactionCard";
 import ClapEmoji from "assets/about/clap-emoji.png";
+import ClapEmojiMobile from "assets/about/clap-emoji-mobile.png";
 import DirectMessagesCard from "./directMessagesCard";
 import AboutImage6 from "assets/about/about-image6.png";
 import AboutImage3 from "assets/about/about-image3.png";
@@ -13,13 +14,18 @@ import AboutImage7 from "assets/about/about-image77.png";
 import AboutImage2 from "assets/about/about-image22.png";
 import AboutImage4 from "assets/about/about-image44.png";
 import AboutImage5 from "assets/about/about-image55.png";
+import AboutImage8 from "assets/about/about-image88.png";
 import ThumbsupEmoji from "assets/about/thumbsup-emoji.png";
+import ThumbsupEmojiMobile from "assets/about/thumbsup-emoji-mobile.png";
 import IntImage from "../../assets/about/Imege-yellow3x.png";
 import IntImage2 from "../../assets/about/Imege-green3x.png";
 import IntImage3 from "../../assets/about/Imege-white3x.png";
+import IntImage4 from "../../assets/about/community.png";
 import AppAndPlayStoreFooter from "../appAndPlayStoreFooter";
+import useWindowSize from 'Hooks/windowSize';
 
 const AboutUsMain = () => {
+  const [width] = useWindowSize();
   const [isPlay, setIsPlay] = useState(false);
 
   const poppingOutAnimation = (delay) =>
@@ -35,7 +41,7 @@ const AboutUsMain = () => {
 
   return (
     <>
-      <div className="background-image-main">
+      <div className={width > 760 ? "background-image-main" : "background-image-main-mobile"}>
         <div className="aboutus-left-section">
           <p className="aboutus-left-section-heading">About Us</p>
           <p className="aboutus-left-section-detail">
@@ -48,7 +54,7 @@ const AboutUsMain = () => {
         </div>
         <div className="about-section-image1">
           <animated.div style={poppingOutAnimation(0)}>
-            <Image className="about-section-emoji" src={ClapEmoji} />
+            <Image className="about-section-emoji" src={width > 760 ? ClapEmoji : ClapEmojiMobile} />
             <Image className="main-section-inner" src={AboutImage1} />
           </animated.div>
         </div>
@@ -79,7 +85,7 @@ const AboutUsMain = () => {
         </div>
         <div className="about-section-image5">
           <animated.div style={poppingOutAnimation(2000)}>
-            <Image className="about-section-emoji" src={ThumbsupEmoji} />
+            <Image className="about-section-emoji" src={width > 760 ? ThumbsupEmoji : ThumbsupEmojiMobile} />
             <Image
               className="main-section-inner"
               src={AboutImage5}
@@ -113,14 +119,32 @@ const AboutUsMain = () => {
 
         <Waveform handleClickPlay={handleClickPlay} />
       </div>
+      {
+        width > 760 ? (
+          <DirectMessagesCard />
+        ) : (
+          <InteractionCard
+              alignImageRight={'center'}
+              image={AboutImage8}
+              imageWidth={327}
+              imageHeight={346}
+              heading={"Millions of direct messages are sent daily"}
+              detail={
+                `Millions of direct messages are sent daily to people on social media
+                asking for information about various topics. However, it has become
+                increasingly challenging to respond to every one of these messages,
+                especially if the question is technical.`
+              }
+          />
+        )
+      }
 
-      <DirectMessagesCard />
       <InteractionCard
-        alignImageRight={true}
+        alignImageRight={'end'}
         image={IntImage}
         imageWidth={600}
         imageHeight={567}
-        leftAbsolute={"23%"}
+        leftAbsolute={width > 760 ? "23%" : "13%"}
         count={"02"}
         heading={
           "Human interaction is at the core of PAAQ - the more people connect"
@@ -130,11 +154,12 @@ const AboutUsMain = () => {
         }
       />
       <InteractionCard
-        alignImageRight={false}
+        alignImageRight={'start'}
         image={IntImage2}
         imageWidth={476}
         imageHeight={510}
-        leftAbsolute={"63%"}
+        leftAbsolute={width > 760 ? "63%" : "3%"}
+        topAbsolute={width > 760 ? "20%" : "11%"}
         count={"03"}
         heading={"PAAQ allows users to engage directly with individuals"}
         detail={
@@ -143,11 +168,9 @@ const AboutUsMain = () => {
       />
       <InteractionCard
         alignImageRight={true}
-        image={IntImage3}
+        image={width > 760 ? IntImage3 : IntImage4}
         imageWidth={500}
         imageHeight={500}
-        // leftAbsolute={'23%'}
-        // count={'02'}
         heading={"Our ultimate goal is to create a diverse community"}
         detail={
           "Where everyone can gain knowledge and build relationships without feeling isolated or ignored."

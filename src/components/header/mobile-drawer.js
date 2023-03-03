@@ -4,7 +4,8 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
 import { DrawerContext } from '../../contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
-import { Link } from 'react-scroll';
+import { Link } from 'components/link';
+
 import {
   FaFacebookF,
   FaTwitter,
@@ -61,13 +62,7 @@ const MobileDrawer = () => {
           <Box sx={styles.menu}>
             {menuItems.map(({ path, label }, i) => (
               <Link
-                activeClass="active"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                key={i}
+              path={path}
               >
                 {label}
               </Link>

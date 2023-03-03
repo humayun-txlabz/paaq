@@ -144,19 +144,19 @@ const JobInsightsMain = (props) => {
           </div>
 
           {/* Form Here */}
-          <br style={{ marginTop: "2rem" }} />
-          <JobInsightsForm />
+          {/* <br style={{ marginTop: "2rem" }} />
+          <JobInsightsForm /> */}
         </div>
         <div className="job-insights-main-content-right">
           <Link href={jobItem?.jobLink ?? ''}>
             <div style={{ background: "#0a66c2" }} className="btn">
               <Image src={LinkedInIcon} />
-              <h3 style={{ color: "#fff" }}>Apply With LinkedIn</h3>
+              <h3 style={{ color: "#fff", cursor: 'pointer' }}>Apply With LinkedIn</h3>
             </div>
           </Link>
           <br style={{ marginTop: "1rem" }} />
           <div style={{ background: "#F8F8F8" }} className="btn">
-            <h3 style={{ color: "#000" }}>
+            <h3 style={{ color: "#000", cursor: 'pointer' }}>
               Save this job <span style={{ paddingRight: "0.2rem" }} />{" "}
               <BiHeart />
             </h3>

@@ -65,14 +65,14 @@ const JobsMain = () => {
                       <LeftForm />
                  </div> */}
         <div className="right">
-          {!featuredJobs ? (
+          {/* {!featuredJobs ? (
             <Skeleton height={75} count={5} wrapper={JobSkeleton} />
           ) : featuredJobs?.length > 0 ? (
             <FeaturedJobs
               saveThisJob={(id) => saveThisJob(id)}
               jobs={featuredJobs}
             />
-          ) : null}
+          ) : null} */}
           {!jobs ? (
             <Skeleton height={75} count={10} wrapper={JobSkeleton} />
           ) : jobs?.length > 0 ? (

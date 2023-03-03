@@ -106,7 +106,7 @@ export default function News(props) {
                                  style={styles.circle}>
                                 <img  style={styles.arrow} src={arrow2} />
                             </div>
-                        </Container>
+                        </Container> 
                         {/* <Container sx={styles.section} >
                             <Container sx={styles.imageContainer}>
                                 <Image sx={styles.image} src={image1} />

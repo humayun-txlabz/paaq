@@ -6,9 +6,9 @@ import { savedJobsInLocal } from "services/savedJobsLocalStorage";
 const AllJobsList = ({ jobs, totalPages, goToPage, currentPage }) => {
   return (
     <div className="all-jobs-list-with-pagination">
-      <div className="light-text">
+      {/* <div className="light-text">
         Showing <span>1</span> to <span>20</span> of <span>36</span> jobs
-      </div>
+      </div> */}
       {jobs?.map((item, index) => (
         <SingleJobItem
           key={index}

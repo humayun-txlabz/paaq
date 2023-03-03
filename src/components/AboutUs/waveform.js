@@ -3,6 +3,7 @@ import { animated, useSpring } from "react-spring";
 
 import Image from "next/image";
 import PauseIcon from "../../assets/pauseIcon.svg";
+import useWindowSize from 'Hooks/windowSize';
 
 const formWaveSurferOptions = (ref) => ({
   container: ref,
@@ -12,12 +13,13 @@ const formWaveSurferOptions = (ref) => ({
   barWidth: 3,
   barRadius: 3,
   responsive: true,
-  height: 65,
+  height: window.innerWidth > 760 ? 65 : 32,
   normalize: true,
   partialRender: true,
 });
 
 const Waveform = (props) => {
+  const [width] = useWindowSize();
   const waveformRef = useRef(null);
   const wavesurfer = useRef(null);
   const [playing, setPlaying] = useState(false);
@@ -63,8 +65,8 @@ const Waveform = (props) => {
         <Image
           onClick={() => handlePlayPause()}
           className="pauseicon"
-          width={19}
-          height={19}
+          width={width > 760 ? 19 : 8}
+          height={width > 760 ? 19 : 8}
           src={PauseIcon}
         />
       </div>

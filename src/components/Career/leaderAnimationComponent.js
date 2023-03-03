@@ -8,7 +8,6 @@ import Right2 from "../../assets/Images/careers/right2.png";
 import Right3 from "../../assets/Images/careers/right3.png";
 import Right4 from "../../assets/Images/careers/right4.png";
 import Main from "../../assets/Images/careers/main.png";
-import Xarrow from "react-xarrows";
 import useIsInViewport from "use-is-in-viewport";
 let LeaderLine;
 setTimeout(() => {
@@ -27,6 +26,7 @@ let line8 = null;
 const LeaderAnimationComponent = () => {
   const [isInViewport, targetRef] = useIsInViewport();
   const [isShow, setIsShow] = useState(1);
+  const [showLines, setShowLines] = useState(false);
 
   const left1 = useRef(null);
   const left2 = useRef(null);
@@ -144,6 +144,7 @@ const LeaderAnimationComponent = () => {
         drawLine8();
       }, 2200);
     }
+    setShowLines(true);
   }, [isShow]);
 
   useEffect(() => {
@@ -155,44 +156,46 @@ const LeaderAnimationComponent = () => {
   useEffect(() => {
     return () => {
       console.log("cleaned up", line1, 'LeaderLine', LeaderLine);
-      line1.hide("fade", {
+      line1?.hide("fade", {
         timing: "linear",
         duration: 0,
       });
-      line2.hide("fade", {
+      line2?.hide("fade", {
         timing: "linear",
         duration: 0,
       });
-      line3.hide("fade", {
+      line3?.hide("fade", {
         timing: "linear",
         duration: 0,
       });
-      line4.hide("fade", {
+      line4?.hide("fade", {
         timing: "linear",
         duration: 0,
       });
-      line5.hide("fade", {
+      line5?.hide("fade", {
         timing: "linear",
         duration: 0,
       });
-      line6.hide("fade", {
+      line6?.hide("fade", {
         timing: "linear",
         duration: 0,
       });
-      line7.hide("fade", {
+      line7?.hide("fade", {
         timing: "linear",
         duration: 0,
       });
-      line8.hide("fade", {
+      line8?.hide("fade", {
         timing: "linear",
         duration: 0,
       });
       // LeaderLine = null;
+      setShowLines(false);
     };
   }, []);
 
   return (
     <>
+    {showLines && (
       <div
         ref={targetRef}
         className="leader-animation-component web-leader-animation-component"
@@ -240,6 +243,7 @@ const LeaderAnimationComponent = () => {
         />
         <img ref={main} className="main" src={Main} />
       </div>
+    )}
 
       <div className="leader-animation-component mobile-leader-animation-component">
         <img className="left1 left1la" src={Left1} />

@@ -2186,19 +2186,7 @@ line-height: 42px;
     flex-direction: column;
     gap: 30px;
     width: 90% !important;
-  }
-  /* .aboutus-left-section{
-    padding-top: 9%;
-    padding-bottom: 9%;
-    padding-left: 9%;
-    padding-right: 9%;
-  }
-  .aboutus-left-section-heading{
-    font-size: 44px;
-  }
-  .aboutus-left-section-detail{
-    font-size: 14px;
-  } */
+  } 
 }
 
 .blog-detail-heading1{

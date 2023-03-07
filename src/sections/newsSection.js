@@ -12,8 +12,8 @@ const NewsSection = ({ list }) => {
                         <Text sx={styles.title}>{item.fields.title}</Text>
                         <Text sx={styles.detail}>{item.fields.description}</Text>
                         <Link
-                            href="/new/[id]"
-                            as={`/new/${item?.sys?.id}`}
+                            href="/news/[id]"
+                            as={`/news/${item?.sys?.id}`}
                         >
                             <Button className={index === 1 ? "contact_button_green" : "contact_button"} aria-label="Read More">
                                 Read More

@@ -26,25 +26,6 @@ export const getStaticProps = async (context) => {
   };
 };
 
-// export const getStaticPaths = async () => {
-//   const posts = await client
-//     .getEntries({
-//       content_type: "mainBlogs",
-//     })
-//     .then((response) => {
-//       return response;
-//     })
-//     .catch(console.error);
-
-//   const ids = posts.items.map((item) => item?.sys?.id);
-
-//   const paths = ids.map((id) => ({ params: { id: id.toString() } }));
-
-//   console.log('PATHSSS >>>>>', paths)
-
-//   return { paths, fallback: false };
-// };
-
 export const getStaticPaths = async () =>{
   const posts = await client
       .getEntries({

@@ -39,11 +39,9 @@ const JobsMain = () => {
 
   useEffect(() => {
      var skip = (currentPage - 1 ) * resultsPerPage;
-     console.log('skipelem', Math.ceil(skip));
 
     apiClientContentFul("jobs", Math.ceil(skip), resultsPerPage).then((res) => {
       const totalP = Math.round(res?.total / resultsPerPage);
-      console.log("totalPages", totalP);
       setTotalPages(totalP);
       setJobs(
         res?.items?.map((item) => {

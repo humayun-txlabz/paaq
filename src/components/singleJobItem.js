@@ -12,7 +12,6 @@ const SingleJobItem = ({item, key, type}) => {
 
      useEffect(() => {
           const value = savedJobsInLocal.getSelected(item.id);
-          console.log(item.id, value);
           setIsGrad(value);
      }, []);
 

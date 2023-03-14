@@ -1,27 +1,28 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import React, { useState, useEffect } from 'react';
-import { jsx, Image } from 'theme-ui';
-import ReactPlayer from 'react-player';
+import React, { useState, useEffect } from "react";
+import { jsx, Image } from "theme-ui";
+import ReactPlayer from "react-player";
 
-import { Container, Box, Button } from 'theme-ui';
+import { Container, Box, Button } from "theme-ui";
 import { animated, useSprings, useSpring, to, update } from "react-spring";
-import BannerImg from 'assets/banner-phone.png';
-import MainImage1 from 'assets/Images/main1.png';
-import MainImage2 from 'assets/Images/earn3.png';
-import MainImage3 from 'assets/Images/main3.png';
-import MainImage4 from 'assets/Images/main9.png';
-import MainImage5 from 'assets/Images/main7.png';
-import MainImage6 from 'assets/Images/main8.png';
-import MainImage7 from 'assets/Images/main6.png';
-import MainImage8 from 'assets/Images/main22.png';
-import MainImage9 from 'assets/Images/main44.png';
-import MainImage10 from 'assets/Images/main5.png';
-import MainImage11 from 'assets/Images/main2.png';
-import bann from 'assets/bannerMobileView.png'
-import SpeakerIcon from 'assets/Icons/whitespeaker.png';
-import FadeAnimation from 'components/fadeAnimation';
- 
+import BannerImg from "assets/banner-phone.png";
+import MainImage1 from "assets/Images/main1.png";
+import MainImage2 from "assets/Images/earn3.png";
+import MainImage3 from "assets/Images/main3.png";
+import MainImage4 from "assets/Images/main9.png";
+import MainImage5 from "assets/Images/main7.png";
+import MainImage6 from "assets/Images/main8.png";
+import MainImage7 from "assets/Images/main6.png";
+import MainImage8 from "assets/Images/main22.png";
+import MainImage9 from "assets/Images/main44.png";
+import MainImage10 from "assets/Images/main5.png";
+import MainImage11 from "assets/Images/main2.png";
+import bann from "assets/bannerMobileView.png";
+import SpeakerIcon from "assets/Icons/whitespeaker.png";
+import FadeAnimation from "components/fadeAnimation";
+import Link from "next/link";
+import Online from "components/OnlineStatus/Online";
 
 export default function Banner() {
   const svgRef = React.createRef();
@@ -36,15 +37,14 @@ export default function Banner() {
     to: { x: -350 },
     delay: 0,
     config: { duration: 8000 },
-    onRest: () => update(16000)
+    onRest: () => update(16000),
   }));
   const [style2, setStyle2] = useSpring(() => ({
     from: { x: 420 },
     to: { x: -600 },
     delay: 8000,
     config: { duration: 8000 },
-    onRest: () => update2(16000)
-
+    onRest: () => update2(16000),
   }));
 
   const update = (delay) => {
@@ -54,32 +54,31 @@ export default function Banner() {
       delay: delay,
       config: { duration: 8000 },
       loop: true,
-    })
-  }
+    });
+  };
   const update2 = (delay) => {
-
     setStyle2({
       from: { x: 420 },
       to: { x: -600 },
       delay: delay,
       config: { duration: 8000 },
-    })
-  }
+    });
+  };
 
   const style3 = useSpring({
     from: { x: 320 },
     to: { x: -900 },
     delay: 15400,
     config: { duration: 8000 },
-    loop: true
-
-  })
-
-  const poppingOutAnimation = (delay) => useSpring({
-    from: { x: 0, y: 0, zoom: 0, scale: 0 },
-    to: { x: 0, y: 0, zoom: 1, scale: 1 },
-    delay: delay
+    loop: true,
   });
+
+  const poppingOutAnimation = (delay) =>
+    useSpring({
+      from: { x: 0, y: 0, zoom: 0, scale: 0 },
+      to: { x: 0, y: 0, zoom: 1, scale: 1 },
+      delay: delay,
+    });
 
   const [anim1, setAnim1] = useSpring(() => ({
     from: { x: 0, y: 0, opacity: 0, scale: 0 },
@@ -91,7 +90,7 @@ export default function Banner() {
     delay: 2000,
     config: { duration: 500 },
 
-    onRest: () => update3(1)
+    onRest: () => update3(1),
   }));
   const [anim2, setAnim2] = useSpring(() => ({
     from: { x: 0, y: 0, opacity: 0, scale: 0 },
@@ -102,7 +101,7 @@ export default function Banner() {
     delay: 5500,
     config: { duration: 500 },
 
-    onRest: () => update3(2)
+    onRest: () => update3(2),
   }));
   const [anim3, setAnim3] = useSpring(() => ({
     from: { x: 0, y: 0, opacity: 0, scale: 0 },
@@ -113,7 +112,7 @@ export default function Banner() {
     delay: 9000,
     config: { duration: 500 },
 
-    onRest: () => update3(3)
+    onRest: () => update3(3),
   }));
   const [anim4, setAnim4] = useSpring(() => ({
     from: { x: 0, y: 0, opacity: 0, scale: 0 },
@@ -125,7 +124,7 @@ export default function Banner() {
     // delay: 0,
     config: { duration: 500 },
 
-    onRest: () => update3(4)
+    onRest: () => update3(4),
   }));
   const [anim5, setAnim5] = useSpring(() => ({
     from: { x: 0, y: 0, opacity: 0, scale: 0 },
@@ -136,7 +135,7 @@ export default function Banner() {
     delay: 16500,
     config: { duration: 500 },
 
-    onRest: () => update3(5)
+    onRest: () => update3(5),
   }));
   const [anim6, setAnim6] = useSpring(() => ({
     from: { x: 0, y: 0, opacity: 0, scale: 0 },
@@ -147,7 +146,7 @@ export default function Banner() {
     delay: 20000,
     config: { duration: 500 },
 
-    onRest: () => update3(6)
+    onRest: () => update3(6),
   }));
   const [anim7, setAnim7] = useSpring(() => ({
     from: { x: 0, y: 0, opacity: 0, scale: 0 },
@@ -158,7 +157,7 @@ export default function Banner() {
     delay: 24000,
     config: { duration: 500 },
 
-    onRest: () => update3(7)
+    onRest: () => update3(7),
   }));
   const [anim8, setAnim8] = useSpring(() => ({
     from: { x: 0, y: 0, opacity: 0, scale: 0 },
@@ -169,7 +168,7 @@ export default function Banner() {
     delay: 28000,
     config: { duration: 500 },
 
-    onRest: () => update3(8)
+    onRest: () => update3(8),
   }));
 
   const [anim9, setAnim9] = useSpring(() => ({
@@ -182,9 +181,8 @@ export default function Banner() {
     // delay: 0,
     config: { duration: 500 },
 
-    onRest: () => update3(9)
+    onRest: () => update3(9),
   }));
-
 
   const update3 = (value) => {
     let obj = {
@@ -196,240 +194,381 @@ export default function Banner() {
       delay: 31700,
       config: { duration: 500 },
       loop: true,
-    }
+    };
     switch (value) {
       case 1:
-        setAnim1(obj)
+        setAnim1(obj);
         break;
       case 2:
-        setAnim2(obj)
+        setAnim2(obj);
         break;
       case 3:
-        setAnim3(obj)
+        setAnim3(obj);
         break;
       case 4:
-        setAnim4(obj)
+        setAnim4(obj);
         break;
       case 5:
-        setAnim5(obj)
+        setAnim5(obj);
         break;
       case 6:
-        setAnim6(obj)
+        setAnim6(obj);
         break;
       case 7:
-        setAnim7(obj)
+        setAnim7(obj);
         break;
       case 8:
-        setAnim8(obj)
+        setAnim8(obj);
         break;
       default:
-        setAnim9(obj)
-
+        setAnim9(obj);
     }
-  }
-
-
+  };
 
   const handleSpeakerClick = () => {
     svgRef.current?.play();
   };
 
-  const textAnimation = (delay) => useSpring({
-    from: { x: 0, y: 0, opacity: 0 },
-    to: { x: 0, y: 0, opacity: 1 },
-    delay: delay,
-    config: { mass: 1, tension: 180, friction: 12 },
-    velocity: 10,
-  });
+  const textAnimation = (delay) =>
+    useSpring({
+      from: { x: 0, y: 0, opacity: 0 },
+      to: { x: 0, y: 0, opacity: 1 },
+      delay: delay,
+      config: { mass: 1, tension: 180, friction: 12 },
+      velocity: 10,
+    });
 
   return (
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
-
-          <div className='main-section-image1' style={{ maxWidth: 60, maxHeight: 60 }}>
-            <animated.div style={poppingOutAnimation(0)} >
-              <Image className='main-section-inner main-section-inner-image1' src={MainImage1} />
+          <div
+            className="main-section-image1"
+            style={{ maxWidth: 60, maxHeight: 60 }}
+          >
+            <animated.div style={poppingOutAnimation(0)}>
+              <Image
+                className="main-section-inner main-section-inner-image1"
+                src={MainImage1}
+              />
+              <Online width={14} height={14} left={45} bottom={38} />
             </animated.div>
           </div>
 
-          <div className='main-section-image2'>
-              <animated.div style={poppingOutAnimation(1100)} >
-                <Image className='main-section-inner main-section-inner-image2' src={MainImage2} />
-                <animated.div style={{  ...anim1, position: 'absolute', }} className='main-section-image2-nametag-container'>
-                  <div className='main-section-image2-nametag'>
-                    <span className='nametag-title'>Micheal Keen</span>
-                    <span className='nametag-designation'>Pilot</span>
-                  </div>
-                </animated.div>
+          <div className="main-section-image2">
+            <animated.div style={poppingOutAnimation(1100)}>
+              <Image
+                className="main-section-inner main-section-inner-image2"
+                src={MainImage2}
+              />
+              <Online
+                width={16}
+                height={16}
+                left={76}
+                bottom={80}
+                display="block"
+              />
+              <animated.div
+                style={{ ...anim1, position: "absolute" }}
+                className="main-section-image2-nametag-container"
+              >
+                <div className="main-section-image2-nametag">
+                  <span className="nametag-title">Micheal Keen</span>
+                  <span className="nametag-designation">Pilot</span>
+                </div>
               </animated.div>
-          </div>
-
-          <div className='main-section-image3'>
-            <animated.div style={poppingOutAnimation(500)} >
-                <Image className='main-section-inner main-section-inner-image3' src={MainImage3} />
-                <animated.div style={{ position: 'absolute', ...anim8 }} className='main-section-image2-nametag-containerleft' >
-                  <div className='main-section-image2-nametagleft'>
-                    <span className='nametag-title'>Sandra Lue</span>
-                    <span className='nametag-designation'>Beautician</span>
-                  </div>
-                </animated.div>
             </animated.div>
           </div>
 
-          <div className='main-section-image4'>
-            <animated.div style={poppingOutAnimation(800)} >
-                <Image className='main-section-inner main-section-inner-image4' src={MainImage4} />
-                <animated.div style={{ position: 'absolute', ...anim6 }} className='main-section-image2-nametag-container' id='main-section-image2-nametag-container4' >
-                  <div className='main-section-image2-nametag'  id='main-section-image2-nametag4' style={{ minWidth: 193 }}>
-                    <span className='nametag-title'>John Hassel</span>
-                    <span className='nametag-designation'>Software Engineer</span>
-                  </div>
-                </animated.div>
+          <div className="main-section-image3">
+            <animated.div style={poppingOutAnimation(500)}>
+              <Image
+                className="main-section-inner main-section-inner-image3"
+                src={MainImage3}
+              />
+              <Online width={14} height={14} left={48} bottom={40} />
+
+              <animated.div
+                style={{ position: "absolute", ...anim8 }}
+                className="main-section-image2-nametag-containerleft"
+              >
+                <div className="main-section-image2-nametagleft">
+                  <span className="nametag-title">Sandra Lue</span>
+                  <span className="nametag-designation">Beautician</span>
+                </div>
+              </animated.div>
             </animated.div>
           </div>
 
-          <div className='main-section-image5'>
-            <animated.div style={poppingOutAnimation(1200)} >
-                <Image className='main-section-inner main-section-inner-image5' src={MainImage5} />
-                <animated.div style={{ position: 'absolute', ...anim3 }} className='main-section-image2-nametag-container' >
-                  <div className='main-section-image2-nametag' id='main-section-image2-nametag-container5'>
-                    <span className='nametag-title'>Daniella Fox</span>
-                    <span className='nametag-designation'>Accountant</span>
-                  </div>
-                </animated.div>
+          <div className="main-section-image4">
+            <animated.div style={poppingOutAnimation(800)}>
+              <Image
+                className="main-section-inner main-section-inner-image4"
+                src={MainImage4}
+              />
+              <Online
+                width={16}
+                height={16}
+                left={76}
+                bottom={80}
+                display="block"
+              />
+              <animated.div
+                style={{ position: "absolute", ...anim6 }}
+                className="main-section-image2-nametag-container"
+                id="main-section-image2-nametag-container4"
+              >
+                <div
+                  className="main-section-image2-nametag"
+                  id="main-section-image2-nametag4"
+                  style={{ minWidth: 193 }}
+                >
+                  <span className="nametag-title">John Hassel</span>
+                  <span className="nametag-designation">Software Engineer</span>
+                </div>
+              </animated.div>
             </animated.div>
           </div>
 
-          <div className='main-section-image6'>
-            <animated.div style={poppingOutAnimation(900)} >
-                <Image className='main-section-inner main-section-inner-image6' src={MainImage6} />
-                <animated.div style={{ position: 'absolute', ...anim2 }} className='main-section-image2-nametag-container' >
-                  <div className='main-section-image2-nametag'>
-                    <span className='nametag-title'>Brian Walker</span>
-                    <span className='nametag-designation'>Athelete</span>
-                  </div>
-                </animated.div>
+          <div className="main-section-image5">
+            <animated.div style={poppingOutAnimation(1200)}>
+              <Image
+                className="main-section-inner main-section-inner-image5"
+                src={MainImage5}
+              />
+              <Online width={14} height={14} left={60} bottom={60} />
+              <animated.div
+                style={{ position: "absolute", ...anim3 }}
+                className="main-section-image2-nametag-container"
+              >
+                <div
+                  className="main-section-image2-nametag"
+                  id="main-section-image2-nametag-container5"
+                >
+                  <span className="nametag-title">Daniella Fox</span>
+                  <span className="nametag-designation">Accountant</span>
+                </div>
+              </animated.div>
             </animated.div>
           </div>
 
-          <div className='main-section-image7'>
-            <animated.div style={poppingOutAnimation(600)} >
-                <Image className='main-section-inner main-section-inner-image7' src={MainImage7} />
-                <animated.div style={{ position: 'absolute', ...anim9 }} className='main-section-image2-nametag-container' id="main-section-image2-nametag-container7" >
-                  <div className='main-section-image2-nametag' id='main-section-image2-nametag7' style={{ minWidth: 202 }}>
-                    <span className='nametag-title'>Sue Chan</span>
-                    <span className='nametag-designation'>Marteking Manager</span>
-                  </div>
-                </animated.div>
+          <div className="main-section-image6">
+            <animated.div style={poppingOutAnimation(900)}>
+              <Image
+                className="main-section-inner main-section-inner-image6"
+                src={MainImage6}
+              />
+              <Online width={12} height={12} left={34} bottom={30} />
+              <animated.div
+                style={{ position: "absolute", ...anim2 }}
+                className="main-section-image2-nametag-container"
+              >
+                <div className="main-section-image2-nametag">
+                  <span className="nametag-title">Brian Walker</span>
+                  <span className="nametag-designation">Athelete</span>
+                </div>
+              </animated.div>
             </animated.div>
           </div>
 
-          <div className='main-section-image8'>
-            <animated.div style={poppingOutAnimation(1300)} >
-                <Image className='main-section-inner main-section-inner-image8' id="main-section-inner-image8" src={MainImage8} />
-                <animated.div style={{  ...anim4, position: 'absolute' }} className='main-section-image2-nametag-containerleft' id="main-section-image2-nametag-containerleft8" >
-                  <div className='main-section-image2-nametagleft' id="main-section-image2-nametag8">
-                    <span className='nametag-title'>Aisha Ali</span>
-                    <span className='nametag-designation'>Philosophy Student</span>
-                  </div>
-                </animated.div>
+          <div className="main-section-image7">
+            <animated.div style={poppingOutAnimation(600)}>
+              <Image
+                className="main-section-inner main-section-inner-image7"
+                src={MainImage7}
+              />
+              <Online
+                width={12}
+                height={12}
+                left={46}
+                bottom={42}
+                display="block"
+              />
+              <animated.div
+                style={{ position: "absolute", ...anim9 }}
+                className="main-section-image2-nametag-container"
+                id="main-section-image2-nametag-container7"
+              >
+                <div
+                  className="main-section-image2-nametag"
+                  id="main-section-image2-nametag7"
+                  style={{ minWidth: 202 }}
+                >
+                  <span className="nametag-title">Sue Chan</span>
+                  <span className="nametag-designation">Marteking Manager</span>
+                </div>
+              </animated.div>
             </animated.div>
           </div>
 
-          <div className='main-section-image9'>
-            <animated.div style={poppingOutAnimation(300)} >
-                <Image className='main-section-inner main-section-inner-image9' src={MainImage9} />
-                <animated.div style={{ position: 'absolute', ...anim5 }} className='main-section-image2-nametag-container' id="main-section-image2-nametag-container9" >
-                  <div className='main-section-image2-nametag'>
-                    <span className='nametag-title'>Daniel Trump</span>
-                    <span className='nametag-designation'>Professor</span>
-                  </div>
-                </animated.div>
+          <div className="main-section-image8">
+            <animated.div style={poppingOutAnimation(1300)}>
+              <Image
+                className="main-section-inner main-section-inner-image8"
+                id="main-section-inner-image8"
+                src={MainImage8}
+              />
+              <Online width={16} height={16} left={74} bottom={78} />
+              <animated.div
+                style={{ ...anim4, position: "absolute" }}
+                className="main-section-image2-nametag-containerleft"
+                id="main-section-image2-nametag-containerleft8"
+              >
+                <div
+                  className="main-section-image2-nametagleft"
+                  id="main-section-image2-nametag8"
+                >
+                  <span className="nametag-title">Aisha Ali</span>
+                  <span className="nametag-designation">
+                    Philosophy Student
+                  </span>
+                </div>
+              </animated.div>
             </animated.div>
           </div>
 
-          <div className='main-section-image10' style={{ maxWidth: 64, maxHeight: 64 }}>
-            <animated.div style={poppingOutAnimation(700)}>
-              <Image style={{ minWidth: 64, minHeight: 64 }} className='main-section-inner main-section-inner-image10' src={MainImage10} />
-            </animated.div>
-          </div>
-
-          <div className='main-section-image11' >
-            <animated.div style={poppingOutAnimation(1000)} >
-                <Image className='main-section-inner main-section-inner-image11' src={MainImage11} />
-                <animated.div style={{ position: 'absolute', ...anim7 }} className='main-section-image2-nametag-container' id='main-section-image2-nametag-container11'>
-                  <div className='main-section-image2-nametag'>
-                    <span className='nametag-title'>Thabo Khoza</span>
-                    <span className='nametag-designation'>Artist</span>
-                  </div>
-                </animated.div>
+          <div className="main-section-image9">
+            <animated.div style={poppingOutAnimation(300)}>
+              <Image
+                className="main-section-inner main-section-inner-image9"
+                src={MainImage9}
+              />
+              <Online
+                width={16}
+                height={16}
+                left={76}
+                bottom={80}
+                display="block"
+              />
+              <animated.div
+                style={{ position: "absolute", ...anim5 }}
+                className="main-section-image2-nametag-container"
+                id="main-section-image2-nametag-container9"
+              >
+                <div className="main-section-image2-nametag">
+                  <span className="nametag-title">Daniel Trump</span>
+                  <span className="nametag-designation">Professor</span>
+                </div>
+              </animated.div>
             </animated.div>
           </div>
 
           <div
-            // onClick={()=> router.push('/blogs')} 
-            className='banner-titel-mobile'
+            className="main-section-image10"
+            style={{ maxWidth: 64, maxHeight: 64 }}
+          >
+            <animated.div style={poppingOutAnimation(700)}>
+              <Image
+                style={{ minWidth: 64, minHeight: 64 }}
+                className="main-section-inner main-section-inner-image10"
+                src={MainImage10}
+              />
+              <Online width={14} height={14} left={48} bottom={40} />
+            </animated.div>
+          </div>
+
+          <div className="main-section-image11">
+            <animated.div style={poppingOutAnimation(1000)}>
+              <Image
+                className="main-section-inner main-section-inner-image11"
+                src={MainImage11}
+              />
+              <Online width={16} height={16} left={82} bottom={82} />
+              <animated.div
+                style={{ position: "absolute", ...anim7 }}
+                className="main-section-image2-nametag-container"
+                id="main-section-image2-nametag-container11"
+              >
+                <div className="main-section-image2-nametag">
+                  <span className="nametag-title">Thabo Khoza</span>
+                  <span className="nametag-designation">Artist</span>
+                </div>
+              </animated.div>
+            </animated.div>
+          </div>
+
+          <div
+            // onClick={()=> router.push('/blogs')}
+            className="banner-titel-mobile"
             style={styles.bannerTitle}
           >
-
-            <div className='box  title1'>
-              PAAQ
-            </div>
-            <div className='box2' style={{fontSize: '65px'}}>
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <animated.div style={textAnimation(4000)} >
-
-                  <p className='box3'>Please</p>
+            <div className="box  title1">PAAQ</div>
+            <div className="box2" style={{ fontSize: "65px" }}>
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <animated.div style={textAnimation(4000)}>
+                  <p className="box3">Please</p>
                 </animated.div>
-                <animated.div style={textAnimation(4500)} >
-
-                  <p className='box4'>Ask</p>
+                <animated.div style={textAnimation(4500)}>
+                  <p className="box4">Ask</p>
                 </animated.div>
-
               </div>
-              <div style={{ display: 'flex', justifyContent: 'center', marginTop: '-18px' }}>
-                <animated.div style={textAnimation(5000)} >
-                  <p className='box5'>Any</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  marginTop: "-18px",
+                }}
+              >
+                <animated.div style={textAnimation(5000)}>
+                  <p className="box5">Any</p>
                 </animated.div>
-                <animated.div style={textAnimation(5500)} >
-
-                  <p className='box6'>Question</p>
+                <animated.div style={textAnimation(5500)}>
+                  <p className="box6">Question</p>
                 </animated.div>
-
               </div>
             </div>
           </div>
-          <div style={styles.bannerTitleMobile}
-            className="banner-titel-mobile">
+          <div style={styles.bannerTitleMobile} className="banner-titel-mobile">
             Earn money by answering questions based on <br />
             your skills and knowledge.
           </div>
-          <Button className='getstarted-button' >Get Started</Button>
-
+          <Link href={"/download"}>
+            <Button className="getstarted-button">Get Started</Button>
+          </Link>
         </Box>
-        <div className='banner-info-box'>
-          <div className='banner-info-text-container' style={{ color: 'white', width: '60%', textAlign: 'left', overflow: 'hidden' }}>
-            <div className="main-mobile-what-text" style={{ display: 'flex', alignItems: 'center', }}>
-
-              <div className='mobile-what-text' style={{  fontWeight: 'bold', fontFamily: 'Sofia-Pro', marginRight: 15 }}>
+        <div className="banner-info-box">
+          <div
+            className="banner-info-text-container"
+            style={{
+              color: "white",
+              width: "60%",
+              textAlign: "left",
+              overflow: "hidden",
+            }}
+          >
+            <div
+              className="main-mobile-what-text"
+              style={{ display: "flex", alignItems: "center" }}
+            >
+              <div
+                className="mobile-what-text"
+                style={{
+                  fontWeight: "bold",
+                  fontFamily: "Sofia-Pro",
+                  marginRight: 15,
+                }}
+              >
                 What is PAAQ
               </div>
-              <Image className='mobile-speaker-icon' src={SpeakerIcon}  onClick={() => handleSpeakerClick()} />
-              <audio ref={svgRef} id="audio" src='/paaq-audio.mp3' ></audio>
-
+              <Image
+                className="mobile-speaker-icon"
+                src={SpeakerIcon}
+                onClick={() => handleSpeakerClick()}
+              />
+              <audio ref={svgRef} id="audio" src="/paaq-audio.mp3"></audio>
             </div>
 
-            <div className='web-show-paaq-text' style={{}}>
-
+            <div className="web-show-paaq-text" style={{}}>
               “PAAQ is a question-and-answer social media application that
-              connects experts in their field with people interested in their craft
-              socially and professionally.”
-              <br /><br />
-              With PAAQ, you can directly ask a question to someone who can provide an informed, 
-              detailed answer to your query, based on their experience and expertise. This is 
-              different from the results you get from a search engine, which are more general 
-              and don’t provide tailored solutions to your specific questions.
+              connects experts in their field with people interested in their
+              craft socially and professionally.”
+              <br />
+              <br />
+              With PAAQ, you can directly ask a question to someone who can
+              provide an informed, detailed answer to your query, based on their
+              experience and expertise. This is different from the results you
+              get from a search engine, which are more general and don’t provide
+              tailored solutions to your specific questions.
             </div>
             {/* <div className='mobile-show-paaq-text' style={{
               fontSize: 18, marginTop: 20, lineHeight: 1.5, fontWeight: 'lighter',
@@ -452,22 +591,33 @@ export default function Banner() {
 
               <animated.div style={{ fontFamily: 'Sofia-Pro', opacity: '0.6', fontSize: '15px', ...style3 }}>Morning Michel, My pet is feeling dizziness</animated.div>
             </animated.div> */}
-
           </div>
-          <div className='banner-info-text-container2' style={{ color: 'white', fontSize: 18, fontFamily: 'Sofia-Pro', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '40%', overflow: 'hidden' }}>
-          {domLoaded && (
-            <div className='player-wrapper'>
-            <ReactPlayer 
-              className='react-player-about'
-              url='gifs/PostInformation.mov'
-              width='100%'
-              height='100%'
-              loop={true}
-              playing={true}
-              muted={true}
-            />
-            </div>
-          )}
+          <div
+            className="banner-info-text-container2"
+            style={{
+              color: "white",
+              fontSize: 18,
+              fontFamily: "Sofia-Pro",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "40%",
+              overflow: "hidden",
+            }}
+          >
+            {domLoaded && (
+              <div className="player-wrapper">
+                <ReactPlayer
+                  className="react-player-about"
+                  url="gifs/PostInformation.mov"
+                  width="100%"
+                  height="100%"
+                  loop={true}
+                  playing={true}
+                  muted={true}
+                />
+              </div>
+            )}
           </div>
         </div>
       </Container>
@@ -479,24 +629,24 @@ const styles = {
   banner: {
     // pt: ['90px', '90px', '95px', '100px', null, null, '110px', '110px'],
     pb: [2, null, 0, null, 2, 0, null, 5],
-    position: 'relative',
+    position: "relative",
     zIndex: 2,
 
     container: {
-      minHeight: 'inherit',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
+      minHeight: "inherit",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
     },
     contentBox: {
       marginTop: 50,
-      width: ['100%', '90%', '100%', null, '57%', '60%', '68%', '60%'],
-      mx: 'auto',
-      textAlign: 'center',
-      mb: ['40px', null, null, null, null, 7],
-      position: 'relative',
-      paddingBottom: '18%',
-      paddingTop: '10%',
+      width: ["100%", "90%", "100%", null, "57%", "60%", "68%", "60%"],
+      mx: "auto",
+      textAlign: "center",
+      mb: ["40px", null, null, null, null, 7],
+      position: "relative",
+      paddingBottom: "18%",
+      paddingTop: "10%",
     },
     // '.banner-title': {
     //   textAlign: 'center',
@@ -508,31 +658,30 @@ const styles = {
     // }
   },
   bannerTitle: {
-    display: 'flex',
-    justifyContent: 'center',
-    position: 'absolute',
-    width: '100%',
+    display: "flex",
+    justifyContent: "center",
+    position: "absolute",
+    width: "100%",
     top: 0,
+    cursor: "default",
   },
   bannerTitleMobile: {
-    margin: '30px 0px',
-    fontFamily: 'Sofia-Pro',
+    margin: "30px 0px",
+    fontFamily: "Sofia-Pro",
     fontWeight: 400,
-    color: 'black',
+    color: "black",
     lineHeight: 1.2,
     fontSize: 20,
-    '@media screen and (max-width: 720px)': {
-      marginTop: '0px !important',
-      marginBottom: '10px !important',
-      fontSize: '10px !important',
+    "@media screen and (max-width: 720px)": {
+      marginTop: "0px !important",
+      marginBottom: "10px !important",
+      fontSize: "10px !important",
     },
   },
   bannerWhatText: {
     fontSize: 60,
-    fontWeight: 'bold',
-    fontFamily: 'Sofia-Pro',
+    fontWeight: "bold",
+    fontFamily: "Sofia-Pro",
     marginRight: 15,
-    
   },
- 
 };

@@ -105,7 +105,7 @@ const SectionMyProfession =() => {
                       <img src={Image8} className="icon" />
                       <div>Accountant</div>
                  </div>
-                 <div className="logo">
+                 <div className="logo" >
                       <img src={Logo} className="icon" />
                  </div>
             </div>

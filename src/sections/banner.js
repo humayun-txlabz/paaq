@@ -21,12 +21,13 @@ import MainImage11 from "assets/Images/main2.png";
 import bann from "assets/bannerMobileView.png";
 import SpeakerIcon from "assets/Icons/whitespeaker.png";
 import FadeAnimation from "components/fadeAnimation";
-import Link from "next/link";
-import Online from "components/OnlineStatus/Online";
 
 export default function Banner() {
   const svgRef = React.createRef();
   const [domLoaded, setDomLoaded] = useState(false);
+  const [isTruncated, setIsTruncated] = useState(true);
+
+  console.log("isTruncated", isTruncated);
 
   useEffect(() => {
     setDomLoaded(true);
@@ -72,6 +73,9 @@ export default function Banner() {
     config: { duration: 8000 },
     loop: true,
   });
+
+  const textLen =
+    "With PAAQ, you can directly ask a question to someone who can provide an informed, detailed answer to your query, based on their experience and expertise. This is different from the results you get from a search engine, which are more general and don’t provide tailored solutions to your specific questions.";
 
   const poppingOutAnimation = (delay) =>
     useSpring({
@@ -251,7 +255,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image1"
                 src={MainImage1}
               />
-              <Online width={14} height={14} left={45} bottom={38} />
             </animated.div>
           </div>
 
@@ -260,13 +263,6 @@ export default function Banner() {
               <Image
                 className="main-section-inner main-section-inner-image2"
                 src={MainImage2}
-              />
-              <Online
-                width={16}
-                height={16}
-                left={76}
-                bottom={80}
-                display="block"
               />
               <animated.div
                 style={{ ...anim1, position: "absolute" }}
@@ -286,8 +282,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image3"
                 src={MainImage3}
               />
-              <Online width={14} height={14} left={48} bottom={40} />
-
               <animated.div
                 style={{ position: "absolute", ...anim8 }}
                 className="main-section-image2-nametag-containerleft"
@@ -305,13 +299,6 @@ export default function Banner() {
               <Image
                 className="main-section-inner main-section-inner-image4"
                 src={MainImage4}
-              />
-              <Online
-                width={16}
-                height={16}
-                left={76}
-                bottom={80}
-                display="block"
               />
               <animated.div
                 style={{ position: "absolute", ...anim6 }}
@@ -336,7 +323,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image5"
                 src={MainImage5}
               />
-              <Online width={14} height={14} left={60} bottom={60} />
               <animated.div
                 style={{ position: "absolute", ...anim3 }}
                 className="main-section-image2-nametag-container"
@@ -358,7 +344,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image6"
                 src={MainImage6}
               />
-              <Online width={12} height={12} left={34} bottom={30} />
               <animated.div
                 style={{ position: "absolute", ...anim2 }}
                 className="main-section-image2-nametag-container"
@@ -376,13 +361,6 @@ export default function Banner() {
               <Image
                 className="main-section-inner main-section-inner-image7"
                 src={MainImage7}
-              />
-              <Online
-                width={12}
-                height={12}
-                left={46}
-                bottom={42}
-                display="block"
               />
               <animated.div
                 style={{ position: "absolute", ...anim9 }}
@@ -408,7 +386,6 @@ export default function Banner() {
                 id="main-section-inner-image8"
                 src={MainImage8}
               />
-              <Online width={16} height={16} left={74} bottom={78} />
               <animated.div
                 style={{ ...anim4, position: "absolute" }}
                 className="main-section-image2-nametag-containerleft"
@@ -433,13 +410,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image9"
                 src={MainImage9}
               />
-              <Online
-                width={16}
-                height={16}
-                left={76}
-                bottom={80}
-                display="block"
-              />
               <animated.div
                 style={{ position: "absolute", ...anim5 }}
                 className="main-section-image2-nametag-container"
@@ -463,7 +433,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image10"
                 src={MainImage10}
               />
-              <Online width={14} height={14} left={48} bottom={40} />
             </animated.div>
           </div>
 
@@ -473,7 +442,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image11"
                 src={MainImage11}
               />
-              <Online width={16} height={16} left={82} bottom={82} />
               <animated.div
                 style={{ position: "absolute", ...anim7 }}
                 className="main-section-image2-nametag-container"
@@ -522,9 +490,12 @@ export default function Banner() {
             Earn money by answering questions based on <br />
             your skills and knowledge.
           </div>
-          <Link href={"/download"}>
-            <Button className="getstarted-button">Get Started</Button>
-          </Link>
+          <Button
+            className="getstarted-button"
+            style={{backgroundColor:"#00B5B4"}}
+          >
+            Get Started
+          </Button>
         </Box>
         <div className="banner-info-box">
           <div
@@ -558,17 +529,28 @@ export default function Banner() {
               <audio ref={svgRef} id="audio" src="/paaq-audio.mp3"></audio>
             </div>
 
-            <div className="web-show-paaq-text" style={{}}>
+            <div className="web-show-paaq-text">
               “PAAQ is a question-and-answer social media application that
               connects experts in their field with people interested in their
               craft socially and professionally.”
               <br />
               <br />
-              With PAAQ, you can directly ask a question to someone who can
-              provide an informed, detailed answer to your query, based on their
-              experience and expertise. This is different from the results you
-              get from a search engine, which are more general and don’t provide
-              tailored solutions to your specific questions.
+              {isTruncated ? (
+                <span>{textLen.slice(0, 150)}...</span>
+              ) : (
+                <span>{textLen}</span>
+              )}
+              <br />
+              <span
+                style={{
+                  textDecorationLine: "underline",
+                  cursor: "pointer",
+                  fontSize: "1rem",
+                }}
+                onClick={() => setIsTruncated(!isTruncated)}
+              >
+                Read {isTruncated ? "More" : "Less"}
+              </span>
             </div>
             {/* <div className='mobile-show-paaq-text' style={{
               fontSize: 18, marginTop: 20, lineHeight: 1.5, fontWeight: 'lighter',
@@ -600,7 +582,7 @@ export default function Banner() {
               fontFamily: "Sofia-Pro",
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
+              alignItems: "flex-end",
               width: "40%",
               overflow: "hidden",
             }}
@@ -663,7 +645,6 @@ const styles = {
     position: "absolute",
     width: "100%",
     top: 0,
-    cursor: "default",
   },
   bannerTitleMobile: {
     margin: "30px 0px",

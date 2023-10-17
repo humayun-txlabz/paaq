@@ -32,7 +32,7 @@ We want our users to find PAAQ safe and reliable enough to meet their needs. If 
                                 communityGuidelines.map((item) => {
                                     return (
                                         <Container sx={styles.listContainer}>
-                                            <Text sx={styles.heading}>{item.heading}</Text>
+                                            <Text sx={styles.heading}>&#x2022;{item.heading}</Text>
                                             <Text sx={styles.text}>{item.detail}</Text>
                                         </Container>
                                     )

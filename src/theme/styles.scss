@@ -5956,7 +5956,7 @@
           font-weight: 400;
           font-size: 18px;
           line-height: 32px;
-          text-transform: capitalize;
+          // text-transform: capitalize;
           color: #ffffff;
           padding-right: 10%;
         }
@@ -7252,6 +7252,43 @@ input::-webkit-inner-spin-button {
     padding-left: 15%;
     >p{
       font-size: 18px;
+    }
+  }
+}
+
+.logo img{
+  object-fit: contain !important;
+}
+
+.interaction-card-right{
+  img{
+    object-fit: cover;
+  }
+}
+
+.icon-bg {
+  // Add styling for the container div if needed
+  
+  svg {
+    width: 55px !important;
+    height: 55px !important;
+    transition: 1s all; // Add a smooth transition effect
+    transform: scale(3.5);
+    path {
+      fill: white; // Set the default fill color
+    }
+  }
+}
+
+.icon-bg:hover {
+  // Add styling for the container div if needed
+  background-color: white !important;
+  svg {
+    width: 55px !important;
+    height: 55px !important;
+    transform: scale(3.5);
+    path {
+      fill: black; // Set the default fill color
     }
   }
 }

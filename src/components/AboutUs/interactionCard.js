@@ -19,7 +19,7 @@ const InteractionCard = (props) => {
 
         <div className="interaction-card-right" style={{ justifyContent: alignImageRight }}>
             <Image src={image} width={imageWidth} height={imageHeight} />
-            {count &&
+            {count && 
             <span className="interaction-card-count" style={{ left: leftAbsolute, top: topAbsolute ? topAbsolute : "20%"}}>{count}</span>
             }
         </div>

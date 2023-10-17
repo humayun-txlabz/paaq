@@ -65,6 +65,7 @@ const styles={
         boxShadow: '4px 7px 24px 0px rgb(0 0 0 / 28%)',
         borderColor: null,
         color: 'white',
+        transition: '1s all',
         ':hover': {
             opacity: 0.8,
             boxShadow: '4px 7px 24px 0px rgb(0 0 0 / 28%)',

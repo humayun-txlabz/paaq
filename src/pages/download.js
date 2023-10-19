@@ -34,7 +34,7 @@ export default function Download() {
       onChange={(event) => { setCountryCode(event.target.value || undefined) }}
     >
       {getCountries().map((country) => (
-        <option key={country} value={country}>
+        <option style={{ backgroundColor: '#252F44' }} key={country} value={country}>
           {country} +{getCountryCallingCode(country)}
         </option>
       ))}
@@ -43,7 +43,8 @@ export default function Download() {
 
   const sendDownloadLink = async () => {
     const numberWithCode = `+${getCountryCallingCode(countryCode)}${phoneNumber}`
-    if(phoneNumber && numberWithCode){
+    console.log("numberWithCode", numberWithCode, phoneNumber)
+    if (phoneNumber && numberWithCode) {
       setPending(true);
       try {
         const res = await fetch(
@@ -72,9 +73,9 @@ export default function Download() {
           });
         }
         setPending(false);
-        
+
       } catch (err) {
-        console.log(err);
+        console.log('err', err);
         notification.error({
           message: 'Error',
           description: `Couldn't reach to PAAQ at the moment. Please try after few moments`
@@ -112,12 +113,14 @@ export default function Download() {
                     />
                   </Container>
                   <Container sx={styles.phoneContainer}>
-                    <input style={styles.textField} type="number" id="quantity" name="quantity" max="10" min="1" />
+                    <input style={styles.textField} onChange={(e) => {
+                      setPhoneNumber(e.target.value)
+                    }} type="number" id="quantity" name="quantity" max="10" min="1" />
                     {/* <Input sx={styles.textField} onChange={onChangeNumber} placeholder="Phone Number" /> */}
                   </Container>
                 </Container>
                 <div className="send-link-download">
-                  <Button sx={styles.button} style={{ background: pending ? '#D9D9D9' : '#FFFFFF', color: pending ? '#FFFFFF' : '#000000'}} aria-label="Send Link" onClick={sendDownloadLink}>
+                  <Button sx={styles.button} style={{ background: pending ? '#D9D9D9' : '#FFFFFF', color: pending ? '#FFFFFF' : '#000000' }} aria-label="Send Link" onClick={sendDownloadLink}>
                     Send Link
                   </Button>
                   <span className="or-in-send-link">
@@ -143,9 +146,9 @@ export default function Download() {
                 </div>
               </Container>
               <Container sx={styles.imageContainer}>
-              {domLoaded && (
+                {domLoaded && (
                   <div className='player-wrapper'>
-                    <ReactPlayer 
+                    <ReactPlayer
                       className='react-player-download'
                       url='gifs/PostInformation.mov'
                       width='100%'
@@ -153,9 +156,9 @@ export default function Download() {
                       loop={true}
                       playing={true}
                       muted={true}
-                      /> 
-                    </div>
-              )}
+                    />
+                  </div>
+                )}
               </Container>
             </Container>
           </Container>

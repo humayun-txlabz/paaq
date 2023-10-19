@@ -102,7 +102,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 5500,
+    delay: 2000,
     config: { duration: 500 },
 
     onRest: () => update3(2),
@@ -113,7 +113,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 9000,
+    delay: 5500,
     config: { duration: 500 },
 
     onRest: () => update3(3),
@@ -124,7 +124,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 13000,
+    delay: 5500,
     // delay: 0,
     config: { duration: 500 },
 
@@ -136,7 +136,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 16500,
+    delay: 9000,
     config: { duration: 500 },
 
     onRest: () => update3(5),
@@ -147,7 +147,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 20000,
+    delay: 9000,
     config: { duration: 500 },
 
     onRest: () => update3(6),
@@ -158,7 +158,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 24000,
+    delay: 13000,
     config: { duration: 500 },
 
     onRest: () => update3(7),
@@ -169,7 +169,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 28000,
+    delay: 13000,
     config: { duration: 500 },
 
     onRest: () => update3(8),
@@ -181,7 +181,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 31500,
+    delay: 16500,
     // delay: 0,
     config: { duration: 500 },
 
@@ -195,7 +195,7 @@ export default function Banner() {
         { x: 0, y: 0, opacity: 1, scale: 1 },
         { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
       ],
-      delay: 31700,
+      delay: 16500,
       config: { duration: 500 },
       loop: true,
     };

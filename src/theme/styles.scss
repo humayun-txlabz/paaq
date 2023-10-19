@@ -167,6 +167,7 @@
         margin-right: 3rem;
         & > a {
           color: #252f44;
+          text-wrap: nowrap;
         }
         & > .underline-style {
           width: 2rem;
@@ -346,7 +347,7 @@
   flex-direction: column;
 
   & > h1 {
-    font-family:var(--rob);
+    font-family:var(--pro);
     font-size: 16px;
     color: #181f1f;
     line-height: 19px;
@@ -442,7 +443,7 @@
 
 .features-page-container {
   .my-skill-img-component {
-    box-shadow: 0 0rem 6rem 2rem var(--color-light);
+    box-shadow: 0 1rem 15rem -7rem #4293C5;
     border-radius: 20px;
 
     .inner-component {
@@ -7290,5 +7291,11 @@ input::-webkit-inner-spin-button {
     path {
       fill: black; // Set the default fill color
     }
+  }
+}
+
+.earn-money-main{
+  video{
+    filter: grayscale(2%);
   }
 }

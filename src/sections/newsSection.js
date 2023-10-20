@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Text, Image, Button } from "theme-ui";
 import moment from "moment";
 import Link from "next/link";
+import LazyLoad from "react-lazyload";
 const NewsSection = ({ list }) => {
   return list.map((item, index) => {
     return (
@@ -29,10 +30,12 @@ const NewsSection = ({ list }) => {
           </Container>
         </Container>
         <Container sx={styles.imageContainer}>
+        <LazyLoad height={200} offset={100}>
           <Image
             sx={styles.image}
             src={item.fields.thumbnail.fields.file.url}
           />
+            </LazyLoad>
         </Container>
       </Container>
     );

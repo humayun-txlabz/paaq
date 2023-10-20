@@ -7299,3 +7299,15 @@ input::-webkit-inner-spin-button {
     filter: grayscale(2%);
   }
 }
+
+.accordian-active{
+  transition: 1s all;
+  cursor: pointer;
+  padding-top: 12px;
+}
+
+.custom-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

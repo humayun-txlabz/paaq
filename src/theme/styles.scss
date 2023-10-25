@@ -146,13 +146,16 @@
   justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
+
   .right-container {
     display: flex;
     align-items: center;
+
     .nav-menu-desktop {
       display: flex;
       align-items: center;
       width: 100%;
+
       .nav-menu-items {
         display: flex;
         align-items: center;
@@ -165,23 +168,28 @@
         line-height: 22px;
         text-transform: capitalize;
         margin-right: 3rem;
-        & > a {
+
+        &>a {
           color: #252f44;
           text-wrap: nowrap;
         }
-        & > .underline-style {
+
+        &>.underline-style {
           width: 2rem;
         }
       }
-      & > .nav-menu-items:last-child {
+
+      &>.nav-menu-items:last-child {
         margin-right: 6rem;
       }
     }
   }
+
   .mobile-menu-open-drawer {
     display: none !important;
   }
 }
+
 // tick component with text
 .tick-with-text-component {
   .text-and-img {
@@ -205,7 +213,7 @@
       box-shadow: 0px 16px 30px -5px rgba(0, 0, 0, 0.09);
       padding: 0.5rem;
 
-      & > img {
+      &>img {
         height: 0.7rem;
       }
     }
@@ -224,14 +232,15 @@
   align-items: center;
   text-align: center;
   padding: 3px 7px;
+  margin-bottom: 10px;
 
-  & > h1 {
+  &>h1 {
     font-family: var(--pro);
     margin-top: 25%;
 
     font-style: normal;
     font-weight: 500;
-    font-size: 23.86px;
+    font-size: 16px;
     line-height: 28px;
     /* identical to box height */
     text-align: center;
@@ -253,14 +262,14 @@
   padding-bottom: 0.7rem;
   border-radius: 0.7rem;
 
-  & > img {
+  &>img {
     width: 3rem;
     height: 3rem;
     border: 1px solid #e88491;
     border-radius: 50%;
   }
 
-  & > p {
+  &>p {
     font-family: var(--light);
     font-style: normal;
     font-weight: 600;
@@ -269,7 +278,7 @@
     color: #9dacac;
   }
 
-  & > h2 {
+  &>h2 {
     font-family: var(--pro);
     font-style: normal;
     font-weight: 500;
@@ -278,7 +287,7 @@
     margin-top: 0.3rem;
   }
 
-  & > h3 {
+  &>h3 {
     font-family: var(--pro);
     font-style: normal;
     font-weight: 500;
@@ -301,24 +310,24 @@
   }
 
   @media (min-width: 320px) and (max-width: 767px) {
-    & > img {
+    &>img {
       width: 2rem;
       height: 2rem;
     }
 
-    & > h2 {
+    &>h2 {
       font-weight: 500;
       font-size: 10.0509px;
       line-height: 12px;
     }
 
-    & > p {
+    &>p {
       font-weight: 600;
       font-size: 7.53816px;
       line-height: 9px;
     }
 
-    & > h3 {
+    &>h3 {
       font-weight: 500;
       font-size: 7.39985px;
       line-height: 9px;
@@ -346,8 +355,8 @@
   background: #fff;
   flex-direction: column;
 
-  & > h1 {
-    font-family:var(--pro);
+  &>h1 {
+    font-family: var(--pro);
     font-size: 16px;
     color: #181f1f;
     line-height: 19px;
@@ -400,7 +409,7 @@
         }
       }
 
-      & > img {
+      &>img {
         width: 0.8rem;
         height: 0.8rem;
       }
@@ -408,7 +417,7 @@
   }
 
   @media (max-width: 913px) {
-    & > h1 {
+    &>h1 {
       font-size: 10px;
     }
   }
@@ -457,7 +466,7 @@
       flex-direction: column;
       padding-top: 1rem;
 
-      & > h1 {
+      &>h1 {
         font-family: var(--bold);
         font-weight: 700;
         font-size: 20px;
@@ -467,7 +476,7 @@
         color: #252f44;
       }
 
-      & > p {
+      &>p {
         font-family: var(--soft);
         font-weight: 400;
         font-weight: 400;
@@ -483,12 +492,12 @@
       @media (max-width: 913px) {
         max-width: 23rem;
 
-        & > p {
+        &>p {
           font-size: 7px;
         }
       }
 
-      & > .h-line {
+      &>.h-line {
         width: 100%;
         background: #d9dede;
         height: 0.05rem;
@@ -644,7 +653,7 @@
         }
       }
 
-      & > p {
+      &>p {
         font-family: var(--light);
         font-weight: 400;
         font-size: 18px;
@@ -652,7 +661,7 @@
       }
 
       @media (max-width: 946px) {
-        & > p {
+        &>p {
           font-family: var(--light);
           font-weight: 400;
           font-size: 14px;
@@ -789,7 +798,7 @@
         }
       }
 
-      & > p {
+      &>p {
         font-family: var(--light);
         font-weight: 400;
         font-size: 18px;
@@ -797,7 +806,7 @@
       }
 
       @media (max-width: 946px) {
-        & > p {
+        &>p {
           font-family: var(--light);
           font-weight: 400;
           font-size: 18px;
@@ -806,7 +815,7 @@
       }
 
       @media (max-width: 600px) {
-        & > p {
+        &>p {
           font-family: var(--light);
           font-weight: 400;
           font-size: 14px;
@@ -949,7 +958,7 @@
         }
       }
 
-      & > p {
+      &>p {
         font-family: var(--light);
         font-weight: 400;
         font-size: 18px;
@@ -958,7 +967,7 @@
       }
 
       @media (max-width: 946px) {
-        & > p {
+        &>p {
           font-family: var(--light);
           font-weight: 400;
           font-size: 16px;
@@ -967,7 +976,7 @@
       }
 
       @media (max-width: 600px) {
-        & > p {
+        &>p {
           font-family: var(--light);
           font-weight: 400;
           font-size: 14px;
@@ -1114,6 +1123,7 @@
             height: 2rem;
             margin-right: 1rem;
           }
+
           .text {
             font-weight: 700;
             font-size: 30px;
@@ -1134,7 +1144,7 @@
         }
       }
 
-      & > p {
+      &>p {
         font-family: var(--light);
         font-weight: 400;
         font-size: 18px;
@@ -1142,7 +1152,7 @@
       }
 
       @media (max-width: 946px) {
-        & > p {
+        &>p {
           font-family: var(--light);
           font-weight: 400;
           font-size: 16px;
@@ -1151,7 +1161,7 @@
       }
 
       @media (max-width: 600px) {
-        & > p {
+        &>p {
           font-family: var(--light);
           font-weight: 400;
           font-size: 14px;
@@ -1165,7 +1175,7 @@
       min-height: 500px;
       position: relative;
 
-      & > .uDiv1 {
+      &>.uDiv1 {
         opacity: 0;
         position: absolute;
         border: 1px solid #f5f5f5;
@@ -1186,12 +1196,12 @@
           left: 40%;
         }
 
-        & > .icon {
+        &>.icon {
           width: 3rem;
           height: 3rem;
         }
 
-        & > div {
+        &>div {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
@@ -1199,12 +1209,12 @@
         }
 
         @media (max-width: 670px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1213,12 +1223,12 @@
         }
 
         @media (max-width: 470px) {
-          & > .icon {
+          &>.icon {
             width: 1.4rem;
             height: 1.4rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1227,12 +1237,12 @@
         }
 
         @media (min-width: 870px) and (max-width: 1342px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1241,7 +1251,7 @@
         }
       }
 
-      & > .uDiv1Anim {
+      &>.uDiv1Anim {
         animation-name: uDiv1Animation;
         animation-duration: 1500ms;
         animation-delay: 700ms;
@@ -1285,7 +1295,7 @@
         }
       }
 
-      & > .uDiv2 {
+      &>.uDiv2 {
         opacity: 0;
         position: absolute;
         border: 1px solid #f5f5f5;
@@ -1306,12 +1316,12 @@
           left: 20%;
         }
 
-        & > .icon {
+        &>.icon {
           width: 3rem;
           height: 3rem;
         }
 
-        & > div {
+        &>div {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
@@ -1319,12 +1329,12 @@
         }
 
         @media (max-width: 670px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1333,12 +1343,12 @@
         }
 
         @media (max-width: 470px) {
-          & > .icon {
+          &>.icon {
             width: 1.4rem;
             height: 1.4rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1347,12 +1357,12 @@
         }
 
         @media (min-width: 870px) and (max-width: 1342px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1361,7 +1371,7 @@
         }
       }
 
-      & > .uDiv2Anim {
+      &>.uDiv2Anim {
         animation-name: uDiv2Animation;
         animation-duration: 1500ms;
         animation-delay: 700ms;
@@ -1405,7 +1415,7 @@
         }
       }
 
-      & > .uDiv3 {
+      &>.uDiv3 {
         opacity: 0;
         position: absolute;
         border: 1px solid #f5f5f5;
@@ -1426,12 +1436,12 @@
           left: 3%;
         }
 
-        & > .icon {
+        &>.icon {
           width: 3rem;
           height: 3rem;
         }
 
-        & > div {
+        &>div {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
@@ -1439,12 +1449,12 @@
         }
 
         @media (max-width: 670px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1453,12 +1463,12 @@
         }
 
         @media (max-width: 470px) {
-          & > .icon {
+          &>.icon {
             width: 1.4rem;
             height: 1.4rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1467,12 +1477,12 @@
         }
 
         @media (min-width: 870px) and (max-width: 1342px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1481,7 +1491,7 @@
         }
       }
 
-      & > .uDiv3Anim {
+      &>.uDiv3Anim {
         animation-name: uDiv3Animation;
         animation-duration: 1500ms;
         animation-delay: 700ms;
@@ -1525,7 +1535,7 @@
         }
       }
 
-      & > .uDiv4 {
+      &>.uDiv4 {
         opacity: 0;
         position: absolute;
         border: 1px solid #f5f5f5;
@@ -1546,12 +1556,12 @@
           left: 6%;
         }
 
-        & > .icon {
+        &>.icon {
           width: 3rem;
           height: 3rem;
         }
 
-        & > div {
+        &>div {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
@@ -1559,12 +1569,12 @@
         }
 
         @media (max-width: 670px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1573,12 +1583,12 @@
         }
 
         @media (max-width: 470px) {
-          & > .icon {
+          &>.icon {
             width: 1.4rem;
             height: 1.4rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1587,12 +1597,12 @@
         }
 
         @media (min-width: 870px) and (max-width: 1342px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1601,7 +1611,7 @@
         }
       }
 
-      & > .uDiv4Anim {
+      &>.uDiv4Anim {
         animation-name: uDiv4Animation;
         animation-duration: 1500ms;
         animation-delay: 700ms;
@@ -1645,7 +1655,7 @@
         }
       }
 
-      & > .uDiv5 {
+      &>.uDiv5 {
         opacity: 0;
         position: absolute;
         border: 1px solid #f5f5f5;
@@ -1666,12 +1676,12 @@
           left: 35%;
         }
 
-        & > .icon {
+        &>.icon {
           width: 3rem;
           height: 3rem;
         }
 
-        & > div {
+        &>div {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
@@ -1679,12 +1689,12 @@
         }
 
         @media (max-width: 670px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1693,12 +1703,12 @@
         }
 
         @media (max-width: 470px) {
-          & > .icon {
+          &>.icon {
             width: 1.4rem;
             height: 1.4rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1707,12 +1717,12 @@
         }
 
         @media (min-width: 870px) and (max-width: 1342px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1721,7 +1731,7 @@
         }
       }
 
-      & > .uDiv5Anim {
+      &>.uDiv5Anim {
         animation-name: uDiv5Animation;
         animation-duration: 1500ms;
         animation-delay: 700ms;
@@ -1765,7 +1775,7 @@
         }
       }
 
-      & > .uDiv6 {
+      &>.uDiv6 {
         opacity: 0;
         position: absolute;
         border: 1px solid #f5f5f5;
@@ -1786,12 +1796,12 @@
           right: 10%;
         }
 
-        & > .icon {
+        &>.icon {
           width: 3rem;
           height: 3rem;
         }
 
-        & > div {
+        &>div {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
@@ -1799,12 +1809,12 @@
         }
 
         @media (max-width: 670px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1813,12 +1823,12 @@
         }
 
         @media (max-width: 470px) {
-          & > .icon {
+          &>.icon {
             width: 1.4rem;
             height: 1.4rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1827,12 +1837,12 @@
         }
 
         @media (min-width: 870px) and (max-width: 1342px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1841,7 +1851,7 @@
         }
       }
 
-      & > .uDiv6Anim {
+      &>.uDiv6Anim {
         animation-name: uDiv6Animation;
         animation-duration: 1500ms;
         animation-delay: 700ms;
@@ -1885,7 +1895,7 @@
         }
       }
 
-      & > .uDiv7 {
+      &>.uDiv7 {
         opacity: 0;
         position: absolute;
         border: 1px solid #f5f5f5;
@@ -1906,12 +1916,12 @@
           right: 7%;
         }
 
-        & > .icon {
+        &>.icon {
           width: 3rem;
           height: 3rem;
         }
 
-        & > div {
+        &>div {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
@@ -1919,12 +1929,12 @@
         }
 
         @media (max-width: 670px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1933,12 +1943,12 @@
         }
 
         @media (max-width: 470px) {
-          & > .icon {
+          &>.icon {
             width: 1.4rem;
             height: 1.4rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1947,12 +1957,12 @@
         }
 
         @media (min-width: 870px) and (max-width: 1342px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -1961,7 +1971,7 @@
         }
       }
 
-      & > .uDiv7Anim {
+      &>.uDiv7Anim {
         animation-name: uDiv7Animation;
         animation-duration: 1500ms;
         animation-delay: 700ms;
@@ -2005,7 +2015,7 @@
         }
       }
 
-      & > .uDiv8 {
+      &>.uDiv8 {
         opacity: 0;
         position: absolute;
         border: 1px solid #f5f5f5;
@@ -2026,12 +2036,12 @@
           right: 15%;
         }
 
-        & > .icon {
+        &>.icon {
           width: 3rem;
           height: 3rem;
         }
 
-        & > div {
+        &>div {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
@@ -2039,12 +2049,12 @@
         }
 
         @media (max-width: 670px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -2053,12 +2063,12 @@
         }
 
         @media (max-width: 470px) {
-          & > .icon {
+          &>.icon {
             width: 1.4rem;
             height: 1.4rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -2067,12 +2077,12 @@
         }
 
         @media (min-width: 870px) and (max-width: 1342px) {
-          & > .icon {
+          &>.icon {
             width: 2.5rem;
             height: 2.5rem;
           }
 
-          & > div {
+          &>div {
             text-align: center;
             font-family: var(--pro);
             padding-left: 0.15rem;
@@ -2081,7 +2091,7 @@
         }
       }
 
-      & > .uDiv8Anim {
+      &>.uDiv8Anim {
         animation-name: uDiv8Animation;
         animation-duration: 1500ms;
         animation-delay: 700ms;
@@ -2125,7 +2135,7 @@
         }
       }
 
-      & > .logo {
+      &>.logo {
         position: absolute;
         top: 38%;
         left: 42%;
@@ -2134,13 +2144,13 @@
         padding: 1.3rem;
         border-radius: 50%;
 
-        & > .icon {
+        &>.icon {
           width: 2rem;
           height: 2rem;
         }
 
         @media (max-width: 670px) {
-          & > .icon {
+          &>.icon {
             width: 1.7rem;
             height: 1.7rem;
           }
@@ -2149,7 +2159,7 @@
         @media (max-width: 470px) {
           padding: 0.8rem;
 
-          & > .icon {
+          &>.icon {
             width: 1.2rem;
             height: 1.2rem;
           }
@@ -2158,12 +2168,13 @@
         @media (min-width: 870px) and (max-width: 1342px) {
           padding: 0.8rem;
 
-          & > .icon {
+          &>.icon {
             width: 1.2rem;
             height: 1.2rem;
           }
         }
       }
+
       @media (max-width: 767px) {
         min-height: 500px;
         margin-top: -3rem;
@@ -2249,7 +2260,7 @@
             background: linear-gradient(180deg, #fffefe -4.17%, #e3e3e3 44.66%);
             border-radius: 6px;
 
-            & > h3 {
+            &>h3 {
               font-family: var(--pro);
               font-weight: 500;
               font-size: 23.86px;
@@ -2312,7 +2323,7 @@
         }
       }
 
-      & > p {
+      &>p {
         font-family: var(--light);
         font-weight: 400;
         font-size: 18px;
@@ -2322,7 +2333,7 @@
       }
 
       @media (max-width: 946px) {
-        & > p {
+        &>p {
           font-family: var(--light);
           font-weight: 400;
           font-size: 0.8rem;
@@ -2331,7 +2342,7 @@
       }
 
       @media (max-width: 600px) {
-        & > p {
+        &>p {
           font-family: var(--light);
           font-weight: 400;
           font-size: 0.7rem;
@@ -2359,7 +2370,7 @@
         padding-bottom: 1rem;
         border-radius: 1.2rem;
 
-        & > h1 {
+        &>h1 {
           font-family: var(--pro);
           font-weight: 700;
           font-size: 20px;
@@ -2373,7 +2384,7 @@
           border-radius: 50%;
         }
 
-        & > h3 {
+        &>h3 {
           font-family: var(--pro);
           font-weight: 700;
           font-size: 0.7rem;
@@ -2381,7 +2392,7 @@
           margin-top: 0.3rem;
         }
 
-        & > p {
+        &>p {
           font-family: var(--soft);
           font-weight: 700;
           font-size: 14px;
@@ -2407,14 +2418,14 @@
             align-items: center;
             flex-direction: column;
 
-            & > h1 {
+            &>h1 {
               font-family: var(--soft);
               font-weight: 700;
               font-size: 1rem;
               line-height: 0.7rem;
             }
 
-            & > p {
+            &>p {
               font-family: var(--soft);
               font-weight: 700;
               font-size: 0.6rem;
@@ -2429,7 +2440,7 @@
         }
 
         @media (max-width: 913px) {
-          & > h1 {
+          &>h1 {
             font-size: 13px;
           }
 
@@ -2438,7 +2449,7 @@
             height: 5rem;
           }
 
-          & > p {
+          &>p {
             font-size: 10px;
           }
         }
@@ -2470,13 +2481,13 @@
           align-items: center;
           justify-content: center;
 
-          & > img {
+          &>img {
             width: 1.5rem;
             height: 1.5rem;
           }
         }
 
-        & > p {
+        &>p {
           font-family: var(--light);
           font-weight: 500;
           font-size: 16px;
@@ -2535,13 +2546,13 @@
           align-items: center;
           justify-content: center;
 
-          & > img {
+          &>img {
             width: 1.5rem;
             height: 1.5rem;
           }
         }
 
-        & > p {
+        &>p {
           font-family: var(--light);
           font-weight: 500;
           font-size: 16px;
@@ -2590,7 +2601,7 @@
         .left-card-mini-image-feature-paid-messages {
           left: -1rem;
 
-          & > p {
+          &>p {
             font-family: var(--light);
             font-style: normal;
             font-weight: 500;
@@ -2630,7 +2641,7 @@
         .right-card-mini-image-feature-paid-messages {
           right: 0rem;
 
-          & > p {
+          &>p {
             font-family: var(--light);
             font-style: normal;
             font-weight: 500;
@@ -2835,9 +2846,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
   .section-market-size-main {
     padding-left: 10%;
     padding-right: 10%;
+
     .all-circles {
       position: relative;
       height: 650px;
@@ -2845,6 +2858,7 @@
       align-items: center;
       justify-content: center;
       margin-top: 10%;
+
       .circle {
         position: absolute;
         border: 1px solid #000000;
@@ -2857,7 +2871,8 @@
         justify-content: center;
         flex-direction: column;
         border-radius: 50%;
-        & > h3 {
+
+        &>h3 {
           font-family: var(--pro);
           font-style: normal;
           font-weight: 700;
@@ -2866,7 +2881,8 @@
           text-transform: capitalize;
           color: #252f44;
         }
-        & > p {
+
+        &>p {
           font-family: var(--pro);
           font-style: normal;
           font-weight: 400;
@@ -2879,36 +2895,44 @@
 
       .one {
         top: -7%;
-        & > h3 {
-        }
-        & > p {
+
+        &>h3 {}
+
+        &>p {
           padding-bottom: 7rem;
         }
       }
+
       .two {
         left: 12%;
         bottom: 3rem;
-        & > h3 {
+
+        &>h3 {
           padding-top: 7rem;
           padding-right: 4rem;
         }
-        & > p {
+
+        &>p {
           padding-right: 4rem;
         }
       }
+
       .three {
         right: 12%;
         bottom: 3rem;
-        & > h3 {
+
+        &>h3 {
           padding-top: 7rem;
           padding-left: 4rem;
         }
-        & > p {
+
+        &>p {
           padding-left: 4rem;
         }
       }
     }
-    & > h1 {
+
+    &>h1 {
       font-family: var(--pro);
       color: #252f44;
       font-style: normal;
@@ -2916,7 +2940,8 @@
       font-size: 70px;
       line-height: 66px;
     }
-    & > h4 {
+
+    &>h4 {
       font-family: var(--pro);
       font-style: normal;
       font-weight: 600;
@@ -2975,7 +3000,7 @@
       .center-content {
         max-width: 30vw;
 
-        & > h1 {
+        &>h1 {
           font-family: var(--bold);
           font-weight: 700;
           font-size: 3.2rem;
@@ -2983,7 +3008,7 @@
           text-align: center;
         }
 
-        & > p {
+        &>p {
           font-family: var(--soft);
           font-weight: 600;
           font-size: 1.05rem;
@@ -2992,14 +3017,14 @@
         }
 
         @media (max-width: 913px) {
-          & > h1 {
+          &>h1 {
             font-family: var(--bold);
             font-weight: 700;
             font-size: 2.3rem;
             color: #fff;
           }
 
-          & > p {
+          &>p {
             font-family: var(--soft);
             font-weight: 600;
             font-size: 0.6rem;
@@ -3009,11 +3034,11 @@
         }
 
         @media (max-width: 600px) {
-          & > h1 {
+          &>h1 {
             font-size: 1.4rem;
           }
 
-          & > p {
+          &>p {
             font-size: 0.5rem;
           }
         }
@@ -3173,9 +3198,10 @@
           }
 
           @media (max-width: 700px) {
-            div{
+            div {
               padding: 0px 0px !important;
             }
+
             // .p6 {
             //   padding-left: 7vw;
             //   padding-top: 0.7vh;
@@ -3293,15 +3319,16 @@
   max-width: 100vw;
 
   @media (max-width: 600px) {
-    .pill6{
-      div{
+    .pill6 {
+      div {
         font-size: 8px;
         padding: 1px 6px;
       }
     }
-    .pill4{
-      .p4{
-        div{
+
+    .pill4 {
+      .p4 {
+        div {
           font-size: 8px;
           padding: 2px 6px;
         }
@@ -3310,7 +3337,7 @@
   }
 
   .center-content {
-    & > h1 {
+    &>h1 {
       font-family: var(--bold);
       font-style: normal;
       font-weight: 700;
@@ -3320,7 +3347,7 @@
       text-align: center;
     }
 
-    & > p {
+    &>p {
       max-width: 45vw;
       font-family: var(--soft);
       font-style: normal;
@@ -3332,14 +3359,14 @@
     }
 
     @media (max-width: 913px) {
-      & > h1 {
+      &>h1 {
         font-family: var(--bold);
         font-weight: 700;
         font-size: 2.3rem;
         color: #fff;
       }
 
-      & > p {
+      &>p {
         font-family: var(--soft);
         font-weight: 600;
         font-size: 0.6rem;
@@ -3349,11 +3376,11 @@
     }
 
     @media (max-width: 600px) {
-      & > h1 {
+      &>h1 {
         font-size: 30px;
       }
 
-      & > p {
+      &>p {
         font-size: 0.5rem;
       }
     }
@@ -3367,6 +3394,7 @@
 
   .pill1 {
     color: #000000;
+
     .p1 {
       z-index: 999;
       padding-left: 80%;
@@ -3393,6 +3421,7 @@
 
   .pill2 {
     color: #000000;
+
     .p2 {
       z-index: 999;
       margin-left: -70%;
@@ -3419,6 +3448,7 @@
 
   .pill3 {
     color: #000000;
+
     .p3 {
       z-index: 999;
       margin-left: -60%;
@@ -3431,7 +3461,7 @@
     @media (max-width: 700px) {
       .p3 {
         margin-left: -10.5vw;
-        padding-top: 6.5vh;    
+        padding-top: 6.5vh;
       }
     }
   }
@@ -3445,6 +3475,7 @@
 
   .pill4 {
     color: #000000;
+
     .p4 {
       z-index: 999;
       margin-left: -150%;
@@ -3471,6 +3502,7 @@
 
   .pill5 {
     color: #000000;
+
     .p5 {
       z-index: 999;
       padding-left: 7vw;
@@ -3483,7 +3515,7 @@
     @media (max-width: 700px) {
       .p5 {
         padding-left: 13vw;
-        padding-top: 3.7vh;    
+        padding-top: 3.7vh;
       }
     }
   }
@@ -3497,6 +3529,7 @@
 
   .pill6 {
     color: #000000;
+
     .p6 {
       z-index: 999;
       padding-left: 90%;
@@ -3523,6 +3556,7 @@
 
   .pill7 {
     color: #000000;
+
     .p7 {
       z-index: 999;
       padding-left: 100%;
@@ -3598,7 +3632,7 @@
     display: inline-flex;
     align-items: center;
 
-    & > h1 {
+    &>h1 {
       font-family: var(--pro);
       font-weight: 700;
       font-size: 70px;
@@ -3606,7 +3640,8 @@
       display: flex;
       // align-items: center;
       color: #252f44;
-      & > img {
+
+      &>img {
         width: auto;
         height: 56px;
         margin-left: 0.4rem;
@@ -3621,18 +3656,18 @@
     @media (max-width: 913px) {
       padding-left: 8%;
 
-      & > h1 {
+      &>h1 {
         font-weight: 700;
         font-size: 43px;
         line-height: 60px;
         margin-bottom: -2rem;
 
-        & > img {
+        &>img {
           height: 2rem;
         }
       }
 
-      & > img {
+      &>img {
         height: 1.5rem;
       }
     }
@@ -3671,7 +3706,7 @@
       padding-left: 16%;
       padding-right: 35%;
 
-      & > p {
+      &>p {
         color: #4b5157;
         font-weight: 400;
         font-size: 18px;
@@ -3682,7 +3717,7 @@
         padding-left: 8%;
         padding-right: 8%;
 
-        & > p {
+        &>p {
           font-size: 14px;
           padding-bottom: 1rem;
           margin-bottom: 1rem;
@@ -3695,7 +3730,7 @@
       padding-left: 20%;
       padding-right: 30%;
 
-      & > p {
+      &>p {
         color: #4b5157;
         font-weight: 100;
         font-size: 18px;
@@ -3706,7 +3741,7 @@
         padding-left: 8%;
         padding-right: 8%;
 
-        & > p {
+        &>p {
           font-size: 14px;
         }
       }
@@ -3792,7 +3827,7 @@
         display: inline-flex;
         align-items: center;
 
-        & > h1 {
+        &>h1 {
           font-family: var(--pro);
           font-weight: 700;
           font-size: 70px;
@@ -3800,7 +3835,7 @@
           display: flex;
           // align-items: center;
 
-          & > img {
+          &>img {
             width: auto;
             height: 56px;
             margin-left: 0.4rem;
@@ -3808,7 +3843,7 @@
         }
       }
 
-      & > p {
+      &>p {
         font-family: var(--light);
         font-weight: 400;
         font-size: 18px;
@@ -3818,17 +3853,17 @@
         .header {
           margin-top: 1rem;
 
-          & > h1 {
+          &>h1 {
             font-size: 43px;
             line-height: 43px;
 
-            & > img {
+            &>img {
               height: 2rem;
             }
           }
         }
 
-        & > p {
+        &>p {
           font-size: 14px;
         }
 
@@ -3856,8 +3891,7 @@
             background-size: cover;
           }
 
-          @media (max-width: 913px) {
-          }
+          @media (max-width: 913px) {}
         }
       }
     }
@@ -3882,7 +3916,8 @@
   margin-top: 8rem;
   padding-left: 10%;
   padding-right: 10%;
-  & > h1 {
+
+  &>h1 {
     font-family: var(--bold);
     font-weight: 700;
     font-size: 80px;
@@ -3896,7 +3931,7 @@
   @media (max-width: 913px) {
     margin-top: 3rem;
 
-    & > h1 {
+    &>h1 {
       font-family: var(--pro);
       font-weight: 700;
       font-size: 40px;
@@ -3953,13 +3988,13 @@
         margin-left: -1rem;
         padding-right: 30%;
 
-        & > img {
+        &>img {
           height: 15px;
           margin-top: 0.7rem;
           margin-right: 0.5rem;
         }
 
-        & > p {
+        &>p {
           font-family: var(--pro);
           font-weight: 600;
           font-size: 24px;
@@ -3970,7 +4005,7 @@
         @media (max-width: 913px) {
           margin-left: 0rem;
 
-          & > p {
+          &>p {
             font-size: 18px;
           }
         }
@@ -3982,6 +4017,7 @@
 
         .cir1 {
           box-shadow: 10px 14px 124px rgba(0, 0, 0, 0.07);
+
           img {
             width: 6rem;
             height: 6rem;
@@ -4013,6 +4049,7 @@
         padding-left: 0%;
         padding-right: 30%;
         color: #4b5157;
+
         span {
           color: #4293c5;
           font-weight: 600;
@@ -4060,6 +4097,7 @@
   margin-top: 7rem;
   padding-left: 10%;
   padding-right: 10%;
+
   .main-content {
     display: grid;
 
@@ -4103,13 +4141,13 @@
       align-items: center;
       justify-content: flex-start;
 
-      & > img {
+      &>img {
         width: 100%;
         height: auto;
       }
 
       @media (max-width: 1350px) {
-        & > img {
+        &>img {
           height: 32vh;
           padding-left: 16%;
           padding-right: 13%;
@@ -4117,7 +4155,7 @@
       }
 
       @media (max-width: 1150px) {
-        & > img {
+        &>img {
           height: 27vh;
           padding-left: 12%;
           padding-right: 10%;
@@ -4125,7 +4163,7 @@
       }
 
       @media (max-width: 970px) {
-        & > img {
+        &>img {
           height: 25vh;
           padding-left: 7%;
           padding-right: 7%;
@@ -4135,7 +4173,7 @@
       @media (max-width: 913px) {
         justify-content: center;
 
-        & > img {
+        &>img {
           width: 100%;
           height: 100%;
         }
@@ -4173,7 +4211,7 @@
     .left {
       padding-right: 16%;
 
-      & > p {
+      &>p {
         font-family: var(--pro);
         font-weight: 600;
         font-size: 30px;
@@ -4185,7 +4223,7 @@
     }
 
     .right {
-      & > p {
+      &>p {
         font-size: 18px;
         font-family: var(--light);
         font-weight: 400;
@@ -4193,7 +4231,7 @@
       }
 
       @media (max-width: 913px) {
-        & > p {
+        &>p {
           margin-top: -1rem;
           margin-bottom: -1rem;
           font-size: 14px;
@@ -4214,7 +4252,7 @@
         padding-left: 10%;
         padding-right: 10%;
 
-        & > p {
+        &>p {
           font-size: 14px;
         }
       }
@@ -4237,7 +4275,7 @@
     border-radius: 1.5rem;
     margin-top: 3rem;
 
-    & > h1 {
+    &>h1 {
       font-family: var(--bold);
       font-weight: 700;
       font-size: 60px;
@@ -4246,7 +4284,7 @@
       margin-top: 3rem;
     }
 
-    & > p {
+    &>p {
       font-family: var(--soft);
       font-weight: 400;
       font-size: 18px;
@@ -4276,14 +4314,14 @@
     }
 
     @media (max-width: 913px) {
-      & > p {
+      &>p {
         font-size: 14px;
         line-height: 32px;
         padding-left: 7%;
         padding-right: 7%;
       }
 
-      & > h1 {
+      &>h1 {
         font-size: 30px;
         line-height: 42px;
       }
@@ -4578,8 +4616,9 @@
     margin-top: 2rem;
 
     .left {
+
       // background: lightblue;
-      & > h1 {
+      &>h1 {
         font-family: var(--bold);
         font-size: 1.2rem;
         font-weight: 500;
@@ -4591,7 +4630,7 @@
         width: 100%;
         padding: 1rem;
 
-        & > h1 {
+        &>h1 {
           font-family: var(--bold);
           font-size: 1.2rem;
           font-weight: 400;
@@ -4605,7 +4644,7 @@
           opacity: 0.5;
         }
 
-        & > p {
+        &>p {
           font-family: var(--soft);
           font-size: 0.8rem;
           color: #fff;
@@ -4620,14 +4659,14 @@
           padding: 0.3rem;
           border-radius: 0.8rem;
 
-          & > input {
+          &>input {
             width: 100%;
             outline: none;
             border: 0px;
             padding: 0.4rem;
           }
 
-          & > img {
+          &>img {
             width: 1.2rem;
             height: 1.2rem;
             margin-right: 0.6rem;
@@ -4639,14 +4678,14 @@
           align-items: center;
           justify-content: space-between;
 
-          & > p {
+          &>p {
             font-family: var(--soft);
             font-size: 0.8rem;
             color: #fff;
             line-height: 0.8rem;
           }
 
-          & > img {
+          &>img {
             height: 0.4rem;
             margin-right: 0.6rem;
             margin-top: 0.2rem;
@@ -4695,7 +4734,7 @@
   border-radius: 20px;
   padding: 1.5rem;
 
-  & > h1 {
+  &>h1 {
     font-family: var(--bold);
     font-size: 1.5rem;
     font-weight: 700;
@@ -4721,7 +4760,7 @@
     padding-right: 1rem;
 
     .left {
-      & > h1 {
+      &>h1 {
         font-family: var(--bold);
         font-size: 1.2rem;
         font-weight: 700;
@@ -4741,14 +4780,14 @@
           align-items: center;
           justify-content: space-between;
 
-          & > p {
+          &>p {
             font-family: var(--soft);
             font-size: 1rem;
             font-weight: 500;
             text-align: center;
           }
 
-          & > p img {
+          &>p img {
             height: 1rem;
             width: 1rem;
             margin-right: 0.3rem;
@@ -4760,14 +4799,14 @@
           align-items: center;
           text-align: center;
 
-          & > p {
+          &>p {
             font-family: var(--soft);
             font-size: 1rem;
             font-weight: 500;
             text-align: center;
           }
 
-          & > p img {
+          &>p img {
             height: 1rem;
             width: 1rem;
             margin-right: 0.3rem;
@@ -4776,7 +4815,7 @@
       }
 
       @media (max-width: 950px) {
-        & > h1 {
+        &>h1 {
           font-size: 0.9rem;
         }
 
@@ -4784,13 +4823,13 @@
           display: flex;
 
           .left {
-            & > p {
+            &>p {
               font-size: 0.8rem;
             }
           }
 
           .right {
-            & > p {
+            &>p {
               font-size: 0.8rem;
             }
           }
@@ -4798,7 +4837,7 @@
       }
 
       @media (max-width: 913px) {
-        & > h1 {
+        &>h1 {
           font-size: 0.7rem;
         }
 
@@ -4807,11 +4846,11 @@
           align-items: center;
 
           .left {
-            & > p {
+            &>p {
               font-size: 0.6rem;
             }
 
-            & > p img {
+            &>p img {
               height: 0.7rem;
               width: 0.7rem;
               margin-right: 0.5rem;
@@ -4819,11 +4858,11 @@
           }
 
           .right {
-            & > p {
+            &>p {
               font-size: 0.6rem;
             }
 
-            & > p img {
+            &>p img {
               height: 0.7rem;
               width: 0.7rem;
               margin-right: 0.1rem;
@@ -4833,7 +4872,7 @@
       }
 
       @media (max-width: 500px) {
-        & > h1 {
+        &>h1 {
           font-size: 0.7rem;
         }
 
@@ -4842,11 +4881,11 @@
           width: 100%;
 
           .left {
-            & > p {
+            &>p {
               font-size: 0.6rem;
             }
 
-            & > p img {
+            &>p img {
               height: 0.7rem;
               width: 0.7rem;
               margin-right: 0.1rem;
@@ -4854,11 +4893,11 @@
           }
 
           .right {
-            & > p {
+            &>p {
               font-size: 0.6rem;
             }
 
-            & > p img {
+            &>p img {
               height: 0.7rem;
               width: 0.7rem;
               margin-right: 0.1rem;
@@ -4868,7 +4907,7 @@
       }
 
       @media (max-width: 420px) {
-        & > h1 {
+        &>h1 {
           font-size: 0.7rem;
         }
 
@@ -4877,16 +4916,15 @@
           width: 100%;
 
           .left {
-            & > p {
+            &>p {
               font-size: 0.6rem;
             }
 
-            & > p img {
-            }
+            &>p img {}
           }
 
           .right {
-            & > p {
+            &>p {
               font-size: 0.6rem;
             }
           }
@@ -5030,7 +5068,7 @@
     justify-content: center;
     margin-right: 0.6rem;
 
-    & > img {
+    &>img {
       height: 0.4rem;
     }
   }
@@ -5063,7 +5101,7 @@
     align-items: center;
     justify-content: center;
 
-    & > img {
+    &>img {
       height: 0.4rem;
     }
   }
@@ -5080,7 +5118,7 @@
   padding: 2rem;
   border-radius: 1.5rem;
 
-  & > h1 {
+  &>h1 {
     font-family: var(--bold);
     font-weight: 700;
     font-size: 60px;
@@ -5089,7 +5127,7 @@
     margin-top: 3rem;
   }
 
-  & > p {
+  &>p {
     font-family: var(--soft);
     font-weight: 400;
     font-size: 18px;
@@ -5118,14 +5156,14 @@
   }
 
   @media (max-width: 913px) {
-    & > p {
+    &>p {
       font-size: 14px;
       line-height: 25px;
       padding-left: 4%;
       padding-right: 4%;
     }
 
-    & > h1 {
+    &>h1 {
       font-size: 30px;
       line-height: 30px;
     }
@@ -5188,11 +5226,11 @@
       margin-left: 2%;
       margin-right: 2%;
 
-      & > h1 {
+      &>h1 {
         font-size: 40px;
       }
 
-      & > p {
+      &>p {
         font-size: 14px;
         width: 90%;
       }
@@ -5426,6 +5464,7 @@
       justify-content: center;
       align-items: flex;
       flex-direction: column;
+
       h1 {
         font-family: var(--pro);
         font-style: normal;
@@ -5455,6 +5494,7 @@
       margin-left: 4%;
       display: flex;
       justify-content: flex-end;
+
       img {
         width: 90%;
       }
@@ -5600,23 +5640,26 @@
 }
 
 // contact us
-.ant-select-dropdown{
+.ant-select-dropdown {
   font-family: var(--light);
   font-style: normal;
   font-weight: 400;
   font-size: 14px !important;
   line-height: 19px !important;
 
-  .ant-select-item-option{
+  .ant-select-item-option {
     line-height: 32px;
   }
-  .ant-select-item-option-active{
+
+  .ant-select-item-option-active {
     border-radius: 10px;
   }
 }
-.ant-select-item-option-selected{
+
+.ant-select-item-option-selected {
   background-color: #F8F8F8 !important;
 }
+
 .contact-us-page-main {
   padding-left: 7%;
   padding-right: 7%;
@@ -5625,6 +5668,7 @@
     display: grid;
 
     .left {
+
       // background: lightblue;
       h1 {
         font-family: var(--bold);
@@ -5670,16 +5714,17 @@
 
     .right {
       .contact-us-page-form-container {
-        & > form {
+        &>form {
           font-family: var(--light);
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
+
           .input-with-label {
             display: flex;
             flex-direction: column;
 
-            & > label {
+            &>label {
               font-family: var(--pro);
               font-style: normal;
               font-weight: 700;
@@ -5687,7 +5732,7 @@
               margin-top: 1.5rem;
             }
 
-            & > input {
+            &>input {
               background: #ffffff;
               border: 1px solid #efefef;
               border-radius: 10px;
@@ -5699,7 +5744,7 @@
               outline: none;
             }
 
-            & > textarea {
+            &>textarea {
               background: #ffffff;
               border: 1px solid #efefef;
               border-radius: 10px;
@@ -5712,8 +5757,8 @@
               height: 7rem;
             }
 
-            .form-select-dropdown{
-              span{
+            .form-select-dropdown {
+              span {
                 font-family: var(--light);
                 font-style: normal;
                 font-weight: 400;
@@ -5751,23 +5796,19 @@
               .arrowDown {
                 padding-right: 0.5rem;
 
-                & > img {
+                &>img {
                   height: 0.5rem;
                 }
               }
             }
 
-            .ant-select {
-            }
+            .ant-select {}
 
             //    .ant-select-single.ant-select-open .ant-select-selection-item {
             //      color: blue;
             //    }
 
-            .ant-select-item
-              .ant-select-item-option
-              .ant-select-item-option-active
-              .ant-select-item-option-selected {
+            .ant-select-item .ant-select-item-option .ant-select-item-option-active .ant-select-item-option-selected {
               background-color: blue;
             }
 
@@ -5776,7 +5817,7 @@
             }
           }
 
-          .recaptcha-field{
+          .recaptcha-field {
             justify-content: center;
             display: flex;
             flex-direction: column;
@@ -5940,6 +5981,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+
         // padding-right: 20%;
         h1 {
           font-family: var(--bold);
@@ -6105,8 +6147,9 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+
         // padding-left: 10%;
-        & > .aSBreadCrump {
+        &>.aSBreadCrump {
           position: absolute;
           top: 5%;
           left: 10%;
@@ -6116,10 +6159,12 @@
           line-height: 28px;
           font-family: var(--pro);
           color: rgba(255, 255, 255, 0.7);
+
           span {
             color: white;
           }
         }
+
         h2 {
           font-family: var(--pro);
           font-style: normal;
@@ -6325,25 +6370,30 @@
   border: 1px solid #ececec;
   border-radius: 20px;
   padding: 2rem;
-  &-heading{
-    img{
+
+  &-heading {
+    img {
       display: none;
     }
   }
+
   @media (max-width: 600px) {
-    h1{
+    h1 {
       margin: 0;
     }
-    &-heading{
+
+    &-heading {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 10px;
-      img{
+
+      img {
         display: unset;
       }
     }
-    a{
+
+    a {
       display: none;
     }
   }
@@ -6686,9 +6736,11 @@
   padding-bottom: 3%;
   padding-top: 1%;
   width: 100%;
+
   .icons-bottom-footer {
     display: flex;
     align-items: center;
+
     .icon-bg {
       cursor: pointer;
       border: 1px solid #354058;
@@ -6701,12 +6753,14 @@
       align-items: center;
       justify-content: center;
       margin-left: 0.7rem;
-      & > img {
+
+      &>img {
         width: 15px;
         height: auto;
       }
     }
   }
+
   .icons-bottom-footer-mobile {
     display: none;
   }
@@ -6719,7 +6773,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5%;
     row-gap: 2rem;
+
     .item-card-container {
+
       // border: 2px solid green;
       .item-card-image-inner {
         flex: 1;
@@ -6739,6 +6795,7 @@
   margin-top: 4rem;
   margin-bottom: -2rem;
   cursor: pointer;
+
   .blogs-main-bottom-color-btn {
     display: flex;
     flex-direction: row;
@@ -6766,6 +6823,7 @@
     width: 66px;
     height: 66px;
   }
+
   #main-section-image2-nametag-container4 {
     position: absolute;
     left: 200%;
@@ -6775,6 +6833,7 @@
     min-width: auto;
     min-height: auto;
   }
+
   #main-section-image2-nametag4 {
     border-radius: 10px 0px 10px 12px;
     padding-left: 12px;
@@ -6785,27 +6844,31 @@
     height: auto;
     min-width: auto !important;
     min-height: auto !important;
+
     .nametag-title {
       font-size: 7px;
       margin-left: 7px;
     }
+
     .nametag-designation {
       font-family: var(--light);
       margin-left: 7px;
     }
   }
 
-  .main-section-image5 {
-  }
+  .main-section-image5 {}
+
   #main-section-image2-nametag-container5 {
     display: none !important;
   }
+
   .main-section-image6 {
     top: 90% !important;
     left: 85%;
     width: 32px;
     height: 32px;
   }
+
   .main-section-image2-nametag-container {
     position: absolute;
     left: -230%;
@@ -6815,6 +6878,7 @@
     min-width: auto;
     min-height: auto;
   }
+
   .main-section-image2-nametag {
     border-radius: 10px 0px 10px 12px;
     padding-left: 12px;
@@ -6825,10 +6889,12 @@
     height: auto;
     min-width: auto !important;
     min-height: auto !important;
+
     .nametag-title {
       font-size: 7px;
       margin-left: 7px;
     }
+
     .nametag-designation {
       font-family: var(--light);
       margin-left: 7px;
@@ -6864,10 +6930,12 @@
     height: auto;
     min-width: auto !important;
     min-height: auto !important;
+
     .nametag-title {
       font-size: 7px;
       margin-left: 3px;
     }
+
     .nametag-designation {
       font-family: var(--light);
       margin-left: 3px;
@@ -6881,6 +6949,7 @@
     width: 58px;
     height: 58px;
   }
+
   #main-section-image2-nametag-containerleft8 {
     position: absolute;
     left: -210%;
@@ -6890,6 +6959,7 @@
     min-width: auto;
     min-height: auto;
   }
+
   #main-section-image2-nametag8 {
     border-radius: 10px 0px 10px 12px;
     padding-left: 12px;
@@ -6900,10 +6970,12 @@
     height: auto;
     min-width: auto !important;
     min-height: auto !important;
+
     .nametag-title {
       font-size: 7px;
       margin-left: 10px;
     }
+
     .nametag-designation {
       font-family: var(--light);
       margin-left: 10px;
@@ -6917,6 +6989,7 @@
     width: 40px;
     height: 40px;
   }
+
   #main-section-image2-nametag-container9 {
     display: none !important;
   }
@@ -6928,6 +7001,7 @@
     width: 34px;
     height: 34px;
   }
+
   #main-section-image2-nametag-container11 {
     display: none !important;
   }
@@ -6938,6 +7012,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+
   .or-in-send-link {
     margin-left: 2rem;
     font-family: "Helvetica";
@@ -6951,6 +7026,7 @@
     flex-direction: row;
     align-items: center;
     column-gap: 0.3rem;
+
     & .mini-line {
       background: rgba(255, 255, 255, 0.6);
       width: 22px;
@@ -6965,10 +7041,12 @@
   flex-direction: row;
   margin-top: 2rem;
   margin-bottom: 25px;
+
   .image {
     background: #ffffff;
     border-radius: 19.6552px;
   }
+
   .text-in-bar-code-with-text {
     font-family: var(--pro);
     font-style: normal;
@@ -6982,14 +7060,14 @@
 }
 
 .bar-code-and-text-mobile {
-     display: none;
+  display: none;
 }
 
-.footer-link{
+.footer-link {
   font-family: var(--pro);
   font-size: 18px;
   font-weight: 400;
-  color: #ffffff ;
+  color: #ffffff;
   cursor: pointer;
   transition: all 0.35s;
   display: block;
@@ -6997,7 +7075,7 @@
   line-height: 45px;
 }
 
-.rich-paragraph{
+.rich-paragraph {
   font-family: var(--light);
   font-size: 24px;
   font-weight: 400;
@@ -7005,28 +7083,31 @@
   color: #4B5157;
 }
 
-.feedback{
+.feedback {
   display: flex;
   justify-content: center;
-  &-main{ 
+
+  &-main {
     background: #E8EDED;
     border-radius: 18px;
     padding: 3% 4%;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
+
     @media (max-width: 767px) {
       font-size: 22px;
     }
   }
-  &-icon{
+
+  &-icon {
     width: 100%;
     display: flex;
     justify-content: space-around;
   }
 }
 
-.background-image-hc{
+.background-image-hc {
   background: url(/bg-faq.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -7036,18 +7117,20 @@
   display: flex;
   align-items: center;
 
-  &-title{
+  &-title {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     color: #ffffff;
     margin-left: 10%;
   }
-  &-nav{
+
+  &-nav {
     cursor: pointer;
   }
 }
-.single-hc-question{
+
+.single-hc-question {
   font-family: var(--bold);
   font-weight: 700;
   font-size: 40px;
@@ -7055,15 +7138,17 @@
   margin-top: 7%;
   scroll-margin-top: 9rem;
 }
-.single-hc{
+
+.single-hc {
   margin: 8% 16%;
 }
 
-.rich-text-helpcenter{
+.rich-text-helpcenter {
   font-family: var(--light);
   font-size: 24px;
   color: #4B5157;
-  > b{
+
+  >b {
     font-family: var(--pro);
     font-weight: 700;
     font-size: 28px;
@@ -7071,7 +7156,7 @@
   }
 }
 
-.jobdetail-type{
+.jobdetail-type {
   font-family: var(--pro);
   font-weight: 400;
   font-size: 24px;
@@ -7079,56 +7164,63 @@
   margin: 0;
 }
 
-.richtext-job{
-  &-h1{
+.richtext-job {
+  &-h1 {
     font-family: var(--bold);
     font-weight: 400;
     font-size: 32px;
     line-height: 32px;
   }
-  &-h2{
+
+  &-h2 {
     font-family: var(--bold);
     font-weight: 400;
     font-size: 30px;
     line-height: 32px;
   }
-  &-h3{
+
+  &-h3 {
     font-family: var(--bold);
     font-weight: 400;
     font-size: 28px;
     line-height: 32px;
   }
-  &-h4{
+
+  &-h4 {
     font-family: var(--bold);
     font-weight: 400;
     font-size: 26px;
     line-height: 32px;
   }
-  &-h5{
+
+  &-h5 {
     font-family: var(--bold);
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
   }
-  &-h6{
+
+  &-h6 {
     font-family: var(--bold);
     font-weight: 400;
     font-size: 22px;
     line-height: 32px;
   }
 }
-.rich-text-jobs{
+
+.rich-text-jobs {
   font-family: var(--light);
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  > b{
+
+  >b {
     font-family: var(--bold);
     font-size: 18px;
   }
 }
 
-.brand-guidelines-main{
+.brand-guidelines-main {
   background: url(/brandguidelinesbg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -7138,6 +7230,7 @@
   padding-bottom: 4rem;
   min-height: 638px;
   display: flex;
+
   @media (max-width: 767px) {
     background: url(/brandguidelinesbg-mob.png);
     background-repeat: no-repeat;
@@ -7145,31 +7238,37 @@
     background-size: 100% 100%;
     position: relative;
     flex-direction: column;
-    &-left{
+
+    &-left {
       width: auto !important;
       padding-right: 10% !important;
       padding-left: 10% !important;
     }
-    &-buttons{
+
+    &-buttons {
       flex-direction: column;
     }
-    &-download{
+
+    &-download {
       margin: auto;
       margin-bottom: 5%;
     }
-    &-downloadlogo{
+
+    &-downloadlogo {
       margin: auto !important;
       margin-bottom: 5%;
       cursor: pointer;
     }
   }
-  &-left{
+
+  &-left {
     width: 55%;
     padding-top: 7%;
     padding-right: 11%;
     padding-left: 10%;
   }
-  &-heading{
+
+  &-heading {
     font-family: var(--pro);
     font-style: normal;
     font-weight: 700;
@@ -7177,7 +7276,8 @@
     line-height: 78px;
     margin-bottom: 7%;
   }
-  &-description{
+
+  &-description {
     font-family: var(--pro);
     font-style: normal;
     font-weight: 400;
@@ -7185,7 +7285,8 @@
     line-height: 32px;
     margin-bottom: 7%;
   }
-  &-buttons{
+
+  &-buttons {
     display: flex;
     justify-content: space-between;
     font-family: var(--pro);
@@ -7193,13 +7294,15 @@
     font-weight: 700;
     font-size: 16px;
   }
-  &-download{
+
+  &-download {
     background: #FFFFFF;
     border-radius: 40px;
     padding: 19px 50px;
     color: #000000;
   }
-  &-downloadlogo{
+
+  &-downloadlogo {
     padding: 19px 50px;
     background: #252F44;
     border-radius: 40px;
@@ -7208,73 +7311,85 @@
     cursor: pointer;
   }
 }
-.barcode-container{
+
+.barcode-container {
   min-width: 125px !important;
   max-width: 170px !important;
   padding: 20px;
   background: #FFFFFF;
   border-radius: 19.6552px;
 }
-.react-player-earth{
+
+.react-player-earth {
   max-width: 459px;
   margin-bottom: -9px;
 }
-.react-player-person{
+
+.react-player-person {
   max-width: 552px;
 }
-.react-player-question{
+
+.react-player-question {
   max-width: 430px;
   margin-bottom: -6px;
   border-radius: 20px;
 }
-.react-player-about{
+
+.react-player-about {
   margin-bottom: -10px;
   max-width: 286px;
   border-radius: 31px 32px 0px 0px;
   overflow: hidden;
 }
-.react-player-download{
+
+.react-player-download {
   margin-bottom: -10px;
   max-width: 314px;
   border-radius: 33px 34px 0px 0px;
   overflow: hidden;
+
   @media (max-width: 767px) {
     border-radius: 40px 40px 0px 0px;
   }
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.admin-item-panel{
+
+.admin-item-panel {
   padding-left: 9%;
+
   @media (max-width: 767px) {
     padding-left: 15%;
-    >p{
+
+    >p {
       font-size: 18px;
     }
   }
 }
 
-.logo img{
+.logo img {
   object-fit: contain !important;
 }
 
-.interaction-card-right{
-  img{
+.interaction-card-right {
+  img {
     object-fit: cover;
   }
 }
 
 .icon-bg {
   // Add styling for the container div if needed
-  
+
   svg {
     width: 55px !important;
     height: 55px !important;
     transition: 1s all; // Add a smooth transition effect
     transform: scale(3.5);
+
     path {
       fill: white; // Set the default fill color
     }
@@ -7284,30 +7399,53 @@ input::-webkit-inner-spin-button {
 .icon-bg:hover {
   // Add styling for the container div if needed
   background-color: white !important;
+
   svg {
     width: 55px !important;
     height: 55px !important;
     transform: scale(3.5);
+
     path {
       fill: black; // Set the default fill color
     }
   }
 }
 
-.earn-money-main{
-  video{
+.earn-money-main {
+  video {
     filter: grayscale(2%);
   }
 }
 
-.accordian-active{
+.accordian-active {
   transition: 1s all;
   cursor: pointer;
   padding-top: 12px;
 }
 
-.custom-flex{
+.custom-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.feedback-parent{
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-like {
+  width: 70px;
+  height: 70px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.feedback-like-text{
+font-size: 30px;
 }

@@ -121,7 +121,7 @@ const ContactUsForm = () => {
         <div className="recaptcha-field">
           <ReCAPTCHA
             ref={recaptchaRef}
-            sitekey="6Ldt4pcjAAAAAJTTQkkYGkBeftpLFaIC1JNrsIcs"
+            sitekey="6LeqHswoAAAAAMdLvI_qL3dN8G7RTlKWYbJMHIr3"
             onChange={onChangeRecaptcha}
           />
         </div>

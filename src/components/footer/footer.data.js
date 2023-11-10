@@ -83,19 +83,19 @@ export default {
         label: 'Community Guidelines',
       },
       {
-        path: '/helpCenter',
+        path: '/policy',
         label: 'Privacy Policy',
       },
       {
-        path: '/helpCenter',
+        path: '/eula',
         label: 'EULA Policy',
       },
       {
-        path: '/helpCenter',
+        path: '/terms',
         label: 'Terms of use',
       },
       {
-        path: '/helpCenter',
+        path: '/cookies',
         label: 'Cookies Policy',
       }
     ],

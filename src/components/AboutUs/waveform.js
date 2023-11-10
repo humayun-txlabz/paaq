@@ -70,7 +70,7 @@ const Waveform = (props) => {
   return (
     <div>
       <animated.div style={poppingOutAnimation()}>
-        <div className="about-section-icon-play">
+        <div className="about-section-icon-play about-section-icon-play-modify">
           <animated.img
             style={poppingOutImageAnimation(1000)}
             onClick={() => handlePlayPause()}

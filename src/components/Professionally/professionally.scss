@@ -1,0 +1,118 @@
+.silder-div {
+    margin-bottom: 25px;
+    margin-top: 30px;
+
+    @media (min-width: 0px) and (max-width: 767px) {
+        margin-bottom: 8px;
+        margin-top: 20px;
+    }
+
+    &-inner {
+        margin: 0 12px 10px 12px;
+        padding: 0 10px;
+        box-shadow: 1px 1px 1px 0px #00000026;
+        border-radius: 20px;
+        height: 290px;
+        cursor: grabbing;
+        // background: radial-gradient(circle, #4ead6649, rgba(255, 255, 255, 0.80)), rgba(255, 255, 255, 0.80);
+        // background: radial-gradient(circle, #eba5034f, rgba(255, 255, 255, 0.80)), rgba(255, 255, 255, 0.80);
+        // background: radial-gradient(circle, #0000003e, rgba(255, 255, 255, 0.80)), rgba(255, 255, 255, 0.80);
+        // background: radial-gradient(circle, #00b5b53f, rgba(255, 255, 255, 0.441)), rgba(255, 255, 255, 0.107);
+        // background: radial-gradient(circle, #ef3c5d60, rgba(255, 255, 255, 0.441)), rgba(255, 255, 255, 0.107);
+        // background: radial-gradient(circle, #1491cb4e, rgba(255, 255, 255, 0.441)), rgba(255, 255, 255, 0.107);
+
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 0px) and (max-width: 767px) {
+            margin: 0 17px 10px 17px;
+        }
+
+    }
+
+    &-img {
+        width: 120px;
+        height: 120px;
+        margin: 12px 0 8px 0;
+
+        @media (min-width: 0px) and (max-width: 767px) {
+            width: 70px;
+            height: 70px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-text1 {
+        margin: 0 0 10px 0;
+        font-size: 20px;
+        text-align: center;
+        font-family: var(--bold);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+
+        @media (min-width: 0px) and (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+
+    &-text2 {
+        color: #4293C5;
+        text-align: center;
+        font-family: var(--pro);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        @media (min-width: 0px) and (max-width: 767px) {
+            font-size: 12px;
+        }
+    }
+
+    &-btn {
+        padding: 0 12px;
+        margin: 7px 0 15px 0;
+        border: none;
+        color: #FFF;
+        text-align: center;
+        font-family: var(--pro);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        background-color: #4EAD66;
+        border-radius: 8px;
+        height: 32px;
+        cursor: pointer;
+
+        @media (min-width: 0px) and (max-width: 767px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.slick-dots li button:before {
+    display: none !important;
+}
+
+.slick-active {
+    .custom-dot {
+        transition: 1s all;
+        opacity: 1 !important;
+        width: 32px !important;
+    }
+}
+
+li.slick-active {
+    margin-right: 20px !important;
+    margin-left: 1px !important;
+}

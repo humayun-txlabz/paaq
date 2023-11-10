@@ -7430,7 +7430,7 @@ input::-webkit-inner-spin-button {
 }
 
 
-.feedback-parent{
+.feedback-parent {
   display: flex;
   justify-content: center;
 }
@@ -7446,6 +7446,33 @@ input::-webkit-inner-spin-button {
   }
 }
 
-.feedback-like-text{
-font-size: 30px;
+.feedback-like-text {
+  font-size: 30px;
 }
+
+.external-link {
+  margin: 20px 50px;
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    margin: 20px 30px;
+  }
+}
+
+.external-pages {
+  #header {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @media (min-width: 0px) and (max-width: 767px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 120000px) {
+  .ask-firstavatar-modify {
+    margin-right: 90px !important;
+  }
+}
+

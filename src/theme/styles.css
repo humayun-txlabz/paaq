@@ -473,6 +473,26 @@ button {
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 750px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .connections-info-box-modify {
+    height: 500px !important;
+  }
+  .connections-info-box-modify1 {
+    height: 600px !important;
+    padding-bottom: 10px;
+  }
+  .socially-heading {
+    padding-top: 0% !important;
+  }
+  .connection-detail{
+    padding-bottom: 12px;
+  }
+  .connections-info-box-mobile{
+    gap: 10px !important;
+  }
 }
 
 .banner-image-connection-mobile {
@@ -483,7 +503,7 @@ button {
 
 .connection-heading {
   padding-left: 10%;
-  padding-top: 5%;
+  padding-top: 1%;
   /* padding-right: 1%; */
 }
 
@@ -1022,6 +1042,8 @@ button {
 .ask-firstavatar {
   display: flex;
   justify-content: end;
+  transform: rotate(-4deg);
+  /* margin-right: 20px; */
 }
 
 .ask-firstavatar-question {
@@ -1032,6 +1054,84 @@ button {
   margin-top: 0;
   color: #ffffff;
   border-radius: 25px 0px 25px 25px;
+}
+
+.question-num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(0%, -50%);
+  /* width: 491px;
+  height: 201px; */
+  background-color: red;
+  text-align: center;
+  font-family: "Sofia-Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7ae2d6, #3699f3, #ffffff;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.question-num1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(0%, 50%);
+  /* width: 491px;
+  height: 201px; */
+  background-color: red;
+  text-align: center;
+  font-family: "Sofia-Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7ae2d6, #3699f3, #ffffff;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.question-num-text {
+  background: linear-gradient(
+    269.7deg,
+    #7ae2d6 -8.96%,
+    #3699f3 32.9%,
+    #ffffff 86.12%
+  );
+  background-clip: text;
+  -webkit-background-clip: text; /* For older webkit browsers */
+  color: transparent;
+}
+
+.question-num-text1 {
+  background: linear-gradient(269.47deg, #ef3c5e -4.72%, #8fd1fa 105.05%);
+  background-clip: text;
+  -webkit-background-clip: text; /* For older webkit browsers */
+  color: transparent;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .question-num {
+    font-size: 9px;
+    padding: 5px 10px;
+  }
+  .question-num1 {
+    font-size: 9px;
+    padding: 5px 10px;
+  }
 }
 
 .ask-firstavatar-question-detail {
@@ -1071,6 +1171,7 @@ button {
   display: flex;
   margin-top: 20px;
   position: relative;
+  transform: rotate(4deg);
 }
 
 .ask-secondavatar-img {
@@ -1105,6 +1206,7 @@ button {
   margin-top: 0;
   color: #ffffff;
   border-radius: 0px 25px 25px 25px;
+  border: 2px solid white;
 }
 @media (max-width: 767px) {
   .ask-secondavatar-question {
@@ -2402,6 +2504,8 @@ button {
   right: 28%;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   z-index: 99;
 }
 
@@ -3380,7 +3484,57 @@ button {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 1000000;
 }
+
+@media (min-width: 1100px) and (max-width: 1290px) {
+  .about-section-icon-play {
+    right: 52% !important;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .about-section-icon-play {
+    right: 56% !important;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 900px) {
+  .about-section-icon-play {
+    right: 63% !important;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 750px) {
+  .about-section-icon-play {
+    right: 60% !important;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  .about-section-icon-play {
+    right: 65% !important;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+  .about-section-icon-play {
+    right: 70% !important;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 400px) {
+  .about-section-icon-play {
+    right: 75% !important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 350px) {
+  .about-section-icon-play {
+    right: 83% !important;
+  }
+}
+
 .about-waveform {
   margin-top: 5px;
 }
@@ -3522,5 +3676,3 @@ button {
 .rich-text-jobs {
   white-space: pre-wrap;
 }
-
-

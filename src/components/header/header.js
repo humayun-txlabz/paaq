@@ -18,12 +18,12 @@ export default function Header({ className }) {
   const {pathname} = useRouter()
   return (
     <DrawerProvider>
-      <header sx={styles.header} className={className} id="header">
+      <header sx={styles.header} className={className} id="header" >
         <img className="logoImg" src={LogoMain} />
         <div className="right-container">
           <div className="nav-menu-desktop">
             {menuItems.map(({ path, label }, i) => (
-              <div key={i} className="nav-menu-items"><Link style={{color: '#252F44'}}  href={path} key={i}>
+              <div key={i} className={`nav-menu-items ${pathname == path ?"menu-active":""}`}><Link style={{color: '#252F44'}}  href={path} key={i}>
                 {label}
               </Link>
               {pathname == path ? <img className="underline-style" src={HomeUnderLine} /> : null}
@@ -99,7 +99,8 @@ const styles = {
       position: "fixed",
       backgroundColor: "background",
       color: "#000000",
-      boxShadow: "0 1px 2px rgba(0, 0, 0, 0.06)",
+      // boxShadow: "0 1px 2px rgba(0, 0, 0, 0.06)",
+      boxShadow: '0px 1px 5px 0px rgba(0, 0, 0, 0.25)',
       py: 3,
       "nev > a": {
         color: "text",

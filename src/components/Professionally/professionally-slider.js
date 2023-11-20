@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 // react-slick files
 import "slick-carousel/slick/slick.css";
@@ -22,7 +22,7 @@ let settings = {
   speed: 700,
   slidesToShow: 2,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   customPaging: function (i) {
     return (
       <div className='custom-dot'
@@ -48,7 +48,7 @@ let settings = {
       settings: {
         arrows: false,
         dots: true,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
       },
     },
@@ -57,7 +57,7 @@ let settings = {
       settings: {
         arrows: false,
         dots: true,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
       },
     },
@@ -66,7 +66,7 @@ let settings = {
       settings: {
         arrows: false,
         dots: true,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
       },
     },
@@ -130,13 +130,21 @@ const sliderData = [{
 ]
 
 const ProfessionallySlider = () => {
+  const [hideState, setHideState] = useState(false)
+
+  useEffect(()=>{
+setTimeout(() => {
+  setHideState(true)
+}, 10000);
+  },[])
+
   return (
     <div >
       <Slider {...settings}>
-        {sliderData.map((element) => {
+        {sliderData.map((element, index) => {
           return (
-            <div className="silder-div">
-              <div className='silder-div-inner' style={{ background: element?.backgroundColor }}>
+            <div className={`silder-div`}>
+              <div className={`silder-div-inner ${index === sliderData.length-1 && hideState == false ? 'hide-class' : ''}`} style={{ background: element?.backgroundColor, }}>
                 <div className='silder-div-img'>
                   <img src={element?.img} alt="Slider Image" />
                 </div>

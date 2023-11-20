@@ -1,3 +1,4 @@
+import ReplyEarnSlider from 'components/ReplyEarnSlider';
 import React, {useEffect, useState, useCallback, useRef} from 'react'
 import ReactPlayer from 'react-player';
 import useIsInViewport from 'use-is-in-viewport'
@@ -20,9 +21,12 @@ const EarnMoneyBanner = React.forwardRef(function EarnMoneyBanner(parentRef) {
     }, [isDivInViewport])
 
     return (
-        <div  className='earn-money-main'>
+        <div  className='earn-money-main earn-money-main-modify'>
             <div ref={earnMoneyReference}  className='earn-money-image-container'>
-            {domLoaded && (
+                <div style={{display:'flex', justifyContent:'center'}}>
+                    <ReplyEarnSlider/>
+                </div>
+            {/* {domLoaded && (
                 <div className='player-wrapper'>
                 <ReactPlayer 
                     className='react-player-person'
@@ -34,7 +38,7 @@ const EarnMoneyBanner = React.forwardRef(function EarnMoneyBanner(parentRef) {
                     muted={true}
                 />
                 </div>
-            )}
+            )} */}
             </div>
             <div className='earn-money-detail'>
                 <span className='earn-money-title'>

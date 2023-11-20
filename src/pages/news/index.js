@@ -45,6 +45,7 @@ export async function getStaticProps() {
 
 export default function News2(props) {
   const { items } = props;
+  console.log("items", items)
   const [active, setActive] = useState(1);
   const pages = [];
   let count = props.items.length / 5 + 1;
@@ -62,6 +63,7 @@ export default function News2(props) {
     setMax(max + 5);
     window.scrollTo(0, 0);
   };
+
   const decrease = () => {
     setActive(active - 1);
     setMin(min - 5);

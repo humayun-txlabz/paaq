@@ -19,7 +19,7 @@ export const newsSectionObjects = [
         detail:'You want to release a website but have doubt if everything is ready? Are you sure you remember to add any minor but necessary details? We took control and find a way to remedy such bugs.',
         publisher:'Dipitho Marukka',
         date:'31 JAN 2022',
-        image:image2
+        image:image1
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const newsSectionObjects = [
         detail:'Business runs smoothly when all the processes work like clockwork. The same goes for software development. Here, you may find yourself confused. Scoping, estimating, requirements gathering seems puzzling.',
         publisher:'Dipitho Marukka',
         date:'31 JAN 2022',
-        image:image3
+        image:image1
     },
     {
         id: 4,

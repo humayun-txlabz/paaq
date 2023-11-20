@@ -18,7 +18,7 @@ const SectionPaidMessage =() => {
                  <PaidMessagesComponent />
                  {/* <img src={sec11} className="image" /> */}
             </div>
-            <div className="left">
+            <div className="left feature-ask-btn">
                  <div className="heading">
                       <div className="text">
                            <div

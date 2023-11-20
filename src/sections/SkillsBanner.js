@@ -2,6 +2,9 @@ import { useRef } from "react";
 import CustomSlider from "components/CustomSlider";
 import Image from "next/image";
 import VectorImage from "../assets/Images/VectorOval.png";
+import img1 from '../assets/Images/main2.png'
+import img2 from '../assets/professionally/img6.png'
+import img3 from '../assets/Images/main44.png'
 
 const SkillsBanner = () => {
   const ref1 = useRef();
@@ -9,25 +12,31 @@ const SkillsBanner = () => {
 
   const sliderData = [
     {
-      title: "Overall Skill",
+      title: "Vusi Nyovest wrote a review:",
+      des: 'I’m very impressed with your answers to my questions. You delivered more than I expected.  ❤️',
       color: "#FF703E",
-      defaultValue: 60,
+      defaultValue: 5,
+      img: img1,
     },
     {
-      title: "Communication",
+      title: "Zama Adeleke wrote a review:",
+      des: "Wow! I’m absolutely blown away by the incredible answers you've provided to my questions! 👍🙏🏽",
       color: "#8436F4",
-      defaultValue: 70,
+      defaultValue: 4,
+      img: img2,
     },
     {
-      title: "Ideas And Solutions",
+      title: "Fizzy Adeyiga wrote a review:",
+      des: "Seriously, you've left me with a big smile on my face and a brain full of fascinating information. 😍",
       color: "#19CDA6",
-      defaultValue: 80,
+      defaultValue: 5,
+      img: img3,
     },
   ];
 
   return (
-    <div className="skills-banner-container">
-      <img style={{ position: "absolute", right: "20%" }} src={VectorImage} />
+    <div className="skills-banner-container" style={{position:'relative'}}>
+      <img className="skills-banner-container-img-bg" style={{ position: "absolute", right: "20%" }} src={VectorImage} />
       <div
         className="skills-mobile-container"
         style={{ color: "white", width: "60%", textAlign: "left" }}
@@ -41,7 +50,7 @@ const SkillsBanner = () => {
             fontFamily: "Sofia-Pro",
           }}
         >
-          Show Your skills
+          Expert Reviews
         </div>
         <div>
           <div
@@ -54,9 +63,7 @@ const SkillsBanner = () => {
               alignItems: "center",
             }}
           >
-            My Skills shows the areas in which a person is good at something.
-            People will feel more comfortable asking you questions if your
-            skills are available for them to see.
+            Reviews written by people who asked experts questions are available for everyone to read and help them make informed decisions, assess the expertise and quality of the advice provided, and develop trust in the expert before asking them questions.
             <span
               className="learn-more-mobile"
               style={{

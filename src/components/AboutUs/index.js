@@ -96,9 +96,15 @@ const AboutUsMain = () => {
         </div>
         <div className="about-section-image6">
           <animated.div style={poppingOutAnimation(700)}>
-            <div>
+            <div className="main-section-inner-img6">
               <Image className="main-section-inner" src={AboutImage6} />
+              <div class="main-section-inner-circle" style={{animationDelay: '0s'}}></div>
+              <div class="main-section-inner-circle" style={{animationDelay: '0.1s'}}></div>
+              <div class="main-section-inner-circle" style={{animationDelay: '0.2s'}}></div>
+              <div class="main-section-inner-circle" style={{animationDelay: '0.3s'}}></div>
+              <div class="main-section-inner-circle" style={{animationDelay: '0.4s'}}></div>
             </div>
+
           </animated.div>
         </div>
         <div className={isPlay ? "spinner-wrap" : "spinner-off"}>
@@ -124,17 +130,17 @@ const AboutUsMain = () => {
           <DirectMessagesCard />
         ) : (
           <InteractionCard
-              alignImageRight={'center'}
-              image={AboutImage8}
-              imageWidth={327}
-              imageHeight={346}
-              heading={"Millions of direct messages are sent daily"}
-              detail={
-                `Millions of direct messages are sent daily to people on social media
+            alignImageRight={'center'}
+            image={AboutImage8}
+            imageWidth={327}
+            imageHeight={346}
+            heading={"Millions of direct messages are sent daily"}
+            detail={
+              `Millions of direct messages are sent daily to people on social media
                 asking for information about various topics. However, it has become
                 increasingly challenging to respond to every one of these messages,
                 especially if the question is technical.`
-              }
+            }
           />
         )
       }
@@ -154,7 +160,8 @@ const AboutUsMain = () => {
         }
       />
       <InteractionCard
-        alignImageRight={'start'}
+        // alignImageRight={'start'}
+
         image={IntImage2}
         imageWidth={476}
         imageHeight={510}

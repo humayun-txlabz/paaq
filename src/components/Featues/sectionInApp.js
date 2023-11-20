@@ -5,7 +5,7 @@ import InApp from '../../assets/InApp.gif';
 
 function SectionInApp() {
   return (
-    <div className="section-3" id="IntroductionVideo">
+    <div className="section-3 section-3-modify" id="IntroductionVideo">
 
       <div className="right in-web-left">
       <img src={InApp} className="image" />
@@ -16,7 +16,10 @@ function SectionInApp() {
             
             <div className="text"><img src={StartIcon} className="icon" />In-app <br/>Introduction Video</div>
           </div>
-          <p>This feature allows users to make an introduction video so that other PAAQ users can get to know them. In addition, the video introduction feature also serves as a verification tool because it can not be uploaded since there is a unique QR code placed on it to prevent account impersonation.</p>
+          <p>This feature allows users to make an introduction video so that other PAAQ users can get to know them. 
+<br/>
+<br/>
+The introduction video feature also serves as a verification tool because it can not be uploaded to prevent account impersonation.</p>
       </div>
       <div className="right in-mobile-right">
       <img src={InApp} className="image" />

@@ -75,7 +75,7 @@ export default function Banner() {
   });
 
   const textLen =
-    "With PAAQ, you can directly ask a question to someone who can provide an informed, detailed answer to your query, based on their experience and expertise. This is different from the results you get from a search engine, which are more general and don’t provide tailored solutions to your specific questions.";
+    "Conversing with an expert will give you a sense of human connection. However, this feeling is absent when using an automated system. With PAAQ, you can ask anyone with experience and expertise for informed and detailed answers to your questions.";
 
   const poppingOutAnimation = (delay) =>
     useSpring({
@@ -494,7 +494,9 @@ export default function Banner() {
             className="getstarted-button"
             style={{backgroundColor:"#00B5B4"}}
           >
+            <span className="getstarted-button-modify">
             Get Started
+            </span>
           </Button>
         </Box>
         <div className="banner-info-box">
@@ -530,15 +532,13 @@ export default function Banner() {
             </div>
 
             <div className="web-show-paaq-text">
-              “PAAQ is a question-and-answer social media application that
-              connects experts in their field with people interested in their
-              craft socially and professionally.”
+              PAAQ is a social media platform that connects users with experts to ask questions and receive answers through text or video.
               <br />
               <br />
               {isTruncated ? (
-                <span>{textLen.slice(0, 150)}...</span>
+                <span>{textLen.slice(0, 131)}...</span>
               ) : (
-                <span>{textLen}</span>
+                <span>{textLen.slice(0, 131)} <br/><br/> {textLen.slice(132, 1301)} </span>
               )}
               <br />
               <span
@@ -581,25 +581,24 @@ export default function Banner() {
               fontSize: 18,
               fontFamily: "Sofia-Pro",
               display: "flex",
-              justifyContent: "center",
               alignItems: "flex-end",
               width: "40%",
               overflow: "hidden",
             }}
           >
-            {domLoaded && (
-              <div className="player-wrapper">
-                <ReactPlayer
-                  className="react-player-about"
-                  url="gifs/PostInformation.mov"
-                  width="100%"
-                  height="100%"
-                  loop={true}
-                  playing={true}
-                  muted={true}
-                />
-              </div>
-            )}
+             {domLoaded && (
+                  <div className='player-wrapper'>
+                    <ReactPlayer
+                      className='react-player-download'
+                      url='gifs/PostInformation.mov'
+                      width='100%'
+                      height='100%'
+                      loop={true}
+                      playing={true}
+                      muted={true}
+                    />
+                  </div>
+                )}
           </div>
         </div>
       </Container>
@@ -650,7 +649,7 @@ const styles = {
     margin: "30px 0px",
     fontFamily: "Sofia-Pro",
     fontWeight: 400,
-    color: "black",
+    color: "#1E1E1E",
     lineHeight: 1.2,
     fontSize: 20,
     "@media screen and (max-width: 720px)": {

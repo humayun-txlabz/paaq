@@ -80,7 +80,7 @@ const CookiesPolicy = () => {
             <p>If you have any questions about this Cookies Policy, You can contact us:</p>
             <ul style={{ padding: "0 0 10px 0" }}>
                 <li>
-                    <p>By email: <a href='mailto:legal@paaq.app' class="__cf_email__" data-cfemail="1e777078715e6e7f7f6f307f6e6e">legal@paaq.app</a></p>
+                    <p>By email: <a href='mailto:cookies@paaq.app' class="__cf_email__" data-cfemail="1e777078715e6e7f7f6f307f6e6e">cookies@paaq.app</a></p>
                 </li>
                 <li>
                     <p>By visiting this page on our website: <a href="https://paaq.app/contactUs" rel="external nofollow noopener" target="_blank">https://paaq.app/contactUs</a></p>

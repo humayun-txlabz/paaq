@@ -17,7 +17,7 @@ import LinkedinMod from 'assets/Icons/footerIcons/linedinMod.png';
 import TwitterMod from 'assets/Icons/footerIcons/TwitterMod.png';
 export default function Footer() {
 
-
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className='footer-mobile-view' sx={styles.footer}>
@@ -123,7 +123,7 @@ export default function Footer() {
       </Container>
       <div className='footer-copyright-container'>
         <Text sx={styles.footer.copyright}>
-          Copyright© PAAQ 2022. All Rights Reserved.
+          Copyright© PAAQ {currentYear}. All Rights Reserved.
         </Text>
         <div className='icons-bottom-footer icons-bottom-footer-web'>
           <div className='icon-bg'>

@@ -554,7 +554,7 @@ const PrivacyPolicy = () => {
             <p>Additionally, in order to exercise any of Your rights under the CCPA/CPRA, and if You are a California resident, You can contact Us:</p>
             <ul>
                 <li>
-                    <p>By email: <a href='mailto:legal@paaq.app' class="__cf_email__" data-cfemail="ec85828a83ac9c8d8d9dc28d9c9c">legal@paaq.app</a></p>
+                    <p>By email: <a href='mailto:policy@paaq.app' class="__cf_email__" data-cfemail="ec85828a83ac9c8d8d9dc28d9c9c">policy@paaq.app</a></p>
                 </li>
                 <li>
                     <p>By visiting this page on our website: <a href="https://paaq.app/contactUs" rel="external nofollow noopener" target="_blank">https://paaq.app/contactUs</a></p>
@@ -623,7 +623,7 @@ const PrivacyPolicy = () => {
             <p>If you have any questions about this Privacy Policy, You can contact us:</p>
             <ul style={{padding:"0 0 0px 0"}}>
                 <li>
-                    <p>By email: <a href='mailto:legal@paaq.app' class="__cf_email__" data-cfemail="8de4e3ebe2cdfdececfca3ecfdfd">legal@paaq.app</a></p>
+                    <p>By email: <a href='mailto:policy@paaq.app' class="__cf_email__" data-cfemail="8de4e3ebe2cdfdececfca3ecfdfd">policy@paaq.app</a></p>
                 </li>
                 <li>
                     <p>By visiting this page on our website: <a href="https://paaq.app/contactUs" rel="external nofollow noopener" target="_blank">https://paaq.app/contactUs</a></p>

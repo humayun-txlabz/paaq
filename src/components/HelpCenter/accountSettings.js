@@ -12,6 +12,8 @@ const AccountSettingsFaqs = ({items}) => {
   const [isAccordianOpen, setIsAccordianOpen] = useState(false);
   const [isAccordianAction, setIsAccordianAction] = useState(false);
 
+  console.log("itemsasd", items)
+
   return (
     <div className='help-center-faq-single-card'>
         <div className='help-center-faq-single-card-heading'>
@@ -45,15 +47,13 @@ const AccountSettingsFaqs = ({items}) => {
           )}
         </div>
         { isAccordianAction === true ?
-          items ?
-          items.map((value) => (
+          items?.map((value) => (
             <Link href={`/helpCenter/${value?.fields?.category}?id=${value?.sys?.id}`}>
-              <div style={{display: width > 600 ? 'unset' : isAccordianOpen ? 'unset' : 'none'}}>
+              <div style={{display: width > 600 ? 'unset' : isAccordianOpen ? 'unset' : 'unset', cursor:'pointer'}}>
                 <SinlgeFaqItem text={titleCase(value?.fields?.question)} />
               </div>
             </Link>
-
-          )) :  null  : null
+          )) :  null  
         }
     </div>
   )

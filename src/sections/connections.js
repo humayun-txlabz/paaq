@@ -69,7 +69,7 @@ export default function Connections() {
                                 /> */}
 
                               </div>
-                               <div >
+                               <div style={{padding:'0px 0 0 0'}}>
                                              <ProfessionallySlider />
                                         </div>
                               <div
@@ -89,14 +89,14 @@ export default function Connections() {
                                              fontFamily: "var(--pro)",
                                         }}
                                    >
-                                        01. Professionally
+                                        <span className='connections-opacity'>01.</span> Professionally
                                    </div>
 
                                    <div
                                         className="connection-detail"
                                         style={{
                                              fontSize: "18px",
-                                             marginTop: "5%",
+                                             marginTop: "1%",
                                              color: "#5B5B5B",
                                              lineHeight: 2,
                                              fontWeight: "lighter",
@@ -104,14 +104,13 @@ export default function Connections() {
                                              display: "flex",
                                              justifyContent: "center",
                                              alignItems: "center",
-                                             paddingBottom: "7%",
+                                             paddingBottom: "0%",
                                         }}
                                    >
-                                        A professional is someone who possesses a specific
-                                        set of skills related to their profession; as such,
-                                        it is only reasonable to share your knowledge with
-                                        others. In the example of a cameraman, the effective
-                                        use of a camera is one of his skills.
+                                        Speaking with a professional about a health issue offers more assurance and peace of mind than relying solely on a search engine for answers.
+<br/>
+<br/>
+The human connection evokes a sense of security and trust.
                                    </div>
                                    <br />
                               </div>
@@ -136,11 +135,11 @@ export default function Connections() {
                                              fontFamily: "Sofia-Pro",
                                         }}
                                    >
-                                        02. Socially
+                                      <span className='connections-opacity'>02.</span>Socially
                                    </div>
 
                                    <div
-                                        className="connection-detail"
+                                        className="connection-detail connection-detail-modify"
                                         style={{
                                              fontSize: 18,
                                              marginTop: "4%",

@@ -25,7 +25,7 @@ const AppAndPlayStoreFooter = () => {
 
 const styles={
     shareKnowledgeContainer: {
-        marginTop: 100,
+        marginTop: 30,
         alignItems: 'center',
         display: 'flex',
         flexDirection: 'column',
@@ -42,6 +42,9 @@ const styles={
         display: 'flex',
         fontWeight: '700',
         color: '#252F44',
+        backgroundImage: 'linear-gradient(98.47deg, #00B5B4 -1.37%, #4293C5 76.55%)',
+        WebkitBackgroundClip: 'text',
+        color: 'transparent',
         lineHeight: '76px',
         marginTop: 16,
         fontFamily: 'Sofia-Pro',
@@ -52,6 +55,11 @@ const styles={
         alignItems: 'center',
         justifyContent: 'center',
         width: "43%",
+        '@media (min-width: 719px) and (max-width: 1030px)': {
+            width: "53%",
+            marginLeft:'5px',
+            marginRight:'5px',
+        },
         '@media screen and (max-width: 720px)': {
             width: '65%',
             marginLeft:1
@@ -85,6 +93,9 @@ const styles={
         alignItems: 'space-between',
         justifyContent: 'space-between',
         width: '30%',
+        '@media (min-width: 767px) and (max-width: 1030px)': {
+            width: '40%',
+        },
         '@media screen and (max-width: 920px)': {
             width: '80%'
         }

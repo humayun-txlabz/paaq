@@ -16,7 +16,7 @@ const MainFeatures = ({section}) => {
 
   return (
     <div className='features-page-container'>
-        <SectionMySkills />
+        {/* <SectionMySkills /> */}
         <SectionPaidMessage />
         <SectionSetPrice />
         <SectionInApp />

@@ -56,7 +56,7 @@ const SafetySecurityFaqs = ({ marginTop, items }) => {
             href="/helpCenter/[category]"
             as={`/helpCenter/${value?.fields?.category}?id=${value?.sys?.id}`}
           >
-            <a style={{ display: width > 600 ? 'unset' : isAccordianOpen ? 'unset' : 'none' }}>
+            <a style={{ display: width > 600 ? 'unset' : isAccordianOpen ? 'unset' : 'unset' }}>
               <SinlgeFaqItem text={titleCase(value?.fields?.question)} />
             </a>
           </Link>

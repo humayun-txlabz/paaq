@@ -51,11 +51,11 @@ export default {
       }
     ],
     [
-      {
-        path: '/features',
-        label: 'My Skills',
-        id: 'SectionMySkills'
-      },
+      // {
+      //   path: '/features',
+      //   label: 'My Skills',
+      //   id: 'SectionMySkills'
+      // },
       {
         path: '/features',
         label: 'Skill Rating',

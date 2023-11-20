@@ -1,10 +1,12 @@
 .silder-div {
     margin-bottom: 25px;
     margin-top: 30px;
+    margin-left: 120px;
 
     @media (min-width: 0px) and (max-width: 767px) {
         margin-bottom: 8px;
         margin-top: 20px;
+        margin-left: 90px;
     }
 
     &-inner {
@@ -26,8 +28,10 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+
         @media (min-width: 0px) and (max-width: 767px) {
-            margin: 0 17px 10px 17px;
+            margin: 0 7px 10px 7px;
+            height: 219px;
         }
 
     }
@@ -115,4 +119,26 @@
 li.slick-active {
     margin-right: 20px !important;
     margin-left: 1px !important;
+}
+
+.hide-class {
+    display: none;
+
+    @media (min-width: 0px) and (max-width: 767px) {
+        display: flex;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1030px) {
+    .aboutus-left-section-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 840px) and (max-width: 94px) {
+    .section-5{
+        .left{
+padding-left: 10px !important;
+        }
+    }
 }

@@ -43,12 +43,12 @@ export default function Download() {
 
   const sendDownloadLink = async () => {
     const numberWithCode = `+${getCountryCallingCode(countryCode)}${phoneNumber}`
-    console.log("numberWithCode", numberWithCode, phoneNumber)
+    console.log("numberWithCode", numberWithCode, phoneNumber?.length)
     if (phoneNumber && numberWithCode) {
       setPending(true);
       try {
         const res = await fetch(
-          `${API_ENDPOINT}/senddownloadlink`, {
+          `https://apiv1.paaq.app/v1/link/number`, {
           method: 'POST',
           // mode: 'cors', // this cannot be 'no-cors'
           headers: {
@@ -56,11 +56,13 @@ export default function Download() {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            phoneNo: numberWithCode
+            phoneNumber: numberWithCode,
+            countryCode: numberWithCode?.slice(0, -phoneNumber?.length),
           })
         }
         );
         if (res.status === 200) {
+          setPhoneNumber(null)
           notification.success({
             message: 'Download Link Sent',
             description:
@@ -92,11 +94,13 @@ export default function Download() {
   }
 
   return (
-    <ThemeProvider theme={theme}>
+    <div >
+<ThemeProvider theme={theme} >
       <StickyProvider>
-        <Layout>
+        <div >
+        <Layout >
           <SEO title="Download" />
-          <Container sx={styles.mainContainer}>
+          <Container sx={styles.mainContainer} >
             <Container sx={styles.downloadContainer}>
               <Container sx={styles.textContainer}>
                 <Text sx={styles.heading}>Download PAAQ</Text>
@@ -113,7 +117,7 @@ export default function Download() {
                     />
                   </Container>
                   <Container sx={styles.phoneContainer}>
-                    <input style={styles.textField} onChange={(e) => {
+                    <input style={styles.textField} value={phoneNumber || ''} onChange={(e) => {
                       setPhoneNumber(e.target.value)
                     }} type="number" id="quantity" name="quantity" max="10" min="1" />
                     {/* <Input sx={styles.textField} onChange={onChangeNumber} placeholder="Phone Number" /> */}
@@ -147,7 +151,7 @@ export default function Download() {
               </Container>
               <Container sx={styles.imageContainer}>
                 {domLoaded && (
-                  <div className='player-wrapper'>
+                  <div className='player-wrapper player-wrapper-download' >
                     <ReactPlayer
                       className='react-player-download'
                       url='gifs/PostInformation.mov'
@@ -162,10 +166,14 @@ export default function Download() {
               </Container>
             </Container>
           </Container>
+          <div className="download-play-store" >
           <AppAndPlayStoreFooter />
+          </div>
         </Layout>
+        </div>
       </StickyProvider>
     </ThemeProvider>
+    </div>
   );
 }
 
@@ -174,9 +182,11 @@ const styles = {
     display: "flex",
     width: "100%",
     alignItems: "center",
-    paddingTop: "100px",
+    marginBottom:'80px',
+    paddingTop: "60px",
     "@media screen and (max-width: 720px)": {
-      paddingTop: "50px",
+      paddingTop: "0px",
+      marginBottom:'0px'
     },
     justifyContent: "center",
     flexDirection: "column",
@@ -192,6 +202,7 @@ const styles = {
       flexDirection: "column",
       borderRadius: "15px",
       width: "90%",
+      paddingTop: "60px",
     },
   },
   textContainer: {
@@ -200,6 +211,14 @@ const styles = {
       width: "100%",
       paddingLeft: "30px !important",
       marginBottom: '10%'
+    },
+    "@media (min-width: 720px) and (max-width: 970px)": {
+      width: "100%",
+      paddingLeft: "50px !important",
+      marginBottom: '10%'
+    },
+    "@media (min-width: 970px) and (max-width: 1100px)": {
+      paddingLeft: "50px !important",
     },
     "@media screen and (max-width: 970px)": {
       width: "100%",

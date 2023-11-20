@@ -143,7 +143,7 @@ const EulaDetail = () => {
     <p>If you have any questions about this Agreement, You can contact Us:</p>
     <ul style={{padding:"0 0 10px 0"}}>
         <li>
-            <p>By email: <a href='mailto:legal@paaq.app' class="__cf_email__" data-cfemail="ea83848c85aa9a8b8b9bc48b9a9a">legal@paaq.app</a></p>
+            <p>By email: <a href='mailto:eula@paaq.app' class="__cf_email__" data-cfemail="ea83848c85aa9a8b8b9bc48b9a9a">eula@paaq.app</a></p>
         </li>
         <li>
             <p>By visiting this page on our website: <a href="https://paaq.app/contactUs" rel="external nofollow noopener" target="_blank">https://paaq.app/contactUs</a></p>

@@ -231,14 +231,11 @@ const AskQuestionBanner = React.forwardRef(function AskQuestionBanner(parentRef)
                <div className="earn-money-detail">
                     <span className="earn-money-title">Ask Questions</span>
                     <span className="earn-money-subheading">
-                         Interacting with anyone is possible by paying a fee to receive a
-                         reply to your message or question.
+                    Interacting with anyone is possible by paying a fee to receive an answer your questions.
                     </span>
                     <br></br>
                     <span className="earn-money-subheading">
-                         PAAQ is the right platform to direct a message or question to
-                         anyone based on the content they posted or based on their area of
-                         expertise.
+                    PAAQ has a network of experts in different fields, so you can be sure that there is someone available who can provide you with the best possible answer.
                     </span>
                </div>
           </div>

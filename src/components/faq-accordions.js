@@ -139,7 +139,7 @@ const styles = {
             lineHeight: '30px',
             marginTop:'10px',
         },
-        color: '#252F44',
+        color: '#1e1e1e',
         display: 'flex',
         flexDirection: 'row',
         lineHeight: '50px',
@@ -157,7 +157,7 @@ const styles = {
         fontWeight: '500',
         fontSize: '40px',
         fontFamily: 'Sofia-Pro',
-        color: '#252F44',
+        color: '#1e1e1e',
         lineHeight: '50px',
         textTransform: 'capitalize'
 

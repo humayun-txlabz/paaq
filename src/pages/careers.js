@@ -10,37 +10,37 @@ import { apiClientContentFul } from 'services/apiClient';
 let totalJobs = 0;
 let totalFeaturedJobs = 0;
 
-export const getServerSideProps = async () => {
+// export const getServerSideProps = async () => {
 
-    const posts = await apiClientContentFul("jobs", 0, 100)
-    .then((res) => {
-        totalJobs = res.total;
-      return res;
-    });
+//     const posts = await apiClientContentFul("jobs", 0, 100)
+//     .then((res) => {
+//         totalJobs = res.total;
+//       return res;
+//     });
 
-    const featurePosts = await apiClientContentFul("featuredJobs", 0, 100)
-    .then((res) => {
-        totalFeaturedJobs = res.total;
-      return res;
-    });
+//     const featurePosts = await apiClientContentFul("featuredJobs", 0, 100)
+//     .then((res) => {
+//         totalFeaturedJobs = res.total;
+//       return res;
+//     });
   
-    return {
-      props: { fallback: false, totalJobs: totalJobs, totalFeaturedJobs: totalFeaturedJobs },
-    };
-};
+//     return {
+//       props: { fallback: false, totalJobs: totalJobs, totalFeaturedJobs: totalFeaturedJobs },
+//     };
+// };
 
 const Careers = (props) => {
 
     const { totalFeaturedJobs, totalJobs } = props;
     return (
-        <ThemeProvider theme={theme}>
+        <>
             <StickyProvider>
                 <Layout>
                     <SEO title="Careers" />
                     <CareersMain totalFeaturedJobs={totalFeaturedJobs} totalJobs={totalJobs} />
                 </Layout>
             </StickyProvider>
-        </ThemeProvider>
+        </>
     );
 }
 

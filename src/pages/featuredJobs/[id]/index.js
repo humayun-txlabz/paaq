@@ -39,13 +39,11 @@ export const getStaticProps = async (context) => {
 export default function FeaturedJobDetails(props) {
     const { fields } = props;
     return (
-         <ThemeProvider theme={theme}>
               <StickyProvider>
                    <Layout>
                         <SEO title="Job Insights" />
                         <JobInsightsMain jobItem={fields} />
                    </Layout>
               </StickyProvider>
-         </ThemeProvider>
     );
 }

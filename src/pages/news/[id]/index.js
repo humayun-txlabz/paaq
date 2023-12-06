@@ -52,13 +52,11 @@ export default function BlogDetails2(props) {
 
 
   return (
-    <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
           <SEO />
           <SingleBlogItem blogItem={fields?.detail} />
         </Layout>
       </StickyProvider>
-    </ThemeProvider>
   );
 }

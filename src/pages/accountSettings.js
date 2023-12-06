@@ -135,7 +135,7 @@ const styles = {
     },
     fontWeight: "700",
     textAlign: "center",
-    color: "#252F44",
+    color: "#1e1e1e",
   },
   innerContainer: {
     width: "66%",
@@ -156,7 +156,7 @@ const styles = {
     },
     display: "flex",
     fontWeight: "400",
-    color: "#252F44",
+    color: "#1e1e1e",
   },
   textHeading: {
     fontSize: "28px",

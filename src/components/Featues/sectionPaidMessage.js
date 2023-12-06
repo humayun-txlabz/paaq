@@ -29,12 +29,12 @@ const SectionPaidMessage =() => {
                                 <div className="inner">
                                      <h3>Ask</h3>
                                 </div>
-                                Ask Button
+                                <span className="feature-ask-btn-modify">Ask Button</span>
                            </div>
                            {/* <img src={askIcon} className="icon" /> */}
                            
-                           <br />
-                           (Paid Message)
+                           {/* <br />
+                           (Paid Message) */}
                       </div>
                  </div>
                  <p> 

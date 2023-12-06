@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import CustomSlider from "components/CustomSlider";
 import Image from "next/image";
-import VectorImage from "../assets/Images/VectorOval.png";
+import VectorImage from "../assets/homeshowskill.png";
 import img1 from '../assets/Images/main2.png'
 import img2 from '../assets/professionally/img6.png'
 import img3 from '../assets/Images/main44.png'
@@ -36,7 +36,7 @@ const SkillsBanner = () => {
 
   return (
     <div className="skills-banner-container" style={{position:'relative'}}>
-      <img className="skills-banner-container-img-bg" style={{ position: "absolute", right: "20%" }} src={VectorImage} />
+      <img className="skills-banner-container-img-bg" style={{ position: "absolute", right: "9%" }} src={VectorImage} />
       <div
         className="skills-mobile-container"
         style={{ color: "white", width: "60%", textAlign: "left" }}

@@ -16,6 +16,7 @@ import {
 } from "react-phone-number-input/input";
 import en from "react-phone-number-input/locale/en.json";
 import { API_ENDPOINT } from "constants";
+import PaaqHomeSlider from "components/PaaqHomeSlider";
 
 export default function Download() {
   const [countryCode, setCountryCode] = useState("US");
@@ -34,7 +35,7 @@ export default function Download() {
       onChange={(event) => { setCountryCode(event.target.value || undefined) }}
     >
       {getCountries().map((country) => (
-        <option style={{ backgroundColor: '#252F44' }} key={country} value={country}>
+        <option style={{ backgroundColor: '#1e1e1e' }} key={country} value={country}>
           {country} +{getCountryCallingCode(country)}
         </option>
       ))}
@@ -68,7 +69,8 @@ export default function Download() {
             description:
               'Download link has been sent successfully to your phone number.',
           });
-        } else {
+        } 
+        else {
           notification.error({
             message: 'Error',
             description: `Couldn't reach to PAAQ at the moment. Please try after few moments`
@@ -84,7 +86,8 @@ export default function Download() {
         });
         setPending(false);
       }
-    } else {
+    } 
+    else {
       notification.error({
         message: 'Error',
         description: `Please add a valid number`
@@ -93,11 +96,13 @@ export default function Download() {
     }
   }
 
+  console.log("phoneNumber && numberWithCode", phoneNumber)
+
   return (
     <div >
 <ThemeProvider theme={theme} >
       <StickyProvider>
-        <div >
+        <div>
         <Layout >
           <SEO title="Download" />
           <Container sx={styles.mainContainer} >
@@ -117,24 +122,25 @@ export default function Download() {
                     />
                   </Container>
                   <Container sx={styles.phoneContainer}>
-                    <input style={styles.textField} value={phoneNumber || ''} onChange={(e) => {
+                    <input className="download-placeholder" style={styles.textField} value={phoneNumber || ''} onChange={(e) => {
                       setPhoneNumber(e.target.value)
-                    }} type="number" id="quantity" name="quantity" max="10" min="1" />
+                    }} type="number" id="quantity" name="quantity" max="10" min="1" placeholder="Phone Number"/>
                     {/* <Input sx={styles.textField} onChange={onChangeNumber} placeholder="Phone Number" /> */}
                   </Container>
                 </Container>
                 <div className="send-link-download">
-                  <Button sx={styles.button} style={{ background: pending ? '#D9D9D9' : '#FFFFFF', color: pending ? '#FFFFFF' : '#000000' }} aria-label="Send Link" onClick={sendDownloadLink}>
+                  <Button sx={styles.button} disabled={pending || !(phoneNumber)}  style={{ background: pending || !(phoneNumber) ? '#D9D9D9' : '#FFFFFF', color: pending ? '#FFFFFF' : '#000000' , cursor: pending || !(phoneNumber) ? 'not-allowed' : ''}} aria-label="Send Link" onClick={sendDownloadLink}>
                     Send Link
                   </Button>
-                  <span className="or-in-send-link">
-                    <div className="mini-line"></div> OR{" "}
-                    <div className="mini-line"></div>
-                  </span>
+                 
                 </div>
                 <div className="bar-code-and-text">
                   <Image src={barCode} className={'barcode-container'} />
                   <span className="text-in-bar-code-with-text">
+                  <div className="or-in-send-link or-in-send-link-modify">
+                    <div className="mini-line mini-line-left"></div> OR
+                    <div className="mini-line mini-line-right"></div>
+                  </div>
                     Scan to download by opening the camera app on your phone.
                     Place the rear-facing camera on top of the QR code. You will
                     see a notification. Tap it.
@@ -150,19 +156,20 @@ export default function Download() {
                 </div>
               </Container>
               <Container sx={styles.imageContainer}>
-                {domLoaded && (
+              <PaaqHomeSlider width='312px' height='557px'/>
+                {/* {domLoaded && (
                   <div className='player-wrapper player-wrapper-download' >
                     <ReactPlayer
                       className='react-player-download'
                       url='gifs/PostInformation.mov'
                       width='100%'
-                      height='100%'
+                      height='101%'
                       loop={true}
                       playing={true}
                       muted={true}
                     />
                   </div>
-                )}
+                )} */}
               </Container>
             </Container>
           </Container>

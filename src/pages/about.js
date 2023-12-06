@@ -64,7 +64,7 @@ const styles = {
         fontSize: '84px',
         fontWeight: '600',
         fontFamily: 'Sofia-Pro',
-        color: '#252F44',
+        color: '#1e1e1e',
         textAlign: 'center'
     },
 

@@ -7,13 +7,11 @@ import { StickyProvider } from '../contexts/app/app.provider';
 
 export default function AboutUs() {
     return (
-        <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
                     <SEO title="About Us" />
                     <AboutUsMain />
                 </Layout>
             </StickyProvider>
-        </ThemeProvider>
     );
 }

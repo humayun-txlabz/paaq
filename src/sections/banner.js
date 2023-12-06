@@ -18,9 +18,13 @@ import MainImage8 from "assets/Images/main22.png";
 import MainImage9 from "assets/Images/main44.png";
 import MainImage10 from "assets/Images/main5.png";
 import MainImage11 from "assets/Images/main2.png";
-import bann from "assets/bannerMobileView.png";
+// import bann from "assets/bannerMobileView.png";
 import SpeakerIcon from "assets/Icons/whitespeaker.png";
 import FadeAnimation from "components/fadeAnimation";
+import homeshowskill from '../assets/home/homeshowskill.png'
+import homeaiskill from '../assets/home/homeaiskill.png'
+import homelightskill from '../assets/home/homelightskill.png'
+import PaaqHomeSlider from "components/PaaqHomeSlider";
 
 export default function Banner() {
   const svgRef = React.createRef();
@@ -492,10 +496,10 @@ export default function Banner() {
           </div>
           <Button
             className="getstarted-button"
-            style={{backgroundColor:"#00B5B4"}}
+            style={{ backgroundColor: "#00B5B4" }}
           >
             <span className="getstarted-button-modify">
-            Get Started
+              Get Started
             </span>
           </Button>
         </Box>
@@ -518,30 +522,55 @@ export default function Banner() {
                 style={{
                   fontWeight: "bold",
                   fontFamily: "Sofia-Pro",
-                  marginRight: 15,
+                  marginRight: 10,
                 }}
               >
                 What is PAAQ
               </div>
+              <div>
               <Image
                 className="mobile-speaker-icon"
                 src={SpeakerIcon}
                 onClick={() => handleSpeakerClick()}
               />
+              </div>
               <audio ref={svgRef} id="audio" src="/paaq-audio.mp3"></audio>
             </div>
 
             <div className="web-show-paaq-text">
-              PAAQ is a social media platform that connects users with experts to ask questions and receive answers through text or video.
+              <div className="paaq-explain-text-1">
+                <div className="paaq-explain-img">
+                  <img src={homeshowskill} alt="" />
+                </div>
+                <div>
+                  PAAQ is a social media platform that connects users with experts to ask questions and receive answers through text or video.
+                </div>
+              </div>
               <br />
+              <div className="paaq-explain-text-1">
+                <div className="paaq-explain-img">
+                  <img src={homeaiskill} alt="" />
+                </div>
+                <div>
+                Conversing with an expert will give you a sense of human connection. However, this feeling is absent when using an automated system
+                </div>
+              </div>
               <br />
-              {isTruncated ? (
+              <div className="paaq-explain-text-1">
+                <div className="paaq-explain-img">
+                  <img src={homelightskill} alt="" />
+                </div>
+                <div>
+                With PAAQ, you can ask anyone with experience and expertise for informed and detailed answers to your questions.
+                </div>
+              </div>
+              {/* {isTruncated ? (
                 <span>{textLen.slice(0, 131)}...</span>
               ) : (
-                <span>{textLen.slice(0, 131)} <br/><br/> {textLen.slice(132, 1301)} </span>
-              )}
+                <span>{textLen.slice(0, 131)} <br /><br /> {textLen.slice(132, 1301)} </span>
+              )} */}
               <br />
-              <span
+              {/* <span
                 style={{
                   textDecorationLine: "underline",
                   cursor: "pointer",
@@ -550,7 +579,7 @@ export default function Banner() {
                 onClick={() => setIsTruncated(!isTruncated)}
               >
                 Read {isTruncated ? "More" : "Less"}
-              </span>
+              </span> */}
             </div>
             {/* <div className='mobile-show-paaq-text' style={{
               fontSize: 18, marginTop: 20, lineHeight: 1.5, fontWeight: 'lighter',
@@ -574,6 +603,7 @@ export default function Banner() {
               <animated.div style={{ fontFamily: 'Sofia-Pro', opacity: '0.6', fontSize: '15px', ...style3 }}>Morning Michel, My pet is feeling dizziness</animated.div>
             </animated.div> */}
           </div>
+          
           <div
             className="banner-info-text-container2"
             style={{
@@ -586,19 +616,20 @@ export default function Banner() {
               overflow: "hidden",
             }}
           >
-             {domLoaded && (
-                  <div className='player-wrapper'>
-                    <ReactPlayer
-                      className='react-player-download'
-                      url='gifs/PostInformation.mov'
-                      width='100%'
-                      height='100%'
-                      loop={true}
-                      playing={true}
-                      muted={true}
-                    />
-                  </div>
-                )}
+            <PaaqHomeSlider width='286px' height='419px'/>
+            {/* {domLoaded && (
+              <div className='player-wrapper' style={{marginBottom:'0px'}}>
+                <ReactPlayer
+                  className='react-player-download'
+                  url='gifs/PostInformation.mov'
+                  width='100%'
+                  height='100%'
+                  loop={true}
+                  playing={true}
+                  muted={true}
+                />
+              </div>
+            )} */}
           </div>
         </div>
       </Container>
@@ -648,7 +679,7 @@ const styles = {
   bannerTitleMobile: {
     margin: "30px 0px",
     fontFamily: "Sofia-Pro",
-    fontWeight: 400,
+    fontWeight: 500,
     color: "#1E1E1E",
     lineHeight: 1.2,
     fontSize: 20,

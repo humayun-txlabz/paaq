@@ -10,7 +10,6 @@ import { communityGuidelines } from 'constants/communityGuidelines';
 
 export default function CommunityGuidelines() {
     return (
-        <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
                     <SEO title="Community" />
@@ -43,7 +42,6 @@ We want our users to find PAAQ safe and reliable enough to meet their needs. If 
                     <AppAndPlayStoreFooter />
                 </Layout>
             </StickyProvider>
-        </ThemeProvider>
     );
 }
 
@@ -108,7 +106,7 @@ const styles = {
             lineHeight: '21px',
         },
         lineHeight: '50px',
-        color: '#252F44'
+        color: '#1e1e1e'
     },
     mainHeading: {
         fontSize: '70px',
@@ -119,7 +117,7 @@ const styles = {
             fontSize: '36px',
             lineHeight: '40px',
         },
-        color: '#252F44',
+        color: '#1e1e1e',
         textAlign: 'center'
     },
     textContainer:{

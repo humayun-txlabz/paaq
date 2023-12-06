@@ -21,7 +21,7 @@ const NewsSection = ({ list }) => {
             </Button>
           </Link>
           <Container sx={styles.publishContainer}>
-            <Text sx={styles.publisher}>BY</Text>
+            <Text sx={styles.publisher}>By</Text>
             <Text sx={styles.publisher2}>{item.fields.author}</Text>
             <Text sx={styles.date}>
               PUBLISHED:{" "}
@@ -168,15 +168,15 @@ const styles = {
     marginTop: "40px",
   },
   publisher: {
-    fontSize: "16px",
-    fontWeight: "100",
+    fontSize: "18px",
+    fontWeight: "400",
     lineHeight: "24.1px",
     fontFamily: "Sofia-Pro",
   },
   publisher2: {
     fontFamily: "Sofia-Pro",
     fontSize: "18px",
-    fontWeight: "900",
+    fontWeight: "700",
     lineHeight: "24.1px",
     color:'#1E1E1E',
   },

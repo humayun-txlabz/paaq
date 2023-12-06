@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import StartMini from "../../assets/Images/market-trends-investors-page/startMini.png";
-import BigImg from "../../assets/Images/market-trends-investors-page/bigImg.png";
+// import BigImg from "../../assets/Images/market-trends-investors-page/bigImg.png";
 import Logo from "../../assets/Images/market-trends-investors-page/logo.png";
 import CircleImg from "../../assets/Images/market-trends-investors-page/circle1.png";
 
@@ -23,7 +23,7 @@ const SectionMarketTrends = () => {
       <h1>Market Trend</h1>
       <div className="main-content">
         <div className="left">
-          <img src={BigImg} />
+          {/* <img src={BigImg} /> */}
         </div>
         <div className="right">
           <div className="topContent">

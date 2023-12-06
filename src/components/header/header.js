@@ -23,7 +23,7 @@ export default function Header({ className }) {
         <div className="right-container">
           <div className="nav-menu-desktop">
             {menuItems.map(({ path, label }, i) => (
-              <div key={i} className={`nav-menu-items ${pathname == path ?"menu-active":""}`}><Link style={{color: '#252F44'}}  href={path} key={i}>
+              <div style={{display: label=== 'Download' || label=== 'Contact Us' || label=== 'Blogs'? 'none' : ''}} key={i} className={`nav-menu-items ${pathname == path ?"menu-active":""}`}><Link style={{color: '#1e1e1e'}}  href={path} key={i}>
                 {label}
               </Link>
               {pathname == path ? <img className="underline-style" src={HomeUnderLine} /> : null}

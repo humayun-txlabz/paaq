@@ -21,7 +21,7 @@ console.log("props", props)
         <div className="interaction-card-right" style={{ justifyContent: alignImageRight }}>
             <Image src={image} width={imageWidth} height={imageHeight} />
             {count && 
-            <span className={`${props?.alignImageRight === 'end' ? "interaction-card-count-end" : "interaction-card-count"}`} style={{ left: '7%', top: topAbsolute ? 0 : "20%", transform:'transition(50%, 50%)'}}>{count}</span>
+            <span className={`${props?.alignImageRight === 'end' ? "interaction-card-count-end" : "interaction-card-count"}`} style={{ left: '7%', top: topAbsolute ? 0 : "20%", transform:'transition(50%, 50%)', color:"#1E1E1E"}}>{count}</span>
             }
         </div>
     </div>

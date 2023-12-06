@@ -3,10 +3,12 @@
 import { jsx } from 'theme-ui';
 import ReactPlayer from 'react-player';
 import { Container, Box, Image } from 'theme-ui';
-import BannerImg from 'assets/connection-image1.png';
+// import BannerImg from 'assets/connection-image1.png';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import ProfessionallySlider from 'components/Professionally/professionally-slider';
+import SociallySlider from 'components/sociallySlider';
+
 
 export default function Connections() {
      const [domLoaded, setDomLoaded] = useState(false);
@@ -69,9 +71,9 @@ export default function Connections() {
                                 /> */}
 
                               </div>
-                               <div style={{padding:'0px 0 0 0'}}>
-                                             <ProfessionallySlider />
-                                        </div>
+                              <div style={{ padding: '30px 0 0 0' }}>
+                                   <ProfessionallySlider />
+                              </div>
                               <div
                                    style={{
                                         color: "white",
@@ -85,7 +87,7 @@ export default function Connections() {
                                         style={{
                                              fontSize: 38,
                                              fontWeight: "700",
-                                             color: "#252F44",
+                                             color: "#1e1e1e",
                                              fontFamily: "var(--pro)",
                                         }}
                                    >
@@ -96,7 +98,7 @@ export default function Connections() {
                                         className="connection-detail"
                                         style={{
                                              fontSize: "18px",
-                                             marginTop: "1%",
+                                             marginTop: "4%",
                                              color: "#5B5B5B",
                                              lineHeight: 2,
                                              fontWeight: "lighter",
@@ -108,9 +110,9 @@ export default function Connections() {
                                         }}
                                    >
                                         Speaking with a professional about a health issue offers more assurance and peace of mind than relying solely on a search engine for answers.
-<br/>
-<br/>
-The human connection evokes a sense of security and trust.
+                                        <br />
+                                        <br />
+                                        The human connection evokes a sense of security and trust.
                                    </div>
                                    <br />
                               </div>
@@ -131,11 +133,11 @@ The human connection evokes a sense of security and trust.
                                         style={{
                                              fontSize: 38,
                                              fontWeight: "bold",
-                                             color: "#252F44",
+                                             color: "#1e1e1e",
                                              fontFamily: "Sofia-Pro",
                                         }}
                                    >
-                                      <span className='connections-opacity'>02.</span>Socially
+                                        <span className='connections-opacity'>02. </span>Socially
                                    </div>
 
                                    <div
@@ -159,15 +161,18 @@ The human connection evokes a sense of security and trust.
                                         is even better.
                                    </div>
                               </div>
-                              <div
+                              <div>
+                                   <SociallySlider/>
+                              </div>
+                              {/* <div
                                    className="banner-image-connection-mobile"
                               //   style={{ display: "flex", justifyContent: "flex-end" }}
                               >
                                    {domLoaded && (
-                                        <div className='player-wrapper'>
+                                        <div className='player-wrapper' style={{marginBottom:'-5px'}}>
                                              <ReactPlayer
                                                   className='react-player-earth'
-                                                  url='gifs/Earth.mov'
+                                                  url='gifs/Earth1.mov'
                                                   width='100%'
                                                   height='100%'
                                                   loop={true}
@@ -177,7 +182,7 @@ The human connection evokes a sense of security and trust.
                                              />
                                         </div>
                                    )}
-                              </div>
+                              </div> */}
                          </div>
                     </div>
                </Container>
@@ -223,7 +228,7 @@ const styles = {
           },
           '.banner-title': {
                textAlign: 'center',
-               fontSize: '5em',
+               fontSize: '5.75em',
                color: 'black',
                fontFamily: 'Sofia-Pro',
                fontWeight: '500'

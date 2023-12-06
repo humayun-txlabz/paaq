@@ -3,7 +3,7 @@ import { Container, Box, Heading, Text, Button, Image } from 'theme-ui';
 
 import DummyImage from "../../assets/Images/FeatureImage.png";
 import DummyImage2 from "../../assets/Images/FeatureImage2.png";
-import FeaturedTag from "../../assets/Icons/featuredTag.svg";
+// import FeaturedTag from "../../assets/Icons/featuredTag.svg";
 
 const FeaturedCard = (props) => {
 

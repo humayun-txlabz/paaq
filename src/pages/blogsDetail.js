@@ -14,12 +14,12 @@ import clock from "../assets/clock.svg";
 import heart from "../assets/heart.svg";
 import video from "../assets/Video.png";
 import ItemCard from "components/AllBlogs/ItemCard";
-import Image7 from "../assets/Images/blog7.png";
-import Image8 from "../assets/Images/blog8.png";
-import Image9 from "../assets/Images/blog9.png";
-import Image10 from "../assets/Images/blog10.png";
-import Image11 from "../assets/Images/blog13.png";
-import Image12 from "../assets/Images/blog12.png";
+// import Image7 from "../assets/Images/blog7.png";
+// import Image8 from "../assets/Images/blog8.png";
+// import Image9 from "../assets/Images/blog9.png";
+// import Image10 from "../assets/Images/blog10.png";
+// import Image11 from "../assets/Images/blog13.png";
+// import Image12 from "../assets/Images/blog12.png";
 
 export default function BlogsDetail() {
      let svgs = [facebook, instagram, twitter, linkedIn];
@@ -37,38 +37,38 @@ export default function BlogsDetail() {
                text: "43",
           },
      ];
-     const data2 = [
-          {
-               blogTitle:
-                    "5 Simple Money Moves That Will Impact Your Finances in a Big Way",
-               blogImage: Image7,
-          },
-          {
-               blogTitle:
-                    "4 Simple Money Moves That Will Impact Your Finances in a Big Way",
-               blogImage: Image8,
-          },
-          {
-               blogTitle:
-                    "3 Simple Money Moves That Will Impact Your Finances in a Big Way",
-               blogImage: Image9,
-          },
-          {
-               blogTitle:
-                    "2 Simple Money Moves That Will Impact Your Finances in a Big Way",
-               blogImage: Image10,
-          },
-          {
-               blogTitle:
-                    "1 Simple Money Moves That Will Impact Your Finances in a Big Way",
-               blogImage: Image11,
-          },
-          {
-               blogTitle:
-                    "0 Simple Money Moves That Will Impact Your Finances in a Big Way",
-               blogImage: Image12,
-          },
-     ];
+     // const data2 = [
+     //      {
+     //           blogTitle:
+     //                "5 Simple Money Moves That Will Impact Your Finances in a Big Way",
+     //           blogImage: Image7,
+     //      },
+     //      {
+     //           blogTitle:
+     //                "4 Simple Money Moves That Will Impact Your Finances in a Big Way",
+     //           blogImage: Image8,
+     //      },
+     //      {
+     //           blogTitle:
+     //                "3 Simple Money Moves That Will Impact Your Finances in a Big Way",
+     //           blogImage: Image9,
+     //      },
+     //      {
+     //           blogTitle:
+     //                "2 Simple Money Moves That Will Impact Your Finances in a Big Way",
+     //           blogImage: Image10,
+     //      },
+     //      {
+     //           blogTitle:
+     //                "1 Simple Money Moves That Will Impact Your Finances in a Big Way",
+     //           blogImage: Image11,
+     //      },
+     //      {
+     //           blogTitle:
+     //                "0 Simple Money Moves That Will Impact Your Finances in a Big Way",
+     //           blogImage: Image12,
+     //      },
+     // ];
      return (
           <ThemeProvider theme={theme}>
                <StickyProvider>
@@ -180,9 +180,9 @@ Geography as a discipline can be split broadly into two main subsidiary fields: 
                                    <Text style={styles.moreBlog}>More Blogs...</Text>
                               </Container>
                               <div className="blog-items">
-                                   {data2.map((item, index) => (
+                                   {/* {data2.map((item, index) => (
                                         <ItemCard blog={item} key={index} />
-                                   ))}
+                                   ))} */}
                               </div>
                          </Container>
                     </Layout>
@@ -219,14 +219,14 @@ const styles = {
           fontWeight: "700",
           fontFamily: "Sofia-Pro",
           lineHeight: "78px",
-          color: "#252F44",
+          color: "#1e1e1e",
      },
      next: {
           fontSize: "20px",
           fontWeight: "500",
           fontFamily: "Sofia-Pro",
           lineHeight: "27px",
-          color: "#252F44",
+          color: "#1e1e1e",
      },
      icon: {
           width: "12px",
@@ -337,7 +337,7 @@ const styles = {
           fontWeight: "700",
           fontFamily: "Sofia-Pro",
           lineHeight: "40px",
-          color: " #252F44",
+          color: " #1e1e1e",
      },
      banner2: {
           width: "100%",
@@ -353,6 +353,6 @@ const styles = {
           fontWeight: "700",
           fontFamily: "Sofia-Pro",
           lineHeight: "63px",
-          color: " #252F44",
+          color: " #1e1e1e",
      },
 };

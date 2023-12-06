@@ -2,10 +2,10 @@
 
 import React from 'react'
 import { Image } from 'theme-ui';
-import ThumbsUpIcon from '../assets/Icons/thumbs-upp.svg';
-import ThumbsDownIcon from '../assets/Icons/thumbs-downn.svg';
+import ThumbsUpIcon from '../assets/Icons/thumbs-upp-bg.png';
+import ThumbsDownIcon from '../assets/Icons/thumbs-down-bg.png';
 import { useState } from 'react';
-import feedbackimg from '../assets/Feedbackimg.png'
+// import feedbackimg from '../assets/Feedbackimg.png'
 // import '../../src/theme/styles.scss';
 
 const FeedbackCard = () => {
@@ -18,8 +18,8 @@ const FeedbackCard = () => {
           <>
             <p>Do you find this helpful?</p>
             <div className='feedback-icon'>
-              <span onClick={() => setFeedback(!feedback)}><Image src={ThumbsUpIcon} /></span>
-              <span onClick={() => setFeedback(!feedback)}><Image src={ThumbsDownIcon} /></span>
+              <span onClick={() => setFeedback(!feedback)}><Image style={{width:'70px'}} src={ThumbsUpIcon} /></span>
+              <span onClick={() => setFeedback(!feedback)}><Image style={{width:'70px'}} src={ThumbsDownIcon} /></span>
             </div>
           </>
           :

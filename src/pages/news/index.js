@@ -9,12 +9,12 @@ import NewsSection from "sections/newsSection";
 import { newsSectionObjects } from "constants/newsSectionObjects";
 import arrow from "assets/page1.png";
 import arrow2 from "assets/page2.png";
-import image1 from "assets/news/6.png";
-import arrow3 from "assets/upRightArrow.png";
-import collage1 from "assets/news/7.png";
-import collage2 from "assets/news/8.png";
-import collage3 from "assets/news/9.png";
-import collage4 from "assets/news/10.png";
+// import image1 from "assets/news/6.png";
+// import arrow3 from "assets/upRightArrow.png";
+// import collage1 from "assets/news/7.png";
+// import collage2 from "assets/news/8.png";
+// import collage3 from "assets/news/9.png";
+// import collage4 from "assets/news/10.png";
 
 import * as contentful from "contentful";
 import { StickyProvider } from "../../contexts/app/app.provider";
@@ -79,7 +79,6 @@ export default function News2(props) {
   };
 
   return (
-    <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
           <SEO title="Startup Landing 007" />
@@ -102,7 +101,7 @@ export default function News2(props) {
                     onClick={() => setDirectWithPage(item.id)}
                     style={item.id == active ? styles.circle3 : styles.circle2}
                   >
-                    <Text>{item.id}</Text>
+                    <Text className="news-text-modify">{item.id}</Text>
                   </div>
                 );
               })}
@@ -161,7 +160,6 @@ PAAQ is the right platform to direct a message or question to anyone based on th
           <AppAndPlayStoreFooter />
         </Layout>
       </StickyProvider>
-    </ThemeProvider>
   );
 }
 
@@ -188,7 +186,7 @@ const styles = {
     "@media screen and (max-width: 720px)": {
       fontSize: "50px",
     },
-    color: "#252F44",
+    color: "#1e1e1e",
     fontFamily: "Sofia-Pro",
     textTransform: "capitalize",
     lineHeight: "70px",
@@ -379,7 +377,7 @@ const styles = {
       textAlign: "center",
     },
     lineHeight: "70px",
-    color: " #252F44",
+    color: " #1e1e1e",
   },
   textFieldContainer: {
     width: "80%",

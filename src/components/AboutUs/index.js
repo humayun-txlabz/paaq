@@ -19,7 +19,7 @@ import ThumbsupEmoji from "assets/about/thumbsup-emoji.png";
 import ThumbsupEmojiMobile from "assets/about/thumbsup-emoji-mobile.png";
 import IntImage from "../../assets/about/Imege-yellow3x.png";
 import IntImage2 from "../../assets/about/Imege-green3x.png";
-import IntImage3 from "../../assets/about/Imege-white3x.png";
+// import IntImage3 from "../../assets/about/Imege-white3x.png";
 import IntImage4 from "../../assets/about/community.png";
 import AppAndPlayStoreFooter from "../appAndPlayStoreFooter";
 import useWindowSize from 'Hooks/windowSize';
@@ -175,7 +175,7 @@ const AboutUsMain = () => {
       />
       <InteractionCard
         alignImageRight={true}
-        image={width > 760 ? IntImage3 : IntImage4}
+        image={width > 760 ? IntImage4 : IntImage4}
         imageWidth={500}
         imageHeight={500}
         heading={"Our ultimate goal is to create a diverse community"}

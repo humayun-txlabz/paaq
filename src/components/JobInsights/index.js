@@ -15,7 +15,6 @@ import jobInsightsImg1 from '../../assets/Images/job-insights-1.png';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { Image } from 'theme-ui';
 
-
 const JobInsightsMain = (props) => {
 
   const { jobItem } = props;

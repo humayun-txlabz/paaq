@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { notification, Select } from 'antd';
 import ReCAPTCHA from "react-google-recaptcha";
-
 import { API_ENDPOINT } from "constants";
 import DownArrow from '../../assets/accordion-close.png';
 import { apiClientContentFul } from "services/apiClient";
@@ -96,7 +95,7 @@ const ContactUsForm = () => {
         </div>
         <div className="input-with-label">
           <label>Email*</label>
-          <input name="email" type="email" placeholder="Enter your name" required />
+          <input name="email" type="email" placeholder="example@gmail.com" required />
         </div>
         <div className="input-with-label">
           <label>Subject*</label>
@@ -116,12 +115,12 @@ const ContactUsForm = () => {
         </div>
         <div className="input-with-label">
           <label>Message*</label>
-          <textarea placeholder="Enter your name" required />
+          <textarea placeholder="Write your Message" required />
         </div>
         <div className="recaptcha-field">
           <ReCAPTCHA
             ref={recaptchaRef}
-            sitekey="6LeqHswoAAAAAMdLvI_qL3dN8G7RTlKWYbJMHIr3"
+            sitekey="6LdBmSEpAAAAADBV9TV_g_dsuERoO97q8DkL0B_m"
             onChange={onChangeRecaptcha}
           />
         </div>

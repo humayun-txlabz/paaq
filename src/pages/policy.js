@@ -8,13 +8,11 @@ import PrivacyPolicy from 'components/privacy-policy'
 const Policy = () => {
     return (
         <div className='external-pages'>
-            <ThemeProvider theme={theme}>
                 <StickyProvider>
                     <Layout>
                         <PrivacyPolicy />
                     </Layout>
                 </StickyProvider>
-            </ThemeProvider>
         </div>
     )
 }

@@ -7,13 +7,11 @@ import { StickyProvider } from "../../contexts/app/app.provider";
 
 export default function JobsPage() {
      return (
-          <ThemeProvider theme={theme}>
                <StickyProvider>
                     <Layout>
                          <SEO title="Jobs" />
                          <JobsMain />
                     </Layout>
                </StickyProvider>
-          </ThemeProvider>
      );
 }

@@ -33,9 +33,9 @@ const TitleCard = (props) => {
             <Image src={FbIcon} width={52} height={52} />
           </FacebookShareButton>
         </div>
-        <div className="facebook-icon" onClick={handleInstagramShare}>
+        {/* <div className="facebook-icon" onClick={handleInstagramShare}>
           <Image src={InstagramIcon} width={52} height={52} />
-        </div>
+        </div> */}
         <div className="facebook-icon">
           <TwitterShareButton url={shareUrl}>
             <Image src={TwitterIcon} width={52} height={52} />

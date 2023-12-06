@@ -8,13 +8,11 @@ import { StickyProvider } from "../../contexts/app/app.provider";
 export default function HelpCenter() {
 
      return (
-          <ThemeProvider theme={theme}>
                <StickyProvider>
                     <Layout>
                          <SEO title="Help Center" />
                          <HelpCenterMain />
                     </Layout>
                </StickyProvider>
-          </ThemeProvider>
      );
 }

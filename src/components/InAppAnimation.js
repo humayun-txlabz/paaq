@@ -57,7 +57,7 @@ const InAppAnimation = () => {
     }, []);
 
     return (
-        <div style={{paddingTop:'60px'}}>
+        <div style={{ paddingTop: '60px' }}>
             <div className='in-app-images-animation'>
                 <img src={img1 === false ? jobDark : job} alt="job" />
                 <img src={img2 === false ? handDark : hand} alt="hand" />
@@ -65,50 +65,80 @@ const InAppAnimation = () => {
                 <img src={img4 === false ? educationDark : education} alt="education" />
                 <img src={img5 === false ? noteDark : note} alt="note" />
             </div>
-            <p className='in-app-images-animation-text'>If your profile picture matches the person in the <br /> introduction video, you will receive a verification <br /> badge. <span>See Guidelines.</span></p>
+
+            {
+                img1 === true ?
+                    <p className='in-app-images-animation-text'>Explain what your profession(s) are and how your <br /> skills and professional experience can be helpful to <br /> anyone that connects with you.</p>
+                    : null
+            }
+
+            {
+                img2 === true ?
+                    <p className='in-app-images-animation-text'>We advise people to only ask questions from <br /> experts with an introduction video on their PAAQ <br /> profile.</p>
+                    : null
+            }
+
+            {
+                img3 === true ?
+                    <p className='in-app-images-animation-text'>Introduction video cannot be imported from the <br /> photo gallery due to security reasons.</p>
+                    : null
+            }
+
+            {
+                img4 === true ?
+                    <p className='in-app-images-animation-text'>The introduction video can be edited at any time <br /> from profile settings.</p>
+                    : null
+            }
+
+            {
+                img5 === true ?
+                    <p className='in-app-images-animation-text'>If your profile picture matches the person in the <br /> introduction video, you will receive a verification <br /> badge. <span>See Guidelines.</span></p>
+                    : null
+            }
+
             <div>
-<div className='in-app-images-animation-dots'>
-{
-    img1 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-    <circle cx="5" cy="5" r="5" fill="#00B5B4"/>
-    </svg> :
-    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
-    <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7"/>
-    </svg>
-}
-{
-    img2 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-    <circle cx="5" cy="5" r="5" fill="#00B5B4"/>
-    </svg> :
-    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
-    <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7"/>
-    </svg>
-}
-{
-    img3 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-    <circle cx="5" cy="5" r="5" fill="#00B5B4"/>
-    </svg> :
-    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
-    <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7"/>
-    </svg>
-}
-{
-    img4 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-    <circle cx="5" cy="5" r="5" fill="#00B5B4"/>
-    </svg> :
-    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
-    <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7"/>
-    </svg>
-}
-{ 
-    img5 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-    <circle cx="5" cy="5" r="5" fill="#00B5B4"/>
-    </svg> :
-    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
-    <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7"/>
-    </svg>
-}
-</div>
+                <div className='in-app-images-animation-dots'>
+                    {
+                        img1 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                            <circle cx="5" cy="5" r="5" fill="#00B5B4" />
+                        </svg> :
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7" />
+                            </svg>
+                    }
+                    {
+                        img2 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                            <circle cx="5" cy="5" r="5" fill="#00B5B4" />
+                        </svg> :
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7" />
+                            </svg>
+                    }
+                    {
+                        img3 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                            <circle cx="5" cy="5" r="5" fill="#00B5B4" />
+                        </svg> :
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7" />
+                            </svg>
+                    }
+                    {
+                        img4 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                            <circle cx="5" cy="5" r="5" fill="#00B5B4" />
+                        </svg> :
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7" />
+                            </svg>
+                    }
+                    {
+                        img5 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                            <circle cx="5" cy="5" r="5" fill="#00B5B4" />
+                        </svg> :
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7" />
+                            </svg>
+                    }
+                </div>
             </div>
         </div>
     )

@@ -38,16 +38,16 @@ const BrandGuidelinesMain = () => {
     return (
         <div className='brand-guidelines-main'>
             <div className='brand-guidelines-main-left'>
-                <p className='brand-guidelines-main-heading'>
+                <p className='brand-guidelines-main-heading' style={{color:'#1E1E1E'}}>
                     Brand Guildelines
                 </p>
-                <p className='brand-guidelines-main-description'>
+                <p className='brand-guidelines-main-description' style={{color:'#1E1E1E'}}>
                     In this guide, we've provided the do’s and don'ts of using PAAQ's brand elements. 
                     This includes our Question-mark and acronym.
                 </p>
                 <div className='brand-guidelines-main-buttons'>
                     <a href="https://paaq-storage-new.s3.amazonaws.com/web-files/pdfs/PAAQ+Guidelines.pdf" target="_blank" rel="noopener noreferrer">
-                        <div className='brand-guidelines-main-download'>
+                        <div className='brand-guidelines-main-download' style={{color:'#1E1E1E'}}>
                             Download Guildlines
                         </div>
                     </a>

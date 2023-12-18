@@ -22,6 +22,7 @@ const TitleCard = (props) => {
     // Open a new window or redirect the current one to the Instagram share URL
     window.open(instagramUrl, '_blank');
   };
+  
   return (
     <div className="title-card" style={{flexDirection: title === ''? 'row-reverse': ''}}>
       <span className="title-card-heading">{title}</span>

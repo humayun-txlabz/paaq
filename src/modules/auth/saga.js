@@ -20,7 +20,7 @@ function* doLoginSuccess(token, userData = {}) {
 function* signInWithEmailSaga({ loginData }) {
 
   try {
-console.log('in login saga')
+// console.log('in login saga')
   } catch (e) {
 
   }

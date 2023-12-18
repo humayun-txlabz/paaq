@@ -28,9 +28,9 @@ const SectionMyProfession =() => {
             <div className="left">
                  <div className="heading">
                       <img src={StartIcon} className="icon" />
-                      <div className="text">My Profession</div>
+                      <div className="text" style={{fontWeight:'900'}}>My Profession</div>
                  </div>
-                 <p>
+                 <p style={{color:'#4B5157'}}>
                  Through this feature, users can connect effectively within PAAQ. Your profile will suggest relevant content and other like-minded people in your field of expertise once you've filled out your profile and described what you do.
                  </p>
             </div>

@@ -16,7 +16,7 @@ const FeedbackCard = () => {
       <div className='feedback-main'>
         {feedback === true ?
           <>
-            <p>Do you find this helpful?</p>
+            <p className='feedback_color feedback_font'>Do you find this helpful?</p>
             <div className='feedback-icon'>
               <span onClick={() => setFeedback(!feedback)}><Image style={{width:'70px'}} src={ThumbsUpIcon} /></span>
               <span onClick={() => setFeedback(!feedback)}><Image style={{width:'70px'}} src={ThumbsDownIcon} /></span>

@@ -15,12 +15,12 @@ const ReplyEarnSlider = () => {
       useEffect(() => {
         const interval = setInterval(() => {
           setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 1200); // Change the duration (in milliseconds) as needed
+        }, 3000); // Change the duration (in milliseconds) as needed
     
         return () => clearInterval(interval);
       }, [currentIndex, images.length]);
 
-      console.log("currentIndex", currentIndex)
+      // console.log("currentIndex", currentIndex)
     
       return (
         <div className='reply-silder'>
@@ -28,8 +28,8 @@ const ReplyEarnSlider = () => {
             src={images[currentIndex]}
             alt={`Image ${currentIndex + 1}`}
             style={{
-              width: currentIndex == 0 ? '101%' : '',
-              height: currentIndex == 0 ? '101%' : '',
+              width: currentIndex == 0 ? '100%' : '100%',
+              height: currentIndex == 0 ? '100%' : '100%',
           }}
           />
         </div>

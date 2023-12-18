@@ -142,9 +142,48 @@ const LeaderAnimationComponent = () => {
         drawLine6();
         drawLine7();
         drawLine8();
-      }, 2200);
+        
+      }, 220);
     }
     setShowLines(true);
+
+    return () => {
+      // Cleanup function to hide lines immediately when the component is unmounted
+      line1?.hide("fade", {
+        timing: "linear",
+        duration: 0,
+      });
+      line2?.hide("fade", {
+        timing: "linear",
+        duration: 0,
+      });
+      line3?.hide("fade", {
+        timing: "linear",
+        duration: 0,
+      });
+      line4?.hide("fade", {
+        timing: "linear",
+        duration: 0,
+      });
+      line5?.hide("fade", {
+        timing: "linear",
+        duration: 0,
+      });
+      line6?.hide("fade", {
+        timing: "linear",
+        duration: 0,
+      });
+      line7?.hide("fade", {
+        timing: "linear",
+        duration: 0,
+      });
+      line8?.hide("fade", {
+        timing: "linear",
+        duration: 0,
+      });
+      setShowLines(false);
+    };
+
   }, [isShow]);
 
   useEffect(() => {
@@ -210,7 +249,6 @@ const LeaderAnimationComponent = () => {
           className={`left2 left2la ${isShow >= 2 ? "left2Anim" : ""}`}
           src={Left2}
         />
-
         <img
           ref={left3}
           className={`left3 ${isShow >= 2 ? "left3Anim" : ""}`}

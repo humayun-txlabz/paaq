@@ -18,11 +18,11 @@ const MessagesFaqs = ({ marginTop, items }) => {
     <div style={mTop} className="help-center-faq-single-card">
       <div className="help-center-faq-single-card-heading">
       <div className="custom-flex">
-        <h1 className={`${isAccordianAction === false ? 'accordian-active' : ''}`}  onClick={() => {
+        <h1 className={`${isAccordianAction === false ? 'accordian-active' : ''} contact_us_color`}  onClick={() => {
           setIsAccordianAction(!isAccordianAction)
         }}>{items[0]?.fields?.title}</h1>
         {
-          !isAccordianAction === false ? 
+          isAccordianAction === false ? 
           <svg style={{cursor:'pointer'}} onClick={() => {
             setIsAccordianAction(!isAccordianAction)
           }} width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">

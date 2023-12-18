@@ -76,8 +76,8 @@ const CareersTopMain = (props) => {
                   <img className="chatImg" src={CareersImage6} />
                   <div style={StyleSheet.container}>
                     <Shimmer>
-                      <div style={StyleSheet.line1} />
-                      <div style={StyleSheet.line2} />
+                      <div style={StyleSheet.line1} className="shimmer-1st1" />
+                      <div style={StyleSheet.line2} className="shimmer-2nd1"/>
                     </Shimmer>
                   </div>
                 </div>
@@ -87,8 +87,8 @@ const CareersTopMain = (props) => {
                   <img className="chatImg" src={CareersImage5} />
                   <div style={StyleSheet.container}>
                     <Shimmer>
-                      <div style={{ ...StyleSheet.line1, width: 86 }} />
-                      <div style={{ ...StyleSheet.line2, width: 75 }} />
+                      <div style={{ ...StyleSheet.line1, }} className="shimmer-1st2" />
+                      <div style={{ ...StyleSheet.line2,  }} className="shimmer-2nd2" />
                     </Shimmer>
                   </div>
                   {/* <Skeleton className="shimEff" count={1} height={25} borderRadius={'0.1rem'} /> */}
@@ -100,8 +100,8 @@ const CareersTopMain = (props) => {
                   <img className="chatImg" src={CareersImage5} />
                   <div style={StyleSheet.container}>
                     <Shimmer>
-                      <div style={StyleSheet.line1} />
-                      <div style={StyleSheet.line2} />
+                      <div style={StyleSheet.line1} className="shimmer-1st3" />
+                      <div style={StyleSheet.line2} className="shimmer-2nd3" />
                     </Shimmer>
                   </div>
                   {/* <Skeleton className="shimEff" count={1} height={25} borderRadius={'0.1rem'} /> */}

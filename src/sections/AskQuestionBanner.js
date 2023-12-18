@@ -98,7 +98,7 @@ const AskQuestionBanner = React.forwardRef(function AskQuestionBanner(parentRef)
           return () => clearTimeout(timeoutId);
      }, [showTyped]);
 
-     console.log("startAnimtion", startAnimtion)
+     // console.log("startAnimtion", startAnimtion)
 
      useEffect(() => {
           // After 5 seconds, set showTyped to true
@@ -144,7 +144,7 @@ const AskQuestionBanner = React.forwardRef(function AskQuestionBanner(parentRef)
                          </animated.div>
                     </div>
                     <div className="ask-secondavatar">
-                         <animated.div className={'ask-secondavatar-img'} style={poppingOutAnimation(1300)}>
+                         <animated.div className={'ask-secondavatar-img'} style={poppingOutAnimation(13000)}>
                               <img
                                    className="earn-money-image ask-question-avatar2"
                                    src={Image1}
@@ -231,11 +231,11 @@ const AskQuestionBanner = React.forwardRef(function AskQuestionBanner(parentRef)
                <div className="earn-money-detail">
                     <span className="earn-money-title">Ask Questions</span>
                     <span className="earn-money-subheading">
-                    Interacting with anyone is possible by paying a fee to receive an answer your questions.
+                    There is always an expert available to answer your questions on PAAQ, or you could be the one providing answers because you are an expert in your field.
                     </span>
                     <br></br>
                     <span className="earn-money-subheading">
-                    PAAQ has a network of experts in different fields, so you can be sure that there is someone available who can provide you with the best possible answer.
+                    PAAQ is also a great place to meet like-minded people and form strong connections.
                     </span>
                </div>
           </div>

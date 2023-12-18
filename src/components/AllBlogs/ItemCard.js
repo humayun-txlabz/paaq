@@ -1,17 +1,25 @@
 import Image from 'next/image';
 import { Badge } from 'theme-ui'
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const ItemCard = (props) => {
 
     const { blog } = props;
+    const router = useRouter();
+
+    console.log("blog?.sys?.id", blog?.sys?.id)
 
     return (
          <>
               {blog?.fields ? (
                    <>
-                        <Link href="/blogs/[id]" as={`/blogs/${blog?.sys?.id}`}>
-                             <div className="item-card-container">
+                        {/* <Link href="/blogs/[id]" as={`/blogs/${blog?.sys?.id}`}> */}
+                         
+                             <div className="item-card-container" onClick={()=>{
+                              // alert('asd', blog?.sys?.id, 'wer')
+                              blog ? router.push(`/blogs/${blog?.sys?.id}`) : ''
+                             }}>
                                   <img
                                        src={`https:${blog?.fields?.thumbnailImage?.fields?.file?.url}`}
                                        className="item-card-image-inner"
@@ -34,7 +42,7 @@ const ItemCard = (props) => {
                                        </span>
                                   </div>
                              </div>
-                        </Link>
+                        {/* </Link> */}
                    </>
               ) : null}
          </>

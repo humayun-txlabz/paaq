@@ -142,6 +142,16 @@ button {
   font-family: "Sofia-Pro";
 }
 
+@media (min-width: 0px) and (max-width: 720px) {
+  .skill-detail-mobile-text {
+    padding-right: 0%;
+  }
+
+  .learn-more-mobile{
+    display: none;
+  }
+}
+
 @media (max-width: 720px) {
   .skill-detail-mobile-text {
     font-size: 14.5px !important;

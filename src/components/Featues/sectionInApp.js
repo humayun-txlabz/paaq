@@ -12,6 +12,21 @@ import InAppAnimation from "components/InAppAnimation";
 function SectionInApp() {
   const [domLoaded, setDomLoaded] = useState(false);
 
+  const [isScreenWidth, setIsScreenWidth] = useState(false);
+
+  const handleResize = () => {
+    setIsScreenWidth(window.innerWidth === 510);
+  };
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   useEffect(() => {
     setDomLoaded(true);
   }, []);
@@ -24,7 +39,7 @@ function SectionInApp() {
           {domLoaded && (
             <ReactPlayer
               className="react-player-question"
-              url="gifs/inApp.mov"
+              url="gifs/inApp.mp4"
               width="100%"
               height="100%"
               loop={true}
@@ -55,9 +70,13 @@ function SectionInApp() {
         </div>
       </div>
       <div className="left in-app-text">
-        <div className="heading">
+        <div className="heading" style={{color:'#1E1E1E'}}>
 
-          <div className="text"><img src={StartIcon} className="icon" />In-App Video</div>
+          <div className="text">
+            
+            <img src={StartIcon} className="icon" />
+          
+          In-App Video</div>
         </div>
         <p>This feature allows users to make an introduction video so that other PAAQ users can get to know them.
           <br />
@@ -71,9 +90,9 @@ function SectionInApp() {
           {domLoaded && (
             <ReactPlayer
               className="react-player-question"
-              url="gifs/inApp.mov"
+              url="gifs/inApp.mp4"
               width="100%"
-              height="100%"
+              height={isScreenWidth? '100%' : ''}
               loop={true}
               playing={true}
               muted={true}

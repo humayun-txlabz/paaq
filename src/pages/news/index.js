@@ -230,6 +230,7 @@ const styles = {
   circle: {
     width: "60px",
     height: "60px",
+    margin:'0 15px',
     "@media screen and (max-width: 720px)": {
       width: "65px",
     },

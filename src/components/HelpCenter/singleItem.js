@@ -6,7 +6,7 @@ const SinlgeFaqItem = ({text}) => {
     <div className="single-faq-question-item">
       {/* <div className="h-line" /> */}
       <div class="inner-container">
-        <span>{text}</span>
+        <span className="contact_us_color">{text}</span>
         <img src={RightIcon} />
       </div>
     </div>

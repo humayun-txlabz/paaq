@@ -33,7 +33,7 @@ export default function Connections() {
                                    alignItems: "center",
                               }}
                          >
-                              <span className="banner-title banner-title-mobile">
+                              <span className="banner-title banner-title-mobile contact_us_color">
                                    Our Connections
                               </span>
                          </div>

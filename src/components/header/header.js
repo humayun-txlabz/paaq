@@ -41,29 +41,6 @@ export default function Header({ className }) {
         <div className="mobile-menu-open-drawer">
         <MobileDrawer />
         </div>
-        {/* <Container sx={styles.container}>
-          <Logo src={LogoMain} />
-          <Flex as="nav" sx={styles.nav} className='header-menu'>
-            {menuItems.map(({ path, label }, i) => (
-              <Link
-              className='nav-menu-items'
-                href={path}
-                key={i}
-              >
-                {label}
-              </Link>
-            ))}
-          </Flex>
-
-          <Button
-            className="download_button"
-            aria-label="Download"
-          >
-            Download
-          </Button>
-
-          <MobileDrawer />
-        </Container> */}
       </header>
     </DrawerProvider>
   );

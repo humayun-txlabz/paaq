@@ -156,7 +156,7 @@ export default function Download() {
                 </div>
               </Container>
               <Container sx={styles.imageContainer}>
-              <PaaqHomeSlider width='312px' height='557px'/>
+              <PaaqHomeSlider width='312px' height='490px'/>
                 {/* {domLoaded && (
                   <div className='player-wrapper player-wrapper-download' >
                     <ReactPlayer

@@ -32,7 +32,7 @@ const PaaqHomeSlider = ({width, height}) => {
         return () => clearInterval(interval);
       }, [currentIndex, images.length]);
 
-      console.log("currentIndex", images[currentIndex])
+      // console.log("currentIndex", images[currentIndex])
     
       return (
         <div className='paaq-home-silder' style={{width: width, height: height, paddingTop: currentIndex===0 ? '-30px': '-30px', marginBottom:currentIndex===0 ? '5px': '0px'}}>

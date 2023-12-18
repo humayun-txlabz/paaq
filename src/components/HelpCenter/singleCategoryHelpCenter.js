@@ -45,7 +45,7 @@ const SingleCategoryHelpCenter = (props) => {
               return <a
                 alt={description ? description : null}
                 href={file.url}
-              >{title ? title : file.details.fileName}
+              >{title ? title : file?.details?.fileName}
               </a>
             default:
               return <span style={{ backgroundColor: 'red', color: 'white' }}> {mimeType} embedded asset </span>

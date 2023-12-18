@@ -27,14 +27,14 @@ const SectionSetPrice = () => {
 
           <div className="text text-modify-price">Set Price</div>
         </div>
-        <p>
+        <p style={{color:'#4B5157'}}>
           Setting prices for Text and Video responses determines the amount you
           will receive.
         </p>
-        <div className="heading-2">
+        <div className="heading-2" style={{color:'#4B5157'}}>
           When you Set Prices, the following will happen:
         </div>
-        <ul className="set-price">
+        <ul className="set-price" style={{color:'#4B5157'}}>
           <li>
             {" "}
             <div><svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">

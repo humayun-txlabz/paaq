@@ -6,7 +6,6 @@ import Link from 'next/link';
 
 const SingleCategoryHelpCenter = (props) => {
   const { fields, id } = props;
-
     const RichParagraph = ({ children }) => <p className="rich-text-helpcenter" >{children}</p>;
 
     const Heading1 = ({ children }) => <h1 className="blog-detail-heading1" >{children}</h1>;

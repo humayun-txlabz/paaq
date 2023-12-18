@@ -4,8 +4,8 @@ const AskButtonComponent = ({height, fontSize, style}) => {
           const ifHeight = height ? {height: height} : {};
           const ifFontSize = fontSize ? {fontSize: fontSize} : {};
   return (
-       <div style={ifHeight} className="inner-ask-button-fl">
-            <h1 style={{ifFontSize, ...style}}>Ask</h1>
+       <div style={{ifHeight, ifFontSize, ...style}} className="inner-ask-button-fl">
+            <h1 >Ask</h1>
        </div>
   );
 }

@@ -3,7 +3,8 @@ import { animated, useSpring } from "react-spring";
 
 import Image from "next/image";
 import PauseIcon from "../../assets/pauseIcon.svg";
-import useWindowSize from 'Hooks/windowSize';
+import PlayIcon from "../../assets/playIcon.svg";
+import useWindowSize from "Hooks/windowSize";
 
 const formWaveSurferOptions = (ref) => ({
   container: ref,
@@ -59,21 +60,32 @@ const Waveform = (props) => {
       delay: delay,
     });
 
+     const poppingOutImageAnimation = (delay) =>
+    useSpring({
+      from: { x: 0, y: 0, zoom: 0, scale: 0 },
+      to: { x: 0, y: 0, zoom: 1, scale: 1 },
+      delay: delay,
+    });
+
   return (
-    <animated.div style={poppingOutAnimation(1000)}>
-      <div className="about-section-icon-play">
-        <Image
-          onClick={() => handlePlayPause()}
-          className="pauseicon"
-          width={width > 760 ? 19 : 8}
-          height={width > 760 ? 19 : 8}
-          src={PauseIcon}
-        />
-      </div>
-      <div className="about-section-audio">
-        <div className="about-waveform" id="waveform" ref={waveformRef} />
-      </div>
-    </animated.div>
+    <div>
+      <animated.div style={poppingOutAnimation()}>
+        <div className="about-section-icon-play about-section-icon-play-modify">
+          <animated.img
+            style={poppingOutImageAnimation(1000)}
+            onClick={() => handlePlayPause()}
+            className="pauseicon"
+            width={width > 760 ? 19 : 8}
+            height={width > 760 ? 19 : 8}
+            src={!playing?PauseIcon:PlayIcon
+            }
+          />
+        </div>
+        <div className="about-section-audio">
+          <div className="about-waveform" id="waveform" ref={waveformRef} />
+        </div>
+      </animated.div>
+    </div>
   );
 };
 

@@ -8,7 +8,7 @@ const WeAreInnovativeSection = () => {
             <img src={BigImage} />
         </div>
         <div className='left'>
-            <h1>We Are Innovative</h1>
+            <h1 className='feedback_color' style={{color:'#252F44'}}>We Are Innovative</h1>
             <p>We at PAAQ understand how powerful and problem solving the mind can be. </p>
             <p>Through our culture and values, we encourage people to utilize their creative skills to make the world a better place.</p>
         </div>

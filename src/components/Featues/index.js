@@ -6,23 +6,25 @@ import SectionMySkills from './sectionMySkills'
 import SectionInApp from './sectionInApp'
 import SectionSetPrice from './sectionSetPrice'
 
-const MainFeatures = ({section}) => {
+const MainFeatures = ({ section }) => {
 
-  useEffect(()=>{
-    if(section){
-        document.getElementById(section).scrollIntoView({ behavior: "smooth" });
+  useEffect(() => {
+    if (section) {
+      document?.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
     }
-  });
+    console.log('useEffect==>', section);
+  }, [section]);
+  console.log('section', section)
 
   return (
     <div className='features-page-container'>
-        <SectionMySkills />
-        <SectionPaidMessage />
-        <SectionSetPrice />
-        <SectionInApp />
-        <SectionMyProfession />
+      {/* <SectionMySkills /> */}
+      <SectionPaidMessage />
+      <SectionSetPrice />
+      <SectionInApp />
+      <SectionMyProfession />
       <AppAndPlayStoreFooter />
-        
+
     </div>
   )
 }

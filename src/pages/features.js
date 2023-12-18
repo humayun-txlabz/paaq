@@ -19,13 +19,11 @@ export const getServerSideProps = async (context) =>{
 export default function AboutUs(props) {
 
     return (
-         <ThemeProvider theme={theme}>
               <StickyProvider>
                    <Layout>
                         <SEO title="Features" />
                          <MainFeatures section={props?.section} />
                    </Layout>
               </StickyProvider>
-         </ThemeProvider>
     );
 }

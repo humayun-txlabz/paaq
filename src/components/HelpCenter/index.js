@@ -57,7 +57,7 @@ const checkCategory = (type) => {
 
         </div> : null
       }
-      <AppAndPlayStoreFooter />
+      {/* <AppAndPlayStoreFooter /> */}
     </div>
   );
 };

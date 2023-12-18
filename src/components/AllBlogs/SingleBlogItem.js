@@ -6,6 +6,7 @@ import TwitterIcon from "../../assets/Icons/twitter.svg";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { BLOCKS, MARKS, INLINES } from '@contentful/rich-text-types';
+import TitleCard from './TitleCard';
 
 
 
@@ -17,7 +18,9 @@ const SingleBlogItem = (props) => {
 
   const RichParagraph = ({ children }) => <p className="align-center" style={{ fontFamily: 'Sofia-Pro', fontSize: 18 }}>{children}</p>;
 
-  const Heading1 = ({ children }) => <h1 className="blog-detail-heading1" >{children}</h1>;
+  const Heading1 = ({ children }) => <h1 className="blog-detail-heading1" >{children}
+  <TitleCard title={""} />
+  </h1>;
   const Heading2 = ({ children }) => <h2 style={{ fontFamily: 'Sofia-Pro' }} >{children}</h2>;
   const Heading3 = ({ children }) => <h3 style={{ fontFamily: 'Sofia-Pro' }} >{children}</h3>;
   const Heading4 = ({ children }) => <h4 style={{ fontFamily: 'Sofia-Pro' }} >{children}</h4>;

@@ -18,7 +18,7 @@ const SectionPaidMessage =() => {
                  <PaidMessagesComponent />
                  {/* <img src={sec11} className="image" /> */}
             </div>
-            <div className="left">
+            <div className="left feature-ask-btn">
                  <div className="heading">
                       <div className="text">
                            <div
@@ -29,12 +29,12 @@ const SectionPaidMessage =() => {
                                 <div className="inner">
                                      <h3>Ask</h3>
                                 </div>
-                                Ask Button
+                                <span className="feature-ask-btn-modify">Ask Button</span>
                            </div>
                            {/* <img src={askIcon} className="icon" /> */}
                            
-                           <br />
-                           (Paid Message)
+                           {/* <br />
+                           (Paid Message) */}
                       </div>
                  </div>
                  <p> 

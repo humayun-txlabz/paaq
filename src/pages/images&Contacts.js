@@ -140,7 +140,7 @@ const styles = {
             lineHeight: '42px'
         },
         fontWeight: '600',
-        color: ' #252F44'
+        color: ' #1e1e1e'
     },
 
     detail: {

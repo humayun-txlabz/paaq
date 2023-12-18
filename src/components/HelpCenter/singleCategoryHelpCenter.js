@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { useRouter } from 'next/router';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
 import Link from 'next/link';
@@ -44,7 +45,7 @@ const SingleCategoryHelpCenter = (props) => {
               return <a
                 alt={description ? description : null}
                 href={file.url}
-              >{title ? title : file.details.fileName}
+              >{title ? title : file?.details?.fileName}
               </a>
             default:
               return <span style={{ backgroundColor: 'red', color: 'white' }}> {mimeType} embedded asset </span>
@@ -69,6 +70,15 @@ const SingleCategoryHelpCenter = (props) => {
         document.getElementById(id).scrollIntoView({ behavior: "smooth" });
  }, []);
 
+ console.log("firstasdasd", fields)
+
+ const router = useRouter();
+
+  // Extract the 'id' parameter from the query object
+  const { iddd } = router.query
+
+  console.log("router.query",router?.query?.id?.slice(0,1))
+
   return (
       <div>
       
@@ -76,10 +86,19 @@ const SingleCategoryHelpCenter = (props) => {
           <span className='background-image-hc-title'>
             <Link href={'/helpCenter'}>
               <span className='background-image-hc-nav'>
-                {'Help Center >'}
+                {'Help Center > '}
               </span>
             </Link>
-            {fields['0']?.fields?.title}
+            {fields['0']?.fields?.title} {'>'} {fields[router?.query?.id === '2lpVATuhy2Z7ay96He1LDw' ? '0':
+          router?.query?.id === '2VxNT6rcKefXuxU8Z8QQdb' ? '1' : 
+          router?.query?.id === "6FFHACoJjyqFii6bY1NzTI" ? '2' : 
+          router?.query?.id === "5YHhTPQHL3MiPUD8ddn1qa" ? '3' : 
+          router?.query?.id === "3Hg6KaX5hpvOuP8Cctxp4b" ? '4' : 
+          router?.query?.id === "5HS8yZDr7pf9ZNlz5g73lV" ? '5' : 
+          router?.query?.id === "3mV9LgLKoPEVUO5cnLq3Za" ? '6' : 
+          router?.query?.id === "38KHu3qKwuK1HipqL3OFlK" ? '7' : 
+          '0'
+          ]?.fields?.question}
           </span>
       </div>
       <div className='single-hc'>

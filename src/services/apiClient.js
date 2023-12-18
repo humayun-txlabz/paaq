@@ -8,7 +8,7 @@ export const apiClientContentFul =  (title, skipElem = 0, limit = 10) =>{
 
 
     return new Promise((resolve, reject) => {
-        client.getEntries({
+        client?.getEntries({
             content_type: `${title}`,
             skip: skipElem,
             limit
@@ -28,7 +28,7 @@ export const apiClientContentFul =  (title, skipElem = 0, limit = 10) =>{
 export const apiClientContentFulCategory =  (title, category, item) =>{
 
   return new Promise((resolve, reject) => {
-      client.getEntries({
+      client?.getEntries({
           content_type: `${title}`,
           [`fields.${category}[all]`]: item
         })
@@ -46,7 +46,7 @@ export const apiClientContentFulCategory =  (title, category, item) =>{
 export const apiClientContentFulSingleEntry =  (id) =>{
 
   return new Promise((resolve, reject) => {
-      client.getEntry(id)
+      client?.getEntry(id)
         .then((response) => {
           console.log(response)
           resolve(response)

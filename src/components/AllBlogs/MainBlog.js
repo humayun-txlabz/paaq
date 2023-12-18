@@ -47,6 +47,7 @@ const MainBlog = (props) => {
     <div className="blog-main">
       <TitleCard title={"Our Blogs"} />
       <div className="blog-items">
+     
         {allPosts?.map((item, index) => (
           <ItemCard blog={item} key={index} />
         ))}

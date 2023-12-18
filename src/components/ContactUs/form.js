@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { notification, Select } from 'antd';
 import ReCAPTCHA from "react-google-recaptcha";
-
 import { API_ENDPOINT } from "constants";
 import DownArrow from '../../assets/accordion-close.png';
 import { apiClientContentFul } from "services/apiClient";
@@ -49,7 +48,7 @@ const ContactUsForm = () => {
     }
     try {
       const res = await fetch(
-        `${API_ENDPOINT}/sendemail`, {
+        `https://apiv1.paaq.app/v1/sendemail`, {
         method: 'POST',
         // mode: 'cors', // this cannot be 'no-cors'
         headers: {
@@ -91,15 +90,15 @@ const ContactUsForm = () => {
     <div className="contact-us-page-form-container">
       <form onSubmit={submit}>
         <div className="input-with-label">
-          <label>Name*</label>
+          <label className="contact_us_color">Name*</label>
           <input name="name" placeholder="Enter your name" required />
         </div>
         <div className="input-with-label">
-          <label>Email*</label>
-          <input name="email" type="email" placeholder="Enter your name" required />
+          <label className="contact_us_color">Email*</label>
+          <input name="email" type="email" placeholder="example@gmail.com" required />
         </div>
         <div className="input-with-label">
-          <label>Subject*</label>
+          <label className="contact_us_color">Subject*</label>
           <Select
             bordered={false}
             suffixIcon={<div className="arrowDown"><img src={DownArrow} /></div>}
@@ -115,13 +114,13 @@ const ContactUsForm = () => {
           </Select>
         </div>
         <div className="input-with-label">
-          <label>Message*</label>
-          <textarea placeholder="Enter your name" required />
+          <label className="contact_us_color">Message*</label>
+          <textarea placeholder="Write your Message" required />
         </div>
         <div className="recaptcha-field">
           <ReCAPTCHA
             ref={recaptchaRef}
-            sitekey="6Ldt4pcjAAAAAJTTQkkYGkBeftpLFaIC1JNrsIcs"
+            sitekey="6LdBmSEpAAAAADBV9TV_g_dsuERoO97q8DkL0B_m"
             onChange={onChangeRecaptcha}
           />
         </div>

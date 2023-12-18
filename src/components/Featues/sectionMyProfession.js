@@ -24,20 +24,14 @@ const SectionMyProfession =() => {
   }, [isInViewport])
 
   return (
-       <div ref={targetRef} className="section-4" id="MyProfession">
+       <div ref={targetRef} className="section-4 section-4-modify" id="MyProfession">
             <div className="left">
                  <div className="heading">
                       <img src={StartIcon} className="icon" />
-                      <div className="text">My Profession</div>
+                      <div className="text" style={{fontWeight:'900'}}>My Profession</div>
                  </div>
-                 <p>
-                      This feature makes the connection of users effective within the PAAQ
-                      community. Other users will be able to see your expertise and what
-                      you do for a living. Upon filling out your profile and describing
-                      what you do and sharing your achievements, our algorithm will
-                      suggest relevant contents and like-minded individuals within your
-                      field of specialisation. i.e., Photography, filmmaker, sculptor &
-                      artists of different kinds.
+                 <p style={{color:'#4B5157'}}>
+                 Through this feature, users can connect effectively within PAAQ. Your profile will suggest relevant content and other like-minded people in your field of expertise once you've filled out your profile and described what you do.
                  </p>
             </div>
             <div className="right">
@@ -47,7 +41,7 @@ const SectionMyProfession =() => {
                       }`}
                  >
                       <img src={Image1} className="icon" />
-                      <div>Dancer</div>
+                      <div className="profession-pill-text">Dancer</div>
                  </div>
                  <div
                       className={`uDiv2 ${
@@ -55,7 +49,7 @@ const SectionMyProfession =() => {
                       }`}
                  >
                       <img src={Image2} className="icon" />
-                      <div>Student</div>
+                      <div className="profession-pill-text">Student</div>
                  </div>
                  <div
                       className={`uDiv3 ${
@@ -63,7 +57,7 @@ const SectionMyProfession =() => {
                       }`}
                  >
                       <img src={Image3} className="icon" />
-                      <div>HR Manager</div>
+                      <div className="profession-pill-text">HR Manager</div>
                  </div>
                  <div
                       className={`uDiv4 ${
@@ -71,7 +65,7 @@ const SectionMyProfession =() => {
                       }`}
                  >
                       <img src={Image4} className="icon" />
-                      <div>Yoga Instructor</div>
+                      <div className="profession-pill-text">Yoga Instructor</div>
                  </div>
                  <div
                       className={`uDiv5 ${
@@ -79,7 +73,7 @@ const SectionMyProfession =() => {
                       }`}
                  >
                       <img src={Image5} className="icon" />
-                      <div>Artist</div>
+                      <div className="profession-pill-text">Artist</div>
                  </div>
                  <div
                       className={`uDiv6 ${
@@ -87,7 +81,7 @@ const SectionMyProfession =() => {
                       }`}
                  >
                       <img src={Image6} className="icon" />
-                      <div>Venture Capitalist</div>
+                      <div className="profession-pill-text">Venture Capitalist</div>
                  </div>
                  <div
                       className={`uDiv7 ${
@@ -95,7 +89,7 @@ const SectionMyProfession =() => {
                       }`}
                  >
                       <img src={Image7} className="icon" />
-                      <div>3D Designer</div>
+                      <div className="profession-pill-text">3D Designer</div>
                  </div>
                  <div
                       className={`uDiv8 ${
@@ -103,9 +97,9 @@ const SectionMyProfession =() => {
                       }`}
                  >
                       <img src={Image8} className="icon" />
-                      <div>Accountant</div>
+                      <div className="profession-pill-text">Accountant</div>
                  </div>
-                 <div className="logo">
+                 <div className="logo" >
                       <img src={Logo} className="icon" />
                  </div>
             </div>

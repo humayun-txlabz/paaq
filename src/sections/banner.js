@@ -18,15 +18,20 @@ import MainImage8 from "assets/Images/main22.png";
 import MainImage9 from "assets/Images/main44.png";
 import MainImage10 from "assets/Images/main5.png";
 import MainImage11 from "assets/Images/main2.png";
-import bann from "assets/bannerMobileView.png";
+// import bann from "assets/bannerMobileView.png";
 import SpeakerIcon from "assets/Icons/whitespeaker.png";
 import FadeAnimation from "components/fadeAnimation";
-import Link from "next/link";
-import Online from "components/OnlineStatus/Online";
+import homeshowskill from '../assets/home/homeshowskill.png'
+import homeaiskill from '../assets/home/homeaiskill.png'
+import homelightskill from '../assets/home/homelightskill.png'
+import PaaqHomeSlider from "components/PaaqHomeSlider";
 
 export default function Banner() {
   const svgRef = React.createRef();
   const [domLoaded, setDomLoaded] = useState(false);
+  const [isTruncated, setIsTruncated] = useState(true);
+
+  console.log("isTruncated", isTruncated);
 
   useEffect(() => {
     setDomLoaded(true);
@@ -73,6 +78,9 @@ export default function Banner() {
     loop: true,
   });
 
+  const textLen =
+    "Conversing with an expert will give you a sense of human connection. However, this feeling is absent when using an automated system. With PAAQ, you can ask anyone with experience and expertise for informed and detailed answers to your questions.";
+
   const poppingOutAnimation = (delay) =>
     useSpring({
       from: { x: 0, y: 0, zoom: 0, scale: 0 },
@@ -98,7 +106,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 5500,
+    delay: 2000,
     config: { duration: 500 },
 
     onRest: () => update3(2),
@@ -109,7 +117,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 9000,
+    delay: 5500,
     config: { duration: 500 },
 
     onRest: () => update3(3),
@@ -120,7 +128,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 13000,
+    delay: 5500,
     // delay: 0,
     config: { duration: 500 },
 
@@ -132,7 +140,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 16500,
+    delay: 9000,
     config: { duration: 500 },
 
     onRest: () => update3(5),
@@ -143,7 +151,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 20000,
+    delay: 9000,
     config: { duration: 500 },
 
     onRest: () => update3(6),
@@ -154,7 +162,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 24000,
+    delay: 13000,
     config: { duration: 500 },
 
     onRest: () => update3(7),
@@ -165,7 +173,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 28000,
+    delay: 13000,
     config: { duration: 500 },
 
     onRest: () => update3(8),
@@ -177,7 +185,7 @@ export default function Banner() {
       { x: 0, y: 0, opacity: 1, scale: 1 },
       { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
     ],
-    delay: 31500,
+    delay: 16500,
     // delay: 0,
     config: { duration: 500 },
 
@@ -191,7 +199,7 @@ export default function Banner() {
         { x: 0, y: 0, opacity: 1, scale: 1 },
         { x: 0, y: 0, opacity: 0, scale: 1, delay: 2000 },
       ],
-      delay: 31700,
+      delay: 16500,
       config: { duration: 500 },
       loop: true,
     };
@@ -251,7 +259,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image1"
                 src={MainImage1}
               />
-              <Online width={14} height={14} left={45} bottom={38} />
             </animated.div>
           </div>
 
@@ -260,13 +267,6 @@ export default function Banner() {
               <Image
                 className="main-section-inner main-section-inner-image2"
                 src={MainImage2}
-              />
-              <Online
-                width={16}
-                height={16}
-                left={76}
-                bottom={80}
-                display="block"
               />
               <animated.div
                 style={{ ...anim1, position: "absolute" }}
@@ -286,8 +286,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image3"
                 src={MainImage3}
               />
-              <Online width={14} height={14} left={48} bottom={40} />
-
               <animated.div
                 style={{ position: "absolute", ...anim8 }}
                 className="main-section-image2-nametag-containerleft"
@@ -305,13 +303,6 @@ export default function Banner() {
               <Image
                 className="main-section-inner main-section-inner-image4"
                 src={MainImage4}
-              />
-              <Online
-                width={16}
-                height={16}
-                left={76}
-                bottom={80}
-                display="block"
               />
               <animated.div
                 style={{ position: "absolute", ...anim6 }}
@@ -336,7 +327,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image5"
                 src={MainImage5}
               />
-              <Online width={14} height={14} left={60} bottom={60} />
               <animated.div
                 style={{ position: "absolute", ...anim3 }}
                 className="main-section-image2-nametag-container"
@@ -358,7 +348,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image6"
                 src={MainImage6}
               />
-              <Online width={12} height={12} left={34} bottom={30} />
               <animated.div
                 style={{ position: "absolute", ...anim2 }}
                 className="main-section-image2-nametag-container"
@@ -376,13 +365,6 @@ export default function Banner() {
               <Image
                 className="main-section-inner main-section-inner-image7"
                 src={MainImage7}
-              />
-              <Online
-                width={12}
-                height={12}
-                left={46}
-                bottom={42}
-                display="block"
               />
               <animated.div
                 style={{ position: "absolute", ...anim9 }}
@@ -408,7 +390,6 @@ export default function Banner() {
                 id="main-section-inner-image8"
                 src={MainImage8}
               />
-              <Online width={16} height={16} left={74} bottom={78} />
               <animated.div
                 style={{ ...anim4, position: "absolute" }}
                 className="main-section-image2-nametag-containerleft"
@@ -433,13 +414,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image9"
                 src={MainImage9}
               />
-              <Online
-                width={16}
-                height={16}
-                left={76}
-                bottom={80}
-                display="block"
-              />
               <animated.div
                 style={{ position: "absolute", ...anim5 }}
                 className="main-section-image2-nametag-container"
@@ -463,7 +437,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image10"
                 src={MainImage10}
               />
-              <Online width={14} height={14} left={48} bottom={40} />
             </animated.div>
           </div>
 
@@ -473,7 +446,6 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image11"
                 src={MainImage11}
               />
-              <Online width={16} height={16} left={82} bottom={82} />
               <animated.div
                 style={{ position: "absolute", ...anim7 }}
                 className="main-section-image2-nametag-container"
@@ -522,9 +494,14 @@ export default function Banner() {
             Earn money by answering questions based on <br />
             your skills and knowledge.
           </div>
-          <Link href={"/download"}>
-            <Button className="getstarted-button">Get Started</Button>
-          </Link>
+          <Button
+            className="getstarted-button"
+            style={{ backgroundColor: "#00B5B4" }}
+          >
+            <span className="getstarted-button-modify">
+              Get Started
+            </span>
+          </Button>
         </Box>
         <div className="banner-info-box">
           <div
@@ -545,30 +522,64 @@ export default function Banner() {
                 style={{
                   fontWeight: "bold",
                   fontFamily: "Sofia-Pro",
-                  marginRight: 15,
+                  marginRight: 10,
                 }}
               >
                 What is PAAQ
               </div>
+              <div>
               <Image
                 className="mobile-speaker-icon"
                 src={SpeakerIcon}
                 onClick={() => handleSpeakerClick()}
               />
+              </div>
               <audio ref={svgRef} id="audio" src="/paaq-audio.mp3"></audio>
             </div>
 
-            <div className="web-show-paaq-text" style={{}}>
-              “PAAQ is a question-and-answer social media application that
-              connects experts in their field with people interested in their
-              craft socially and professionally.”
+            <div className="web-show-paaq-text">
+              <div className="paaq-explain-text-1">
+                <div className="paaq-explain-img">
+                  <img src={homeshowskill} alt="" />
+                </div>
+                <div>
+                  PAAQ is a social media platform that connects users with experts to ask questions and receive answers through text or video.
+                </div>
+              </div>
               <br />
+              <div className="paaq-explain-text-1">
+                <div className="paaq-explain-img">
+                  <img src={homeaiskill} alt="" />
+                </div>
+                <div>
+                Conversing with an expert will give you a sense of human connection. However, this feeling is absent when using an automated system
+                </div>
+              </div>
               <br />
-              With PAAQ, you can directly ask a question to someone who can
-              provide an informed, detailed answer to your query, based on their
-              experience and expertise. This is different from the results you
-              get from a search engine, which are more general and don’t provide
-              tailored solutions to your specific questions.
+              <div className="paaq-explain-text-1">
+                <div className="paaq-explain-img">
+                  <img src={homelightskill} alt="" />
+                </div>
+                <div>
+                With PAAQ, you can ask anyone with experience and expertise for informed and detailed answers to your questions.
+                </div>
+              </div>
+              {/* {isTruncated ? (
+                <span>{textLen.slice(0, 131)}...</span>
+              ) : (
+                <span>{textLen.slice(0, 131)} <br /><br /> {textLen.slice(132, 1301)} </span>
+              )} */}
+              <br />
+              {/* <span
+                style={{
+                  textDecorationLine: "underline",
+                  cursor: "pointer",
+                  fontSize: "1rem",
+                }}
+                onClick={() => setIsTruncated(!isTruncated)}
+              >
+                Read {isTruncated ? "More" : "Less"}
+              </span> */}
             </div>
             {/* <div className='mobile-show-paaq-text' style={{
               fontSize: 18, marginTop: 20, lineHeight: 1.5, fontWeight: 'lighter',
@@ -592,6 +603,7 @@ export default function Banner() {
               <animated.div style={{ fontFamily: 'Sofia-Pro', opacity: '0.6', fontSize: '15px', ...style3 }}>Morning Michel, My pet is feeling dizziness</animated.div>
             </animated.div> */}
           </div>
+          
           <div
             className="banner-info-text-container2"
             style={{
@@ -599,25 +611,25 @@ export default function Banner() {
               fontSize: 18,
               fontFamily: "Sofia-Pro",
               display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
+              alignItems: "flex-end",
               width: "40%",
               overflow: "hidden",
             }}
           >
-            {domLoaded && (
-              <div className="player-wrapper">
+            <PaaqHomeSlider width='286px' height='419px'/>
+            {/* {domLoaded && (
+              <div className='player-wrapper' style={{marginBottom:'0px'}}>
                 <ReactPlayer
-                  className="react-player-about"
-                  url="gifs/PostInformation.mov"
-                  width="100%"
-                  height="100%"
+                  className='react-player-download'
+                  url='gifs/PostInformation.mov'
+                  width='100%'
+                  height='100%'
                   loop={true}
                   playing={true}
                   muted={true}
                 />
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </Container>
@@ -663,13 +675,12 @@ const styles = {
     position: "absolute",
     width: "100%",
     top: 0,
-    cursor: "default",
   },
   bannerTitleMobile: {
     margin: "30px 0px",
     fontFamily: "Sofia-Pro",
-    fontWeight: 400,
-    color: "black",
+    fontWeight: 500,
+    color: "#1E1E1E",
     lineHeight: 1.2,
     fontSize: 20,
     "@media screen and (max-width: 720px)": {

@@ -19,7 +19,7 @@ const styles = {
     title:{
        fontSize:'40px',
        fontWeight:'600',
-       color:'#252F44',
+       color:'#1e1e1e',
        fontFamily: 'Sofia-Pro',
        textTransform:'capitalize',
        lineHeight:'54px'

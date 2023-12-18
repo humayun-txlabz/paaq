@@ -45,7 +45,7 @@ const styles = {
             lineHeight:''
         },
         fontWeight:'700',
-        color:'#252F44',
+        color:'#1e1e1e',
         width:'85%',
         lineHeight:'47.6px',
         fontFamily: 'Sofia-Pro',

@@ -1,3 +1,10 @@
+@media (min-width: 767px) and (max-width: 1024px) {
+  .logoImg {
+    width: 52px;
+    height: 100%;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   #header {
     display: flex;
@@ -5,35 +12,42 @@
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
+
     .logoImg {
       width: 43px;
       height: 100%;
     }
+
     .right-container {
       display: flex;
       align-items: center;
       display: none !important;
     }
+
     .mobile-menu-open-drawer {
       display: block !important;
     }
   }
+
   // Footer
   .footer-copyright-container {
     padding-left: 0%;
     padding-right: 0%;
     align-items: center;
     justify-content: center;
+
     .icons-bottom-footer-web {
       display: none;
     }
+
     .icons-bottom-footer-mobile {
       display: flex;
       align-items: center;
+
       .icon-bg {
         cursor: pointer;
         border: 1px solid #354058;
-        background: #252f44;
+        background: #1E1E1E;
         padding: 1rem;
         border-radius: 50%;
         width: 38px;
@@ -42,7 +56,8 @@
         align-items: center;
         justify-content: center;
         margin-left: 0.7rem;
-        & > img {
+
+        &>img {
           width: 15px;
           height: auto;
         }
@@ -56,6 +71,7 @@
     grid-template-columns: 1fr;
     /* margin: 0px 90px; */
   }
+
   .title-card-heading {
     font-family: var(--pro);
     font-style: normal;
@@ -64,7 +80,11 @@
     line-height: 56px;
     margin: 0px 0px;
     margin-bottom: 2rem;
+
+   
+
   }
+
   .title-icons-container {
     margin-bottom: 2rem;
   }
@@ -76,7 +96,9 @@
       grid-template-columns: 1fr;
       column-gap: 3%;
       row-gap: 2rem;
+
       .item-card-container {
+
         // border: 2px solid green;
         .item-card-image-inner {
           flex: 1;
@@ -88,6 +110,7 @@
       }
     }
   }
+
   .item-card-title {
     margin: 15px 0px;
   }
@@ -96,41 +119,45 @@
     font-weight: 500;
   }
 
-//   download page
+  //   download page
 
-.bar-code-and-text {
+  .bar-code-and-text {
     display: none;
-}
-.bar-code-and-text-mobile {
-    display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 2rem;
-  .image {
-    background: #ffffff;
-    border-radius: 19.6552px;
-    margin-right: 10%;
-    min-width: 125px;
-    padding: 20px;
   }
-  .text-in-bar-code-with-text {
-    font-family: var(--pro);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #ffffff;
-    padding-left: 0%;
-    padding-right: 5%;
-  }
-}
-.send-link-download { 
-    .or-in-send-link { 
-    margin-left: 1rem;
 
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 23px;
+  .bar-code-and-text-mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2rem;
+
+    .image {
+      background: #ffffff;
+      border-radius: 19.6552px;
+      margin-right: 10%;
+      min-width: 125px;
+      padding: 20px;
     }
-}
+
+    .text-in-bar-code-with-text {
+      font-family: var(--pro);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #ffffff;
+      padding-left: 0%;
+      padding-right: 5%;
+    }
+  }
+
+  .send-link-download {
+    .or-in-send-link {
+      margin-left: 1rem;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
 }

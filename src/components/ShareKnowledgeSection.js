@@ -6,10 +6,10 @@ import Image from 'next/image';
 const ShareKnowledgeSection = () => {
     return (
         <div className='share-knowledge-section'>
-            <span className='share-knowledge-text' style={{ fontFamily: 'Sofia-Pro'}} >
+            <span className='share-knowledge-text share-knowledge-text-modify' style={{ fontFamily: 'Sofia-Pro'}} >
                 Share knowledge
             </span>
-            <span className='share-knowledge-text'>
+            <span className='share-knowledge-text share-knowledge-text-modify'>
                 & Earn Money
             </span>
             {/* <div>

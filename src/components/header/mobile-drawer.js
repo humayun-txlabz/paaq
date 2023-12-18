@@ -5,6 +5,7 @@ import Drawer from 'components/drawer';
 import { DrawerContext } from '../../contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link } from 'components/link';
+import logoMain from '../../assets/logoMain.svg'
 
 import {
   FaFacebookF,
@@ -45,7 +46,7 @@ const MobileDrawer = () => {
 
   return (
     <Drawer
-      width="320px"
+      width="100%"
       drawerHandler={
         <Box sx={styles.handler}>
           <IoMdMenu color={'#fff'} size="26px" />
@@ -56,20 +57,23 @@ const MobileDrawer = () => {
       closeButton={<IoMdClose size="24px" color="#000000" />}
       drawerStyle={styles.drawer}
       closeBtnStyle={styles.close}
+      logoMain={logoMain}
     >
-      <Scrollbars autoHide>
+     
+     <div style={{marginTop:'0px'}}>
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
-            {menuItems.map(({ path, label }, i) => (
+            {menuItems.map(({ path, label, img }, i) => (
               <Link
               path={path}
               >
-                {label}
+               <span style={{paddingLeft:'13px'}}>{img}</span>
+               {/* <span className='mobile-menu-text'>{label}</span> */}
               </Link>
             ))}
           </Box>
 
-          <Box sx={styles.menuFooter}>
+          {/* <Box sx={styles.menuFooter}>
             <Box sx={styles.social}>
               {social.map(({ path, icon }, i) => (
                 <Box as="span" key={i} sx={styles.social.icon}>
@@ -77,9 +81,10 @@ const MobileDrawer = () => {
                 </Box>
               ))}
             </Box>
-          </Box>
+          </Box> */}
         </Box>
-      </Scrollbars>
+        </div>
+     
     </Drawer>
   );
 };
@@ -90,9 +95,9 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: '0',
-    background: '#252F44',
+    background: '#1e1e1e',
     padding: '0.5rem',
-    borderRadius: '50%',
+    borderRadius: '10px',
     '@media screen and (min-width: 767px)': {
       display: 'none',
     },
@@ -101,7 +106,9 @@ const styles = {
   drawer: {
     width: '100%',
     height: '100%',
-    backgroundColor: 'dark',
+    // backgroundColor: 'dark',
+    background: 'linear-gradient(335.49deg, #15CEB9 2.53%, #4293C5 89.73%)',
+
   },
 
   close: {
@@ -120,7 +127,7 @@ const styles = {
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
-    pt: '100px',
+    pt: '25px',
     pb: '40px',
     px: '30px',
   },
@@ -133,9 +140,10 @@ const styles = {
       fontSize: '16px',
       fontWeight: '500',
       color: 'text_white',
-      py: '15px',
+      pt: '15px',
+      pb: '0px',
       cursor: 'pointer',
-      borderBottom: '1px solid #e8e5e5',
+      // borderBottom: '1px solid #e8e5e5',
       transition: 'all 0.25s',
       '&:hover': {
         color: 'secondary',

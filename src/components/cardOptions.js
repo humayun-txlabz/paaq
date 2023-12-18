@@ -32,7 +32,7 @@ const styles = {
             marginTop: '15px',
         },
         padding: '35px',
-        color:'#252F44'
+        color:'#1e1e1e'
     },
 
     heading: {

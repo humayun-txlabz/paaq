@@ -50,7 +50,6 @@ export default function Faq(props) {
     }
 
     return (
-        <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
                     <SEO title="FAQ's" />
@@ -85,7 +84,6 @@ export default function Faq(props) {
                     <AppAndPlayStoreFooter />
                 </Layout>
             </StickyProvider>
-        </ThemeProvider>
     );
 }
 
@@ -121,9 +119,9 @@ const styles = {
             fontSize: '35px',
             lineHeight: '46px',
         },
-        fontWeight: '600',
+        fontWeight: '700',
         lineHeight: '66px',
-        color: ' #252F44'
+        color: ' #1e1e1e'
     },
     headingInner: {
         display: 'flex',
@@ -133,9 +131,9 @@ const styles = {
             fontSize: '35px',
             lineHeight: '46px',
         },
-        fontWeight: '600',
+        fontWeight: '700',
         lineHeight: '66px',
-        color: ' #252F44',
+        color: ' #1e1e1e',
         marginTop: "90px"
     },
     accordionContainer: {

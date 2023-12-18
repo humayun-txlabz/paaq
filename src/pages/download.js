@@ -16,6 +16,7 @@ import {
 } from "react-phone-number-input/input";
 import en from "react-phone-number-input/locale/en.json";
 import { API_ENDPOINT } from "constants";
+import PaaqHomeSlider from "components/PaaqHomeSlider";
 
 export default function Download() {
   const [countryCode, setCountryCode] = useState("US");
@@ -34,7 +35,7 @@ export default function Download() {
       onChange={(event) => { setCountryCode(event.target.value || undefined) }}
     >
       {getCountries().map((country) => (
-        <option key={country} value={country}>
+        <option style={{ backgroundColor: '#1e1e1e' }} key={country} value={country}>
           {country} +{getCountryCallingCode(country)}
         </option>
       ))}
@@ -43,11 +44,12 @@ export default function Download() {
 
   const sendDownloadLink = async () => {
     const numberWithCode = `+${getCountryCallingCode(countryCode)}${phoneNumber}`
-    if(phoneNumber && numberWithCode){
+    console.log("numberWithCode", numberWithCode, phoneNumber?.length)
+    if (phoneNumber && numberWithCode) {
       setPending(true);
       try {
         const res = await fetch(
-          `${API_ENDPOINT}/senddownloadlink`, {
+          `https://apiv1.paaq.app/v1/link/number`, {
           method: 'POST',
           // mode: 'cors', // this cannot be 'no-cors'
           headers: {
@@ -55,33 +57,37 @@ export default function Download() {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            phoneNo: numberWithCode
+            phoneNumber: numberWithCode,
+            countryCode: numberWithCode?.slice(0, -phoneNumber?.length),
           })
         }
         );
         if (res.status === 200) {
+          setPhoneNumber(null)
           notification.success({
             message: 'Download Link Sent',
             description:
               'Download link has been sent successfully to your phone number.',
           });
-        } else {
+        } 
+        else {
           notification.error({
             message: 'Error',
             description: `Couldn't reach to PAAQ at the moment. Please try after few moments`
           });
         }
         setPending(false);
-        
+
       } catch (err) {
-        console.log(err);
+        console.log('err', err);
         notification.error({
           message: 'Error',
           description: `Couldn't reach to PAAQ at the moment. Please try after few moments`
         });
         setPending(false);
       }
-    } else {
+    } 
+    else {
       notification.error({
         message: 'Error',
         description: `Please add a valid number`
@@ -90,12 +96,16 @@ export default function Download() {
     }
   }
 
+  console.log("phoneNumber && numberWithCode", phoneNumber)
+
   return (
-    <ThemeProvider theme={theme}>
+    <div >
+<ThemeProvider theme={theme} >
       <StickyProvider>
-        <Layout>
+        <div>
+        <Layout >
           <SEO title="Download" />
-          <Container sx={styles.mainContainer}>
+          <Container sx={styles.mainContainer} >
             <Container sx={styles.downloadContainer}>
               <Container sx={styles.textContainer}>
                 <Text sx={styles.heading}>Download PAAQ</Text>
@@ -112,22 +122,25 @@ export default function Download() {
                     />
                   </Container>
                   <Container sx={styles.phoneContainer}>
-                    <input style={styles.textField} type="number" id="quantity" name="quantity" max="10" min="1" />
+                    <input className="download-placeholder" style={styles.textField} value={phoneNumber || ''} onChange={(e) => {
+                      setPhoneNumber(e.target.value)
+                    }} type="number" id="quantity" name="quantity" max="10" min="1" placeholder="Phone Number"/>
                     {/* <Input sx={styles.textField} onChange={onChangeNumber} placeholder="Phone Number" /> */}
                   </Container>
                 </Container>
                 <div className="send-link-download">
-                  <Button sx={styles.button} style={{ background: pending ? '#D9D9D9' : '#FFFFFF', color: pending ? '#FFFFFF' : '#000000'}} aria-label="Send Link" onClick={sendDownloadLink}>
+                  <Button sx={styles.button} disabled={pending || !(phoneNumber)}  style={{ background: pending || !(phoneNumber) ? '#D9D9D9' : '#FFFFFF', color: pending ? '#FFFFFF' : '#000000' , cursor: pending || !(phoneNumber) ? 'not-allowed' : ''}} aria-label="Send Link" onClick={sendDownloadLink}>
                     Send Link
                   </Button>
-                  <span className="or-in-send-link">
-                    <div className="mini-line"></div> OR{" "}
-                    <div className="mini-line"></div>
-                  </span>
+                 
                 </div>
                 <div className="bar-code-and-text">
                   <Image src={barCode} className={'barcode-container'} />
                   <span className="text-in-bar-code-with-text">
+                  <div className="or-in-send-link or-in-send-link-modify">
+                    <div className="mini-line mini-line-left"></div> OR
+                    <div className="mini-line mini-line-right"></div>
+                  </div>
                     Scan to download by opening the camera app on your phone.
                     Place the rear-facing camera on top of the QR code. You will
                     see a notification. Tap it.
@@ -143,26 +156,31 @@ export default function Download() {
                 </div>
               </Container>
               <Container sx={styles.imageContainer}>
-              {domLoaded && (
-                  <div className='player-wrapper'>
-                    <ReactPlayer 
+              <PaaqHomeSlider width='312px' height='490px'/>
+                {/* {domLoaded && (
+                  <div className='player-wrapper player-wrapper-download' >
+                    <ReactPlayer
                       className='react-player-download'
                       url='gifs/PostInformation.mov'
                       width='100%'
-                      height='100%'
+                      height='101%'
                       loop={true}
                       playing={true}
                       muted={true}
-                      /> 
-                    </div>
-              )}
+                    />
+                  </div>
+                )} */}
               </Container>
             </Container>
           </Container>
+          <div className="download-play-store" >
           <AppAndPlayStoreFooter />
+          </div>
         </Layout>
+        </div>
       </StickyProvider>
     </ThemeProvider>
+    </div>
   );
 }
 
@@ -171,9 +189,11 @@ const styles = {
     display: "flex",
     width: "100%",
     alignItems: "center",
-    paddingTop: "100px",
+    marginBottom:'80px',
+    paddingTop: "60px",
     "@media screen and (max-width: 720px)": {
-      paddingTop: "50px",
+      paddingTop: "0px",
+      marginBottom:'0px'
     },
     justifyContent: "center",
     flexDirection: "column",
@@ -189,6 +209,7 @@ const styles = {
       flexDirection: "column",
       borderRadius: "15px",
       width: "90%",
+      paddingTop: "60px",
     },
   },
   textContainer: {
@@ -197,6 +218,14 @@ const styles = {
       width: "100%",
       paddingLeft: "30px !important",
       marginBottom: '10%'
+    },
+    "@media (min-width: 720px) and (max-width: 970px)": {
+      width: "100%",
+      paddingLeft: "50px !important",
+      marginBottom: '10%'
+    },
+    "@media (min-width: 970px) and (max-width: 1100px)": {
+      paddingLeft: "50px !important",
     },
     "@media screen and (max-width: 970px)": {
       width: "100%",

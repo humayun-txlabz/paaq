@@ -6,7 +6,6 @@ import WeAreInnovativeSection from './innovativeSection'
 import GradientCardBottomComponent from 'components/gradientCardWithBtn'
 
 const CareerMain = ({ totalFeaturedJobs = 0, totalJobs = 0 }) => {
-
   return (
     <div className='careers-page-who-we-are'>
         <WeAreKindSection />

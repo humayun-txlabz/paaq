@@ -28,8 +28,8 @@ const ReplyEarnSlider = () => {
             src={images[currentIndex]}
             alt={`Image ${currentIndex + 1}`}
             style={{
-              width: currentIndex == 0 ? '100%' : '100%',
-              height: currentIndex == 0 ? '100%' : '100%',
+              width: currentIndex == 0 ? '110%' : '100%',
+              height: currentIndex == 0 ? '110%' : '100%',
           }}
           />
         </div>

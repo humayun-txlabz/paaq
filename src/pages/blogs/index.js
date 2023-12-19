@@ -35,7 +35,6 @@ export const apiClientContentFul =  (title, skipElem = 0, limit = 10) =>{
 };
 
 export default function BlogsPage(props) {
-  console.log("props_data", props);
   const [data, setData] = useState({});
   const [error, setError] = useState(false);
   const fetchData = async () => {

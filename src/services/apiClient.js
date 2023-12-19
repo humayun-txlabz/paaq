@@ -26,9 +26,6 @@ export const apiClientContentFul =  (title, skipElem = 0, limit = 10) =>{
 };
 
 export const apiClientContentFulCategory =  (title, category, item) =>{
-console.log('hamza title',title)
-console.log('hamza catogory',category)
-console.log('hamza item',item)
   return new Promise((resolve, reject) => {
       client?.getEntries({
           content_type: `${title}`,

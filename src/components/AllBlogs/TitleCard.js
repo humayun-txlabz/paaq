@@ -2,7 +2,7 @@ import Image from "next/image";
 import FbIcon from "../../assets/Icons/Facebook.svg";
 import InstagramIcon from "../../assets/Icons/instagram.svg";
 import LinkedinIcon from "../../assets/Icons/linkedin.svg";
-import TwitterIcon from "../../assets/Icons/twitter.svg";
+import TwitterIcon from "../../assets/Icons/twitter1.svg";
 import { FacebookShareButton, LinkedinShareButton, TwitterShareButton } from "react-share";
 import { useRouter } from "next/router";
 

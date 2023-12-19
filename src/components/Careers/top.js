@@ -91,7 +91,6 @@ const CareersTopMain = (props) => {
                       <div style={{ ...StyleSheet.line2,  }} className="shimmer-2nd2" />
                     </Shimmer>
                   </div>
-                  {/* <Skeleton className="shimEff" count={1} height={25} borderRadius={'0.1rem'} /> */}
                 </div>
                 <img style={{ opacity: 0, animation: 'bounceIn2 2s forwards 1s' }} className="circleImg" src={CareersImage3} />
               </div>
@@ -104,7 +103,6 @@ const CareersTopMain = (props) => {
                       <div style={StyleSheet.line2} className="shimmer-2nd3" />
                     </Shimmer>
                   </div>
-                  {/* <Skeleton className="shimEff" count={1} height={25} borderRadius={'0.1rem'} /> */}
                 </div>
                 <img style={{ opacity: 0, animation: 'bounceIn2 2s forwards 1s' }} className="circleImg" src={CareersImage4} />
               </div>

@@ -147,7 +147,7 @@ const JobInsightsMain = (props) => {
           <JobInsightsForm /> */}
         </div>
         <div className="job-insights-main-content-right">
-          <Link href={jobItem?.jobLink ?? ''}>
+          <Link href={jobItem?.jobLink ?? '#'}>
             <div style={{ background: "#0a66c2" }} className="btn">
               <Image src={LinkedInIcon} />
               <h3 style={{ color: "#fff", cursor: 'pointer' }}>Apply With LinkedIn</h3>

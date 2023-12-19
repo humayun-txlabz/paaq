@@ -20,9 +20,6 @@ const client = contentful.createClient({
 
 
 export const apiClientContentFulCategory =  (title, category, item) =>{
-  console.log('hamza title',title)
-  console.log('hamza catogory',category)
-  console.log('hamza item',item)
     return new Promise((resolve, reject) => {
         client?.getEntries({
             content_type: `${title}`,
@@ -59,7 +56,6 @@ export default function MediaPage() {
       // setError(true);
     }
   };
-  console.log('ali posts',posts)
   useEffect(() => {
     fetchData();
   }, []);

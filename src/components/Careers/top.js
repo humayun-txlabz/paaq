@@ -76,8 +76,8 @@ const CareersTopMain = (props) => {
                   <img className="chatImg" src={CareersImage6} />
                   <div style={StyleSheet.container}>
                     <Shimmer>
-                      <div style={StyleSheet.line1} className="shimmer-1st1" />
-                      <div style={StyleSheet.line2} className="shimmer-2nd1"/>
+                      <div style={StyleSheet.line1} className="shimmer-1st1 shimmer-1st1-modify" />
+                      <div style={StyleSheet.line2} className="shimmer-2nd1 shimmer-2nd1-modify"/>
                     </Shimmer>
                   </div>
                 </div>
@@ -87,11 +87,10 @@ const CareersTopMain = (props) => {
                   <img className="chatImg" src={CareersImage5} />
                   <div style={StyleSheet.container}>
                     <Shimmer>
-                      <div style={{ ...StyleSheet.line1, }} className="shimmer-1st2" />
-                      <div style={{ ...StyleSheet.line2,  }} className="shimmer-2nd2" />
+                      <div style={{ ...StyleSheet.line1, }} className="shimmer-1st2 shimmer-1st2-modify" />
+                      <div style={{ ...StyleSheet.line2,  }} className="shimmer-2nd2 shimmer-2nd2-modify" />
                     </Shimmer>
                   </div>
-                  {/* <Skeleton className="shimEff" count={1} height={25} borderRadius={'0.1rem'} /> */}
                 </div>
                 <img style={{ opacity: 0, animation: 'bounceIn2 2s forwards 1s' }} className="circleImg" src={CareersImage3} />
               </div>
@@ -100,11 +99,10 @@ const CareersTopMain = (props) => {
                   <img className="chatImg" src={CareersImage5} />
                   <div style={StyleSheet.container}>
                     <Shimmer>
-                      <div style={StyleSheet.line1} className="shimmer-1st3" />
-                      <div style={StyleSheet.line2} className="shimmer-2nd3" />
+                      <div style={StyleSheet.line1} className="shimmer-1st3 shimmer-1st2-modify" />
+                      <div style={StyleSheet.line2} className="shimmer-2nd3 shimmer-2nd2-modify" />
                     </Shimmer>
                   </div>
-                  {/* <Skeleton className="shimEff" count={1} height={25} borderRadius={'0.1rem'} /> */}
                 </div>
                 <img style={{ opacity: 0, animation: 'bounceIn2 2s forwards 1s' }} className="circleImg" src={CareersImage4} />
               </div>

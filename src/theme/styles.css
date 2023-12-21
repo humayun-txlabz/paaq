@@ -3801,3 +3801,15 @@ button {
   font-weight: 500;
   line-height: normal;
 }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .features-page-container .section-5 .right .right-card-mini-image-feature-paid-messages{
+    transform: translate(60%, 10px);
+  }
+
+  .features-page-container .section-5 .right .left-card-mini-image-feature-paid-messages{
+  transform: translate(-35%, 10px);
+  }
+
+  
+}

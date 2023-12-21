@@ -66,7 +66,7 @@ export default function MediaPage() {
       <StickyProvider>
         <Layout>
           <SEO title="Help Center" />
-          {posts?.length>0&&<SingleCategoryHelpCenter fields={posts} id={routeId} />}
+          {posts?.length>0&&<SingleCategoryHelpCenter fields={posts} id={id?id:routeId} />}
         </Layout>
       </StickyProvider>
     </ThemeProvider>

@@ -2681,7 +2681,7 @@ button {
 .job-insights-main {
   display: grid;
 
-  background: url(/webbg.png);
+  background: url(/background-image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;

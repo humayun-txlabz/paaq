@@ -7,7 +7,6 @@ import { savedJobsInLocal } from "services/savedJobsLocalStorage";
 import Link from "next/link";
 
 const SingleJobItem = ({item, key, type}) => {
-
      const [isGrad, setIsGrad] = useState(false);
 
      useEffect(() => {
@@ -35,7 +34,7 @@ const SingleJobItem = ({item, key, type}) => {
                                    </p>
                                    <p style={{marginLeft: '2rem'}}>
                                         <img src={tagBlack} />
-                                        {item.category ?? 'Category'}
+                                        {item.jobCategory ?? 'Category'}
                                    </p>
                               </div>
                          </div>

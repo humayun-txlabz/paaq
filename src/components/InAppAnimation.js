@@ -57,7 +57,7 @@ const InAppAnimation = () => {
     }, []);
 
     return (
-        <div style={{ paddingTop: '60px' }}>
+        <div style={{ paddingTop: '60px',paddingRight:'10px',paddingLeft:'10px' }}>
             <div className='in-app-images-animation'>
                 <img src={img1 === false ? jobDark : job} alt="job" />
                 <img src={img2 === false ? handDark : hand} alt="hand" />

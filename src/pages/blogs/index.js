@@ -54,7 +54,7 @@ export default function BlogsPage(props) {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landinggg 006" />
+          <SEO title="blogs" />
           {data?.total>0 && <MainBlog posts={data} setData={setData} /> }
         </Layout>
       </StickyProvider>

@@ -3,6 +3,9 @@ import { BiHeart } from "react-icons/bi";
 import { FiTwitter } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
 import { RiLinkedinFill } from "react-icons/ri";
+import { BsTwitterX } from "react-icons/bs";
+import { BiTag } from "react-icons/bi";
+
 
 import JobInsightsForm from "./form";
 import locImgIcon from '../../assets/loc-svg.png';
@@ -14,6 +17,7 @@ import AppAndPlayStoreFooter from "components/appAndPlayStoreFooter";
 import jobInsightsImg1 from '../../assets/Images/job-insights-1.png';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { Image } from 'theme-ui';
+import { GrLocation } from "react-icons/gr";
 
 const JobInsightsMain = (props) => {
 
@@ -132,7 +136,7 @@ const JobInsightsMain = (props) => {
               <FaFacebookF />
             </div>
             <div className="social-icon">
-              <FiTwitter />
+              <RiLinkedinFill />
             </div>
             <div className="social-icon">
               <RiLinkedinFill />
@@ -168,7 +172,8 @@ const JobInsightsMain = (props) => {
               <FaFacebookF />
             </div>
             <div className="social-icon">
-              <FiTwitter />
+            <BsTwitterX />
+
             </div>
             <div className="social-icon">
               <RiLinkedinFill />
@@ -176,11 +181,28 @@ const JobInsightsMain = (props) => {
           </div>
 
           {/* Releated Jobs */}
-          {/* <h1>Related Jobs</h1> */}
+          <h1>Related Jobs</h1>
           {/* Single Card */}
-          {/* <div className="job-insights-related-job-single">
+          <div className="job-insights-related-job-single">
             <div className="job-insights-related-job-single-left">
-              <h3>Related Jobs</h3>
+              <h3>Senior Site Reliability Engineer</h3>
+              <div className="job-insights-related-job-single-loc-type">
+                <p>
+                  <GrLocation className="locIcon" /> Remote
+                </p>
+               <p>
+                  <BiTag className="tagIcon" /> Engineering
+                </p> 
+              </div>
+            </div>
+            <div className="job-insights-related-job-single-right">
+              <BiHeart />
+            </div>
+          </div>
+          {/* Single Card */}
+          <div className="job-insights-related-job-single">
+            <div className="job-insights-related-job-single-left">
+              <h3>QA Engineer III</h3>
               <div className="job-insights-related-job-single-loc-type">
                 <p>
                   <GrLocation className="locIcon" /> Remote
@@ -193,24 +215,7 @@ const JobInsightsMain = (props) => {
             <div className="job-insights-related-job-single-right">
               <BiHeart />
             </div>
-          </div> */}
-          {/* Single Card */}
-          {/* <div className="job-insights-related-job-single">
-            <div className="job-insights-related-job-single-left">
-              <h3>Related Jobs</h3>
-              <div className="job-insights-related-job-single-loc-type">
-                <p>
-                  <GrLocation className="locIcon" /> Remote
-                </p>
-                <p>
-                  <BiTag className="tagIcon" /> Engineering
-                </p>
-              </div>
-            </div>
-            <div className="job-insights-related-job-single-right">
-              <BiHeart />
-            </div>
-          </div> */}
+          </div>
           {/* Single Card */}
           {/* <div className="job-insights-related-job-single">
             <div className="job-insights-related-job-single-left">

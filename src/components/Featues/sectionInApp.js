@@ -10,7 +10,7 @@ import camera from '../../assets/inApp/camera.png'
 import InAppAnimation from "components/InAppAnimation";
 
 function SectionInApp() {
-  const [domLoaded, setDomLoaded] = useState(false);
+  const [domLoaded, setDomLoaded] = useState(true);
 
   const [isScreenWidth, setIsScreenWidth] = useState(false);
 

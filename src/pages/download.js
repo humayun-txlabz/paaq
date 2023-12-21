@@ -102,7 +102,7 @@ export default function Download() {
     <div >
 <ThemeProvider theme={theme} >
       <StickyProvider>
-        <div>
+        <div >
         <Layout >
           <SEO title="Download" />
           <Container sx={styles.mainContainer} >
@@ -156,7 +156,12 @@ export default function Download() {
                 </div>
               </Container>
               <Container sx={styles.imageContainer}>
+              {/* <div style={{
+                position:'absolute', bottom:'-13%',
+                width:'312px', height:'560px', overflow:'hidden'
+              }}> */}
               <PaaqHomeSlider width='312px' height='490px'/>
+              {/* </div> */}
                 {/* {domLoaded && (
                   <div className='player-wrapper player-wrapper-download' >
                     <ReactPlayer

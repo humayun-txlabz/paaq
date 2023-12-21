@@ -13,6 +13,7 @@ const JobsMain = () => {
   const [jobs, setJobs] = useState(null);
   const [totalPages, setTotalPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
+  const [totalCount, setTotalCount] = useState(1);
   const resultsPerPage = 10;
 
   const saveThisJob = (id) => {
@@ -27,6 +28,7 @@ const JobsMain = () => {
        apiClientContentFul("featuredJobs").then((res) => {
             setFeaturedJobs(
                  res?.items?.map((item) => {
+                  
                       return {
                            ...item.fields,
                            id: item?.sys?.id,
@@ -42,9 +44,12 @@ const JobsMain = () => {
 
     apiClientContentFul("jobs", Math.ceil(skip), resultsPerPage).then((res) => {
       const totalP = Math.round(res?.total / resultsPerPage);
+      // console.log("totalP", res?.total)
+      setTotalCount(res?.total)
       setTotalPages(totalP);
       setJobs(
         res?.items?.map((item) => {
+          console.log("res?.items", res?.items)
           return {
             ...item.fields,
             id: item?.sys?.id,
@@ -80,6 +85,7 @@ const JobsMain = () => {
               jobs={jobs}
               goToPage={goToPage}
               currentPage={currentPage}
+              totalCount={totalCount}
             />
           ) : null}
         </div>

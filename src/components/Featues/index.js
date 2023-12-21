@@ -6,7 +6,7 @@ import SectionMySkills from './sectionMySkills'
 import SectionInApp from './sectionInApp'
 import SectionSetPrice from './sectionSetPrice'
 
-const MainFeatures = ({ section }) => {
+const MainFeatures = ({ section  }) => {
 
   useEffect(() => {
     if (section) {
@@ -20,7 +20,7 @@ const MainFeatures = ({ section }) => {
     <div className='features-page-container'>
       {/* <SectionMySkills /> */}
       <SectionPaidMessage />
-      <SectionSetPrice />
+      <SectionSetPrice /> 
       <SectionInApp />
       <SectionMyProfession />
       <AppAndPlayStoreFooter />

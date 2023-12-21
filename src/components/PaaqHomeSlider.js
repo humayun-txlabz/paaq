@@ -35,13 +35,15 @@ const PaaqHomeSlider = ({width, height}) => {
       // console.log("currentIndex", images[currentIndex])
     
       return (
-        <div className='paaq-home-silder' style={{width: width, height: height, paddingTop: currentIndex===0 ? '-30px': '-30px', marginBottom:currentIndex===0 ? '5px': '0px'}}>
+        <div className='paaq-home-silder' style={{width: width, height: height, paddingTop: '-30px', marginBottom: '0px',
+        overflow:'hidden'
+        }}>
           <img
             src={images[currentIndex]}
             alt={`Image ${currentIndex + 1}`}
             style={{
-              width: currentIndex == 0 ? '101%' : '',
-              height: currentIndex == 0 ? '101%' : '',
+              width: '100%',
+              height: '100%',
               borderRadius:'30px 30px 0 0',
           }}
           />

@@ -102,13 +102,13 @@ const JobInsightsMain = (props) => {
             <h3>
               {" "}
               <img style={{width: 14, height: 18, marginRight: '10px'}} src={locImgIcon} />
-              <p className="jobdetail-type">
+              <p className="jobdetail-type" style={{color:'#fff'}}>
                 {jobItem?.jobType ?? 'Remote'}
               </p>
             </h3>
             <h3>
             <img style={{width: 19, height: 18, marginRight: '10px'}} src={rotatedTag} />
-            <p className="jobdetail-type">
+            <p className="jobdetail-type" style={{color:'#fff'}}>
               {jobItem?.category ?? 'Engineering'}
             </p>
             </h3>

@@ -5108,7 +5108,7 @@ body {
     justify-content: center;
     margin-right: 0.6rem;
     font-family: var(--soft);
-    font-weight: 400;
+    font-weight: 700;
     font-size: 0.8rem;
   }
 
@@ -6591,8 +6591,9 @@ body {
             display: flex;
             align-items: center;
             position: absolute;
-            top: 30%;
+            top: 26%;
             right: 9%;
+            transform: translate(18%, 50%);
 
             .circleImg {
               width: 60px;
@@ -9391,4 +9392,22 @@ input::-webkit-inner-spin-button {
     top: 10% !important;
     right: 5% !important;
   }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .single-job-item .inner-container .right .save-button .text span{
+    display: none;
+  }
+
+  .single-job-item .inner-container .right .save-button{
+    padding-left: 0.9rem;
+    padding-right: 0.7rem;
+  }
+}
+
+.total-jobs-count{
+  font-size: 20px;
+  font-family: var(--pro);
+  color: #1E1E1E;
+  margin-bottom: 15px;
 }

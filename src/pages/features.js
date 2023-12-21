@@ -7,19 +7,19 @@ import Layout from 'components/layout';
 import MainFeatures from 'components/Featues';
 import { StickyProvider } from '../contexts/app/app.provider';
 
-export default function AboutUs(props) {
+export default function AboutUs() {
   const router = useRouter();
 
-  useEffect(() => {
-    const section = router.query.section || null;
+  // useEffect(() => {
+  //   const section = router?.query?.section || null;
    
-  }, [router.query.section]); 
+  // }, [router?.query?.section]); 
 
   return (
     <StickyProvider>
       <Layout>
         <SEO title="Features" />
-        <MainFeatures section={router.query.section} />
+        <MainFeatures section={router?.query?.section || ''} />
       </Layout>
     </StickyProvider>
   );

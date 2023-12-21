@@ -49,7 +49,9 @@ const SingleJobItem = ({item, key, type}) => {
                                    changeIsSaved(id)
                               }} style={{cursor: 'pointer'}} className="text">
                                    <img src={isGrad ? heartWhite : heartBlack} />
+                                   <span>
                                    Save
+                                   </span>
                               </div>
                          </div>
                     </div>

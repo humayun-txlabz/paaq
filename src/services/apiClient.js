@@ -26,7 +26,6 @@ export const apiClientContentFul =  (title, skipElem = 0, limit = 10) =>{
 };
 
 export const apiClientContentFulCategory =  (title, category, item) =>{
-
   return new Promise((resolve, reject) => {
       client?.getEntries({
           content_type: `${title}`,

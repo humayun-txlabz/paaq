@@ -46,11 +46,23 @@ const ContactUsForm = () => {
         description: `Please select the ReCaptcha field to prove that you're not a robot`
       });
     }
+  
     try {
-      const res = await fetch(
+      const abortController = new AbortController();
+      const { signal } = abortController;
+  
+      // Set up the timeout
+      const timeoutId = setTimeout(() => {
+        abortController.abort();
+        notification.error({
+          message: 'Error',
+          description: `Request timed out. Please try after a few moments`
+        });
+      }, 30000);
+  
+      const apiCallPromise = fetch(
         `https://apiv1.paaq.app/v1/sendemail`, {
         method: 'POST',
-        // mode: 'cors', // this cannot be 'no-cors'
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -61,9 +73,15 @@ const ContactUsForm = () => {
           recipient: email,
           email: e.target[1]?.value,
           message: e.target[3]?.value
-        })
-      }
-      );
+        }),
+        signal, // Attach the signal to the fetch request
+      });
+  
+      const res = await apiCallPromise;
+  
+      // Clear the timeout when the API call resolves
+      clearTimeout(timeoutId);
+  
       if (res.status === 200) {
         notification.success({
           message: 'Email Sent',
@@ -73,19 +91,21 @@ const ContactUsForm = () => {
       } else {
         notification.error({
           message: 'Error',
-          description: `Couldn't reach to PAAQ at the moment. Please try after few moments`
+          description: `Couldn't reach PAAQ at the moment. Please try after a few moments`
         });
       }
     } catch (err) {
-      console.log(err);
-      notification.error({
-        message: 'Error',
-        description: `Couldn't reach to PAAQ at the moment. Please try after few moments`
-      });
+      console.error(err);
+      if (err.name !== 'AbortError') {
+        notification.error({
+          message: 'Error',
+          description: `Couldn't reach PAAQ at the moment. Please try after a few moments`
+        });
+      }
     }
-
   }
-
+  
+  
   return (
     <div className="contact-us-page-form-container">
       <form onSubmit={submit}>

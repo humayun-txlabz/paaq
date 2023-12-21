@@ -45,14 +45,13 @@ const SingleJobItem = ({item, key, type}) => {
                                    isGrad ? `save-button-gradient` : `save-button`
                               }
                          >
-                              <div onClick={() => {
+                              {/* <div onClick={() => {
                                    changeIsSaved(id)
                               }} style={{cursor: 'pointer'}} className="text">
                                    <img src={isGrad ? heartWhite : heartBlack} />
                                    <span>
                                    Save
-                                   </span>
-                              </div>
+                              </div> */}
                          </div>
                     </div>
                </div>

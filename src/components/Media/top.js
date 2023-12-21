@@ -1,6 +1,6 @@
 import Link from 'next/link';
+import RightImage from '../../assets/Images/media-right-11.png';
 import React, { useEffect, useState } from 'react'
-import RightImage from '../../assets/Images/media-right-1.png';
 import Shimmer from "react-shimmer-effect";
 // img
 import CareersImage1 from "assets/careers/careers-main0.png";

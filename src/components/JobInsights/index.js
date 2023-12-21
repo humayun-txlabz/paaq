@@ -82,7 +82,20 @@ const JobInsightsMain = (props) => {
     },
     renderText: text => text.replace('!', '?'),
   };
+  const shareOnFacebook = () => {
+    const facebookShareURL = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(jobItem?.jobLink ?? '#')}`;
+    window.open(facebookShareURL, '_blank');
+  };
 
+  const shareOnTwitter = () => {
+    const twitterShareURL = `https://twitter.com/intent/tweet?url=${encodeURIComponent(jobItem?.jobLink ?? '#')}&text=${encodeURIComponent(jobItem?.title)}`;
+    window.open(twitterShareURL, '_blank');
+  };
+
+  const shareOnLinkedIn = () => {
+    const linkedInShareURL = `https://www.linkedin.com/shareArticle?url=${encodeURIComponent(jobItem?.jobLink ?? '#')}&title=${encodeURIComponent(jobItem?.title)}`;
+    window.open(linkedInShareURL, '_blank');
+  };
   return (
     <>
       <div className="job-insights-main">
@@ -132,13 +145,13 @@ const JobInsightsMain = (props) => {
           {/* Socials */}
           <div className="job-insights-main-content-left-socials">
             <p>Share this job post</p>
-            <div className="social-icon">
+            <div onClick={shareOnFacebook} className="social-icon">
               <FaFacebookF />
             </div>
-            <div className="social-icon">
-              <RiLinkedinFill />
+            <div onClick={shareOnTwitter} className="social-icon">
+              <BsTwitterX />
             </div>
-            <div className="social-icon">
+            <div onClick={shareOnLinkedIn} className="social-icon">
               <RiLinkedinFill />
             </div>
           </div>
@@ -158,32 +171,32 @@ const JobInsightsMain = (props) => {
             </div>
           </Link>
           <br style={{ marginTop: "1rem" }} />
-          <div style={{ background: "#F8F8F8" }} className="btn">
+          {/* <div style={{ background: "#F8F8F8" }} className="btn">
             <h3 style={{ color: "#000", cursor: 'pointer' }}>
               Save this job <span style={{ paddingRight: "0.2rem" }} />{" "}
               <BiHeart />
             </h3>
-          </div>
+          </div> */}
 
           {/* Socials */}
           <div className="job-insights-main-content-right-socials">
             <p>Share this job post</p>
-            <div className="social-icon">
+            <div onClick={shareOnFacebook} className="social-icon">
               <FaFacebookF />
             </div>
-            <div className="social-icon">
+            <div onClick={shareOnTwitter} className="social-icon">
             <BsTwitterX />
 
             </div>
-            <div className="social-icon">
+            <div onClick={shareOnLinkedIn} className="social-icon">
               <RiLinkedinFill />
             </div>
           </div>
 
           {/* Releated Jobs */}
-          <h1>Related Jobs</h1>
+          {/* <h1>Related Jobs</h1> */}
           {/* Single Card */}
-          <div className="job-insights-related-job-single">
+          {/* <div className="job-insights-related-job-single">
             <div className="job-insights-related-job-single-left">
               <h3>Senior Site Reliability Engineer</h3>
               <div className="job-insights-related-job-single-loc-type">
@@ -198,9 +211,9 @@ const JobInsightsMain = (props) => {
             <div className="job-insights-related-job-single-right">
               <BiHeart />
             </div>
-          </div>
+          </div> */}
           {/* Single Card */}
-          <div className="job-insights-related-job-single">
+          {/* <div className="job-insights-related-job-single">
             <div className="job-insights-related-job-single-left">
               <h3>QA Engineer III</h3>
               <div className="job-insights-related-job-single-loc-type">
@@ -215,7 +228,7 @@ const JobInsightsMain = (props) => {
             <div className="job-insights-related-job-single-right">
               <BiHeart />
             </div>
-          </div>
+          </div> */}
           {/* Single Card */}
           {/* <div className="job-insights-related-job-single">
             <div className="job-insights-related-job-single-left">

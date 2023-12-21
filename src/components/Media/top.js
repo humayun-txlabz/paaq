@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react'
-import RightImage from '../../assets/Images/media-right-1.png';
+import RightImage from '../../assets/Images/media-right-11.png';
 
 const MediaPageTop = () => {
   return (

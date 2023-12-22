@@ -2624,7 +2624,7 @@ body {
         }
 
         .left-card-mini-image-feature-paid-messages {
-          left: -1rem;
+          left: 5rem;
 
           &>p {
             font-family: var(--light);
@@ -7664,6 +7664,8 @@ input::-webkit-inner-spin-button {
 @media (min-width: 0px) and (max-width: 767px) {
   #SectionPaidMessage {
     margin-top: 10px !important;
+    padding: 0px 18px;
+    
   }
 
   .section-2 {
@@ -8833,7 +8835,9 @@ input::-webkit-inner-spin-button {
   }
 
   .left-paid-messages-component {
-    width: 100% !important;
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }

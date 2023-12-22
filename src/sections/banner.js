@@ -247,7 +247,7 @@ export default function Banner() {
     });
 
   return (
-    <section sx={styles.banner} id="home">
+    <section className="home-hero" sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <div
@@ -491,8 +491,8 @@ export default function Banner() {
             </div>
           </div>
           <div style={styles.bannerTitleMobile} className="banner-titel-mobile">
-            Earn money by answering questions based on <br />
-            your skills and knowledge.
+            <span className="banner-titel-mobile-text-1">Earn money by answering questions based on</span> <br />
+            <span className="banner-titel-mobile-text-2">your skills and knowledge.</span>
           </div>
           <Button
             className="getstarted-button"
@@ -688,6 +688,12 @@ const styles = {
       marginBottom: "10px !important",
       fontSize: "10px !important",
     },
+    "@media screen and (max-width: 567px)": {
+      marginTop: "0px !important",
+      marginBottom: "10px !important",
+      fontSize: "10px !important",
+    }
+    ,
   },
   bannerWhatText: {
     fontSize: 60,

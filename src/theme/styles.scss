@@ -7665,7 +7665,7 @@ input::-webkit-inner-spin-button {
   #SectionPaidMessage {
     margin-top: 10px !important;
     padding: 0px 18px;
-    
+
   }
 
   .section-2 {
@@ -9358,14 +9358,14 @@ input::-webkit-inner-spin-button {
     margin-left: 5px;
   }
 
-  .shimmer-1st2-modify{
+  .shimmer-1st2-modify {
     margin-top: -1px;
     height: 4.7px !important;
     width: 54% !important;
     margin-left: 0px;
   }
 
-  .shimmer-2nd2-modify{
+  .shimmer-2nd2-modify {
     margin-top: -1px;
     height: 4.7px !important;
     width: 45% !important;
@@ -9376,12 +9376,12 @@ input::-webkit-inner-spin-button {
 
 }
 
-.image2-modify{
+.image2-modify {
   top: 30% !important;
   left: 5% !important;
 }
 
-.image3-modify{
+.image3-modify {
   top: 25% !important;
   right: 5% !important;
 }
@@ -9391,27 +9391,167 @@ input::-webkit-inner-spin-button {
   //   top: 20% !important;
   //   left: 0% !important;
   // }
-  
-  .image3-modify{
+
+  .image3-modify {
     top: 10% !important;
     right: 5% !important;
   }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  .single-job-item .inner-container .right .save-button .text span{
+  .single-job-item .inner-container .right .save-button .text span {
     display: none;
   }
 
-  .single-job-item .inner-container .right .save-button{
+  .single-job-item .inner-container .right .save-button {
     padding-left: 0.9rem;
     padding-right: 0.7rem;
   }
 }
 
-.total-jobs-count{
+.total-jobs-count {
   font-size: 20px;
   font-family: var(--pro);
   color: #1E1E1E;
   margin-bottom: 15px;
+}
+
+@media (min-width: 0px) and (max-width: 567px) {
+  .home-hero {
+    margin-top: -70px;
+  }
+
+  .banner-info-box {
+    margin-top: 125px;
+  }
+
+  .mobile-speaker-icon {
+    margin-top: -10px !important;
+  }
+
+  .banner-info-text-container2 {
+    margin-top: -57px !important;
+  }
+
+  .paaq-explain-text-1 .paaq-explain-img {
+    margin-right: 13px !important;
+  }
+
+  .main-mobile-what-text {
+    padding-left: 44px !important;
+  }
+
+  .connection-heading {
+    padding-top: 15px;
+  }
+
+  .professionally-card {
+    padding: 0 !important;
+  }
+
+  .ask-secondavatar {
+    left: 18px !important;
+  }
+
+  .ask-firstavatar .ask-firstavatar-modify {
+    right: 5px !important;
+  }
+
+  .earn-money-title {
+    font-size: 34px !important;
+    margin-bottom: 5px !important;
+  }
+
+  .skills-banner-container {
+    padding-left: 1.4% !important;
+    padding-right: 1.4% !important;
+  }
+
+  .skills-banner-imagevector {
+    margin-bottom: -48px;
+  }
+
+  .skills-banner-container-img-bg {
+    top: 53% !important;
+    width: 230px !important;
+    height: 230px !important;
+  }
+
+  .show-skill-mobile-text {
+    font-size: 34px !important;
+  }
+
+  .skill-detail-mobile-text {
+    padding-right: 11px;
+  }
+
+  .earn-money-title {
+    margin-top: -22px;
+  }
+
+  .earn-money-subheading {
+    margin-bottom: -15px;
+  }
+
+  .reply-silder {
+    margin-bottom: -30px;
+  }
+
+  .silder-div {
+    margin-left: 175px !important;
+  }
+
+  .custom-dot {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
+  .slick-dots li {
+    margin: 0 0px;
+  }
+
+  .connection-detail {
+    padding-left: 7% !important;
+    padding-right: 0% !important;
+  }
+
+  .connection-detail-modify-1 {
+    padding-right: 7% !important;
+  }
+
+  .banner-titel-mobile {
+    span {
+      font-size: 15px !important;
+      line-height: 25px !important;
+    }
+
+    margin-top: -10px;
+
+  }
+
+  .main-section-image1 {
+    top: 54% !important;
+    left: 9%;
+    width: 45px;
+    height: 45px;
+  }
+
+  .main-section-inner-image1 {
+    height: 29px;
+    width: 60px;
+  }
+
+  .main-section-image11 {
+    position: absolute;
+    top: 54%;
+    right: 9%;
+    width: 40px;
+    height: 34px;
+  }
+
+  .main-section-inner-image11 {
+    height: 34px;
+    width: 40px;
+  }
+
 }

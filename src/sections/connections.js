@@ -71,7 +71,7 @@ export default function Connections() {
                                 /> */}
 
                               </div>
-                              <div style={{ padding: '30px 0 0 0' }}>
+                              <div className='professionally-card' style={{ padding: '30px 0 0 0' }}>
                                    <ProfessionallySlider />
                               </div>
                               <div
@@ -95,7 +95,7 @@ export default function Connections() {
                                    </div>
 
                                    <div
-                                        className="connection-detail"
+                                        className="connection-detail connection-detail-modify-1"
                                         style={{
                                              fontSize: "18px",
                                              marginTop: "4%",

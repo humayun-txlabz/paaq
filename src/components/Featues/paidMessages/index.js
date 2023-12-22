@@ -22,7 +22,7 @@ const PaidMessagesComponent = () => {
           );
   }
   return (
-       <div style={{ position: "relative", marginTop: "3rem" }}>
+       <div style={{ position: "relative", marginTop: "2rem" }}>
             <div className="left-paid-messages-component">
                  <h1>Dalsy Huang</h1>
                  <img className="profile-pic" src={PaidMiniProfile} />

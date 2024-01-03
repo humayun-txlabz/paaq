@@ -155,7 +155,7 @@ const AskQuestionBanner = React.forwardRef(function AskQuestionBanner(parentRef)
                                    <span className="ask-secondavatar-question-detail">
                                         {showTypedWrite === true ? (<ReactTyped
                                              strings={[
-                                                  'Hi Zama, thank you for choosing me to answer your question. Based on my 10 years of experience',
+                                                  'Hi Zama, thank you for choosing me to answer your question. Based on my 10 years of experience as a...',
                                              ]}
                                              typeSpeed={40}
                                              className="typed-header"

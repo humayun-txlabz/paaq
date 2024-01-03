@@ -7,7 +7,7 @@ const AppAndPlayStoreFooter = () => {
     return (
         <div>
             <Container sx={styles.shareKnowledgeContainer}>
-                <Text sx={styles.shareText}>Share Knowledge <br /> & Earn Money</Text>
+                <Text sx={styles.shareText}>Share Knowledge <br /> & Earn Rewards</Text>
             </Container>
             <Container sx={styles.buttonsContainer}>
                 <Container sx={styles.button}>

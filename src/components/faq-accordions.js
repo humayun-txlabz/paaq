@@ -155,7 +155,7 @@ const styles = {
             lineHeight: '30px',
         },
         fontWeight: '500',
-        fontSize: '40px',
+        fontSize: '25px',
         fontFamily: 'Sofia-Pro',
         color: '#1e1e1e',
         lineHeight: '50px',
@@ -201,6 +201,7 @@ const styles = {
             marginTop: '20px',
         },
         marginTop: '80px',
+        cursor:"pointer"
     }
 };
 

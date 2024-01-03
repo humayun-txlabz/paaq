@@ -42,17 +42,14 @@ const EarnMoneyBanner = React.forwardRef(function EarnMoneyBanner(parentRef) {
             </div>
             <div className='earn-money-detail'>
                 <span className='earn-money-title'>
-                    Reply And Earn Money
+                    Reply And Earn Rewards
                 </span>
                 <span className='earn-money-subheading'>
-                    Earning money can only be accomplished once you have replied 
-                    to the message/question.
+                    Earning money can only be accomplished once you have replied to a paid question.
                 </span>
                 <br></br>
                 <span className='earn-money-subheading'>
-                    If you do not know the proper response to the message or question, 
-                    you have the option to respond for free or reject it. Our community 
-                    rules prohibit responding without adequate knowledge.
+                    If you have no knowledge of the paid question, you have the option to answer freely or reject the question. Our community rules prohibit answering without adequate knowledge.
                 </span>
 
             </div>

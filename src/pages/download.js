@@ -149,7 +149,7 @@ export default function Download() {
                   </Container>
                 </Container>
                 <div className="send-link-download">
-                  <Button className='send-btn-download' sx={styles.button} disabled={pending || !(phoneNumber)}  style={{ background: pending || !(phoneNumber) ? '#D9D9D9' : '#FFFFFF', color: pending ? '#FFFFFF' : '#000000' , cursor: pending || !(phoneNumber) ? 'not-allowed' : ''}} aria-label="Send Link" onClick={sendDownloadLink}>
+                  <Button className='send-btn-download' sx={styles.button} disabled={pending || !(phoneNumber)}  style={{ background: pending || !(phoneNumber) ? '#D9D9D9' : '#FFFFFF', color: pending ? '#FFFFFF' : '#9DACAC' , cursor: pending || !(phoneNumber) ? 'not-allowed' : ''}} aria-label="Send Link" onClick={sendDownloadLink}>
                     Send Link
                   </Button>
                   <div className="or-text-download">

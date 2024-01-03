@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import StartIcon from '../../assets/Icons/feature-sec-3-video.png';
+import StartIcon1 from '../../assets/Icons/feature-sec-3-video-mobile.svg';
 // import Sec11 from '../../assets/Images/feature-sec-3-1.png';
 // import InApp from '../../assets/InApp.gif';
 // import inAppVideo from '../../../public/gifs/inApp.mov';
@@ -13,6 +14,26 @@ function SectionInApp() {
   const [domLoaded, setDomLoaded] = useState(true);
 
   const [isScreenWidth, setIsScreenWidth] = useState(false);
+
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      // Update state based on screen width
+      setIsSmallScreen(window.innerWidth <= 567);
+    }
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Call handleResize on initial mount
+    handleResize();
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); 
 
   const handleResize = () => {
     setIsScreenWidth(window.innerWidth === 510);
@@ -30,6 +51,8 @@ function SectionInApp() {
   useEffect(() => {
     setDomLoaded(true);
   }, []);
+
+
   return (
     <div className="section-3 section-3-modify" id="IntroductionVideo">
 
@@ -74,7 +97,7 @@ function SectionInApp() {
 
           <div className="text">
             
-            <img src={StartIcon} className="icon" />
+            <img src={ isSmallScreen ? StartIcon1 : StartIcon} className="icon" />
           
           In-App Video</div>
         </div>

@@ -147,7 +147,7 @@ button {
     padding-right: 0%;
   }
 
-  .learn-more-mobile{
+  .learn-more-mobile {
     display: none;
   }
 }
@@ -3804,12 +3804,95 @@ button {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  .features-page-container .section-5 .right .right-card-mini-image-feature-paid-messages{
-    transform: translate(60%, 10px);
+  .features-page-container
+    .section-5
+    .right
+    .right-card-mini-image-feature-paid-messages {
+    transform: translate(68%, 30px);
   }
 
-  .features-page-container .section-5 .right .left-card-mini-image-feature-paid-messages{
-  transform: translate(-35%, 10px);
+  .features-page-container
+    .section-5
+    .right
+    .left-card-mini-image-feature-paid-messages {
+    transform: translate(-47%, 90%);
+  }
+
+  .features-page-container .section-2 {
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+  }
+
+  .features-page-container .section-2 .left > p {
+    padding-right: 30px;
+  }
+
+  .features-page-container .section-2 .left .heading svg {
+    padding: 1px;
+    margin-bottom: 0px;
+  }
+
+  .features-page-container .section-2 .left .heading-2 {
+    color: #1e1e1e !important;
+  }
+
+  .features-page-container .section-2 .left {
+    margin-top: -18px !important;
+  }
+
+  .features-page-container .section-2 .left > p {
+    margin-top: 8px !important;
+  }
+
+  .features-page-container .section-2 .left .heading-2 {
+    margin-top: 13px !important;
+    margin-bottom: 5px !important;
+  }
+
+  .set-price li svg {
+    margin-top: 3px !important;
+  }
+
+  .react-player-question video {
+    margin-top: 17px !important;
+  }
+
+  .features-page-container .section-3 {
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+    margin-top: 13px !important;
+  }
+
+  .features-page-container .section-3 .left > p {
+    margin-bottom: 27px !important;
+  }
+
+  .in-app-video .in-app-video-abs {
+    width: 100% !important;
+    height: 156vw !important;
+    transform: translate(0%, 2.8%) !important;
+  }
+
+  .in-app-video {
+    width: 100% !important;
+  }
+
+  .in-app-video-abs-camera {
+    padding-top: 60px !important;
+  }
+
+  .in-app-video-abs-header-1 {
+    padding-top: 27px !important;
+  }
+
+  .in-app-video-abs-header-2 {
+    margin-top: -10px !important;
+    padding: 0 42px !important;
+  }
+
+  .in-app-images-animation {
+    /* padding-top: 200px !important; */
+    padding-bottom: 43px !important;
   }
 
   

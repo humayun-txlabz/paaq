@@ -1,5 +1,5 @@
 import { Image } from "theme-ui";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { animated, useSpring } from "react-spring";
 
 import Waveform from "./waveform";
@@ -27,6 +27,26 @@ import useWindowSize from 'Hooks/windowSize';
 const AboutUsMain = () => {
   const [width] = useWindowSize();
   const [isPlay, setIsPlay] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+
+  useEffect(() => {
+    function handleResize() {
+      // Update state based on screen width
+      setIsSmallScreen(window.innerWidth <= 567);
+    }
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Call handleResize on initial mount
+    handleResize();
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const poppingOutAnimation = (delay) =>
     useSpring({
@@ -129,6 +149,7 @@ const AboutUsMain = () => {
         width > 760 ? (
           <DirectMessagesCard />
         ) : (
+         <>
           <InteractionCard
             alignImageRight={'center'}
             image={AboutImage8}
@@ -141,7 +162,9 @@ const AboutUsMain = () => {
                 increasingly challenging to respond to every one of these messages,
                 especially if the question is technical.`
             }
-          />
+            mobileclass='millions-img'
+          /> 
+         </>
         )
       }
 
@@ -158,6 +181,7 @@ const AboutUsMain = () => {
         detail={
           "The more vast knowledge is accessed through the app & community, with users getting information directly from the relevant source or individuals they deem credible - Bridging the knowledge market"
         }
+        mobileclass='human-interaction'
       />
       <InteractionCard
         // alignImageRight={'start'}

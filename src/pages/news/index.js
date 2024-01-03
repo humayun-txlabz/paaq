@@ -86,8 +86,8 @@ export default function News2(props) {
             <Container sx={styles.headingContainer}>
               <NewsSection list={items.slice(min, max)} />
             </Container>
-            <Container className="parent" sx={styles.paginations}>
-              <div
+            <Container className="parent news-parent" sx={styles.paginations}>
+              <div className="news-parent-div"
                 onClick={() => {
                   active > 1 ? decrease() : null;
                 }}
@@ -97,7 +97,7 @@ export default function News2(props) {
               </div>
               {pages.map((item) => {
                 return (
-                  <div
+                  <div className="news-parent-div"
                     onClick={() => setDirectWithPage(item.id)}
                     style={item.id == active ? styles.circle3 : styles.circle2}
                   >
@@ -105,7 +105,7 @@ export default function News2(props) {
                   </div>
                 );
               })}
-              <div
+              <div className="news-parent-div"
                 onClick={() => {
                   active < pages.length ? increase() : null;
                 }}
@@ -241,6 +241,10 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    "@media (min-width: 0px) and (max-width: 567px)": {
+      width: "36px",
+    height: "36px",
+    },
   },
   circle2: {
     width: "60px",
@@ -249,12 +253,20 @@ const styles = {
     justifyContent: "center",
     display: "flex",
     alignItems: "center",
+    "@media (min-width: 0px) and (max-width: 567px)": {
+      width: "36px",
+    height: "36px",
+    },
   },
   circle3: {
     width: "60px",
     height: "60px",
     "@media screen and (max-width: 720px)": {
       width: "65px",
+    },
+    "@media (min-width: 0px) and (max-width: 567px)": {
+      width: "36px",
+    height: "36px",
     },
     borderRadius: "30px",
     backgroundColor: "#00B5B4",

@@ -68,7 +68,7 @@ const CareersTopMain = (props) => {
             </p>
           </div>
           <div className="right">
-            <img src={CareersImage1} />
+            <img className="right-img" src={CareersImage1} />
             <div className="absolute-images">
               <div className="image2">
                 <img style={{ opacity: 0, animation: 'bounceIn2 2s forwards 1s' }} className="circleImg" src={CareersImage2} />
@@ -82,7 +82,7 @@ const CareersTopMain = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="image3">
+              <div className="image3 image3-carrer">
                 <div className="chatImg">
                   <img className="chatImg" src={CareersImage5} />
                   <div style={StyleSheet.container}>
@@ -99,7 +99,7 @@ const CareersTopMain = (props) => {
                   <img className="chatImg" src={CareersImage5} />
                   <div style={StyleSheet.container}>
                     <Shimmer>
-                      <div style={StyleSheet.line1} className="shimmer-1st3 shimmer-1st2-modify" />
+                      <div style={StyleSheet.line1} className="shimmer-1st3 shimmer-1st2-modify shimmer-1st2-modify-new" />
                       <div style={StyleSheet.line2} className="shimmer-2nd3 shimmer-2nd2-modify" />
                     </Shimmer>
                   </div>

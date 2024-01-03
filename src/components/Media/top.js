@@ -88,7 +88,7 @@ const MediaPageTop = () => {
                   <img className="chatImg" src={ !isSmallScreen ?  CareersImage5 : CareersImage55}  />
                   <div style={StyleSheet.container}>
                     <Shimmer>
-                      <div style={{ ...StyleSheet.line1, }} className="shimmer-1st2 shimmer-1st2-modify" />
+                      <div style={{ ...StyleSheet.line1, }} className="shimmer-1st2 shimmer-1st2-modify shimmer-1st2-modify-new" />
                       <div style={{ ...StyleSheet.line2,  }} className="shimmer-2nd2 shimmer-2nd2-modify" />
                     </Shimmer>
                   </div>
@@ -100,7 +100,7 @@ const MediaPageTop = () => {
                   <img className="chatImg" src={ !isSmallScreen ?  CareersImage5 : CareersImage55}  />
                   <div style={StyleSheet.container}>
                     <Shimmer>
-                      <div style={StyleSheet.line1} className="shimmer-1st3 shimmer-1st2-modify" />
+                      <div style={StyleSheet.line1} className="shimmer-1st3 shimmer-1st2-modify shimmer-1st2-modify-news" />
                       <div style={StyleSheet.line2} className="shimmer-2nd3 shimmer-2nd2-modify" />
                     </Shimmer>
                   </div>

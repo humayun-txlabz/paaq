@@ -15,7 +15,7 @@ const CareerMain = ({ totalFeaturedJobs = 0, totalJobs = 0 }) => {
         <GradientCardBottomComponent 
         title={'Join PAAQ'}
         content={'Together, let\'s manage complexity effectively, encourage innovation, and transform lives.'}
-        btnText={totalFeaturedJobs > 0 || totalJobs > 0 ? 'Available Jobs' : 'No Available Jobs'}
+        btnText={!totalFeaturedJobs > 0 || !totalJobs > 0 ? 'Available Jobs' : 'No Available Jobs'}
         />
         </div>
     </div>

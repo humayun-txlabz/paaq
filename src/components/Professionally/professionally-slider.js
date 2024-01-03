@@ -22,13 +22,13 @@ let settings = {
   speed: 700,
   slidesToShow: 2,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   customPaging: function (i) {
     return (
       <div className='custom-dot'
         style={{
           width: '12px ',
-          height: '12px !important',
+          height: '12px ',
           fontSize: '9px',
           lineHeight: '20px',
           textAlign: 'center',
@@ -66,7 +66,7 @@ let settings = {
       settings: {
         arrows: false,
         dots: true,
-        slidesToShow: 2,
+        slidesToShow: 1.5,
         slidesToScroll: 1,
       },
     },

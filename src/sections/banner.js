@@ -20,6 +20,7 @@ import MainImage10 from "assets/Images/main5.png";
 import MainImage11 from "assets/Images/main2.png";
 // import bann from "assets/bannerMobileView.png";
 import SpeakerIcon from "assets/Icons/whitespeaker.png";
+import whitespeaker1 from "assets/Icons/whitespeaker1.png";
 import FadeAnimation from "components/fadeAnimation";
 import homeshowskill from '../assets/home/homeshowskill.png'
 import homeaiskill from '../assets/home/homeaiskill.png'
@@ -29,6 +30,7 @@ import PaaqHomeSlider from "components/PaaqHomeSlider";
 export default function Banner() {
   const svgRef = React.createRef();
   const [domLoaded, setDomLoaded] = useState(false);
+  const [speak, setSpeak] = useState(false);
   const [isTruncated, setIsTruncated] = useState(true);
 
   console.log("isTruncated", isTruncated);
@@ -234,7 +236,15 @@ export default function Banner() {
   };
 
   const handleSpeakerClick = () => {
-    svgRef.current?.play();
+
+    if (svgRef.current.paused) {
+      svgRef.current.play();
+      setSpeak(true)
+    } else {
+      svgRef.current.pause();
+      setSpeak(false)
+    }
+
   };
 
   const textAnimation = (delay) =>
@@ -247,7 +257,7 @@ export default function Banner() {
     });
 
   return (
-    <section sx={styles.banner} id="home">
+    <section className="home-hero" sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <div
@@ -491,8 +501,8 @@ export default function Banner() {
             </div>
           </div>
           <div style={styles.bannerTitleMobile} className="banner-titel-mobile">
-            Earn money by answering questions based on <br />
-            your skills and knowledge.
+            <span className="banner-titel-mobile-text-1">Earn money by answering questions based on</span> <br />
+            <span className="banner-titel-mobile-text-2">your skills and knowledge.</span>
           </div>
           <Button
             className="getstarted-button"
@@ -530,11 +540,12 @@ export default function Banner() {
               <div>
               <Image
                 className="mobile-speaker-icon"
-                src={SpeakerIcon}
+                src={  !speak ? SpeakerIcon : whitespeaker1}
                 onClick={() => handleSpeakerClick()}
+                style={{cursor:'pointer'}}
               />
               </div>
-              <audio ref={svgRef} id="audio" src="/paaq-audio.mp3"></audio>
+              <audio ref={svgRef} id="audio" src="/PAAQ.wav"></audio>
             </div>
 
             <div className="web-show-paaq-text">
@@ -688,6 +699,12 @@ const styles = {
       marginBottom: "10px !important",
       fontSize: "10px !important",
     },
+    "@media screen and (max-width: 567px)": {
+      marginTop: "0px !important",
+      marginBottom: "10px !important",
+      fontSize: "10px !important",
+    }
+    ,
   },
   bannerWhatText: {
     fontSize: 60,

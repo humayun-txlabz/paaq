@@ -10039,10 +10039,17 @@ input::-webkit-inner-spin-button {
 
 }
 
-@media (min-width: 0px) and (max-width: 567px)
-{
+@media (min-width: 0px) and (max-width: 567px){
   .blog-main {
     width: 100% !important;
     margin-left: 5.5vw !important;
+}
+
+.accordion__item{
+  margin-top: 50px !important;
+}
+
+.accordion__button{
+  align-items: start !important;
 }
 }

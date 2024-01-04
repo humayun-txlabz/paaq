@@ -85,10 +85,13 @@ const SingleCategoryHelpCenter = (props) => {
           <span className='background-image-hc-title'>
             <Link href={'/helpCenter'}>
               <span className='background-image-hc-nav'>
-                {'Help Center > '}
+                {'Help Center '}
+                &nbsp;
+                {'> '}
+                &nbsp;
               </span>
             </Link>
-            {fields['0']?.fields?.title} {'>'} {fields[router?.query?.id === '2lpVATuhy2Z7ay96He1LDw' ? '0':
+            {fields['0']?.fields?.title}&nbsp; {'>'}&nbsp; {fields[router?.query?.id === '2lpVATuhy2Z7ay96He1LDw' ? '0':
           router?.query?.id === '2VxNT6rcKefXuxU8Z8QQdb' ? '1' : 
           router?.query?.id === "6FFHACoJjyqFii6bY1NzTI" ? '2' : 
           router?.query?.id === "5YHhTPQHL3MiPUD8ddn1qa" ? '3' : 

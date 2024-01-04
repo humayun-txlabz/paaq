@@ -28,7 +28,7 @@ let settings = {
     speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     customPaging: function (i) {
         return (
             <div className='custom-dot'

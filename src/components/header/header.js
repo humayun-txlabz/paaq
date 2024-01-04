@@ -15,7 +15,7 @@ import HomeUnderLine from 'assets/Icons/header/home-underline.png';
 import { useRouter } from 'next/router';
 
 export default function Header({ className }) {
-  const {pathname} = useRouter()
+  const {pathname} = useRouter();
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header" >
@@ -31,7 +31,7 @@ export default function Header({ className }) {
             ))}
           </div>
           <Link href={'/download'}>
-            <Button className="download_button" aria-label="Download">
+            <Button className={`download_button ${pathname.includes('download') && "download_button_white"}`} aria-label="Download">
               Download
             </Button>
           </Link>

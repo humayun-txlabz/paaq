@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import StartIcon from "../../assets/Icons/feature-sec-2-dollar.png";
 import dollarBag from "../../assets/Icons/dollar_bag.png";
 import ReactPlayer from "react-player";
+import Svgs from "assets/Icons/Svgs";
 
 const SectionSetPrice = () => {
   const [domLoaded, setDomLoaded] = useState(false);
@@ -15,15 +16,9 @@ const SectionSetPrice = () => {
       <div className="left">
         <div className="heading">
           {/* <img src={dollarBag} className="icon" /> */}
-          <svg style={{marginRight:'25px'}} width="41" height="48" viewBox="0 0 41 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M26.2659 15.7826C26.2659 13.4348 30.6776 6.97826 30.6776 4.43478C30.8982 2.86957 29.5747 1.69565 27.81 1.5C27.5894 1.5 27.5894 1.5 27.3688 1.5C24.5012 1.5 25.6041 3.45652 24.06 3.45652C22.5159 3.45652 22.7365 1.5 19.6482 1.5C16.56 1.5 15.2365 5.41304 15.2365 5.41304C15.2365 5.41304 10.8247 5.02174 10.8247 7.36957C10.8247 9.71739 15.2365 13.4348 15.2365 15.7826" fill="white"/>
-<path d="M26.2659 15.7826C26.2659 13.4348 30.6776 6.97826 30.6776 4.43478C30.8982 2.86957 29.5747 1.69565 27.81 1.5C27.5894 1.5 27.5894 1.5 27.3688 1.5C24.5012 1.5 25.6041 3.45652 24.06 3.45652C22.5159 3.45652 22.7365 1.5 19.6482 1.5C16.56 1.5 15.2365 5.41304 15.2365 5.41304C15.2365 5.41304 10.8247 5.02174 10.8247 7.36957C10.8247 9.71739 15.2365 13.4348 15.2365 15.7826" stroke="#1E1E1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M20.75 46.5006C27.8088 46.5006 39.5 45.718 39.5 41.6093C39.5 37.5006 35.0882 31.8267 35.0882 31.8267C35.0882 20.6746 32 15.1963 20.75 15.1963C9.5 15.1963 6.41176 20.6746 6.41176 31.8267C6.41176 31.8267 2 37.5006 2 41.6093C2 45.718 13.6912 46.5006 20.75 46.5006Z" fill="white" stroke="#1E1E1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M19.8191 25.25V24" stroke="#00B5B4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M19.8191 35.25V36.5" stroke="#00B5B4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22.6373 25.25H19.8186C18.1275 25.25 17 26.25 17 27.75C17 29.25 18.1275 30.25 19.8186 30.25C21.5098 30.25 22.6373 31.25 22.6373 32.75C22.6373 34.25 21.5098 35.25 19.8186 35.25H17" fill="white"/>
-<path d="M22.6373 25.25H19.8186C18.1275 25.25 17 26.25 17 27.75C17 29.25 18.1275 30.25 19.8186 30.25C21.5098 30.25 22.6373 31.25 22.6373 32.75C22.6373 34.25 21.5098 35.25 19.8186 35.25H17" stroke="#00B5B4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+          <div>
+            <Svgs.MoneyBag />
+          </div>
 
           <div className="text text-modify-price">Set Price</div>
         </div>

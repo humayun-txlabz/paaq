@@ -113,7 +113,7 @@ const styles = {
     },
     heading: {
         display: 'flex',
-        fontSize: '70px',
+        fontSize: '55px',
         fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '35px',
@@ -125,7 +125,7 @@ const styles = {
     },
     headingInner: {
         display: 'flex',
-        fontSize: '60px',
+        fontSize: '45px',
         fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
             fontSize: '35px',

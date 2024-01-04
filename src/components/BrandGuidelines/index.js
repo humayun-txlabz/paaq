@@ -2,7 +2,7 @@ import React from 'react';
 import JSZip from "jszip";
 import { Image } from 'theme-ui';
 
-import HeaderImage from 'assets/brandguide-imagebg.png';
+import HeaderImage from 'assets/business-branding 1 (1).png';
 
 const BrandGuidelinesMain = () => {
 
@@ -42,7 +42,7 @@ const BrandGuidelinesMain = () => {
                     Brand Guildelines
                 </p>
                 <p className='brand-guidelines-main-description' style={{color:'#1E1E1E'}}>
-                    In this guide, we've provided the do’s and don'ts of using PAAQ's brand elements. 
+                    In this guide, we've provided the do’s and don'ts of using PAAQ's <br /> brand elements. 
                     This includes our Question-mark and acronym.
                 </p>
                 <div className='brand-guidelines-main-buttons'>
@@ -57,7 +57,7 @@ const BrandGuidelinesMain = () => {
                 </div>
             </div>
             <div className='brand-guidelines-main-right'>
-                <Image src={HeaderImage} />
+                <Image src={HeaderImage} style={{maxHeight:"33rem"}} />
             </div>
         </div>
     );

@@ -7122,7 +7122,7 @@ body {
 
 .rich-paragraph {
   font-family: var(--light);
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   margin-top: 30px;
   color: #4B5157;
@@ -7179,9 +7179,10 @@ body {
 .single-hc-question {
   font-family: var(--bold);
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 50px;
-  margin-top: 7%;
+  margin-top: 4%;
+  margin-bottom: 1rem;
   scroll-margin-top: 9rem;
 }
 
@@ -7191,13 +7192,13 @@ body {
 
 .rich-text-helpcenter {
   font-family: var(--light);
-  font-size: 24px;
+  font-size: 15px;
   color: #4B5157;
 
   >b {
     font-family: var(--pro);
     font-weight: 700;
-    font-size: 28px;
+    font-size: 21px;
     color: #4B5157;
   }
 }
@@ -7273,7 +7274,7 @@ body {
   background-size: 100% 100%;
   position: relative;
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
   min-height: 638px;
   display: flex;
 
@@ -7311,7 +7312,7 @@ body {
     width: 55%;
     padding-top: 7%;
     padding-right: 11%;
-    padding-left: 10%;
+    padding-left: 12%;
   }
 
   &-heading {
@@ -7334,8 +7335,9 @@ body {
 
   &-buttons {
     display: flex;
-    justify-content: space-between;
     font-family: var(--pro);
+    align-items: center;
+    gap: 3.5rem;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -7353,7 +7355,6 @@ body {
     background: #1e1e1e;
     border-radius: 40px;
     color: #FFFFFF;
-    margin-right: 7%;
     cursor: pointer;
   }
 }
@@ -7379,6 +7380,7 @@ body {
   max-width: 430px;
   margin-bottom: -6px;
   border-radius: 20px;
+  margin: auto;
 }
 
 .react-player-about {
@@ -7763,8 +7765,8 @@ input::-webkit-inner-spin-button {
 
   background: rgba(249, 249, 249, 0.10);
 
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(2.5px);
+  box-shadow: 0px 2px 1px 0px #00000026;
+  backdrop-filter: blur(4.5px);
 
 }
 
@@ -7774,8 +7776,8 @@ input::-webkit-inner-spin-button {
 
   background: rgba(249, 249, 249, 0.10);
 
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(2.5px);
+  box-shadow: 0px 2px 1px 0px #00000026;
+  backdrop-filter: blur(4.5px);
 }
 
 .nametag-title {
@@ -8006,14 +8008,14 @@ input::-webkit-inner-spin-button {
 
 
 .reply-silder {
-  width: 600px;
-  height: 600px;
+  // width: 600px;
+  // height: 600px;
   // background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-  margin-top: -40px;
+  // padding-bottom: 50px;
+  // margin-top: -40px;
 
   img {
     width: 100%;
@@ -8112,7 +8114,7 @@ input::-webkit-inner-spin-button {
   }
 
   .reply-silder {
-    height: 450px;
+    // height: 450px;
   }
 
   .earn-money-main-modify {
@@ -8149,10 +8151,10 @@ input::-webkit-inner-spin-button {
   font-family: var(--pro);
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 17px;
 
   li {
-    padding-top: 15px;
+    padding-top: 2.3rem;
     display: flex;
     align-items: center;
     margin-left: -40px;
@@ -8808,8 +8810,8 @@ input::-webkit-inner-spin-button {
 
   .features-page-container .section-2 .left .heading {
     svg {
-      width: 26px;
-      height: 26px;
+      width: 30px;
+      height: 30px;
     }
   }
 
@@ -8921,12 +8923,13 @@ input::-webkit-inner-spin-button {
   .brand-guidelines-main-buttons {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
   }
 
-  .brand-guidelines-main-downloadlogo {
-    margin-left: 12px;
-    margin-top: 25px;
-  }
+  // .brand-guidelines-main-downloadlogo {
+  //   margin-left: 12px;
+  //   margin-top: 25px;
+  // }
 }
 
 @media (min-width: 0px) and (max-width: 760px) {

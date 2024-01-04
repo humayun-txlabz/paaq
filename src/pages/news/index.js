@@ -86,34 +86,37 @@ export default function News2(props) {
             <Container sx={styles.headingContainer}>
               <NewsSection list={items.slice(min, max)} />
             </Container>
-            <Container className="parent news-parent" sx={styles.paginations}>
-              <div className="news-parent-div"
-                onClick={() => {
-                  active > 1 ? decrease() : null;
-                }}
-                style={styles.circle}
-              >
-                <img style={styles.arrow} src={arrow} />
-              </div>
-              {pages.map((item) => {
-                return (
-                  <div className="news-parent-div"
-                    onClick={() => setDirectWithPage(item.id)}
-                    style={item.id == active ? styles.circle3 : styles.circle2}
-                  >
-                    <Text className="news-text-modify">{item.id}</Text>
-                  </div>
-                );
-              })}
-              <div className="news-parent-div"
-                onClick={() => {
-                  active < pages.length ? increase() : null;
-                }}
-                style={styles.circle}
-              >
-                <img style={styles.arrow} src={arrow2} />
-              </div>
-            </Container>
+            {
+              pages.length > 1 && <Container className="parent news-parent" sx={styles.paginations}>
+                <div className="news-parent-div"
+                  onClick={() => {
+                    active > 1 ? decrease() : null;
+                  }}
+                  style={styles.circle}
+                >
+                  <img style={styles.arrow} src={arrow} />
+                </div>
+                {pages.map((item) => {
+                  return (
+                    <div className="news-parent-div"
+                      onClick={() => setDirectWithPage(item.id)}
+                      style={item.id == active ? styles.circle3 : styles.circle2}
+                    >
+                      <Text className="news-text-modify">{item.id}</Text>
+                    </div>
+                  );
+                })}
+                <div className="news-parent-div"
+                  onClick={() => {
+                    active < pages.length ? increase() : null;
+                  }}
+                  style={styles.circle}
+                >
+                  <img style={styles.arrow} src={arrow2} />
+                </div>
+              </Container>
+            }
+            
             {/* <Container sx={styles.section} >
                             <Container sx={styles.imageContainer}>
                                 <Image sx={styles.image} src={image1} />

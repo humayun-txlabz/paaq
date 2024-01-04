@@ -13,9 +13,10 @@ const CareerMain = ({ totalFeaturedJobs = 0, totalJobs = 0 }) => {
         <WeAreInnovativeSection />
         <div className='bottom-card'>
         <GradientCardBottomComponent 
-        title={'Join PAAQ'}
-        content={'Together, let\'s manage complexity effectively, encourage innovation, and transform lives.'}
-        btnText={!totalFeaturedJobs > 0 || !totalJobs > 0 ? 'Available Jobs' : 'No Available Jobs'}
+          title={'Join PAAQ'}
+          content={'Together, let\'s manage complexity effectively, encourage innovation, and transform lives.'}
+          // btnText={!totalFeaturedJobs > 0 || !totalJobs > 0 ? 'Available Jobs' : 'No Available Jobs'}
+          btnText={'No Available Jobs'}
         />
         </div>
     </div>

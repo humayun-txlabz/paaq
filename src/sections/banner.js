@@ -26,6 +26,7 @@ import homeshowskill from '../assets/home/homeshowskill.png'
 import homeaiskill from '../assets/home/homeaiskill.png'
 import homelightskill from '../assets/home/homelightskill.png'
 import PaaqHomeSlider from "components/PaaqHomeSlider";
+import Svgs from "assets/Icons/Svgs";
 
 export default function Banner() {
   const svgRef = React.createRef();
@@ -284,7 +285,14 @@ export default function Banner() {
               >
                 <div className="main-section-image2-nametag">
                   <span className="nametag-title">Micheal Keen</span>
-                  <span className="nametag-designation">Pilot</span>
+                  <span className="nametag-designation">
+                    <span>
+                      Project Manager @ Apex
+                    </span>
+                    <span>
+                      <Svgs.Thumb />
+                    </span>
+                  </span>
                 </div>
               </animated.div>
             </animated.div>
@@ -302,7 +310,7 @@ export default function Banner() {
               >
                 <div className="main-section-image2-nametagleft">
                   <span className="nametag-title">Sandra Lue</span>
-                  <span className="nametag-designation">Beautician</span>
+                  <span className="nametag-designation">Chief Marketing Officer</span>
                 </div>
               </animated.div>
             </animated.div>
@@ -324,8 +332,8 @@ export default function Banner() {
                   id="main-section-image2-nametag4"
                   style={{ minWidth: 193 }}
                 >
-                  <span className="nametag-title">John Hassel</span>
-                  <span className="nametag-designation">Software Engineer</span>
+                  <span className="nametag-title">Franco Landman</span>
+                  <span className="nametag-designation">Software Engineer @ Apple</span>
                 </div>
               </animated.div>
             </animated.div>
@@ -346,7 +354,12 @@ export default function Banner() {
                   id="main-section-image2-nametag-container5"
                 >
                   <span className="nametag-title">Daniella Fox</span>
-                  <span className="nametag-designation">Accountant</span>
+                  <span className="nametag-designation">
+                    <span>Founder of DF Legal Firm</span>
+                    <span>
+                      <Svgs.WeighingScale />
+                    </span>
+                  </span>
                 </div>
               </animated.div>
             </animated.div>
@@ -363,8 +376,13 @@ export default function Banner() {
                 className="main-section-image2-nametag-container"
               >
                 <div className="main-section-image2-nametag">
-                  <span className="nametag-title">Brian Walker</span>
-                  <span className="nametag-designation">Athelete</span>
+                  <span className="nametag-title">Ben Iyere</span>
+                  <span className="nametag-designation">
+                    <span>Founder & CEO of Sneaker TLC</span>
+                    <span>
+                      <Svgs.ThinkTank />
+                    </span>
+                  </span>
                 </div>
               </animated.div>
             </animated.div>
@@ -386,8 +404,15 @@ export default function Banner() {
                   id="main-section-image2-nametag7"
                   style={{ minWidth: 202 }}
                 >
-                  <span className="nametag-title">Sue Chan</span>
-                  <span className="nametag-designation">Marteking Manager</span>
+                  <span className="nametag-title">Sandra Lue</span>
+                  <span className="nametag-designation">
+                    <span>
+                      Head of finance @ LawrellBell
+                    </span>
+                    <span>
+                      <Svgs.Badge />
+                    </span>
+                  </span>
                 </div>
               </animated.div>
             </animated.div>
@@ -430,8 +455,8 @@ export default function Banner() {
                 id="main-section-image2-nametag-container9"
               >
                 <div className="main-section-image2-nametag">
-                  <span className="nametag-title">Daniel Trump</span>
-                  <span className="nametag-designation">Professor</span>
+                  <span className="nametag-title">Fisayo Adenuga</span>
+                  <span className="nametag-designation">Founder of Muchmore Holdings</span>
                 </div>
               </animated.div>
             </animated.div>
@@ -463,7 +488,14 @@ export default function Banner() {
               >
                 <div className="main-section-image2-nametag">
                   <span className="nametag-title">Thabo Khoza</span>
-                  <span className="nametag-designation">Artist</span>
+                  <span className="nametag-designation">
+                    <span>
+                      Award Winning Artist
+                    </span>
+                    <span>
+                      <Svgs.Star />
+                    </span>
+                  </span>
                 </div>
               </animated.div>
             </animated.div>
@@ -474,15 +506,15 @@ export default function Banner() {
             className="banner-titel-mobile"
             style={styles.bannerTitle}
           >
-            <div className="box  title1">PAAQ</div>
+            {/* <div className="box  title1">PAAQ</div> */}
             <div className="box2" style={{ fontSize: "65px" }}>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <animated.div style={textAnimation(4000)}>
+                {/* <animated.div style={textAnimation(4000)}> */}
                   <p className="box3">Please</p>
-                </animated.div>
-                <animated.div style={textAnimation(4500)}>
+                {/* </animated.div> */}
+                {/* <animated.div style={textAnimation(4500)}> */}
                   <p className="box4">Ask</p>
-                </animated.div>
+                {/* </animated.div> */}
               </div>
               <div
                 style={{
@@ -491,18 +523,18 @@ export default function Banner() {
                   marginTop: "-18px",
                 }}
               >
-                <animated.div style={textAnimation(5000)}>
+                {/* <animated.div style={textAnimation(5000)}> */}
                   <p className="box5">Any</p>
-                </animated.div>
-                <animated.div style={textAnimation(5500)}>
+                {/* </animated.div> */}
+                {/* <animated.div style={textAnimation(5500)}> */}
                   <p className="box6">Question</p>
-                </animated.div>
+                {/* </animated.div> */}
               </div>
             </div>
           </div>
           <div style={styles.bannerTitleMobile} className="banner-titel-mobile">
-            <span className="banner-titel-mobile-text-1">Earn money by answering questions based on</span> <br />
-            <span className="banner-titel-mobile-text-2">your skills and knowledge.</span>
+            <span className="banner-titel-mobile-text-1">Answer questions based on your expertise and</span> <br />
+            <span className="banner-titel-mobile-text-2"> receive rewards.</span>
           </div>
           <Button
             className="getstarted-button"

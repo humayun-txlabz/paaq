@@ -932,7 +932,7 @@ body {
         justify-content: center;
 
         .text .icon {
-          height: 3rem;
+          height: 3.8rem;
           margin-right: 1rem;
         }
 
@@ -1116,7 +1116,7 @@ body {
         justify-content: center;
 
         .icon {
-          height: 3rem;
+          height: 3.5rem;
           margin-right: 1rem;
         }
 
@@ -7122,7 +7122,7 @@ body {
 
 .rich-paragraph {
   font-family: var(--light);
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
   margin-top: 30px;
   color: #4B5157;
@@ -7177,13 +7177,14 @@ body {
 }
 
 .single-hc-question {
-  font-family: var(--bold);
+  font-family: var(--pro);
   font-weight: 700;
-  font-size: 30px;
+  font-size: 33px;
   line-height: 50px;
   margin-top: 4%;
   margin-bottom: 1rem;
   scroll-margin-top: 9rem;
+  color: #1E1E1E;
 }
 
 .single-hc {
@@ -7380,7 +7381,7 @@ body {
   max-width: 430px;
   margin-bottom: -6px;
   border-radius: 20px;
-  margin: auto;
+  margin-left: auto;
 }
 
 .react-player-about {
@@ -8148,9 +8149,9 @@ input::-webkit-inner-spin-button {
 
 .set-price {
   list-style-type: none;
-  font-family: var(--pro);
+  font-family: var(--light);
   font-style: normal;
-  font-weight: 300;
+  // font-weight: 300;
   font-size: 17px;
 
   li {
@@ -8449,7 +8450,9 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
   align-items: center;
   height: 30px;
-  padding: 0 170px;
+  width: fit-content;
+  margin: auto;
+  gap: 0.3rem;
 
   @media (min-width: 0px) and (max-width: 510px) {
     padding: 0 100px;
@@ -8863,7 +8866,7 @@ input::-webkit-inner-spin-button {
 }
 
 .features-page-container .section-4 .left .heading .icon {
-  margin-bottom: -10px;
+  // margin-bottom: -10px;
 }
 
 .careers-top-main-page .help-center-page-main-container .careers-top-main-inner-content .right .absolute-images .image3 .circleImg {

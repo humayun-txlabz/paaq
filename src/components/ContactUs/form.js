@@ -53,10 +53,10 @@ const ContactUsForm = () => {
       });
     }
     if (!recaptchaValue) {
-      return notification.error({
-        message: 'Error',
-        description: `Please select the ReCaptcha field to prove that you're not a robot`
-      });
+    return notification.error({
+    message: 'Error',
+    description: `Please select the ReCaptcha field to prove that you're not a robot`
+    });
     }
     try {
       const abortController = new AbortController();
@@ -96,6 +96,15 @@ const ContactUsForm = () => {
           message: 'Email Sent',
           description: 'Your message has been successfully sent to PAAQ Team.',
         });
+
+        // Empty the form Fields
+        e.target[0].value = ""
+        setSubjectTitle(null)
+        setEmail("")
+        e.target[1].value = ""
+        e.target[3].value = ""
+
+
       } else {
         notification.error({
           message: 'Error',
@@ -133,6 +142,7 @@ const ContactUsForm = () => {
             className={`select form-select-dropdown${selectError ? ' select-error' : ''}`}
             onChange={handleChangeSelect}
             dropdownStyle={{ padding: '1rem', borderRadius: '1rem' }}
+            value={subjectTitle}
           >
             {formValues ? formValues.map((item) => (
               <Option key={item.id} value={`{"title":"${item.title}", "email":"${item.email}"}`}>{item.title}</Option>

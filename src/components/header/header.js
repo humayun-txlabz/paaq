@@ -63,7 +63,8 @@ const styles = {
   header: {
     color: "text",
     fontWeight: "body",
-    py: 4,
+    pb: 4,
+    pt: 3,
     width: "100%",
     position: "absolute",
     top: 0,

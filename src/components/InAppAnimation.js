@@ -102,7 +102,7 @@ const InAppAnimation = () => {
                         img1 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                             <circle cx="5" cy="5" r="5" fill="#00B5B4" />
                         </svg> :
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 6 6" fill="none">
                                 <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7" />
                             </svg>
                     }
@@ -110,7 +110,7 @@ const InAppAnimation = () => {
                         img2 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                             <circle cx="5" cy="5" r="5" fill="#00B5B4" />
                         </svg> :
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 6 6" fill="none">
                                 <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7" />
                             </svg>
                     }
@@ -118,7 +118,7 @@ const InAppAnimation = () => {
                         img3 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                             <circle cx="5" cy="5" r="5" fill="#00B5B4" />
                         </svg> :
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 6 6" fill="none">
                                 <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7" />
                             </svg>
                     }
@@ -126,7 +126,7 @@ const InAppAnimation = () => {
                         img4 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                             <circle cx="5" cy="5" r="5" fill="#00B5B4" />
                         </svg> :
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 6 6" fill="none">
                                 <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7" />
                             </svg>
                     }
@@ -134,7 +134,7 @@ const InAppAnimation = () => {
                         img5 === true ? <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                             <circle cx="5" cy="5" r="5" fill="#00B5B4" />
                         </svg> :
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 6 6" fill="none">
                                 <circle cx="3" cy="3" r="3" fill="#E8EDED" fill-opacity="0.7" />
                             </svg>
                     }

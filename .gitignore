@@ -11,6 +11,7 @@ dist/
 .env.local/
 build/
 out/
+package-lock.json
 # Compiled Java class files
 *.class
 

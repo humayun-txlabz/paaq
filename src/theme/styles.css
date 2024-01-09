@@ -1939,6 +1939,13 @@ button {
   margin-top: 10px;
 }
 
+@media (max-width: 720px) {
+  .ask-time-container {
+    font-size: 13px;
+    margin-left: 6px;
+  }
+}
+
 .banner-title-container {
   display: flex;
   justify-content: center;
@@ -2308,7 +2315,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 650px;
+  min-height: 730px;
   position: relative;
   margin-top: -10px;
 }
@@ -2398,7 +2405,7 @@ button {
   position: absolute;
   width: 238px;
   height: 238px;
-  bottom: 3%;
+  bottom: 8%;
   right: 18%;
   z-index: 10;
 }
@@ -2478,14 +2485,15 @@ button {
 .dm-card-upper {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 .dm-card-upper-left {
-  width: 30%;
   background: #75cce1;
   border-radius: 30px;
   display: flex;
   justify-content: end;
   align-items: center;
+  flex: 1 1 0;
 }
 .dm-card-upper-left-text {
   margin: 0;
@@ -2499,6 +2507,7 @@ button {
   background: #f7f7f7;
   border-radius: 30px;
   padding-left: 2%;
+  flex: 2 1 0;
 }
 .dm-card-upper-right-text {
   color: #1e1e1e;
@@ -2515,7 +2524,7 @@ button {
   border-radius: 30px;
   padding: 6% 3%;
   padding-left: 36%;
-  margin-top: 1%;
+  margin-top: 1rem;
 }
 .dm-card-lower-text {
   color: #4b5157;

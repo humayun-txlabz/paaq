@@ -44,7 +44,7 @@ export default function Connections() {
                               display: "flex",
                               justifyContent: "space-evenly",
                               marginTop: "3%",
-                              width: "85%",
+                              width: "92.5%",
                               margin: "0 auto",
                          }}
                     >

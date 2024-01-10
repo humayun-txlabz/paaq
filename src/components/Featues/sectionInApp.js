@@ -62,7 +62,7 @@ function SectionInApp() {
           {domLoaded && (
             <ReactPlayer
               className="react-player-question"
-              url="gifs/inApp.mp4"
+              url={"/gifs/inApp.mp4"}
               width="100%"
               height="100%"
               loop={true}
@@ -113,7 +113,7 @@ function SectionInApp() {
           {domLoaded && (
             <ReactPlayer
               className="react-player-question"
-              url="gifs/inApp.mp4"
+              url={"/gifs/inApp.mp4"}
               width="100%"
               height={isScreenWidth? '100%' : ''}
               loop={true}

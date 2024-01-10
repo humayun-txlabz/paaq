@@ -16,44 +16,46 @@ import arrow2 from "assets/page2.png";
 // import collage3 from "assets/news/9.png";
 // import collage4 from "assets/news/10.png";
 
-import * as contentful from "contentful";
 import { StickyProvider } from "../../contexts/app/app.provider";
+import { apiClientContentFul } from "services/apiClient";
 
-const client = contentful.createClient({
-  space: process.env.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-  // host: "preview.contentful.com"
-});
+export default function News2() {
+  const [data, setData] = useState({});
+  const [error, setError] = useState(false);
+  const [Loading, setLoading] = useState(true);
 
-export async function getStaticProps() {
-  const news = await client
-    .getEntries({
-      content_type: "news",
-      skip: 0,
-    })
-    .then((response) => {
-      return response;
-    })
-    .catch(console.error);
-
-  return {
-    props: {
-      ...news,
-    },
+  const fetchData = async () => {
+    try {
+      const posts = await apiClientContentFul("news", 0, 6);
+      setData(posts);
+    } catch (error) {
+      console.error("Error fetching data:", error.message);
+      setError(true);
+    }
   };
-}
 
-export default function News2(props) {
-  const { items } = props;
+  useEffect(() => {
+    fetchData().then(_=>setLoading(s=>!s));
+  }, [])
+  
+  console.log(data);
+
+
+  const { items } = data;
   console.log("items", items)
   const [active, setActive] = useState(1);
   const pages = [];
-  let count = props.items.length / 5 + 1;
-  for (let i = 1; i <= count; i++) {
-    pages.push({
-      id: i,
-    });
+
+  if (!Loading) {
+    let count = data.items?.length / 5 + 1;
+  
+    for (let i = 1; i <= count; i++) {
+      pages.push({
+        id: i,
+      });
+    }
   }
+
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(5);
 
@@ -84,10 +86,12 @@ export default function News2(props) {
           <SEO title="News" />
           <Container sx={styles.mainContainer}>
             <Container sx={styles.headingContainer}>
-              <NewsSection list={items.slice(min, max)} />
+              {
+                !Loading && <NewsSection list={items} />
+              }
             </Container>
             {
-              pages.length > 1 && <Container className="parent news-parent" sx={styles.paginations}>
+              !Loading && pages.length > 1 && <Container className="parent news-parent" sx={styles.paginations}>
                 <div className="news-parent-div"
                   onClick={() => {
                     active > 1 ? decrease() : null;
@@ -116,49 +120,6 @@ export default function News2(props) {
                 </div>
               </Container>
             }
-            
-            {/* <Container sx={styles.section} >
-                            <Container sx={styles.imageContainer}>
-                                <Image sx={styles.image} src={image1} />
-                            </Container>
-                            <Container sx={styles.textContainer}>
-                                <Text sx={styles.title}>How It Works</Text>
-                                <Text sx={styles.detail}>
-                                    {
-                                        `Interacting with anyone is possible by paying a fee to receive a reply to your message or question.
-
-PAAQ is the right platform to direct a message or question to anyone based on the content they posted or based on their area of expertise.                                 
-                                   `
-                                    }
-                                </Text>
-                                <Container sx={styles.publishContainer}>
-                                    <Text sx={styles.readmore}>Read More</Text>
-                                    <Image src={arrow3} sx={styles.upArrow} />
-                                </Container>
-                            </Container>
-
-                        </Container>
-                        <Container sx={styles.section2} >
-                            <Container sx={styles.textContainer}>
-                                <Text sx={styles.collageSectionHeading}>Subscribe Our Newsletter For more Update</Text>
-                                <Container sx={styles.textFieldContainer}>
-                                    <Input sx={styles.textField} placeholder='Email Address' />
-                                    <Button sx={styles.buttonSubscribe}  aria-label="Subscribe Now">
-                                        Subscribe Now
-                                    </Button>
-                                </Container>
-                            </Container>
-                            <Container sx={styles.collageContainer}>
-                                <Container sx={styles.row2Collage}>
-                                    <Image src={collage1} sx={styles.collageImage} />
-                                    <Image src={collage2} sx={styles.collageImage} />
-                                </Container>
-                                <Container sx={styles.row1Collage}>
-                                    <Image src={collage3} sx={styles.collageImage} />
-                                    <Image src={collage4} sx={styles.collageImage} />
-                                </Container>
-                            </Container>
-                        </Container> */}
           </Container>
           <AppAndPlayStoreFooter />
         </Layout>

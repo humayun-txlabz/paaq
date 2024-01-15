@@ -889,8 +889,8 @@ body {
     }
 
     @media (max-width: 746px) {
-      padding-right: 3rem;
-      padding-left: 3rem;
+      padding-right: 4rem;
+      padding-left: 4rem;
 
       .left {
         margin-right: 0rem;
@@ -1070,8 +1070,8 @@ body {
     }
 
     @media (max-width: 746px) {
-      padding-right: 3rem;
-      padding-left: 3rem;
+      padding-right: 3.5rem;
+      padding-left: 3.5rem;
 
       .left {
         margin-right: 0rem;
@@ -2202,8 +2202,8 @@ body {
     }
 
     @media (max-width: 746px) {
-      padding-right: 3rem;
-      padding-left: 3rem;
+      padding-right: 40px;
+      padding-left: 40px;
 
       .left {
         margin-right: 0rem;
@@ -3363,7 +3363,7 @@ body {
 
   .center-content {
     &>h1 {
-      font-family: var(--bold);
+      font-family: var(--pro);
       font-style: normal;
       font-weight: 700;
       font-size: 60px;
@@ -5237,7 +5237,7 @@ body {
     p {
       text-align: center;
       font-family: var(--light);
-      width: 50%;
+      width: 60%;
       word-wrap: break-word;
       font-style: normal;
       font-weight: 400;
@@ -5503,7 +5503,7 @@ body {
       }
 
       p {
-        font-family: var(--light);
+        font-family: var(--pro);
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -5554,6 +5554,13 @@ body {
       }
     }
 
+    @media screen and (max-width:425px) {
+      .left {
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+    }
+
     @media (min-width: 913px) {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -5583,9 +5590,9 @@ body {
       }
 
       p {
-        font-family: var(--light);
+        font-family: var(--pro);
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 18px;
         line-height: 32px;
         color: #4b5157;
@@ -5647,6 +5654,13 @@ body {
         display: none !important;
         margin-right: 7%;
         margin-left: 7%;
+      }
+    }
+
+    @media screen and (max-width:425px) {
+      .left {
+        padding-left: 2%;
+        padding-right: 2%;
       }
     }
 
@@ -5718,7 +5732,7 @@ body {
       }
 
       h3 {
-        font-family: var(--bold);
+        font-family: var(--pro);
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
@@ -5855,7 +5869,8 @@ body {
             background: #00b5b4;
             border-radius: 40px;
             font-weight: 700;
-            font-family: var(--bold);
+            font-family: var(--pro);
+            letter-spacing: 1px;
             font-size: 16px;
             line-height: 22px;
             text-align: center;
@@ -6141,6 +6156,16 @@ body {
         }
       }
     }
+
+    @media screen and (max-width:425px) {
+      .grid-container-media-page-top {
+        .left {
+          padding-left: 10%;
+          padding-right: 15%;
+        }
+      }
+    }
+
   }
 }
 
@@ -6845,12 +6870,13 @@ body {
     box-shadow: 4px 7px 24px 0px rgba(0, 181, 180, 0.28);
     border-radius: 40px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 15px;
     text-align: center;
     color: #ffffff;
     margin-bottom: 45px;
+    font-family: "Sofia-Pro";
 
     @media (max-width: 767px) {
       font-size: 14px;
@@ -7168,6 +7194,7 @@ body {
     font-size: 20px;
     color: #ffffff;
     margin-left: 10%;
+    font-family: var(--pro);
   }
 
   &-nav {
@@ -7188,6 +7215,12 @@ body {
 
 .single-hc {
   margin: 8% 16%;
+}
+
+@media screen and (max-width:425px) {
+  .single-hc {
+    margin: 8% 10%;
+  }
 }
 
 .rich-text-helpcenter {
@@ -7313,7 +7346,7 @@ body {
     width: 55%;
     padding-top: 7%;
     padding-right: 11%;
-    padding-left: 12%;
+    padding-left: 10%;
   }
 
   &-heading {
@@ -7332,6 +7365,7 @@ body {
     font-size: 18px;
     line-height: 32px;
     margin-bottom: 7%;
+    padding-left: 6px;
   }
 
   &-buttons {
@@ -7662,11 +7696,16 @@ input::-webkit-inner-spin-button {
   #SectionPaidMessage {
     margin-top: 10px !important;
     padding: 0px 18px;
-
   }
 
   .section-2 {
     margin-top: 30px !important;
+  }
+}
+
+@media screen and (max-width:425px) {
+  #SectionPaidMessage {
+    padding: 0px 32px;
   }
 }
 
@@ -8077,7 +8116,7 @@ input::-webkit-inner-spin-button {
   font-family: "Sofia-Pro";
   position: absolute;
   top: 20%;
-  left: 18%;
+  left: 12%;
 
 }
 
@@ -8105,7 +8144,6 @@ input::-webkit-inner-spin-button {
     font-family: "Sofia-Pro";
     position: absolute;
     top: 18% !important;
-    left: 13% !important;
   }
 
   .reply-silder {
@@ -9583,7 +9621,7 @@ input::-webkit-inner-spin-button {
   }
 
   .features-page-container .section-5 .right .left-paid-messages-component {
-    width: 68vw !important;
+    width: 58vw !important;
   }
 
   .features-page-container .section-5 .left .heading .big-ask-button .inner>h3 {
@@ -9620,8 +9658,6 @@ input::-webkit-inner-spin-button {
   }
 
   .features-page-container .section-4 {
-    margin-left: -24px !important;
-    margin-right: -24px !important;
     margin-top: 0;
   }
 
@@ -9741,7 +9777,8 @@ input::-webkit-inner-spin-button {
   }
 
   .interaction-card-left-heading {
-    margin-top: 29px !important;
+    margin-top: 40px !important;
+    padding-right: 23px;
   }
 
   .millions-img img {
@@ -9852,6 +9889,7 @@ input::-webkit-inner-spin-button {
   .careers-page-who-we-are .careers-page-we-are-innovative-section .left h1 {
     margin-top: -35px !important;
     margin-bottom: 9px !important;
+    font-size: 36px;
   }
 
   .bottom-gradient-card-with-btn {
@@ -9938,10 +9976,12 @@ input::-webkit-inner-spin-button {
 
   .contact-us-page-main .contact-us-page-grid-view .left h3 {
     margin-top: 11px !important;
+    font-size: 24px;
   }
 
   .tick-with-text-component .text-and-img {
     margin: -8px 0 !important;
+    font-size: 16px;
   }
 
   .contact-us-page-main .contact-us-page-grid-view .right-mobile {
@@ -9985,6 +10025,7 @@ input::-webkit-inner-spin-button {
 
   .brand-guidelines-main-heading {
     font-size: 40px !important;
+    font-weight: 600;
   }
 
   .brand-guidelines-main-description {
@@ -10011,6 +10052,10 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.item-card-title-inner {
+  color: #1E1E1E !important;
+}
+
 @media (min-width: 0px) and (max-width: 567px) {
 
   .title-card-heading {
@@ -10022,9 +10067,6 @@ input::-webkit-inner-spin-button {
     margin-bottom: 44px !important;
   }
 
-  .item-card-title-inner {
-    color: #1E1E1E !important;
-  }
 
   .blog-main {
     width: 89% !important;
@@ -10055,4 +10097,14 @@ input::-webkit-inner-spin-button {
 .accordion__button{
   align-items: start !important;
 }
+}
+
+.d-none {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .d-md-block {
+    display: block !important;
+  }
 }

@@ -16,7 +16,7 @@ const SingleBlogItem = (props) => {
 
   // const RichBold = ({ children }) => <p className="bold"  style={{ fontFamily: 'Sofia-Pro'}}>{children}</p>;
 
-  const RichParagraph = ({ children }) => <p className="align-center" style={{ fontFamily: 'Sofia-Pro', fontSize: 18 }}>{children}</p>;
+  const RichParagraph = ({ children }) => <p className="align-center" style={{ fontFamily: 'Sofia-Pro', fontSize: 18,color:"#4B5157" }}>{children}</p>;
 
   const Heading1 = ({ children }) => <h1 className="blog-detail-heading1" >{children}
   <TitleCard title={""} />
@@ -79,6 +79,9 @@ const SingleBlogItem = (props) => {
 
   return (
     <div className='blog-items' style={{ flexDirection: 'column', flexWrap: 'nowrap', width: '80%', margin: '0 auto', marginTop: 90 }}>
+      {
+        console.log(blogItem, richTextOptions, "111111")
+      }
       {documentToReactComponents(blogItem, richTextOptions)}
     </div>
 

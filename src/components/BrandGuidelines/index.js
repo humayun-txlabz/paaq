@@ -42,7 +42,7 @@ const BrandGuidelinesMain = () => {
                     Brand Guildelines
                 </p>
                 <p className='brand-guidelines-main-description' style={{color:'#1E1E1E'}}>
-                    In this guide, we've provided the do’s and don'ts of using PAAQ's <br /> brand elements. 
+                    In this guide, we've provided the do’s and don'ts of using PAAQ's <br className='d-md-block d-none' /> brand elements. 
                     This includes our Question-mark and acronym.
                 </p>
                 <div className='brand-guidelines-main-buttons'>

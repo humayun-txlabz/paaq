@@ -51,7 +51,7 @@ const NewsSection = ({ list }) => {
           </Link>
           <Container sx={styles.publishContainer}>
             <Text sx={styles.publisher}>By</Text>
-            <Text sx={styles.publisher2}>{item.fields.author}</Text>
+            <Text sx={styles.publisher2}><span style={{color:"#000"}}>{item.fields.author}</span></Text>
             <Text sx={styles.date}>
               PUBLISHED:{" "}
               {moment(item.fields.publishedDate).format("DD MMM YYYY")}

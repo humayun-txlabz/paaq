@@ -99,7 +99,7 @@ const styles = {
         justifyContent: 'center',
     },
     text: {
-        fontSize: '24px',
+        fontSize: '20px',
         fontWeight: '400',
         lineHeight: '34px',
         fontFamily: 'Sofia-Pro',
@@ -115,7 +115,7 @@ const styles = {
         marginTop: '30px'
     },
     mainText: {
-        fontSize: '24px',
+        fontSize: '22px',
         fontWeight: '400',
         fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {

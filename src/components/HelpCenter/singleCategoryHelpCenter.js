@@ -91,7 +91,7 @@ const SingleCategoryHelpCenter = (props) => {
                 &nbsp;
               </span>
             </Link>
-            {fields['0']?.fields?.title}&nbsp; {'>'}&nbsp; {fields[router?.query?.id === '2lpVATuhy2Z7ay96He1LDw' ? '0':
+            {fields['0']?.fields?.title}&nbsp; {'>'}&nbsp; <span style={{color:"#FFFFFFB2"}}>{fields[router?.query?.id === '2lpVATuhy2Z7ay96He1LDw' ? '0':
           router?.query?.id === '2VxNT6rcKefXuxU8Z8QQdb' ? '1' : 
           router?.query?.id === "6FFHACoJjyqFii6bY1NzTI" ? '2' : 
           router?.query?.id === "5YHhTPQHL3MiPUD8ddn1qa" ? '3' : 
@@ -100,7 +100,7 @@ const SingleCategoryHelpCenter = (props) => {
           router?.query?.id === "3mV9LgLKoPEVUO5cnLq3Za" ? '6' : 
           router?.query?.id === "38KHu3qKwuK1HipqL3OFlK" ? '7' : 
           '0'
-          ]?.fields?.question}
+          ]?.fields?.question}</span>
           </span>
       </div>
       <div className='single-hc'>

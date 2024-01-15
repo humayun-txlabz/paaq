@@ -25,7 +25,7 @@ export default function Connections() {
                id="community"
           >
                <Container sx={styles.banner.container}>
-                    <Box sx={styles.banner.contentBox}>
+                    <Box sx={styles.banner.contentBox} className="d-md-block d-none">
                          <div
                               style={{
                                    display: "flex",

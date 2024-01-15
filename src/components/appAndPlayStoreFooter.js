@@ -62,7 +62,7 @@ const styles={
         },
         '@media screen and (max-width: 720px)': {
             width: '65%',
-            marginLeft:1
+            marginLeft:"12px"
         },
         cursor: 'pointer',
         height: "50px",
@@ -97,7 +97,8 @@ const styles={
             width: '40%',
         },
         '@media screen and (max-width: 920px)': {
-            width: '80%'
+            width: '80%',
+            marginBottom: 65,
         }
     }
 }; 

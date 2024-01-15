@@ -20,7 +20,7 @@ import MainImage10 from "assets/Images/main5.png";
 import MainImage11 from "assets/Images/main2.png";
 // import bann from "assets/bannerMobileView.png";
 import SpeakerIcon from "assets/Icons/whitespeaker.png";
-import whitespeaker1 from "assets/Icons/whitespeaker1.png";
+import whitespeaker1 from "assets/Icons/pause.png";
 import FadeAnimation from "components/fadeAnimation";
 import homeshowskill from '../assets/home/homeshowskill.png'
 import homeaiskill from '../assets/home/homeaiskill.png'

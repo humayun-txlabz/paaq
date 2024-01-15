@@ -184,8 +184,6 @@ const AboutUsMain = () => {
         mobileclass='human-interaction'
       />
       <InteractionCard
-        // alignImageRight={'start'}
-
         image={IntImage2}
         imageWidth={476}
         imageHeight={510}
@@ -197,16 +195,20 @@ const AboutUsMain = () => {
           "Who can help them make better life choices & advance their skills within their designated professions - enabling them to make money for collaborating and contributing positively to global economic development."
         }
       />
-      <InteractionCard
-        alignImageRight={true}
-        image={width > 760 ? IntImage4 : IntImage4}
-        imageWidth={500}
-        imageHeight={500}
-        heading={"Our ultimate goal is to create a diverse community"}
-        detail={
-          "Where everyone can gain knowledge and build relationships without feeling isolated or ignored."
-        }
-      />
+      <div className="">
+        <InteractionCard
+          alignImageRight={true}
+          textSection
+          mobileclass="justify-center"
+          image={width > 760 ? IntImage4 : IntImage4}
+          imageWidth={500}
+          imageHeight={500}
+          heading={"Our ultimate goal is to create a diverse community"}
+          detail={
+            "Where everyone can gain knowledge and build relationships without feeling isolated or ignored."
+          }
+        />
+      </div>
       <AppAndPlayStoreFooter />
     </>
   );

@@ -6,7 +6,7 @@ const TickWithTextComp = ({text, marginTop}) => {
   return (
     <div className='tick-with-text-component' style={{...mTop}}>
         <div className='text-and-img'>
-            <div className='image'><img src={TickImage} /></div>{text}
+            <div><div className='image'><img src={TickImage} /></div></div>{text}
         </div>
     </div>
   )

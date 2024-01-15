@@ -7,6 +7,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { renderToStaticMarkup } from 'react-dom/server';
 import { BLOCKS, MARKS, INLINES } from '@contentful/rich-text-types';
 import TitleCard from './TitleCard';
+import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter';
 
 
 
@@ -50,7 +51,7 @@ const SingleBlogItem = (props) => {
               width={"100%"}
               height={'auto'}
               src={file.url}
-              style={{ borderRadius: 22, objectFit: 'cover', margin: '40px 0px' }}
+              style={{ borderRadius: 22, objectFit: 'cover', margin: '10px 0px' }}
             />
           case 'application':
             return <a
@@ -83,6 +84,7 @@ const SingleBlogItem = (props) => {
         console.log(blogItem, richTextOptions, "111111")
       }
       {documentToReactComponents(blogItem, richTextOptions)}
+       <AppAndPlayStoreFooter />
     </div>
 
   )

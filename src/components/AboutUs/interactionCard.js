@@ -20,7 +20,7 @@ const InteractionCard = ({alignImageRight, heading, detail,mobileclass, image, i
             <div style={{position:"relative"}}>
                 <Image src={image} width={imageWidth} height={imageHeight} />
                 {count && 
-                <span className={`${alignImageRight === 'end' ? "interaction-card-count-end" : "interaction-card-count"}`} style={{ top: topAbsolute ? 0 : "20%", transform:'transition(50%, 50%)', color:"#1E1E1E"}}>{count}</span>
+                <span className={`${alignImageRight === 'end' ? "interaction-card-count-end" : "interaction-card-count"}`} style={{ top: topAbsolute ? 0 : "20%", transform:'transition(50%, 50%)', color:"#252F44"}}>{count}</span>
                 }
             </div>
           </div>

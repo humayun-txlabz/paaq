@@ -439,7 +439,7 @@ body {
 .text-pill-component {
   font-family: var(--pro);
   font-weight: 600;
-  font-size: 1vw;
+  font-size: 16px;
   text-align: center;
   padding-left: 1.2vw;
   padding-right: 1.2vw;
@@ -1219,7 +1219,7 @@ body {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
-          font-size: 22px;
+          font-size: 20px;
         }
 
         @media (max-width: 670px) {
@@ -1339,7 +1339,7 @@ body {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
-          font-size: 22px;
+          font-size: 20px;
         }
 
         @media (max-width: 670px) {
@@ -1459,7 +1459,7 @@ body {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
-          font-size: 22px;
+          font-size: 20px;
         }
 
         @media (max-width: 670px) {
@@ -1579,7 +1579,7 @@ body {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
-          font-size: 22px;
+          font-size: 20px;
         }
 
         @media (max-width: 670px) {
@@ -1699,7 +1699,7 @@ body {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
-          font-size: 22px;
+          font-size: 20px;
         }
 
         @media (max-width: 670px) {
@@ -1819,7 +1819,7 @@ body {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
-          font-size: 22px;
+          font-size: 20px;
         }
 
         @media (max-width: 670px) {
@@ -1939,7 +1939,7 @@ body {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
-          font-size: 22px;
+          font-size: 20px;
         }
 
         @media (max-width: 670px) {
@@ -2059,7 +2059,7 @@ body {
           text-align: center;
           font-family: var(--pro);
           padding: 0px 10px;
-          font-size: 22px;
+          font-size: 20px;
         }
 
         @media (max-width: 670px) {
@@ -2352,7 +2352,7 @@ body {
         font-family: var(--light);
         font-weight: 400;
         font-size: 18px;
-        padding-right: 1rem;
+        padding-right: 6rem;
         margin-top: 1rem;
         color: #4b5157;
       }
@@ -5505,7 +5505,7 @@ body {
       p {
         font-family: var(--pro);
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 18px;
         line-height: 32px;
         color: #4b5157;
@@ -5592,7 +5592,7 @@ body {
       p {
         font-family: var(--pro);
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 18px;
         line-height: 32px;
         color: #4b5157;
@@ -5765,7 +5765,7 @@ body {
             &>label {
               font-family: var(--pro);
               font-style: normal;
-              font-weight: 700;
+              font-weight: 600;
               font-size: 16px;
               margin-top: 1.5rem;
             }
@@ -6615,8 +6615,8 @@ body {
             display: flex;
             align-items: center;
             position: absolute;
-            top: 26%;
-            right: 9%;
+            top: 25%;
+            right: 16%;
             transform: translate(18%, 50%);
 
             .circleImg {
@@ -7147,7 +7147,7 @@ body {
 
 .rich-paragraph {
   font-family: var(--light);
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   margin-top: 30px;
   color: #4B5157;
@@ -7397,7 +7397,7 @@ body {
 }
 
 .barcode-container {
-  min-width: 125px !important;
+  min-width: 170px !important;
   max-width: 170px !important;
   padding: 20px;
   background: #FFFFFF;
@@ -8753,6 +8753,7 @@ input::-webkit-inner-spin-button {
   font-family: var(--rob);
   font-weight: 600;
   padding: 0 35px;
+  font-size: 18px;
 }
 
 .carrer_color {
@@ -9425,10 +9426,10 @@ input::-webkit-inner-spin-button {
 }
 
 @media (min-width: 0px) and (max-width: 960px) {
-  // .image2-modify{
-  //   top: 20% !important;
-  //   left: 0% !important;
-  // }
+  .image2-modify {
+    top: 20% !important;
+    left: 2% !important;
+  }
 
   .image3-modify {
     top: 10% !important;
@@ -9772,12 +9773,12 @@ input::-webkit-inner-spin-button {
     padding-bottom: 4px !important;
   }
 
-  .aboutus-left-section {
-    margin-left: -12px !important;
-  }
+  // .aboutus-left-section {
+  //   margin-left: -12px !important;
+  // }
 
   .interaction-card-left-heading {
-    margin-top: 40px !important;
+    margin-top: 44px !important;
     padding-right: 23px;
   }
 
@@ -10107,4 +10108,18 @@ input::-webkit-inner-spin-button {
   .d-md-block {
     display: block !important;
   }
+}
+
+select[name="countrySelect"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url('data:image/svg+xml,<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.69526 5.52851C2.95561 5.26816 3.37772 5.26816 3.63807 5.52851L8.5 10.3904L13.3619 5.52851C13.6223 5.26816 14.0444 5.26816 14.3047 5.52851C14.5651 5.78886 14.5651 6.21097 14.3047 6.47132L8.9714 11.8047C8.71106 12.065 8.28895 12.065 8.0286 11.8047L2.69526 6.47132C2.43491 6.21097 2.43491 5.78886 2.69526 5.52851Z" fill="white"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 1rem;
+  padding: 1rem;
 }

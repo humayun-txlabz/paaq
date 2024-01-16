@@ -132,7 +132,7 @@ export default function Download() {
                 <Text sx={styles.detail} className='send-the-download'>
                   Send the download link to your phone
                 </Text>
-                <Container sx={styles.contact}>
+                <Container className="pt-2" sx={styles.contact}>
                   <Container sx={styles.codeContainer}>
                     <CountrySelect
                       style={styles.codeSelector}
@@ -145,7 +145,6 @@ export default function Download() {
                     <input className="download-placeholder" style={styles.textField} value={phoneNumber || ''} onChange={(e) => {
                       setPhoneNumber(e.target.value)
                     }} type="number" id="quantity" name="quantity" max="10" min="1" placeholder="Phone Number"/>
-                    {/* <Input sx={styles.textField} onChange={onChangeNumber} placeholder="Phone Number" /> */}
                   </Container>
                 </Container>
                 <div className="send-link-download">
@@ -315,15 +314,16 @@ const styles = {
   contact: {
     display: "flex",
     flexDirection: "row",
-    width: "90%",
+    width: "80%",
     marginLeft: "0px",
     gap: "10px",
   },
   codeContainer: {
     display: "flex",
     flexDirection: "row",
+    marginRight:"0",
     gap: "10px",
-    width: "43%",
+    width: "32%",
     height: "54px",
     alignItems: "center",
     justifyContent: "center",
@@ -355,15 +355,9 @@ const styles = {
     borderRadius: "40px",
     background: "rgba(255, 255, 255, 0.2)",
     paddingLeft: "25px",
+    paddingRight: "25px",
     minHeight: '54px',
-    "@media (min-width: 0px) and (max-width: 567px)": {
-      minHeight: '44px',
-    },
     width: '100%',
-    "::placeholder": {
-      color: "#FFFFFF",
-    },
-    
   },
   button: {
     borderRadius: 40,

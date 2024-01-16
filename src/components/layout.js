@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Sticky from 'react-stickynode';
 import Header from './header/header';
 import Footer from './footer/footer';
+import useWindowDimensions from 'constants/useWindowsDimentions';
 export default function Layout({ children }) {
   const [isSticky, setIsSticky] = useState(false);
   const handleStateChange = (status) => {
@@ -11,6 +12,12 @@ export default function Layout({ children }) {
       setIsSticky(false);
     }
   };
+  const width = useWindowDimensions()?.width;
+  const [WIDTH, setWIDTH] = useState(541)
+  useEffect(() => {
+    setWIDTH(width)
+  }, [width])
+  
   return (
     <React.Fragment>
       <Sticky innerZ={1001} top={0} onStateChange={handleStateChange}>
@@ -21,7 +28,7 @@ export default function Layout({ children }) {
         sx={{
           variant: 'layout.main',
         }}
-        style={{paddingTop:120}}
+        style={{paddingTop: WIDTH > 540 ? 120 : 90}}
       >
         {children}
       </main>

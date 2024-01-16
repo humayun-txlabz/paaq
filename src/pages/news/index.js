@@ -173,7 +173,7 @@ const styles = {
     flexDirection: "column",
     width: "80%",
     "@media screen and (max-width: 720px)": {
-      width: "90%",
+      width: "81%",
     },
     alignItems: "center",
     justifyContent: "center",

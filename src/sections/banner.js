@@ -310,7 +310,7 @@ export default function Banner() {
               >
                 <div className="main-section-image2-nametagleft">
                   <span className="nametag-title">Sandra Lue</span>
-                  <span className="nametag-designation">Chief Marketing Officer</span>
+                  <span className="nametag-designation">Head of finance @ LawrellBell</span>
                 </div>
               </animated.div>
             </animated.div>
@@ -407,7 +407,7 @@ export default function Banner() {
                   <span className="nametag-title">Sandra Lue</span>
                   <span className="nametag-designation">
                     <span>
-                      Head of finance @ LawrellBell
+                      Chief Marketing Officer
                     </span>
                     <span>
                       <Svgs.Badge />
@@ -436,7 +436,7 @@ export default function Banner() {
                 >
                   <span className="nametag-title">Aisha Ali</span>
                   <span className="nametag-designation">
-                    Philosophy Student
+                    Project Lead
                   </span>
                 </div>
               </animated.div>

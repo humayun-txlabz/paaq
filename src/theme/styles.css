@@ -677,11 +677,17 @@ button {
   margin-left: 7%;
   justify-content: center;
 }
-
+earn-money-detail img{
+  height: 100%;
+}
 @media (max-width: 720px) {
   .earn-money-detail {
     width: 100% !important;
     margin-left: 0% !important;
+  }
+  .imageContainer{
+    margin-top: 3rem;
+    padding: 1rem;
   }
 }
 
@@ -887,7 +893,7 @@ button {
 
 @media (max-width: 720px) {
   .footer-mobile-view {
-    margin-top: 100px !important;
+    margin-top: 50px !important;
   }
 }
 @media (max-width: 425px) {

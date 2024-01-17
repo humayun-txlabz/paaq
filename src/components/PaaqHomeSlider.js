@@ -27,7 +27,7 @@ const PaaqHomeSlider = ({width, height}) => {
       useEffect(() => {
         const interval = setInterval(() => {
           setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 1200); // Change the duration (in milliseconds) as needed
+        }, 2300); // Change the duration (in milliseconds) as needed
     
         return () => clearInterval(interval);
       }, [currentIndex, images.length]);

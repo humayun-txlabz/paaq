@@ -75,7 +75,7 @@ const SingleBlogItem = (props) => {
       [BLOCKS.HEADING_6]: (node, children) => <Heading6>{children}</Heading6>,
       [BLOCKS.HR]: (node, children) => <Hr>{children}</Hr>,
     },
-    renderText: text => text.replace('!', '?'),
+    renderText: text => text.replace('!', '!'),
   };
 
   return (

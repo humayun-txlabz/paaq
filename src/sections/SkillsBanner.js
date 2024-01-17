@@ -48,6 +48,7 @@ const SkillsBanner = () => {
             fontWeight: "bold",
             lineHeight: "84px",
             fontFamily: "Sofia-Pro",
+            color:"rgba(255, 255, 255, 1)"
           }}
         >
           Expert Reviews
@@ -61,6 +62,7 @@ const SkillsBanner = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              color:"rgba(255, 255, 255, 1)"
             }}
           >
             Reviews written by people who asked experts questions are available for everyone to read and help them make informed decisions, assess the expertise and quality of the advice provided, and develop trust in the expert before asking them questions.

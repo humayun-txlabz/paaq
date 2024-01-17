@@ -10,6 +10,7 @@ import SkillsBanner from 'sections/SkillsBanner';
 import EarnMoneyBanner from 'sections/EarnMoneyBanner';
 import AskQuestionBanner from 'sections/AskQuestionBanner';
 import AppAndPlayStoreFooter from "components/appAndPlayStoreFooter";
+import CalculatorPotential from 'sections/CalculatorPotential';
 
 export default function IndexPage() {
   return (
@@ -18,6 +19,7 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Home" />
           <Banner />
+          <CalculatorPotential />
           <Connections />
           <AskQuestionBanner />
           <SkillsBanner />

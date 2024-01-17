@@ -19,7 +19,7 @@ export default function Header({ className }) {
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header" >
-        <img className="logoImg" src={LogoMain} />
+        <span className="logoImgCursor"><Link href={'/'} ><img className="logoImg" src={LogoMain} /></Link></span>
         <div className="right-container">
           <div className="nav-menu-desktop">
             {menuItems.map(({ path, label }, i) => (

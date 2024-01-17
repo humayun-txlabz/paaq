@@ -91,7 +91,7 @@ const styles = {
   detail: {
     fontSize: "18px",
     fontFamily: "Sofia-Pro",
-    fontWeight: "400",
+    fontWeight: "lighter",
     color: "#6D6D6D",
     lineHeight: "34px",
     "@media (min-width: 0px) and (max-width: 567px)": {

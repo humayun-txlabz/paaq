@@ -509,12 +509,12 @@ export default function Banner() {
             {/* <div className="box  title1">PAAQ</div> */}
             <div className="box2" style={{ fontSize: "65px" }}>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                {/* <animated.div style={textAnimation(4000)}> */}
+                 <animated.div style={textAnimation(4000)}> 
                   <p className="box3">Please</p>
-                {/* </animated.div> */}
-                {/* <animated.div style={textAnimation(4500)}> */}
+                </animated.div> 
+                <animated.div style={textAnimation(4500)}> 
                   <p className="box4">Ask</p>
-                {/* </animated.div> */}
+                 </animated.div> 
               </div>
               <div
                 style={{
@@ -523,18 +523,18 @@ export default function Banner() {
                   marginTop: "-18px",
                 }}
               >
-                {/* <animated.div style={textAnimation(5000)}> */}
+                 <animated.div style={textAnimation(5000)}>
                   <p className="box5">Any</p>
-                {/* </animated.div> */}
-                {/* <animated.div style={textAnimation(5500)}> */}
+                 </animated.div> 
+                <animated.div style={textAnimation(5500)}> 
                   <p className="box6">Question</p>
-                {/* </animated.div> */}
+               </animated.div> 
               </div>
             </div>
           </div>
           <div style={styles.bannerTitleMobile} className="banner-titel-mobile">
-            <span className="banner-titel-mobile-text-1">Answer questions based on your expertise and</span> <br />
-            <span className="banner-titel-mobile-text-2"> receive rewards.</span>
+            <span className="banner-titel-mobile-text-1">Earn money by answering questions based on </span> <br />
+            <span className="banner-titel-mobile-text-2"> your skills and knowledge.</span>
           </div>
           <Button
             className="getstarted-button"

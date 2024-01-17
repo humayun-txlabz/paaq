@@ -155,7 +155,7 @@ const styles = {
             lineHeight: '30px',
         },
         fontWeight: '500',
-        fontSize: '25px',
+        fontSize: '24px',
         fontFamily: 'Sofia-Pro',
         color: '#1e1e1e',
         lineHeight: '50px',

@@ -41,7 +41,8 @@ We want our users to find PAAQ safe and reliable enough to meet their needs. If 
                                                     <path d="M15.125 25.4998C15.6773 25.4998 16.125 25.052 16.125 24.4998C16.125 23.9475 15.6773 23.4998 15.125 23.4998C14.5727 23.4998 14.125 23.9475 14.125 24.4998C14.125 25.052 14.5727 25.4998 15.125 25.4998Z" fill="#1E1E1E" stroke="#1E1E1E" stroke-width="0.5" />
                                                 </svg>
                                             </div>
-                                            {item.detail1}</Text>
+                                            {item.detail1}
+                                            </Text>
                                         <Text sx={styles.text}>
                                             <div style={{ marginTop: '5px', marginRight: '32px' }}>
                                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,7 +116,7 @@ const styles = {
         marginTop: '30px'
     },
     mainText: {
-        fontSize: '22px',
+        fontSize: '24px',
         fontWeight: '400',
         fontFamily: 'Sofia-Pro',
         '@media screen and (max-width: 720px)': {
@@ -132,6 +133,7 @@ const styles = {
         fontSize: '40px',
         fontWeight: '500',
         fontFamily: 'Sofia-Pro',
+        textTransform: "capitalize",
         '@media screen and (max-width: 720px)': {
             fontSize: '18px',
             lineHeight: '21px',

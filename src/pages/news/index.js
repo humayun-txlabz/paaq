@@ -121,7 +121,7 @@ export default function News2() {
               </Container>
             }
           </Container>
-          <AppAndPlayStoreFooter />
+          <div style={{marginTop:'5rem'}}><AppAndPlayStoreFooter /></div>
         </Layout>
       </StickyProvider>
   );

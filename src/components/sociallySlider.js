@@ -26,8 +26,8 @@ let settings = {
     dots: false,
     infinite: true,
     speed: 700,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 1.3,
+    slidesToScroll: 2,
     autoplay: true,
     customPaging: function (i) {
         return (
@@ -140,11 +140,11 @@ const sliderData = [{
 const SociallySlider = () => {
     const [hideState, setHideState] = useState(false)
 
-    useEffect(() => {
-        setTimeout(() => {
-            setHideState(true)
-        }, 10000);
-    }, [])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setHideState(true)
+    //     }, 10000);
+    // }, [])
 
     return (
         <div className=''>

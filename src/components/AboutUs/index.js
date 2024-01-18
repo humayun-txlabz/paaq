@@ -63,7 +63,7 @@ const AboutUsMain = () => {
     <>
       <div className={width > 760 ? "background-image-main" : "background-image-main-mobile"}>
         <div className="aboutus-left-section">
-          <p className="aboutus-left-section-heading">About Us</p>
+          <p className="aboutus-left-section-heading">About us</p>
           <p className="aboutus-left-section-detail">
             The widespread use of social media and professional platforms has
             made people more willing to accept intentionally structured

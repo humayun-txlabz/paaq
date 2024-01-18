@@ -11,7 +11,7 @@ const BrandGuidelines = () => {
         <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
-                    <SEO title="About Us" />
+                    <SEO title="Brand Guide Line" />
                     <BrandGuidelinesMain />
                     <AppAndPlayStoreFooter />
                 </Layout>

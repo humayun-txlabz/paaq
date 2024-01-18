@@ -9,7 +9,7 @@ export default function AboutUs() {
     return (
             <StickyProvider>
                 <Layout>
-                    <SEO title="About Us" />
+                    <SEO title="About us" />
                     <AboutUsMain />
                 </Layout>
             </StickyProvider>

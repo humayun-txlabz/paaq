@@ -59,7 +59,7 @@ const MainBlog = (props) => {
         </div>
       </div>
       ) : null}
-      <AppAndPlayStoreFooter />
+      <div className="footer_alignment"><AppAndPlayStoreFooter /></div>
     </div>
   );
 };

@@ -20,10 +20,10 @@ export default function ImagesContacts() {
         <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
-                    <SEO title="About Us" />
+                    <SEO title="About us" />
                     <Container sx={styles.mainContainer}>
                         <Container >
-                            <Text sx={styles.heading}>About Us</Text>
+                            <Text sx={styles.heading}>About us</Text>
                         </Container>
                         <Container sx={styles.innerContainer}>
                             <Container sx={styles.mainSection}>

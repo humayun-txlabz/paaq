@@ -174,7 +174,7 @@ body {
         font-weight: 300;
         font-size: 16px;
         line-height: 22px;
-        text-transform: capitalize;
+        // text-transform: capitalize;
         margin-right: 3rem;
 
         &>a {
@@ -7206,7 +7206,7 @@ body {
   font-family: var(--pro);
   font-weight: 700;
   font-size: 33px;
-  line-height: 50px;
+  line-height: 80px;
   margin-top: 4%;
   margin-bottom: 1rem;
   scroll-margin-top: 9rem;
@@ -8559,6 +8559,7 @@ input::-webkit-inner-spin-button {
 
   div {
     width: 100%;
+    color: rgba(255, 255, 255, 0.8);
   }
 
   .paaq-explain-img {
@@ -10100,7 +10101,9 @@ input::-webkit-inner-spin-button {
   margin-top: 38px !important;
   margin-bottom: -23px !important;
 }
-
+.footer_alignment{
+  margin-right: 11%;
+}
 .blog-items{
   width: 89% !important;
 }

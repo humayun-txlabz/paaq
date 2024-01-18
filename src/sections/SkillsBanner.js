@@ -48,7 +48,8 @@ const SkillsBanner = () => {
             fontWeight: "bold",
             lineHeight: "84px",
             fontFamily: "Sofia-Pro",
-            color:"rgba(255, 255, 255, 1)"
+            color:"rgba(255, 255, 255, 1)",
+            marginBottom:'1rem'
           }}
         >
           Expert Reviews

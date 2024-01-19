@@ -46,7 +46,7 @@ const styles={
         WebkitBackgroundClip: 'text',
         color: 'transparent',
         lineHeight: '76px',
-        marginTop: 16,
+        marginTop: 22,
         fontFamily: 'Sofia-Pro',
         textAlign: 'center'
     },

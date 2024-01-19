@@ -2478,6 +2478,14 @@ button {
   left: -22%;
 }
 @media (max-width: 720px) {
+  .about-section-emoji {
+    height: 2rem !important;
+    object-fit: contain;
+  }
+  .about-section-emoji.second{
+    height: 1.5rem !important;
+  }
+
   .aboutus-left-section {
     padding-right: 9%;
     padding-top: 21%;
@@ -4008,7 +4016,7 @@ button {
 }
 
 .gap-2{
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .items-center{

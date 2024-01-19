@@ -11,6 +11,7 @@ import MainImage1 from "assets/Images/main1.png";
 import MainImage2 from "assets/Images/earn3.png";
 import MainImage3 from "assets/Images/main3.png";
 import MainImage4 from "assets/Images/main9.png";
+import MainImage4Mobile from "assets/Images/Ellipse 953 (1).png";
 import MainImage5 from "assets/Images/main7.png";
 import MainImage6 from "assets/Images/main8.png";
 import MainImage7 from "assets/Images/main6.png";
@@ -27,18 +28,24 @@ import homeaiskill from '../assets/home/homeaiskill.png'
 import homelightskill from '../assets/home/homelightskill.png'
 import PaaqHomeSlider from "components/PaaqHomeSlider";
 import Svgs from "assets/Icons/Svgs";
+import useWindowDimensions from "constants/useWindowsDimentions";
 
 export default function Banner() {
   const svgRef = React.createRef();
   const [domLoaded, setDomLoaded] = useState(false);
   const [speak, setSpeak] = useState(false);
   const [isTruncated, setIsTruncated] = useState(true);
+  const [Size, setSize] = useState({});
 
   console.log("isTruncated", isTruncated);
-
+  const width = useWindowDimensions();
   useEffect(() => {
     setDomLoaded(true);
-  }, []);
+  }, [])
+  
+  useEffect(() => {
+    setSize(width)
+  }, [width]);
 
   const [style, setStyle] = useSpring(() => ({
     from: { x: 720 },
@@ -248,6 +255,8 @@ export default function Banner() {
 
   };
 
+  
+
   const textAnimation = (delay) =>
     useSpring({
       from: { x: 0, y: 0, opacity: 0 },
@@ -320,7 +329,7 @@ export default function Banner() {
             <animated.div style={poppingOutAnimation(800)}>
               <Image
                 className="main-section-inner main-section-inner-image4"
-                src={MainImage4}
+                src={Size?.width <= 600 ? MainImage4Mobile : MainImage4}
               />
               <animated.div
                 style={{ position: "absolute", ...anim6 }}

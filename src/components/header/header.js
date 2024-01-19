@@ -75,7 +75,7 @@ const styles = {
     animation: `${positionAnim} 0.4s ease`,
     "&.sticky": {
       position: "fixed",
-      backgroundColor: "background",
+      backgroundColor: "#ffffff",
       color: "#000000",
       // boxShadow: "0 1px 2px rgba(0, 0, 0, 0.06)",
       boxShadow: '0px 1px 5px 0px rgba(0, 0, 0, 0.25)',

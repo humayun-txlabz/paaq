@@ -6,6 +6,10 @@ import Waveform from "./waveform";
 import InteractionCard from "./interactionCard";
 import ClapEmoji from "assets/about/clap-emoji.png";
 import ClapEmojiMobile from "assets/about/clap-emoji-mobile.png";
+
+import ClapSVG from "assets/about/Group 1000002507.svg";
+import ThumbSVG from "assets/about/Group 1000002507 (3).svg";
+
 import DirectMessagesCard from "./directMessagesCard";
 import AboutImage6 from "assets/about/about-image6.png";
 import AboutImage3 from "assets/about/about-image3.png";
@@ -74,7 +78,7 @@ const AboutUsMain = () => {
         </div>
         <div className="about-section-image1">
           <animated.div style={poppingOutAnimation(0)}>
-            <Image className="about-section-emoji" src={width > 760 ? ClapEmoji : ClapEmojiMobile} />
+            <Image className="about-section-emoji" src={ClapSVG} />
             <Image className="main-section-inner" src={AboutImage1} />
           </animated.div>
         </div>
@@ -105,7 +109,7 @@ const AboutUsMain = () => {
         </div>
         <div className="about-section-image5">
           <animated.div style={poppingOutAnimation(2000)}>
-            <Image className="about-section-emoji" src={width > 760 ? ThumbsupEmoji : ThumbsupEmojiMobile} />
+            <Image className="about-section-emoji second" src={ThumbSVG} />
             <Image
               className="main-section-inner"
               src={AboutImage5}

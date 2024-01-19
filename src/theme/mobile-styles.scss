@@ -16,9 +16,10 @@
     padding-right: 7%;
 
     .logoImg {
-      width: 43px;
+      width: 50px;
       height: 100%;
       cursor: pointer;
+      object-fit: contain;
     }
 
     .right-container {

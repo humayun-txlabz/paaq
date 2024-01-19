@@ -309,8 +309,8 @@ export default function Banner() {
                 className="main-section-image2-nametag-containerleft"
               >
                 <div className="main-section-image2-nametagleft">
-                  <span className="nametag-title">Sandra Lue</span>
-                  <span className="nametag-designation">Head of finance @ LawrellBell</span>
+                  <span className="nametag-title">Zoe Marrakesh</span>
+                  <span className="nametag-designation">Chief Marketing Officer</span>
                 </div>
               </animated.div>
             </animated.div>
@@ -407,7 +407,7 @@ export default function Banner() {
                   <span className="nametag-title">Sandra Lue</span>
                   <span className="nametag-designation">
                     <span>
-                      Chief Marketing Officer
+                      Head of finance @ LawrellBell 
                     </span>
                     <span>
                       <Svgs.Badge />
@@ -541,7 +541,7 @@ export default function Banner() {
             style={{ backgroundColor: "#00B5B4" }}
           >
             <span className="getstarted-button-modify">
-              Get Started
+              Calculate Rewards
             </span>
           </Button>
         </Box>
@@ -577,7 +577,7 @@ export default function Banner() {
                 style={{cursor:'pointer'}}
               />
               </div>
-              <audio ref={svgRef} id="audio" src="/PAAQ.wav"></audio>
+              <audio ref={svgRef} id="audio" src="/What is PAAQ.mp3"></audio>
             </div>
 
             <div className="web-show-paaq-text">

@@ -9576,6 +9576,7 @@ input::-webkit-inner-spin-button {
   .connection-detail {
     padding-left: 7% !important;
     padding-right: 0% !important;
+    padding-bottom: 2%;
   }
 
   .connection-detail-modify-1 {
@@ -10147,4 +10148,8 @@ select[name="countrySelect"]{
   border-radius: 2px;
   margin-right: 1rem;
   padding: 1rem;
+}
+
+.banner-titel-mobile-text-1,.banner-titel-mobile-text-2{
+  color: #1E1E1E80;
 }

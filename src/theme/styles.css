@@ -535,6 +535,12 @@ button {
   /* padding-right: 1%; */
 }
 
+@media screen and (max-width:540px) {
+  .connection-heading {
+    padding-left: 7%;
+  }
+}
+
 .connection-detail {
   padding-left: 10%;
   padding-right: 10%;
@@ -639,6 +645,7 @@ button {
   padding-top: 170px;
   width: 80%;
   display: flex;
+  justify-content: center;
 }
 @media (max-width: 720px) {
   .earn-money-main2 {
@@ -746,10 +753,9 @@ button {
 }
 
 .earn-money-subheading {
-  color: #5b5b5b;
   font-size: 18px;
   line-height: 38px;
-  color: #5b5b5b;
+  color: #5B5B5B;
   font-family: "Sofia-Pro";
 }
 @media (max-width: 720px) {
@@ -1798,7 +1804,7 @@ button {
 .nametag-designation {
   font-family: "SofiaPro-Light";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   text-align: left;
   margin-left: 20px;
@@ -1852,7 +1858,7 @@ button {
   box-shadow: 5px 10px 44px 0px rgba(0, 181, 180, 0.35);
   border-radius: 40px !important;
   height: 60px;
-  width: 186px;
+  width: 195px;
   font-family: "Sofia-Pro";
   margin-top: 10px !important;
   color: #fff;

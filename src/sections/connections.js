@@ -106,7 +106,7 @@ export default function Connections() {
                                              display: "flex",
                                              justifyContent: "center",
                                              alignItems: "center",
-                                             paddingBottom: "0%",
+                                             paddingBottom: "5%",
                                         }}
                                    >
                                         Speaking with a professional about a health issue offers more assurance and peace of mind than relying solely on a search engine for answers.

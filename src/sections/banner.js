@@ -472,6 +472,23 @@ export default function Banner() {
                 className="main-section-inner main-section-inner-image10"
                 src={MainImage10}
               />
+                <animated.div
+                style={{ ...anim4, position: "absolute" ,top:'-69%'}}
+                className="main-section-image2-nametag-containerleft"
+                id="main-section-image2-nametag-containerleft8"
+              >
+                <div className="main-section-image2-nametag">
+                  <span className="nametag-title">Kisha Cole</span>
+                  <span className="nametag-designation">
+                    <span>
+                    Student at UCT
+                    </span>
+                    <span>
+                      <Svgs.Books />
+                    </span>
+                  </span>
+                </div>
+              </animated.div>
             </animated.div>
           </div>
 

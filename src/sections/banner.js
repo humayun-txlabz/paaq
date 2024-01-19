@@ -676,7 +676,7 @@ export default function Banner() {
               overflow: "hidden",
             }}
           >
-            <PaaqHomeSlider width='286px' height='419px'/>
+            <PaaqHomeSlider width='286px' height='429px'/>
             {/* {domLoaded && (
               <div className='player-wrapper' style={{marginBottom:'0px'}}>
                 <ReactPlayer
@@ -740,7 +740,7 @@ const styles = {
     margin: "30px 0px",
     fontFamily: "Sofia-Pro",
     fontWeight: 500,
-    color: "#1E1E1E",
+    color: "rgba(30, 30, 30, 0.5)",
     lineHeight: 1.2,
     fontSize: 20,
     "@media screen and (max-width: 720px)": {

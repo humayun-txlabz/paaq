@@ -152,6 +152,7 @@ export default function Connections() {
                                              display: "flex",
                                              justifyContent: "center",
                                              alignItems: "center",
+                                             paddingBottom:'10%',
                                         }}
                                    >
                                         It is nice to enjoy a delicious meal and a chilled

@@ -54,7 +54,7 @@ export default function BlogDetails2(props) {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO />
+          <SEO title="blogs details" />
           <SingleBlogItem blogItem={fields?.details} />
         </Layout>
       </StickyProvider>

@@ -51,13 +51,6 @@ sexual contexts.`
 
         detail2: `Hate speech or content that demonises, defames, or promotes violence or discrimination on the basis of race, colour, caste, ethnicity, national origin, religion, sexual orientation, gender identity, immigration status, socioeconomic status, age, weight, or pregnancy status is prohibited.
 
-We encourage you to use our reporting feature within the platform to contact our Trust & Safety team. These reports are reviewed to determine if any of our guidelines have been violated.
-
-Upon violation of these Community Guidelines, we may remove the offending content, terminate your account, or limit visibility of your account, and/or notify law enforcement. When activities pose a threat to human life, we work together with global law enforcement. If you violate our Terms of Service, or these guidelines, your account will be terminated and you cannot use PAAQ again.
-
-Users may be removed from PAAQ if we believe in our sole discretion that they pose a clear and present danger to others, both on and off our platform. The list includes members of hate groups and terrorist organisations, as well as individuals who are known for inciting violence or acting in a way that we believe is dangerous.
-
-
-Please respect these guidelines and honour them accordingly.`
+`
     },
 ]

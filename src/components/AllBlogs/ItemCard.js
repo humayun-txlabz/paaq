@@ -25,11 +25,9 @@ const ItemCard = (props) => {
                                        className="item-card-image-inner"
                                        
                                   />
-                                  {/* <div className='item-card-tag-outer'>
-                                                <Badge className='item-card-tag'>Fashion</Badge>
-                                                <Badge className='item-card-tag'>Health</Badge>
-                                                <Badge className='item-card-tag'>Business</Badge>
-                                            </div> */}
+                                  <div className='item-card-tag-outer'>
+                                   {blog?.fields?.tags?.items?.map((tag)=>( <Badge className='item-card-tag'>{tag}</Badge>))}
+                                            </div>
                                   <div className="item-card-title">
                                        <span className="item-card-title-inner">
                                             {blog.fields?.title}

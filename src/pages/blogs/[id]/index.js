@@ -49,13 +49,13 @@ export const getStaticPaths = async () =>{
 
 export default function BlogDetails2(props) {
   const { fields } = props;
-
+  console.log('h__',fields?.date)
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO />
-          <SingleBlogItem blogItem={fields?.details} />
+          <SEO title="blogs details" />
+          <SingleBlogItem blogItem={fields?.details} date={fields?.date} />
         </Layout>
       </StickyProvider>
     </ThemeProvider>

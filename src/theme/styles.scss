@@ -158,9 +158,13 @@ body {
   .right-container {
     display: flex;
     align-items: center;
+    flex: 2;
+    justify-content: space-around;
 
     .nav-menu-desktop {
       display: flex;
+      flex-direction: row;
+      justify-content: space-around;
       align-items: center;
       width: 100%;
 
@@ -797,6 +801,7 @@ body {
         font-family: var(--pro);
         font-weight: 700;
         font-size: 22px;
+        margin-top: 2rem;
       }
 
       @media (max-width: 870px) {
@@ -909,7 +914,7 @@ body {
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
     padding-right: 10%;
-    padding-left: 10%;
+    padding-left: 7.5%;
     margin-top: 6rem;
     scroll-margin-top: 8rem;
 
@@ -925,6 +930,7 @@ body {
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
+     
 
       .heading {
         display: flex;
@@ -1001,6 +1007,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      
 
       .image {
         height: 600px;
@@ -1162,7 +1169,8 @@ body {
         font-family: var(--light);
         font-weight: 400;
         font-size: 18px;
-        padding-right: 8rem;
+        padding-right: 2rem;
+        width: 100%;
       }
 
       @media (max-width: 946px) {
@@ -5266,7 +5274,7 @@ body {
       justify-content: center;
       position: relative;
       width: 100%;
-      padding-top: 10%;
+      padding-top: 20%;
       padding-bottom: 10%;
 
       .left1 {
@@ -5386,7 +5394,7 @@ body {
 
       .main {
         width: 15%;
-        margin-top: -3%;
+        margin-top: -11%;
       }
     }
 
@@ -6490,7 +6498,7 @@ body {
       font-family: var(--pro);
       font-style: normal;
       font-weight: 500;
-      font-size: 20px;
+      font-size: 22px;
       line-height: 27px;
       margin-left: -15px;
       color: #000000;
@@ -7147,7 +7155,7 @@ body {
 
 .rich-paragraph {
   font-family: var(--light);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   margin-top: 30px;
   color: #4B5157;
@@ -7205,7 +7213,7 @@ body {
 .single-hc-question {
   font-family: var(--pro);
   font-weight: 700;
-  font-size: 33px;
+  font-size: 40px;
   line-height: 80px;
   margin-top: 4%;
   margin-bottom: 1rem;
@@ -7225,13 +7233,13 @@ body {
 
 .rich-text-helpcenter {
   font-family: var(--light);
-  font-size: 15px;
+  font-size: 24px;
   color: #4B5157;
 
   >b {
     font-family: var(--pro);
     font-weight: 700;
-    font-size: 21px;
+    font-size: 28px;
     color: #4B5157;
   }
 }
@@ -8128,7 +8136,8 @@ input::-webkit-inner-spin-button {
 
 
 .interaction-card-count {
-  left: 70% !important;
+  left: 83% !important;
+  top: 14% !important;
 }
 
 .interaction-card-count-end {
@@ -8206,10 +8215,10 @@ input::-webkit-inner-spin-button {
   font-family: var(--light);
   font-style: normal;
   // font-weight: 300;
-  font-size: 17px;
+  font-size: 18px;
 
   li {
-    padding-top: 2.3rem;
+    padding-top: 1.1rem;
     display: flex;
     align-items: center;
     margin-left: -40px;
@@ -8344,6 +8353,9 @@ input::-webkit-inner-spin-button {
   width: 395px;
   height: 702.22px;
   position: relative;
+  box-shadow: 0 10px 8px rgba(204, 204, 204, 0.8);
+  border-radius: 20px;
+
 
   @media (min-width: 0px) and (max-width: 510px) {
     width: 246px;
@@ -8388,7 +8400,7 @@ input::-webkit-inner-spin-button {
 }
 
 .in-app-text {
-  padding-left: 75px;
+  padding-left: 130px;
 
   p {
     color: rgba(75, 81, 87, 1) !important;

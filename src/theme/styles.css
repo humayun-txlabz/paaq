@@ -197,6 +197,7 @@ button {
   justify-content: space-between;
   align-items: center;
   /* margin: 0px 90px; */
+  margin-bottom: -3rem;
 }
 
 .title-card-heading {
@@ -2385,7 +2386,7 @@ button {
 }
 .aboutus-left-section-heading {
   font-size: 94px;
-  font-weight: bold;
+  font-weight: 600;
   color: #ffffff;
   font-family: "Sofia-Pro";
   margin: 0;

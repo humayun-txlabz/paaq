@@ -636,6 +636,8 @@ ansi-styles@^3.2.1:
 
 antd@^4.21.5:
   version "4.23.2"
+  resolved "https://registry.npmjs.org/antd/-/antd-4.23.2.tgz"
+  integrity sha512-GGOaIUxPg8wl8lGcCJ2U/1Eg5mt0hNb554a0y4mTJa1ijPRCNM8XjUcio4lTMM7M9/fLm9ttKtyxHg4n+JX26A==
   dependencies:
     "@ant-design/colors" "^6.0.0"
     "@ant-design/icons" "^4.7.0"
@@ -1166,11 +1168,15 @@ content-disposition@^0.5.2:
 
 contentful-resolve-response@^1.3.0:
   version "1.3.10"
+  resolved "https://registry.npmjs.org/contentful-resolve-response/-/contentful-resolve-response-1.3.10.tgz"
+  integrity sha512-ljUbV+4WFRalcAy4TxpbVVd1mUz67p2lMBkrngseAc3E1NhWnI0OGFoV/AwffOhI1M2rcwCtepBput8eEpXyQw==
   dependencies:
     fast-copy "^2.1.3"
 
 contentful-sdk-core@^7.0.1:
   version "7.0.2"
+  resolved "https://registry.npmjs.org/contentful-sdk-core/-/contentful-sdk-core-7.0.2.tgz"
+  integrity sha512-HkBzzzJ3UGqOIJiTd4qMEMvn44ccrN7a75gEej28X1srGn05myRgJ/pWbmXJhtgpq/5gU7IURnynyKx/ecsOfg==
   dependencies:
     fast-copy "^2.1.3"
     lodash.isplainobject "^4.0.6"
@@ -1210,6 +1216,8 @@ copy-to-clipboard@^3.2.0:
 
 core-js@^3.6.5:
   version "3.25.3"
+  resolved "https://registry.npmjs.org/core-js/-/core-js-3.25.3.tgz"
+  integrity sha512-y1hvKXmPHvm5B7w4ln1S4uc9eV/O5+iFExSRUimnvIph11uaizFR8LFMdONN8hG3P2pipUfX4Y/fR8rAEtcHcQ==
 
 core-util-is@~1.0.0:
   version "1.0.3"
@@ -1579,6 +1587,8 @@ error-ex@^1.3.1:
 
 es-abstract@^1.17.2, es-abstract@^1.19.0, es-abstract@^1.19.1, es-abstract@^1.19.2, es-abstract@^1.19.5, es-abstract@^1.20.1:
   version "1.20.3"
+  resolved "https://registry.npmjs.org/es-abstract/-/es-abstract-1.20.3.tgz"
+  integrity sha512-AyrnaKVpMzljIdwjzrj+LxGmj8ik2LckwXacHqrJJ/jxz6dDDBcZ7I7nlHM0FvEW8MfbWJwOd+yT2XzYW49Frw==
   dependencies:
     call-bind "^1.0.2"
     es-to-primitive "^1.2.1"
@@ -1633,6 +1643,11 @@ eventemitter3@^3.0.0:
   version "3.1.2"
   resolved "https://registry.npmjs.org/eventemitter3/-/eventemitter3-3.1.2.tgz"
   integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
+
+eventemitter3@^4.0.3:
+  version "4.0.7"
+  resolved "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz"
+  integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
 exec-buffer@^3.0.0:
   version "3.2.0"
@@ -2241,6 +2256,14 @@ hey-listen@^1.0.5, hey-listen@^1.0.8:
   version "1.0.8"
   resolved "https://registry.npmjs.org/hey-listen/-/hey-listen-1.0.8.tgz"
   integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
+
+hls.js@^0.14.17:
+  version "0.14.17"
+  resolved "https://registry.npmjs.org/hls.js/-/hls.js-0.14.17.tgz"
+  integrity sha512-25A7+m6qqp6UVkuzUQ//VVh2EEOPYlOBg32ypr34bcPO7liBMOkKFvbjbCBfiPAOTA/7BSx1Dujft3Th57WyFg==
+  dependencies:
+    eventemitter3 "^4.0.3"
+    url-toolkit "^2.1.6"
 
 hoist-non-react-statics@^2.5.0:
   version "2.5.5"
@@ -3746,6 +3769,8 @@ rc-dropdown@~4.0.0:
 
 rc-field-form@~1.27.0:
   version "1.27.1"
+  resolved "https://registry.npmjs.org/rc-field-form/-/rc-field-form-1.27.1.tgz"
+  integrity sha512-RShegnwFu6TH8tl2olCxn+B4Wyh5EiQH8c/7wucbkLNyue05YiH5gomUAg1vbZjp71yFKwegClctsEG5CNBWAA==
   dependencies:
     "@babel/runtime" "^7.18.0"
     async-validator "^4.1.0"
@@ -3763,6 +3788,8 @@ rc-image@~5.7.0:
 
 rc-input-number@~7.3.5:
   version "7.3.9"
+  resolved "https://registry.npmjs.org/rc-input-number/-/rc-input-number-7.3.9.tgz"
+  integrity sha512-u0+miS+SATdb6DtssYei2JJ1WuZME+nXaG6XGtR8maNyW5uGDytfDu60OTWLQEb0Anv/AcCzehldV8CKmKyQfA==
   dependencies:
     "@babel/runtime" "^7.10.1"
     classnames "^2.2.5"
@@ -4083,6 +4110,13 @@ react-google-recaptcha@^2.1.0:
   dependencies:
     prop-types "^15.5.0"
     react-async-script "^1.1.1"
+
+react-hls-player@^3.0.7:
+  version "3.0.7"
+  resolved "https://registry.npmjs.org/react-hls-player/-/react-hls-player-3.0.7.tgz"
+  integrity sha512-i5QWNyLmaUhV/mgnpljRJT0CBfJnylClV/bne8aiXO3ZqU0+D3U/jtTDwdXM4i5qHhyFy9lemyZ179IgadKd0Q==
+  dependencies:
+    hls.js "^0.14.17"
 
 react-icons@^4.12.0:
   version "4.12.0"
@@ -5081,6 +5115,11 @@ url-to-options@^1.0.1:
   resolved "https://registry.npmjs.org/url-to-options/-/url-to-options-1.0.1.tgz"
   integrity sha512-0kQLIzG4fdk/G5NONku64rSH/x32NOA39LVQqlK8Le6lvTF6GGRJpqaQFGgU+CLwySIqBSMdwYM0sYcW9f6P4A==
 
+url-toolkit@^2.1.6:
+  version "2.2.5"
+  resolved "https://registry.npmjs.org/url-toolkit/-/url-toolkit-2.2.5.tgz"
+  integrity sha512-mtN6xk+Nac+oyJ/PrI7tzfmomRVNFIWKUbG8jdYFt52hxbiReFAXIjYskvu64/dvuW71IcB7lV8l0HvZMac6Jg==
+
 use-is-in-viewport@^1.0.9:
   version "1.0.9"
   resolved "https://registry.npmjs.org/use-is-in-viewport/-/use-is-in-viewport-1.0.9.tgz"
@@ -5127,6 +5166,8 @@ warning@^3.0.0:
 
 wavesurfer.js@^6.2.0:
   version "6.2.0"
+  resolved "https://registry.npmjs.org/wavesurfer.js/-/wavesurfer.js-6.2.0.tgz"
+  integrity sha512-yuOteX+RKgJl4p5V+YNflm79QRNFWpNo0UHtKaGf1G05qMNChfbcJU0MZYL7+OJTHgYszYqN3dgUXjugYd/Iew==
 
 webidl-conversions@^3.0.0:
   version "3.0.1"

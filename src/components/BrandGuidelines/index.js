@@ -57,7 +57,7 @@ const BrandGuidelinesMain = () => {
                 </div>
             </div>
             <div className='brand-guidelines-main-right'>
-                <Image src={HeaderImage} style={{maxHeight:"33rem"}} />
+                <Image src={HeaderImage} style={{maxHeight:"31.5rem"}} />
             </div>
         </div>
     );

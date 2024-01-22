@@ -54,9 +54,9 @@ const MainBlog = (props) => {
       </div>
       { !isPostsEnded ? (
       <div className="blogs-main-btn-bottom">
-        <div className="blogs-main-bottom-color-btn" onClick={() => getPosts()}>
+        {allPosts.length>1&&<div className="blogs-main-bottom-color-btn" onClick={() => getPosts()}>
           Load More...
-        </div>
+        </div>}
       </div>
       ) : null}
       <div className="footer_alignment"><AppAndPlayStoreFooter /></div>

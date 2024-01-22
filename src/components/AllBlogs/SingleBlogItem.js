@@ -8,15 +8,14 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { BLOCKS, MARKS, INLINES } from '@contentful/rich-text-types';
 import TitleCard from './TitleCard';
 import AppAndPlayStoreFooter from 'components/appAndPlayStoreFooter';
+import Clock from '../../assets/Images/clock.png'
 
 
+const SingleBlogItem = ({blogItem,date}) => {
 
-const SingleBlogItem = (props) => {
-
-  const { blogItem } = props;
 
   // const RichBold = ({ children }) => <p className="bold"  style={{ fontFamily: 'Sofia-Pro'}}>{children}</p>;
-
+console.log('Item__)',blogItem)
   const RichParagraph = ({ children }) => <p className="align-center" style={{ fontFamily: 'Sofia-Pro', fontSize: 18,color:"#4B5157" }}>{children}</p>;
 
   const Heading1 = ({ children }) => <h1 className="blog-detail-heading1" >{children}
@@ -45,14 +44,19 @@ const SingleBlogItem = (props) => {
 
         switch (mimeGroup) {
           case 'image':
-            return <img
-              title={title ? title : null}
-              alt={description ? description : null}
-              width={"100%"}
-              height={'auto'}
-              src={file.url}
-              style={{ borderRadius: 22, objectFit: 'cover', margin: '10px 0px' }}
-            />
+            return (
+              <div>
+                <img
+                  title={title ? title : null}
+                  alt={description ? description : null}
+                  width={"100%"}
+                  height={'auto'}
+                  src={file.url}
+                  style={{ borderRadius: 22, objectFit: 'cover', margin: '10px 0px' }}
+                />
+                {true && <p style={{ fontFamily: 'Sofia-Pro', fontSize: 18, color: "#777",width:'100%',textAlign:'center' }}><img style={{width:'20px',marginBottom:'3px'}} src={Clock}/> {date}</p>}
+              </div>
+            );
           case 'application':
             return <a
               alt={description ? description : null}

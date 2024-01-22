@@ -24,7 +24,7 @@ const TitleCard = (props) => {
   };
   
   return (
-    <div className="title-card" style={{flexDirection: title === ''? 'row-reverse': ''}}>
+    <div className="title-card" style={{flexDirection: title === ''? 'row-reverse': '',marginBottom:'0.5rem'}}>
       <span className="title-card-heading">{title}</span>
       <div className="title-icons-container">
         <span className="share-text-blogs-page">SHARE</span>

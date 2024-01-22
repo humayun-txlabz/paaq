@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
-import img1 from '../assets/paaqHomeSlider/img1.png'
-import img2 from '../assets/paaqHomeSlider/img2.png'
-import img3 from '../assets/paaqHomeSlider/img3.png'
-import img4 from '../assets/paaqHomeSlider/img4.png'
-import img5 from '../assets/paaqHomeSlider/img5.png'
-import img6 from '../assets/paaqHomeSlider/img6.png'
-import img7 from '../assets/paaqHomeSlider/img7.png'
-import img8 from '../assets/paaqHomeSlider/img8.png'
-import img9 from '../assets/paaqHomeSlider/img9.png'
+import img1 from '../assets/paaqHomeSlider/img1.svg'
+import img2 from '../assets/paaqHomeSlider/img2.svg'
+import img3 from '../assets/paaqHomeSlider/img3.svg'
+import img4 from '../assets/paaqHomeSlider/img4.svg'
+import img5 from '../assets/paaqHomeSlider/img5.svg'
+import img6 from '../assets/paaqHomeSlider/img6.svg'
+import img7 from '../assets/paaqHomeSlider/img7.svg'
+import img8 from '../assets/paaqHomeSlider/img8.svg'
+import img9 from '../assets/paaqHomeSlider/img9.svg'
 
 const PaaqHomeSlider = ({width, height}) => {
     const [images, setImages] = useState([

@@ -143,7 +143,7 @@ const AskQuestionBanner = React.forwardRef(function AskQuestionBanner(parentRef)
                               />
                          </animated.div>
                     </div>
-                    <div className="ask-secondavatar" style={{ zIndex:showQuestion && setTimeout(() => "18px", 400)}}>
+                    <div className="ask-secondavatar" style={{ grid:showQuestion && setTimeout(() => "18px", 400)}}>
                          <animated.div className={'ask-secondavatar-img'} style={poppingOutAnimation(13000)}>
                               <img
                                    className="earn-money-image ask-question-avatar2"

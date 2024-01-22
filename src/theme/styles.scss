@@ -894,8 +894,8 @@ body {
     }
 
     @media (max-width: 746px) {
-      padding-right: 4rem;
-      padding-left: 4rem;
+      padding-right: 3.5rem;
+      padding-left: 3.5rem;
 
       .left {
         margin-right: 0rem;
@@ -2284,7 +2284,7 @@ body {
             border-radius: 12px !important;
 
             @media (min-width: 0px) and (max-width: 992px) {
-              width: 46px;
+              width: 50px;
               height: 24.55px;
               font-size: 12px !important;
             }
@@ -8165,7 +8165,8 @@ input::-webkit-inner-spin-button {
   }
 
   .interaction-card-count {
-    left: 13% !important;
+    left: 75% !important;
+    top: 8% !important;
   }
 
   .interaction-card-count-end {
@@ -8872,7 +8873,7 @@ input::-webkit-inner-spin-button {
   .features-page-container .section-5 .left .heading .big-ask-button .inner {
     border-radius: 9px !important;
     margin-top: 4px;
-    height: 26px;
+    height: 28px;
   }
 
   .feature-ask-btn-modify {
@@ -8881,8 +8882,8 @@ input::-webkit-inner-spin-button {
 
   .features-page-container .section-2 .left .heading {
     svg {
-      width: 30px;
-      height: 30px;
+      width: 34px;
+      height: 34px;
     }
   }
 
@@ -9658,7 +9659,7 @@ input::-webkit-inner-spin-button {
   }
 
   .features-page-container .section-5 .right .left-paid-messages-component {
-    width: 58vw !important;
+    width: 61vw !important;
   }
 
   .features-page-container .section-5 .left .heading .big-ask-button .inner>h3 {
@@ -9675,7 +9676,7 @@ input::-webkit-inner-spin-button {
   }
 
   .features-page-container .section-5 .left {
-    padding: 0 7px !important;
+    // padding: 0 7px !important;
   }
 
   .features-page-container .section-4 .left {

@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react'
 
 import Calculate from '../../src/assets/feature/calculate.svg'
-import CalculateMobile from '../../src/assets/feature/calculateMobile.svg'
 const CalculatorPotential = React.forwardRef(function CalculatorPotential(parentRef) {
 
      return (
@@ -20,9 +19,7 @@ const CalculatorPotential = React.forwardRef(function CalculatorPotential(parent
                     </span>
                </div>
                <div className="earn-money-detail imageContainer">
-                  
-                   <span className='imageMobile'><img  src={CalculateMobile} alt='calculate image '/></span>
-                   <span className='imageDesktop'> <img  src={Calculate} alt='calculate image '/></span>
+                   <span className='imageDesktop'> <img src={Calculate} alt='calculate image '/></span>
                </div>
           </div>
      );

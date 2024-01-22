@@ -166,7 +166,7 @@ const styles = {
     textContainer: {
         width: '80%',
         '@media screen and (max-width: 720px)': {
-            width: '88%',
+            width: '84%',
         },
     },
     listContainer: {

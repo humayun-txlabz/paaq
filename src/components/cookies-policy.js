@@ -83,7 +83,7 @@ const CookiesPolicy = () => {
                     <p>By email: <a href='mailto:cookies@paaq.app' class="__cf_email__" data-cfemail="1e777078715e6e7f7f6f307f6e6e">cookies@paaq.app</a></p>
                 </li>
                 <li>
-                    <p>By visiting this page on our website: <a href="https://paaq.app/contactUs" rel="external nofollow noopener" target="_blank">https://paaq.app/contactUs</a></p>
+                    <p>By visiting this page on our website: <a href="https://paaq.app/contact-us" rel="external nofollow noopener" target="_blank">https://paaq.app/contact-us</a></p>
                 </li>
             </ul><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
         </div>

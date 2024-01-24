@@ -101,7 +101,7 @@ export default {
     ],
     [
       {
-        path: '/contactUs',
+        path: '/contact-us',
         label: 'Contact Us',
       },
       {

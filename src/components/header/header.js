@@ -6,7 +6,8 @@ import { keyframes } from "@emotion/core";
 import Link from "next/link";
 import Logo from "components/logo";
 import LogoDark from "assets/logo.svg";
-import LogoMain from "assets/logoMain.svg";
+// import LogoMain from "assets/logoMain.svg";
+import LogoMain from "../../../public/PAAQ_Logo.jpg";
 
 import { DrawerProvider } from "../../contexts/drawer/drawer.provider";
 import MobileDrawer from "./mobile-drawer";

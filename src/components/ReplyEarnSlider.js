@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-import img1 from '../assets/replyEarn/img1.png'
-import img2 from '../assets/replyEarn/img2.png'
-import img3 from '../assets/replyEarn/img3.png'
+import img1 from '../assets/replyEarn/img11.png'
+import img2 from '../assets/replyEarn/img22.png'
+import img3 from '../assets/replyEarn/img33.png'
 
 const ReplyEarnSlider = () => {
     const [images, setImages] = useState([
@@ -23,7 +23,7 @@ const ReplyEarnSlider = () => {
       // console.log("currentIndex", currentIndex)
     
       return (
-        <div className='reply-silder'>
+        <div className='reply-silder bg-shadow-img' data-index={currentIndex+1}>
           <img
             src={images[currentIndex]}
             alt={`Image ${currentIndex + 1}`}

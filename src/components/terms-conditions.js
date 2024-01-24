@@ -161,7 +161,7 @@ const TermsConditions = () => {
                     <p>By email: <a href='mailto:legal@paaq.app' class="__cf_email__" data-cfemail="8ee2ebe9efe2cefeefefffa0effefe">legal@paaq.app</a></p>
                 </li>
                 <li>
-                    <p>By visiting this page on our website: <a href="https://paaq.app/contactUs" rel="external nofollow noopener" target="_blank">https://paaq.app/contactUs</a></p>
+                    <p>By visiting this page on our website: <a href="https://paaq.app/contact-us" rel="external nofollow noopener" target="_blank">https://paaq.app/contact-us</a></p>
                 </li>
             </ul><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
         </div>

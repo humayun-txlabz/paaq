@@ -557,7 +557,7 @@ const PrivacyPolicy = () => {
                     <p>By email: <a href='mailto:policy@paaq.app' class="__cf_email__" data-cfemail="ec85828a83ac9c8d8d9dc28d9c9c">policy@paaq.app</a></p>
                 </li>
                 <li>
-                    <p>By visiting this page on our website: <a href="https://paaq.app/contactUs" rel="external nofollow noopener" target="_blank">https://paaq.app/contactUs</a></p>
+                    <p>By visiting this page on our website: <a href="https://paaq.app/contact-us" rel="external nofollow noopener" target="_blank">https://paaq.app/contact-us</a></p>
                 </li>
             </ul>
             <p>Only You, or a person registered with the California Secretary of State that You authorize to act on Your behalf, may make a verifiable request related to Your personal information.</p>
@@ -626,7 +626,7 @@ const PrivacyPolicy = () => {
                     <p>By email: <a href='mailto:policy@paaq.app' class="__cf_email__" data-cfemail="8de4e3ebe2cdfdececfca3ecfdfd">policy@paaq.app</a></p>
                 </li>
                 <li>
-                    <p>By visiting this page on our website: <a href="https://paaq.app/contactUs" rel="external nofollow noopener" target="_blank">https://paaq.app/contactUs</a></p>
+                    <p>By visiting this page on our website: <a href="https://paaq.app/contact-us" rel="external nofollow noopener" target="_blank">https://paaq.app/contact-us</a></p>
                 </li>
             </ul><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
             

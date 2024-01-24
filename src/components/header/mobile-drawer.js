@@ -5,7 +5,8 @@ import Drawer from 'components/drawer';
 import { DrawerContext } from '../../contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link } from 'components/link';
-import logoMain from '../../assets/logoMain.svg'
+// import logoMain from '../../assets/logoMain.svg'
+import logoMain from '../../../public/PAAQ_Logo.jpg'
 
 import {
   FaFacebookF,

@@ -103,7 +103,7 @@ const EulaDetail = () => {
     <p>You acknowledge and agree that the Company shall not be responsible for any Third-party Services, including their accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect thereof. The Company does not assume and shall not have any liability or responsibility to You or any other person or entity for any Third-party Services.</p>
     <p>You must comply with applicable Third parties' Terms of agreement when using the Application. Third-party Services and links thereto are provided solely as a convenience to You and You access and use them entirely at your own risk and subject to such third parties' Terms and conditions.</p>
     <h1>Privacy Policy</h1>
-    <p>The Company collects, stores, maintains, and shares information about You in accordance with Our Privacy Policy: <a href="www.paaq.app/privacy-policy" rel="external nofollow noopener" target="_blank">www.paaq.app/privacy-policy</a></p>
+    <p>The Company collects, stores, maintains, and shares information about You in accordance with Our Privacy Policy: <a href="https://www.paaq.app/policy" rel="external nofollow noopener" target="_blank">www.paaq.app/privacy-policy</a></p>
     <p>By accepting this Agreement, You acknowledge that You hereby agree and consent to the terms and conditions of Our Privacy Policy.</p>
     <h1>Term and Termination</h1>
     <p>This Agreement shall remain in effect until terminated by You or the Company.
@@ -146,7 +146,7 @@ const EulaDetail = () => {
             <p>By email: <a href='mailto:eula@paaq.app' class="__cf_email__" data-cfemail="ea83848c85aa9a8b8b9bc48b9a9a">eula@paaq.app</a></p>
         </li>
         <li>
-            <p>By visiting this page on our website: <a href="https://paaq.app/contactUs" rel="external nofollow noopener" target="_blank">https://paaq.app/contactUs</a></p>
+            <p>By visiting this page on our website: <a href="https://paaq.app/contact-us" rel="external nofollow noopener" target="_blank">https://paaq.app/contact-us</a></p>
         </li>
     </ul><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 </div>

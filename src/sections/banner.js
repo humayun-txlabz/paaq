@@ -29,6 +29,7 @@ import homelightskill from '../assets/home/homelightskill.png'
 import PaaqHomeSlider from "components/PaaqHomeSlider";
 import Svgs from "assets/Icons/Svgs";
 import useWindowDimensions from "constants/useWindowsDimentions";
+import { Howl } from 'howler';
 
 export default function Banner() {
   const svgRef = React.createRef();
@@ -36,8 +37,17 @@ export default function Banner() {
   const [speak, setSpeak] = useState(false);
   const [isTruncated, setIsTruncated] = useState(true);
   const [Size, setSize] = useState({});
+  const [sound, setSound] = useState(null);
 
-  console.log("isTruncated", isTruncated);
+  useEffect(() => {
+    setSound(
+      new Howl({
+        src: ['/What is PAAQ.mp3'], // Replace with the actual path to your sound file
+        loop: true,
+      })
+    );
+  }, []);
+
   const width = useWindowDimensions();
   useEffect(() => {
     setDomLoaded(true);
@@ -244,16 +254,24 @@ export default function Banner() {
   };
 
   const handleSpeakerClick = () => {
-
-    if (svgRef.current.paused) {
-      svgRef.current.play();
-      setSpeak(true)
+    if (speak) {
+      console.log('PAUSE');
+      sound.pause();
     } else {
-      svgRef.current.pause();
-      setSpeak(false)
+      console.log('PLAY');
+      sound.play();
     }
-
+    setSpeak(!speak);
   };
+
+  useEffect(() => {
+    setInterval(() => {
+      if(!speak && sound){
+        sound.resume();
+      }
+    }, 100);
+  }, [])
+  
 
   
 
@@ -338,7 +356,7 @@ export default function Banner() {
               >
                 <div
                   className="main-section-image2-nametag"
-                  id="main-section-image2-nametag4"
+                  id="main-section-image2-nametag7"
                   style={{ minWidth: 193 }}
                 >
                   <span className="nametag-title">Franco Landman</span>
@@ -505,7 +523,7 @@ export default function Banner() {
             <animated.div style={poppingOutAnimation(1000)}>
               <Image
                 className="main-section-inner main-section-inner-image11"
-                src={MainImage11}
+                src={Size?.width <= 600 ?  MainImage4 : MainImage11}
               />
               <animated.div
                 style={{ position: "absolute", ...anim7 }}
@@ -603,7 +621,6 @@ export default function Banner() {
                 style={{cursor:'pointer'}}
               />
               </div>
-              <audio ref={svgRef} id="audio" src="/What is PAAQ.mp3"></audio>
             </div>
 
             <div className="web-show-paaq-text">

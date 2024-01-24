@@ -3,7 +3,7 @@ import Layout from 'components/layout';
 import SEO from 'components/seo';
 import theme from 'theme';
 import { ThemeProvider } from 'theme-ui';
-import { StickyProvider } from '../contexts/app/app.provider';
+import { StickyProvider } from '../../contexts/app/app.provider';
 
 export default function ContactUs() {
     return (

@@ -115,7 +115,7 @@ const AskQuestionBanner = React.forwardRef(function AskQuestionBanner(parentRef)
                <div className="ask-question-left-container">
                     <div className="ask-firstavatar ask-firstavatar-modify">
 
-                         <animated.div style={defaultAnimation(1000)}>
+                         <animated.div className={'w-fit'} style={defaultAnimation(1000)}>
                               <div className="ask-firstavatar-question" style={{ position: 'relative', width: showTyped === false ? '109px' : '', transition:'0.2s all' }}>
                                    <span className="ask-firstavatar-question-detail">
                                         {/* Mark, my company is based in London, and we are planning to open multiple stores in Paris, where you are located. What factors should we consider since we both work in the same industry? */}
@@ -143,7 +143,7 @@ const AskQuestionBanner = React.forwardRef(function AskQuestionBanner(parentRef)
                               />
                          </animated.div>
                     </div>
-                    <div className="ask-secondavatar" style={{ grid:showQuestion && setTimeout(() => "18px", 400)}}>
+                    <div className="ask-secondavatar">
                          <animated.div className={'ask-secondavatar-img'} style={poppingOutAnimation(13000)}>
                               <img
                                    className="earn-money-image ask-question-avatar2"

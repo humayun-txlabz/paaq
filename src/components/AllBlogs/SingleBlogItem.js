@@ -83,16 +83,17 @@ console.log('Item__)',blogItem)
   };
 
   return (
-    <div className='blog-items' style={{ flexDirection: 'column', flexWrap: 'nowrap', width: '80%', margin: '0 auto', marginTop: 90 }}>
-      {
-        console.log(blogItem,  "blogitem")
-        
-      }
-      {console.log( richTextOptions, "richText")}
-      {documentToReactComponents(blogItem, richTextOptions)}
+    <>
+      <div className='blog-items' style={{ flexDirection: 'column', flexWrap: 'nowrap', width: '80%', margin: '0 auto', marginTop: 90, marginBottom: "3rem" }}>
+        {
+          console.log(blogItem,  "blogitem")
+          
+        }
+        {console.log( richTextOptions, "richText")}
+        {documentToReactComponents(blogItem, richTextOptions)}
+      </div>
        <AppAndPlayStoreFooter />
-    </div>
-
+    </>
   )
 }
 

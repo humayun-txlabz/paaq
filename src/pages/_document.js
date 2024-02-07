@@ -45,7 +45,7 @@ class CustomDocument extends Document {
           type="font/otf"
           crossOrigin="anonymous"
         />
-        <link rel="icon" type="image/svg+xml" href="/logoMain.svg" />
+        <link rel="icon" type="image/svg+xml" href="/PAAQ_favicon.png" />
 
         <body>
           <Main />

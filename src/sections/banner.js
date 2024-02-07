@@ -264,13 +264,6 @@ export default function Banner() {
     setSpeak(!speak);
   };
 
-  useEffect(() => {
-    setInterval(() => {
-      if(!speak && sound){
-        sound.resume();
-      }
-    }, 100);
-  }, [])
   
 
   
@@ -600,8 +593,7 @@ export default function Banner() {
             }}
           >
             <div
-              className="main-mobile-what-text"
-              style={{ display: "flex", alignItems: "center" }}
+              className="main-mobile-what-text d-flex align-items-end"
             >
               <div
                 className="mobile-what-text"
@@ -613,13 +605,10 @@ export default function Banner() {
               >
                 What is PAAQ
               </div>
-              <div>
-              <Image
-                className="mobile-speaker-icon"
-                src={  !speak ? SpeakerIcon : whitespeaker1}
-                onClick={() => handleSpeakerClick()}
-                style={{cursor:'pointer'}}
-              />
+              <div className="cursor-pointer" style={{marginBottom:"2%"}} onClick={() => handleSpeakerClick()}>
+                {
+                  !speak ? <Svgs.Speaker /> : <Svgs.Pause />
+                }
               </div>
             </div>
 
@@ -761,6 +750,7 @@ const styles = {
     position: "absolute",
     width: "100%",
     top: 0,
+    marginTop: "-10px !important",
   },
   bannerTitleMobile: {
     margin: "30px 0px",

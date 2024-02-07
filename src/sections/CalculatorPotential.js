@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 
 // import Calculate from '../../src/assets/feature/calculate.svg'
-import Calculate from '../../src/assets/feature/Group 1000007196.jpg'
+import Calculate from '../../src/assets/feature/calculate.png'
 const CalculatorPotential = React.forwardRef(function CalculatorPotential(parentRef) {
 
      return (

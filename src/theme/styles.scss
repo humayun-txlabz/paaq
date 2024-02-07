@@ -1149,6 +1149,7 @@ body {
             font-weight: 700;
             font-size: 30px;
             line-height: 38px;
+            white-space: nowrap;
           }
         }
       }
@@ -1910,7 +1911,7 @@ body {
 
           to {
             top: 50%;
-            right: -2%;
+            right: -8%;
             scale: 1;
             opacity: 1;
           }
@@ -8763,6 +8764,7 @@ input::-webkit-inner-spin-button {
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -8851,8 +8853,8 @@ input::-webkit-inner-spin-button {
   }
 
   .features-page-container .section-3 .left .heading .text .icon {
-    width: 26px;
-    height: 26px;
+    width: 32px;
+    height: 32px;
   }
 
   .features-page-container .section-3 .left .heading .text,
@@ -9782,7 +9784,7 @@ input::-webkit-inner-spin-button {
   }
 
   .features-page-container .section-4 .right>.uDiv7Anim {
-    margin-right: 20px !important;
+    margin-right: 6px !important;
   }
 }
 
@@ -9815,7 +9817,7 @@ input::-webkit-inner-spin-button {
   // }
 
   .interaction-card-left-heading {
-    margin-top: 5rem !important;
+    margin-top: 4rem !important;
     padding-right: 23px;
   }
 

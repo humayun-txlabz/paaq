@@ -3,6 +3,8 @@
   --pro: "Sofia-Pro";
   --light: "SofiaPro-Light";
   --bold: "Sofia-Pro-Bold";
+  /* text-rendering: optimizeLegibility;
+  font-synthesis: none; */
 }
 
 @font-face {
@@ -715,7 +717,7 @@ button {
   }
   .imageContainer{
     margin-top: 3rem;
-    padding: 1rem;
+    padding: 1rem 0 ;
   }
 }
 
@@ -759,7 +761,7 @@ button {
 @media (max-width: 720px) {
   .earn-money-subheading {
     font-size: 14px !important;
-    line-height: 29px !important;
+    line-height: 24px !important;
   }
   .btn_center{
     display: flex;
@@ -2108,7 +2110,8 @@ button {
   animation: ani11 2s;
   animation-iteration-count: 1;
   border-right: 0.1em solid transparent;
-  margin: 0px 10px;
+  margin: 0px;
+  margin-right: 10px;
   line-height: 88px;
   animation-delay: 3s;
 }
@@ -2117,7 +2120,8 @@ button {
   animation: ani11 2s;
   animation-iteration-count: 1;
   border-right: 0.1em solid transparent;
-  margin: 0px 10px;
+  margin: 0px;
+  margin-right: 10px;
   line-height: 88px;
   animation-delay: 3.5s;
 }
@@ -2126,7 +2130,8 @@ button {
   animation: ani11 2s;
   animation-iteration-count: 1;
   border-right: 0.1em solid transparent;
-  margin: 0px 10px;
+  margin: 0px;
+  margin-right: 10px;
   line-height: 88px;
   animation-delay: 4s;
   color: #1e1e1e;
@@ -2136,7 +2141,8 @@ button {
   animation: ani11 2s;
   animation-iteration-count: 1;
   border-right: 0.1em solid transparent;
-  margin: 0px 10px;
+  margin: 0px;
+  margin-right: 10px;
   line-height: 88px;
   animation-delay: 4.5s;
   color: #1e1e1e;
@@ -2150,7 +2156,7 @@ button {
 
   .box5,
   .box6 {
-    margin: -20px 0px 0px 10px;
+    margin: -20px 0px 0px 8px;
     font-weight: 600;
   }
 }
@@ -2488,7 +2494,7 @@ button {
   .aboutus-left-section {
     padding-left: 7%;
     padding-right: 9%;
-    padding-top: 21%;
+    padding-top: 12%;
   }
   .aboutus-left-section-heading {
     font-size: 44px;
@@ -3997,6 +4003,9 @@ button {
   
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
 
 .position-relative{
   position: relative;
@@ -4004,7 +4013,10 @@ button {
 
 .d-flex{
   display: flex;
+}
 
+.align-items-end{
+  align-items: end;
 }
 
 .justify-between{
@@ -4017,6 +4029,12 @@ button {
 
 .gap-2{
   gap: 7rem;
+}
+
+@media screen and (max-width:540px) {
+  .gap-2{
+    gap: 4rem;
+  }
 }
 
 .items-center{

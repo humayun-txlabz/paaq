@@ -9,7 +9,8 @@ import Layout from "components/layout";
 import { Container, Text, Image, Input, Button } from "theme-ui";
 import AppAndPlayStoreFooter from "components/appAndPlayStoreFooter";
 // import banner from "assets/downloadBanner.png";
-import barCode from "assets/paaqQR.svg";
+// import barCode from "assets/paaqQR.svg";
+import barCode from "assets/bar-code.png";
 import {
   getCountries,
   getCountryCallingCode,

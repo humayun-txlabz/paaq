@@ -25,33 +25,33 @@ const Waveform = (props) => {
   const wavesurfer = useRef(null);
   const [playing, setPlaying] = useState(false);
 
-  const url =
-    "https://www.mfiles.co.uk/mp3-downloads/brahms-st-anthony-chorale-theme-two-pianos.mp3";
+  // const url =
+  //   "https://www.mfiles.co.uk/mp3-downloads/brahms-st-anthony-chorale-theme-two-pianos.mp3";
 
-  useEffect(() => {
-    create();
+  // useEffect(() => {
+  //   create();
 
-    return () => {
-      if (wavesurfer.current) {
-        wavesurfer.current.destroy();
-      }
-    };
-  }, []);
+  //   return () => {
+  //     if (wavesurfer.current) {
+  //       wavesurfer.current.destroy();
+  //     }
+  //   };
+  // }, []);
 
-  const create = async () => {
-    const WaveSurfer = (await import("wavesurfer.js")).default;
+  // const create = async () => {
+  //   const WaveSurfer = (await import("wavesurfer.js")).default;
 
-    const options = formWaveSurferOptions(waveformRef.current);
-    wavesurfer.current = WaveSurfer.create(options);
+  //   const options = formWaveSurferOptions(waveformRef.current);
+  //   wavesurfer.current = WaveSurfer.create(options);
 
-    wavesurfer.current.load(url);
-  };
+  //   wavesurfer.current.load(url);
+  // };
 
-  const handlePlayPause = () => {
-    setPlaying(!playing);
-    wavesurfer.current.playPause();
-    props.handleClickPlay();
-  };
+  // const handlePlayPause = () => {
+  //   setPlaying(!playing);
+  //   wavesurfer.current.playPause();
+  //   props.handleClickPlay();
+  // };
 
   const poppingOutAnimation = (delay) =>
     useSpring({
